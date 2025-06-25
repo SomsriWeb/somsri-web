@@ -1,4 +1,4 @@
-<script lang="ts"></script>
+<script lang="ts" setup></script>
 <template>
 	<header>
 		<NuxtImg src="/home/header.jpg" class="w-screen h-screen object-cover" />
