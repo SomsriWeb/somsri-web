@@ -3,6 +3,9 @@ export default defineNuxtConfig({
 	modules: ["@nuxt/content", "@nuxt/ui", "@nuxt/image"],
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
+	future: {
+		compatibilityVersion: 4,
+	},
 	content: {
 		preview: {
 			api: "https://api.nuxt.studio",
@@ -10,8 +13,12 @@ export default defineNuxtConfig({
 			dev: true,
 		},
 	},
-	future: {
-		compatibilityVersion: 4,
+	hooks: {
+		"components:extend": (components) => {
+			console.log(components)
+			const globals = components.filter((c) => ["UButton", "UIcon"].includes(c.pascalName))
+
+			globals.forEach((c) => (c.global = true))
+		},
 	},
-	compatibilityDate: "2024-04-03",
 })
