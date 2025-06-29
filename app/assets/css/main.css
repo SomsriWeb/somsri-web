@@ -1,2 +1,24 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+body {
+    font-size: 32px !important;
+}
+
+@theme {
+    --font-display: "DB Helvethaica X", "sans-serif";
+    --default-font-family: "DB Helvethaica X", "sans-serif";
+
+    --color-primary: oklch(47.783% 0.16585 13.291);
+    --color-primary-50: oklch(76.021% 0.10361 4.3494);
+    --color-primary-100: oklch(72.494% 0.12232 5.5071);
+    --color-primary-200: oklch(65.963% 0.15659 7.8201);
+    --color-primary-300: oklch(60.205% 0.18751 10.832);
+    --color-primary-400: oklch(54.714% 0.19219 13.788);
+    --color-primary-500: oklch(47.783% 0.16585 13.291);
+    --color-primary-600: oklch(37.746% 0.12774 12.119);
+    --color-primary-700: oklch(27.318% 0.08592 11.677);
+    --color-primary-800: oklch(15.489% 0.03838 4.7867);
+    --color-primary-900: oklch(0% 0 none);
+    --color-primary-950: oklch(0% 0 none);
+}
