@@ -11,7 +11,5 @@
 </script>
 
 <template>
-	<div>
-		<ContentRenderer v-if="page" class="space-y-[2rem]" :value="page" />
-	</div>
+	<ContentRenderer v-if="page" class="space-y-[2rem]" :value="page" />
 </template>

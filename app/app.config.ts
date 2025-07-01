@@ -3,7 +3,7 @@ export default defineAppConfig({
 		button: {
 			slots: {
 				base: [
-					"rounded-lg font-medium inline-flex justify-center items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 !min-w-[10rem]",
+					"rounded-lg font-medium inline-flex justify-center items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 !min-w-[6rem]",
 					"transition-colors",
 					"cursor-pointer",
 				],
@@ -39,31 +39,31 @@ export default defineAppConfig({
 				},
 				size: {
 					xs: {
-						base: "px-2 py-1 gap-1 text-2xl",
+						base: "px-2 py-1 gap-1",
 						leadingIcon: "size-4",
 						leadingAvatarSize: "3xs",
 						trailingIcon: "size-4",
 					},
 					sm: {
-						base: "px-2.5 py-1 gap-1.5 text-2xl",
+						base: "px-2.5 py-1 gap-1.5",
 						leadingIcon: "size-4",
 						leadingAvatarSize: "3xs",
 						trailingIcon: "size-4",
 					},
 					md: {
-						base: "px-5 py-1 gap-1.5 text-2xl",
+						base: "px-5 py-1 gap-1.5",
 						leadingIcon: "size-5",
 						leadingAvatarSize: "2xs",
 						trailingIcon: "size-5",
 					},
 					lg: {
-						base: "px-3 py-1 gap-2 text-2xl",
+						base: "px-3 py-1 gap-2",
 						leadingIcon: "size-5",
 						leadingAvatarSize: "2xs",
 						trailingIcon: "size-5",
 					},
 					xl: {
-						base: "px-3 py-1 gap-2 text-2xl",
+						base: "px-3 py-0.5 gap-2 text-xl",
 						leadingIcon: "size-6",
 						leadingAvatarSize: "xs",
 						trailingIcon: "size-6",

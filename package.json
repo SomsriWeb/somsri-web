@@ -17,6 +17,7 @@
     "@nuxtjs/sitemap": "7.4.3",
     "better-sqlite3": "^11.10.0",
     "eslint": "^9.0.0",
+    "libphonenumber-js": "^1.12.9",
     "nuxt": "^3.17.5",
     "nuxt-swiper": "2.0.1",
     "vue3-marquee": "^4.2.2"

@@ -11,6 +11,9 @@ title: "หน้าหลัก"
 
 #button
 สอบถามข้อมูล
+
+#actionLink
+https://contact.somsritshirt.com/3d8f7
 ::
 
 ::somsri-produce-for
@@ -33,7 +36,7 @@ title: "หน้าหลัก"
 
 ::
 
-::why-you-choose-somsri
+::why-you-should-choose-somsri
 
 ::
 

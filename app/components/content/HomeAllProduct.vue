@@ -7,7 +7,7 @@
 <template>
 	<div class="px-[4.6rem] py-[3rem]">
 		<h2 class="text-primary text-[4rem] leading-none font-bold">สินค้าทั้งหมด</h2>
-		<p class="text-stone-500 font-light mb-5">
+		<p class="text-stone-500 font-light text-xl mb-5">
 			สมศรีมีเสื้อผลิตสินค้าต่าง ๆ ไม่ว่าจะเป็นเสื้อยืด เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ
 		</p>
 

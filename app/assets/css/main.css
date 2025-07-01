@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-body {
-    font-size: 32px !important;
+html {
+    font-size: 24px !important;
 }
 
 @theme {

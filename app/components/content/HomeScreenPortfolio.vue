@@ -18,12 +18,12 @@
 <template>
 	<div class="px-[4.6rem] py-[3rem]">
 		<h2 class="text-primary text-[4rem] leading-none font-bold">ตัวอย่างงานสกรีนเสื้อ</h2>
-		<p class="text-stone-500 font-light mb-5">
+		<p class="text-stone-500 font-light text-xl mb-5">
 			เรามีเทคนิคการสกรีนที่หลากหลาย รองรับการผลิตตามความต้องการของลูกค้าทุกรูปแบบ
 		</p>
 
 		<ClientOnly>
-			<swiper-container ref="containerRef" class="mb-5">
+			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
 				<swiper-slide v-for="screen in screens" :key="screen.name">
 					<HomePortfolioCard
 						:name="screen.name"

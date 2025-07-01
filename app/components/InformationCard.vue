@@ -4,8 +4,11 @@
 		title: string
 		description: string
 		image: string
+		button?: boolean
 	}
-	defineProps<Props>()
+	withDefaults(defineProps<Props>(), {
+		button: true,
+	})
 
 	// EMITS
 	type Emit = {
@@ -14,9 +17,15 @@
 	defineEmits<Emit>()
 </script>
 <template>
-	<div class="rounded-xl overflow-hidden bg-stone-100 p-5 h-full">
+	<div class="relative rounded-xl overflow-hidden bg-stone-100 p-5 h-full">
 		<img :src="image" alt="" class="max-w-[50px] mb-3" />
-		<h3 class="text-black text-3xl font-bold leading-9 mb-3">{{ title }}</h3>
-		<p class="text-2xl text-stone-500 font-light">{{ description }}</p>
+		<h3 class="text-black text-2xl font-bold leading-7 mb-3">{{ title }}</h3>
+		<p class="text-lg text-stone-500 font-light">{{ description }}</p>
+		<UButton
+			color="primary"
+			class="absolute bottom-3 right-3 rounded-full !min-w-fit"
+			icon="lucide:plus"
+			size="sm"
+		/>
 	</div>
 </template>
