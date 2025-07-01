@@ -55,6 +55,10 @@ export default defineNuxtConfig({
 		},
 	},
 	seo: {},
+	site: {
+		url: "https://somsritshirt.com",
+		name: "สมศรีมีเสื้อ",
+	},
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
 	future: {
