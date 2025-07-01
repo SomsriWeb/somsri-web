@@ -1,8 +1,11 @@
 ---
-title: "หน้าหลัก"
+title: หน้าหลัก
 ---
 
 ::home-header
+---
+action-link: https://contact.somsritshirt.com/3d8f7
+---
 #title
 สมศรีรับผลิตเสื้อ
 
@@ -13,33 +16,26 @@ title: "หน้าหลัก"
 สอบถามข้อมูล
 
 #actionLink
-https://contact.somsritshirt.com/3d8f7
+<https://contact.somsritshirt.com/3d8f7>
 ::
 
 ::somsri-produce-for
-
 ::
 
 ::home-all-product
-
 ::
 
 ::home-portfolio
-
 ::
 
 ::home-screen-portfolio
-
 ::
 
 ::home-pin-portfolio
-
 ::
 
 ::why-you-should-choose-somsri
-
 ::
 
 ::order-somsri
-
 ::
