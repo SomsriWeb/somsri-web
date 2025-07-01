@@ -15,7 +15,9 @@
 			class="absolute bottom-10 left-0 right-0 p-5 flex justify-between items-center flex-col"
 		>
 			<h3 class="text-white text-4xl font-bold mb-1">{{ name }}</h3>
-			<UButton color="neutral" class="!text-primary">ดูเพิ่มเติม</UButton>
+			<NuxtLink :to="url">
+				<UButton color="neutral" class="!text-primary">ดูเพิ่มเติม</UButton>
+			</NuxtLink>
 		</div>
 	</div>
 </template>
