@@ -1,4 +1,16 @@
 export default defineAppConfig({
+	seo: {
+		title: "สมศรีมีเสื้อ",
+		description:
+			"Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD",
+		url: "https://canvas.hrcd.fr",
+	},
+	socialMedia: {
+		instagram: "https://www.instagram.com/somsritshirt/",
+		facebook: "https://facebook.com/somsritshirt",
+		tiktok: "https://www.tiktok.com/somsritshirt",
+		line: "https://line.me/R/ti/p/diz8986o",
+	},
 	ui: {
 		button: {
 			slots: {

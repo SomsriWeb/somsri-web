@@ -1,11 +1,14 @@
 ---
-title: หน้าหลัก
+title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
+description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+
 ---
 
 ::home-header
 ---
 action-link: https://contact.somsritshirt.com/3d8f7
 ---
+
 #title
 สมศรีรับผลิตเสื้อ
 
@@ -15,8 +18,6 @@ action-link: https://contact.somsritshirt.com/3d8f7
 #button
 สอบถามข้อมูล
 
-#actionLink
-<https://contact.somsritshirt.com/3d8f7>
 ::
 
 ::somsri-produce-for

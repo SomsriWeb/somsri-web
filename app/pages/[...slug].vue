@@ -11,5 +11,8 @@
 </script>
 
 <template>
-	<ContentRenderer v-if="page" class="space-y-[2rem]" :value="page" />
+	<div v-if="page">
+		<Metadata :page="page" />
+		<ContentRenderer class="space-y-[2rem]" :value="page" />
+	</div>
 </template>
