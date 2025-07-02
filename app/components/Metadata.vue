@@ -36,9 +36,9 @@
 	})
 
 	defineOgImage({
-		url: "https://canvas.hrcd.fr/og.png",
+		url: "https://somsritshirt.com/og.jpg",
 		width: 1200,
 		height: 630,
-		alt: "Home image",
+		alt: "สมศรีมีเสื้อ",
 	})
 </script>

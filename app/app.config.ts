@@ -2,8 +2,8 @@ export default defineAppConfig({
 	seo: {
 		title: "สมศรีมีเสื้อ",
 		description:
-			"Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD",
-		url: "https://canvas.hrcd.fr",
+			"เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง",
+		url: "https://somsritshirt.com",
 	},
 	socialMedia: {
 		instagram: "https://www.instagram.com/somsritshirt/",
