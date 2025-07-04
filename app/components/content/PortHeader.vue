@@ -7,7 +7,7 @@
             <slot name="otherdescribetion" />
         </p>
     </div>
-
+1
     <div class="px-[4.6rem] py-[2rem]">
         <h1 class="text-center text-5xl font-bold text-primary mb-3">
             <slot name="title" />

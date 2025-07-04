@@ -1,56 +1,8 @@
-<script setup>
-const items = [
-  {
-    name: 'Tattoo Colour',
-    method: 'รีดร้อน DFT',
-    image: 'home/portfolio/1.jpg',
-  },
-  {
-    name: 'Bonnadol',
-    method: 'สกรีนฮาฟโทน',
-    image: 'home/portfolio/2.jpg',
-  },
-  {
-    name: 'Polycat',
-    method: 'สกรีน',
-    image: 'home/portfolio/3.jpg',
-  },
-  {
-    name: 'Kongthapengfa',
-    method: 'รีดร้อน DFT',
-    image: 'home/portfolio/4.jpg',
-  },
-  {
-    name: 'YINWAR',
-    method: 'ปัก',
-    image: 'home/portfolio/5.jpg',
-  },
-    {
-    name: 'Jorin',
-    method: 'รีดร้อน DFT',
-    image: 'home/portfolio/6.jpg',
-  },
-  {
-    name: 'Nerd Out',
-    method: 'สกรีนงานเม็ด',
-    image: 'home/portfolio/7.jpg',
-  },
-  {
-    name: 'smallroom',
-    method: 'สกรีน DTG',
-    image: 'home/portfolio/2.jpg',
-  },
-  {
-    name: 'CHARLOTTE',
-    method: 'สกรีน',
-    image: 'home/portfolio/2.jpg',
-  },
-  {
-    name: 'BIG DRAGON',
-    method: 'สกรีน',
-    image: 'home/portfolio/2.jpg',
-  },
-]
+<script setup lang="ts">
+
+	const { data: portcardartist } = await useAsyncData("portcardartist", () => {
+		return queryCollection("portCardArtist").order("name", "ASC").all()
+	});
 </script>
 
 <template>
@@ -59,7 +11,7 @@ const items = [
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 place-items-center"
     >
       <div
-        v-for="item in items"
+        v-for="item in portcardartist"
         :key="item.name"
         class="flex flex-col items-center text-center"
       >
@@ -67,7 +19,7 @@ const items = [
         <div class="w-full max-w-[250px] h-[400px] rounded-2xl overflow-hidden shadow-md">
           <img
             :src="item.image"
-            :alt="item.name"
+            :name="item.name"
             class="w-full h-full object-cover"
           />
         </div>
