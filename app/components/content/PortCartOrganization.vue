@@ -1,53 +1,58 @@
 <script setup>
 const items = [
   {
-    name: 'Tattoo Colour',
-    method: 'รีดร้อน DFT',
+    name: 'Flash Express',
+    method: 'พิมพ์ sublimation',
     image: 'home/portfolio/1.jpg',
   },
   {
-    name: 'Bonnadol',
-    method: 'สกรีนฮาฟโทน',
+    name: 'Casper',
+    method: 'พิมพ์ sublimation',
     image: 'home/portfolio/2.jpg',
   },
   {
-    name: 'Polycat',
+    name: 'Builder Smart',
     method: 'สกรีน',
     image: 'home/portfolio/3.jpg',
   },
   {
-    name: 'Kongthapengfa',
-    method: 'รีดร้อน DFT',
+    name: 'Maxxis',
+    method: 'สกรีน',
     image: 'home/portfolio/4.jpg',
   },
   {
-    name: 'YINWAR',
-    method: 'ปัก',
+    name: 'QUASAR',
+    method: 'ปักทรานเฟอร์',
     image: 'home/portfolio/5.jpg',
   },
     {
-    name: 'Jorin',
-    method: 'รีดร้อน DFT',
+    name: 'PR FOODLAND',
+    method: 'สกรีนสียาง',
     image: 'home/portfolio/6.jpg',
   },
   {
-    name: 'Nerd Out',
-    method: 'สกรีนงานเม็ด',
+    name: 'LEAO TIRE',
+    method: 'พิมพ์ sublimation',
     image: 'home/portfolio/7.jpg',
   },
   {
-    name: 'smallroom',
-    method: 'สกรีน DTG',
-    image: 'home/portfolio/2.jpg',
-  },
-  {
-    name: 'CHARLOTTE',
+    name: 'Gelplus Pro',
     method: 'สกรีน',
     image: 'home/portfolio/2.jpg',
   },
   {
-    name: 'BIG DRAGON',
-    method: 'สกรีน',
+    name: 'HONDA',
+    method: 'พิมพ์ sublimation',
+    image: 'home/portfolio/2.jpg',
+  },
+  {
+    name: 'SOMPO',
+    method: 'ปัก',
+    image: 'home/portfolio/2.jpg',
+  },
+    {
+    name: 'กฤษณวัจน์',
+    method: 'ปักทรานเฟอร์',
     image: 'home/portfolio/2.jpg',
   },
 ]
@@ -64,7 +69,7 @@ const items = [
         class="flex flex-col items-center text-center"
       >
         <!-- กล่องรูป -->
-        <div class="w-full max-w-[250px] h-[400px] rounded-2xl overflow-hidden shadow-md">
+        <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
             :src="item.image"
             :alt="item.name"
