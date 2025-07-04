@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <div class="px-[4.6rem] py-[3rem]">
     <h1
@@ -6,7 +8,7 @@
       <slot name="title" />
     </h1>
     <p class="text-stone-500 text-start">
-      <slot name="describetion" />
+      <slot name="description" />
     </p>
     <h2
       class="text-primary leading-none text-center p-5 m-10 text-xl font-bold"
@@ -17,6 +19,6 @@
   </div>
 </template>
 
-<script setup></script>
 
-<style lang="scss" scoped></style>
+
+
