@@ -1,14 +1,9 @@
 <template>
 	<div class="px-[4.6rem] py-[3rem]">
 		<div class="rounded-2xl p-7 bg-primary">
-			<h2 class="text-center text-5xl font-bold text-white mb-3">
-				สั่งทำเสื้อสวย ๆ กับสมศรี
-			</h2>
+			<h2 class="text-center text-5xl font-bold text-white mb-3"><slot name="title" /></h2>
 			<p class="text-center text-white text-lg font-light mb-5">
-				หากคุณกำลังมองหาเสื้อสกรีนสวยๆ คุณภาพดี พร้อมการให้บริการแบบมืออาชีพ
-				เพื่อให้คุณมั่นใจในบริการของเรา เรามีทีมงานยินดีให้คำปรึกษาฟรี
-				พร้อมตัวอย่างลายสกรีนให้เลือกมากมาย หากท่านใดสนใจสกรีนเสื้อสวยๆ
-				สามารถติดต่อเราได้หลากหลายช่องทาง
+				<slot name="description" />
 			</p>
 			<div class="flex justify-center gap-5">
 				<NuxtLink href="https://contact.somsritshirt.com/3d975" external>
