@@ -49,5 +49,16 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+
+		fabric: defineCollection({
+			type: "data",
+			source: "data/fabric/**.json",
+			schema: z.object({
+				name: z.string(),
+				imgUrl: z.string(),
+				popupImageUrl: z.string(),
+				order: z.number(),
+			}),
+		}),
 	},
 })

@@ -5,6 +5,15 @@ html {
     font-size: 24px !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-stretch: condensed;
+}
+
 @theme {
     --font-display: "DB Helvethaica X", "sans-serif";
     --default-font-family: "DB Helvethaica X", "sans-serif";
