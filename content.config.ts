@@ -79,16 +79,16 @@ export default defineContentConfig({
         image: z.string(),
       }),
     }),
-      
+
     fabric: defineCollection({
-			type: "data",
-			source: "data/fabric/**.json",
-			schema: z.object({
-				name: z.string(),
-				imgUrl: z.string(),
-				popupImageUrl: z.string(),
-				order: z.number(),
-			}),
-		}),
+      type: "data",
+      source: "data/fabric/**.json",
+      schema: z.object({
+        name: z.string(),
+        imgUrl: z.string(),
+        popupImageUrl: z.string(),
+        order: z.number(),
+      }),
+    }),
   },
 });
