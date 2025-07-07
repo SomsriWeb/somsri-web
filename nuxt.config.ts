@@ -77,7 +77,6 @@ export default defineNuxtConfig({
 	content: {
 		preview: {
 			api: "https://api.nuxt.studio",
-			// force module initialization on dev env
 			dev: true,
 		},
 	},
