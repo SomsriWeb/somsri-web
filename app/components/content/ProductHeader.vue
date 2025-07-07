@@ -13,8 +13,7 @@
     <h2
       class="text-primary leading-none text-center p-5 m-10 text-xl font-bold"
     >
-      สมศรีมีสินค้าพรีเมี่ยมหลากหลายชนิดไม่ว่าจะเป็น เสื้อยืด สกรีนเสื้อ หน้ากาก
-      กระเป๋าผ้า ผ้ากันเปื้อน และอื่น ๆ ให้คุณเลือกสรร
+      <slot name="productheader" />
     </h2>
   </div>
 </template>
