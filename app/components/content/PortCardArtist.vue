@@ -1,8 +1,7 @@
 <script setup lang="ts">
-
-	const { data: portcardartist } = await useAsyncData("portcardartist", () => {
-		return queryCollection("portCardArtist").order("name", "ASC").all()
-	});
+const { data: portcardartist } = await useAsyncData("portcardartist", () => {
+  return queryCollection("portCardArtist").order("name", "ASC").all();
+});
 </script>
 
 <template>
@@ -16,7 +15,9 @@
         class="flex flex-col items-center text-center"
       >
         <!-- กล่องรูป -->
-        <div class="w-full max-w-[250px] h-[400px] rounded-2xl overflow-hidden shadow-md">
+        <div
+          class="w-full max-w-[250px] h-[400px] rounded-2xl overflow-hidden shadow-md"
+        >
           <img
             :src="item.image"
             :name="item.name"
