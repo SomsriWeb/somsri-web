@@ -20,7 +20,9 @@
 </script>
 <template>
 	<footer>
-		<div class="bg-primary grid grid-cols-3 gap-10 px-[4.6rem] py-[3rem]">
+		<div
+			class="bg-primary grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 md:px-[4.6rem] py-5 md:py-[3rem]"
+		>
 			<FooterAbout />
 			<FooterMenu />
 			<div>
@@ -28,9 +30,9 @@
 				<FooterContact />
 			</div>
 		</div>
-		<div class="bg-primary-600 flex justify-between items-center px-[4.6rem] py-2">
-			<img src="/footer/footer-logo.png" class="max-w-[10rem]" />
-			<div class="flex items-center gap-5">
+		<div class="bg-primary-600 flex justify-between items-center px-5 md:px-[4.6rem] py-2">
+			<img src="/footer/footer-logo.png" class="max-w-[3.5rem] sm:max-w-[10rem]" />
+			<div class="flex items-center gap-2 sm:gap-5">
 				<NuxtLink
 					v-for="socialMedia in socialMedias"
 					:key="socialMedia.url"

@@ -17,10 +17,8 @@
 
 <template>
 	<div class="px-[4.6rem] py-[3rem]">
-		<h2 class="text-primary text-[4rem] leading-none font-bold">ตัวอย่างงานปักเสื้อ</h2>
-		<p class="text-stone-500 font-light text-xl mb-5">
-			เรามีเทคนิคการปักที่หลากหลาย รองรับการผลิตตามความต้องการของลูกค้าทุกรูปแบบ
-		</p>
+		<h2 class="text-primary text-[4rem] leading-none font-bold"><slot name="title" /></h2>
+		<p class="text-stone-500 font-light text-xl mb-5"><slot name="description" /></p>
 
 		<ClientOnly>
 			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
