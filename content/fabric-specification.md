@@ -12,7 +12,6 @@ seo:
 
 ::container
   :::page-title
-  #title
   เนื้อผ้าและคุณสมบัติ
   :::
 

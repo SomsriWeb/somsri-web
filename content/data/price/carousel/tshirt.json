@@ -1,0 +1,226 @@
+{
+    "uid": "tshirt",
+    "name": "เสื้อยืดรวมสกรีน",
+    "imageUrl": "/price/tshirt.jpg",
+    "conditions": [
+        {
+            "text": "ราคานี้เฉพาะสกรีน 1 สี 1 จุดเท่านั้น"
+        },
+        {
+            "text": "สั่งซื้อต่ำกว่า 100 ตัว มีค่าบล็อค 300 บาท"
+        }
+    ],
+    "priceLists": [
+        {
+            "fabricName": "COTTON 100%",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 122
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 118
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 112
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 108
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 100
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "COTTON พรีเมียม 32",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 132
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 128
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 122
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 118
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 110
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "COTTON พรีเมียม 20",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 142
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 138
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 132
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 128
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 120
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "SUPERSOFF นุ่มพิเศษ",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 178
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 170
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 165
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 162
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 158
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "TC/TK",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 95
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 90
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 85
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 80
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 75
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "ไมโครกีฬา แห้งเร็ว",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 150,
+                    "price": 95
+                },
+                {
+                    "min": 151,
+                    "max": 250,
+                    "price": 90
+                },
+                {
+                    "min": 251,
+                    "max": 350,
+                    "price": 85
+                },
+                {
+                    "min": 351,
+                    "max": 500,
+                    "price": 80
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 75
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        }
+    ],
+    "order": 1
+}
