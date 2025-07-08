@@ -49,5 +49,14 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+			stepOeder: defineCollection({
+			type: "data",
+			source: "data/footer-menu/**.json",
+			schema: z.object({
+				label: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
 	},
 })
