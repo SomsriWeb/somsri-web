@@ -1,0 +1,148 @@
+{
+    "uid": "polo",
+    "name": "เสื้อโปโลเปล่า",
+    "imageUrl": "/price/polo.jpg",
+    "conditions": [
+        {
+            "text": "ราคาปักเป็นราคาที่ยืดหยุ่นสูง มีความจำเป็น ต้องส่งลายเพื่อประเมินราคาก่อน"
+        }
+    ],
+    "priceLists": [
+        {
+            "fabricName": "DRYTECH / DRYFEEL",
+            "rates": [
+                {
+                    "min": 50,
+                    "max": 99,
+                    "price": 235
+                },
+                {
+                    "min": 100,
+                    "max": 250,
+                    "price": 230
+                },
+                {
+                    "min": 251,
+                    "max": 400,
+                    "price": 220
+                },
+                {
+                    "min": 401,
+                    "max": 600,
+                    "price": 210
+                },
+                {
+                    "min": 601,
+                    "max": 700,
+                    "price": 205
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "ไมโครกีฬา / จูติไมโคร",
+            "rates": [
+                {
+                    "min": 100,
+                    "max": 250,
+                    "price": 140
+                },
+                {
+                    "min": 251,
+                    "max": 400,
+                    "price": 130
+                },
+                {
+                    "min": 401,
+                    "max": 600,
+                    "price": 125
+                },
+                {
+                    "min": 601,
+                    "max": 700,
+                    "price": 120
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "TC-Lacoste สีขาว",
+            "rates": [
+                {
+                    "min": 50,
+                    "max": 99,
+                    "price": 155
+                },
+                {
+                    "min": 100,
+                    "max": 250,
+                    "price": 150
+                },
+                {
+                    "min": 251,
+                    "max": 400,
+                    "price": 140
+                },
+                {
+                    "min": 401,
+                    "max": 600,
+                    "price": 135
+                },
+                {
+                    "min": 601,
+                    "max": 700,
+                    "price": 125
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "TC-Lacoste สีอื่น ๆ",
+            "rates": [
+                {
+                    "min": 50,
+                    "max": 99,
+                    "price": 175
+                },
+                {
+                    "min": 100,
+                    "max": 250,
+                    "price": 170
+                },
+                {
+                    "min": 251,
+                    "max": 400,
+                    "price": 150
+                },
+                {
+                    "min": 401,
+                    "max": 600,
+                    "price": 145
+                },
+                {
+                    "min": 601,
+                    "max": 700,
+                    "price": 140
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        }
+    ],
+    "order": 2
+}

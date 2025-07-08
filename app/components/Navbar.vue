@@ -43,8 +43,16 @@
 
 	// COMPUTED
 	const navbarClass = computed(() => {
-		return isScrolled.value ? "bg-white text-stone-500 shadow-lg" : "bg-transparent text-white"
+		return isScrolled.value ? "bg-primary shadow-lg" : "bg-transparent"
 	})
+
+	function activeMenuClass(url: string) {
+		if (route.path === url) {
+			return isScrolled.value ? "font-bold underline" : "font-bold !text-primary underline"
+		} else {
+			return "font-normal"
+		}
+	}
 
 	// FUNCTION
 	function handleScroll() {
@@ -64,18 +72,19 @@
 <template>
 	<nav
 		:class="navbarClass"
-		class="px-[4.6rem] py-2 grid grid-cols-12 gap-5 w-full transition-all duration-300"
+		class="px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
 	>
 		<NuxtLink to="/" class="col-span-2">
 			<img src="/logo.png" alt="Somsri Logo" class="w-[1.75rem]" />
 		</NuxtLink>
 
-		<div class="col-span-8 flex items-center gap-5">
+		<div class="col-span-8 flex items-center justify-center gap-5">
 			<NuxtLink
 				v-for="menu in menus"
 				:key="menu.name"
 				:to="menu.url"
-				:class="{ 'font-medium text-primary': route.path === menu.url }"
+				:class="[activeMenuClass(menu.url)]"
+				class="font-stretch-condensed hover:underline transition-all"
 				>{{ menu.name }}</NuxtLink
 			>
 		</div>

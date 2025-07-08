@@ -12,11 +12,11 @@
 
 <template>
 	<div class="px-[4.6rem] py-[3rem]">
-		<h2 class="text-primary text-[4rem] leading-none font-bold">ผลงานจากสมศรี</h2>
+		<h2 class="text-primary text-[4rem] leading-none font-bold">
+			<slot name="title" mdc-unwrap="p" />
+		</h2>
 		<p class="text-stone-500 font-light text-xl mb-5">
-			ไม่ว่าจะเป็น เสื้อยูนิฟอร์ม เสื้อองค์กร เสื้อทีม เสื้อกีฬา เสื้อสัมมนา
-			มีรับประกันงานสกรีนเสื้อและงานปักทุกตัว
-			การันตีได้ว่าสั่งผลิตเสื้อกับเราไม่มีผิดหวังแน่นอน คิดถึงงานที่ดีมีคุณภาพ คิดถึงสมศรี
+			<slot name="description" mdc-unwrap="p" />
 		</p>
 
 		<Vue3Marquee class="rounded-xl" :duration="40">
