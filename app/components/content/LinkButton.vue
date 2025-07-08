@@ -6,7 +6,7 @@
 	const { to } = defineProps<Props>()
 </script>
 <template>
-	<NuxtLink :to="to">
+	<NuxtLink :to="to" class="block">
 		<UButton>
 			<slot mdc-unwrap="p" />
 		</UButton>
