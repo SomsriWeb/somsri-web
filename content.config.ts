@@ -1,86 +1,109 @@
-import { defineContentConfig, defineCollection, z } from "@nuxt/content";
+import { defineContentConfig, defineCollection, z } from "@nuxt/content"
+import { asSeoCollection } from "@nuxtjs/seo/content"
 
 export default defineContentConfig({
-  collections: {
-    content: defineCollection({
-      type: "page",
-      source: "**",
-    }),
+	collections: {
+		content: defineCollection(
+			asSeoCollection({
+				type: "page",
+				source: "**",
+				schema: z.object({
+					activeNavbar: z.boolean().default(false),
+				}),
+			})
+		),
 
-    product: defineCollection({
-      type: "data",
-      source: "data/product/**.json",
-      schema: z.object({
-        name: z.string(),
-        image: z.string(),
-        url: z.string(),
-        order: z.number(),
-      }),
-    }),
+		blog: defineCollection(
+			asSeoCollection({
+				type: "page",
+				source: {
+					include: "blog/*.md",
+					prefix: "/blog",
+				},
+				schema: z.object({
+					title: z.string(),
+					description: z.string(),
+					image: z.string(),
+					date: z.string(),
+					author: z.string(),
+				}),
+			})
+		),
 
-    screen: defineCollection({
-      type: "data",
-      source: "data/screen/**.json",
-      schema: z.object({
-        name: z.string(),
-        image: z.string(),
-        url: z.string(),
-        order: z.number(),
-      }),
-    }),
+		product: defineCollection({
+			type: "data",
+			source: "data/product/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
 
-    pin: defineCollection({
-      type: "data",
-      source: "data/pin/**.json",
-      schema: z.object({
-        name: z.string(),
-        image: z.string(),
-        url: z.string(),
-        order: z.number(),
-      }),
-    }),
+		screen: defineCollection({
+			type: "data",
+			source: "data/screen/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
 
-    footerMenu: defineCollection({
-      type: "data",
-      source: "data/footer-menu/**.json",
-      schema: z.object({
-        label: z.string(),
-        url: z.string(),
-        order: z.number(),
-      }),
-    }),
+		pin: defineCollection({
+			type: "data",
+			source: "data/pin/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
 
-    portCardArtist: defineCollection({
-      type: "data",
-      source: "data/port-card-artist/**.json",
-      schema: z.object({
-        name: z.string(),
-        method: z.string(),
-        image: z.string(),
-      }),
-    }),
+		footerMenu: defineCollection({
+			type: "data",
+			source: "data/footer-menu/**.json",
+			schema: z.object({
+				label: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
 
-    portCardOrganization: defineCollection({
-      type: "data",
-      source: "data/port-card-organization/**.json",
-      schema: z.object({
-        name: z.string(),
-        method: z.string(),
-        image: z.string(),
-      }),
-    }),
+		portCardArtist: defineCollection({
+			type: "data",
+			source: "data/port-card-artist/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
+			}),
+		}),
 
-    portCardOther: defineCollection({
-      type: "data",
-      source: "data/port-card-other/**.json",
-      schema: z.object({
-        name: z.string(),
-        method: z.string(),
-        image: z.string(),
-      }),
-    }),
+		portCardOrganization: defineCollection({
+			type: "data",
+			source: "data/port-card-organization/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
+			}),
+		}),
 
-    		fabric: defineCollection({
+		portCardOther: defineCollection({
+			type: "data",
+			source: "data/port-card-other/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
+			}),
+		}),
+
+		fabric: defineCollection({
 			type: "data",
 			source: "data/fabric/**.json",
 			schema: z.object({
@@ -126,10 +149,10 @@ export default defineContentConfig({
 				uid: z.string(),
 				name: z.string(),
 				imageUrl: z.string(),
-        order: z.number(),
-      }),
-    }),
-			stepOeder: defineCollection({
+				order: z.number(),
+			}),
+		}),
+		stepOeder: defineCollection({
 			type: "data",
 			source: "data/footer-menu/**.json",
 			schema: z.object({
@@ -138,5 +161,5 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
-  },
-});
+	},
+})

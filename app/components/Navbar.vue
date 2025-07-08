@@ -1,4 +1,14 @@
 <script setup lang="ts">
+	// PROPS
+	interface Props {
+		activeNavbar?: boolean
+	}
+
+	const props = withDefaults(defineProps<Props>(), {
+		activeNavbar: false,
+	})
+	const { activeNavbar } = toRefs(props)
+
 	// VARIABLE
 	const route = useRoute()
 	const menus = [
@@ -43,12 +53,14 @@
 
 	// COMPUTED
 	const navbarClass = computed(() => {
-		return isScrolled.value ? "bg-primary shadow-lg" : "bg-transparent"
+		return isScrolled.value || activeNavbar.value ? "bg-primary shadow-lg" : "bg-transparent"
 	})
 
 	function activeMenuClass(url: string) {
 		if (route.path === url) {
-			return isScrolled.value ? "font-bold underline" : "font-bold !text-primary underline"
+			return isScrolled.value || activeNavbar.value
+				? "font-bold underline"
+				: "font-bold !text-primary underline"
 		} else {
 			return "font-normal"
 		}
@@ -75,7 +87,11 @@
 		class="px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
 	>
 		<NuxtLink to="/" class="col-span-2">
-			<img src="/logo.png" alt="Somsri Logo" class="w-[1.75rem]" />
+			<img
+				src="/logo.svg"
+				alt="Somsri Logo"
+				class="w-[1.75rem] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
+			/>
 		</NuxtLink>
 
 		<div class="col-span-8 flex items-center justify-center gap-5">
