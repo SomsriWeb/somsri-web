@@ -23,5 +23,16 @@
     "nuxt-swiper": "2.0.1",
     "nuxt-viewport": "2.3.1",
     "vue3-marquee": "^4.2.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ]
   }
 }
