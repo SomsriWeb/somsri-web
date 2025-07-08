@@ -16,4 +16,4 @@ RUN bun --bun run build
 # run the app
 EXPOSE 3000
 
-CMD [ "bun", "--bun", "run", "/app/server/index.mjs" ]
+CMD [ "bun", "--bun", "run", ".output/server/index.mjs" ]
