@@ -34,39 +34,34 @@ jobs:
         node: [20]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+       # To use this repository's private action, you must check out the repository
+        - name: 🛒 CHECKOUT
+          uses: actions/checkout@v2
+        
+        - uses: actions/setup-node@v4
+          with:
+            node-version: 22.3.0
+            
 
-      - name: Identify package manager
-        id: pkgman
-        run: |
-          cache=`[ -f "./pnpm-lock.yaml" ] && echo "pnpm" || ([ -f "./package-lock.json" ] && echo "npm" || ([ -f "./yarn.lock" ] && echo "yarn" || echo ""))`
-          package_manager=`[ ! -z "$cache" ] && echo "$cache" || echo "npm"`
-          echo "cache=$cache" >> $GITHUB_OUTPUT
-          echo "package_manager=$package_manager" >> $GITHUB_OUTPUT
+        - name: 🛠️ BUILD OUR APP
+          run: | 
+            export NODE_OPTIONS="--max-old-space-size=4096"
+            yarn install
+            yarn run build
 
-      - uses: pnpm/action-setup@v4
-        if: ${{ steps.pkgman.outputs.package_manager == 'pnpm' }}
-        name: Install pnpm
-        id: pnpm-install
+        - name: PACK BUILD FILE
+          uses: a7ul/tar-action@v1.1.0
+          with:
+            command: c
+            cwd: "./"
+            files: |
+              ./.output/public/
+              captain-definition
+            outPath: deploy.tar
 
-      - uses: actions/setup-node@v4
-        with:
-          version: ${{ matrix.node }}
-          cache: ${{ steps.pkgman.outputs.cache }}
-
-      - name: Install dependencies
-        run: ${{ steps.pkgman.outputs.package_manager }} install
-
-      - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} run build
-        env:
-          NITRO_PRESET: github_pages
-          NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          
-
-      # Deployment job
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ./.output/public
+        - name: 🗿 DEPLOY BUILD TO SERVER
+          uses: caprover/deploy-from-github@v1.0.1
+          with:
+            server: '${{ secrets.CAPROVER_SERVER }}'
+            app: '${{ secrets.APP_NAME }}'
+            token: '${{ secrets.APP_TOKEN }}'
