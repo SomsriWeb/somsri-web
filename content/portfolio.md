@@ -31,7 +31,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::
 
 ::port-card-artist
-<PortCard type="artist" />
+<PortCard type="portCardArtist" />
 ::
 
 ::port-sub-header
@@ -46,7 +46,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::
 
 ::port-card-organization
-<PortCard type="organization" />
+<PortCard type="portCardOrganization" />
 ::
 
 ::port-sub-header
@@ -61,7 +61,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::
 
 ::port-card-other
-<PortCard type="other" />
+<PortCard type="portCardOther" />
 ::
 
 ::port-header

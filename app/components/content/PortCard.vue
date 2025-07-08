@@ -1,16 +1,12 @@
 <script setup lang="ts">
-const props = defineProps<{
-  type: "artist" | "organization" | "other";
-}>();
+interface Props {
+  type: "portCardArtist" | "portCardOrganization" | "portCardOther";
+}
 
-const collectionMap = {
-  artist: "portCardArtist",
-  organization: "portCardOrganization",
-  other: "portCardOther",
-};
+const props = defineProps<Props>();
 
 const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
-  return queryCollection(collectionMap[props.type]).order("name", "ASC").all();
+  return queryCollection(props.type).order("name", "ASC").all();
 });
 </script>
 
