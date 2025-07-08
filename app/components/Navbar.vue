@@ -53,7 +53,7 @@
 
 	// COMPUTED
 	const navbarClass = computed(() => {
-		return isScrolled.value || activeNavbar.value ? "bg-primary shadow-lg" : "bg-transparent"
+		return isScrolled.value || activeNavbar.value ? "!bg-primary shadow-lg" : "bg-transparent"
 	})
 
 	function activeMenuClass(url: string) {
