@@ -6,7 +6,7 @@ WORKDIR /app
 RUN corepack enable
 
 # Copy package.json and your lockfile
-COPY package.json .npmrc ./
+COPY package.json ./
 
 # Install dependencies
 RUN pnpm i
