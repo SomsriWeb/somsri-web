@@ -3,7 +3,6 @@ const { data: products } = await useAsyncData("products", () =>
   queryCollection("product").order("order", "ASC").all()
 );
 </script>
-
 <template>
   <section class="max-w-4xl mx-auto py-5 px-4">
     <h2 class="text-2xl font-bold mb-5 text-center">สินค้าของเรา</h2>

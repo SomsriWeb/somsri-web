@@ -99,12 +99,12 @@ export default defineContentConfig({
         order: z.number(),
       }),
     }),
-			stepOeder: defineCollection({
+			stepOrder: defineCollection({
 			type: "data",
-			source: "data/footer-menu/**.json",
+			source: "data/steporder/**.json",
 			schema: z.object({
-				label: z.string(),
-				url: z.string(),
+				name: z.string(),
+				image: z.string(),
 				order: z.number(),
 			}),
 		}),
