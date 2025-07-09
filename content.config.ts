@@ -1,11 +1,34 @@
 import { defineContentConfig, defineCollection, z } from "@nuxt/content"
+import { asSeoCollection } from "@nuxtjs/seo/content"
 
 export default defineContentConfig({
 	collections: {
-		content: defineCollection({
-			type: "page",
-			source: "**",
-		}),
+		content: defineCollection(
+			asSeoCollection({
+				type: "page",
+				source: "**",
+				schema: z.object({
+					activeNavbar: z.boolean().default(false),
+				}),
+			})
+		),
+
+		blog: defineCollection(
+			asSeoCollection({
+				type: "page",
+				source: {
+					include: "blog/*.md",
+					prefix: "/blog",
+				},
+				schema: z.object({
+					title: z.string(),
+					description: z.string(),
+					image: z.string(),
+					date: z.string(),
+					author: z.string(),
+				}),
+			})
+		),
 
 		product: defineCollection({
 			type: "data",
@@ -47,6 +70,36 @@ export default defineContentConfig({
 				label: z.string(),
 				url: z.string(),
 				order: z.number(),
+			}),
+		}),
+
+		portCardArtist: defineCollection({
+			type: "data",
+			source: "data/port-card-artist/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
+			}),
+		}),
+
+		portCardOrganization: defineCollection({
+			type: "data",
+			source: "data/port-card-organization/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
+			}),
+		}),
+
+		portCardOther: defineCollection({
+			type: "data",
+			source: "data/port-card-other/**.json",
+			schema: z.object({
+				name: z.string(),
+				method: z.string(),
+				image: z.string(),
 			}),
 		}),
 
