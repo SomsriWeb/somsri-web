@@ -19,7 +19,7 @@ const props = defineProps<{
         <UButton size="xl" color="neutral" variant="soft" icon="i-lucide-send"> ส่งแบบ </UButton>
       </a>
 
-      <nuxt-link to="/protfolio">
+      <nuxt-link to="/portfolio">
         <UButton  size="md" color="neutral"  variant="solid" icon="i-lucide-image"  > ผลงานทีมกราฟฟิก </UButton>
       </nuxt-link>
     </div>
