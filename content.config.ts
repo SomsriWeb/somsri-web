@@ -149,15 +149,15 @@ export default defineContentConfig({
 				uid: z.string(),
 				name: z.string(),
 				imageUrl: z.string(),
-				order: z.number(),
-			}),
-		}),
-		stepOeder: defineCollection({
+        order: z.number(),
+      }),
+    }),
+			stepOrder: defineCollection({
 			type: "data",
-			source: "data/footer-menu/**.json",
+			source: "data/steporder/**.json",
 			schema: z.object({
-				label: z.string(),
-				url: z.string(),
+				name: z.string(),
+				image: z.string(),
 				order: z.number(),
 			}),
 		}),
