@@ -67,7 +67,6 @@ export default defineNuxtConfig({
 	},
 	watch: ["content/**"],
 	fonts: {
-		assets: { prefix: "/fonts/" },
 		families: [
 			{
 				name: "DB Helvethaica X",
