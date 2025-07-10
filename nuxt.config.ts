@@ -72,6 +72,7 @@ export default defineNuxtConfig({
 			{
 				name: "DB Helvethaica X",
 				provider: "local",
+				
 			},
 		],
 	},
