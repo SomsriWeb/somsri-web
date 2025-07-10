@@ -1,4 +1,6 @@
 <script setup lang="ts">
+	import { LINE_LINK } from "~/lib/lineLink"
+
 	const route = useRoute()
 
 	const { data: page } = await useAsyncData("page-" + route.path, () => {
@@ -10,6 +12,8 @@
 	}
 
 	setPageLayout(page.value?.activeNavbar ? "color" : "default")
+
+	provide(LINE_LINK, page.value.lineLink)
 </script>
 
 <template>

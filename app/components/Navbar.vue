@@ -49,7 +49,8 @@
 			url: "/about-us",
 		},
 	]
-	const isScrolled = ref(false)
+	const isScrolled = ref<boolean>(false)
+	const showMenu = ref<boolean>(false)
 
 	// COMPUTED
 	const navbarClass = computed(() => {
@@ -71,6 +72,10 @@
 		isScrolled.value = window.scrollY > 100
 	}
 
+	function toggleMenu() {
+		showMenu.value = !showMenu.value
+	}
+
 	// LIFE CYCLE
 	onMounted(() => {
 		window.addEventListener("scroll", handleScroll)
@@ -84,32 +89,41 @@
 <template>
 	<nav
 		:class="navbarClass"
-		class="px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
+		class="px-5 md:px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
 	>
-		<NuxtLink to="/" class="col-span-2">
-			<img
-				src="/logo.svg"
-				alt="Somsri Logo"
-				class="w-[1.75rem] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
-			/>
-		</NuxtLink>
-
-		<div class="col-span-8 flex items-center justify-center gap-5">
-			<NuxtLink
-				v-for="menu in menus"
-				:key="menu.name"
-				:to="menu.url"
-				:class="[activeMenuClass(menu.url)]"
-				class="font-stretch-condensed hover:underline transition-all"
-				>{{ menu.name }}</NuxtLink
-			>
+		<div class="col-span-1 md:col-span-2">
+			<NuxtLink to="/">
+				<img
+					src="/logo.svg"
+					alt="Somsri Logo"
+					class="w-[3rem] md:w-[1.75rem] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
+				/>
+			</NuxtLink>
 		</div>
 
-		<div class="col-span-2 flex items-center gap-5">
+		<div class="col-span-8 flex flex-col items-end md:items-center justify-end">
+			<Icon name="lucide:menu" class="w-6 h-6 md:hidden" @click="toggleMenu" />
+
+			<div
+				:class="{ hidden: !showMenu }"
+				class="flex flex-col md:flex-row items-center justify-center gap-5"
+			>
+				<NuxtLink
+					v-for="menu in menus"
+					:key="menu.name"
+					:to="menu.url"
+					:class="[activeMenuClass(menu.url)]"
+					class="w-full block text-right md:text-center font-stretch-condensed hover:underline transition-all"
+					>{{ menu.name }}</NuxtLink
+				>
+			</div>
+		</div>
+
+		<!-- <div class="col-span-2 hidden md:flex items-center gap-5">
 			<NuxtLink to="tel:0634216521" class="flex items-center" external
 				><Icon name="lucide:phone" class="mr-1" />063-421-6521</NuxtLink
 			>
 			<NuxtLink to="/en" class="flex items-center"><Icon name="lucide:languages" /></NuxtLink>
-		</div>
+		</div> -->
 	</nav>
 </template>

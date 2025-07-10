@@ -5,7 +5,13 @@
 </script>
 <template>
 	<header>
-		<NuxtImg src="/home/header.jpg" class="w-screen h-screen object-cover" />
+		<NuxtImg
+			src="/home/header.jpg"
+			class="w-screen h-screen object-cover"
+			format="webp"
+			placeholder
+			preload
+		/>
 		<div class="absolute inset-0 bg-black/30" />
 		<div class="absolute bottom-[5rem] left-[5rem] text-white max-w-[40rem]">
 			<h1 class="text-7xl font-bold"><slot name="title" mdc-unwrap="p" /></h1>
