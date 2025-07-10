@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="px-[4.6rem] py-[3rem]">
+  <div class="">
     <h1
       class="text-primary text-[4rem] leading-none font-bold text-center p-5 m-10"
     >

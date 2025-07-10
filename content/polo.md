@@ -6,6 +6,9 @@ description: เราเป็น โรงงานผลิตเสื้อ
 
 ::container
 ::polo-header
+---
+action-link: https://contact.somsritshirt.com/3d8f7
+---
 
 #description
 สมศรีมีเสื้อ โรงงานผลิตเสื้อโปโล เสื้อยูนิฟอร์มเสื้อโปโลคุณภาพ
@@ -14,9 +17,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::
 
 ::polo-product
----
-action-link: https://contact.somsritshirt.com/3d8f7
----
+::
 
 ::polo-fabric
 ::
@@ -26,6 +27,7 @@ action-link: https://contact.somsritshirt.com/3d8f7
 ---
 action-link: https://contact.somsritshirt.com/3d8f7
 ---
+
 
 
 ::
