@@ -9,6 +9,7 @@ export default defineContentConfig({
 				source: "**",
 				schema: z.object({
 					activeNavbar: z.boolean().default(false),
+					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
 				}),
 			})
 		),
