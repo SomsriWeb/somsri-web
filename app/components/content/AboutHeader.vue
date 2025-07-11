@@ -8,9 +8,7 @@
     </h1>
 
     <div class="flex justify-center pt-5">
-      <div class="overflow-hidden rounded-2xl shadow-md">
         <slot mdc-unwrap="p" name="image-banner" />
-      </div>
     </div>
 
     <div class="font-light text-lg pt-5 text-stone-500">
