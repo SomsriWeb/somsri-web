@@ -9,7 +9,7 @@ const props = defineProps<{
     <!-- หัวข้อหลัก -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-4xl font-bold">หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์</h2>
-      <p class="text-gray-600">ปัก ปักทรานเฟอร์ สกรีน พิมพ์ลาย</p>
+      <p >ปัก ปักทรานเฟอร์ สกรีน พิมพ์ลาย</p>
     </div>
 
     <!-- ภาพเทคนิค -->
@@ -21,13 +21,13 @@ const props = defineProps<{
     <div class="space-y-4">
       <h2 class="text-xl md:text-4xl font-bold">ราคาเสื้อโปโล</h2>
       <div class="flex justify-center">
-        <img src="/polo/polo_price_01092565.jpg" alt="ราคาโปโล" class="max-w-full h-auto" />
+        <img src="/polo/polo_price_01092565.jpg" alt="ราคาโปโล" class="w-full max-w-md h-auto object-contain" />
       </div>
     </div>
 
     <!-- ขั้นตอนสั่งซื้อ -->
     <div class="flex justify-center">
-      <img src="/polo/step-1024x543.png" alt="ขั้นตอนสั่ง" class="max-w-full h-auto" />
+      <img src="/polo/step-1024x543.png" alt="ขั้นตอนสั่ง" class="w-full max-w-md h-auto object-contain" />
     </div>
 
     <!-- ปุ่มสั่งทำเสื้อ -->
@@ -48,12 +48,25 @@ const props = defineProps<{
     </div>
 
     <!-- ปุ่มขอผ้าตัวอย่าง -->
-    <div>
-      <a :href="props.actionLink" target="_blank" rel="noopener">
-        <UButton size="xl" color="primary" variant="solid" icon="i-lucide-send">
-          ส่งตัวอย่างผ้าฟรีเมื่อสั่ง 100 ตัวขึ้นไป
-        </UButton>
-      </a>
-    </div>
+      <!-- ปุ่มขอผ้าตัวอย่าง -->
+  <div class="flex justify-center relative">
+    <a :href="props.actionLink" target="_blank" rel="noopener">
+      <UButton
+        size="xl"
+        color="primary"
+        variant="solid"
+        icon="i-lucide-send"
+        class="relative"
+      >
+        ส่งตัวอย่างผ้าฟรีเมื่อสั่ง 100 ตัวขึ้นไป
+ 
+        <!-- จุด ping animation -->
+        <span
+          class="absolute top-0 right-0 -mt-1 -mr-1 flex size-3 rounded-full bg-primary-200 animate-ping"
+        ></span>
+ 
+      </UButton>
+    </a>
+  </div>
   </section>
 </template>
