@@ -162,5 +162,16 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+		PoloProduct: defineCollection({
+			type: "data",
+			source: "data/polo/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				order: z.number(),
+			}),
+		}),
+	
 	},
+		
 })
