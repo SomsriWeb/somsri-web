@@ -9,22 +9,18 @@ const { data: polo } = await useAsyncData("polo", () =>
     <h2 class="text-white text-3xl md:text-3xl font-bold text-center mb-2 m-0">
       เนื้อผ้าและคุณสมบัติพิเศษ
     </h2>
-    <div class="grid grid-rows-1 gap-2 ">
+    <div class="grid grid-rows-1 gap-2">
       <div
         v-for="(item, index) in polo"
         :key="index"
-        class="flex flex-col items-center pb-10  "
+        class="flex flex-col items-center pb-10"
       >
-        <img
-          :src="item.image"
-          :alt="item.name"
-          class=" w-full max-w-[25rem] "
-        />
+        <img :src="item.image" :alt="item.name" class="w-full max-w-[25rem]" />
       </div>
     </div>
 
     <div
-      class="mt-10 flex flex-col md:flex-row justify-center items-center gap-4 px-5"
+      class="mt-10 flex flex-row flex-wrap justify-center items-center gap-4 px-5"
     >
       <nuxt-link to="/fabric-specification">
         <UButton
@@ -32,7 +28,7 @@ const { data: polo } = await useAsyncData("polo", () =>
           color="primary"
           variant="solid"
           icon="i-lucide-file-search"
-          class="w-30"
+          class="min-w-[9rem] px-4"
         >
           ดูเพิ่มเติม
         </UButton>
@@ -44,7 +40,7 @@ const { data: polo } = await useAsyncData("polo", () =>
           color="primary"
           variant="solid"
           icon="i-lucide-shirt"
-          class=" w-[10rem]"
+          class="min-w-[12rem] px-4"
         >
           ออกแบบเสื้อโปโล
         </UButton>
