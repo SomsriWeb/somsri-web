@@ -7,7 +7,7 @@
 </script>
 <template>
 	<div class="flex flex-col items-center">
-		<ProseH2 class="mb-2"><slot name="title" mdc-unwrap="p" /></ProseH2>
+		<ProseH2 v-if="$slots.title" class="mb-2"><slot name="title" mdc-unwrap="p" /></ProseH2>
 		<div class="border-2 border-primary rounded-lg p-2 max-w-[30rem]">
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 overflow-x-auto mb-2">
 				<UButton

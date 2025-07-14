@@ -5,7 +5,6 @@
 	interface Props {
 		priceData: PriceCarouselCollectionItem
 	}
-
 	const { priceData } = defineProps<Props>()
 </script>
 <template>

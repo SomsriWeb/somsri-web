@@ -2,16 +2,17 @@ import { defineContentConfig, defineCollection, z } from "@nuxt/content";
 import { asSeoCollection } from "@nuxtjs/seo/content";
 
 export default defineContentConfig({
-  collections: {
-    content: defineCollection(
-      asSeoCollection({
-        type: "page",
-        source: "**",
-        schema: z.object({
-          activeNavbar: z.boolean().default(false),
-        }),
-      })
-    ),
+	collections: {
+		content: defineCollection(
+			asSeoCollection({
+				type: "page",
+				source: "**",
+				schema: z.object({
+					activeNavbar: z.boolean().default(false),
+					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
+				}),
+			})
+		),
 
     blog: defineCollection(
       asSeoCollection({

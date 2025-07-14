@@ -11,10 +11,13 @@
   </div>
 
   <!-- ปุ่มๆๆๆๆๆ -->
+   
   <div class="flex justify-center m-5">
+    <nuxt-link to="/fabric-specification">
     <UButton
       class="relative inline-flex rounded-lg px-4 py-2 text-white bg-primary hover:bg-primary-50 cursor-pointer"
       >เนื้อผ้าและคุณสมบัติ</UButton
     >
+    </nuxt-link>
   </div>
 </template>
