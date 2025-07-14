@@ -27,7 +27,7 @@
             <img
               :src="item.image"
               :alt="`sport-image-${index}`"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-fill"
             />
           </Swiper-Slide>
         </swiper-container>
