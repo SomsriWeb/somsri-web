@@ -1,14 +1,14 @@
 <script setup lang="ts">
 interface Props {
-  to: string;
+  actionLink: string;
 }
-const { to } = defineProps<Props>();
+const props = defineProps<Props>();
 </script>
 
 <template>
   <!-- ปุ่มขอผ้าตัวอย่าง -->
-  <div class="flex justify-center relative pt-20">
-    <NuxtLink :to="to" class="block">
+  <div class="flex justify-center relative">
+    <a :href="props.actionLink" target="_blank" rel="noopener">
       <UButton
         size="xl"
         color="primary"
@@ -16,12 +16,15 @@ const { to } = defineProps<Props>();
         icon="i-lucide-send"
         class="relative"
       >
-        เรทราคาเสื้อ
+        ส่งตัวอย่างผ้าฟรีเมื่อสั่ง 100 ตัวขึ้นไป
+
         <!-- จุด ping animation -->
         <span
           class="absolute top-0 right-0 -mt-1 -mr-1 flex size-3 rounded-full bg-primary-200 animate-ping"
         ></span>
+
       </UButton>
-    </NuxtLink>
+    </a>
   </div>
 </template>
+
