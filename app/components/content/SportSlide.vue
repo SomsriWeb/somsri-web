@@ -1,33 +1,54 @@
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 
-const { data: sportData } = await useAsyncData('sportData', () => {
+  const { data: sportData } = await useAsyncData('sportData', () => {
   return queryCollection("sportCarousel").order("order", "ASC").all()
 })
+
+	// VARIABLE
+	const containerRef = ref(null)
+	const swiperOptions = computed(() => ({
+		slidesPerView: 1,
+		loop: true,
+		effect: "creative",
+	}))
+	const swiper = useSwiper(containerRef, swiperOptions.value)
 </script>
 
 <template>
-  <div class="w-full flex justify-center px-4 pb-5">
-    <Swiper
-      :modules="[Autoplay, Pagination, Navigation]"
-      :slides-per-view="1"
-      :loop="true"
-      :autoplay="{ delay: 3000, disableOnInteraction: false }"
-      :pagination="{ clickable: true }"
-      :navigation="true"
-      class="w-full max-w-[1200px] h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] rounded-2xl overflow-hidden shadow-lg"
-    >
-      <SwiperSlide v-for="(item, index) in sportData" :key="index">
-        <img
-          :src="item.image"
-          :alt="`sport-image-${index}`"
-          class="w-full h-full object-fill"
-        />
-      </SwiperSlide>
-    </Swiper>
+  <div class="flex flex-col items-center justify-center px-4 p-5">
+    <ClientOnly>
+      <div class="flex justify-center items-center w-full">
+        <swiper-container
+          ref="containerRef"
+          :autoplay="{ delay: 3000, disableOnInteraction: false }"
+          class="w-full max-w-full sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-[1366px] h-[320px] sm:h-[480px] md:h-[600px] lg:h-[720px] rounded-xl overflow-hidden"
+        >
+          <Swiper-Slide v-for="(item, index) in sportData" :key="index">
+            <img
+              :src="item.image"
+              :alt="`sport-image-${index}`"
+              class="w-full h-full object-cover"
+            />
+          </Swiper-Slide>
+        </swiper-container>
+      </div>
+    </ClientOnly>
+
+    <div class="w-full flex justify-center gap-3 mt-5 pr-2 sm:pr-4 md:pr-8">
+      <UButton
+        icon="i-heroicons-chevron-left"
+        class="!text-primary !min-w-fit rounded-full"
+        color="neutral"
+        variant="outline"
+        @click="swiper.prev()"
+      />
+      <UButton
+        icon="i-heroicons-chevron-right"
+        class="!text-primary !min-w-fit rounded-full"
+        color="neutral"
+        variant="outline"
+        @click="swiper.next()"
+      />
+    </div>
   </div>
 </template>

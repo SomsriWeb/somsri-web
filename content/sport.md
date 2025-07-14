@@ -2,13 +2,14 @@
 title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
 description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
 ---
+::sport-img-style
+#image-style
+<img src="/sport/banner_sport.jpg" alt="รูปHeader" class="w-full p-0" />
+::
 
 ::container
 
 ::sport
-#image
-<img src="/sport/banner_sport.jpg" alt="รูปHeader" class="" />
-
 #title-text
 รับผลิตเสื้อกีฬา
 <br> <!--ใส่ BR เพื่อเคาะวรรคบรรทัดข้อความ-->
@@ -18,12 +19,10 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::sport-list
 ::
 
-::sport-img-style
-#image-style
-<img src="/sport/spec.jpg" alt="รูปHeader" style="width:1000px"/>
-::
-
 ::sport
+#image
+<img src="/sport/spec.jpg" alt="รูปHeader" style="width:1000px"/>
+
 #title-text
 " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
 #discription-text
@@ -41,8 +40,8 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ::sport-slide
 ::
 
-::sport-img-style
-#image-style
+::sport
+#image
 <img src="/sport/price_table.jpg" alt="รูปHeader" style="width:1000px" />
 ::
 

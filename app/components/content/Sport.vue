@@ -12,7 +12,7 @@
   </div>
 
   <!--ข้อความหัวข้อ-->
-  <div class="text-center text-primary text-3xl font-bold p-5">
+  <div class="text-center text-primary text-3xl font-bold p-5 m-0">
     <h1><slot name="title-text" mdc-unwrap="p" /></h1>
 
     <p class="text-lg font-light">
