@@ -9,7 +9,7 @@ const { data: fabrics } = await useAsyncData("fabrics", () =>
 
 <template>
   <div class="flex justify-center p-5">
-   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-2 w-100 max-w-lg">
+   <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 px-2 w-100 max-w-lg">
       <FabricCard
         v-for="fabric in fabrics"
         :key="fabric.name"
