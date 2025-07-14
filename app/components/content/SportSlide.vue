@@ -21,7 +21,7 @@
         <swiper-container
           ref="containerRef"
           :autoplay="{ delay: 3000, disableOnInteraction: false }"
-          class="w-full max-w-full sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-[1366px] h-[320px] sm:h-[480px] md:h-[600px] lg:h-[720px] rounded-xl overflow-hidden"
+          class="w-full max-w-full rounded-xl overflow-hidden"
         >
           <Swiper-Slide v-for="(item, index) in sportData" :key="index">
             <img
