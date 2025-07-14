@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-    <section class="bg-primary pt-30 m-0 p-0 py-0 px-0">
+    <section class="bg-primary pt-36">
       <div class="flex justify-center items-center ">
         <img
           src="/how-to-order/step_produce.png"
