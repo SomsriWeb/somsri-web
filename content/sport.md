@@ -23,7 +23,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 #image
 <img src="/sport/spec.jpg" alt="รูปHeader" style="width:1000px"/>
 
-#title-text
+#sub-title-text
 " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
 #discription-text
 ซิลค์สกรีน เฟล็กซ์ ไฮเดน ออฟเซท
@@ -33,7 +33,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 #image
 <img src="/sport/technique-unsmushed.png" alt="รูปHeader" style="width:1200px" class="" />
 
-#title-text
+#sub-title-text
 ราคาเสื้อยืดรวมสกรีน
 ::
 
@@ -52,7 +52,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 <LinkButton class="flex justify-center p-0 m-0" to="https://contact.somsritshirt.com/544af">สั่งทำเสื้อ</LinkButton>
 
 ::sport
-#title-text
+#sub-title-text
 ผลงาน การันตีคุณภาพ
 
 #discription-text
