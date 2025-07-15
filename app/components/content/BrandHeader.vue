@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <header class="relative w-screen h-screen">
+  <div class="relative overflow-x-hidden">
+    <header class="relative w-full h-screen overflow-hidden">
       <!-- Background Image -->
       <NuxtImg
         src="/tshirt-factory/bg.png"
@@ -8,19 +8,17 @@
         alt="Background"
       />
 
-      <!-- Overlay -->
       <div class="absolute inset-0 bg-black/30"></div>
 
-      <!-- Grid Content -->
       <div
-        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 items-center justify-center px-4 sm:px-8 lg:px-20  pt-0 pb-0 m-0 text-white"
+        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 items-center justify-center px-4 sm:px-8 lg:px-20 pt-0 pb-0 m-0 text-white"
       >
-        <!-- Image Object: อยู่บนเมื่อจอเล็ก, ขวาเมื่อจอใหญ่ -->
-        <div class="order-1 lg:order-2 flex justify-center items-center lg:mb-0">
+        <!-- ฝั่ง Image -->
+        <div class="order-1 lg:order-2 flex justify-center items-center">
           <slot mdc-unwrap="p" name="image-header-object" />
         </div>
 
-        <!-- Text: อยู่ล่างเมื่อจอเล็ก, ซ้ายเมื่อจอใหญ่ -->
+        <!-- ฝั่ง Text -->
         <div class="order-2 lg:order-1 text-center lg:text-left max-w-3xl z-10">
           <slot name="image-header-logo" />
 
@@ -40,7 +38,3 @@
     </header>
   </div>
 </template>
-
-
-
-
