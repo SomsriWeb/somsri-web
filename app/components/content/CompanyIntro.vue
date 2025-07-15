@@ -16,9 +16,9 @@ const imgs = [
       COMPANY INTRODUCTION
     </h1>
     <h2
-      class="text-primary text-xl sm:text-2xl md:text-3xl font-bold mb-4 flex justify-center items-center gap-2"
+      class="text-primary text-xl sm:text-2xl md:text-3xl font-bold mb-4 inline-flex items-center gap-2 flex-wrap justify-center"
     >
-      <Icon name="lucide:shirt" class="text-primary w-6 h-6" />
+      <Icon name="lucide:shirt" class="text-primary w-5 h-5 sm:w-6 sm:h-6" />
       บริษัท สมศรี การ์เมนท์ จำกัด
     </h2>
     <p class="text-sm sm:text-base max-w-3xl">

@@ -3,16 +3,22 @@
 <template>
   <!-- หัวข้อหลัก -->
   <div class="pt-5 text-center px-4">
-    <h1 class="text-white text-3xl sm:text-4xl md:text-[4rem] leading-none font-bold p-4 bg-primary rounded-2xl">
+    <h1
+      class="text-white text-3xl sm:text-4xl md:text-[4rem] leading-none font-bold p-4 bg-primary rounded-2xl"
+    >
       เนื้อผ้าแนะนำ
     </h1>
   </div>
 
   <!-- รายการผ้า Fasbix -->
-  <div class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4">
+  <div
+    class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4"
+  >
     <!-- เนื้อหา -->
     <div class="w-full md:w-1/2 text-start">
-      <h2 class="text-primary text-2xl sm:text-3xl md:text-4xl font-bold mb-4">ผ้า Fasbix</h2>
+      <h2 class="text-primary text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+        ผ้า Fasbix
+      </h2>
       <p class="text-base md:text-lg">
         <slot name="fabric" />
       </p>
@@ -33,23 +39,25 @@
     </div>
 
     <!-- ภาพ -->
-    <div class="flex-shrink-0 w-full md:w-1/2">
+    <div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
       <img
         src="/pants/image1.png"
         alt="ผ้า Fasbix"
-        class="rounded-[2rem] w-full object-cover max-h-[400px]"
+        class="rounded-[2rem] w-full max-w-md object-contain"
       />
     </div>
   </div>
 
   <!-- รายการผ้า French Terry -->
-  <div class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4">
+  <div
+    class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4"
+  >
     <!-- รูปภาพ -->
-    <div class="flex-shrink-0 w-full md:w-1/2">
+    <div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
       <img
         src="/pants/image2.png"
         alt="ผ้า French Terry"
-        class="rounded-[2rem] w-full object-cover max-h-[400px]"
+        class="rounded-[2rem] w-full max-w-md object-contain"
       />
     </div>
 

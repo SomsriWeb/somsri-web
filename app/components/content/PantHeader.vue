@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4"
+    class="flex flex-col md:flex-row-reverse items-center gap-8 max-w-6xl mx-auto py-8 px-4"
   >
     <div class="w-full md:w-1/2">
       <h1
