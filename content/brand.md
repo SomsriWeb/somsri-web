@@ -49,6 +49,6 @@ Our Services
 ::brand-port-card
 ::
 
-<LinkButton class="flex justify-center p-0 m-0" to="/portfolio">สั่งทำเสื้อ</LinkButton>
+<LinkButton class="flex justify-center p-0 m-0" to="/portfolio">ผลงานเพิ่มเติม</LinkButton>
 
 ::
