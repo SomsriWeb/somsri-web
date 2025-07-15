@@ -1,5 +1,5 @@
 <template>
 	<div class="flex justify-center w-full">
-		<slot />
+		<slot mdc-unwrap="p" />
 	</div>
 </template>
