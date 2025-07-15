@@ -171,5 +171,25 @@ export default defineContentConfig({
         order: z.number(),
       }),
     }),
+
+      brandService: defineCollection({
+      type: "data",
+      source: "data/brand/**.json",
+      schema: z.object({
+        name: z.string(),
+        method: z.string(),
+        image: z.string(),
+        order: z.number(),
+      }),
+    }),
+
+      brandPortCard: defineCollection({
+      type: "data",
+      source: "data/brand/brandportcard/**.json",
+      schema: z.object({
+        image: z.string(),
+        order: z.number(),
+      }),
+    }),
   },
 });
