@@ -16,7 +16,7 @@ const { data: brandcard } = await useAsyncData(`brandcard`, () => {
         class="flex flex-col items-center text-center"
       >
         <div
-          class="w-full max-w-[500px] h-[400px] rounded-2xl overflow-hidden shadow-md"
+          class="w-full max-w-[500px] rounded-2xl overflow-hidden shadow-md"
         >
           <img
             :src="item.image"
