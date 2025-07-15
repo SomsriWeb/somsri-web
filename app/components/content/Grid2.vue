@@ -10,10 +10,10 @@
 
 <template>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-		<div :class="props.col1Class">
+		<div :class="props.col1Class" class="space-y-3">
 			<slot name="col-1" />
 		</div>
-		<div :class="props.col2Class">
+		<div :class="props.col2Class" class="space-y-3">
 			<slot name="col-2" />
 		</div>
 	</div>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 	import { withTrailingSlash, withLeadingSlash, joinURL } from "ufo"
 	import { useRuntimeConfig, computed } from "#imports"
+	import { NuxtImg } from "#components"
 
 	// PROPS
 	interface Props {
@@ -30,7 +31,9 @@
 </script>
 
 <template>
-	<NuxtImg
+	<component
+		:is="NuxtImg"
+		class="w-full"
 		:src="refinedSrc"
 		:alt="props.alt"
 		:width="props.width"

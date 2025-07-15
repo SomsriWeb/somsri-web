@@ -63,7 +63,7 @@ action-link: https://contact.somsritshirt.com/3d8f7
 ::why-you-should-choose-somsri
 ::
 
-::order-somsri
+::order-somsri{titleTag="h2"}
 #title
 สั่งทำเสื้อสวย ๆ กับสมศรี
 
