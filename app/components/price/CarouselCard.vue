@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import type { PriceList } from "~~/types/priceList"
+	import type { PriceList } from "~/types/priceList"
 
 	// PROPS
 	interface Props {
