@@ -18,7 +18,9 @@
 
 <template>
 	<div v-if="page">
-		<Metadata :page="page" />
-		<ContentRenderer class="space-y-[2rem]" :value="page" />
+		<UApp>
+			<Metadata :page="page" />
+			<ContentRenderer class="space-y-[2rem]" :value="page" />
+		</UApp>
 	</div>
 </template>
