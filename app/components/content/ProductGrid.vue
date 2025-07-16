@@ -1,16 +1,21 @@
 <script setup lang="ts">
-const { data: products } = await useAsyncData("products", () =>
-  queryCollection("product").order("order", "ASC").all()
+import ProseH2 from './ProseH2.vue';
+
+const { data: productType } = await useAsyncData("productType", () =>
+  queryCollection("productType").order("order", "ASC").all()
 );
 </script>
+
 <template>
-  <section class="max-w-4xl mx-auto py-5 px-4">
-    <h2 class="text-2xl font-bold mb-5 text-center">สินค้าของเรา</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <section class="max-w-6xl mx-auto py-5 px-4">
+    <ProseH2 class="text-2xl font-bold mb-5 text-center">สินค้าของเรา</ProseH2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center"
+    >
       <div
-        v-for="(item, index) in products"
+        v-for="(item, index) in productType"
         :key="index"
-        class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+        class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center w-full"
       >
         <img
           :src="item.image"
@@ -18,14 +23,13 @@ const { data: products } = await useAsyncData("products", () =>
           class="w-full h-auto rounded mb-4"
         />
         <h3 class="text-lg font-semibold mb-2">{{ item.name }}</h3>
-        <button
+        <NuxtLink
+          :to="item.url"
           class="bg-primary-400 text-white px-4 py-2 rounded shadow hover:bg-primary-500"
         >
           รายละเอียด
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped></style>

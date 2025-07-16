@@ -1,26 +1,43 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div
-    class="flex flex-col md:flex-row-reverse items-center gap-8 max-w-6xl mx-auto py-8 px-4"
-  >
-    <div class="w-full md:w-1/2">
-      <h1
-        class="text-primary text-3xl sm:text-4xl md:text-[4rem] leading-none font-bold mb-4"
-      >
-        สมศรีการ์เมนท์
-      </h1>
-      <p>
-        <slot name="description" mdc-unwrap="p" />
-      </p>
-    </div>
-
-    <div class="w-full md:w-1/2">
+  <div class="relative overflow-x-hidden">
+    <header class="relative w-full h-screen min-h-[600px] overflow-hidden">
+      <!-- Background Image -->
       <img
-        src="/pants/Pants_logo_resize.png"
-        alt="โลโก้ สมศรี"
-        class="rounded-[2rem] w-full object-contain max-h-[400px]"
+        src="/pants/bg.png"
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Background"
       />
-    </div>
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <!-- Content Grid -->
+      <div
+        class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center justify-center px-4 sm:px-8 md:px-16 lg:px-20 h-full text-white"
+      >
+        <!-- Text -->
+        <div
+          class="order-2 lg:order-1 text-center lg:text-left max-w-full z-10"
+        >
+          <img
+            src="/pants/logo-white.png"
+            alt=""
+            class="mx-auto md:mx-0 w-[300px] sm:w-[350px] md:w-[400px]"
+          />
+          <p class="font-light text-base sm:text-lg lg:text-xl mt-4 mb-5 break-words">
+            <slot name="description" mdc-unwrap="p" />
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="order-1 md:order-2 flex justify-center items-center h-full">
+          <img
+            src="/pants/Bold_Minimalist_Creative_Fashion_Logo_Template-removebg-preview.png"
+            alt="Pants"
+            class="w-full max-w-[320px] sm:max-w-[300px] md:max-w-[500px] lg:max-w-[600px] object-contain mx-auto"
+          />
+        </div>
+      </div>
+    </header>
   </div>
 </template>

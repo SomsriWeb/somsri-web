@@ -19,9 +19,9 @@
       <h2 class="text-primary text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
         ผ้า Fasbix
       </h2>
-      <p class="text-base md:text-lg">
-        <slot name="fabric" />
-      </p>
+      <h3 class="text-base md:text-lg">
+        <slot name="fabric" mdc-unwrap="p" />
+      </h3>
       <ul class="space-y-3 text-gray-800 mt-4">
         <li class="flex items-center gap-2">
           <Icon name="lucide:check-circle" class="text-primary w-5 h-5" />
@@ -66,9 +66,9 @@
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
         ผ้า French Terry
       </h2>
-      <p class="mb-4 text-base md:text-lg">
-        <slot name="fabric-2" />
-      </p>
+      <h3 class="mb-4 text-base md:text-lg">
+        <slot name="fabric-2" mdc-unwrap="p" />
+      </h3>
       <ul class="space-y-3 text-gray-800">
         <li class="flex items-center gap-2">
           <Icon name="lucide:check-circle" class="text-primary w-5 h-5" />
