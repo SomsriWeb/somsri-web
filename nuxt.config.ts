@@ -113,6 +113,6 @@ export default defineNuxtConfig({
 		fallbackBreakpoint: "lg",
 	},
 	routeRules: {
-		"/test": { ssr: false },
+		"/design": { ssr: false },
 	},
 })
