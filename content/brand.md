@@ -21,6 +21,14 @@ Design your own brand
   class="w-[300px] sm:w-[400px] lg:w-[500px] xl:w-[600px] mx-auto"
   style="width:600px"
   />
+
+#image-header-logo
+<img
+  src="/brand/logo-white-unsmushed.png"
+  alt="รูปHeader"
+  class="w-[300px] sm:w-[400px] lg:w-[400px] xl:w-[400px] mx-auto"
+  style="width:400px"
+  />
 ::
 
 ::container

@@ -11,26 +11,34 @@
       <div class="absolute inset-0 bg-black/30"></div>
 
       <div
-        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 items-center justify-center px-4 sm:px-8 lg:px-20 pt-0 pb-0 m-0 text-white"
+        class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 items-center justify-center px-4 sm:px-8 lg:px-20 pt-4 pb-4 overflow-auto max-h-screen text-white"
       >
         <!-- ฝั่ง Image -->
-        <div class="order-1 lg:order-2 flex justify-center items-center">
+        <div
+          class="order-1 lg:order-2 flex justify-center items-center max-w-full"
+        >
           <slot mdc-unwrap="p" name="image-header-object" />
         </div>
 
         <!-- ฝั่ง Text -->
-        <div class="order-2 lg:order-1 text-center lg:text-left max-w-3xl z-10">
-          <slot name="image-header-logo" />
+        <div
+          class="order-2 lg:order-1 text-center lg:text-left max-w-full z-10"
+        >
+          <slot mdc-unwrap="p" name="image-header-logo" />
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight break-words"
+          >
             <slot name="title-h1" mdc-unwrap="p" />
           </h1>
 
-          <h2 class="text-2xl sm:text-3xl font-bold mt-2">
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mt-2">
             <slot name="title-h2" mdc-unwrap="p" />
           </h2>
 
-          <p class="font-light text-base sm:text-lg lg:text-xl mt-4 mb-5">
+          <p
+            class="font-light text-base sm:text-lg lg:text-xl mt-4 mb-5 break-words"
+          >
             <slot name="description" mdc-unwrap="p" />
           </p>
         </div>
