@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 		"nuxt-swiper",
 		"@nuxtjs/seo",
 		"nuxt-viewport",
+		"@nuxtjs/device",
 	],
 	app: {
 		head: {
@@ -71,6 +72,7 @@ export default defineNuxtConfig({
 			{
 				name: "DB Helvethaica X",
 				provider: "local",
+				preload: true,
 			},
 		],
 	},
@@ -109,5 +111,8 @@ export default defineNuxtConfig({
 		},
 
 		fallbackBreakpoint: "lg",
+	},
+	routeRules: {
+		"/design": { ssr: false },
 	},
 })

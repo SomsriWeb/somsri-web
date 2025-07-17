@@ -15,7 +15,6 @@
 
   <!-- ปุ่ม -->
   <div class="flex justify-center my-5">
-     
     <UButton
     
       class="relative inline-flex rounded-lg px-4 py-2 text-white text-sm sm:text-base md:text-lg bg-primary hover:bg-primary-50 cursor-pointer"

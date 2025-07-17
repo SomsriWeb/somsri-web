@@ -1,7 +1,6 @@
 <script setup lang="ts"></script>
 
 <template>
- 
   <div
     class="px-4 sm:px-8 md:px-12 lg:px-[4.6rem] py-6 md:py-10"
   >

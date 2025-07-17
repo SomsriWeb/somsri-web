@@ -1,3 +1,3 @@
 <template>
-	<h1><slot /></h1>
+	<h1 class="text-primary text-[4rem] leading-none font-bold"><slot /></h1>
 </template>

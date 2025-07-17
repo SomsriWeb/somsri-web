@@ -5,6 +5,7 @@ activeNavbar: true
 ---
 
 ::container
+
 ::product-header
 
 #title
