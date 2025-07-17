@@ -210,6 +210,15 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+    mask: defineCollection({
+			type: "data",
+			source: "data/mask/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				order: z.number(),
+			}),
+		}),
 	},
 	
 })
