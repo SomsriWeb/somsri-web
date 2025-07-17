@@ -191,5 +191,25 @@ export default defineContentConfig({
         order: z.number(),
       }),
     }),
-  },
-});
+		stepOrder: defineCollection({
+			type: "data",
+			source: "data/steporder/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				order: z.number(),
+			}),
+		}),
+		productType: defineCollection({
+			type: "data",
+			source: "data/product-type/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
+	},
+	
+})

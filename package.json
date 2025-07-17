@@ -14,16 +14,19 @@
     "@nuxt/fonts": "0.11.4",
     "@nuxt/image": "1.10.0",
     "@nuxt/ui": "^3.1.3",
+    "@nuxtjs/device": "3.2.4",
     "@nuxtjs/robots": "5.3.0",
     "@nuxtjs/seo": "3.1.0",
     "@nuxtjs/sitemap": "7.4.3",
     "better-sqlite3": "^12.0.0",
     "eslint": "^9.0.0",
+    "fabric": "^6.7.0",
     "libphonenumber-js": "^1.12.9",
     "nuxt": "^3.17.5",
     "nuxt-swiper": "2.0.1",
     "nuxt-viewport": "2.3.1",
     "sharp": "^0.34.2",
+    "vue3-colorpicker": "^2.3.0",
     "vue3-marquee": "^4.2.2"
   }
 }
