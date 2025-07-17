@@ -1,26 +1,36 @@
+<script setup lang="ts">
+import ProseH1 from './ProseH1.vue';
+import ProseH2 from './ProseH2.vue';
+import ProseP from './ProseP.vue';
+
+</script>
+
 <template>
-  <div class="px-[4.6rem] pt-[2rem]">
-    <h1 class="text-stert container text-5xl font-bold text-primary mb-3">
+  <div>
+    <ProseH2 class="text-stert container text-5xl font-bold text-primary mb-3 pt-5">
       <slot mdc-unwrap="p" name="othertitle" />
-    </h1>
-    <p class="text-start text-stone-500 text-lg font-light md:5">
+    </ProseH2>
+
+    <ProseP class="text-start text-lg font-light md:5">
       <slot mdc-unwrap="p" name="otherdescribetion" />
-    </p>
-  </div>
-
-  <div class="px-[4.6rem] py-[2rem]">
-    <h1 class="text-center text-5xl font-bold text-primary mb-3">
-      <slot mdc-unwrap="p" name="title" />
-    </h1>
-
-    <p class="text-start text-stone-500 text-lg font-light md:5">
-      <slot mdc-unwrap="p" name="describetion" />
-    </p>
+    </ProseP>
   </div>
 
   <div>
-    <h1 class="text-start text-5xl font-bold text-primary mb-3">
+    <ProseH1 class="text-center text-5xl font-bold text-primary mb-3">
+      <slot mdc-unwrap="p" name="title" />
+    </ProseH1>
+  </div>
+
+  <div>
+    <ProseP class="text-start text-stone-500 text-lg font-light md:5">
+      <slot mdc-unwrap="p" name="describetion" />
+    </ProseP>
+  </div>
+
+  <div>
+    <ProseH2 class="text-start text-5xl font-bold text-primary mb-3">
       <slot mdc-unwrap="p" name="subtitle" />
-    </h1>
+    </ProseH2>
   </div>
 </template>

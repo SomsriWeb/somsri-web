@@ -25,4 +25,3 @@ import ProseP from "./ProseP.vue";
 
 </template>
 
-<style scoped></style>
