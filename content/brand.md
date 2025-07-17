@@ -18,7 +18,6 @@ Design your own brand
 <img
   src="/brand/shirt_your_design.png"
   alt="รูปHeader"
-  class="w-[300px] sm:w-[400px] lg:w-[500px] xl:w-[600px] mx-auto"
   style="width:600px"
   />
 
@@ -26,8 +25,7 @@ Design your own brand
 <img
   src="/brand/logo-white-unsmushed.png"
   alt="รูปHeader"
-  class="w-[300px] sm:w-[400px] lg:w-[400px] xl:w-[400px] mx-auto"
-  style="width:400px"
+  style="width:350px"
   />
 ::
 

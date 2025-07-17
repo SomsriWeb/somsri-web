@@ -7,7 +7,7 @@ const { to } = defineProps<Props>();
 
 <template>
   <!-- ปุ่มขอผ้าตัวอย่าง -->
-  <div class="flex justify-center relative pt-20">
+  <div class="flex justify-center relative pt-5">
     <NuxtLink :to="to" class="block">
       <UButton
         size="xl"
