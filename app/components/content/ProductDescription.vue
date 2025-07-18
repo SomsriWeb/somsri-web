@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  actionLink: string
+}>()
+</script>
 
 <template>
   <!-- ข้อความข้างล่าง -->
@@ -8,18 +12,20 @@
     >
       เลือกผ้าแบบไหนให้เหมาะกับแบรนด์คุณ
     </ProseH2>
-    <ProseP class="text-sm sm:text-base md:text-lg  text-start">
+    <ProseP class="text-sm sm:text-base md:text-lg text-start">
       <slot name="products" mdc-unwrap="p" />
     </ProseP>
   </div>
 
   <!-- ปุ่ม -->
   <div class="flex justify-center my-5">
+    <nuxt-link to="/fabric-specification" class="flex justify-center">
     <UButton
-    
+      icon="lucide:shirt"
       class="relative inline-flex rounded-lg px-4 py-2 text-white text-sm sm:text-base md:text-lg bg-primary hover:bg-primary-50 cursor-pointer"
     >
       เนื้อผ้าและคุณสมบัติ
     </UButton>
+    </nuxt-link>
   </div>
 </template>

@@ -7,7 +7,7 @@ import ProseP from "./ProseP.vue";
 <template>
   <div class="px-4 py-6 sm:px-8 md:px-16 lg:px-[4.6rem] lg:py-[3rem]">
     <ProseH1
-      class=" text-primary text-2xl sm:text-3xl md:text-4xl font-bold text-center p-4 sm:p-5 mb-6 sm:mb-10"
+      class=" text-primary text-3xl sm:text-3xl md:text-4xl font-bold text-center p-4 sm:p-5 mb-6 sm:mb-10"
     >
       <slot name="title" mdc-unwrap="p" />
     </ProseH1>
