@@ -19,8 +19,10 @@
 			<slot v-if="$slots.description" name="description" mdc-unwrap="p" />
 		</ProseP>
 
-		<Vue3Marquee class="rounded-xl" :duration="40">
-			<img v-for="img in imgs" :key="img" :src="img" class="max-h-[17rem] object-cover" />
-		</Vue3Marquee>
+		<ClientOnly>
+			<Vue3Marquee class="rounded-xl" :duration="40">
+				<img v-for="img in imgs" :key="img" :src="img" class="max-h-[17rem] object-cover" />
+			</Vue3Marquee>
+		</ClientOnly>
 	</div>
 </template>
