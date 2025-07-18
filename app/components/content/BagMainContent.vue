@@ -5,7 +5,7 @@ import ProseP from "./ProseP.vue";
 </script>
 
 <template>
-      <div class="flex justify-center text-center">
+      <div class="flex justify-center text-center mb-0">
     <ProseH1 class="text-4xl text-primary font-bold"
       ><slot mdc-unwrap="p" name="title-h1"
     /></ProseH1>
