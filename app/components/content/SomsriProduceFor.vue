@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-2 gap-5 px-[4.6rem] py-[3rem]">
+	<div class="grid grid-cols-2 gap-5">
 		<div>
 			<h2 class="text-primary text-6xl leading-none font-bold">
 				<slot name="title" mdc-unwrap="p" />
