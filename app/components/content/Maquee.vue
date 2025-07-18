@@ -9,7 +9,11 @@
 </script>
 
 <template>
-	<Vue3Marquee class="rounded-xl flex" :duration="props.duration">
-		<slot />
-	</Vue3Marquee>
+	<div>
+		<ClientOnly>
+			<Vue3Marquee class="rounded-xl flex" :duration="props.duration">
+				<slot />
+			</Vue3Marquee>
+		</ClientOnly>
+	</div>
 </template>

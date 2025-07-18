@@ -42,3 +42,8 @@
 		alt: "สมศรีมีเสื้อ",
 	})
 </script>
+<template>
+	<div v-if="$slots.default">
+		<slot />
+	</div>
+</template>

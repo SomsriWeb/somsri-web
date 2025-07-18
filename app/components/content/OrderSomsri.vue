@@ -4,10 +4,7 @@
 		titleTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p"
 		descriptionTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p"
 	}
-	const { titleTag, descriptionTag } = withDefaults(defineProps<Props>(), {
-		titleTag: "p",
-		descriptionTag: "p",
-	})
+	const { titleTag = "p", descriptionTag = "p" } = defineProps<Props>()
 </script>
 <template>
 	<div>
