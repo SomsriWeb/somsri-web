@@ -12,8 +12,13 @@
 </script>
 
 <template>
-	<Container class="grid grid-cols-6 gap-5 bg-primary">
-		<component :is="titleAsTag" class="font-bold text-white text-4xl leading-none"
+	<Container
+		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 bg-primary"
+		no-space
+	>
+		<component
+			:is="titleAsTag"
+			class="sm:col-span-2 md:col-span-3 lg:col-span-1 font-bold text-white text-4xl leading-none"
 			><slot name="title" mdc-unwrap="p"
 		/></component>
 

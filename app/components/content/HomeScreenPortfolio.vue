@@ -12,12 +12,26 @@
 			delay: 2500,
 			disableOnInteraction: false,
 		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			640: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+			1280: {
+				slidesPerView: 4,
+			},
+		},
 	})
 </script>
 
 <template>
-	<div class="px-[4.6rem] py-[3rem]">
-		<h2 class="text-primary text-[4rem] leading-none font-bold">
+	<div>
+		<h2 class="text-primary text-[2.5rem] md:text-[4rem] leading-none font-bold">
 			<slot name="title" mdc-unwrap="p" />
 		</h2>
 		<p class="text-stone-500 font-light text-xl mb-5">

@@ -30,4 +30,17 @@ h6 {
     --color-primary-800: oklch(15.489% 0.03838 4.7867);
     --color-primary-900: oklch(0% 0 none);
     --color-primary-950: oklch(0% 0 none);
+
+    --color-line: oklch(72.44% 0.205 148.63);
+    --color-line-50: oklch(96.82% 0.051 150.36);
+    --color-line-100: oklch(93.6% 0.109 149.74);
+    --color-line-200: oklch(87.06% 0.246 148.69);
+    --color-line-300: oklch(82.09% 0.232 148.66);
+    --color-line-400: oklch(77.03% 0.218 148.64);
+    --color-line-500: oklch(72.44% 0.205 148.63);
+    --color-line-600: oklch(60.21% 0.17 148.73);
+    --color-line-700: oklch(48.51% 0.137 148.63);
+    --color-line-800: oklch(36.69% 0.104 148.49);
+    --color-line-900: oklch(25.22% 0.072 148.44);
+    --color-line-950: oklch(19.39% 0.055 149.03);
 }

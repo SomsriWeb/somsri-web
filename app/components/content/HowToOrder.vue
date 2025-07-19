@@ -14,18 +14,31 @@
 	<div>
 		<component
 			:is="titleAsTag"
-			class="font-bold text-6xl leading-none text-primary font-stretch-condensed"
+			v-if="$slots.title"
+			class="font-bold text-4xl lg:text-6xl leading-none text-primary font-stretch-condensed"
 		>
 			<slot name="title" mdc-unwrap="p" />
 		</component>
-		<div class="grid grid-cols-4 gap-5">
-			<div v-for="item in data" :key="item.label" class="flex flex-col justify-center">
-				<ProseImg v-if="item.image" :src="item.image" :alt="item.label" />
-				<p
-					class="font-bold font-stretch-condensed text-xl text-white leading-none text-center mt-3"
-				>
-					{{ item.label }}
-				</p>
+		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
+			<div v-for="(item, index) in data" :key="item.label" class="flex flex-col items-center">
+				<ProseImg
+					v-if="item.image"
+					class="max-w-[3rem] md:max-w-[5rem]"
+					:src="item.image"
+					:alt="item.label"
+				/>
+				<div class="flex items-start mt-3">
+					<p
+						class="font-bold font-stretch-condensed text-md md:text-xl bg-primary aspect-square w-5 h-5 flex items-center justify-center rounded-full text-white mr-2"
+					>
+						{{ index + 1 }}
+					</p>
+					<p
+						class="font-bold font-stretch-condensed text-primary text-md md:text-xl leading-none text-center"
+					>
+						{{ item.label }}
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
