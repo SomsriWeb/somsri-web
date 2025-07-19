@@ -201,6 +201,15 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+    mask: defineCollection({
+			type: "data",
+			source: "data/mask/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+  		}),
+		}),
+
 		whyChooseSomsri: defineCollection({
 			type: "data",
 			source: "data/why-choose-somsri/**.json",
