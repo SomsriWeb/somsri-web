@@ -14,10 +14,9 @@
 	<div>
 		<component
 			:is="titleAsTag"
-			v-if="$slots.title"
 			class="font-bold text-4xl lg:text-6xl leading-none text-primary font-stretch-condensed"
 		>
-			<slot name="title" mdc-unwrap="p" />
+			<slot name="title" mdc-unwrap="p">ขั้นตอนการสั่งผลิต</slot>
 		</component>
 		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
 			<div v-for="(item, index) in data" :key="item.label" class="flex flex-col items-center">
@@ -33,13 +32,24 @@
 					>
 						{{ index + 1 }}
 					</p>
-					<p
-						class="font-bold font-stretch-condensed text-primary text-md md:text-xl leading-none text-center"
-					>
-						{{ item.label }}
-					</p>
+					<div>
+						<p
+							class="font-bold font-stretch-condensed text-primary text-md md:text-xl leading-none text-center"
+						>
+							{{ item.label }}
+						</p>
+						<p
+							v-if="item.description"
+							class="text-primary text-xs leading-none text-center"
+						>
+							{{ item.description }}
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<ProseP class="!text-primary font-stretch-condensed !font-bold text-center text-xl mt-5"
+			>**ทางเรามีบริการ QC & Pack อย่างดี รับประกันคุณภาพสูง**
+		</ProseP>
 	</div>
 </template>
