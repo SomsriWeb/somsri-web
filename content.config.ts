@@ -233,5 +233,15 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+
+		hatStyles: defineCollection({
+			type: "data",
+			source: "data/hat-styles/**.json",
+			schema: z.object({
+				image: z.string(),
+				label: z.string(),
+				order: z.number(),
+			}),
+		}),
 	},
 })
