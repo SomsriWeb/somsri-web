@@ -216,6 +216,18 @@ export default defineContentConfig({
 			source: "data/how-to-order/**.json",
 			schema: z.object({
 				label: z.string(),
+				description: z.string().optional(),
+				icon: z.string().nullable().optional(),
+				image: z.string().nullable().optional(),
+				order: z.number(),
+			}),
+		}),
+
+		whatCostSaving: defineCollection({
+			type: "data",
+			source: "data/what-cost-saving/**.json",
+			schema: z.object({
+				label: z.string(),
 				icon: z.string().nullable().optional(),
 				image: z.string().nullable().optional(),
 				order: z.number(),

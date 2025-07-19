@@ -44,6 +44,7 @@
 </script>
 <template>
 	<div v-if="$slots.default">
+		<div class="max-w-[20rem]" />
 		<slot />
 	</div>
 </template>

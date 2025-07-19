@@ -6,19 +6,19 @@
 	const { titleAsTag = "h2" } = defineProps<Props>()
 
 	// VARIABLE
-	const { data } = await useAsyncData("why-choose-somsri", () =>
-		queryCollection("whyChooseSomsri").order("order", "ASC").all()
+	const { data } = await useAsyncData("what-cost-saving", () =>
+		queryCollection("whatCostSaving").order("order", "ASC").all()
 	)
 </script>
 
 <template>
 	<Container
-		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 bg-primary"
+		class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 bg-primary"
 		no-space
 	>
 		<component
 			:is="titleAsTag"
-			class="sm:col-span-2 md:col-span-3 lg:col-span-1 font-bold text-white text-4xl leading-none"
+			class="sm:col-span-2 md:col-span-full lg:col-span-1 font-bold text-white text-4xl leading-none"
 			><slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot></component
 		>
 
