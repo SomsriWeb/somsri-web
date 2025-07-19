@@ -1,0 +1,128 @@
+::landing-page-header-style-two{image="/brand-uniform/banner.png"}
+#title
+รับสกรีนเสื้อ
+
+#description
+ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
+
+#default
+    ::description-pills{:slot="2" color="white"}
+    #slot-1
+    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
+
+    #slot-2
+    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
+    ::
+::
+
+::container
+    ::somsri-produce-for
+    #title
+    Our customers
+
+    #description
+    สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
+    ::
+
+    ::home-screen-portfolio
+    #title
+    ตัวอย่างงานสกรีน
+    ::
+
+    ::div-center
+        ::line-link
+            ::line-button
+            สอบถามเพิ่มเติม
+            ::
+        ::
+    ::
+
+## ชนิดผ้าและราคาเสื้อสำหรับสกรีน
+
+    ::slider{:items="2" :slidesPerView="2"}
+    #item-1
+    <ProseImg src="/produce-tshirt/price-chart-cotton-100.png" />
+
+    #item-2
+    <ProseImg src="/produce-tshirt/price-chart-cotton-comb-32.png" />
+    ::
+
+<ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>
+
+## ตารางขนาดสกรีน
+
+    ::slider{:items="7"}
+    #item-1
+    <ProseImg src="/produce-tshirt/screen-size-1.png" />
+
+    #item-2
+    <ProseImg src="/produce-tshirt/screen-size-2.png" />
+
+    #item-3
+    <ProseImg src="/produce-tshirt/screen-size-3.png" />
+
+    #item-4
+    <ProseImg src="/produce-tshirt/screen-size-4.png" />
+    
+    #item-5
+    <ProseImg src="/produce-tshirt/screen-size-5.png" />
+
+    #item-6
+    <ProseImg src="/produce-tshirt/screen-size-6.png" />
+
+    #item-7
+    <ProseImg src="/produce-tshirt/screen-size-7.png" />
+    ::
+
+## ราคางานสกรีน
+
+    ::title-with-description
+    #title
+    ### 1. สกรีนธรรมดา (Silk Screen)
+
+    #description
+    ราคา สีและจุดแรก 10 บาท สีและจุดถัดไป 5 บาท
+    ::
+
+    ::landing-page-slik-screen
+    ::
+
+    ::title-with-description
+    #title
+    ### 2. สกรีนเม็ดสี
+
+    #description
+    ราคา 45 บาท/จุด
+    ::
+
+    ::landing-page-color-screen
+    ::
+
+    ::landing-page-other-screen
+    ::
+::
+
+::why-choose-somsri
+#title
+เลือก Somsri แล้วดียังไง?
+::
+
+::container
+    ::how-to-order
+    #title
+    ขั้นตอนการสั่งซื้อ
+    ::
+::
+
+::what-cost-saving
+
+::
+
+
+::div-center
+        ::line-link
+            ::line-button
+            สอบถามเพิ่มเติม
+            ::
+        ::
+::
