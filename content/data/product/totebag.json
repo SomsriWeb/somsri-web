@@ -1,6 +1,7 @@
 {
     "name": "กระเป๋า",
-    "image": "/product/totebag.jpg",
+    "image": "/product-type/totebag.jpg",
     "url": "/totebag",
+    "featured": true,
     "order": 4
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	const { data: products } = await useAsyncData("data-products", () => {
-		return queryCollection("product").order("order", "ASC").all()
+		return queryCollection("product").where("featured", "=", true).order("order", "ASC").all()
 	})
 </script>
 

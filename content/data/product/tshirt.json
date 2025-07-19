@@ -1,6 +1,7 @@
 {
     "name": "เสื้อยืด",
-    "image": "/product/tshirt.jpg",
+    "image": "/product-type/tshirt.jpg",
     "url": "/tshirt",
+    "featured": true,
     "order": 1
 }

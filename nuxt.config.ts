@@ -112,4 +112,6 @@ export default defineNuxtConfig({
 	routeRules: {
 		"/design": { ssr: false },
 	},
+
+	compatibilityDate: "2025-07-19",
 })

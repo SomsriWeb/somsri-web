@@ -1,6 +1,7 @@
 {
     "name": "หน้ากาก",
-    "image": "/product/mask.png",
+    "image": "/product-type/mask.png",
     "url": "/mask",
+    "featured": true,
     "order": 5
 }
