@@ -10,9 +10,9 @@
 <template>
 	<div>
 		<header>
-			<NuxtImg
+			<ProseImg
 				:src="image"
-				class="w-screen h-screen object-cover"
+				class="!w-screen !h-screen object-cover"
 				placeholder
 				format="webp"
 			/>
@@ -21,14 +21,24 @@
 				<component :is="titleAsTag" class="font-bold text-6xl leading-none"
 					><slot name="title" mdc-unwrap="p"
 				/></component>
-				<p class="font-bold text-xl mb-3">
+				<p v-if="$slots.secondaryTitle" class="font-bold text-xl mt-3">
 					<slot name="secondary-title" mdc-unwrap="p" />
 				</p>
-				<p class="font-light text-xl mb-3" name="description" mdc-unwrap="p">
+				<p
+					v-if="$slots.description"
+					class="font-light text-xl mt-3"
+					name="description"
+					mdc-unwrap="p"
+				>
 					<slot name="description" mdc-unwrap="p" />
 				</p>
+
+				<div v-if="$slots.default" class="mt-5">
+					<slot />
+				</div>
+
 				<LineLink>
-					<UButton>ปรึกษาฟรี</UButton>
+					<UButton class="mt-5">ปรึกษาฟรี</UButton>
 				</LineLink>
 			</div>
 		</header>

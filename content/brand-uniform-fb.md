@@ -1,15 +1,18 @@
-::landing-page-header-style-two
----
-image: /produce-tshirt/banner.png
----
+::landing-page-header-style-two{image="/brand-uniform/banner.png"}
 #title
-รับผลิตเสื้อ
-
-#secondary-title
-เกรดพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
+รับสกรีนเสื้อ
 
 #description
-ผลิตเสื้อทุกประเภท พร้อมบริการสกรีนเสื้อ ปักโลโก้ ออกแบบลายเสื้อ ตามความต้องการ วัสดุผ้าคุณภาพดีหลากหลาย ราคาส่งจากโรงงาน ผลิตเอง บริการรวดเร็ว ตรงเวลา
+ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
+
+#default
+    ::description-pills{:slot="2" color="white"}
+    #slot-1
+    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
+
+    #slot-2
+    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
+    ::
 ::
 
 ::container
@@ -20,17 +23,10 @@ image: /produce-tshirt/banner.png
     #description
     สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
     ::
-::
 
-::why-choose-somsri
-#title
-เลือก Somsri แล้วดียังไง?
-::
-
-::container
-    ::how-to-order
+    ::home-screen-portfolio
     #title
-    ขั้นตอนการสั่งซื้อ
+    ตัวอย่างงานสกรีน
     ::
 
     ::div-center
@@ -40,8 +36,8 @@ image: /produce-tshirt/banner.png
             ::
         ::
     ::
-    
-## ชนิดผ้าและราคาเสื้อ
+
+## ชนิดผ้าและราคาเสื้อสำหรับสกรีน
 
     ::slider{:items="2" :slidesPerView="2"}
     #item-1
@@ -104,50 +100,29 @@ image: /produce-tshirt/banner.png
 
     ::landing-page-other-screen
     ::
+::
 
-## ราคางานปัก
-    
-    ::landing-page-pin
+::why-choose-somsri
+#title
+เลือก Somsri แล้วดียังไง?
+::
+
+::container
+    ::how-to-order
+    #title
+    ขั้นตอนการสั่งซื้อ
     ::
+::
 
-## ราคางาน Sublimation
-    
-    ::landing-page-sublimation-price
-    ::
+::what-cost-saving
 
-    ::div-center
+::
+
+
+::div-center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
             ::
         ::
-    ::
-
-    ::home-screen-portfolio
-    #title
-    ตัวอย่างงานสกรีน
-    ::
-
-    ::home-pin-portfolio
-    #title
-    ตัวอย่างงานปัก
-    ::
-
-<ProseH2 class="text-[2.5rem] md:text-[4rem]">ตัวอย่างงาน Sublimation</ProseH2>
-
-    ::slider{:items="2"}
-    #item-1
-    <ProseImg src="/produce-tshirt/sublimation-port-1.png" />
-
-    #item-2
-    <ProseImg src="/produce-tshirt/sublimation-port-2.png" />
-    ::
-
-    ::div-center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
 ::
