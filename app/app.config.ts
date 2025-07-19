@@ -39,7 +39,7 @@ export default defineAppConfig({
 					info: "",
 					warning: "",
 					error: "",
-					neutral: "!bg-white !text-black",
+					neutral: "",
 					line: "",
 				},
 				variant: {
@@ -178,12 +178,12 @@ export default defineAppConfig({
 				{
 					color: "neutral",
 					variant: "solid",
-					class: "text-inverted bg-inverted hover:bg-inverted/90 disabled:bg-inverted aria-disabled:bg-inverted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inverted",
+					class: "text-primary bg-white hover:bg-white/90 disabled:bg-white aria-disabled:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white",
 				},
 				{
 					color: "neutral",
 					variant: "outline",
-					class: "ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted",
+					class: "ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-white",
 				},
 				{
 					color: "neutral",
@@ -193,7 +193,7 @@ export default defineAppConfig({
 				{
 					color: "neutral",
 					variant: "subtle",
-					class: "ring ring-inset ring-accented text-default bg-elevated hover:bg-accented/75 disabled:bg-elevated aria-disabled:bg-elevated focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted",
+					class: "ring ring-inset ring-accented text-default bg-elevated hover:bg-accented/75 disabled:bg-elevated aria-disabled:bg-elevated focus:outline-none focus-visible:ring-2 focus-visible:ring-white",
 				},
 				{
 					color: "neutral",
@@ -203,7 +203,7 @@ export default defineAppConfig({
 				{
 					color: "neutral",
 					variant: "link",
-					class: "text-muted hover:text-default disabled:text-muted aria-disabled:text-muted focus:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-inverted",
+					class: "text-muted hover:text-default disabled:text-muted aria-disabled:text-muted focus:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-white",
 				},
 				{
 					size: "xs",
