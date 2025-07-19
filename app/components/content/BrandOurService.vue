@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import ProseH1 from './ProseH1.vue';
+import ProseP from './ProseP.vue';
+
 const { data: databrand } = await useAsyncData(`databrand`, () => {
   return queryCollection("brandService").order("order", "ASC").all();
 });
@@ -22,10 +25,10 @@ const { data: databrand } = await useAsyncData(`databrand`, () => {
             class="w-full h-full object-cover"
           />
         </div>
-        <h1 class="text-base sm:text-lg font-semibold text-primary mt-3">
+        <ProseH1 class="text-base sm:text-lg font-semibold text-primary mt-3">
           {{ item.name }}
-        </h1>
-        <p class="text-sm text-primary mt-1">• {{ item.method }}</p>
+        </ProseH1>
+        <ProseP class="text-sm text-primary mt-1">• {{ item.method }}</ProseP>
       </div>
     </div>
   </div>

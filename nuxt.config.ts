@@ -63,9 +63,6 @@ export default defineNuxtConfig({
 	},
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
-	future: {
-		compatibilityVersion: 4,
-	},
 	watch: ["content/**"],
 	fonts: {
 		families: [

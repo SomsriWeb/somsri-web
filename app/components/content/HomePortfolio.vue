@@ -11,16 +11,18 @@
 </script>
 
 <template>
-	<div class="px-[4.6rem] py-[3rem]">
-		<h2 class="text-primary text-[4rem] leading-none font-bold">
-			<slot name="title" mdc-unwrap="p" />
-		</h2>
-		<p class="text-stone-500 font-light text-xl mb-5">
-			<slot name="description" mdc-unwrap="p" />
-		</p>
+	<div>
+		<ProseH2 class="text-primary text-3xl lg:text-[4rem] leading-none font-bold">
+			<slot v-if="$slots.title" name="title" mdc-unwrap="p" />
+		</ProseH2>
+		<ProseP class="text-stone-500 font-light text-xl mb-5">
+			<slot v-if="$slots.description" name="description" mdc-unwrap="p" />
+		</ProseP>
 
-		<Vue3Marquee class="rounded-xl" :duration="40">
-			<img v-for="img in imgs" :key="img" :src="img" class="max-h-[17rem] object-cover" />
-		</Vue3Marquee>
+		<ClientOnly>
+			<Vue3Marquee class="rounded-xl" :duration="40">
+				<img v-for="img in imgs" :key="img" :src="img" class="max-h-[17rem] object-cover" />
+			</Vue3Marquee>
+		</ClientOnly>
 	</div>
 </template>
