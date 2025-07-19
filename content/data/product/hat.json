@@ -1,6 +1,7 @@
 {
     "name": "หมวก",
-    "image": "/product/hat.png",
+    "image": "/product-type/hat.png",
     "url": "/hat",
+    "featured": true,
     "order": 6
 }

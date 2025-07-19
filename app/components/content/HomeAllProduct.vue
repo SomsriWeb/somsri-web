@@ -1,11 +1,11 @@
 <script setup lang="ts">
 	const { data: products } = await useAsyncData("data-products", () => {
-		return queryCollection("product").order("order", "ASC").all()
+		return queryCollection("product").where("featured", "=", true).order("order", "ASC").all()
 	})
 </script>
 
 <template>
-	<div class="px-[4.6rem] py-[3rem]">
+	<div>
 		<h2 class="text-primary text-[4rem] leading-none font-bold">
 			<slot name="title" mdc-unwrap="p" />
 		</h2>

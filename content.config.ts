@@ -38,6 +38,7 @@ export default defineContentConfig({
 				name: z.string(),
 				image: z.string(),
 				url: z.string(),
+				featured: z.boolean().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -191,23 +192,13 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
-		productType: defineCollection({
-			type: "data",
-			source: "data/product-type/**.json",
-			schema: z.object({
-				name: z.string(),
-				image: z.string(),
-				url: z.string(),
-				order: z.number(),
-			}),
-		}),
-    mask: defineCollection({
+		mask: defineCollection({
 			type: "data",
 			source: "data/mask/**.json",
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
-  		}),
+			}),
 		}),
 
 		whyChooseSomsri: defineCollection({

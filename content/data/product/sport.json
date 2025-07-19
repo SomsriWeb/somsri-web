@@ -1,6 +1,7 @@
 {
     "name": "เสื้อกีฬา",
-    "image": "/product/sport.png",
+    "image": "/product-type/sport.png",
     "url": "/sport",
+    "featured": true,
     "order": 3
 }

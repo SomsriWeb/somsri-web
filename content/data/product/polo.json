@@ -1,6 +1,7 @@
 {
     "name": "เสื้อโปโล",
-    "image": "/product/polo.jpg",
+    "image": "/product-type/polo.jpg",
     "url": "/polo",
+    "featured": true,
     "order": 2
 }
