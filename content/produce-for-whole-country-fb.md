@@ -1,4 +1,4 @@
-::produce-tshirt-header
+::landing-page-header-style-two
 ---
 image: /produce-tshirt/banner.png
 ---
