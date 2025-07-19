@@ -1,7 +1,7 @@
 <template>
-	<div class="grid grid-cols-2 gap-5">
+	<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 		<div>
-			<h2 class="text-primary text-6xl leading-none font-bold">
+			<h2 class="text-primary text-5xl md:text-6xl leading-none font-bold">
 				<slot name="title" mdc-unwrap="p" />
 			</h2>
 			<p class="text-stone-500 font-light text-xl">

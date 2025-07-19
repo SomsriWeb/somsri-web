@@ -40,6 +40,7 @@ export default defineAppConfig({
 					warning: "",
 					error: "",
 					neutral: "!bg-white !text-black",
+					line: "",
 				},
 				variant: {
 					solid: "",
@@ -109,6 +110,7 @@ export default defineAppConfig({
 				},
 			},
 			compoundVariants: [
+				// PRIMARY
 				{
 					color: "primary",
 					variant: "solid",
@@ -139,6 +141,40 @@ export default defineAppConfig({
 					variant: "link",
 					class: "text-primary hover:text-primary/75 disabled:text-primary aria-disabled:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary",
 				},
+
+				//LINE
+				{
+					color: "line",
+					variant: "solid",
+					class: "text-inverted bg-line hover:bg-line/75 disabled:bg-line aria-disabled:bg-line focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-line",
+				},
+				{
+					color: "line",
+					variant: "outline",
+					class: "ring ring-inset ring-line/50 text-line hover:bg-line/10 disabled:bg-transparent aria-disabled:bg-transparent dark:disabled:bg-transparent dark:aria-disabled:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-line",
+				},
+				{
+					color: "line",
+					variant: "soft",
+					class: "text-line bg-line/10 hover:bg-line/15 focus:outline-none focus-visible:bg-line/15 disabled:bg-line/10 aria-disabled:bg-line/10",
+				},
+				{
+					color: "line",
+					variant: "subtle",
+					class: "text-line ring ring-inset ring-line/25 bg-line/10 hover:bg-line/15 disabled:bg-line/10 aria-disabled:bg-line/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-line",
+				},
+				{
+					color: "line",
+					variant: "ghost",
+					class: "text-line hover:bg-line/10 focus:outline-none focus-visible:bg-line/10 disabled:bg-transparent aria-disabled:bg-transparent dark:disabled:bg-transparent dark:aria-disabled:bg-transparent",
+				},
+				{
+					color: "line",
+					variant: "link",
+					class: "text-line hover:text-line/75 disabled:text-line aria-disabled:text-line focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-line",
+				},
+
+				// NEUTRAL
 				{
 					color: "neutral",
 					variant: "solid",
