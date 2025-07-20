@@ -28,5 +28,7 @@
 				<ProseP class="!text-white text-center">16in x 16in (สายยาว 22 นิ้ว)</ProseP>
 			</div>
 		</div>
+
+		<slot v-if="$slots.footer" name="footer" />
 	</Container>
 </template>
