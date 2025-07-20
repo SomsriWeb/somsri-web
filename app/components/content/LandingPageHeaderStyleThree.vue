@@ -8,7 +8,7 @@
 </script>
 
 <template>
-	<Container class="bg-primary w-screen grid grid-cols-1 lg:grid-cols-2 gap-5">
+	<Container class="bg-primary grid grid-cols-1 lg:grid-cols-2 gap-5">
 		<div class="text-white">
 			<component
 				:is="titleAsTag"
