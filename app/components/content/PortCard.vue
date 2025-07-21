@@ -31,7 +31,7 @@ const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
         </div>
 
         <!-- Text -->
-        <span class="text-base sm:text-lg font-semibold text-primary mt-3">
+        <span class=" text-base sm:text-lg font-semibold text-primary mt-3">
           {{ item.name }}
         </span>
         <p class="text-sm text-primary mt-1">• {{ item.method }}</p>
