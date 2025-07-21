@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 COPY package.json ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
-RUN bun install --ignore-scripts
+RUN bun install --frozen-lockfile --ignore-scripts
 
 # Copy the entire project
 COPY . .
