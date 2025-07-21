@@ -1,5 +1,6 @@
 <script setup lang="ts">
 	import type { FabricsCollectionItem } from "@nuxt/content"
+	import FabricButtonContent from "./FabricButtonContent.vue"
 
 	// PROPS
 	interface Props {
