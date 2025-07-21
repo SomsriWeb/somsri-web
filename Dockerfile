@@ -14,7 +14,7 @@ RUN npm rebuild --arch=x64 --platform=linux --libc=glibc sharp
 # Copy the entire project
 COPY . .
 
-RUN pnpm run build
+RUN npm run build
 
 # run the app
 EXPOSE 3000
