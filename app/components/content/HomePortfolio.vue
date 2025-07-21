@@ -21,7 +21,12 @@
 
 		<ClientOnly>
 			<Vue3Marquee class="rounded-xl" :duration="40">
-				<img v-for="img in imgs" :key="img" :src="img" class="max-h-[17rem] object-cover" />
+				<ProseImg
+					v-for="img in imgs"
+					:key="img"
+					:src="img"
+					class="max-h-[17rem] object-cover"
+				/>
 			</Vue3Marquee>
 		</ClientOnly>
 	</div>

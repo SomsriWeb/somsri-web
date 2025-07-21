@@ -11,7 +11,7 @@ activeNavbar: true
 เกี่ยวกับเรา
 
 #image-banner
-<img src="/about/whoarewe.jpg" alt="รูปHeader" class="w-full h-auto rounded-2xl shadow-md"  />
+<ProseImg src="/about/whoarewe.jpg" alt="รูปHeader" class="rounded-2xl shadow-md"  />
 
 #description-text
 บริษัท สมศรีการ์เมนท์จํากัด หรือ สมศรีมีเสื้อ คือบริษัทธุรกิจผลิตสิ่งทอทุกชนิด ซึ่งเริ่มก่อตั้งขึ้นโดย นายธนพล อรุณศิริ (กรรมการบริหาร) ในปี 2017 - จนถึงปัจจุบัน โดยเรามียอดสั่งซื้อมากมายจากลูกค้าทั้งในและนอกประเทศ สิ่งที่เราต้องการไม่ใช่เพียงการผลิตสินค้าและส่งถึงมือลูกค้าเท่านั้น แต่เราต้องการส่งมอบความสุข และการบริการที่มีคุณภาพแก่ลูกค้าของเราทุกท่าน ถึงในปัจจุบันเราจะเป็นองค์กรขนาดเล็ก แต่เรามั่นใจว่าเรากำลังจะเติบโตไปเป็นองค์กรขนาดใหญ่ พร้อมเป้าหมายสู่การเป็น E-commerce ที่รับผลิตเสื้อเพื่อให้การสั่งผลิตเสื้อของเราง่ายที่สุด เร็วที่สุด และมีประสิทธิภาพสูงสุดดั่งสโลแกนของเรา
@@ -23,7 +23,7 @@ activeNavbar: true
 SOMSRI มีที่มา
 
 #image-banner
-<img src="/about/core.jpg" alt="รูปHeader" class="w-full h-auto rounded-2xl shadow-md" />
+<ProseImg src="/about/core.jpg" alt="รูปHeader" class="rounded-2xl shadow-md" />
 
 #describetion-list
 - • **S** Standard = มีมาตรฐาน
@@ -78,7 +78,7 @@ action-link: https://www.ssgm.co.th/
 
 ::about-header
 #image-banner
-<img src="/about/readmore-webp.jpg" alt="รูปHeader" class="w-full h-auto rounded-2xl shadow-md"  />
+<ProseImg src="/about/readmore-webp.jpg" alt="รูปHeader" class="rounded-2xl shadow-md" />
 ::
 
 ::

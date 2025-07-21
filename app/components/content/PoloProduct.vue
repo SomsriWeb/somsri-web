@@ -13,7 +13,7 @@
 				:key="index"
 				class="flex flex-col items-center pb-10"
 			>
-				<img :src="item.image" :alt="item.name" class="w-full max-w-[25rem]" />
+				<ProseImg :src="item.image" :alt="item.name" class="max-w-[25rem]" />
 			</div>
 		</div>
 

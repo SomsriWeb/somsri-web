@@ -38,6 +38,7 @@
 		:alt="props.alt"
 		:width="props.width"
 		:height="props.height"
+		format="webp"
 		placeholder
 		:loading="props.lazy ? 'lazy' : 'eager'"
 	/>

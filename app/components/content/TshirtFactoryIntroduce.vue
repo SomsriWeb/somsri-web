@@ -4,6 +4,6 @@
 			<p class="text-4xl font-bold text-primary"><slot name="title" mdc-unwrap="p" /></p>
 			<ProseP class="text-lg"><slot name="description" mdc-unwrap="p" /></ProseP>
 		</div>
-		<img src="/tshirt-factory/introduce.png" />
+		<ProseImg src="/tshirt-factory/introduce.png" />
 	</div>
 </template>

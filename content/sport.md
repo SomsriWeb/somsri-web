@@ -32,7 +32,7 @@ activeNavbar: true
 
 ::sport
 #image
-<img src="/sport/technique-unsmushed.png" alt="รูปHeader" class="max-w-[40rem]" />
+<ProseImg src="/sport/technique-unsmushed.png" alt="รูปHeader" class="max-w-[40rem]" />
 
 #sub-title-text
 ราคาเสื้อยืดรวมสกรีน

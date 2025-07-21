@@ -14,9 +14,9 @@
 
 		<ClientOnly>
 			<Vue3Marquee :duration="50" class="rounded-xl">
-				<img src="/somsri-collaborators/brand-1.png" alt="brand" />
-				<img src="/somsri-collaborators/brand-2.png" alt="brand" />
-				<img src="/somsri-collaborators/brand-3.png" alt="brand" />
+				<ProseImg src="/somsri-collaborators/brand-1.png" alt="brand" />
+				<ProseImg src="/somsri-collaborators/brand-2.png" alt="brand" />
+				<ProseImg src="/somsri-collaborators/brand-3.png" alt="brand" />
 			</Vue3Marquee>
 		</ClientOnly>
 	</div>

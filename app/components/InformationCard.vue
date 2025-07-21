@@ -18,7 +18,7 @@
 </script>
 <template>
 	<div class="relative rounded-xl overflow-hidden bg-stone-100 p-5 h-full">
-		<img :src="image" alt="" class="max-w-[50px] mb-3" />
+		<ProseImg :src="image" alt="" class="max-w-[50px] mb-3" />
 		<h3 class="text-black text-2xl font-bold leading-7 mb-3">{{ title }}</h3>
 		<p class="text-lg text-stone-500 font-light">{{ description }}</p>
 		<UButton

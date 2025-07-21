@@ -106,7 +106,7 @@
 			@click="turnLeft()"
 		/>
 		<div class="relative flex justify-center">
-			<img
+			<ProseImg
 				ref="imgEl"
 				:src="img"
 				class="absolute max-w-96 max-h-[27rem]"

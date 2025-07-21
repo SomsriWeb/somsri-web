@@ -10,7 +10,7 @@
 <template>
 	<div>
 		<ProseH2 size="sm" class="mb-2 text-center">{{ priceData.name }}</ProseH2>
-		<img :src="priceData.imageUrl" :alt="priceData.name" class="w-full mb-2" />
+		<ProseImg :src="priceData.imageUrl" :alt="priceData.name" class="mb-2" />
 		<ul class="list-disc list-inside">
 			<li
 				v-for="condition in priceData.conditions"

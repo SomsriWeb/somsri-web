@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="bg-primary-600 flex justify-between items-center px-5 md:px-[4.6rem] py-2">
-			<img src="/footer/footer-logo.png" class="max-w-[3.5rem] sm:max-w-[10rem]" />
+			<ProseImg src="/footer/footer-logo.png" class="max-w-[3.5rem] sm:max-w-[10rem]" />
 			<div class="flex items-center gap-2 sm:gap-5">
 				<NuxtLink
 					v-for="socialMedia in socialMedias"
