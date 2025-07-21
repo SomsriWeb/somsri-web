@@ -8,13 +8,13 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY package.json ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
-RUN pnpm install --no-frozen-lockfile --ignore-scripts
+RUN yarn install --no-lockfile --ignore-scripts
 RUN npm rebuild --arch=x64 --platform=linux --libc=glibc sharp   
 
 # Copy the entire project
 COPY . .
 
-RUN npm run build
+RUN yarn run build
 
 # run the app
 EXPOSE 3000
