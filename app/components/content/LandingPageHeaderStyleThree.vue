@@ -35,9 +35,11 @@
 			</div>
 
 			<div class="mt-3 flex justify-center md:justify-start">
-				<LineLink>
-					<UButton color="neutral">ปรึกษาฟรี</UButton>
-				</LineLink>
+				<slot name="cta">
+					<LineLink>
+						<UButton color="neutral">ปรึกษาฟรี</UButton>
+					</LineLink>
+				</slot>
 			</div>
 		</div>
 		<ProseImg

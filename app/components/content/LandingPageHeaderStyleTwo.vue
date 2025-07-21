@@ -13,15 +13,17 @@
 			<ProseImg :src="image" class="!w-screen !h-screen object-cover" />
 			<div class="absolute inset-0 bg-black/30" />
 			<div class="absolute bottom-[3rem] px-5 md:px-[4.6rem] text-white">
-				<component :is="titleAsTag" class="font-bold text-6xl leading-none"
+				<component
+					:is="titleAsTag"
+					class="font-bold text-3xl sm:text-4xl lg:text-6xl leading-none"
 					><slot name="title" mdc-unwrap="p"
 				/></component>
-				<p v-if="$slots['secondary-title']" class="font-bold text-2xl">
+				<p v-if="$slots['secondary-title']" class="font-bold text-lg lg:text-2xl">
 					<slot name="secondary-title" mdc-unwrap="p" />
 				</p>
 				<p
 					v-if="$slots.description"
-					class="font-light text-2xl"
+					class="font-light text-lg lg:text-2xl"
 					name="description"
 					mdc-unwrap="p"
 				>
@@ -32,9 +34,13 @@
 					<slot />
 				</div>
 
-				<LineLink>
-					<UButton class="mt-5">ปรึกษาฟรี</UButton>
-				</LineLink>
+				<div class="mt-5">
+					<slot name="cta">
+						<LineLink>
+							<UButton>ปรึกษาฟรี</UButton>
+						</LineLink>
+					</slot>
+				</div>
 			</div>
 		</header>
 	</div>

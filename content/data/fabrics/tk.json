@@ -1,0 +1,17 @@
+{
+    "uid": "tk",
+    "image": "/fabrics/tk.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "ทีเค",
+    "labelEn": "TK",
+    "recommendForStyle": "เสื้อแบรนด์",
+    "advantage": [
+        "เนื้อผ้าแน่น ระบายอากาศดี",
+        "รีดง่าย ยับยาก",
+        "สีติดคงทน",
+        "ทนต่อการซัก"
+    ],
+    "disadvantage": []
+}

@@ -243,5 +243,47 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+
+		fabrics: defineCollection({
+			type: "data",
+			source: "data/fabrics/**",
+			schema: z.object({
+				uid: z.string(),
+				image: z.string(),
+				forProductType: z.array(z.string()),
+				labelTh: z.string(),
+				labelEn: z.string(),
+				recommendForStyle: z.string(),
+				advantage: z.array(z.string()),
+				disadvantage: z.array(z.string()),
+			}),
+		}),
+
+		priceLists: defineCollection({
+			type: "data",
+			source: "data/price/**.json",
+			schema: z.object({
+				id: z.string(),
+				productId: z.string(),
+				prices: z.array(
+					z.object({
+						id: z.string(),
+						fabricId: z.string(),
+						lists: z.array(
+							z.object({
+								minOrder: z.number(),
+								maxOrder: z.number().nullable(),
+								price: z.number().nullable(),
+								attributes: z.array(
+									z.object({
+										label: z.string(),
+									})
+								),
+							})
+						),
+					})
+				),
+			}),
+		}),
 	},
 })

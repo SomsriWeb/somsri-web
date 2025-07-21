@@ -1,0 +1,17 @@
+{
+    "uid": "cotton-semi",
+    "image": "/fabrics/cotton-semi.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "คอตตอนเซมิ",
+    "labelEn": "Cotton Semi",
+    "recommendForStyle": "เสื้อยืดทุกประเภท",
+    "advantage": [
+        "เนื้อผ้าหนา",
+        "ผิวสัมผัสปานกลาง",
+        "ยับยาก",
+        "ราคาไม่สูง"
+    ],
+    "disadvantage": []
+}

@@ -1,0 +1,534 @@
+{
+    "id": "tshirt-price",
+    "productId": "tshirt",
+    "prices": [
+        {
+            "id": "tshirt-cotton-semi",
+            "fabricId": "cotton-semi",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 122,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 118,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 112,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 108,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 100,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-cotton-comb-20",
+            "fabricId": "cotton-comb-20",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 142,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 138,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 132,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 128,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 120,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-cotton-comb-32",
+            "fabricId": "cotton-comb-32",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 132,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 128,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 122,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 118,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 110,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-supersoff-20",
+            "fabricId": "supersoff-20",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 178,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 170,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 165,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 162,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 158,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-supersoff-32",
+            "fabricId": "supersoff-32",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 178,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 170,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 165,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 162,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 158,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-tc",
+            "fabricId": "tc",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 95,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 90,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 85,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 80,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 75,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-tk",
+            "fabricId": "tk",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 95,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 90,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 85,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 80,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 75,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tshirt-microsport",
+            "fabricId": "microsport",
+            "lists": [
+                {
+                    "minOrder": 100,
+                    "maxOrder": 150,
+                    "price": 95,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 151,
+                    "maxOrder": 250,
+                    "price": 90,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 251,
+                    "maxOrder": 350,
+                    "price": 85,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 351,
+                    "maxOrder": 500,
+                    "price": 80,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 501,
+                    "maxOrder": 700,
+                    "price": 75,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                },
+                {
+                    "minOrder": 701,
+                    "maxOrder": null,
+                    "price": null,
+                    "attributes": [
+                        {
+                            "label": "ฟรี! สกรีน 1 จุด 1 สี"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
