@@ -11,16 +11,14 @@
 		throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true })
 	}
 
-	setPageLayout(page.value?.activeNavbar ? "color" : "default")
-
 	provide(LINE_LINK, page.value.lineLink)
 </script>
 
 <template>
 	<div v-if="page">
-		<UApp>
+		<NuxtLayout :name="page.activeNavbar ? 'color' : 'default'">
 			<Metadata :page="page" />
 			<ContentRenderer class="space-y-[2rem]" :value="page" />
-		</UApp>
+		</NuxtLayout>
 	</div>
 </template>
