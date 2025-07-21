@@ -1,0 +1,16 @@
+{
+    "uid": "microsport",
+    "image": "/fabrics/microsport.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "ไมโครสปอร์ต",
+    "labelEn": "Microsport",
+    "recommendForStyle": "เสื้อกีฬา",
+    "advantage": [
+        "ราคาไม่สูง",
+        "ผิวสัมผัสเนียนนุ่ม",
+        "ซับเหงื่อได้ดี"
+    ],
+    "disadvantage": []
+}

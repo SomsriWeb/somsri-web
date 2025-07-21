@@ -1,0 +1,17 @@
+{
+    "uid": "cotton-comb-20",
+    "image": "/fabrics/cotton-comb-20.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "คอตตอนคอมป์ 20",
+    "labelEn": "Cotton Comb 20",
+    "recommendForStyle": "เสื้อแบรนด์",
+    "advantage": [
+        "ใส่สบาย ไม่ร้อน",
+        "ไม่ยับง่าย",
+        "ระบายอากาศได้ดี",
+        "ไม่หด ไม่ย้วย"
+    ],
+    "disadvantage": []
+}

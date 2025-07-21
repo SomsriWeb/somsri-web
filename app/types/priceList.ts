@@ -6,3 +6,12 @@ export interface PriceList {
 		price: number | null
 	}[]
 }
+
+export interface PriceByFabricPriceList {
+	minOrder: number
+	maxOrder: number | null
+	price: number | null
+	attributes: {
+		label: string
+	}[]
+}

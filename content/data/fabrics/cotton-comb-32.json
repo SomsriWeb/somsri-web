@@ -1,0 +1,17 @@
+{
+    "uid": "cotton-comb-32",
+    "image": "/fabrics/cotton-comb-32.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "คอตตอนคอมป์ 32",
+    "labelEn": "Cotton Comb 32",
+    "recommendForStyle": "เสื้อแบรนด์",
+    "advantage": [
+        "ใส่สบาย ไม่ร้อน",
+        "ไม่ยับง่าย",
+        "ระบายอากาศได้ดี",
+        "ไม่หด ไม่ย้วย"
+    ],
+    "disadvantage": []
+}

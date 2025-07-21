@@ -22,9 +22,13 @@
 				<slot v-if="$slots.default" />
 			</div>
 
-			<LineLink class="mt-5">
-				<UButton>ปรึกษาฟรี!</UButton>
-			</LineLink>
+			<div class="mt-5">
+				<slot name="cta">
+					<LineLink>
+						<UButton>ปรึกษาฟรี!</UButton>
+					</LineLink>
+				</slot>
+			</div>
 		</div>
 	</div>
 </template>

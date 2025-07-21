@@ -1,0 +1,16 @@
+{
+    "uid": "supersoff-20",
+    "image": "/fabrics/supersoff-20.png",
+    "forProductType": [
+        "tshirt"
+    ],
+    "labelTh": "ซูเปอร์ซอฟฟ์ 20",
+    "labelEn": "Supersoff 20",
+    "recommendForStyle": "เสื้อแบรนด์",
+    "advantage": [
+        "ผลิตจากใยฝ้ายธรรมชาติ",
+        "ผิวสัมผัสนุ่มพิเศษ",
+        "ไม่ขึ้นขนหลังซัก"
+    ],
+    "disadvantage": []
+}
