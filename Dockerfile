@@ -1,6 +1,6 @@
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
-FROM node:lts-alpine
+FROM node:lts-slim
 WORKDIR /usr/src/app
 
 COPY package.json ./
