@@ -11,6 +11,7 @@
 
 	// VARIABLE
 	const route = useRoute()
+	const { $viewport } = useNuxtApp()
 	const menus = [
 		{
 			name: "หน้าหลัก",
@@ -54,6 +55,8 @@
 
 	// COMPUTED
 	const navbarClass = computed(() => {
+		if (showMenu.value && $viewport.isLessOrEquals("md")) return "!bg-primary shadow-lg"
+
 		return isScrolled.value || activeNavbar.value ? "!bg-primary shadow-lg" : "bg-transparent"
 	})
 
@@ -91,39 +94,41 @@
 		:class="navbarClass"
 		class="px-5 md:px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
 	>
-		<div class="col-span-1 md:col-span-2">
+		<div class="col-span-2">
 			<NuxtLink to="/">
 				<img
 					src="/logo.svg"
 					alt="Somsri Logo"
-					class="w-[3rem] md:w-[1.75rem] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
+					class="w-[3rem] md:w-[1.75rem] max-w-[40px] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
 				/>
 			</NuxtLink>
 		</div>
 
-		<div class="col-span-8 flex flex-col items-end md:items-center justify-end">
-			<Icon name="lucide:menu" class="w-6 h-6 md:hidden" @click="toggleMenu" />
+		<div class="col-span-10 xl:col-span-8 flex flex-col items-end md:items-center justify-end">
+			<div class="flex w-full justify-end">
+				<Icon name="lucide:menu" class="w-6 h-6 lg:hidden" @click="toggleMenu" />
+			</div>
 
 			<div
-				:class="{ hidden: !showMenu }"
-				class="flex flex-col md:flex-row items-center justify-center gap-5"
+				:class="{ hidden: !showMenu && $viewport.isLessOrEquals('md') }"
+				class="mt-3 xl:mt-0 w-full flex flex-col md:!flex-row items-center justify-center gap-3"
 			>
 				<NuxtLink
 					v-for="menu in menus"
 					:key="menu.name"
 					:to="menu.url"
 					:class="[activeMenuClass(menu.url)]"
-					class="w-full block text-right md:text-center font-stretch-condensed hover:underline transition-all"
+					class="w-full block text-sm text-right md:text-center font-stretch-condensed hover:underline transition-all"
 					>{{ menu.name }}</NuxtLink
 				>
 			</div>
 		</div>
 
-		<!-- <div class="col-span-2 hidden md:flex items-center gap-5">
+		<div class="col-span-2 hidden xl:flex items-center justify-end gap-5">
 			<NuxtLink to="tel:0634216521" class="flex items-center" external
-				><Icon name="lucide:phone" class="mr-1" />063-421-6521</NuxtLink
-			>
+				><Icon name="lucide:phone" class="mr-1"
+			/></NuxtLink>
 			<NuxtLink to="/en" class="flex items-center"><Icon name="lucide:languages" /></NuxtLink>
-		</div> -->
+		</div>
 	</nav>
 </template>
