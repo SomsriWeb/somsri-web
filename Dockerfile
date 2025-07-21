@@ -3,6 +3,8 @@
 FROM node:lts-slim
 WORKDIR /usr/src/app
 
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 COPY package.json ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
