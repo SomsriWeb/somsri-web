@@ -10,31 +10,24 @@ Design your own brand
 #title-h2
 สมศรีให้คำปรึกษาด้วยทีมงานมืออาชีพ
 
-::link-button{to="https://contact.somsritshirt.com/2606f"}
-ติดต่อสมศรี
+::line-link
+  ::link-button
+  ติดต่อสมศรี
+  ::
 ::
 
+
 #image-header-object
-<img
+<ProseImg
   src="/brand/shirt_your_design.png"
   alt="รูปHeader"
-  style="width:600px"
-  />
-
-#image-header-logo
-<img
-  src="/brand/logo-white-unsmushed.png"
-  alt="รูปHeader"
-  style="width:350px"
+  class="w-[600px]"
   />
 ::
 
 ::container
 
-::brand-main-content
-#title-h2
-Our Services
-::
+## Our Services
 
 ::brand-our-service
 ::

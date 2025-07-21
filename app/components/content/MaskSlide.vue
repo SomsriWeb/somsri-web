@@ -6,25 +6,12 @@
 	const containerRef = ref(null)
 	const swiperOptions = computed(() => ({
 		slidesPerView: 1,
+		spaceBetween: 30,
 		loop: true,
 		effect: "creative",
 		autoplay: {
 			delay: 3000,
 			disableOnInteraction: false,
-		},
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 10,
-			},
-			640: {
-				slidesPerView: 1.2,
-				spaceBetween: 20,
-			},
-			768: {
-				slidesPerView: 1.5,
-				spaceBetween: 30,
-			},
 		},
 	}))
 
@@ -37,7 +24,11 @@
 		<ClientOnly>
 			<swiper-container ref="containerRef">
 				<swiper-slide v-for="(item, index) in maskData" :key="index">
-					<ProseImg :src="item.image" :alt="`sport-image-${index}`" />
+					<ProseImg
+						:src="item.image"
+						:alt="`sport-image-${index}`"
+						class="max-w-[30rem]"
+					/>
 				</swiper-slide>
 			</swiper-container>
 		</ClientOnly>

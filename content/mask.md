@@ -23,15 +23,15 @@ activeNavbar: true
 ::
 
 ::div-center
-<ProseImg src="/mask/price.png" alt="เรทราคาผ้าปิดจมูก" class="max-w-[700px]" />
+<ProseImg src="/mask/price.png" alt="เรทราคาผ้าปิดจมูก" class="max-w-[30rem]" />
 ::
 
 ::div-center
-<ProseImg src="/mask/price_screen.jpg" alt="ราคาผ้าปิดจมูก ปลีก" class="max-w-[700px]" />
+<ProseImg src="/mask/price_screen.jpg" alt="ราคาผ้าปิดจมูก ปลีก" class="max-w-[30rem]" />
 ::
 
 ::div-center
-<ProseImg src="/mask/price_single.jpg" alt="ราคาพิมพ์ผ้าปิดจมูก" class="max-w-[700px]" />
+<ProseImg src="/mask/price_single.jpg" alt="ราคาพิมพ์ผ้าปิดจมูก" class="max-w-[30rem]" />
 ::
 
 ::mask-price

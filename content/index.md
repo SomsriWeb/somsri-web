@@ -4,9 +4,6 @@ description: เราเป็น โรงงานผลิตเสื้อ
 ---
 
 ::home-header
----
-action-link: https://contact.somsritshirt.com/3d8f7
----
 
 #title
 สมศรีรับผลิตเสื้อ
