@@ -92,9 +92,9 @@
 <template>
 	<nav
 		:class="navbarClass"
-		class="px-5 md:px-[4.6rem] py-2 text-white grid grid-cols-12 gap-5 w-full transition-all duration-300"
+		class="px-5 md:px-[4.6rem] py-2 text-white grid grid-cols-5 sm:grid-cols-12 gap-5 w-screen transition-all duration-300"
 	>
-		<div class="col-span-2">
+		<div class="sm:col-span-2">
 			<NuxtLink to="/">
 				<img
 					src="/logo.svg"
@@ -104,7 +104,9 @@
 			</NuxtLink>
 		</div>
 
-		<div class="col-span-10 xl:col-span-8 flex flex-col items-end md:items-center justify-end">
+		<div
+			class="col-span-4 sm:col-span-10 xl:col-span-8 flex flex-col items-end md:items-center justify-end"
+		>
 			<div class="flex w-full justify-end">
 				<Icon name="lucide:menu" class="w-6 h-6 lg:hidden" @click="toggleMenu" />
 			</div>
