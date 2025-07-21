@@ -96,7 +96,7 @@
 	>
 		<div class="sm:col-span-2">
 			<NuxtLink to="/">
-				<img
+				<ProseImg
 					src="/logo.svg"
 					alt="Somsri Logo"
 					class="w-[3rem] md:w-[1.75rem] max-w-[40px] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"

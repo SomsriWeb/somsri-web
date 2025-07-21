@@ -1,10 +1,11 @@
 ---
 title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
 description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+activeNavbar: true
 ---
 ::sport-img-style
 #image-style
-<img src="/sport/banner_sport.jpg" alt="รูปHeader" class="w-full p-0" />
+<ProseImg src="/sport/banner_sport.jpg" alt="รูปHeader" />
 ::
 
 ::container
@@ -21,7 +22,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 
 ::sport
 #image
-<img src="/sport/spec.jpg" alt="รูปHeader" style="width:1000px"/>
+<ProseImg src="/sport/spec.jpg" alt="รูปHeader" class="max-w-[40rem]"/>
 
 #sub-title-text
 " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
@@ -31,7 +32,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
 
 ::sport
 #image
-<img src="/sport/technique-unsmushed.png" alt="รูปHeader" style="width:1200px" class="" />
+<ProseImg src="/sport/technique-unsmushed.png" alt="รูปHeader" class="max-w-[40rem]" />
 
 #sub-title-text
 ราคาเสื้อยืดรวมสกรีน
@@ -42,14 +43,23 @@ description: เราเป็น โรงงานผลิตเสื้อ
 
 ::sport
 #image
-<img src="/sport/price_table.jpg" alt="รูปHeader" style="width:1000px" />
+<ProseImg src="/sport/price_table.jpg" alt="รูปHeader" class="max-w-[40rem]" />
 ::
 
 ::sport
 #image
-<img src="/sport/step-1024x543.png" alt="ขั้นตอนสั่ง" style="width:1000px"/>
+<ProseImg src="/sport/step-1024x543.png" alt="ขั้นตอนสั่ง" class="max-w-[40rem]"/>
 ::
-<LinkButton class="flex justify-center p-0 m-0" to="https://contact.somsritshirt.com/544af">สั่งทำเสื้อ</LinkButton>
+
+::div-center
+    ::line-link
+        ::u-button
+            ::unwrap-mdc
+            สั่งทำเสื้อ
+            ::
+        ::
+    ::
+::
 
 ::sport
 #sub-title-text
@@ -59,15 +69,11 @@ description: เราเป็น โรงงานผลิตเสื้อ
 รับประกันความพึงพอใจมากถึง 90 วัน
 ::
 
-::sport
-#image
-<img src="/sport/preview-unsmushed.png" alt="ขั้นตอนสั่ง" style="width:1000px"/>
+::div-center
+<ProseImg src="/sport/preview-unsmushed.png" alt="ขั้นตอนสั่ง" class="max-w-[40rem]" />
 ::
 
 ::sport-btn
----
-action-link: https://contact.somsritshirt.com/544af
----
 ::
 
 ::

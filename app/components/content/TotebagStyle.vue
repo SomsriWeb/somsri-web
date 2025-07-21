@@ -2,10 +2,13 @@
 	<Container class="bg-primary">
 		<div>
 			<ProseH2 class="!text-white text-center text-5xl md:text-6xl"
-				><slot name="title" mdc-unwrap="p"
-			/></ProseH2>
+				><slot name="title" mdc-unwrap="p" />ทรงของกระเป๋าผ้า</ProseH2
+			>
 			<ProseP class="!text-white text-center text-lg">
-				<slot name="description" mdc-unwrap="p" />
+				<slot name="description" mdc-unwrap="p"
+					>กระเป๋าผ้าทรง TOTE BAG (ผ้าแคนวาส) สามารถ customize ตามขนาดและทรงที่ต้องการได้
+					โดยเรามีแพทเทิร์นของโรงงานให้เลือก 3 แบบ ดังนี้</slot
+				>
 			</ProseP>
 		</div>
 

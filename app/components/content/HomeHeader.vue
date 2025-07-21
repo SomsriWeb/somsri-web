@@ -23,12 +23,12 @@
 				<slot name="description" mdc-unwrap="p" />
 			</p>
 
-			<NuxtLink :to="actionLink" external>
+			<LineLink>
 				<UButton color="primary" size="xl" class="!min-w-[9rem]">
 					<Icon name="lucide:message-circle" size="1rem" />
 					<slot name="button" mdc-unwrap="p" />
 				</UButton>
-			</NuxtLink>
+			</LineLink>
 		</div>
 	</header>
 </template>

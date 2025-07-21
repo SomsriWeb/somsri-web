@@ -9,7 +9,7 @@
 </script>
 <template>
 	<div class="relative rounded-2xl overflow-hidden">
-		<img :src="image" alt="" class="w-full h-full aspect-square object-cover" />
+		<ProseImg :src="image" alt="" class="aspect-square object-cover" />
 		<div class="absolute inset-0 bg-black/15" />
 		<div
 			class="absolute bottom-10 md:bottom-0 left-0 right-0 p-5 flex justify-between items-center flex-col"

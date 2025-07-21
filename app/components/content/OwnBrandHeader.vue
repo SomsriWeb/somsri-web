@@ -14,7 +14,10 @@
 					<slot name="description" mdc-unwrap="p" />
 				</p>
 			</div>
-			<img src="/tshirt-factory/tshirt.png" class="absolute bottom-[5rem] right-[3rem]" />
+			<ProseImg
+				src="/tshirt-factory/tshirt.png"
+				class="absolute bottom-[5rem] right-[3rem]"
+			/>
 		</header>
 	</div>
 </template>

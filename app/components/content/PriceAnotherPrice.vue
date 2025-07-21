@@ -19,12 +19,12 @@
 					{{ tab.name }}
 				</UButton>
 			</div>
-			<img
+			<ProseImg
 				v-for="tab in priceTabData"
 				:key="tab.uid"
 				:src="tab.imageUrl"
 				:alt="tab.name"
-				class="w-full rounded-lg"
+				class="rounded-lg"
 				:class="[activeTab === tab.uid ? 'block' : 'hidden']"
 			/>
 		</div>
