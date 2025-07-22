@@ -25,6 +25,6 @@
 </script>
 <template>
 	<h2 class="text-primary leading-none font-bold" :class="sizeClass">
-		<slot />
+		<slot mdc-unwrap="p" />
 	</h2>
 </template>
