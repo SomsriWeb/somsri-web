@@ -77,6 +77,11 @@ export default defineNuxtConfig({
 		preview: {
 			api: "https://api.nuxt.studio",
 			dev: true,
+			gitInfo: {
+				name: "somsri-web",
+				owner: "SomsriTshirt",
+				url: "https://github.com/SomsriTshirt/somsri-web",
+			},
 		},
 	},
 	colorMode: {
