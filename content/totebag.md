@@ -1,37 +1,36 @@
 ---
-title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
-description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+title: รับผลิตกระเป๋าผ้า Tote Bag ออกแบบฟรี พร้อมสกรีนลาย ราคาถูก
+description: โรงงานรับผลิตกระเป๋าผ้า สั่งทำกระเป๋าผ้าตามแบบ มีบริการออกแบบ
+  พร้อมสกรีนโลโก้ ทรงก้นขยาย ทรงเกาหลี ทรงสี่เหลี่ยม ผ้าแคนวาส ผ้าโซลอน คุณภาพดี
 activeNavbar: true
 ---
 
 ::container
-
-::bag-main-content
-#title-h1
-รับผลิตกระเป๋าผ้า
-
-#title-h2
-สินค้ากระเป๋าคเนื้อผ้าคุณภาพดี หลากหลายรูปแบบที่คุณเลือกได้
-
-#title-p
-ให้เราออกแบบ หรือ สอบถามเราเพิ่มเติมได้ตอนนี้
-::
-
-::div-center
-<ProseImg src="/bag/cover-2-unsmushed.png" alt="รูปHeader" class="max-w-[40rem]"/>
-::
-
-::bag-btn
-::
-
-::div-center
-<ProseImg src="/bag/ราคากระเป๋าผ้า.png" alt="รูปHeader" class="max-w-[40rem]"/>
-::
-
-::
-
-
+  :::bag-main-content
+  #title-h1
+  รับผลิตกระเป๋าผ้า
   
+  #title-h2
+  สินค้ากระเป๋าคเนื้อผ้าคุณภาพดี หลากหลายรูปแบบที่คุณเลือกได้
+  
+  #title-p
+  ให้เราออกแบบ หรือ สอบถามเราเพิ่มเติมได้ตอนนี้
+  :::
+
+  :::div-center
+    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/cover-2-unsmushed.png"}
+    ::::
+  :::
+
+  :::bag-btn
+  :::
+
+  :::div-center
+    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/ราคากระเป๋าผ้า.png"}
+    ::::
+  :::
+::
+
 ::totebag-style
 #title
 TOTE BAG
@@ -41,16 +40,14 @@ TOTE BAG
 ::
 
 ::container
+  :::how-to-order
+  :::
 
-::how-to-order
-::
-
-::div-center
-    ::u-button
-        ::unwrap-mdc
-        สั่งทำกระเป๋าผ้า
-        ::
-    ::
-::
-
+  :::div-center
+    ::::u-button
+      :::::unwrap-mdc
+      สั่งทำกระเป๋าผ้า
+      :::::
+    ::::
+  :::
 ::

@@ -1,65 +1,74 @@
 ---
-title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
-description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+title: รับผลิตสินค้าจากผ้า รับผลิตหมวก ผลิตปลอกหมอน ทำแบรนด์ตัวเอง
+description: โรงงานสมศรีมีเสื้อ เรารับผลิตสินค้าจากผ้าหลากหลายรูปแบบ รับผลิตหมวก
+  รับผลิตปลอกหมอนข้าง ออกแบบฟรี ลายไม่ซ้ำใคร รับผลิตสินค้าราคาส่ง จัดส่งไว
 activeNavbar: true
 ---
 
 ::sport-img-style
 #image-style
-<ProseImg src="/other-product/cover2-1-2048x698.png" alt="รูปHeader" class="w-full p-0" />
+  :::prose-img
+  ---
+  alt: รูปHeader
+  class: w-full p-0
+  src: /other-product/cover2-1-2048x698.png
+  ---
+  :::
 ::
 
 ::container
+  :::div-center{.gap-5}
+  ## โรงงานเราไม่ได้มีเพียงแค่เสื้อผ้า
+  
+  สินค้าที่ทำจากผ้าก็สามารถให้เราผลิตได้
+  
+    ::::line-link
+      :::::link-button
+      ติดต่อเราตอนนี้
+      :::::
+    ::::
+  :::
 
-    ::div-center{class="gap-5"}
-    ## โรงงานเราไม่ได้มีเพียงแค่เสื้อผ้า
-    สินค้าที่ทำจากผ้าก็สามารถให้เราผลิตได้
+  :::bag-main-content
+  #title-h1
+  สินค้าอื่นๆ
+  :::
 
-        ::line-link
-                ::link-button
-                ติดต่อเราตอนนี้
-                ::
-        ::
-    ::
+  :::bag-image-content
+  #image
+    ::::prose-img
+    ---
+    alt: รูป content
+    src: /other-product/preview-2-1536x1063.png
+    style: width:1000px
+    ---
+    ::::
+  :::
 
+  :::bag-main-content
+  #title-h2
+  และสินค้าอื่น ๆ อีกมากมาย
+  
+  #title-p
+  หากมีงานเนื้อผ้าที่อยากผลิต สมศรี ยินดีให้คำปรึกษา
+  :::
 
+  :::div-center
+    ::::line-link
+      :::::link-button
+      ติดต่อสอบถาม
+      :::::
+    ::::
+  :::
 
-    ::bag-main-content
-    #title-h1
-    สินค้าอื่นๆ
-    ::
+  :::how-to-order
+  :::
 
-    ::bag-image-content
-    #image
-    <ProseImg src="/other-product/preview-2-1536x1063.png" alt="รูป content" style="width:1000px"/>
-    ::
-
-    ::bag-main-content
-    #title-h2
-    และสินค้าอื่น ๆ อีกมากมาย
-
-    #title-p
-    หากมีงานเนื้อผ้าที่อยากผลิต สมศรี ยินดีให้คำปรึกษา
-    ::
-
-    ::div-center
-        ::line-link
-            ::link-button
-            ติดต่อสอบถาม
-            ::
-        ::
-    ::
-
-    ::how-to-order
-
-    ::
-
-    ::div-center
-        ::line-link
-            ::link-button
-            สั่งทำสินค้าอื่น ๆ
-            ::
-        ::
-    ::
-
+  :::div-center
+    ::::line-link
+      :::::link-button
+      สั่งทำสินค้าอื่น ๆ
+      :::::
+    ::::
+  :::
 ::

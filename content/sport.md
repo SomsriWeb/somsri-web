@@ -1,79 +1,95 @@
 ---
-title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
-description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+title: รับผลิตเสื้อกีฬา พิมพ์ลายสกรีน เสื้อบอล เสื้อแฟชั่น ออกแบบฟรี ราคาส่ง
+description: โรงงานผลิตเสื้อกีฬา มีบริการออกแบบฟรี สั่งทำเสื้อทีม
+  เสื้อกีฬาโรงเรียน เนื้อผ้าคุณภาพสูง TC/TK, Micro Sport
+  สกรีนลายคมชัดด้วยเทคนิคที่ทันสมัย
 activeNavbar: true
 ---
+
 ::sport-img-style
 #image-style
-<ProseImg src="/sport/banner_sport.jpg" alt="รูปHeader" />
+  :::prose-img{alt="รูปHeader" src="/sport/banner_sport.jpg"}
+  :::
 ::
 
 ::container
+  :::sport
+  #title-text
+  รับผลิตเสื้อกีฬา :br<!--ใส่ BR เพื่อเคาะวรรคบรรทัดข้อความ-->เนื้อผ้าคุณสมบัติพิเศษ
+  :::
 
-::sport
-#title-text
-รับผลิตเสื้อกีฬา
-<br> <!--ใส่ BR เพื่อเคาะวรรคบรรทัดข้อความ-->
-เนื้อผ้าคุณสมบัติพิเศษ
-::
+  :::sport-list
+  :::
 
-::sport-list
-::
+  :::sport
+  #image
+    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/sport/spec.jpg"}
+    ::::
+  
+  #sub-title-text
+  " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
+  
+  #discription-text
+  ซิลค์สกรีน เฟล็กซ์ ไฮเดน ออฟเซท
+  :::
 
-::sport
-#image
-<ProseImg src="/sport/spec.jpg" alt="รูปHeader" class="max-w-[40rem]"/>
+  :::sport
+  #image
+    ::::prose-img
+    ---
+    alt: รูปHeader
+    class: max-w-[40rem]
+    src: /sport/technique-unsmushed.png
+    ---
+    ::::
+  
+  #sub-title-text
+  ราคาเสื้อยืดรวมสกรีน
+  :::
 
-#sub-title-text
-" หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
-#discription-text
-ซิลค์สกรีน เฟล็กซ์ ไฮเดน ออฟเซท
-::
+  :::sport-slide
+  :::
 
-::sport
-#image
-<ProseImg src="/sport/technique-unsmushed.png" alt="รูปHeader" class="max-w-[40rem]" />
+  :::sport
+  #image
+    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/sport/price_table.jpg"}
+    ::::
+  :::
 
-#sub-title-text
-ราคาเสื้อยืดรวมสกรีน
-::
+  :::sport
+  #image
+    ::::prose-img{.max-w-[40rem] alt="ขั้นตอนสั่ง" src="/sport/step-1024x543.png"}
+    ::::
+  :::
 
-::sport-slide
-::
+  :::div-center
+    ::::line-link
+      :::::u-button
+        ::::::unwrap-mdc
+        สั่งทำเสื้อ
+        ::::::
+      :::::
+    ::::
+  :::
 
-::sport
-#image
-<ProseImg src="/sport/price_table.jpg" alt="รูปHeader" class="max-w-[40rem]" />
-::
+  :::sport
+  #sub-title-text
+  ผลงาน การันตีคุณภาพ
+  
+  #discription-text
+  รับประกันความพึงพอใจมากถึง 90 วัน
+  :::
 
-::sport
-#image
-<ProseImg src="/sport/step-1024x543.png" alt="ขั้นตอนสั่ง" class="max-w-[40rem]"/>
-::
+  :::div-center
+    ::::prose-img
+    ---
+    alt: ขั้นตอนสั่ง
+    class: max-w-[40rem]
+    src: /sport/preview-unsmushed.png
+    ---
+    ::::
+  :::
 
-::div-center
-    ::line-link
-        ::u-button
-            ::unwrap-mdc
-            สั่งทำเสื้อ
-            ::
-        ::
-    ::
-::
-
-::sport
-#sub-title-text
-ผลงาน การันตีคุณภาพ
-
-#discription-text
-รับประกันความพึงพอใจมากถึง 90 วัน
-::
-
-::div-center
-<ProseImg src="/sport/preview-unsmushed.png" alt="ขั้นตอนสั่ง" class="max-w-[40rem]" />
-::
-
-::sport-btn
-::
-
+  :::sport-btn
+  :::
 ::
