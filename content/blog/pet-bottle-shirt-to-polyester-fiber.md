@@ -85,7 +85,7 @@
 
 **ทำไมเส้นใยรีไซเคิลถึงเป็นอนาคตของวงการแฟชั่นและสิ่งทอ?**
 
-1. [เทรนด์ Sustainability](https://www.scgchemicals.com/th/articles/stories/1701872118?fbclid=IwAR3Tsw1Q1L2o8_VDwOZJwFv8okAWcGqFLIhx-q4-xyUZ0f1_Ff4YXsMIxfQ_aem_AU_hXMPKIhIf29wNY1BCmmL1LLHx8zpuknqeBFewZ26PJbzvM1lo0oXHKvi2yd3FQl8) ในอุตสาหกรรมแฟชั่น
+1. [เทรนด์ Sustainability](https://www.scgchemicals.com/th/articles/stories/1701872118?) ในอุตสาหกรรมแฟชั่น
 ทั่วโลกกำลังเปลี่ยนทิศทางไปสู่แฟชั่นที่ใส่ใจสิ่งแวดล้อมมากขึ้น หลายแบรนด์ระดับโลกเริ่มปรับกระบวนการผลิตให้สอดคล้องกับหลักความยั่งยืน (Sustainable Fashion) และการใช้วัสดุรีไซเคิลอย่าง rPET กำลังกลายเป็นมาตรฐานใหม่
 
 2. ความต้องการเสื้อผ้า Eco-Friendly ที่เพิ่มสูงขึ้นทั่วโลก
