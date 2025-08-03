@@ -9,7 +9,7 @@
 </script>
 <template>
 	<div class="relative rounded-xl overflow-hidden h-full">
-		<ProseImg :src="image" alt="" class="aspect-ratio--5x7 object-cover" />
+		<ProseImg :src="image" class="h-full aspect-ratio--5x7 object-cover" />
 		<div class="absolute inset-0 bg-black/15" />
 		<h3 class="absolute top-4 left-5 text-white text-2xl">{{ name }}</h3>
 		<UButton

@@ -1,15 +1,13 @@
 <template>
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 		<div>
-			<h2 class="text-primary text-5xl md:text-6xl leading-none font-bold">
-				<slot name="title" mdc-unwrap="p">สมศรีผลิตให้กับใครบ้าง</slot>
-			</h2>
-			<p class="text-stone-500 font-light text-xl">
-				<slot name="description" mdc-unwrap="p"
+			<slot name="title"><ProseH2>สมศรีผลิตให้กับใครบ้าง </ProseH2></slot>
+			<slot name="description"
+				><ProseP
 					>หลากหลายแบรนด์ไว้วางใจให้สมศรีมีเสื้อผลิตสินค้าต่าง ๆ ไม่ว่าจะเป็นเสื้อยืด
-					เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ</slot
+					เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ</ProseP
 				>
-			</p>
+			</slot>
 		</div>
 
 		<ClientOnly>

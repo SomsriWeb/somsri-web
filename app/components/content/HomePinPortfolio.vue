@@ -31,12 +31,10 @@
 
 <template>
 	<div>
-		<h2 class="text-primary text-[2.5rem] md:text-[4rem] leading-none font-bold">
-			<slot name="title" mdc-unwrap="p" />
-		</h2>
-		<p class="text-stone-500 font-light text-xl mb-5">
-			<slot name="description" mdc-unwrap="p" />
-		</p>
+		<div class="mb-5">
+			<slot name="title" />
+			<slot name="description" />
+		</div>
 
 		<ClientOnly>
 			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">

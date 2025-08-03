@@ -85,7 +85,7 @@
 
 <template>
 	<div>
-		<h2 class="text-primary text-4xl md:text-[4rem] leading-none font-bold mb-5">
+		<h2 class="text-primary text-4xl leading-none font-bold mb-5">
 			สั่งผลิตเสื้อกับสมศรีดียังไง?
 		</h2>
 

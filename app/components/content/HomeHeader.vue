@@ -14,9 +14,9 @@
 		/>
 		<div class="absolute inset-0 bg-black/30" />
 		<div
-			class="absolute bottom-5 xl:bottom-[5rem] left-5 md:left-[5rem] text-white max-w-[10rem] sm:max-w-[20rem] md:max-w-[23rem] lg:max-w-[33rem] xl:max-w-[40rem]"
+			class="absolute bottom-5 xl:bottom-[5rem] left-5 md:left-[5rem] text-white max-w-[10rem] sm:max-w-[15rem] md:max-w-[20rem] lg:max-w-[25rem] xl:max-w-[30rem]"
 		>
-			<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+			<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
 				<slot name="title" mdc-unwrap="p" />
 			</h1>
 			<p class="font-light text-base md:text-lg lg:text-xl mb-5">

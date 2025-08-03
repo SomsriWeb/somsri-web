@@ -17,9 +17,9 @@
 			case "sm":
 				return "text-xl md:text-3xl"
 			case "lg":
-				return "text-[1.5rem] md:text-[3rem]"
+				return "text-[1.5rem] md:text-[2.5rem]"
 			default:
-				return "text-[2.5rem] md:text-[4rem]"
+				return "text-[2.5rem] md:text-[3rem]"
 		}
 	})
 </script>

@@ -9,9 +9,7 @@
 <template>
 	<div>
 		<div class="rounded-2xl p-3 md:p-7 bg-primary">
-			<div
-				class="text-center text-[2.5rem] md:text-[4rem] font-bold text-white mb-3 leading-none"
-			>
+			<div class="text-center text-5xl font-bold text-white mb-3 leading-none">
 				<component :is="titleTag">
 					<slot name="title" mdc-unwrap="p" />
 				</component>

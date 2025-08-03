@@ -11,6 +11,8 @@
 		throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true })
 	}
 
+	console.log(page.value)
+
 	provide(LINE_LINK, page.value.lineLink)
 </script>
 

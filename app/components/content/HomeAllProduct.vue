@@ -6,12 +6,10 @@
 
 <template>
 	<div>
-		<h2 class="text-primary text-4xl md:text-[4rem] leading-none font-bold">
-			<slot name="title" mdc-unwrap="p" />
-		</h2>
-		<p class="text-stone-500 font-light text-base md:text-xl mb-5">
-			<slot name="description" mdc-unwrap="p" />
-		</p>
+		<div class="mb-5">
+			<slot name="title" />
+			<slot name="description" />
+		</div>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-[2.5rem] mb-5">
 			<HomeProductCard

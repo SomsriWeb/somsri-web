@@ -64,7 +64,7 @@ export default defineAppConfig({
 						trailingIcon: "size-4",
 					},
 					md: {
-						base: "px-5 py-1 gap-1.5 text-lg leading-none",
+						base: "px-5 py-1 gap-1.5 leading-none",
 						leadingIcon: "size-5",
 						leadingAvatarSize: "2xs",
 						trailingIcon: "size-5",

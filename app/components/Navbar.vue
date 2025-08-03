@@ -120,7 +120,7 @@
 					:key="menu.name"
 					:to="menu.url"
 					:class="[activeMenuClass(menu.url)]"
-					class="w-full block text-sm text-right xl:text-center font-stretch-condensed hover:underline transition-all"
+					class="w-full block text-[0.75rem] text-right xl:text-center font-stretch-condensed hover:underline transition-all"
 					>{{ menu.name }}</NuxtLink
 				>
 			</div>
