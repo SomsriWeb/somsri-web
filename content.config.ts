@@ -22,24 +22,22 @@ export default defineContentConfig({
 			})
 		),
 
-		blog: defineCollection(
-			asSeoCollection({
-				type: "page",
-				source: {
-					include: "blog/**",
-					prefix: "/",
-				},
-				schema: z.object({
-					activeNavbar: z.boolean().default(false),
-					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
-					title: z.string(),
-					description: z.string(),
-					image: z.string(),
-					date: z.string(),
-					author: z.string(),
-				}),
-			})
-		),
+		blog: defineCollection({
+			type: "page",
+			source: {
+				include: "blog/**",
+				prefix: "/",
+			},
+			schema: z.object({
+				activeNavbar: z.boolean().default(false),
+				lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
+				title: z.string(),
+				description: z.string(),
+				image: z.string(),
+				date: z.string(),
+				author: z.string(),
+			}),
+		}),
 
 		product: defineCollection({
 			type: "data",
