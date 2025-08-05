@@ -6,10 +6,18 @@ export default defineContentConfig({
 		content: defineCollection(
 			asSeoCollection({
 				type: "page",
-				source: "**",
+				source: {
+					include: "**",
+					prefix: "/",
+				},
 				schema: z.object({
 					activeNavbar: z.boolean().default(false),
 					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
+					title: z.string(),
+					description: z.string(),
+					image: z.string(),
+					date: z.string(),
+					author: z.string(),
 				}),
 			})
 		),
@@ -18,10 +26,12 @@ export default defineContentConfig({
 			asSeoCollection({
 				type: "page",
 				source: {
-					include: "blog/*.md",
-					prefix: "/blog",
+					include: "blog/**",
+					prefix: "/",
 				},
 				schema: z.object({
+					activeNavbar: z.boolean().default(false),
+					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
 					title: z.string(),
 					description: z.string(),
 					image: z.string(),

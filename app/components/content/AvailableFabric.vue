@@ -6,7 +6,6 @@
 	const { type } = defineProps<Props>()
 
 	// VARIABLE
-	console.log(type)
 	const { data } = await useAsyncData("fabrics", () => {
 		return queryCollection("fabrics").order("labelEn", "ASC").all()
 	})

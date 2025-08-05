@@ -10,6 +10,7 @@ export default defineNuxtConfig({
 		"@nuxtjs/seo",
 		"nuxt-viewport",
 		"@nuxtjs/device",
+		"@vueuse/nuxt",
 	],
 	app: {
 		head: {
@@ -83,6 +84,9 @@ export default defineNuxtConfig({
 				url: "https://github.com/SomsriTshirt/somsri-web",
 			},
 		},
+		build: {
+			transformers: ["~~/transformers/blog-path"],
+		},
 	},
 	colorMode: {
 		preference: "light",
@@ -94,20 +98,6 @@ export default defineNuxtConfig({
 			const globals = components.filter((c) => ["UButton", "UIcon"].includes(c.pascalName))
 
 			globals.forEach((c) => (c.global = true))
-		},
-		"content:file:beforeParse": ({ file }) => {
-			if (file.id.startsWith("content/blog/")) {
-				const newPath = file.id
-					.replace("content/blog/", "content:")
-					.replace(/\.md$/, "")
-					.replace(/\/index$/, "")
-				file.body = file.body.replace(/---([\s\S]*?)---/, (match, frontmatter) => {
-					if (!/path:/.test(frontmatter)) {
-						return `---\npath: /${newPath}\n${frontmatter}---`
-					}
-					return match
-				})
-			}
 		},
 	},
 	viewport: {
