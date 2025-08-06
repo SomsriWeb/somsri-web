@@ -9,10 +9,10 @@
 
 <template>
 	<div>
-		<header>
+		<header class="relative">
 			<ProseImg :src="image" class="!w-screen !h-screen object-cover" />
 			<div class="absolute inset-0 bg-black/30" />
-			<div class="absolute bottom-[3rem] px-5 md:px-[4.6rem] text-white">
+			<div class="absolute bottom-[7rem] px-5 md:px-[4.6rem] text-white">
 				<component
 					:is="titleAsTag"
 					class="font-bold text-3xl sm:text-4xl lg:text-6xl leading-none"
