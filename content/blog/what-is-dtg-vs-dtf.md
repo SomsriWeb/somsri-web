@@ -1,3 +1,7 @@
+---
+title: สกรีน DTF ( Direct to Film ) คืออะไร เปรียบเทียบ DTF DTG เหมาะกับงานสกรีนเสื้อแบบไหน?
+image: /blog/what-is-dtg-vs-dtf-header.jpg
+---
 ## สกรีน DTF ( Direct to Film ) คืออะไร?
 
 ## ประวัติ

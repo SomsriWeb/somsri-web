@@ -1,3 +1,7 @@
+---
+title: ทำไมใคร ๆ ก็เลือกผลิตเสื้อกับสมศรี
+image: /blog/choose-to-produce-shirts-with-somsri-header.jpg
+---
 ## โรงงานผลิตเสื้อคุณภาพ<br>
 ## พร้อมให้คำปรึกษาและบริการครบวงจร
 
