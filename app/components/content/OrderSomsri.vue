@@ -50,7 +50,7 @@
 					<UButton
 						icon="solar:phone-bold"
 						color="neutral"
-						class="!text-primary px-2 w-full"
+						class="!text-primary px-2 w-full !text-xs"
 						>066-112-6521</UButton
 					>
 				</NuxtLink>
@@ -59,7 +59,7 @@
 					<UButton
 						icon="solar:phone-bold"
 						color="neutral"
-						class="!text-primary px-2 w-full"
+						class="!text-primary px-2 w-full !text-xs"
 						>066-114-1399</UButton
 					>
 				</NuxtLink>
@@ -68,7 +68,7 @@
 					<UButton
 						icon="solar:phone-bold"
 						color="neutral"
-						class="!text-primary px-2 w-full"
+						class="!text-primary px-2 w-full !text-xs"
 						>063-421-6521</UButton
 					>
 				</NuxtLink>

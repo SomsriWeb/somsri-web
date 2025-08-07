@@ -2,7 +2,7 @@
 	import { LINE_LINK } from "~/lib/lineLink"
 
 	const route = useRoute()
-	const pageType = ref<"page" | "blog">("blog")
+	const pageType = ref<"page" | "blog">("page")
 
 	const { data: page } = await useAsyncData("page-" + route.path, async () => {
 		pageType.value = "page"

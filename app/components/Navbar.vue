@@ -42,10 +42,6 @@
 			url: "/how-to-order",
 		},
 		{
-			name: "บทความ",
-			url: "/blog",
-		},
-		{
 			name: "เกี่ยวกับเรา",
 			url: "/about-us",
 		},
@@ -55,8 +51,7 @@
 
 	// COMPUTED
 	const navbarClass = computed(() => {
-		if (showMenu.value && $viewport.isLessOrEquals("md")) return "!bg-primary shadow-lg"
-
+		if (showMenu.value && $viewport.isLessThan("xl")) return "!bg-primary shadow-lg"
 		return isScrolled.value || activeNavbar.value ? "!bg-primary shadow-lg" : "bg-transparent"
 	})
 
@@ -78,6 +73,11 @@
 	function toggleMenu() {
 		showMenu.value = !showMenu.value
 	}
+
+	// WATCH
+	watch($viewport.breakpoint, (value) => {
+		console.log(value)
+	})
 
 	// LIFE CYCLE
 	onMounted(() => {
@@ -108,11 +108,11 @@
 			class="col-span-4 sm:col-span-10 xl:col-span-8 flex flex-col items-end md:items-center justify-end"
 		>
 			<div class="flex w-full justify-end">
-				<Icon name="lucide:menu" class="w-6 h-6 lg:hidden" @click="toggleMenu" />
+				<Icon name="lucide:menu" class="w-6 h-6 xl:hidden" @click="toggleMenu" />
 			</div>
 
 			<div
-				:class="{ hidden: !showMenu && $viewport.isLessOrEquals('md') }"
+				:class="{ hidden: !showMenu && $viewport.isLessOrEquals('lg') }"
 				class="mt-3 xl:mt-0 w-full flex flex-col xl:!flex-row items-center justify-center gap-3"
 			>
 				<NuxtLink
