@@ -3,7 +3,7 @@ title: โรงงานผลิตเสื้อ รับผลิตเส
 description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
 ---
 
-::landing-page-header-style-one{image="/uniform/cover-1600w.png"}
+::landing-page-header-style-one{image="/uniform/cover-1600w.png" alt="พื้นหลังยูนิฟอร์ม"}
 #title
 ยูนิฟอร์ม
 

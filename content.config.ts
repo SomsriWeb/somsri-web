@@ -18,6 +18,9 @@ export default defineContentConfig({
 					image: z.string(),
 					date: z.string(),
 					author: z.string(),
+					lineFloatingButton: z.boolean().default(true),
+					navbar: z.boolean().default(true),
+					footer: z.boolean().default(true),
 				}),
 			})
 		),
@@ -45,6 +48,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
 				url: z.string(),
 				featured: z.boolean().optional(),
 				order: z.number(),
@@ -57,6 +61,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
 				url: z.string(),
 				order: z.number(),
 			}),
@@ -68,6 +73,19 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
+				url: z.string(),
+				order: z.number(),
+			}),
+		}),
+
+		print: defineCollection({
+			type: "data",
+			source: "data/print/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				alt: z.string().optional(),
 				url: z.string(),
 				order: z.number(),
 			}),
@@ -118,6 +136,7 @@ export default defineContentConfig({
 			source: "data/fabric/**.json",
 			schema: z.object({
 				name: z.string(),
+				alt: z.string().optional(),
 				imgUrl: z.string(),
 				popupImageUrl: z.string(),
 				order: z.number(),
@@ -129,6 +148,7 @@ export default defineContentConfig({
 			source: "data/sportcarousel/**.json",
 			schema: z.object({
 				image: z.string(),
+				alt: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -168,6 +188,7 @@ export default defineContentConfig({
 				uid: z.string(),
 				name: z.string(),
 				imageUrl: z.string(),
+				alt: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -188,6 +209,7 @@ export default defineContentConfig({
 				name: z.string(),
 				method: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -206,6 +228,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -301,6 +324,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				image: z.string(),
+				alt: z.string().optional(),
 				order: z.number(),
 			}),
 		}),

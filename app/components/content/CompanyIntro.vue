@@ -1,10 +1,21 @@
 <script setup lang="ts">
 	const imgs = [
-		"/pants/cut2.jpg",
-		"/pants/screen3.jpg",
-		"/pants/screen4.jpg",
-		"/pants/screen5.jpg",
-		"/pants/screen6.jpg",
+		{
+			src: "/pants/cut2.jpg",
+			alt: "สมศรีมีเสื้อ",
+		},
+		{
+			src: "/pants/screen3.jpg",
+			alt: "งบประมาณจากรูปแบบการตัดเย็บ ต้องคิดต้นทุนเมื่อทำเสื้อแบรนด์ตัวเอง",
+		},
+		{
+			src: "/pants/screen4.jpg",
+			alt: "สมศรีมีเสื้อ",
+		},
+		{
+			src: "/pants/screen5.jpg",
+			alt: "สมศรีมีเสื้อ",
+		},
 	]
 </script>
 <template>
@@ -30,8 +41,9 @@
 			<Vue3Marquee class="rounded-xl" :duration="80">
 				<ProseImg
 					v-for="img in imgs"
-					:key="img"
-					:src="img"
+					:key="img.src"
+					:src="img.src"
+					:alt="img.alt"
 					class="max-h-[17rem] object-cover"
 				/>
 			</Vue3Marquee>

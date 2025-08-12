@@ -1,5 +1,6 @@
 {
     "name": "cotton ",
     "image": "/mask/cotton_waterproof.png",
+    "alt": "cotton_waterproof",
     "order": 5
 }

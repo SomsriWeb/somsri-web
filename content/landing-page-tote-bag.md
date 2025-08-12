@@ -1,3 +1,9 @@
+---
+title: LandingPage กระเป๋า - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
+---
 ::landing-page-header-style-one{image="/landing-page-tote-bag/banner.png"}
 #title
 รับผลิตกระเป๋า

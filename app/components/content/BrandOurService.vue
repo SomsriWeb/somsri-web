@@ -15,7 +15,7 @@
 			class="flex flex-col items-center text-center"
 		>
 			<div>
-				<ProseImg :src="item.image" :alt="item.name" />
+				<ProseImg :src="item.image" :alt="item.alt || item.name" />
 			</div>
 			<ProseH3 size="sm" class="text-base sm:text-lg font-semibold text-primary mt-3">
 				{{ item.name }}

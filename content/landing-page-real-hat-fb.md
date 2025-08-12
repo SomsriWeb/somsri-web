@@ -1,3 +1,10 @@
+---
+title: LandingPage หมวก FB - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
+---
+
 ::landing-page-header-style-one{image="/landing-page-real-hat/banner.png"}
 #title
 รับผลิตหมวก

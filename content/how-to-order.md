@@ -7,10 +7,7 @@ activeNavbar: true
 ---
 
 ::container
-  :::how-to-order
-  ---
-  title-as-tag: h1
-  ---
+  :::how-to-order{titleAsTag="h1"}
   #title
   วิธีการสั่งเสื้อ กับสมศรี
   :::

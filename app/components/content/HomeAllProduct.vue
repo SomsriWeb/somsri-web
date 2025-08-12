@@ -18,6 +18,7 @@
 				:name="product.name"
 				:url="product.url"
 				:image="product.image"
+				:alt="product.alt"
 			/>
 		</div>
 

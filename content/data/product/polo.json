@@ -1,6 +1,7 @@
 {
     "name": "เสื้อโปโล",
     "image": "/product-type/polo.jpg",
+    "alt": "รับออกแบบ ผลิต เสื้อโปโล",
     "url": "/polo",
     "featured": true,
     "order": 2

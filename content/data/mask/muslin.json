@@ -1,5 +1,6 @@
 {
     "name": "ผ้า muslin",
     "image": "/mask/muslin.png",
+    "alt": "muslin",
     "order": 4
 }

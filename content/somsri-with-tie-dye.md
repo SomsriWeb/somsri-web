@@ -1,4 +1,11 @@
-::landing-page-header-style-three{image="/somsri-with-tie-dye/banner.png"}
+---
+title: รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม - สมศรีมีเสื้อ
+description: รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม รวมสกรีน ผลิตตามออเดอร์ ราคาย่อมเยา ไม่แพง พร้อมรับประกันคุณภาพและความพึงพอใจ รับมัดย้อม
+navbar: false
+footer: false
+lineFloatingButton: false
+---
+::landing-page-header-style-three{image="/somsri-with-tie-dye/banner.png" alt="รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม"}
 #title
 รับผลิตเสื้อมัดย้อม
 
@@ -19,7 +26,7 @@
     ::
 
     ::div-center{class="gap-3"}
-    ![](/somsri-with-tie-dye/tie-dye.jpg)
+    ![เสื้อมัดย้อม (Tie-Dye) คือ การทำให้ผ้าเกิดลวดลายและนำลงย้อมสี](/somsri-with-tie-dye/tie-dye.jpg)
 
     <ProseH4 as="p" class="text-center">“เสื้อมัดย้อม” ไอเท็มสุดชิคที่ต้องมีติดตู้เสื้อผ้าแทบทุกบ้าน แฟชั่นที่ไม่เคยตกเทรนด์ แมทช์ง่าย เข้าได้กับทุกลุค ด้วยลายที่เป็นเอกลักษณ์เฉพาะตัวบ่งบอกถึงความเป็นผ้ามัดย้อมอย่างชัดเจน ความหลากหลายของลาย และสีสันที่ได้จากการมัดย้อม</ProseH4>
     ::
@@ -36,7 +43,7 @@
 
     ::div-center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-sample-1.png)
+        ![ตัวอย่างงาน สั่งผลิตเสื้อมัดย้อม ด้วยผ้า cotton](/somsri-with-tie-dye/tie-dye-sample-1.png)
 
             ::div-center
             <ProseH3 as="h4" class="text-center">Cotton 100%</ProseH3>
@@ -45,7 +52,7 @@
         ::
 
         ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-sample-2.png)
+        ![รับผลิตเสื้อมัดย้อม ราคาย่อมเยาว์](/somsri-with-tie-dye/tie-dye-sample-2.png)
         
             ::div-center
             <ProseH3 as="h4" class="text-center">Natural color</ProseH3>

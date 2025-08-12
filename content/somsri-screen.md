@@ -1,7 +1,11 @@
-::landing-page-header-style-two
 ---
-image: /produce-tshirt/banner.png
+title: Search_สกรีน - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
 ---
+
+::landing-page-header-style-two{image="/produce-tshirt/banner.png"}
 #title
 รับสกรีนเสื้อ - ผลิตเสื้อ ครบวงจร
 

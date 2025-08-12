@@ -1,3 +1,8 @@
+---
+title: Youtube - สมศรีมีเสื้อ
+navbar: false
+footer: false
+---
 ::landing-page-header-style-two{image="/tshirt/banner.png"}
 #title
 เสื้อยืดระดับพรีเมี่ยม<br>เสื้อยูนิฟอร์มที่เป็นได้มากกว่า

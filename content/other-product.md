@@ -9,7 +9,7 @@ activeNavbar: true
 #image-style
   :::prose-img
   ---
-  alt: รูปHeader
+  alt: other-product cover
   class: w-full p-0
   src: /other-product/cover2-1-2048x698.png
   ---
@@ -38,7 +38,7 @@ activeNavbar: true
   #image
     ::::prose-img
     ---
-    alt: รูป content
+    alt: other-product preview
     src: /other-product/preview-2-1536x1063.png
     style: width:1000px
     ---

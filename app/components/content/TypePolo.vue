@@ -15,7 +15,11 @@
 		<div class="space-y-4">
 			<ProseH2>ราคาเสื้อโปโล</ProseH2>
 			<div class="flex justify-center">
-				<ProseImg src="/polo/polo_price_01092565.jpg" alt="ราคาโปโล" class="max-w-md" />
+				<ProseImg
+					src="/polo/polo_price_01092565.jpg"
+					alt="เรทราคาเสื้อโปโล"
+					class="max-w-md"
+				/>
 			</div>
 		</div>
 
@@ -37,7 +41,7 @@
 		<div class="space-y-4">
 			<ProseH2>ผลงาน การันตีคุณภาพ</ProseH2>
 			<div class="flex justify-center">
-				<ProseImg src="/polo/preview-768x546.png" alt="ผลงาน" />
+				<ProseImg src="/polo/preview-768x546.png" alt="ผลงานการผลิตเสื้อโปโล" />
 			</div>
 		</div>
 

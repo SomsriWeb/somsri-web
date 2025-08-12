@@ -144,8 +144,8 @@
 
     #col-2
     :::maquee
-    ![img1](/screen-tshirt-service/portfolio/1.png)
-    ![img2](/screen-tshirt-service/portfolio/2.png)
+    ![ลูกค้าหลากหลายกลุ่มที่ไว้วางใจ และสั่งผลิตเสื้อสกรีนกับสมศรีมีเสื้อ](/screen-tshirt-service/portfolio/1.png)
+    ![เรา สกรีนเสื้อ ด้วยวิธีคุณภาพ สั่งทำได้](/screen-tshirt-service/portfolio/2.png)
     :::
 
     :::

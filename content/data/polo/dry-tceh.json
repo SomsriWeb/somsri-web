@@ -1,5 +1,6 @@
 {
     "name": "dry-tceh",
     "image": "/polo/drytech.png",
+    "alt": "Dry tech",
     "order": 2
 }

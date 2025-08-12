@@ -39,7 +39,12 @@
 		<ClientOnly>
 			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
 				<swiper-slide v-for="pin in pins" :key="pin.name">
-					<HomePortfolioCard :name="pin.name" :url="pin.url" :image="pin.image" />
+					<HomePortfolioCard
+						:name="pin.name"
+						:url="pin.url"
+						:image="pin.image"
+						:alt="pin.alt"
+					/>
 				</swiper-slide>
 			</swiper-container>
 		</ClientOnly>

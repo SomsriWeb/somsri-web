@@ -18,7 +18,7 @@ Design your own brand
   :::
 
 #image-header-object
-  :::prose-img{.w-[600px] alt="รูปHeader" src="/brand/shirt_your_design.png"}
+  :::prose-img{.w-[600px] alt="เสื้อyourdesign" src="/brand/shirt_your_design.png"}
   :::
 ::
 

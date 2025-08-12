@@ -16,6 +16,7 @@
 			</div>
 			<ProseImg
 				src="/tshirt-factory/tshirt.png"
+				alt="รับผลิตเสื้อ เสื้อยืดแบรนด์ตัวเอง โรงงานผลิตเสื้อ คุณภาพดี"
 				class="absolute bottom-[5rem] right-[3rem]"
 			/>
 		</header>

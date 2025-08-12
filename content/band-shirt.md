@@ -1,4 +1,9 @@
-::landing-page-header-style-three{image="/band-shirt/banner.png"}
+---
+title: รับผลิตเสื้อวง เสื้อยืดวงดนตรี สั่งทำเสื้อทัวร์ [ดีที่สุดในปี 2024]
+description: สมศรีมีเสื้อ รับผลิตเสื้อวง เสื้อทัวร์ ตั้งแต่ออกแบบ ผลิต ด้วยคุณภาพดี ในราคาที่ย่อมเยาว์ เราคือโรงงานรับผลิตเสื้อวงที่มีเอกลักษณ์เฉพาะตัว
+---
+
+::landing-page-header-style-three{image="/band-shirt/banner.png" alt="รับผลิตเสื้อวง ออกแบบเสื้อวง"}
 #title
 รับผลิตเสื้อวง เสื้อยืดวงดนตรี
 
@@ -13,7 +18,7 @@
 <ProseP class="text-center">“เสื้อวง” แฟชั่นหนึ่งในดวงใจของเหล่าผู้ที่ชื่นชอบศิลปินยุคตำนาน ที่ต้องมีติดตู้เสื้อผ้า เป็นกระแสยอดนิยมมาหลายยุค รวมถึงในปัจจุบันที่กลับมาปรับเปลี่ยนให้เข้ากับยุคสมัยมากขึ้น เป็นที่ฮือฮาอย่างกว้างขวางจนทำให้แฟชั่นเสื้อวงยังฮอตไม่เคยเปลี่ยน ไม่ว่าจะเป็นวงดนตรีชื่อดัง วงดนตรีอิสระ หรือกลุ่มคนที่ต้องการทำเสื้อวงเพื่อเป็นของขวัญ เสื้อวง จึงกลายเป็นไอเท็มที่มีคุณค่าทางจิตใจ</ProseP>
 
     ::div-center{class="gap-3"}
-    ![](/band-shirt/youngohm.png)
+    ![รับผลิตเสื้อวง เสื้อวงดนตรี ตัวอย่างงาน Youngohm](/band-shirt/youngohm.png)
     ::
 
     ::title-with-description
@@ -27,7 +32,7 @@
     ::
 
     ::div-center{class="gap-3"}
-    ![](/band-shirt/black-t-shirt-with-word-rock-it-min.jpg)
+    ![เราเป็นผู้เชี่ยวชาญด้านการผลิต “เสื้อวง เสื้อวินเทจ” คุณภาพดี ในราคาที่ย่อมเยาว์ หากคุณกำลังมองหาแหล่งรับผลิตเสื้อที่มีเอกลักษณ์เฉพาะตัว](/band-shirt/black-t-shirt-with-word-rock-it-min.jpg)
     ::
 
     ::somsri-produce-for
@@ -48,7 +53,7 @@
 
     ::div-center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
-        ![](/band-shirt/sample-1.png)
+        ![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-1.png)
 
             ::div-center
             <ProseH3 as="h4" class="text-center">Cotton 100%</ProseH3>

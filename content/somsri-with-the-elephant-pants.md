@@ -1,3 +1,9 @@
+---
+title: LandingPage กางเกงช้าง - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
+---
 ::landing-page-header-style-two{image="/somsri-with-the-elephant-pants/banner.png"}
 #title
 กางเกงช้าง

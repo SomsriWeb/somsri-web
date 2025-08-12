@@ -8,8 +8,7 @@ activeNavbar: true
 
 ::sport-img-style
 #image-style
-  :::prose-img{alt="รูปHeader" src="/sport/banner_sport.jpg"}
-  :::
+![Sport cover](/sport/banner_sport.jpg)
 ::
 
 ::container
@@ -23,7 +22,7 @@ activeNavbar: true
 
   :::sport
   #image
-    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/sport/spec.jpg"}
+    ::::prose-img{.max-w-[40rem] alt="sport details" src="/sport/spec.jpg"}
     ::::
   
   #sub-title-text
@@ -52,14 +51,11 @@ activeNavbar: true
 
   :::sport
   #image
-    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/sport/price_table.jpg"}
+    ::::prose-img{.max-w-[40rem] alt="sport price" src="/sport/price_table.jpg"}
     ::::
   :::
 
-  :::sport
-  #image
-    ::::prose-img{.max-w-[40rem] alt="ขั้นตอนสั่ง" src="/sport/step-1024x543.png"}
-    ::::
+  :::how-to-order
   :::
 
   :::div-center
@@ -83,7 +79,7 @@ activeNavbar: true
   :::div-center
     ::::prose-img
     ---
-    alt: ขั้นตอนสั่ง
+    alt: งบประมาณ ทำเสื้อแบรนด์ตัวเอง เราต้องคิดเรื่องค่าออกแบบด้วย
     class: max-w-[40rem]
     src: /sport/preview-unsmushed.png
     ---

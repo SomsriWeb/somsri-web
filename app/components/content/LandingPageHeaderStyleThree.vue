@@ -3,8 +3,9 @@
 	interface Props {
 		image: string
 		titleAsTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+		alt?: string
 	}
-	const { image, titleAsTag = "h1" } = defineProps<Props>()
+	const { image, titleAsTag = "h1", alt = "" } = defineProps<Props>()
 </script>
 
 <template>
@@ -44,6 +45,7 @@
 		</div>
 		<ProseImg
 			:src="image"
+			:alt="alt"
 			class="rounded-xl aspect-square object-cover lg:aspect-auto lg:object-contain"
 		/>
 	</Container>

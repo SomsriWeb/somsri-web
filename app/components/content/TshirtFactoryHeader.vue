@@ -12,6 +12,7 @@
 			</div>
 			<ProseImg
 				src="/tshirt-factory/tshirt.png"
+				alt="สมศรีมีเสื้อ รับผลิตเสื้อ สั่งทำเสื้อครบวงจรในที่เดียว"
 				class="absolute bottom-[5rem] right-[3rem]"
 			/>
 		</header>

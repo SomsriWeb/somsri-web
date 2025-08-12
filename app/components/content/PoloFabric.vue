@@ -13,6 +13,7 @@
 			v-for="fabric in fabrics"
 			:key="fabric.name"
 			:name="fabric.name"
+			:alt="fabric.alt || fabric.name"
 			:image-url="fabric.imgUrl"
 			:popup-image-url="fabric.popupImageUrl"
 			class="w-full max-w-[250px] h-auto object-contain mx-auto"

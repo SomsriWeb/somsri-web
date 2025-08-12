@@ -1,6 +1,7 @@
 {
     "name": "กระเป๋า",
     "image": "/product-type/totebag.jpg",
+    "alt": "สมศรีมีเสื้อ เรามีบริการออกแบบกระเป๋า",
     "url": "/totebag",
     "featured": true,
     "order": 4

@@ -1,5 +1,6 @@
 {
     "name": "tc-lacost",
     "image": "/polo/tclacost.png",
+    "alt": "tc lacost details",
     "order": 1
 }

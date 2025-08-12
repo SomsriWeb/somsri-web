@@ -1,7 +1,10 @@
-::landing-page-header-style-two
 ---
-image: /produce-tshirt/banner.png
+title: (Somsri) Search_ผลิตเสื้อยืด ตจว. [A] FB - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
 ---
+::landing-page-header-style-two{image="/produce-tshirt/banner.png"}
 #title
 รับผลิตเสื้อ
 

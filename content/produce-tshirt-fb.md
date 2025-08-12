@@ -1,7 +1,11 @@
-::landing-page-header-style-two
 ---
-image: /produce-tshirt/banner.png
+title: (Somsri) Search_ผลิตเสื้อยืด [A] FB - สมศรีมีเสื้อ
+description: รับผลิตเสื้อ เกรดพรีเมี่ยม ราคาส่งจากโรงงาน รับสกรีนเสื้อ ปักโลโก้ ออกแบบลายเสื้อ ตามความต้องการของลูกค้า รองรับการทำแบรนด์เสื้อผ้าแบบ OEM
+navbar: false
+footer: false
+lineFloatingButton: false
 ---
+::landing-page-header-style-two{image="/produce-tshirt/banner.png"}
 #title
 รับผลิตเสื้อ
 

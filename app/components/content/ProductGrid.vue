@@ -14,7 +14,7 @@
 				<Card class="shadow hover:scale-105 transition duration-300">
 					<ProseImg
 						:src="item.image"
-						:alt="item.name"
+						:alt="item.alt"
 						class="aspect-square object-cover rounded-lg"
 					/>
 					<ProseH3 class="text-4xl text-center">{{ item.name }}</ProseH3>

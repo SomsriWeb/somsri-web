@@ -43,6 +43,7 @@
 						:name="screen.name"
 						:url="screen.url"
 						:image="screen.image"
+						:alt="screen.alt"
 					/>
 				</swiper-slide>
 			</swiper-container>

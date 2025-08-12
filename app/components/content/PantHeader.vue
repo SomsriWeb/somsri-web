@@ -15,7 +15,7 @@
 				<div class="order-2 lg:order-1 text-center lg:text-left max-w-full z-10">
 					<ProseImg
 						src="/pants/logo-white.png"
-						alt=""
+						alt="สมศรีการ์เมนท์ รับผลิตกางเกงยางยืด ขาสั้น ราคาเริ่มต้น 150 บาท"
 						class="mx-auto md:mx-0 w-[300px] sm:w-[350px] md:w-[400px]"
 					/>
 					<p class="font-light text-base sm:text-lg lg:text-xl mt-4 mb-5 break-words">

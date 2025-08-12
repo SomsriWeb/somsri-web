@@ -98,7 +98,7 @@
 			<NuxtLink to="/">
 				<ProseImg
 					src="/logo.svg"
-					alt="Somsri Logo"
+					alt="สมศรีมีเสื้อ"
 					class="w-[3rem] md:w-[1.75rem] max-w-[40px] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]"
 				/>
 			</NuxtLink>

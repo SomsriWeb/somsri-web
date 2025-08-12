@@ -8,6 +8,7 @@
 		<div>
 			<NuxtImg
 				src="/tshirt-factory/introduce-factory.png"
+				alt="รับผลิตเสื้อยืด สั่งทำเสื้อพร้อมสกรีน"
 				class="object-cover w-full h-full rounded-xl"
 				format="webp"
 				loading="lazy"

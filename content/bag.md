@@ -18,7 +18,7 @@ activeNavbar: true
   :::
 
   :::div-center
-    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/cover-2-unsmushed.png"}
+    ::::prose-img{.max-w-[40rem] alt="bag-preview" src="/bag/cover-2-unsmushed.png"}
     ::::
   :::
 

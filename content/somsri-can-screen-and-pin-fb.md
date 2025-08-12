@@ -1,3 +1,9 @@
+---
+title: Search_ผลิต ปัก สกรีนเสื้อโปโล [A] FB - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
+---
 ::landing-page-header-style-three{image="/somsri-can-screen-and-pin/banner.png"}
 #title
 รับผลิตเสื้อโปโล

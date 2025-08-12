@@ -6,6 +6,7 @@
 			description:
 				"กระบวนการพิมพสกรีนอีกรูปแบบหนึ่ง ที่ไดรับความนิยมเป็นอยางสูง โดยใช้ ความร้อนเข้ามาทำใหน้ำหมึกซึมเขาไปในเนื้อผ้า นิยมทำเปนเสื้อกีฬา",
 			image: "/produce-tshirt/sublimation.png",
+			alt: "ราคางาน Sublimation",
 		},
 	]
 </script>
@@ -18,6 +19,7 @@
 			<Card v-for="item in items" :key="item.title" class="shadow" horizontal>
 				<ProseImg
 					:src="item.image"
+					:alt="item.alt"
 					class="rounded-lg md:max-w-[10rem] aspect-square object-cover"
 				/>
 				<div>
@@ -28,7 +30,11 @@
 		</div>
 
 		<div class="flex justify-center">
-			<ProseImg src="/produce-tshirt/sublimation-price-table.jpg" class="max-w-[25rem]" />
+			<ProseImg
+				src="/produce-tshirt/sublimation-price-table.jpg"
+				alt="sport price"
+				class="max-w-[25rem]"
+			/>
 		</div>
 	</div>
 </template>

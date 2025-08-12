@@ -12,9 +12,18 @@
 
 		<ClientOnly>
 			<Vue3Marquee :duration="50" class="rounded-xl">
-				<ProseImg src="/somsri-collaborators/brand-1.png" alt="brand" />
-				<ProseImg src="/somsri-collaborators/brand-2.png" alt="brand" />
-				<ProseImg src="/somsri-collaborators/brand-3.png" alt="brand" />
+				<ProseImg
+					src="/somsri-collaborators/brand-1.png"
+					alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ"
+				/>
+				<ProseImg
+					src="/somsri-collaborators/brand-2.png"
+					alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ"
+				/>
+				<ProseImg
+					src="/somsri-collaborators/brand-3.png"
+					alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ"
+				/>
 			</Vue3Marquee>
 		</ClientOnly>
 	</div>

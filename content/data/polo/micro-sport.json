@@ -1,5 +1,6 @@
 {
     "name": "micro-sport",
     "image": "/polo/microsport.png",
+    "alt": "Micro Sport Details",
     "order": 3
 }

@@ -1,3 +1,9 @@
+---
+title: (Somsri) Search_เสื้อแบรนด์ตัวเอง [A] FB - สมศรีมีเสื้อ
+navbar: false
+footer: false
+lineFloatingButton: false
+---
 ::landing-page-header-style-two{image="/brand-uniform/banner.png"}
 #title
 รับสกรีนเสื้อ

@@ -10,7 +10,7 @@
 
 		<ProseImg
 			src="/pants/image3.png"
-			alt="ตัวอย่างสินค้า"
+			alt="ตัวอย่างกางเกง"
 			class="max-w-md md:max-w-lg lg:max-w-xl object-contain"
 		/>
 	</section>

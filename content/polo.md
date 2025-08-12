@@ -6,8 +6,7 @@ description: โรงงานรับผลิตเสื้อโปโล 
 activeNavbar: true
 ---
 
-::polo-banner
-::
+![polo cover](/polo/cover-1.png)
 
 ::container
   :::prose-h1{.text-center}

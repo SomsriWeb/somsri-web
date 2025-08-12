@@ -3,14 +3,15 @@
 	interface Props {
 		image: string
 		titleAsTag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+		alt?: string
 	}
-	const { image, titleAsTag = "h1" } = defineProps<Props>()
+	const { image, titleAsTag = "h1", alt = "" } = defineProps<Props>()
 </script>
 
 <template>
 	<div>
 		<header>
-			<ProseImg :src="image" class="!w-screen !h-screen object-cover" />
+			<ProseImg :src="image" :alt="alt" class="!w-screen !h-screen object-cover" />
 			<div class="absolute inset-0 bg-black/30" />
 			<div class="absolute bottom-[3rem] px-5 md:px-[4.6rem] text-white">
 				<component

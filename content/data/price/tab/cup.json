@@ -2,5 +2,6 @@
     "uid": "cup",
     "name": "แก้วน้ำ",
     "imageUrl": "/price/cup.jpg",
+    "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
     "order": 4
 }

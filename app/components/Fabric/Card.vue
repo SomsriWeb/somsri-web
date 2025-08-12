@@ -4,26 +4,36 @@
 		name: string
 		imageUrl: string
 		popupImageUrl: string
+		usePopup?: boolean
+		alt?: string
 	}
 
-	const { name, imageUrl, popupImageUrl } = defineProps<Props>()
+	const { name, imageUrl, popupImageUrl, alt = "", usePopup = false } = defineProps<Props>()
 
 	// VARIABLE
 	const isModalOpen = ref<boolean>(false)
 
 	// COMPUTED
 	const popupImageAlt = computed(() => `${name} popup`)
+
+	// FUNCTION
+	function openPopup() {
+		if (usePopup) {
+			isModalOpen.value = true
+		}
+	}
 </script>
 <template>
 	<div class="cursor-pointer">
-		<img
+		<ProseImg
 			class="rounded-xl hover:scale-105 transition-all duration-300"
 			:src="imageUrl"
-			:alt="name"
-			@click="isModalOpen = true"
+			:alt="alt || name"
+			@click="openPopup"
 		/>
 
 		<UModal
+			v-if="usePopup"
 			:class="{ hidden: !isModalOpen }"
 			class="max-w-sm"
 			:modal="isModalOpen"
