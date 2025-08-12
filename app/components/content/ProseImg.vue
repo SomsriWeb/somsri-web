@@ -28,8 +28,6 @@
 		}
 		return props.src
 	})
-
-	console.log(props.alt)
 </script>
 
 <template>
