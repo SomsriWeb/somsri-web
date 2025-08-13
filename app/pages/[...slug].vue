@@ -32,7 +32,7 @@
 			<ContentRenderer v-if="pageType === 'page'" class="space-y-[2rem]" :value="page" />
 
 			<template v-else>
-				<BlogHeader :image="page.image">
+				<BlogHeader :image="page.image" :alt="page.title">
 					<template #title>{{ page.title }}</template>
 				</BlogHeader>
 				<Container>
