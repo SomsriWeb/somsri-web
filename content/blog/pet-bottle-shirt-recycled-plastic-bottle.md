@@ -42,7 +42,7 @@ image: /blog/pet-bottle-shirt-recycled-plastic-bottle-header.jpg
 - ลดการใช้ทรัพยากรธรรมชาติ: กระบวนการรีไซเคิลนี้ช่วยลดการใช้วัสดุใหม่ เช่น น้ำมันและทรัพยากรธรรมชาติอื่น ๆ
 - ช่วยลดการปล่อยก๊าซเรือนกระจก: การผลิตเสื้อผ้าจากขวด PET รีไซเคิลช่วยลดการปล่อย [CO2](https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%8B%E0%B8%94%E0%B9%8C) ที่เกิดจากการผลิตเส้นใยจากวัสดุใหม่
 
-![รูป](/blog/pet-bottle-shirt-recycled-plastic-bottle-1.jpg)
+![เสื้อขวด Pet ทนทานและยืดหยุ่น: โพลีเอสเตอร์มีความทนทานสูง ไม่ขาดง่าย สามารถใช้งานได้ยาวนาน](/blog/pet-bottle-shirt-recycled-plastic-bottle-1.jpg)
 
 ## เสื้อขวด PET นิยมใช้ในผลิตภัณฑ์ไหนบ้าง?
 

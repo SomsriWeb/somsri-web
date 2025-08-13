@@ -12,7 +12,7 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 
 เปรียบเทียบผ้าคอตตอน สามารถแบ่งออกได้ 2 วิธี คือแบ่งตามชนิดหรือเบอร์ของเส้นด้าย และตามกระบวนการผลิตของเส้นด้าย
 
-![how-many-grades-of-cotton-are-there-1](/blog/how-many-grades-of-cotton-are-there-1.jpg)
+![เปรียบเทียบผ้าคอตตอน สามารถแบ่งออกได้ 2 วิธี คือแบ่งตามชนิดหรือเบอร์ของเส้นด้าย และตามกระบวนการผลิตของเส้นด้าย](/blog/how-many-grades-of-cotton-are-there-1.jpg)
 
 ### เปรียบเทียบผ้าคอตตอน แบ่งตามชนิดของเส้นด้าย
 
@@ -35,7 +35,7 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 | Cotton Semi          | ผ้าฝ้ายเกรดระดับปานกลาง ใช้เครื่องจักรในการสางเส้นใยฝ้ายเพื่อให้ได้ผลผลิตที่ดี | เหมาะสำหรับทำแจก เป็นเสื้อกิจกรรม เสื้อกลุ่ม เสื้อครอบครัว   |
 | Cotton Comb          | ใช้เครื่องจักรที่ทันสมัยช่วยในการหวีเส้นใย                                     | เหมาะสำหรับผลิตเพื่อจำหน่าย เสื้อใส่ประจำวัน สินค้าพรีเมี่ยม |
 
-![how-many-grades-of-cotton-are-there-2](/blog/how-many-grades-of-cotton-are-there-2.jpg)
+![เปรียบเทียบผ้าคอตตอน ผ้าคอตตอนหรือผ้าฝ้ายเป็นผ้าชนิดหนึ่งที่นิยมใช้กันมากที่สุดในโลก](/blog/how-many-grades-of-cotton-are-there-2.jpg)
 
 ## เปรียบเทียบผ้าคอตตอน แต่ละชนิด
 
@@ -53,6 +53,6 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 
 ติดต่อเร่งด่วนได้ทางเบอร์ 02 430 0678 / 066 112 6521 / 066 114 1399 / 063 421 6521
 
-![how-many-grades-of-cotton-are-there-3](/blog/how-many-grades-of-cotton-are-there-3.jpeg)
-![how-many-grades-of-cotton-are-there-4](/blog/how-many-grades-of-cotton-are-there-4.jpg)
-![how-many-grades-of-cotton-are-there-5](/blog/how-many-grades-of-cotton-are-there-5.jpg)
+![เปรียบเทียบผ้าคอตตอน ใส่สบาย นุ่ม ระบายอากาศได้ดี](/blog/how-many-grades-of-cotton-are-there-3.jpeg)
+![เปรียบเทียบผ้าคอตตอน  ผ้าคอตตอนมีหลายแบบและหลายเกรดจึงทำให้คุณภาพเนื้อผ้าต่างกัน](/blog/how-many-grades-of-cotton-are-there-4.jpg)
+![เปรียบเทียบผ้าคอตตอน แบ่งตามชนิดของเส้นด้าย และแบ่งตามกระบวนการผลิตของเส้นด้าย](/blog/how-many-grades-of-cotton-are-there-5.jpg)

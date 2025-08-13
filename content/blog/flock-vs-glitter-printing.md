@@ -109,7 +109,7 @@ image: /blog/flock-vs-glitter-printing-header.png
 - เสื้อกีฬาที่มีตัวเลขและตัวอักษรนูน
 - เสื้อผ้าแบรนด์เนมสุดหรูพร้อมเอฟเฟกต์หนังกลับ
 
-![image](/blog/flock-vs-glitter-printing-1.jpg)
+![สรีนกำมะหยี่ ผิวสกรีนจะนุ่มฟู มีเอกลักษณ์](/blog/flock-vs-glitter-printing-1.jpg)
 
 ### งานสกรีนกากเพชร
 
@@ -117,7 +117,7 @@ image: /blog/flock-vs-glitter-printing-header.png
 - เสื้อผ้าเด็กที่มียูนิคอร์นหรือดวงดาวกากเพชร
 - โลโก้แบรนด์แฟชั่นที่มีองค์ประกอบเมทัลลิก
 
-![image](/blog/flock-vs-glitter-printing-2.png)
+![เปรียบเทียบข้อดีข้อเสียของการ สกรีนกากเพชร](/blog/flock-vs-glitter-printing-2.png)
 
 
 

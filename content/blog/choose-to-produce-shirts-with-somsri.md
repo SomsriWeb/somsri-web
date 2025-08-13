@@ -49,7 +49,7 @@ image: /blog/choose-to-produce-shirts-with-somsri-header.jpg
 
 เรามีผลงานและรีวิวจริงจากลูกค้า ทั้งองค์กร, โรงเรียน, แบรนด์แฟชั่น ไปจนถึง YouTuber และอินฟลูเอนเซอร์ชื่อดัง
 
-![choose-to-produce-shirts-with-somsri-1](/blog/choose-to-produce-shirts-with-somsri-1.jpg)
+![ทำไมใคร ๆ ก็เลือกผลิตเสื้อกับสมศรี ามีทีมงานที่พร้อมให้คำปรึกษาตั้งแต่ขั้นตอนแรก ช่วยวางแผน เลือกเนื้อผ้า ออกแบบลายพิมพ์ และวางโครงสร้างค่าใช้จ่าย](/blog/choose-to-produce-shirts-with-somsri-1.jpg)
 
 ## ขั้นตอนการสั่งผลิตเสื้อกับสมศรีมีเสื้อ
 

@@ -30,7 +30,7 @@ image: /blog/what-is-tc-fabric-what-type-of-fabric-header.jpg
 
 ถ้าอยากได้เสื้อที่ไม่แข็งกระด้างจนเกินไปแต่ยังคุมงบได้อยู่ ผ้า TC คือคำตอบที่ลงตัว
 
-![image](/blog/what-is-tc-fabric-what-type-of-fabric-1.jpg)
+![ผ้า TC ทำจากโพลีเอสเตอร์ผสมกับคอตตอน ใช้ในเสื้อที่ต้องการความพรีเมียมมากขึ้น เช่น เสื้อแบรนด์ เสื้อยูนิฟอร์มบริษัท หรือเสื้อแฟชั่น](/blog/what-is-tc-fabric-what-type-of-fabric-1.jpg)
 
 ## ผ้า tc มีกี่แบบ?
 
@@ -67,7 +67,7 @@ image: /blog/what-is-tc-fabric-what-type-of-fabric-header.jpg
 - ผ้าม่าน ผ้าคลุมเฟอร์นิเจอร์
 - [กระเป๋าผ้า](/fabric-bag) กระเป๋าแคนวาส
 
-![image](/blog/what-is-tc-fabric-what-type-of-fabric-2.jpg)
+![ผ้า TC ถูกนำไปใช้ผลิตสิ่งทอหลากหลายประเภท เพราะมีความยืดหยุ่นและคุณภาพดี เช่น ชุดยูนิฟอร์มพนักงาน เสื้อบริษัท](/blog/what-is-tc-fabric-what-type-of-fabric-2.jpg)
 
 ## ทำไมต้องผลิตเสื้อกับ “สมศรีมีเสื้อ”
 

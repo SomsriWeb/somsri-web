@@ -14,7 +14,7 @@ image: /blog/how-to-pick-fabric-header.png
 
 **ต้นทุนและกำไร** – การเลือกผ้าที่เหมาะสมสามารถช่วยรักษาสมดุลระหว่างต้นทุนและคุณภาพ ช่วยให้มั่นใจถึงผลกำไรโดยไม่กระทบต่อความคาดหวังของลูกค้า
 
-![how-to-pick-fabric-1](/blog/how-to-pick-fabric-1.jpg)
+![การทำแบรนด์เสื้อตัวเอง สิ่งที่สำคัญอย่างหนึ่ง คือ วิธีเลือกผ้า หาผ้าให้เหมาะสมกับแบรนด์](/blog/how-to-pick-fabric-1.jpg)
 
 ## ประเภทของผ้าที่นิยมใช้ในการทำเสื้อผ้า วิธีเลือกผ้า หาผ้าให้เหมาะกับแบรนด์
 
@@ -43,7 +43,7 @@ image: /blog/how-to-pick-fabric-header.png
 - เหมาะกับงานแบบไหน: เหมาะสำหรับผลิตเสื้อแนวสตรีทวัยรุ่น หรือเสื้อ oversize<br>
 อ่านเพิ่มเติมเกี่ยวกับ [ผ้า Cotton Comb 20](what-is-cotton) เพื่อทำความเข้าใจอย่างละเอียด
 
-![how-to-pick-fabric-2](/blog/how-to-pick-fabric-2.jpg)
+![เสื้อ Oversized ส่วนมากจะผลิตจาก ผ้า Cotton Comb 20](/blog/how-to-pick-fabric-2.jpg)
 
 ### ผ้า Dry Tech
 

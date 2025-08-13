@@ -13,7 +13,7 @@ image: /blog/what-is-supersoft-header.png
 
 ผ้าฝ้ายเป็นวัสดุหลักในโลกสิ่งทอมาเป็นเวลานับพันปีแล้ว แต่การคิดค้นผ้าฝ้าย supersoft นั้นเพิ่งเกิดขึ้นไม่นานนี้ เมื่อความต้องการของผู้บริโภคที่มีต่อผ้าที่นุ่มสบายมากขึ้น ผู้ผลิตสิ่งทอจึงเริ่มทดลองวิธีต่างๆ เพื่อปรับปรุงคุณสมบัติตามธรรมชาติของผ้าฝ้าย โดยผ่านเทคนิคต่างๆ เช่น การหวี [การซักด้วยเอนไซม์](https://oneandallthailand.com/power-enzyme-is-new-detergent/) และการใช้กรรมวิธีปั่นแบบพิเศษ ผ้าฝ้าย supersoft จึงถือกำเนิดขึ้น วิวัฒนาการนี้ถือเป็นการเปลี่ยนแปลงไปสู่การผลิตผ้าที่ไม่เพียงแต่ใช้งานได้จริง แต่ยังหรูหราและยั่งยืนอีกด้วย
 
-![what-is-supersoft-1](/blog/what-is-supersoft-1.jpeg)
+![ผ้า supersoft  มักถูกนำไปใช้ทำเสื้อยืด ผ้าปูที่นอน และเสื้อผ้าเด็ก เนื่องจากมีความนุ่มและทนทาน ระบายอากาศได้ดี](/blog/what-is-supersoft-1.jpeg)
 
 ## เสื้อ supersoft มีกี่ประเภท
 
@@ -36,7 +36,7 @@ image: /blog/what-is-supersoft-header.png
 - ต้องดูแลอย่างระมัดระวังเพื่อรักษาความนุ่มและคุณภาพ
 - มีแนวโน้มว่าจะยับง่ายเมื่อเปรียบเทียบกับผ้าสังเคราะห์
 
-![what-is-supersoft-2](/blog/what-is-supersoft-2.jpg)
+![ผ้า Supersoff เหมาะกับงานผลิตเสื้อด้วยวิธีการพิมพ์หลากหลายวิธีที่ยังคงความนุ่มและความสบาย](/blog/what-is-supersoft-2.jpg)
 
 ## ผ้า supersoff เหมาะกับงานเสื้อแบบไหน
 
@@ -61,6 +61,6 @@ image: /blog/what-is-supersoft-header.png
 4. ทีมกราฟฟิคดราฟแบบ และส่งตัวอย่างให้ตรวจสอบ
 5. หลังจากลูกค้าอนุมัติแบบ ใช้เวลาผลิตไม่เกิน 15 วัน
 
-![what-is-supersoft-3](/blog/what-is-supersoft-3.jpg)
-![what-is-supersoft-4](/blog/what-is-supersoft-4.jpg)
-![what-is-supersoft-5](/blog/what-is-supersoft-5.jpg)
+![ข้อดีของ ผ้า Supersoft คือ ไม่ขึ้นขนหลังซัก ใส่สบาย นุ่ม น่าสวมใส่](/blog/what-is-supersoft-3.jpg)
+![ข้อดีของ ผ้า Supersoft คือ ระบายอากาศอย่างดีเยี่ยม ทำให้รู้สึกสบายขณะสวมใส่](/blog/what-is-supersoft-4.jpg)
+![ข้อดีของ ผ้า Supersoft คือ ย้อมด้วยสีที่ไม่มีกำมะถัน (Sulfur Free)](/blog/what-is-supersoft-5.jpg)

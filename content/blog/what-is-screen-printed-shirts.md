@@ -13,7 +13,7 @@ image: /blog/what-is-screen-printed-shirts-header.png
 
 ## สกรีนเสื้อ มีกี่รูปแบบ และมีขั้นตอนอย่างไรบ้าง
 
-![image](/blog/what-is-screen-printed-shirts-1.jpg)
+![การสกรีนเสื้อ ในรูปแบบที่นิยมมีอยู่ทั้งหมด 5 แบบ](/blog/what-is-screen-printed-shirts-1.jpg)
 
 กรรมวิธีการสกรีนเสื้อในปัจจุบัน มีมากมายหลายรูปแบบ แตกต่างไปกันกับจุดประสงค์ของการสกรีนเสื้อ ไม่ว่าจะเป็นจำนวนที่ต้องการสกรีน ขนาดงานพิมพ์ เนื้อผ้าของเสื้อที่ต้องการสกรีน โดยวิธีหลัก ๆ จะมีอยู่ 5 รูปแบบ ที่เป็นที่นิยมใช้ในปัจจุบัน ดังนี้ 
 
@@ -59,7 +59,7 @@ image: /blog/what-is-screen-printed-shirts-header.png
 
 ขั้นตอนการสกรีน เริ่มจากนำรูปที่ต้องการพิมพ์เข้าโปรแกรมสั่งพิมพ์รูปผ่านเครื่องปริ้น DTF แล้วนำแผ่น [PET Film](https://desuplastic.com/pet-thermoformed-blister-sheet-roll/?id=21454578137&ad=705293771017&keyword=pet%20sheet&dev=c&network=g&place=&gad_source=1&gclid=CjwKCAjw5Ky1BhAgEiwA5jGujvGdkLj9-c8wuJ_2Gqh5z1aJass-ZXMkeX_D7RkQRXqtvfCBEIAe0RoCQiUQAvD_BwE) ที่พิมพ์เสร็จแล้วนำมาโรยผงกาว แล้วร่อนผงกาวให้ทั่วแผ่นฟิล์ม ตัวเครื่องจะมีการโรยกาวลงบนหมึกสีขาวและทำการอบให้กาวละลาย จากนั้นสามารถนำแผ่นฟิล์มไปวางบนผ้าและรีดร้อนได้ทันที นำแผ่นฟิล
 
-![image](/blog/what-is-screen-printed-shirts-2.jpg)
+![วัสดุที่ใช้สกรีนเสื้อ มี 2 แบบคือ สีสกรีนเสื้อเชื้อน้ำ กับ สีสกรีนเสื้อเชื้อน้ำมัน](/blog/what-is-screen-printed-shirts-2.jpg)
 
 ## วัสดุที่ใช้ในการสกรีนเสื้อ
 

@@ -91,7 +91,7 @@ image: /blog/checklist-before-ordering-your-first-t-shirt-header.jpg
 - ขอผลงานตัวอย่าง
 - สอบถามบริการหลังการขาย เช่น การเคลมสินค้า หากมีปัญหา
 
-![image](/blog/checklist-before-ordering-your-first-t-shirt-1.jpg)
+![สั่งทำเสื้อยืด การสั่งทำเสื้อยืด ไม่ใช่เรื่องใหม่ในวงการธุรกิจ ไม่ว่าจะใช้ในกิจกรรมองค์กร อีเวนต์ งานแจกของพรีเมียม หรือแม้กระทั่งการสร้างแบรนด์แฟชั่นของตัวเอง](/blog/checklist-before-ordering-your-first-t-shirt-1.jpg)
 
 **ข้อผิดพลาดที่คนสั่งทำเสื้อยืดครั้งแรกมักพลาด**
 

@@ -92,7 +92,7 @@ image: /blog/problems-after-ordering-polo-shirts-header.jpg
 - ถามให้แน่ชัดว่ามีค่าใช้จ่ายแฝงอะไรอีกไหม
 - เลือกผู้ผลิตที่มีราคาชัดเจน ตรวจสอบได้ล่วงหน้า
 
-![รูป](/blog/problems-after-ordering-polo-shirts-1.jpg)
+![ผลิตเสื้อโปโล “เนื้อผ้า” คือหัวใจสำคัญของเสื้อโปโล เพราะส่งผลต่อทั้งความรู้สึกขณะสวมใส่ ภาพลักษณ์ขององค์กร และความทนทานในการใช้งาน](/blog/problems-after-ordering-polo-shirts-1.jpg)
 
 ## ผลิตเสื้อโปโล ใช้เนื้อผ้าอะไรดี
 
@@ -141,7 +141,7 @@ image: /blog/problems-after-ordering-polo-shirts-header.jpg
 | ความหรูหรา | ดูพรีเมียม         | เหมาะกับงาน Casual มากกว่า     |
 | ราคา       | สูงกว่า            | ถูกกว่า                        |
 
-![รูป](/blog/problems-after-ordering-polo-shirts-2.jpg)
+![ผลิตเสื้อโปโล ด้วยผ้า TK (โพลีเอสเตอร์ 100%) คุณสมบัติ: เนื้อผ้ามันวาว สีสด ทนทาน ยับยาก แห้งเร็ว](/blog/problems-after-ordering-polo-shirts-2.jpg)
 
 ## เคล็ดลับสั่งผลิตเสื้อโปโลให้ได้ “ตรงปก”
 
