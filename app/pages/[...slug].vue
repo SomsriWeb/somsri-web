@@ -1,5 +1,8 @@
 <script setup lang="ts">
 	import { LINE_LINK } from "~/lib/lineLink"
+	import { USE_NAVBAR } from "~/lib/useNavbar"
+	import { USE_FOOTER } from "~/lib/useFooter"
+	import { USE_LINE_FLOATING_BUTTON } from "~/lib/useLineFloatingButton"
 
 	const route = useRoute()
 	const pageType = ref<"page" | "blog">("page")
@@ -23,6 +26,9 @@
 	}
 
 	provide(LINE_LINK, page.value.lineLink)
+	provide(USE_NAVBAR, page.value.navbar)
+	provide(USE_FOOTER, page.value.footer)
+	provide(USE_LINE_FLOATING_BUTTON, page.value.lineFloatingButton)
 </script>
 
 <template>

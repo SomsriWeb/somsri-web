@@ -39,6 +39,9 @@ export default defineContentConfig({
 				image: z.string(),
 				date: z.string(),
 				author: z.string(),
+				lineFloatingButton: z.boolean().default(true),
+				navbar: z.boolean().default(true),
+				footer: z.boolean().default(true),
 			}),
 		}),
 
