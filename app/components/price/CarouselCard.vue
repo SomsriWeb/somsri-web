@@ -13,9 +13,9 @@
 
 <template>
 	<div
-		class="rounded-xl border-2 border-primary max-w-full md:max-w-[10rem] overflow-hidden bg-primary"
+		class="rounded-xl border-2 border-primary max-w-full md:max-w-[13rem] overflow-hidden bg-primary h-full"
 	>
-		<h3 class="text-center text-white bg-primary font-bold px-1 py-0.5 text-xl">
+		<h3 class="text-center text-white bg-primary font-bold px-1 py-0.5 text-lg">
 			{{ priceLists.fabricName }}
 		</h3>
 		<div class="bg-white flex flex-col gap-0.5 items-center p-1">

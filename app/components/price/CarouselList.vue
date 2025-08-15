@@ -15,6 +15,7 @@
 		autoplay: {
 			delay: 1000,
 		},
+		autoHeight: true,
 		breakpoints: {
 			320: {
 				slidesPerView: 2,
