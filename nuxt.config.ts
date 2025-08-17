@@ -80,8 +80,8 @@ export default defineNuxtConfig({
 			dev: true,
 			gitInfo: {
 				name: "somsri-web",
-				owner: "SomsriTshirt",
-				url: "https://github.com/SomsriTshirt/somsri-web",
+				owner: "SomsriWeb",
+				url: "https://github.com/SomsriWeb/somsri-web",
 			},
 		},
 		build: {
