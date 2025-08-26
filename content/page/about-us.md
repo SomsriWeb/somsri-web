@@ -4,6 +4,8 @@ description: บริษัท สมศรีการ์เมนท์จํ
   คือบริษัทธุรกิจผลิตสิ่งทอทุกชนิด
   โดยเรามียอดสั่งซื้อมากมายจากลูกค้าทั้งในและนอกประเทศ
 activeNavbar: true
+เพิ่ม script ใน head:
+  - content: console.log("test")
 ---
 
 ::container
