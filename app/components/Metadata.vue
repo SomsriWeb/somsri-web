@@ -33,10 +33,11 @@
 	useHead({
 		titleTemplate: "%s",
 		title: pageSEO.value.title,
-		script: page["เพิ่ม script ใน head"].map((script) => ({
-			...script,
-			textContent: script.content,
-		})),
+		script:
+			page["เพิ่ม script ใน head"]?.map((script) => ({
+				...script,
+				textContent: script.content,
+			})) || [],
 	})
 
 	defineOgImage({
