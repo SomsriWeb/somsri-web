@@ -11,15 +11,17 @@ const commonContentSchema = z.object({
 	lineFloatingButton: z.boolean().default(true),
 	navbar: z.boolean().default(true),
 	footer: z.boolean().default(true),
-	"เพิ่ม script ใน head": z.array(
-		z.object({
-			type: z.string().optional(),
-			src: z.string().url(),
-			content: z.string().optional(),
-			async: z.boolean().optional(),
-			defer: z.boolean().optional(),
-		})
-	),
+	"เพิ่ม script ใน head": z
+		.array(
+			z.object({
+				type: z.string().optional(),
+				src: z.string().url(),
+				content: z.string().optional(),
+				async: z.boolean().optional(),
+				defer: z.boolean().optional(),
+			})
+		)
+		.default([]),
 })
 
 export default defineContentConfig({
