@@ -13,9 +13,11 @@ const commonContentSchema = z.object({
 	footer: z.boolean().default(true),
 	"เพิ่ม script ใน head": z.array(
 		z.object({
+			type: z.string().optional(),
 			src: z.string().url(),
-			async: z.boolean().default(false),
-			defer: z.boolean().default(false),
+			content: z.string().optional(),
+			async: z.boolean().optional(),
+			defer: z.boolean().optional(),
 		})
 	),
 })
