@@ -1,51 +1,44 @@
 import { defineContentConfig, defineCollection, z } from "@nuxt/content"
-import { asSeoCollection } from "@nuxtjs/seo/content"
+
+const commonContentSchema = z.object({
+	activeNavbar: z.boolean().default(false),
+	lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
+	title: z.string(),
+	description: z.string(),
+	image: z.string(),
+	date: z.string(),
+	author: z.string(),
+	lineFloatingButton: z.boolean().default(true),
+	navbar: z.boolean().default(true),
+	footer: z.boolean().default(true),
+	"เพิ่ม script ใน head": z.array(
+		z.object({
+			src: z.string().url(),
+			async: z.boolean().default(false),
+			defer: z.boolean().default(false),
+		})
+	),
+})
 
 export default defineContentConfig({
 	collections: {
-		content: defineCollection(
-			asSeoCollection({
-				type: "page",
-				source: {
-					include: "page/*.md",
-					prefix: "/",
-				},
-				schema: z.object({
-					activeNavbar: z.boolean().default(false),
-					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
-					title: z.string(),
-					description: z.string(),
-					image: z.string(),
-					date: z.string(),
-					author: z.string(),
-					lineFloatingButton: z.boolean().default(true),
-					navbar: z.boolean().default(true),
-					footer: z.boolean().default(true),
-				}),
-			})
-		),
+		content: defineCollection({
+			type: "page",
+			source: {
+				include: "page/*.md",
+				prefix: "/",
+			},
+			schema: commonContentSchema,
+		}),
 
-		blog: defineCollection(
-			asSeoCollection({
-				type: "page",
-				source: {
-					include: "blog/*.md",
-					prefix: "/",
-				},
-				schema: z.object({
-					activeNavbar: z.boolean().default(false),
-					lineLink: z.string().default("https://line.me/R/ti/p/%40diz8986o"),
-					title: z.string(),
-					description: z.string(),
-					image: z.string(),
-					date: z.string(),
-					author: z.string(),
-					lineFloatingButton: z.boolean().default(true),
-					navbar: z.boolean().default(true),
-					footer: z.boolean().default(true),
-				}),
-			})
-		),
+		blog: defineCollection({
+			type: "page",
+			source: {
+				include: "blog/*.md",
+				prefix: "/",
+			},
+			schema: commonContentSchema,
+		}),
 
 		product: defineCollection({
 			type: "data",
