@@ -243,8 +243,8 @@ export default defineContentConfig({
 			source: "data/why-choose-somsri/**.json",
 			schema: z.object({
 				label: z.string(),
-				icon: z.string().nullable().optional(),
-				image: z.string().nullable().optional(),
+				icon: z.string().optional(),
+				image: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -254,8 +254,8 @@ export default defineContentConfig({
 			schema: z.object({
 				label: z.string(),
 				description: z.string().optional(),
-				icon: z.string().nullable().optional(),
-				image: z.string().nullable().optional(),
+				icon: z.string().optional(),
+				image: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -265,8 +265,8 @@ export default defineContentConfig({
 			source: "data/what-cost-saving/**.json",
 			schema: z.object({
 				label: z.string(),
-				icon: z.string().nullable().optional(),
-				image: z.string().nullable().optional(),
+				icon: z.string().optional(),
+				image: z.string().optional(),
 				order: z.number(),
 			}),
 		}),
@@ -309,8 +309,8 @@ export default defineContentConfig({
 						lists: z.array(
 							z.object({
 								minOrder: z.number(),
-								maxOrder: z.number().nullable(),
-								price: z.number().nullable(),
+								maxOrder: z.number(),
+								price: z.number(),
 								attributes: z.array(
 									z.object({
 										label: z.string(),
