@@ -7,7 +7,7 @@ export default defineContentConfig({
 			asSeoCollection({
 				type: "page",
 				source: {
-					include: "**",
+					include: "page/*.md",
 					prefix: "/",
 				},
 				schema: z.object({
@@ -29,7 +29,7 @@ export default defineContentConfig({
 			asSeoCollection({
 				type: "page",
 				source: {
-					include: "blog/**",
+					include: "blog/*.md",
 					prefix: "/",
 				},
 				schema: z.object({
