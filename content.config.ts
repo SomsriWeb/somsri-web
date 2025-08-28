@@ -320,6 +320,18 @@ export default defineContentConfig({
 			}),
 		}),
 
+		whyYouShouldChooseSomsri: defineCollection({
+			type: "data",
+			source: "data/why-you-should-choose-somsri/**.json",
+			schema: z.object({
+				uid: z.string(),
+				title: z.string(),
+				description: z.string(),
+				image: z.string(),
+				order: z.number(),
+			}),
+		}),
+
 		poloProduct: defineCollection({
 			type: "data",
 			source: "data/polo/**.json",
