@@ -5,7 +5,8 @@ description: บริษัท สมศรีการ์เมนท์จํ
   โดยเรามียอดสั่งซื้อมากมายจากลูกค้าทั้งในและนอกประเทศ
 activeNavbar: true
 เพิ่ม script ใน head:
-  - content: console.log("test")
+  - src: ""
+    content: console.log('THIS IS TEST SCRIPT');
 ---
 
 ::container
