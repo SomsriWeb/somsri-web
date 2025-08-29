@@ -38,7 +38,7 @@
 				const { content, ...rest } = script
 				return {
 					...rest,
-					children: content,
+					textContent: content,
 				}
 			}) || [],
 	})
