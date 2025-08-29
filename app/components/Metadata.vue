@@ -34,10 +34,13 @@
 		titleTemplate: "%s",
 		title: pageSEO.value.title,
 		script:
-			page["เพิ่ม script ใน head"]?.map((script) => ({
-				...script,
-				textContent: script.content,
-			})) || [],
+			page["เพิ่ม script ใน head"]?.map((script) => {
+				const { content, ...rest } = script
+				return {
+					...rest,
+					children: content,
+				}
+			}) || [],
 	})
 
 	defineOgImage({
