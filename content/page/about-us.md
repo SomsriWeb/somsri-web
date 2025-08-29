@@ -6,9 +6,10 @@ description: บริษัท สมศรีการ์เมนท์จํ
 activeNavbar: true
 เพิ่ม script ใน head:
   - src: ""
-    content: '"@context": "https://schema.org",   "@type": "Organization",   "name":
-      "สมศรีมีเสื้อ",   "url": "https://somsritshirt.com/",   "logo":
-      "https://somsritshirt.com/wp-content/uploads/2023/01/logo-red-768x257.png"'
+    content: '{"@context": "https://schema.org",   "@type":
+      "Organization",   "name": "สมศรีมีเสื้อ",   "url":
+      "https://somsritshirt.com/",   "logo":
+      "https://somsritshirt.com/wp-content/uploads/2023/01/logo-red-768x257.png"}'
     type: application/ld+json
 ---
 
