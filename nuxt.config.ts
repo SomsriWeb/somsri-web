@@ -1,13 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	modules: [
+		"@nuxtjs/seo",
 		"@nuxt/content",
 		"@nuxt/ui",
 		"@nuxt/image",
 		"@nuxt/fonts",
 		"@nuxt/eslint",
 		"nuxt-swiper",
-		"@nuxtjs/seo",
 		"nuxt-viewport",
 		"@nuxtjs/device",
 		"@vueuse/nuxt",
@@ -61,6 +61,17 @@ export default defineNuxtConfig({
 	site: {
 		url: "https://somsritshirt.com",
 		name: "สมศรีมีเสื้อ",
+	},
+	sitemap: {
+		sitemapsPathPrefix: "/",
+		sitemaps: {
+			"page-sitemap": {
+				sources: ["/api/__sitemap__/page"],
+			},
+			"post-sitemap": {
+				sources: ["/api/__sitemap__/blog"],
+			},
+		},
 	},
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
