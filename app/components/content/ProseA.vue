@@ -2,7 +2,7 @@
 	// PROPS
 	interface Props {
 		href: string
-		target: "_blank" | "_parent" | "_self" | "_top" | (string & object) | null | undefined
+		target?: "_blank" | "_parent" | "_self" | "_top" | (string & object) | null | undefined
 	}
 	const props = defineProps<Props>()
 </script>
