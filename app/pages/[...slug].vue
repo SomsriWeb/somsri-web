@@ -8,14 +8,10 @@
 	const pageType = ref<"page" | "blog">("page")
 
 	const { data: page } = await useAsyncData("page-" + route.path, async () => {
-		pageType.value = "page"
 		let data = await queryCollection("content").path(route.path).first()
 
 		if (!data) {
 			data = await queryCollection("blog").path(route.path).first()
-			if (data) {
-				pageType.value = "blog"
-			}
 		}
 
 		return data
@@ -23,6 +19,11 @@
 
 	if (!page.value) {
 		throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true })
+	}
+
+	// ASSING BLOG PAGE TYPE
+	if (page.value.id.startsWith("blog")) {
+		pageType.value = "blog"
 	}
 
 	provide(LINE_LINK, page.value.lineLink)
