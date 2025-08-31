@@ -44,14 +44,16 @@
 
 <template>
 	<div
-		class="w-screen h-screen max-w-96 max-h-[30rem] bg-stone-100 rounded-lg p-3 shadow-lg space-y-3"
+		class="w-screen h-[90vh] max-w-56 max-h-[22rem] bg-stone-100 rounded-lg p-3 shadow-lg space-y-3 overflow-auto"
 	>
-		<div class="flex justify-between items-center gap-3 mb-3">
+		<div class="flex justify-between items-center gap-3">
 			<ProseH2>ตั้งค่าสินค้า</ProseH2>
 			<UButton
+				size="sm"
 				type="button"
 				icon="i-material-symbols-close-rounded"
 				color="error"
+				variant="ghost"
 				class="!min-w-fit"
 				@click="open = false"
 			/>
@@ -103,11 +105,11 @@
 						]"
 						@click="selectStyle(item.value)"
 					>
-						<p class="font-medium text-primary-500 text-xl">
+						<p class="font-medium text-primary-500">
 							{{ item.label }}
 						</p>
 						<img
-							class="w-[6rem] h-[6rem] rounded-xl"
+							class="w-[4rem] h-[4rem] rounded-xl"
 							:src="item.imgUrl"
 							:alt="item.label"
 						/>

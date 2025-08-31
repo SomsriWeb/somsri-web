@@ -35,13 +35,13 @@
 </script>
 
 <template>
-	<div class="flex items-center h-screen">
+	<div class="flex items-center h-[90vh]">
 		<UPopover
 			v-model:open="tabState"
-			class="flex items-center gap-3"
+			class="flex items-center gap-1"
 			:content="{ side: 'right' }"
 		>
-			<div class="rounded-r-xl p-2 bg-white drop-shadow-xl flex flex-col">
+			<div class="rounded-r-xl p-1 bg-white drop-shadow-xl flex flex-col">
 				<UTooltip
 					text="ตั้งค่าสินค้า"
 					arrow
@@ -49,7 +49,7 @@
 					@click="activeTab = Tab.PRODUCT"
 				>
 					<UButton
-						size="lg"
+						size="sm"
 						square
 						color="primary"
 						variant="ghost"
@@ -65,7 +65,7 @@
 					@click="activeTab = Tab.COLOR"
 				>
 					<UButton
-						size="lg"
+						size="sm"
 						square
 						color="primary"
 						variant="ghost"
@@ -81,7 +81,7 @@
 					@click="activeTab = Tab.TEXT"
 				>
 					<UButton
-						size="lg"
+						size="sm"
 						square
 						color="primary"
 						variant="ghost"
@@ -97,7 +97,7 @@
 					@click="activeTab = Tab.IMAGE"
 				>
 					<UButton
-						size="lg"
+						size="sm"
 						square
 						color="primary"
 						variant="ghost"
@@ -113,7 +113,7 @@
 					@click="activeTab = Tab.SHAPE"
 				>
 					<UButton
-						size="lg"
+						size="sm"
 						square
 						color="primary"
 						variant="ghost"

@@ -119,7 +119,7 @@ export default defineNuxtConfig({
 		fallbackBreakpoint: "lg",
 	},
 	routeRules: {
-		"/design": { ssr: false },
+		"/shop": { ssr: false },
 	},
 
 	compatibilityDate: "2025-07-19",

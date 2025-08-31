@@ -15,11 +15,11 @@
 	const sizeClass = computed(() => {
 		switch (size.value) {
 			case "sm":
-				return "text-xl md:text-3xl"
+				return "text-lg md:text-2xl"
 			case "lg":
-				return "text-[1.5rem] md:text-[2.5rem]"
+				return "text-xl md:text-3xl"
 			default:
-				return "text-[2.5rem] md:text-[3rem]"
+				return "text-[2rem] md:text-[2.5rem]"
 		}
 	})
 </script>

@@ -150,14 +150,14 @@
 	})
 </script>
 <template>
-	<div class="h-screen relative">
+	<div class="h-[90vh] relative">
 		<DesignToolbar
 			:design="designPayload"
 			class="absolute top-0 left-0 z-[1]"
 			@init-canvas="reinitCanvas()"
 		/>
 
-		<div class="flex justify-center h-screen">
+		<div class="flex justify-center h-[90vh]">
 			<DesignWorkspace :design="designPayload" @change-side="() => (selectedObject = [])" />
 		</div>
 

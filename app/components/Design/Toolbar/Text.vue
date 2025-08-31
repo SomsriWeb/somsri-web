@@ -64,14 +64,16 @@
 
 <template>
 	<div
-		class="w-screen h-screen max-w-96 max-h-[30rem] bg-stone-100 rounded-lg p-3 shadow-lg space-y-3"
+		class="w-screen h-[90vh] max-w-56 max-h-[22rem] bg-stone-100 rounded-lg p-3 shadow-lg space-y-3"
 	>
 		<div class="flex justify-between items-center gap-3 mb-3">
 			<ProseH2>เพิ่มข้อความ</ProseH2>
 			<UButton
+				size="sm"
 				type="button"
 				icon="i-material-symbols-close-rounded"
 				color="error"
+				variant="ghost"
 				class="!min-w-fit"
 				@click="closeTab()"
 			/>

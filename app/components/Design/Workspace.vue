@@ -106,10 +106,10 @@
 			@click="turnLeft()"
 		/>
 		<div class="relative flex justify-center">
-			<ProseImg
+			<img
 				ref="imgEl"
 				:src="img"
-				class="absolute max-w-96 max-h-[27rem]"
+				class="absolute max-w-[15rem] max-h-[15rem]"
 				alt="สมศรีมีเสื้อ"
 				@load="resizeCanvas"
 			/>
