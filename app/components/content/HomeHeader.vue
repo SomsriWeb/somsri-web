@@ -1,8 +1,3 @@
-<script lang="ts" setup>
-	defineProps<{
-		actionLink: string
-	}>()
-</script>
 <template>
 	<header>
 		<NuxtImg
