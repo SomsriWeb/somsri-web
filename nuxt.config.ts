@@ -59,7 +59,7 @@ export default defineNuxtConfig({
 	},
 	seo: {},
 	site: {
-		url: "https://somsritshirt.com",
+		url: "https://test-web.somsritshirt.com",
 		name: "สมศรีมีเสื้อ",
 	},
 	sitemap: {
