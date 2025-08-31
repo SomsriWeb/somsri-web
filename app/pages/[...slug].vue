@@ -1,8 +1,8 @@
 <script setup lang="ts">
 	import { LINE_LINK } from "~/lib/lineLink"
-	import { USE_NAVBAR } from "~/lib/useNavbar"
-	import { USE_FOOTER } from "~/lib/useFooter"
-	import { USE_LINE_FLOATING_BUTTON } from "~/lib/useLineFloatingButton"
+import { USE_FOOTER } from "~/lib/useFooter"
+import { USE_LINE_FLOATING_BUTTON } from "~/lib/useLineFloatingButton"
+import { USE_NAVBAR } from "~/lib/useNavbar"
 
 	const route = useRoute()
 	const pageType = ref<"page" | "blog">("page")
@@ -36,16 +36,18 @@
 	<div v-if="page">
 		<NuxtLayout :name="page.activeNavbar || pageType === 'blog' ? 'color' : 'default'">
 			<Metadata :page="page" />
-			<ContentRenderer v-if="pageType === 'page'" class="space-y-[2rem]" :value="page" />
+			<main>
+    			<ContentRenderer v-if="pageType === 'page'" class="space-y-[2rem]" :value="page" />
 
-			<template v-else>
-				<BlogHeader :image="page.image" :alt="page.title">
-					<template #title>{{ page.title }}</template>
-				</BlogHeader>
-				<Container>
-					<ContentRenderer class="space-y-[2rem]" :value="page" />
-				</Container>
-			</template>
+    			<template v-else>
+    				<BlogHeader :image="page.image" :alt="page.title">
+    					<template #title>{{ page.title }}</template>
+    				</BlogHeader>
+    				<Container>
+    					<ContentRenderer class="space-y-[2rem]" :value="page" />
+    				</Container>
+    			</template>
+			</main>
 		</NuxtLayout>
 	</div>
 </template>
