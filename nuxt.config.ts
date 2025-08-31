@@ -71,7 +71,7 @@ export default defineNuxtConfig({
 			"post-sitemap": {
 				sources: ["/api/__sitemap__/blog"],
 			},
-		},
+		}
 	},
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
@@ -131,7 +131,20 @@ export default defineNuxtConfig({
 	},
 	routeRules: {
 		"/shop": { ssr: false },
+		"/**": {
+		prerender: true
+		}
 	},
+	nitro: {
+    prerender: {
+      routes: [
+        '/sitemap_index.xml',
+        '/page-sitemap.xml',
+        '/post-sitemap.xml',
+      ],
+      crawlLinks: true,
+    }
+  },
 
 	compatibilityDate: "2025-07-19",
 })
