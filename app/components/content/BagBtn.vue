@@ -1,7 +1,7 @@
 <template>
 	<div class="flex justify-center gap-5">
 		<!-- ปุ่มออกแบบ -->
-		<NuxtLink to="/design">
+		<NuxtLink to="/shop">
 			<UButton
 				icon="material-symbols:shopping-basket-sharp"
 				class="w-full bg-primary text-white text-sm px-4 py-2"

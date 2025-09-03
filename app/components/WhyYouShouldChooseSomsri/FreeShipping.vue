@@ -31,7 +31,7 @@
 				</p>
 
 				<NuxtLink
-					to="/design"
+					to="/portfolio"
 					class="text-primary hover:underline transition-all flex items-center gap-1"
 				>
 					ดูตัวอย่างผลงานเพิ่มเติม <UIcon name="lucide:chevron-right" />

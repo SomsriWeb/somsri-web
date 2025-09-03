@@ -30,7 +30,7 @@
 				</UButton>
 			</nuxt-link>
 
-			<nuxt-link to="/design">
+			<nuxt-link to="/shop">
 				<UButton
 					size="xl"
 					color="primary"
