@@ -3,6 +3,12 @@ title: โรงงานผลิตเสื้อ รับผลิตเส
 description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง
   รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
 lineLink: https://contact.somsritshirt.com/3d975
+เพิ่ม script ใน head:
+  - content: '{   "@context": "https://schema.org",   "@type":
+      "Organization",   "name": "สมศรีมีเสื้อ",   "url":
+      "https://somsritshirt.com/",   "logo":
+      "https://somsritshirt.com/logo-red.png" }'
+    type: application/ld+json
 ---
 
 ::home-header
