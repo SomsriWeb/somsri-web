@@ -4,6 +4,7 @@ description: ขั้นตอนการสั่งซื้อเริ่�
   หลังจากนั้นให้ทีมกราฟฟิกดราฟแบบ แล้วรออนุมัติไม่เกิน 15 วันในการผลิต
   แล้วรอรับสินค้า
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/af2fd
 ---
 
 ::container

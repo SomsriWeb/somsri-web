@@ -4,6 +4,7 @@ description: รับผลิตเสื้อ เกรดพรีเมี
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/42504
 ---
 ::landing-page-header-style-two{image="/produce-tshirt/banner.png"}
 #title

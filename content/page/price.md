@@ -14,6 +14,7 @@ description: ดูเรทราคาเสื้อยืด สมศรี
   สั่งขั้นต่ำหลักสิบตัว ทำเสื้อแบรนด์ เสื้อกีฬา เสื้อบริษัท ยิ่งสั่งเยอะ
   ยิ่งราคาถูก
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/b98a0
 ---
 
 ::container

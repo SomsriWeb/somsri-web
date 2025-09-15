@@ -3,6 +3,7 @@ title: รับผลิตหน้ากากผ้า ผ้าปิดจ
 description: รับผลิตหน้ากากผ้า ผ้าปิดจมูก ผ้าปิดปากสกรีนลาย
   ปักผลิตจากผ้าคุณภาพดีโรงงานเราผลิตเอง ผลิตไว ได้ของแน่นอน
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/d85cf
 ---
 
 ::mask-header

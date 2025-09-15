@@ -3,6 +3,7 @@ title: LandingPage กระเป๋า FB - สมศรีมีเสื้�
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/5681a
 ---
 ::landing-page-header-style-one{image="/landing-page-tote-bag/banner.png"}
 #title

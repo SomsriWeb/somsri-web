@@ -1,3 +1,6 @@
+---
+title: Soft-power - สมศรีมีเสื้อ
+---
 ![](/soft-power/banner.png)
 ::container
     ::div-center

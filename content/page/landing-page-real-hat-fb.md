@@ -3,6 +3,7 @@ title: LandingPage หมวก FB - สมศรีมีเสื้อ
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/cbb21
 ---
 
 ::landing-page-header-style-one{image="/landing-page-real-hat/banner.png"}

@@ -2,6 +2,8 @@
 title: Youtube - สมศรีมีเสื้อ
 navbar: false
 footer: false
+lineFloatingButton: true
+lineLink: https://contact.somsritshirt.com/a1505
 ---
 ::landing-page-header-style-two{image="/tshirt/banner.png"}
 #title

@@ -4,6 +4,7 @@ description: โรงงานผลิตเสื้อกีฬา มีบ
   เสื้อกีฬาโรงเรียน เนื้อผ้าคุณภาพสูง TC/TK, Micro Sport
   สกรีนลายคมชัดด้วยเทคนิคที่ทันสมัย
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/544af
 ---
 
 ::sport-img-style

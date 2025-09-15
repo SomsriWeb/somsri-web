@@ -4,6 +4,7 @@ description: โรงงานรับผลิตเสื้อโปโล 
   เสื้อโปโลพนักงาน เสื้อคอปก เสื้อบริษัท เนื้อผ้าหลากหลาย คุณภาพดี รับประกัน 90
   วัน
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/c0087
 ---
 
 ![polo cover](/polo/cover-1.png)
@@ -31,6 +32,6 @@ activeNavbar: true
   :::polo-fabric
   :::
 
-  :::type-polo{action-link="https://contact.somsritshirt.com/3d8f7"}
+  :::type-polo
   :::
 ::

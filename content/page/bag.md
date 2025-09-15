@@ -3,6 +3,7 @@ title: รับผลิตกระเป๋าผ้า Tote Bag ออกแ
 description: โรงงานรับผลิตกระเป๋าผ้า สั่งทำกระเป๋าผ้าตามแบบ มีบริการออกแบบ
   พร้อมสกรีนโลโก้ ทรงก้นขยาย ทรงเกาหลี ทรงสี่เหลี่ยม ผ้าแคนวาส ผ้าโซลอน คุณภาพดี
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/218c9
 ---
 
 ::container

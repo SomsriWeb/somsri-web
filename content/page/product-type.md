@@ -4,6 +4,7 @@ description: สินค้าของสมศรีมีเสื้อ
   สมศรีมีสินค้าพรีเมี่ยมหลากหลายชนิดไม่ว่าจะเป็นการสกรีนเสื้อ หน้ากาก กระเป๋าผ้า
   ผ้ากันเปื้อน และอื่น ๆ ให้คุณเลือกสรร
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/a8f97
 ---
 
 ::container

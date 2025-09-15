@@ -3,6 +3,7 @@ title: LandingPage กางเกงช้าง - สมศรีมีเส�
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/3c11b
 ---
 ::landing-page-header-style-two{image="/somsri-with-the-elephant-pants/banner.png"}
 #title

@@ -9,6 +9,7 @@ seo:
     พร้อมคุณสมบัติพิเศษ กันน้ำ กันแดด แห้งไว ครบที่เดียว
   title: โรงงานผลิตเสื้อ เลือกเนื้อผ้าได้หลากหลาย มีฟังก์ชันพิเศษทุกชนิด
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/dd8de
 ---
 
 ::container

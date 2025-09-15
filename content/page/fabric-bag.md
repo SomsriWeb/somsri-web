@@ -1,6 +1,7 @@
 ---
 title: รับผลิตกระเป๋าผ้า ถุงผ้า พร้อมสกรีนโลโก้ ราคาส่ง ครบจบที่เดียว 2025
 description: รับผลิตกระเป๋าผ้า ถุงผ้า พร้อมสกรีนโลโก้ตามแบบของลูกค้า ออกแบบงาน พิมพ์ลายสกรีน ครบวงจรในที่เดียว ราคาส่ง กำหนดงบได้ ทันสมัย ส่งงานตรงเวลา
+lineLink: https://contact.somsritshirt.com/c4119
 ---
 ::landing-page-header-style-three{image="/fabric-bag/banner.png"}
 #title

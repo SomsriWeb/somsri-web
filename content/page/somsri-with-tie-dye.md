@@ -4,6 +4,7 @@ description: รับผลิตเสื้อมัดย้อม โรง
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/b8f97
 ---
 ::landing-page-header-style-three{image="/somsri-with-tie-dye/banner.png" alt="รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม"}
 #title

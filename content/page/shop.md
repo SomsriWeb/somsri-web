@@ -3,6 +3,7 @@ title: ออกแบบเสื้อ ด้วยตัวเอง เค�
 description: ออกแบบเสื้อ ด้วยโปรแกรมออนไลน์ฟรี รับออกแบบและผลิต สกรีนเสื้อยืด
   เสื้อโปโล ปักเสื้อ สามารถเลือกสี ขนาด และสไตล์ของเสื้อยืดได้
 activeNavbar: true
+lineLink: https://contact.somsritshirt.com/d15ec
 ---
 
 ::design

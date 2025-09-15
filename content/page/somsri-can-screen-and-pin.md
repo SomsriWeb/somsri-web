@@ -3,6 +3,7 @@ title: Search_ผลิต ปัก สกรีนเสื้อโปโล 
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/6e554
 ---
 ::landing-page-header-style-three{image="/somsri-can-screen-and-pin/banner.png"}
 #title

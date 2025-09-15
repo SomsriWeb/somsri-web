@@ -3,6 +3,7 @@ title: LandingPage กระเป๋า - สมศรีมีเสื้อ
 navbar: false
 footer: false
 lineFloatingButton: false
+lineLink: https://contact.somsritshirt.com/47216
 ---
 ::landing-page-header-style-one{image="/landing-page-tote-bag/banner.png"}
 #title

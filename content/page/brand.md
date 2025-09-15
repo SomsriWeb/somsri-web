@@ -2,6 +2,7 @@
 title: Design your own brand สมศรีให้คำปรึกษาด้วยทีมงานมืออาชีพ
 description: Design your own brand สมศรีให้คำปรึกษาด้วยทีมงานมืออาชีพ
   ผลิตเสื้อผ้าแบบครบวงจร ครบจบใบที่เดียว สินค้าที่ส่งถึงมือลูกค้าต้องมีคุณภาพ​
+lineLink: https://contact.somsritshirt.com/2606f
 ---
 
 ::brand-header
