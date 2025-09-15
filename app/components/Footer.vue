@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { LINE_LINK } from '~/lib/lineLink';
+
+const lineLink = inject<string>(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o')
 	const socialMedias = [
 		{
 			icon: "ic:baseline-facebook",
@@ -34,7 +37,7 @@
 			<ProseImg
 				src="/footer/footer-logo.png"
 				alt="สมศรีมีเสื้อ"
-				class="max-w-[3.5rem] sm:max-w-[10rem]"
+				class="max-w-[3.5rem] sm:max-w-[5rem]"
 			/>
 			<div class="flex items-center gap-2 sm:gap-5">
 				<NuxtLink
