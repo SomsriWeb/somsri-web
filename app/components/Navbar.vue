@@ -47,7 +47,7 @@
 		},
 		{
 			name: "เกี่ยวกับเรา",
-			url: "/about-us",
+			url: "/about",
 		},
 	]
 	const isScrolled = ref<boolean>(false)
