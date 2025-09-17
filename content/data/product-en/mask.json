@@ -1,0 +1,7 @@
+{
+    "name": "Cloth Masks",
+    "image": "/product-type/mask.png",
+    "url": "/mask",
+    "featured": true,
+    "order": 5
+}
