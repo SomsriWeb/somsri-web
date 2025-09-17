@@ -350,6 +350,7 @@ export default defineContentConfig({
 				image: z.string(),
 				alt: z.string().optional(),
 				order: z.number(),
+				url: z.string(),
 			}),
 		}),
 	},

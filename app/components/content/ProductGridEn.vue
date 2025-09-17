@@ -1,18 +1,15 @@
 <script setup lang="ts">
 import ProseH2 from "./ProseH2.vue";
 
-const { data: producten } = await useAsyncData("producten", () =>
-  queryCollection("productEn")
-    .where("name", "NOT LIKE", "หมวก")
-    .order("order", "ASC")
-    .all()
-);
+const { data: products } = await useAsyncData("products", () =>
+		queryCollection("productEn").where("name", "NOT LIKE", "หมวก").order("order", "ASC").all()
+	)
 </script>
 <template>
   <section>
     <ProseH2 class="text-5xl mb-5">Our Products</ProseH2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-      <NuxtLink v-for="(item, index) in producten" :key="index" :to="item.url">
+      <NuxtLink v-for="(item, index) in products" :key="index" :to="item.url">
         <Card class="shadow hover:scale-105 transition duration-300">
           <ProseImg
             :src="item.image"
