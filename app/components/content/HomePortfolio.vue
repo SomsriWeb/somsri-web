@@ -40,7 +40,7 @@ const imgs = [
 
         <ClientOnly>
             <Vue3Marquee class="rounded-xl" :duration="40">
-                <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-[17rem] object-cover" sizes="1000px" />
+                <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-[17rem] object-cover" sizes="xs:400px sm:500px" />
             </Vue3Marquee>
         </ClientOnly>
     </div>
