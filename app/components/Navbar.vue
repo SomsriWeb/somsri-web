@@ -117,14 +117,14 @@
 
 			<div
 				:class="{ hidden: !showMenu && $viewport.isLessOrEquals('lg') }"
-				class="mt-3 xl:mt-0 w-full flex flex-col xl:!flex-row items-center justify-center gap-3"
+				class="mt-3 xl:mt-0 w-full flex flex-col xl:!flex-row items-center justify-center gap-3 xl:gap-1"
 			>
 				<NuxtLink
 					v-for="menu in menus"
 					:key="menu.name"
 					:to="menu.url"
 					:class="[activeMenuClass(menu.url)]"
-					class="w-full block text-[0.7rem] text-right xl:text-center font-stretch-condensed hover:underline transition-all"
+					class="w-full block text-[0.7rem] xl:text-[0.68rem] text-right xl:text-center font-stretch-condensed hover:underline transition-all"
 					>{{ menu.name }}</NuxtLink
 				>
 			</div>
