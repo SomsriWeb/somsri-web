@@ -33,6 +33,32 @@ export default defineNuxtConfig({
                     href: '/favicon/safari-pinned-tab.svg',
                     color: '#a52241',
                 },
+                {
+                    rel: 'preload',
+                    href: '/fonts/DB-Helvethaica-X-300.woff2',
+                    as: 'font',
+                    type: 'font/woff2',
+                    crossorigin: 'anonymous',
+                },
+                {
+                    rel: 'preload',
+                    href: '/fonts/DB-Helvethaica-X-500.woff2',
+                    as: 'font',
+                    type: 'font/woff2',
+                    crossorigin: 'anonymous',
+                },
+                {
+                    rel: 'preload',
+                    href: '/fonts/DB-Helvethaica-X-700.woff2',
+                    as: 'font',
+                    type: 'font/woff2',
+                    crossorigin: 'anonymous',
+                },
+                {
+                    rel: 'preconnect',
+                    href: 'https://somsritshirt.com',
+                    crossorigin: '',
+                },
             ],
             meta: [
                 {
