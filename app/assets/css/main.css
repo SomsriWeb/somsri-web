@@ -5,6 +5,12 @@ html {
     font-size: 28px !important;
 }
 
+@media (width < 640px) {
+    html {
+        font-size: 24px !important;
+    }
+}
+
 h1,
 h2,
 h3,
