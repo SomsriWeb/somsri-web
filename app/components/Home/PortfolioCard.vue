@@ -13,11 +13,13 @@
 		<ProseImg :src="image" :alt="alt || name" class="h-full aspect-ratio--5x7 object-cover" />
 		<div class="absolute inset-0 bg-black/15" />
 		<h3 class="absolute top-4 left-5 text-white text-2xl">{{ name }}</h3>
-		<UButton
+
+		<!-- TODO: รอทำหน้าแยกก่อนค่อยมาเปิด -->
+		<!-- <UButton
 			color="neutral"
 			variant="outline"
 			class="!text-primary absolute bottom-5 right-5 rounded-full !min-w-fit"
 			icon="lucide:plus"
-		/>
+		/> -->
 	</div>
 </template>
