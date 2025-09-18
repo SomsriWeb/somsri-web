@@ -1,25 +1,25 @@
 <script setup lang="ts">
-	// PROPS
-	interface Props {
-		name: string
-		url: string
-		image: string
-		alt?: string
-	}
-	defineProps<Props>()
+// PROPS
+interface Props {
+    name: string;
+    url: string;
+    image: string;
+    alt?: string;
+}
+defineProps<Props>();
 </script>
 <template>
-	<div class="relative rounded-xl overflow-hidden h-full">
-		<ProseImg :src="image" :alt="alt || name" class="h-full aspect-ratio--5x7 object-cover" />
-		<div class="absolute inset-0 bg-black/15" />
-		<h3 class="absolute top-4 left-5 text-white text-2xl">{{ name }}</h3>
+    <div class="relative rounded-xl overflow-hidden h-full">
+        <ProseImg :src="image" :alt="alt || name" class="h-full aspect-ratio--5x7 object-cover" sizes="500px" />
+        <div class="absolute inset-0 bg-black/15" />
+        <h3 class="absolute top-4 left-5 text-white text-2xl">{{ name }}</h3>
 
-		<!-- TODO: รอทำหน้าแยกก่อนค่อยมาเปิด -->
-		<!-- <UButton
+        <!-- TODO: รอทำหน้าแยกก่อนค่อยมาเปิด -->
+        <!-- <UButton
 			color="neutral"
 			variant="outline"
 			class="!text-primary absolute bottom-5 right-5 rounded-full !min-w-fit"
 			icon="lucide:plus"
 		/> -->
-	</div>
+    </div>
 </template>
