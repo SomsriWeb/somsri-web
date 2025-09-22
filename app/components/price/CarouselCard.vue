@@ -13,7 +13,7 @@
 
 <template>
 	<div
-		class="rounded-xl border-2 border-primary max-w-full md:max-w-[13rem] overflow-hidden bg-primary h-full"
+		class="rounded-xl border-2 border-primary overflow-hidden bg-primary h-full"
 	>
 		<h3 class="text-center text-white bg-primary font-bold px-1 py-0.5 text-lg">
 			{{ priceLists.fabricName }}
@@ -21,8 +21,8 @@
 		<div class="bg-white flex flex-col gap-0.5 items-center p-1">
 			<p class="text-primary">เริ่มต้นที่</p>
 			<p class="text-primary text-5xl font-bold">
-				{{ priceLists.rates[0]?.price || "สอบถามราคา"
-				}}<span v-if="priceLists.rates[0]?.price" class="text-sm text-stone-800">THB</span>
+				{{ priceLists.rates[0]?.price || "สอบถามราคา"}}
+				<span v-if="priceLists.rates[0]?.price" class="text-sm text-stone-800">THB</span>
 			</p>
 			<p class="text-primary">
 				({{ priceLists.rates[0]?.min }} - {{ priceLists.rates[0]?.max }} ตัว)
@@ -42,8 +42,8 @@
 					<p v-else class="font-bold leading-none">{{ rate.min }}+</p>
 				</div>
 				<p class="font-bold leading-none" :class="[rate.price ? 'text-3xl' : 'text-sm']">
-					{{ rate.price || "สอบถามราคา"
-					}}<span v-if="rate.price" class="text-xs font-normal">THB</span>
+					{{ rate.price || "สอบถามราคา"}}
+					<span v-if="rate.price" class="text-xs font-normal">THB</span>
 				</p>
 			</div>
 		</div>

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-	// PROPS
-	interface Props {
-		name: string
-		url: string
-		image: string
-		alt?: string
-	}
-	defineProps<Props>()
+// PROPS
+interface Props {
+    name: string;
+    url: string;
+    image: string;
+    alt?: string;
+}
+defineProps<Props>();
 </script>
 <template>
 	<div class="relative rounded-2xl overflow-hidden">
