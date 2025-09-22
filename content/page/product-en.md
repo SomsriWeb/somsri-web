@@ -36,7 +36,7 @@ All products are made in our standard factory to ensure the best results for our
     ::::
   
   #description
-  If you are planning to create your own clothing brand but are unsure which fabric to choose, Somsri Shirts is here to help. We specialize in producing all kinds of shirts and offer a wide selection of high-quality fabrics to fit every purpose—whether it’s fashion wear, your own brand, corporate uniforms, or event T-shirts.
+  If you are planning to create your own clothing brand but are unsure which fabric to choose, SomsriTshirts is here to help. We specialize in producing all kinds of shirts and offer a wide selection of high-quality fabrics to fit every purpose—whether it’s fashion wear, your own brand, corporate uniforms, or event T-shirts.
 
   You can choose from many fabric types, such as:
 
