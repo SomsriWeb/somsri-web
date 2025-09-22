@@ -1,3 +1,5 @@
+import { beasties } from 'vite-plugin-beasties';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: ['@nuxtjs/seo', '@nuxt/content', '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', 'nuxt-swiper', 'nuxt-viewport', '@nuxtjs/device', '@vueuse/nuxt', '@nuxt/scripts'],
@@ -155,6 +157,16 @@ export default defineNuxtConfig({
             routes: ['/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
         },
+    },
+    vite: {
+        plugins: [
+            beasties({
+                // optional beasties configuration
+                options: {
+                    preload: 'swap',
+                },
+            }),
+        ],
     },
 
     compatibilityDate: '2025-07-19',
