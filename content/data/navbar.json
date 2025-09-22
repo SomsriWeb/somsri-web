@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "label": "หน้าหลัก",
+            "label-en": "Home",
+            "url": "/",
+            "url-en": "/en"
+        },
+        {
+            "label": "สินค้าทั้งหมด",
+            "label-en": "Products",
+            "url": "/product-type",
+            "url-en": "/product-en"
+        },
+        {
+            "label": "เนื้อผ้า",
+            "label-en": "Fabric",
+            "url": "/fabric-specification",
+            "url-en": "/fabric-specification"
+        },
+        {
+            "label": "ออกแบบเสื้อ",
+            "label-en": "Design",
+            "url": "/shop",
+            "url-en": "/shop"
+        },
+        {
+            "label": "ราคา",
+            "label-en": "Price",
+            "url": "/price",
+            "url-en": "/price"
+        },
+        {
+            "label": "ผลงาน",
+            "label-en": "Portfolio",
+            "url": "/portfolio",
+            "url-en": "/portfolio"
+        },
+        {
+            "label": "วิธีสั่งซื้อ",
+            "label-en": "How to Order",
+            "url": "/how-to-order",
+            "url-en": "/how-to-order"
+        },
+        {
+            "label": "บทความ",
+            "label-en": "Blog",
+            "url": "/blog",
+            "url-en": "/blog"
+        },
+        {
+            "label": "เกี่ยวกับเรา",
+            "label-en": "About Us",
+            "url": "/about",
+            "url-en": "/about"
+        }
+    ]
+}

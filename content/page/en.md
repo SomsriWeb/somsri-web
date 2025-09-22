@@ -8,6 +8,7 @@ lineLink: https://contact.somsritshirt.com/3d975
           "https://somsritshirt.com/",   "logo":
           "https://somsritshirt.com/logo-red.png" }'
       type: application/ld+json
+language: en
 ---
 
 ::home-header
