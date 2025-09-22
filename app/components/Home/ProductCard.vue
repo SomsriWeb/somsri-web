@@ -17,7 +17,7 @@
 		>
 			<h3 class="text-white text-4xl md:text-2xl lg:text-4xl font-bold mb-1">{{ name }}</h3>
 			<NuxtLink :to="url">
-				<UButton color="neutral" class="!text-primary">ดูเพิ่มเติม</UButton>
+				<UButton color="neutral" class="!text-primary"><slot name="cta-text">ดูเพิ่มเติม</slot></UButton>
 			</NuxtLink>
 		</div>
 	</div>

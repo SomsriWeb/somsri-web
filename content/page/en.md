@@ -30,12 +30,18 @@ Request Information
   We provide full service garment manufacturing, offering custom apparel in a wide variety of styles along with complete screen and printing solutions. Many leading brands trust SomsriShirt to produce high quality products from T-shirts and polos to sportswear and more.
   :::
 
-  :::home-all-product-en
+  :::home-all-product{lang="en"}
   #title
   ## All Products
   
   #description
   SomsriShirt produces a wide range of products from T-shirts and polos to sportswear and more.
+
+  #cta-text
+  More Details
+
+  #other-product-button-text
+  View More Products
   :::
 
   :::home-portfolio
@@ -46,15 +52,15 @@ Request Information
   We produce all types of apparel from uniforms and corporate shirts to teamwear, sportswear, and event shirts. Every piece is backed by our screen and printing and embroidery guarantee, ensuring the highest quality in every order. When you think of quality apparel, think SomsriShirt.
   :::
 
-  :::home-screen-portfolio-en
+  :::home-screen-portfolio{lang="en"}
   #title
   ## Screen Printing Portfolio
   
   #description
-  We offer a wide range of screen printing techniques, tailored to meet every customer’s unique production needs.
+  We offer a wide range of screen printing techniques, tailored to meet every customer's unique production needs.
   :::
 
-  :::home-pin-portfolio-en
+  :::home-pin-portfolio{lang="en"}
   #title
   ## Embroidery Portfolio
   
@@ -62,7 +68,9 @@ Request Information
   Our diverse embroidery techniques ensure every design is crafted to your exact requirements.
   :::
 
-  :::why-you-should-choose-somsri-en
+  :::why-you-should-choose-somsri{lang="en"}
+  #title
+  Why Choose SomsriTshirt?
   :::
 
   :::title-with-description
@@ -80,14 +88,11 @@ Request Information
   :::
 
   :::order-somsri
-  ---
-  title-tag: h2
-  ---
   #title
-  Make Beautiful Custom Shirts with SomsriShirt
+  ## Make Beautiful Custom Shirts with SomsriShirt
 
   
   #description
-  If you’re looking for stylish, high-quality screen-printed shirts with professional service you can trust, we’ve got you covered. Our team is happy to offer free consultation and provide a wide selection of print samples to choose from. If you’re interested in custom screen printing, feel free to contact us through multiple channels.
+  If you're looking for stylish, high-quality screen-printed shirts with professional service you can trust, we've got you covered. Our team is happy to offer free consultation and provide a wide selection of print samples to choose from. If you're interested in custom screen printing, feel free to contact us through multiple channels.
   :::
 ::

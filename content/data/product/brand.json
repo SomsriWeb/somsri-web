@@ -1,5 +1,6 @@
 {
     "name": "เสื้อแบรนด์",
+    "name-en": "Brand",
     "image": "/product-type/band.jpg",
     "url": "/brand",
     "order": 8
