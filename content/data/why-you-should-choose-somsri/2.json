@@ -1,7 +1,9 @@
 {
     "uid": "guarantee",
     "title": "การันตีงานคุณภาพ ตรงต่อเวลา",
+    "title-en": "Guaranteed Quality, On-Time Delivery",
     "description": "ส่งตรงเวลารับประกันสินค้า 90 วัน",
+    "description-en": "On-Time Delivery with 90-Day Product Warranty",
     "image": "/why-you-should-choose-somsri/clock.png",
     "order": 2
 }

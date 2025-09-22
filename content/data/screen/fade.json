@@ -1,7 +1,9 @@
 {
     "name": "สกรีนเสื้อ แบบไล่สี",
+    "name-en": "Fade Printing T-shirts",
     "image": "/screen/fade.jpg",
     "alt": "รับผลิตเสื้อยืด สกรีนแบบไฮเดน",
+    "alt-en": "Custom T-shirt Production with Fade Screen Printing",
     "url": "/screen/fade",
     "order": 3
 }
