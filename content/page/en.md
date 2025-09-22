@@ -16,7 +16,7 @@ language: en
 Garment factory providing T-shirt printing, embroidery, and complete apparel design.
 
 #description
-SomsriShirt is dedicated to every detail of production, using only the finest fabrics to create beautiful, durable, and high quality garments. Every piece is quality guaranteed and delivered with heartfelt service.
+SomsriTshirt is dedicated to every detail of production, using only the finest fabrics to create beautiful, durable, and high quality garments. Every piece is quality guaranteed and delivered with heartfelt service.
 
 #button
 Request Information
@@ -28,7 +28,7 @@ Request Information
   ## Our Clients
 
   #description
-  We provide full service garment manufacturing, offering custom apparel in a wide variety of styles along with complete screen and printing solutions. Many leading brands trust SomsriShirt to produce high quality products from T-shirts and polos to sportswear and more.
+  We provide full service garment manufacturing, offering custom apparel in a wide variety of styles along with complete screen and printing solutions. Many leading brands trust SomsriTshirt to produce high quality products from T-shirts and polos to sportswear and more.
   :::
 
   :::home-all-product{lang="en"}
@@ -36,7 +36,7 @@ Request Information
   ## All Products
 
   #description
-  SomsriShirt produces a wide range of products from T-shirts and polos to sportswear and more.
+  SomsriTshirt produces a wide range of products from T-shirts and polos to sportswear and more.
 
   #cta-text
   More Details
@@ -50,7 +50,7 @@ Request Information
   ## Portfolio by SomsriTshirt
 
   #description
-  We produce all types of apparel from uniforms and corporate shirts to teamwear, sportswear, and event shirts. Every piece is backed by our screen and printing and embroidery guarantee, ensuring the highest quality in every order. When you think of quality apparel, think SomsriShirt.
+  We produce all types of apparel from uniforms and corporate shirts to teamwear, sportswear, and event shirts. Every piece is backed by our screen and printing and embroidery guarantee, ensuring the highest quality in every order. When you think of quality apparel, think SomsriTshirt.
   :::
 
   :::home-screen-portfolio{lang="en"}
@@ -77,11 +77,11 @@ Request Information
   :::title-with-description
   #title
   ::::prose-h2{size="lg"}
-  Apparel Production with SomsriShirt
+  Apparel Production with SomsriTshirt
   ::::
 
   #description
-  At SomsriShirt, we take care of every step from design, production, screen printing, to embroidery. With our professional and experienced team along with our own factory, we can handle every type of apparel order. This is why our clients trust us every garment is beautifully made, accurate to design, with prints that are sharp, durable, and long lasting. Our process is fast, convenient, and guided with support at every stage, ensuring both speed and quality in every order.
+  At SomsriTshirt, we take care of every step from design, production, screen printing, to embroidery. With our professional and experienced team along with our own factory, we can handle every type of apparel order. This is why our clients trust us every garment is beautifully made, accurate to design, with prints that are sharp, durable, and long lasting. Our process is fast, convenient, and guided with support at every stage, ensuring both speed and quality in every order.
 
       ::::prose-p{.mt-3}
       We simplify the complicated world of apparel and screen printing, making it easier than ever — right at your fingertips
@@ -90,7 +90,7 @@ Request Information
 
   :::order-somsri
   #title
-  ## Make Beautiful Custom Shirts with SomsriShirt
+  ## Make Beautiful Custom Shirts with SomsriTshirt
 
   #description
   If you're looking for stylish, high-quality screen-printed shirts with professional service you can trust, we've got you covered. Our team is happy to offer free consultation and provide a wide selection of print samples to choose from. If you're interested in custom screen printing, feel free to contact us through multiple channels.
