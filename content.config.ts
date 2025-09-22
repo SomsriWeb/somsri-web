@@ -362,5 +362,16 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+		productEn: defineCollection({
+			type: "data",
+			source: "data/product-en/**.json",
+			schema: z.object({
+				name: z.string(),
+				image: z.string(),
+				alt: z.string().optional(),
+				order: z.number(),
+				url: z.string(),
+			}),
+		}),
 	},
 })

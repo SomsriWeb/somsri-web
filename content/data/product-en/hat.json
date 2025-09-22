@@ -1,0 +1,7 @@
+{
+    "name": "hat",
+    "image": "/product-type/hat.png",
+    "url": "/hat",
+    "featured": true,
+    "order": 6
+}
