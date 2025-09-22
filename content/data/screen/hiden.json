@@ -1,7 +1,9 @@
 {
     "name": "สกรีนเสื้อ แบบไฮเดน",
+    "name-en": "Hiden Printing T-shirts",
     "image": "/screen/hiden.jpg",
     "alt": "รับผลิตเสื้อยืด สกรีนแบบไฮเดน",
+    "alt-en": "Custom T-shirt Production with Hiden Printing",
     "url": "/screen/hiden",
     "order": 2
 }

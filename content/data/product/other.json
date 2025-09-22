@@ -1,5 +1,6 @@
 {
     "name": "สินค้าอื่น ๆ",
+    "name-en": "Other Products",
     "image": "/product-type/other.jpg",
     "url": "/other-product",
     "order": 10

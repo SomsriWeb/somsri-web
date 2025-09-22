@@ -1,5 +1,6 @@
 {
     "name": "หน้ากาก",
+    "name-en": "Masks",
     "image": "/product-type/mask.png",
     "url": "/mask",
     "featured": true,

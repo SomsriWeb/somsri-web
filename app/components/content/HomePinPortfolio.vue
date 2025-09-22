@@ -1,4 +1,12 @@
 <script setup lang="ts">
+	// PROPS
+	interface Props {
+		lang?: "th" | "en"
+	}
+	withDefaults(defineProps<Props>(), {
+		lang: "th",
+	})
+	
 	// VARIABLE
 	const { data: pins } = await useAsyncData("data-pin", () => {
 		return queryCollection("pin").order("order", "ASC").all()
@@ -40,10 +48,10 @@
 			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
 				<swiper-slide v-for="pin in pins" :key="pin.name">
 					<HomePortfolioCard
-						:name="pin.name"
+						:name="lang === 'th' ? pin.name : pin['name-en']"
 						:url="pin.url"
 						:image="pin.image"
-						:alt="pin.alt"
+						:alt="lang === 'th' ? pin.alt : pin['alt-en']"
 					/>
 				</swiper-slide>
 			</swiper-container>
