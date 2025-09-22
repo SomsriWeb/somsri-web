@@ -1,4 +1,12 @@
 <script setup lang="ts">
+	// PROPS
+	interface Props {
+		lang?: "th" | "en"
+	}
+	withDefaults(defineProps<Props>(), {
+		lang: "th",
+	})
+
 	// VARIABLE
 	const { data: screens } = await useAsyncData("data-screens", () => {
 		return queryCollection("screen").order("order", "ASC").all()
@@ -40,10 +48,10 @@
 			<swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
 				<swiper-slide v-for="screen in screens" :key="screen.name">
 					<HomePortfolioCard
-						:name="screen.name"
+						:name="lang === 'th' ? screen.name : screen['name-en']"
 						:url="screen.url"
 						:image="screen.image"
-						:alt="screen.alt"
+						:alt="lang === 'th' ? screen.alt : screen['alt-en']"
 					/>
 				</swiper-slide>
 			</swiper-container>

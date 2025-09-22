@@ -1,7 +1,9 @@
 {
     "uid": "free-shipping",
     "title": "จัดส่งฟรี!",
+    "title-en": "Free Shipping!",
     "description": "จัดส่งสินค้าฟรีในกรุงเทพมหานครฯ",
+    "description-en": "Free shipping within Bangkok.",
     "image": "/why-you-should-choose-somsri/delivery-car.png",
     "order": 3
 }

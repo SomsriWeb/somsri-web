@@ -1,7 +1,9 @@
 {
     "uid": "minimum",
     "title": "ขั้นต่ำเพียงแค่ 100 ตัว",
+    "title-en": "Minimum order of just 100 pieces.",
     "description": "สั่งผลิตน้อยไม่ใช่ปัญหา แค่ 100 ตัวเราก็รับผลิต **ยกเว้นเสื้อโปโลขั้นต่ำเพียงแค่ 50 ตัว",
+    "description-en": "Small orders are not a problem — we accept production from just 100 pieces, with polo shirts starting at only 50 pieces.",
     "image": "/why-you-should-choose-somsri/min-order.png",
     "order": 4
 }

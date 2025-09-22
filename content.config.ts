@@ -49,6 +49,7 @@ export default defineContentConfig({
 			source: "data/product/**.json",
 			schema: z.object({
 				name: z.string(),
+				'name-en': z.string(),
 				image: z.string(),
 				alt: z.string().optional(),
 				url: z.string(),
@@ -62,8 +63,10 @@ export default defineContentConfig({
 			source: "data/screen/**.json",
 			schema: z.object({
 				name: z.string(),
+				'name-en': z.string(),
 				image: z.string(),
 				alt: z.string().optional(),
+				'alt-en': z.string().optional(),
 				url: z.string(),
 				order: z.number(),
 			}),
@@ -74,8 +77,10 @@ export default defineContentConfig({
 			source: "data/pin/**.json",
 			schema: z.object({
 				name: z.string(),
+				'name-en': z.string(),
 				image: z.string(),
 				alt: z.string().optional(),
+				'alt-en': z.string().optional(),
 				url: z.string(),
 				order: z.number(),
 			}),
@@ -245,6 +250,7 @@ export default defineContentConfig({
 				order: z.number(),
 			}),
 		}),
+		
 		howToOrder: defineCollection({
 			type: "data",
 			source: "data/how-to-order/**.json",
@@ -323,6 +329,20 @@ export default defineContentConfig({
 		whyYouShouldChooseSomsri: defineCollection({
 			type: "data",
 			source: "data/why-you-should-choose-somsri/**.json",
+			schema: z.object({
+				uid: z.string(),
+				title: z.string(),
+				'title-en': z.string(),
+				description: z.string(),
+				'description-en': z.string(),
+				image: z.string(),
+				order: z.number(),
+			}),
+		}),
+
+		whyYouShouldChooseSomsriEn: defineCollection({
+			type: "data",
+			source: "data/why-you-should-choose-somsri-en/**.json",
 			schema: z.object({
 				uid: z.string(),
 				title: z.string(),

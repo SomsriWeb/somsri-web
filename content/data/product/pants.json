@@ -1,5 +1,6 @@
 {
     "name": "กางเกง",
+    "name-en": "Pants",
     "image": "/product-type/pants.jpg",
     "url": "/pants",
     "order": 9

@@ -1,4 +1,13 @@
 <script setup lang="ts">
+
+	// PROPS
+	interface Props {
+		lang?: "th" | "en"
+	}
+	withDefaults(defineProps<Props>(), {
+		lang: "th",
+	})
+
 	const { data: products } = await useAsyncData("data-products", () => {
 		return queryCollection("product").where("featured", "=", true).order("order", "ASC").all()
 	})
@@ -15,11 +24,16 @@
 			<HomeProductCard
 				v-for="product in products"
 				:key="product.name"
-				:name="product.name"
+				:name="lang === 'th' ? product.name : product['name-en']"
 				:url="product.url"
 				:image="product.image"
-				:alt="product.alt"
-			/>
+				:alt="lang === 'th' ? product.alt : product['alt-en']"
+				:lang="lang"
+			>
+		<template #cta-text>
+			<slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">ดูเพิ่มเติม</slot>
+		</template>
+		</HomeProductCard>
 		</div>
 
 		<div class="flex justify-end">
@@ -29,7 +43,8 @@
 					variant="outline"
 					class="rounded-full"
 					trailing-icon="lucide:chevron-right"
-					>ดูสินค้าอื่น ๆ</UButton
+					>
+					<slot name="other-product-button-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">ดูสินค้าอื่น ๆ</slot></UButton
 				>
 			</NuxtLink>
 		</div>
