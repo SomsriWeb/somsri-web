@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import ProseH2 from "./ProseH2.vue"
 
-	interface Slots {
+interface Slots {
     /**
      * หัวข้อรอง ข้อความที่แสดงจะเป็น H2
      */
