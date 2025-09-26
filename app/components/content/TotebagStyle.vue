@@ -1,37 +1,54 @@
+<script setup lang="ts">
+// SLOTS
+interface Slots {
+    /**
+     * หัวข้อ (แสดงผลเป็น H2)
+     * @default ทรงของกระเป๋าผ้า
+     */
+    title(): unknown;
+
+    /**
+     * รายละเอียด (แสดงผลเป็น P)
+     * @default กระเป๋าผ้าทรง TOTE BAG (ผ้าแคนวาส) สามารถ customize ตามขนาดและทรงที่ต้องการได้ โดยเรามีแพทเทิร์นของโรงงานให้เลือก 3 แบบ ดังนี้
+     */
+    description(): unknown;
+
+    /**
+     * ข้างล่างรูปแบบกระเป๋าผ้า (ไม่จำเป็นต้องใส่) (ใส่ Component อะไรก็ได้)
+     */
+    footer(): unknown | undefined;
+}
+defineSlots<Slots>();
+</script>
 <template>
-	<Container class="bg-primary">
-		<div>
-			<ProseH2 class="!text-white text-center text-5xl md:text-6xl"
-				><slot name="title" mdc-unwrap="p" />ทรงของกระเป๋าผ้า</ProseH2
-			>
-			<ProseP class="!text-white text-center text-lg">
-				<slot name="description" mdc-unwrap="p"
-					>กระเป๋าผ้าทรง TOTE BAG (ผ้าแคนวาส) สามารถ customize ตามขนาดและทรงที่ต้องการได้
-					โดยเรามีแพทเทิร์นของโรงงานให้เลือก 3 แบบ ดังนี้</slot
-				>
-			</ProseP>
-		</div>
+    <Container class="bg-primary">
+        <div>
+            <ProseH2 class="!text-white text-center text-5xl md:text-6xl"><slot name="title" mdc-unwrap="p" />ทรงของกระเป๋าผ้า</ProseH2>
+            <ProseP class="!text-white text-center text-lg">
+                <slot name="description" mdc-unwrap="p">กระเป๋าผ้าทรง TOTE BAG (ผ้าแคนวาส) สามารถ customize ตามขนาดและทรงที่ต้องการได้ โดยเรามีแพทเทิร์นของโรงงานให้เลือก 3 แบบ ดังนี้</slot>
+            </ProseP>
+        </div>
 
-		<div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-			<div>
-				<ProseImg :src="'/landing-page-tote-bag/GTWM.png'" class="mb-5" />
-				<ProseH3 class="!text-white text-center">GTWM</ProseH3>
-				<ProseP class="!text-white text-center">13in x 21in (สายยาว 22 นิ้ว)</ProseP>
-			</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div>
+                <ProseImg :src="'/landing-page-tote-bag/GTWM.png'" class="mb-5" />
+                <ProseH3 class="!text-white text-center">GTWM</ProseH3>
+                <ProseP class="!text-white text-center">13in x 21in (สายยาว 22 นิ้ว)</ProseP>
+            </div>
 
-			<div>
-				<ProseImg :src="'/landing-page-tote-bag/KOREA.png'" class="mb-5" />
-				<ProseH3 class="!text-white text-center">Korea</ProseH3>
-				<ProseP class="!text-white text-center">14in x 17.5in (ไม่รวมความยาวสาย)</ProseP>
-			</div>
+            <div>
+                <ProseImg :src="'/landing-page-tote-bag/KOREA.png'" class="mb-5" />
+                <ProseH3 class="!text-white text-center">Korea</ProseH3>
+                <ProseP class="!text-white text-center">14in x 17.5in (ไม่รวมความยาวสาย)</ProseP>
+            </div>
 
-			<div>
-				<ProseImg :src="'/landing-page-tote-bag/SQUARE.png'" class="mb-5" />
-				<ProseH3 class="!text-white text-center">Square</ProseH3>
-				<ProseP class="!text-white text-center">16in x 16in (สายยาว 22 นิ้ว)</ProseP>
-			</div>
-		</div>
+            <div>
+                <ProseImg :src="'/landing-page-tote-bag/SQUARE.png'" class="mb-5" />
+                <ProseH3 class="!text-white text-center">Square</ProseH3>
+                <ProseP class="!text-white text-center">16in x 16in (สายยาว 22 นิ้ว)</ProseP>
+            </div>
+        </div>
 
-		<slot v-if="$slots.footer" name="footer" />
-	</Container>
+        <slot v-if="$slots.footer" name="footer" />
+    </Container>
 </template>
