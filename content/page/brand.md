@@ -9,7 +9,7 @@ lineLink: https://contact.somsritshirt.com/2606f
 #title-h1
 Design your own brand
 
-#title-h2
+#titleH2
 สมศรีให้คำปรึกษาด้วยทีมงานมืออาชีพ
 
   :::line-link
@@ -30,7 +30,7 @@ Design your own brand
   :::
 
   :::brand-main-content
-  #title-h2
+  #titleH2
   ทำไมต้องเลือกสร้างแบร์นกับสมศรี?
   :::
 
@@ -38,7 +38,7 @@ Design your own brand
   :::
 
   :::brand-main-content
-  #title-h2
+  #titleH2
   ตัวอย่างผลงานจากสมศรี
   :::
 
