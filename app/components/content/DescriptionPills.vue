@@ -1,6 +1,10 @@
 <script setup lang="ts">
 	// PROPS
 	interface Props {
+	/**
+     * ไม่จำเป็นต้องส่งค่า
+     * @default 1
+     */
 		slot?: number
 		color?: "primary" | "white"
 	}
