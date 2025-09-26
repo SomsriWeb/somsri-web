@@ -1,4 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+// SLOT
+interface Slots {
+    /**
+     * รายละเอียด (แสดงผลเป็น H3)
+     */
+    fabric(): unknown;
+
+	/**
+     * รายละเอียด (แสดงผลเป็น H3)
+     */
+	fabric2(): unknown;
+}
+defineSlots<Slots>();
+
+</script>
 
 <template>
 	<!-- หัวข้อหลัก -->
@@ -61,7 +77,7 @@
 				ผ้า French Terry
 			</h2>
 			<h3 class="mb-4 text-base md:text-lg">
-				<slot name="fabric-2" mdc-unwrap="p" />
+				<slot name="fabric2" mdc-unwrap="p" />
 			</h3>
 			<ul class="space-y-3 text-gray-800">
 				<li class="flex items-center gap-2">

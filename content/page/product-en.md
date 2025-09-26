@@ -25,7 +25,7 @@ All products are made in our standard factory to ensure the best results for our
   :::
 
   :::product-grid{lang="en"}
-  #cta-text
+  #ctatext
   More Details
   :::
 

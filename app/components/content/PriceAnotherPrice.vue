@@ -2,6 +2,15 @@
 // VARIABLE
 const { data: priceTabData } = await useAsyncData(`priceTab`, () => queryCollection('priceTab').order('order', 'ASC').all());
 const activeTab = ref<string>(priceTabData.value?.[0]?.uid ?? '');
+
+interface Slots {
+    /**
+     * ข้อความหัวข้อ รายละเอียด (แสดงผลเป็น H2)
+     */
+    title(): unknown;
+}
+defineSlots<Slots>();
+
 </script>
 <template>
     <div class="flex flex-col items-center">

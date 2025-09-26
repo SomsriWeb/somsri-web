@@ -38,7 +38,7 @@ Request Information
   #description
   SomsriTshirt produces a wide range of products from T-shirts and polos to sportswear and more.
 
-  #cta-text
+  #ctatext
   More Details
 
   #other-product-button-text

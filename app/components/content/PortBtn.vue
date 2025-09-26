@@ -1,5 +1,8 @@
 <script setup lang="ts">
 interface Props {
+  /**
+   * กำหนดเส้นทางของ LINK
+   */
   to: string;
 }
 const { to } = defineProps<Props>();

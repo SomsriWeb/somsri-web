@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+// SLOT
+interface Slots {
+    /**
+     * รายละเอียด (แสดงผลเป็น P)
+     */
+    description(): unknown;
+}
+defineSlots<Slots>();
+
+</script>
 
 <template>
 	<div class="relative overflow-x-hidden">

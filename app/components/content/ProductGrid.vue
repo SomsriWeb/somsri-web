@@ -7,6 +7,19 @@ withDefaults(defineProps<Props>(), {
     lang: 'th',
 });
 
+interface Slots {
+
+    /**
+     * ข้อความภายในปุ่ม เเสดงเป็น P
+     */
+    ctatext(): unknown;
+}
+
+defineSlots<Slots>();
+
+
+
+
 // VARIABLE
 const { data: products } = await useAsyncData('products', () => queryCollection('product').where('name', 'NOT LIKE', 'หมวก').order('order', 'ASC').all());
 </script>
@@ -20,7 +33,7 @@ const { data: products } = await useAsyncData('products', () => queryCollection(
                     <ProseImg :src="item.image" :alt="item.alt" class="aspect-square object-cover rounded-lg" />
                     <ProseH3 class="text-4xl text-center">{{ lang === 'th' ? item.name : item['name-en'] }}</ProseH3>
                     <NuxtLink :to="item.url">
-                        <UButton class="w-full"><slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">รายละเอียด</slot></UButton></NuxtLink
+                        <UButton class="w-full"><slot name="ctatext" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">รายละเอียด</slot></UButton></NuxtLink
                     >
                 </Card>
             </NuxtLink>

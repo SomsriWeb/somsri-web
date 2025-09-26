@@ -1,6 +1,24 @@
-<script setup>
+<script setup lang="ts">
 import ProseP from './ProseP.vue';
 
+// SLOT
+interface Slots {
+    /**
+     * ข้อความหัวข้อรอง เเสดงเป็น span
+     */
+    subtitle(): unknown;
+
+    /**
+     * ข้อความรายระเอียด เเสดงเป็น P
+     */
+    describetion(): unknown;
+
+    /**
+     * เเสดงรูปภาพ
+     */
+    image(): unknown;
+}
+defineSlots<Slots>();
 </script>
 
 <template>

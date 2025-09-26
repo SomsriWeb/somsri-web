@@ -1,3 +1,24 @@
+<script setup lang="ts">
+
+interface Slots {
+
+	/**
+     * ข้อความรายละเอียด (เเสดงผลเป็น H1)
+     */
+	title(): string;
+	
+	/**
+     * ข้อความรายละเอียด (เเสดงผลเป็น P)
+     */
+	description(): string;
+}
+defineSlots<Slots>();
+
+
+</script>
+
+
+
 <template>
 	<div>
 		<header>
