@@ -30,7 +30,7 @@ Design your own brand
   :::
 
   :::brand-main-content
-  #title-h2
+  #titleH2
   ทำไมต้องเลือกสร้างแบร์นกับสมศรี?
   :::
 
@@ -38,7 +38,7 @@ Design your own brand
   :::
 
   :::brand-main-content
-  #title-h2
+  #titleH2
   ตัวอย่างผลงานจากสมศรี
   :::
 
