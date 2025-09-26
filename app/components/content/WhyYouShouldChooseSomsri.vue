@@ -1,118 +1,117 @@
 <script setup lang="ts">
-	import MinimumModal from "../WhyYouShouldChooseSomsri/Minimum.vue"
-	import PerfectDesignModal from "../WhyYouShouldChooseSomsri/PerfectDesign.vue"
-	import GuaranteeModal from "../WhyYouShouldChooseSomsri/Guarantee.vue"
-	import FreeShippingModal from "../WhyYouShouldChooseSomsri/FreeShipping.vue"
+import MinimumModal from '../WhyYouShouldChooseSomsri/Minimum.vue';
+import PerfectDesignModal from '../WhyYouShouldChooseSomsri/PerfectDesign.vue';
+import GuaranteeModal from '../WhyYouShouldChooseSomsri/Guarantee.vue';
+import FreeShippingModal from '../WhyYouShouldChooseSomsri/FreeShipping.vue';
 
-	// PROPS
-	interface Props {
-		lang?: "th" | "en"
-	}
-	withDefaults(defineProps<Props>(), {
-		lang: "th",
-	})
+// PROPS
+interface Props {
+    /**
+     * ภาษาที่ต้องการแสดง
+     * @default th
+     */
+    lang?: 'th' | 'en';
+}
+withDefaults(defineProps<Props>(), {
+    lang: 'th',
+});
 
-	// VARIABLE
-	const minimumModalState = ref<boolean>(false)
-	const perfectDesignModalState = ref<boolean>(false)
-	const guaranteeModalState = ref<boolean>(false)
-	const freeShippingModalState = ref<boolean>(false)
+// SLOTS
+interface Slots {
+    /**
+     * ข้อความของหัวข้อ (แสดงผลเป็น H2)
+     */
+    title(): unknown;
+}
+defineSlots<Slots>();
 
-	const { data: content } = await useAsyncData("why-you-should-choose-somsri", () =>
-		queryCollection("whyYouShouldChooseSomsri").order("order", "ASC").all()
-	)
+// VARIABLE
+const minimumModalState = ref<boolean>(false);
+const perfectDesignModalState = ref<boolean>(false);
+const guaranteeModalState = ref<boolean>(false);
+const freeShippingModalState = ref<boolean>(false);
 
-	const containerRef = ref(null)
-	const swiper = useSwiper(containerRef, {
-		loop: true,
-		slidesPerView: 4,
-		spaceBetween: 30,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
-		breakpoints: {
-			0: {
-				slidesPerView: 1,
-			},
-			640: {
-				slidesPerView: 2,
-			},
-			1280: {
-				slidesPerView: 4,
-			},
-		},
-	})
+const { data: content } = await useAsyncData('why-you-should-choose-somsri', () => queryCollection('whyYouShouldChooseSomsri').order('order', 'ASC').all());
 
-	// FUNCTION
-	function openMinimumModal() {
-		minimumModalState.value = true
-	}
+const containerRef = ref(null);
+const swiper = useSwiper(containerRef, {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        1280: {
+            slidesPerView: 4,
+        },
+    },
+});
 
-	function openPerfectDesignModal() {
-		perfectDesignModalState.value = true
-	}
+// FUNCTION
+function openMinimumModal() {
+    minimumModalState.value = true;
+}
 
-	function openGuaranteeModal() {
-		guaranteeModalState.value = true
-	}
+function openPerfectDesignModal() {
+    perfectDesignModalState.value = true;
+}
 
-	function openFreeShippingModal() {
-		freeShippingModalState.value = true
-	}
+function openGuaranteeModal() {
+    guaranteeModalState.value = true;
+}
 
-	function openItemModal(uid: string) {
-		if (uid === "perfect-design") {
-			openPerfectDesignModal()
-		} else if (uid === "guarantee") {
-			openGuaranteeModal()
-		} else if (uid === "free-shipping") {
-			openFreeShippingModal()
-		} else if (uid === "minimum") {
-			openMinimumModal()
-		}
-	}
+function openFreeShippingModal() {
+    freeShippingModalState.value = true;
+}
+
+function openItemModal(uid: string) {
+    if (uid === 'perfect-design') {
+        openPerfectDesignModal();
+    } else if (uid === 'guarantee') {
+        openGuaranteeModal();
+    } else if (uid === 'free-shipping') {
+        openFreeShippingModal();
+    } else if (uid === 'minimum') {
+        openMinimumModal();
+    }
+}
 </script>
 
 <template>
-	<div>
-		<h2 class="text-primary text-4xl leading-none font-bold mb-5">
-			<slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
-		</h2>
+    <div>
+        <h2 class="text-primary text-4xl leading-none font-bold mb-5">
+            <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
+        </h2>
 
-		<ClientOnly>
-			<swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr">
-				<swiper-slide v-for="item in content" :key="item.title">
-					<InformationCard
-						:title="lang === 'th' ? item.title : item['title-en']"
-						:description="lang === 'th' ? item.description : item['description-en']"
-						:image="item.image"
-						@click="openItemModal(item.uid)"
-					/>
-				</swiper-slide>
-			</swiper-container>
-		</ClientOnly>
+        <ClientOnly>
+            <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr">
+                <swiper-slide v-for="item in content" :key="item.title">
+                    <InformationCard
+                        :title="lang === 'th' ? item.title : item['title-en']"
+                        :description="lang === 'th' ? item.description : item['description-en']"
+                        :image="item.image"
+                        @click="openItemModal(item.uid)"
+                    />
+                </swiper-slide>
+            </swiper-container>
+        </ClientOnly>
 
-		<div class="flex justify-end gap-5">
-			<UButton
-				color="neutral"
-				variant="outline"
-				icon="lucide:chevron-left"
-				class="rounded-full !min-w-fit"
-				@click="swiper.prev()"
-			/>
-			<UButton
-				color="neutral"
-				variant="outline"
-				icon="lucide:chevron-right"
-				class="rounded-full !min-w-fit"
-				@click="swiper.next()"
-			/>
-		</div>
+        <div class="flex justify-end gap-5">
+            <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
+            <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
+        </div>
 
-		<MinimumModal v-model:open="minimumModalState" />
-		<PerfectDesignModal v-model:open="perfectDesignModalState" />
-		<GuaranteeModal v-model:open="guaranteeModalState" />
-		<FreeShippingModal v-model:open="freeShippingModalState" />
-	</div>
+        <MinimumModal v-model:open="minimumModalState" />
+        <PerfectDesignModal v-model:open="perfectDesignModalState" />
+        <GuaranteeModal v-model:open="guaranteeModalState" />
+        <FreeShippingModal v-model:open="freeShippingModalState" />
+    </div>
 </template>
