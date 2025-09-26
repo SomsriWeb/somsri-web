@@ -6,10 +6,10 @@ lineLink: https://contact.somsritshirt.com/2606f
 ---
 
 ::brand-header
-#title-h1
+#titleH1
 Design your own brand
 
-#title-h2
+#titleH2
 สมศรีให้คำปรึกษาด้วยทีมงานมืออาชีพ
 
   :::line-link
@@ -18,7 +18,7 @@ Design your own brand
     ::::
   :::
 
-#image-header-object
+#imageHeaderObject
   :::prose-img{.w-[600px] alt="เสื้อyourdesign" src="/brand/shirt_your_design.png"}
   :::
 ::
