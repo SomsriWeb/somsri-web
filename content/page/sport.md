@@ -8,13 +8,13 @@ lineLink: https://contact.somsritshirt.com/544af
 ---
 
 ::sport-img-style
-#image-style
+#image
 ![Sport cover](/sport/banner_sport.jpg)
 ::
 
 ::container
   :::sport
-  #title-text
+  #title
   รับผลิตเสื้อกีฬา :br<!--ใส่ BR เพื่อเคาะวรรคบรรทัดข้อความ-->เนื้อผ้าคุณสมบัติพิเศษ
   :::
 
@@ -26,10 +26,10 @@ lineLink: https://contact.somsritshirt.com/544af
     ::::prose-img{.max-w-[40rem] alt="sport details" src="/sport/spec.jpg"}
     ::::
   
-  #sub-title-text
+  #subtitle
   " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
   
-  #discription-text
+  #description
   ซิลค์สกรีน เฟล็กซ์ ไฮเดน ออฟเซท
   :::
 
@@ -43,7 +43,7 @@ lineLink: https://contact.somsritshirt.com/544af
     ---
     ::::
   
-  #sub-title-text
+  #subtitle
   ราคาเสื้อยืดรวมสกรีน
   :::
 
@@ -70,10 +70,10 @@ lineLink: https://contact.somsritshirt.com/544af
   :::
 
   :::sport
-  #sub-title-text
+  #subtitle
   ผลงาน การันตีคุณภาพ
   
-  #discription-text
+  #description
   รับประกันความพึงพอใจมากถึง 90 วัน
   :::
 
