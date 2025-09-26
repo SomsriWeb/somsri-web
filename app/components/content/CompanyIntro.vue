@@ -32,7 +32,7 @@
 				บริษัท สมศรี การ์เมนท์ จำกัด
 			</ProseH2>
 			<p class="text-sm sm:text-base max-w-3xl">
-				<slot name="company-description" mdc-unwrap="p" />
+				<slot name="CompanyDescription" mdc-unwrap="p" />
 			</p>
 		</section>
 
