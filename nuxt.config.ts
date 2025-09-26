@@ -2,7 +2,20 @@ import { beasties } from 'vite-plugin-beasties';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/seo', '@nuxt/content', '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', 'nuxt-swiper', 'nuxt-viewport', '@nuxtjs/device', '@vueuse/nuxt', '@nuxt/scripts'],
+    modules: [
+        '@nuxtjs/seo',
+        '@nuxt/content',
+        '@nuxt/ui',
+        '@nuxt/image',
+        '@nuxt/fonts',
+        '@nuxt/eslint',
+        'nuxt-swiper',
+        'nuxt-viewport',
+        '@nuxtjs/device',
+        '@vueuse/nuxt',
+        '@nuxt/scripts',
+        '@nuxtjs/storybook',
+    ],
     app: {
         head: {
             htmlAttrs: {
@@ -184,5 +197,8 @@ export default defineNuxtConfig({
                 },
             },
         },
+    },
+    storybook: {
+        port: 6006,
     },
 });

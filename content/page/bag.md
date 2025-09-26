@@ -8,13 +8,13 @@ lineLink: https://contact.somsritshirt.com/218c9
 
 ::container
   :::bag-main-content
-  #title-h1
+  #titleH1
   รับผลิตกระเป๋าผ้า
   
-  #title-h2
+  #titleH2
   สินค้ากระเป๋าคเนื้อผ้าคุณภาพดี หลากหลายรูปแบบที่คุณเลือกได้
   
-  #title-p
+  #titleP
   ให้เราออกแบบ หรือ สอบถามเราเพิ่มเติมได้ตอนนี้
   :::
 

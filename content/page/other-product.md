@@ -31,7 +31,7 @@ lineLink: https://contact.somsritshirt.com/aa057
   :::
 
   :::bag-main-content
-  #title-h1
+  #titleH1
   สินค้าอื่นๆ
   :::
 
@@ -47,10 +47,10 @@ lineLink: https://contact.somsritshirt.com/aa057
   :::
 
   :::bag-main-content
-  #title-h2
+  #titleH2
   และสินค้าอื่น ๆ อีกมากมาย
   
-  #title-p
+  #titleP
   หากมีงานเนื้อผ้าที่อยากผลิต สมศรี ยินดีให้คำปรึกษา
   :::
 

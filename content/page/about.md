@@ -17,11 +17,11 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   เกี่ยวกับเรา
   
-  #image-banner
+  #imageBanner
     ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="/about/whoarewe.jpg"}
     ::::
   
-  #description-text
+  #descriptionText
   บริษัท สมศรีการ์เมนท์จํากัด หรือ สมศรีมีเสื้อ คือบริษัทธุรกิจผลิตสิ่งทอทุกชนิด ซึ่งเริ่มก่อตั้งขึ้นโดย นายธนพล อรุณศิริ (กรรมการบริหาร) ในปี 2017 - จนถึงปัจจุบัน โดยเรามียอดสั่งซื้อมากมายจากลูกค้าทั้งในและนอกประเทศ สิ่งที่เราต้องการไม่ใช่เพียงการผลิตสินค้าและส่งถึงมือลูกค้าเท่านั้น แต่เราต้องการส่งมอบความสุข และการบริการที่มีคุณภาพแก่ลูกค้าของเราทุกท่าน ถึงในปัจจุบันเราจะเป็นองค์กรขนาดเล็ก แต่เรามั่นใจว่าเรากำลังจะเติบโตไปเป็นองค์กรขนาดใหญ่ พร้อมเป้าหมายสู่การเป็น E-commerce ที่รับผลิตเสื้อเพื่อให้การสั่งผลิตเสื้อของเราง่ายที่สุด เร็วที่สุด และมีประสิทธิภาพสูงสุดดั่งสโลแกนของเรา
   :::
 
@@ -29,11 +29,11 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   SOMSRI มีที่มา
   
-  #image-banner
+  #imageBanner
     ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="/about/core.jpg"}
     ::::
   
-  #describetion-list
+  #descriptionList
   - • **S** Standard = มีมาตรฐาน
   - • **O** Over Expectation = เหนือความคาดหมาย
   - • **M** Memorable = น่าจดจํา
@@ -46,10 +46,10 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   สโลเเกน
   
-  #slogan-text
+  #sloganText
   "ง่ายที่สุด เร็วที่สุด ประสิทธิภาพสูงสุด"
   
-  #description-slogan
+  #desciptionSlogan
   เพราะเราไม่เชื่อในพลังของการทำงานหนัก แต่เราเชื่อในพลังของการทำงานอย่างฉลาด
   :::
 
@@ -57,7 +57,7 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   วิสัยทัศน์
   
-  #description-slogan
+  #descriptionSlogan
   “ก้าวสู่ธุรกิจ eCommerce ที่ใช้เทคโนโลยีเป็นสื่อกลางทำให้การสั่งเสื้อเป็นเรื่องง่าย
   จบทุกขั้นตอนได้เพียงปลายนิ้ว”
   :::
@@ -66,10 +66,10 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   กลยุทธ์
   
-  #strategy-text
+  #strategyText
   “เสื้อทุกตัว สินค้าทุกชิ้น ที่ส่งถึงมือลูกค้า คือความภูมิใจของเรา เพราะเราคือที่สุดของคุณภาพและบริการ”
   
-  #strategy-list
+  #strategyList
   - • **S** Standard = มีมาตรฐาน
   - • **O** Over Expectation = เหนือความคาดหมาย
   - • **M** Memorable = น่าจดจํา
@@ -82,7 +82,7 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   :::
 
   :::about-header
-  #image-banner
+  #imageBanner
     ::::prose-img
     ---
     alt: รูปHeader
