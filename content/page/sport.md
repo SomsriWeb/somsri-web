@@ -8,7 +8,7 @@ lineLink: https://contact.somsritshirt.com/544af
 ---
 
 ::sport-img-style
-#image-style
+#image
 ![Sport cover](/sport/banner_sport.jpg)
 ::
 

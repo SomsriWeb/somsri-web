@@ -7,7 +7,7 @@ lineLink: https://contact.somsritshirt.com/aa057
 ---
 
 ::sport-img-style
-#image-style
+#image
   :::prose-img
   ---
   alt: other-product cover
