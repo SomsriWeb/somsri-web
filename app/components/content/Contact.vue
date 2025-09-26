@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+interface Slots {
+    /**
+     * ทีอยู่ จะเเสดงเป็น tag P
+     */
+    Address(): unknown;
+}
+
+defineSlots<Slots>();
+</script>
 
 <template>
 	<div class="flex flex-col lg:flex-row items-start gap-4 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
