@@ -1,3 +1,23 @@
+<script lang="ts" setup>
+interface Slots {
+    /**
+     * หัวข้อ 
+     */
+    title(): unknown;
+
+    /**
+     * รายละเอียด
+     */
+    description(): unknown;
+
+    /**
+     * ข้อความในปุ่ม
+     */
+    button(): unknown;
+}
+defineSlots<Slots>();
+</script>
+
 <template>
 	<header>
 		<NuxtImg

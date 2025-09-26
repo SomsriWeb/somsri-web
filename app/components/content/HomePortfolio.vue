@@ -29,6 +29,22 @@ const imgs = [
         src: '/home/portfolio/7.jpg',
     },
 ];
+
+//stot
+interface Slots {
+    /**
+     * หัวข้อ 
+     */
+    title(): unknown;
+
+    /**
+     * รายละเอียด
+     */
+    description(): unknown;
+
+}
+defineSlots<Slots>();
+
 </script>
 
 <template>
