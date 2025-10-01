@@ -92,7 +92,7 @@ function openItemModal(uid: string) {
         </h2>
 
         <ClientOnly>
-            <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr">
+            <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr  ">
                 <swiper-slide v-for="item in content" :key="item.title">
                     <InformationCard
                         :title="lang === 'th' ? item.title : item['title-en']"
@@ -104,7 +104,7 @@ function openItemModal(uid: string) {
             </swiper-container>
         </ClientOnly>
 
-        <div class="flex justify-end gap-5">
+        <div class="flex justify-end gap-5 ">
             <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
             <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
         </div>
