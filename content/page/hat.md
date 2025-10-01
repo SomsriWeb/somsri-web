@@ -2,8 +2,6 @@
 title: Page หมวก - สมศรีมีเสื้อ
 activeNavbar: true
 footer: false
-lineFloatingButton: false
-lineLink: https://contact.somsritshirt.com/520b8
 ---
 ::landing-page-header-style-one{image="/landing-page-real-hat/banner.png"}
 #title
@@ -59,7 +57,7 @@ lineLink: https://contact.somsritshirt.com/520b8
 
 ::div-center
         ::line-link
-            ::line-button
+            ::line-button{.mb-6}
             สอบถามเพิ่มเติม
             ::
         ::
