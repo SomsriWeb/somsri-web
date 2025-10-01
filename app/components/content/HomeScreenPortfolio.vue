@@ -7,7 +7,7 @@ withDefaults(defineProps<Props>(), {
     lang: 'th',
 });
 
-//stot
+// SLOTS
 interface Slots {
     /**
      * หัวข้อ
@@ -20,33 +20,10 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
 // VARIABLE
 const { data: screens } = await useAsyncData('data-screens', () => {
     return queryCollection('screen').order('order', 'ASC').all();
-});
-const containerRef = ref(null);
-const swiper = useSwiper(containerRef, {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        640: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-        1280: {
-            slidesPerView: 4,
-        },
-    },
 });
 </script>
 
@@ -57,17 +34,16 @@ const swiper = useSwiper(containerRef, {
             <slot name="description" />
         </div>
 
-        <ClientOnly>
-            <swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
-                <swiper-slide v-for="screen in screens" :key="screen.name">
-                    <HomePortfolioCard :name="lang === 'th' ? screen.name : screen['name-en']" :url="screen.url" :image="screen.image" :alt="lang === 'th' ? screen.alt : screen['alt-en']" />
-                </swiper-slide>
-            </swiper-container>
-        </ClientOnly>
-
-        <div class="flex justify-end gap-5">
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
+        <!-- ใช้ grid แทน swiper -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+            <HomePortfolioCard
+                v-for="screen in screens"
+                :key="screen.name"
+                :name="lang === 'th' ? screen.name : screen['name-en']"
+                :url="screen.url"
+                :image="screen.image"
+                :alt="lang === 'th' ? screen.alt : screen['alt-en']"
+            />
         </div>
     </div>
 </template>

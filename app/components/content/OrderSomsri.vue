@@ -23,19 +23,19 @@ const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
                 </NuxtLink>
 
                 <NuxtLink href="tel:024300678" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full">02-430-0678</UButton>
+                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full  !text-xs gap-3">02-430-0678 ฝ่ายสำนักงาน </UButton>
                 </NuxtLink>
 
                 <NuxtLink href="tel:0661126521" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs">066-112-6521</UButton>
+                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs gap-3">066-112-6521 ฝ่ายขาย </UButton>
                 </NuxtLink>
 
                 <NuxtLink href="tel:0661141399" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs">066-114-1399</UButton>
+                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs gap-3">066-114-1399 ฝ่ายขาย </UButton>
                 </NuxtLink>
 
                 <NuxtLink href="tel:0634216521" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs">063-421-6521</UButton>
+                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 w-full !text-xs gap-3">063-421-6521 ฝ่ายขาย </UButton>
                 </NuxtLink>
             </div>
         </div>

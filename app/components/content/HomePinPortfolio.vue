@@ -62,7 +62,7 @@ const swiper = useSwiper(containerRef, {
         </div>
 
         <ClientOnly>
-            <swiper-container ref="containerRef" class="grid auto-rows-fr mb-5">
+            <swiper-container ref="containerRef" class="grid auto-rows-fr mb-5 ">
                 <swiper-slide v-for="pin in pins" :key="pin.name">
                     <HomePortfolioCard :name="lang === 'th' ? pin.name : pin['name-en']" :url="pin.url" :image="pin.image" :alt="lang === 'th' ? pin.alt : pin['alt-en']" />
                 </swiper-slide>
