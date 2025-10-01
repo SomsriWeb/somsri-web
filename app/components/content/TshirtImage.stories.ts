@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import SizeAnother from './SizeAnother.vue';
+import TshirtImage from './TshirtImage.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
 const meta = {
-    title: 'Components/SizeAnother',
-    component: SizeAnother,
+    title: 'Components/TshirtImage',
+    component: TshirtImage,
     // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
     tags: ['autodocs'],
-} satisfies Meta<typeof SizeAnother>;
+} satisfies Meta<typeof TshirtImage>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const SizeAnotherStory: Story = {
+export const TshirtImageStory: Story = {
     args: {},
 };
