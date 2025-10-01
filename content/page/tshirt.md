@@ -41,6 +41,9 @@ image: /tshirt/banner.png
   :::prose-p{.!text-primary}
   *ส่งตัวอย่างผ้าฟรีเมื่อสั่งขั้นต่ำ 100 ตัว
   :::
+## ไซซ์เสื้อยืด 
+  :::size-another
+  :::
 
 ## ราคาเสื้อยืด
 

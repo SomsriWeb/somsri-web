@@ -389,5 +389,16 @@ export default defineContentConfig({
                 url: z.string(),
             }),
         }),
+        size: defineCollection({
+            type: 'data',
+            source: 'data/size/tab/**.json',
+            schema: z.object({
+                uid: z.string(),
+                name: z.string(),
+                imageUrl: z.string(),
+                alt: z.string().optional(),
+                order: z.number(),
+            }),
+        }),
     },
 });
