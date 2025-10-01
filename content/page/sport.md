@@ -7,9 +7,15 @@ activeNavbar: true
 lineLink: https://contact.somsritshirt.com/544af
 ---
 
-::sport-img-style
-#image
-![Sport cover](/sport/banner_sport.jpg)
+::landing-page-header-style-two{image="/sport-shirt-min-100/banner.png"}
+#title
+รับผลิตเสื้อกีฬา
+
+#secondary-title
+เกรดพรีเมี่ยม คุณภาพส่งออก ราคาย่อมเยาว์
+
+#description
+ขั้นต่ำเพียง 100 ตัว
 ::
 
 ::container
