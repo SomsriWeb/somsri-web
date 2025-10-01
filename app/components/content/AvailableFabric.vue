@@ -19,15 +19,21 @@ const fabrics = computed(() => {
 });
 </script>
 <template>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-5">
-        <div v-for="fabric in fabrics" :key="fabric.id">
-            <ProseImg :src="fabric.image" :alt="fabric.labelEn" class="rounded-lg mb-1" />
-            <h3 class="text-xl uppercase text-black font-medium">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div v-for="fabric in fabrics" :key="fabric.id" class="">
+            <ProseImg :src="fabric.image" :alt="fabric.labelEn" class="rounded-lg mb-2" />
+
+            <!-- หัวข้อ -->
+            <h3 class="text-lg uppercase text-black font-medium w-max leading-none">
                 {{ fabric.labelEn }}
             </h3>
-            <p class="text-stone-500 font-stretch-condensed leading-none mb-1">สำหรับทำ{{ fabric.recommendForStyle }}</p>
-            <ul class="list-disc list-inside font-light text-primary">
-                <li v-for="advantage in fabric.advantage" :key="advantage" class="leading-none">
+
+            <!-- คำอธิบาย (เทา) -->
+            <p class="text-stone-500 text-sm leading-normal w-max mb-1">สำหรับทำ{{ fabric.recommendForStyle }}</p>
+
+            <!-- รายการ (แดง) -->
+            <ul class="list-disc list-inside font-light text-primary space-y-1 ">
+                <li v-for="advantage in fabric.advantage" :key="advantage" class="text-sm w-max leading-none ">
                     {{ advantage }}
                 </li>
             </ul>
