@@ -30,7 +30,7 @@ lineLink: https://contact.somsritshirt.com/6e554
     ตัวอย่างงานปัก
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -98,7 +98,7 @@ lineLink: https://contact.somsritshirt.com/6e554
 ::
 
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

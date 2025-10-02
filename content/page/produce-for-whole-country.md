@@ -38,7 +38,7 @@ lineLink: https://contact.somsritshirt.com/f586a
     ขั้นตอนการสั่งซื้อ
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -120,7 +120,7 @@ lineLink: https://contact.somsritshirt.com/f586a
     ::landing-page-sublimation-price
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -148,7 +148,7 @@ lineLink: https://contact.somsritshirt.com/f586a
     <ProseImg src="/produce-tshirt/sublimation-port-2.png" />
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

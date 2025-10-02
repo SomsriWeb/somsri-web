@@ -18,7 +18,7 @@ lineLink: https://contact.somsritshirt.com/aa057
 ::
 
 ::container
-  :::div-center{.gap-5}
+  :::center{.gap-5}
   ## โรงงานเราไม่ได้มีเพียงแค่เสื้อผ้า
   
   สินค้าที่ทำจากผ้าก็สามารถให้เราผลิตได้
@@ -54,7 +54,7 @@ lineLink: https://contact.somsritshirt.com/aa057
   หากมีงานเนื้อผ้าที่อยากผลิต สมศรี ยินดีให้คำปรึกษา
   :::
 
-  :::div-center
+  :::center
     ::::line-link
       :::::link-button
       ติดต่อสอบถาม
@@ -65,7 +65,7 @@ lineLink: https://contact.somsritshirt.com/aa057
   :::how-to-order
   :::
 
-  :::div-center
+  :::center
     ::::line-link
       :::::link-button
       สั่งทำสินค้าอื่น ๆ

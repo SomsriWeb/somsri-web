@@ -30,7 +30,7 @@ lineLink: https://contact.somsritshirt.com/b3a20
     ตัวอย่างงานปัก
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -98,7 +98,7 @@ lineLink: https://contact.somsritshirt.com/b3a20
 ::
 
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

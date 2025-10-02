@@ -65,7 +65,7 @@ lineLink: https://contact.somsritshirt.com/2076d
 
 เรามีผลงานจากเรามีลูกค้าที่ไว้วางใจสั่งทำเสื้อยืดแบรนด์ตัวเองและสินค้าพรีเมี่ยมอื่น ๆ หลากหลายแบรนด์ เช่น KHAI MAEW, The Zign, YUCKK! และ CARIVA เป็นต้น ลูกค้าที่เป็นกลุ่มศิลปินชื่อดังอย่าง Tattoo Colour, Polycat, Bonnadol และค่ายเพลงชื่อดังอย่าง smallroom เป็นต้น ลูกค้าที่เป็นกลุ่มบริษัทชั้นนำอย่าง Flash Express, HONDA, Builder Smart และ Maxxis เป็นต้นค่ะ ซึ่งผลงานเหล่านี้จะมีความแตกต่างกันในเรื่องของชนิดเนื้อผ้าที่ใช้ เทคนิคการสกรีน เพื่อให้เหมาะสมกับการใช้งานของลูกค้านั่นเองค่ะ
 
-    :::div-center{class="gap-5"}
+    :::center{class="gap-5"}
     ![ลูกค้าที่สั่งผลิตเสื้อกับสมศรีมีเสื้อ](/own-brand-tshirt-factory/mask.png)
     ![รับผลิตเสื้อ เรามีผลงานจากเรามีลูกค้าที่ไว้วางใจสั่งทำเสื้อยืดแบรนด์ตัวเองและสินค้าพรีเมี่ยมอื่น ๆ หลากหลายแบรนด์ เช่น KHAI MAEW, The Zign, YUCKK!](/own-brand-tshirt-factory/bonnadol.png)
     :::
@@ -78,7 +78,7 @@ lineLink: https://contact.somsritshirt.com/2076d
     โรงงานรับผลิตเสื้อยืดแบรนด์ตัวเองของสมศรี เรามีขั้นตอนการสั่งซื้อง่าย ๆ ที่ใครก็สามารถสั่งทำกับเราได้เพียง 5 ขั้นตอนดังนี้
     :::
 
-    :::div-center{class="flex-col gap-3"}
+    :::center{class="flex-col gap-3"}
         :::card{class="border-none bg-primary"}
         <ProseP class="text-white">1. ติดต่อสมศรีมีเสื้อทาง LINE : <LineLink>@somsritshirt</LineLink> หรือ Facebook : [somsritshirt](https://www.facebook.com/somsritshirt) แจ้งความต้องการโดยส่งแบบเสื้อ สี แบบสกรีนที่ต้องการ
         :::
@@ -100,7 +100,7 @@ lineLink: https://contact.somsritshirt.com/2076d
         :::
     :::
 
-    :::div-center
+    :::center
     <ProseP>เพียง 5 ขั้นตอนง่าย ๆ ในการสั่งทำเสื้อกับเรา คุณก็สามารถเป็นเจ้าของแบรนด์เสื้อยืดที่ดูดีมีสไตล์ เป็นการลงทุนที่คุ้มค่าและประทับใจอย่างแน่นอน
     :::
 

@@ -1,11 +1,13 @@
 {
     "uid": "supersoff-32",
-    "image": "/fabrics/supersoff-32.png",
+    "imageUrl": "/fabrics/supersoff-32.png",
+    "popupImageUrl": "/fabrics/supersoff-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "ซูเปอร์ซอฟฟ์ 32",
-    "labelEn": "Supersoff 32",
+    "nameTh": "ซูเปอร์ซอฟฟ์ 32",
+    "nameEn": "Supersoff 32",
     "recommendForStyle": "เสื้อแบรนด์",
     "advantage": [
         "ผลิตจากใยฝ้ายธรรมชาติ",

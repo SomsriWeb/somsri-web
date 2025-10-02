@@ -53,7 +53,7 @@ lineLink: https://contact.somsritshirt.com/a1505
 เลือกผลิตเสื้อยืดกับสมศรีแล้วดียังไง?
 ::
 
-::div-center
+::center
     ::line-link
         ::u-button
             ::unwrap-mdc

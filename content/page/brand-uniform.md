@@ -36,7 +36,7 @@ lineLink: https://contact.somsritshirt.com/f8583
     ตัวอย่างงานสกรีน
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -126,7 +126,7 @@ lineLink: https://contact.somsritshirt.com/f8583
 ::
 
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

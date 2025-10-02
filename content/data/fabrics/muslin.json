@@ -1,0 +1,14 @@
+{
+    "uid": "muslin",
+    "imageUrl": "/fabrics/muslin.png",
+    "popupImageUrl": "/fabrics/muslin-popup.png",
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
+    "nameTh": "มัสลิน",
+    "nameEn": "Muslin",
+    "recommendForStyle": "",
+    "advantage": [],
+    "disadvantage": []
+}

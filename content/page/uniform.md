@@ -30,7 +30,7 @@ lineLink: https://contact.somsritshirt.com/655d0
 ::how-to-order
 ::
 
-::div-center
+::center
 ::line-link
 ::u-button
 

@@ -1,11 +1,12 @@
 {
     "uid": "cotton-semi",
-    "image": "/fabrics/cotton-semi.png",
+    "imageUrl": "/fabrics/cotton-semi.png",
+    "popupImageUrl": "/fabrics/cotton-semi-popup.png",
     "forProductType": [
         "tshirt"
     ],
-    "labelTh": "คอตตอนเซมิ",
-    "labelEn": "Cotton Semi",
+    "nameTh": "คอตตอนเซมิ",
+    "nameEn": "Cotton Semi",
     "recommendForStyle": "เสื้อยืดทุกประเภท",
     "advantage": [
         "เนื้อผ้าหนา",

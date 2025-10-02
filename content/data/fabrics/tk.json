@@ -1,11 +1,13 @@
 {
     "uid": "tk",
-    "image": "/fabrics/tk.png",
+    "imageUrl": "/fabrics/tk.png",
+    "popupImageUrl": "/fabrics/tc-tk-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "ทีเค",
-    "labelEn": "TK",
+    "nameTh": "ทีเค",
+    "nameEn": "TK",
     "recommendForStyle": "เสื้อแบรนด์",
     "advantage": [
         "เนื้อผ้าแน่น ระบายอากาศดี",

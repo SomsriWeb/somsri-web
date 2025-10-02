@@ -35,7 +35,7 @@ lineLink: https://contact.somsritshirt.com/8b33a
     <ProseImg src="/produce-tshirt/sublimation-port-2.png" />
     ::
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -78,7 +78,7 @@ lineLink: https://contact.somsritshirt.com/8b33a
 ::
 
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

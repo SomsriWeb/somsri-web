@@ -50,3 +50,23 @@ h6 {
     --color-line-900: oklch(25.22% 0.072 148.44);
     --color-line-950: oklch(19.39% 0.055 149.03);
 }
+
+:root {
+    --ui-text-dimmed: var(--ui-color-stone-400);
+    --ui-text-muted: var(--ui-color-stone-500);
+    --ui-text-toned: var(--ui-color-stone-600);
+    --ui-text: var(--ui-color-stone-700);
+    --ui-text-highlighted: var(--ui-color-stone-900);
+    --ui-text-inverted: var(--color-white);
+
+    --ui-bg: var(--color-white);
+    --ui-bg-muted: var(--ui-color-stone-50);
+    --ui-bg-elevated: var(--ui-color-stone-100);
+    --ui-bg-accented: var(--ui-color-stone-200);
+    --ui-bg-inverted: var(--ui-color-stone-900);
+
+    --ui-border: var(--ui-color-stone-200);
+    --ui-border-muted: var(--ui-color-stone-200);
+    --ui-border-accented: var(--ui-color-stone-300);
+    --ui-border-inverted: var(--ui-color-stone-900);
+}

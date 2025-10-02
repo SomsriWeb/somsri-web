@@ -1,11 +1,13 @@
 {
     "uid": "microsport",
-    "image": "/fabrics/microsport.png",
+    "imageUrl": "/fabrics/microsport.png",
+    "popupImageUrl": "/fabrics/micro-sport-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "ไมโครสปอร์ต",
-    "labelEn": "Microsport",
+    "nameTh": "ไมโครสปอร์ต",
+    "nameEn": "Microsport",
     "recommendForStyle": "เสื้อกีฬา",
     "advantage": [
         "ราคาไม่สูง",

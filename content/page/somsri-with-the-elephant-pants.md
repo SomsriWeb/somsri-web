@@ -33,7 +33,7 @@ lineLink: https://contact.somsritshirt.com/3c11b
 
 ## ตัวอย่างงาน
 
-    ::div-center{class="md:flex-row gap-5"}
+    ::center{class="md:flex-row gap-5"}
         ::card
         ![](/somsri-with-the-elephant-pants/elephant-pants-1.png)
         ::
@@ -45,7 +45,7 @@ lineLink: https://contact.somsritshirt.com/3c11b
 
 ## ผ้าที่นิยมผลิตกางเกงช้าง
 
-    ::div-center{class="md:flex-row gap-5"}
+    ::center{class="md:flex-row gap-5"}
         ::card
         ![](/somsri-with-the-elephant-pants/fabric-1.png)
         ::
@@ -55,13 +55,13 @@ lineLink: https://contact.somsritshirt.com/3c11b
         ::
     ::
 
-    ::div-center
+    ::center
     <ProseH3 as="p" class="text-center">** ทางเรามีบริการ QC & Pack อย่างดี **</ProseH3>
     ::
 
 ## ทรงของกางเกง
 
-    ::div-center{class="md:flex-row gap-5"}
+    ::center{class="md:flex-row gap-5"}
         ::card{}
         ![](/somsri-with-the-elephant-pants/pant-style-1.png)
 
@@ -77,7 +77,7 @@ lineLink: https://contact.somsritshirt.com/3c11b
 
 ## กางเกงช้างยอดฮิต ทำไมกางเกงช้างถึงเป็นที่นิยม ?
 
-    ::div-center{class="md:flex-row gap-5"}
+    ::center{class="md:flex-row gap-5"}
         ::card
         ![](/somsri-with-the-elephant-pants/why-1.png)
 
@@ -105,7 +105,7 @@ lineLink: https://contact.somsritshirt.com/3c11b
 
 ## ตัวอย่างลายกางเกงช้าง
 
-    ::div-center{class="md:flex-row gap-5"}
+    ::center{class="md:flex-row gap-5"}
         ::card
         ![](/somsri-with-the-elephant-pants/pattern-1.png)
         ::
@@ -127,7 +127,7 @@ lineLink: https://contact.somsritshirt.com/3c11b
 ::what-cost-saving
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

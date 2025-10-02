@@ -3,7 +3,7 @@ title: Soft-power - สมศรีมีเสื้อ
 ---
 ![](/soft-power/banner.png)
 ::container
-    ::div-center
+    ::center
     # “เราอยากเป็นสะพานเชื่อมให้ทุกความรู้สึกจับต้องได้”
     ::
 
@@ -15,12 +15,12 @@ title: Soft-power - สมศรีมีเสื้อ
     ตัวอย่างผลงานจากเรา
     ::
 
-    ::div-center
+    ::center
     <ProseImg class="max-w-[30rem]" src="/soft-power/discount.png" />
     ::
 
 
-    ::div-center
+    ::center
         ::line-link
         <UButton size="xl">ทักเลย!</UButton>
         ::

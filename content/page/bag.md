@@ -18,7 +18,7 @@ lineLink: https://contact.somsritshirt.com/218c9
   ให้เราออกแบบ หรือ สอบถามเราเพิ่มเติมได้ตอนนี้
   :::
 
-  :::div-center
+  :::center
     ::::prose-img{.max-w-[40rem] alt="bag-preview" src="/bag/cover-2-unsmushed.png"}
     ::::
   :::
@@ -26,7 +26,7 @@ lineLink: https://contact.somsritshirt.com/218c9
   :::bag-btn
   :::
 
-  :::div-center
+  :::center
     ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/ราคากระเป๋าผ้า.png"}
     ::::
   :::
@@ -44,7 +44,7 @@ TOTE BAG
   :::how-to-order
   :::
 
-  :::div-center
+  :::center
     ::::u-button
       :::::unwrap-mdc
       สั่งทำกระเป๋าผ้า

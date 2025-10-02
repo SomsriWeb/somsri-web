@@ -34,7 +34,7 @@ footer: false
     ## ชนิดหมวกและราคา
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -55,7 +55,7 @@ footer: false
 ::what-cost-saving
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button{.mb-6}
             สอบถามเพิ่มเติม

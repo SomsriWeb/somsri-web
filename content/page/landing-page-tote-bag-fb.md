@@ -56,7 +56,7 @@ lineLink: https://contact.somsritshirt.com/5681a
     <ProseImg src="/landing-page-tote-bag/totebag-portfolio-7.png" />
     ::
 
-    ::div-center
+    ::center
     <ProseImg src="/landing-page-tote-bag/totebag-price-table.png" class="max-w-[20rem]" />
     ::
 
@@ -83,7 +83,7 @@ TOTE BAG
 ::
 
 ::container
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

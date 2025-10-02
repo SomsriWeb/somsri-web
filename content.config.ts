@@ -305,13 +305,17 @@ export default defineContentConfig({
             source: 'data/fabrics/**',
             schema: z.object({
                 uid: z.string(),
-                image: z.string(),
-                forProductType: z.array(z.string()),
-                labelTh: z.string(),
-                labelEn: z.string(),
+                imageUrl: z.string(),
+                imageAlt: z.string().optional(),
+                popupImageUrl: z.string().optional(),
+                popupImageAlt: z.string().optional(),
+                forProductType: z.array(z.enum(['tshirt', 'polo', 'sport', 'totebag', 'hat', 'mask', 'brand', 'pants', 'other'])),
+                nameTh: z.string(),
+                nameEn: z.string(),
                 recommendForStyle: z.string(),
                 advantage: z.array(z.string()),
                 disadvantage: z.array(z.string()),
+                order: z.number(),
             }),
         }),
 
@@ -370,7 +374,7 @@ export default defineContentConfig({
 
         poloProduct: defineCollection({
             type: 'data',
-            source: 'data/polo/**.json',
+            source: 'data/polo-product/**.json',
             schema: z.object({
                 name: z.string(),
                 image: z.string(),

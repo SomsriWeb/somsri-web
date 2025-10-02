@@ -19,7 +19,7 @@ lineLink: https://contact.somsritshirt.com/c4119
 
 <ProseP class="text-center">บริการรับผลิตเสื้อฟอก เสื้อวินเทจ ตอบโจทย์ความต้องการตรงจุด โดยที่คุณสามารถกำหนดรายละเอียดต่าง ๆ ได้เองไม่ว่าจะเป็น ตั้งแต่ขั้นตอนการออกแบบแพทเทิร์นเสื้อผ้า เลือกคุณภาพเนื้อผ้า การออกแบบลวดลายของระดับการฟอกฟรี ด้วยเทคนิค และประสบการณ์มากมาย</ProseP>
 
-    ::div-center{class="gap-3"}
+    ::center{class="gap-3"}
     ![ตัวอย่าง สั่งผลิตเสื้อวินเทจ สี Faded กับสมศรีมีเสื้อ](/faded-shirt/maiyarap.png)
     ::
 
@@ -29,7 +29,7 @@ lineLink: https://contact.somsritshirt.com/c4119
 
 ซึ่งในปัจจุบันได้รับความนิยมอย่างมาก เพราะลวดลายของเสื้อดูมีมิติ ดูคูลๆ ไม่ซ้ำใคร โดยผ้าที่ใช้เป็นผ้า cotton หรือผ้าฝ้ายเกรดพรีเมี่ยมแท้ 100% ที่ความหนา 20 Comb เพื่อให้ระบายอากาศดี ผ้าฟูขึ้น ได้ผิวสัมผัสอ่อนนุ่มสบายผิว ซึมซับเหงื่อได้ดี ทนทาน และมักจะสั่งผลิตเสื้อฟอกทรงโอเวอร์ไซส์ (Oversize) หรือทรงเสื้อหลวมๆ ที่มีขนาดใหญ่กว่าไซส์ปกติเพื่อเพิ่มความเท่ ดูมีสไตล์ เคลื่อนไหวสะดวก ไม่อึดอัด ไม่รัด
 
-    ::div-center{class="gap-3"}
+    ::center{class="gap-3"}
     ![เสื้อสีฟอก หรือ เสื้อสี Faded กำลังได้รับความนิยมในปัจจุบัน กับสไตล์วินเทจ โดยผ่าน กระบวนการฟอกสีเสื้อ](/faded-shirt/what-is-faded-shirt.jpg)
     ::
 
@@ -49,11 +49,11 @@ lineLink: https://contact.somsritshirt.com/c4119
     “สมศรีมีเสื้อ” มีกระบวนการผลิตที่ได้มาตรฐาน ความเชี่ยวชาญในการผลิตเสื้อวงดนตรีคุณภาพสูง เพื่อให้เสื้อผ้าที่ผลิตออกมาทนทาน และมีอายุการใช้งานยาวนาน ใส่ใจทุกขั้นตอนการผลิต ไม่ว่าจะงานเล็กงานใหญ่ ผลิตตามความต้องการของลูกค้า เริ่มต้นการผลิตเพียงแค่ 100 ตัว!!
     ::
 
-    ::div-center{class="gap-5 flex-col sm:flex-row items-start"}
+    ::center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
         ![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-1.png)
 
-            ::div-center
+            ::center
             <ProseH3 as="h4" class="text-center">Cotton 100%</ProseH3>
             <ProseP class="text-center">ผ้าคอตตอน 100%</ProseP>
             ::
@@ -62,7 +62,7 @@ lineLink: https://contact.somsritshirt.com/c4119
         ::card{}
         ![closeup-texture-tshirt-stone-washed-min](/band-shirt/sample-2.jpg)
         
-            ::div-center
+            ::center
             <ProseH3 as="h4" class="text-center">Faded Color</ProseH3>
             <ProseP class="text-center">สีฟอก สีเฟด</ProseP>
             ::
@@ -70,7 +70,7 @@ lineLink: https://contact.somsritshirt.com/c4119
     ::
 
 
-    ::div-center
+    ::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -90,11 +90,11 @@ lineLink: https://contact.somsritshirt.com/c4119
 
 ## ข้อควรระวัง
 
-    ::div-center{class="gap-5 flex-col sm:flex-row items-start"}
+    ::center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
         ![](/somsri-with-tie-dye/tie-dye-caution-1.png)
 
-            ::div-center
+            ::center
             <ProseH3 as="h4" class="text-center">แยกซักกับผ้าชนิดอื่น</ProseH3>
             <ProseP class="text-center">ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ</ProseP>
             ::
@@ -103,14 +103,14 @@ lineLink: https://contact.somsritshirt.com/c4119
         ::card{}
         ![](/somsri-with-tie-dye/tie-dye-caution-2.png)
         
-            ::div-center
+            ::center
             <ProseH3 as="h4" class="text-center">เลี่ยงการใช้ผงซักฟอกเข้มข้น</ProseH3>
             <ProseP class="text-center">ผงซักฟอกเข้มข้นจะทำให้ผ้ามัดย้อมสีจางลง และควรกลับด้าผ้าก่อนนำไปตากแดด</ProseP>
             ::
         ::
     ::
 
-    ::div-center
+    ::center
     <ProseH3 as="p" class="text-center">งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ</ProseH3>
     ::
 ::
@@ -129,7 +129,7 @@ lineLink: https://contact.somsritshirt.com/c4119
 
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

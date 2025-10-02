@@ -1,11 +1,13 @@
 {
     "uid": "cotton-comb-20",
-    "image": "/fabrics/cotton-comb-20.png",
+    "imageUrl": "/fabrics/cotton-comb-20.png",
+    "popupImageUrl": "/fabrics/cotton-comb-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "คอตตอนคอมป์ 20",
-    "labelEn": "Cotton Comb 20",
+    "nameTh": "คอตตอนคอมป์ 20",
+    "nameEn": "Cotton Comb 20",
     "recommendForStyle": "เสื้อแบรนด์",
     "advantage": [
         "ใส่สบาย ไม่ร้อน",

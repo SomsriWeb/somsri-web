@@ -129,6 +129,6 @@ lineLink: https://contact.somsritshirt.com/c4119
     4. ส่งสินค้า พร้อมรับประกันความพึงพอใจ 90 วันทุกชิ้น 
     :::
 
-    :::div-center
+    :::center
     ![ขั้นตอนการสั่งผลิตเสื้อ](/how-to-order/step-red.png)
     :::

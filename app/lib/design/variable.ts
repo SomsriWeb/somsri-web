@@ -1,5 +1,5 @@
 import type { ProductStyle } from '~/types/design';
-import type { SelectOption } from '~/types/Global';
+import type { SelectOption } from '~/types/global';
 
 export enum ProductTypeKey {
     TSHIRT = 'tshirt',

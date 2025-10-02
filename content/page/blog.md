@@ -6,7 +6,7 @@ lineLink: https://contact.somsritshirt.com/1a567
 ---
 ::container
 
-::div-center
+::center
 # บทความ
 ดูความรู้ ข้อมูลข่าวสาร ได้จากที่นี่เลย
 ::

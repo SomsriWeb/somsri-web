@@ -37,7 +37,7 @@ lineLink: https://contact.somsritshirt.com/cbb21
     ## ชนิดหมวกและราคา
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม
@@ -58,7 +58,7 @@ lineLink: https://contact.somsritshirt.com/cbb21
 ::what-cost-saving
 ::
 
-::div-center
+::center
         ::line-link
             ::line-button
             สอบถามเพิ่มเติม

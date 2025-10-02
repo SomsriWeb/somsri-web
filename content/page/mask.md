@@ -22,12 +22,12 @@ lineLink: https://contact.somsritshirt.com/d85cf
   :::mask-slide
   :::
 
-  :::div-center
+  :::center
     ::::prose-img{.max-w-[30rem] alt="เรทราคาผ้าปิดจมูก" src="/mask/price.png"}
     ::::
   :::
 
-  :::div-center
+  :::center
     ::::prose-img
     ---
     alt: ราคาผ้าปิดจมูก ปลีก
@@ -37,7 +37,7 @@ lineLink: https://contact.somsritshirt.com/d85cf
     ::::
   :::
 
-  :::div-center
+  :::center
     ::::prose-img
     ---
     alt: ราคาพิมพ์ผ้าปิดจมูก

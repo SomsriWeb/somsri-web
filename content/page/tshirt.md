@@ -66,7 +66,7 @@ image: /tshirt/banner.png
 เลือกผลิตเสื้อยืดกับสมศรีแล้วดียังไง?
 ::
 
-::div-center
+::center
   :::line-link
     ::::u-button{.mb-6}
       :::::unwrap-mdc

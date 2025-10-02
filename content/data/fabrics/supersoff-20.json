@@ -1,11 +1,13 @@
 {
     "uid": "supersoff-20",
-    "image": "/fabrics/supersoff-20.png",
+    "imageUrl": "/fabrics/supersoff-20.png",
+    "popupImageUrl": "/fabrics/supersoff-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "ซูเปอร์ซอฟฟ์ 20",
-    "labelEn": "Supersoff 20",
+    "nameTh": "ซูเปอร์ซอฟฟ์ 20",
+    "nameEn": "Supersoff 20",
     "recommendForStyle": "เสื้อแบรนด์",
     "advantage": [
         "ผลิตจากใยฝ้ายธรรมชาติ",

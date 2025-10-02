@@ -1,11 +1,13 @@
 {
     "uid": "tc",
-    "image": "/fabrics/tc.png",
+    "imageUrl": "/fabrics/tc.png",
+    "popupImageUrl": "/fabrics/tc-tk-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "polo"
     ],
-    "labelTh": "ทีซี",
-    "labelEn": "TC",
+    "nameTh": "ทีซี",
+    "nameEn": "TC",
     "recommendForStyle": "เสื้อแบรนด์",
     "advantage": [
         "เนื้อผ้าแน่น ระบายอากาศดี",

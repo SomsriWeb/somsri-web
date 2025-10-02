@@ -65,7 +65,7 @@ lineLink: https://contact.somsritshirt.com/544af
   :::how-to-order
   :::
 
-  :::div-center
+  :::center
     ::::line-link
       :::::u-button
         ::::::unwrap-mdc
@@ -83,7 +83,7 @@ lineLink: https://contact.somsritshirt.com/544af
   รับประกันความพึงพอใจมากถึง 90 วัน
   :::
 
-  :::div-center
+  :::center
     ::::prose-img
     ---
     alt: งบประมาณ ทำเสื้อแบรนด์ตัวเอง เราต้องคิดเรื่องค่าออกแบบด้วย
