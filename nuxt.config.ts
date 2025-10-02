@@ -1,6 +1,8 @@
 import { beasties } from 'vite-plugin-beasties';
 
 const GTAG_ID = 'G-WZVB9WVRH5';
+const META_PIXEL_ID = '796947021881915';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
@@ -191,7 +193,7 @@ export default defineNuxtConfig({
                     id: GTAG_ID,
                 },
                 metaPixel: {
-                    id: '796947021881915',
+                    id: META_PIXEL_ID,
                 },
                 hotjar: {
                     id: 3498590, // your id
@@ -206,6 +208,9 @@ export default defineNuxtConfig({
                     // .env
                     // NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID=<your-id>
                     id: GTAG_ID,
+                },
+                metaPixel: {
+                    id: META_PIXEL_ID,
                 },
             },
         },
