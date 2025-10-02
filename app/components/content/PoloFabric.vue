@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ProductTypeIdEnum } from '@/types/global';
+import { ProductTypeIdEnum } from '../../types/global';
 
 const { data } = await useAsyncData('fabrics', () =>
     queryCollection('fabrics').select('uid', 'nameTh', 'imageAlt', 'imageUrl', 'popupImageUrl', 'forProductType', 'order').order('order', 'ASC').all(),
