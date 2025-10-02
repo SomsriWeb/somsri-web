@@ -25,7 +25,13 @@ function openPopup() {
 </script>
 <template>
     <div class="cursor-pointer">
-        <ProseImg class="rounded-xl hover:scale-105 transition-all duration-300" :src="imageUrl" :alt="alt || name" @click="openPopup" />
+        <div class="relative rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+            <ProseImg :src="imageUrl" :alt="alt || name" @click="openPopup" />
+
+            <div class="bg-primary absolute bottom-0 w-full p-0.5 px-2 md:px-3 text-white font-medium text-xs xl:text-lg">
+                <p>{{ name }}</p>
+            </div>
+        </div>
 
         <UModal v-if="usePopup && popupImageUrl" :class="{ hidden: !isModalOpen }" class="max-w-sm" :modal="isModalOpen" :overlay="isModalOpen" open @update:open="(value) => (isModalOpen = value)">
             <template #content>
