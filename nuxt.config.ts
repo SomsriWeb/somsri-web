@@ -1,5 +1,6 @@
 import { beasties } from 'vite-plugin-beasties';
 
+const GTAG_ID = 'G-WZVB9WVRH5';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
@@ -187,7 +188,7 @@ export default defineNuxtConfig({
         scripts: {
             registry: {
                 googleTagManager: {
-                    id: 'G-WZVB9WVRH5',
+                    id: GTAG_ID,
                 },
                 metaPixel: {
                     id: '796947021881915',
@@ -197,6 +198,18 @@ export default defineNuxtConfig({
                 },
             },
         },
+    },
+    runtimeConfig: {
+        public: {
+            scripts: {
+                googleAnalytics: {
+                    // .env
+                    // NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID=<your-id>
+                    id: GTAG_ID,
+                },
+            },
+        },
+        env: process.env.NODE_ENV || 'production',
     },
     storybook: {
         port: 6006,
