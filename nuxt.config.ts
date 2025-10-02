@@ -187,7 +187,7 @@ export default defineNuxtConfig({
         scripts: {
             registry: {
                 googleTagManager: {
-                    id: 'UA-104199832-1',
+                    id: 'G-WZVB9WVRH5',
                 },
                 metaPixel: {
                     id: '796947021881915',
