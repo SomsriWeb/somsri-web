@@ -39,9 +39,11 @@ image: /tshirt/banner.png
   :::
 
   :::prose-p{.!text-primary}
-  *ส่งตัวอย่างผ้าฟรีเมื่อสั่งขั้นต่ำ 100 ตัว
+  \*ส่งตัวอย่างผ้าฟรีเมื่อสั่งขั้นต่ำ 100 ตัว
   :::
-## ไซซ์เสื้อยืด 
+
+## ไซซ์เสื้อยืด
+
   :::tshirt-size
   :::
 
@@ -54,24 +56,24 @@ image: /tshirt/banner.png
   #image
     ::::prose-img{.max-w alt="sport price" src="/tshirt/price.png"}
     ::::
-
   :::
 
   :::somsri-produce-for
   :::
 ::
 
-::why-choose-somsri{.mb-6}
+::why-choose-somsri
+---
+class: mb-6
+---
 #title
 เลือกผลิตเสื้อยืดกับสมศรีแล้วดียังไง?
 ::
 
-::center
-  :::line-link
-    ::::u-button{.mb-6}
-      :::::unwrap-mdc
-      สั่งผลิตได้ที่นี่เลย!
-      :::::
+::line-link
+  :::u-button{.mb-6}
+    ::::unwrap-mdc
+    สั่งผลิตได้ที่นี่เลย!
     ::::
   :::
 ::
