@@ -22,6 +22,11 @@ RUN apt-get update && \
     apt-get install -y curl && \
     rm -rf /var/lib/apt/lists/*
 
+COPY package.json bun.lock* ./
+
+RUN bun install --production --ignore-scripts
+RUN bun install --cpu=x64 --os=linux --libc=glibc sharp
+
 # Copy the entire project
 COPY --from=build /app/.output /app
 
