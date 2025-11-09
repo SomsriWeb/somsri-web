@@ -173,6 +173,7 @@ export default defineNuxtConfig({
             routes: ['/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
         },
+        preset: 'bun',
     },
     vite: {
         plugins: [
