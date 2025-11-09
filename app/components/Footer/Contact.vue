@@ -3,7 +3,7 @@ import parsePhoneNumber from 'libphonenumber-js';
 import { LANGUAGE } from '~/lib/language';
 
 // VARIABLE
-const phoneNumbers = ['024300678', '0661126521', '0661141399', '0634216521'];
+const phoneNumbers = ['024300678', '0839088853', '0839088854', '0634216521', '0954546693'];
 const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
 const data = {
     th: {

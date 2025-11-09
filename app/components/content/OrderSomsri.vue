@@ -22,29 +22,20 @@ const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
                     <UButton icon="line-md:facebook" color="neutral" class="!text-primary px-2 h-full" block>Somsritshirt</UButton>
                 </NuxtLink>
 
-                <NuxtLink href="tel:024300678" external>
+                <NuxtLink href="tel:0839088853" external>
                     <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
                         <div>
-                            <p>02-430-0678</p>
-                            <p>(ฝ่ายสำนักงาน)</p>
+                            <p>083-908-8853</p>
+                            <p>เซลล์ (คุณเม)</p>
                         </div>
                     </UButton>
                 </NuxtLink>
 
-                <NuxtLink href="tel:0661126521" external>
+                <NuxtLink href="tel:0839088854" external>
                     <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
                         <div>
-                            <p>066-112-6521</p>
-                            <p>(ฝ่ายขาย)</p>
-                        </div>
-                    </UButton>
-                </NuxtLink>
-
-                <NuxtLink href="tel:0661141399" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
-                        <div>
-                            <p>066-114-1399</p>
-                            <p>(ฝ่ายขาย)</p>
+                            <p>083-908-8854</p>
+                            <p>เซลล์ (คุณเบล)</p>
                         </div>
                     </UButton>
                 </NuxtLink>
@@ -53,7 +44,16 @@ const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
                     <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
                         <div>
                             <p>063-421-6521</p>
-                            <p>(ฝ่ายขาย)</p>
+                            <p>เซลล์ (คุณการีม)</p>
+                        </div>
+                    </UButton>
+                </NuxtLink>
+
+                <NuxtLink href="tel:0954546693" external>
+                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
+                        <div>
+                            <p>095-454-6693</p>
+                            <p>เซลล์ (คุณมุก)</p>
                         </div>
                     </UButton>
                 </NuxtLink>

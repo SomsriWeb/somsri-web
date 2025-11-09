@@ -2,13 +2,10 @@
     "uid": "muslin",
     "imageUrl": "/fabrics/muslin.png",
     "popupImageUrl": "/fabrics/muslin-popup.png",
-    "forProductType": [
-        "tshirt",
-        "polo"
-    ],
+    "forProductType": [],
     "nameTh": "มัสลิน",
     "nameEn": "Muslin",
-    "recommendForStyle": "",
+    "recommendForStyle": "เสื้อยืดทุกประเภท",
     "advantage": [],
     "disadvantage": [],
     "order": 9

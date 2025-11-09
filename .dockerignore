@@ -3,3 +3,14 @@ node_modules
 .pnpm-store
 *.log
 .git
+.nuxt
+.output
+.data
+.github
+.env
+.env.example
+.vscode
+.idea
+*.DS_Store
+Dockerfile
+.dockerignore

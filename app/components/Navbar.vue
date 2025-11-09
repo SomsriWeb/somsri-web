@@ -58,7 +58,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav :class="navbarClass" class="px-5 md:px-[4.6rem] py-2 text-white grid grid-cols-5 sm:grid-cols-12 gap-5 w-screen transition-all duration-300">
+    <nav :class="navbarClass" class="px-5 lg:px-[4.6rem] py-2 text-white grid grid-cols-5 sm:grid-cols-12 gap-5 w-screen transition-all duration-300">
         <div class="sm:col-span-2">
             <NuxtLink to="/">
                 <ProseImg src="/logo.svg" alt="สมศรีมีเสื้อ" class="w-[3rem] md:w-[1.75rem] max-w-[40px] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]" />
@@ -83,7 +83,7 @@ onUnmounted(() => {
         </div>
 
         <div class="col-span-2 hidden xl:flex items-center justify-end gap-5">
-            <NuxtLink to="tel:0634216521" class="flex items-center" external><Icon name="lucide:phone" class="mr-1" /></NuxtLink>
+            <NuxtLink to="tel:024300678" class="flex items-center" external><Icon name="lucide:phone" class="mr-1" /></NuxtLink>
             <NuxtLink to="/en" class="flex items-center"><Icon name="lucide:languages" /></NuxtLink>
         </div>
     </nav>

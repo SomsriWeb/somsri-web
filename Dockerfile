@@ -1,13 +1,21 @@
-# use the official Bun image
-# see all versions at https://hub.docker.com/r/oven/bun/tags
-FROM oven/bun:1
-WORKDIR /usr/src/app
+# BUILD
+FROM oven/bun:1 AS build
+WORKDIR /app
+ARG NODE_ENV=production
 
-COPY package.json ./
+COPY package.json bun.lock* ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
-RUN bun install --production --ignore-scripts
-RUN bun install --cpu=x64 --os=linux --libc=glibc sharp
+RUN bun install --ignore-scripts
+
+COPY . .
+
+RUN bun --bun run build
+
+# COPY TO PRODUCTION
+FROM oven/bun:1 AS production
+WORKDIR /app
+ARG NODE_ENV=production
 
 # Install curl for call cloudflare api
 RUN apt-get update && \
@@ -15,11 +23,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the entire project
-COPY . .
-
-RUN bun --bun run build
+COPY --from=build /app/.output /app
 
 # run the app
-EXPOSE 3000
+EXPOSE 3000/tcp
 
-CMD [ "bun", "--bun", "run", ".output/server/index.mjs" ]
+ENTRYPOINT [ "bun", "--bun", "run", "server/index.mjs" ]
