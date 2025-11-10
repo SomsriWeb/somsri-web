@@ -5,20 +5,7 @@ const META_PIXEL_ID = '796947021881915';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: [
-        '@nuxtjs/seo',
-        '@nuxt/content',
-        '@nuxt/ui',
-        '@nuxt/image',
-        '@nuxt/fonts',
-        '@nuxt/eslint',
-        'nuxt-swiper',
-        'nuxt-viewport',
-        '@nuxtjs/device',
-        '@vueuse/nuxt',
-        '@nuxt/scripts',
-        '@nuxtjs/storybook',
-    ],
+    modules: ['@nuxtjs/seo', '@nuxt/content', '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', 'nuxt-swiper', 'nuxt-viewport', '@nuxtjs/device', '@vueuse/nuxt', '@nuxt/scripts'],
     app: {
         head: {
             htmlAttrs: {
