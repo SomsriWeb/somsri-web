@@ -160,7 +160,11 @@ export default defineNuxtConfig({
             routes: ['/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
         },
-        preset: 'bun',
+        preset: 'node-server',
+        externals: {
+            external: ['sharp'], // ให้ sharp เป็น external
+            inline: [], // กันไม่ให้ถูก inline
+        },
     },
     vite: {
         plugins: [
@@ -203,8 +207,5 @@ export default defineNuxtConfig({
             },
         },
         env: process.env.NODE_ENV || 'production',
-    },
-    storybook: {
-        port: 6006,
     },
 });
