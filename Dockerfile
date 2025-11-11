@@ -8,7 +8,6 @@ COPY package.json bun.lock* ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
 RUN bun install --ignore-scripts
-RUN bun install --cpu=x64 --os=linux --libc=glibc sharp
 
 COPY . .
 
@@ -27,7 +26,6 @@ RUN apt-get update && \
 COPY package.json bun.lock* ./
 
 RUN bun install --production --ignore-scripts
-RUN bun install --cpu=x64 --os=linux --libc=glibc sharp
 
 # Copy the entire project
 COPY --from=build /app/.output .
