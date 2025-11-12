@@ -160,11 +160,6 @@ export default defineNuxtConfig({
             routes: ['/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
         },
-        preset: 'bun',
-        externals: {
-            external: ['sharp'], // ให้ sharp เป็น external
-            inline: [], // กันไม่ให้ถูก inline
-        },
     },
     vite: {
         plugins: [
