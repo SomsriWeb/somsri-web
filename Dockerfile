@@ -7,7 +7,7 @@ ARG NODE_OPTIONS=--max-old-space-size=16384
 COPY package.json bun.lock* ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
-RUN bun install --ignore-scripts
+RUN bun install ignore-scripts
 
 COPY . .
 
@@ -20,12 +20,12 @@ ARG NODE_ENV=production
 
 # Install curl for call cloudflare api
 RUN apt-get update && \
-    apt-get install -y curl && \
+    apt-get install -y curl libvips && \
     rm -rf /var/lib/apt/lists/*
 
 COPY package.json bun.lock* ./
 
-RUN bun install --production --ignore-scripts
+RUN bun install --production
 
 # Copy the entire project
 COPY --from=build /app/.output .
