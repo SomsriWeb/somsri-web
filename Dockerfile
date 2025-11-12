@@ -7,7 +7,7 @@ ARG NODE_OPTIONS=--max-old-space-size=16384
 COPY package.json bun.lock* ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
-RUN bun install ignore-scripts
+RUN bun install --ignore-scripts
 
 COPY . .
 
