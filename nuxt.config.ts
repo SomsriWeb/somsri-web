@@ -1,6 +1,6 @@
 import { beasties } from 'vite-plugin-beasties';
 
-const GTAG_ID = 'G-WZVB9WVRH5';
+const GTAG_ID = 'GTM-5HWK828';
 const META_PIXEL_ID = '796947021881915';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
