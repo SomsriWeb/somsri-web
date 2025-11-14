@@ -2,6 +2,9 @@ import { beasties } from 'vite-plugin-beasties';
 
 const GTAG_ID = 'GTM-5HWK828';
 const META_PIXEL_ID = '796947021881915';
+const HOTJAR_ID = 3498590;
+
+import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -115,9 +118,6 @@ export default defineNuxtConfig({
                 url: 'https://github.com/SomsriWeb/somsri-web',
             },
         },
-        build: {
-            transformers: ['~~/transformers/blog-path'],
-        },
     },
     colorMode: {
         preference: 'light',
@@ -184,7 +184,7 @@ export default defineNuxtConfig({
                     id: META_PIXEL_ID,
                 },
                 hotjar: {
-                    id: 3498590, // your id
+                    id: HOTJAR_ID,
                 },
             },
         },
