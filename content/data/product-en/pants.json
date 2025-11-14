@@ -1,6 +1,6 @@
 {
     "name": "pants",
-    "image": "/product-type/pants.jpg",
+    "image": "/product/pants.jpg",
     "url": "/pants",
     "order": 9
 }

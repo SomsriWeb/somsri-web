@@ -1,0 +1,8 @@
+{
+    "name": "ผ้าห่ม",
+    "name-en": "Blanket",
+    "image": "/product/blanket.png",
+    "url": "/blanket",
+    "featured": true,
+    "order": 9
+}
