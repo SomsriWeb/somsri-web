@@ -2,7 +2,7 @@
 title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
 description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง
   รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
-lineLink: https://contact.somsritshirt.com/3d975
+lineLink: https://contact.somsritshirt.com/ea797
 ---
 ::landing-page-header-style-two{image="/jersey/banner.png"}
 #title
@@ -34,10 +34,11 @@ lineLink: https://contact.somsritshirt.com/3d975
     #Col1
     ::title-with-description
     #title
-    :::prose-strong{class="text-primary text-xl"}
+    :::prose-h2{class="text-primary md:text-xl"}
     เนื้อผ้าและคุณสมบัติพิเศษ
     :::
-    :::prose-h2{size="2xl"}
+
+    :::prose-strong{class="text-[2rem] md:text-[2.5rem] text-primary"}
     เสื้อ Jersey
     :::
 
@@ -99,6 +100,5 @@ lineLink: https://contact.somsritshirt.com/3d975
             ::u-button{to="/price" size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
             ::
         ::
-        
     ::
 ::

@@ -39,14 +39,14 @@ provide(LANGUAGE, page.value.language || 'th');
         <NuxtLayout :name="page.activeNavbar || pageType === 'blog' ? 'color' : 'default'">
             <Metadata :page="page" />
             <main>
-                <ContentRenderer v-if="pageType === 'page'" class="space-y-8" :value="page" :prose="true" />
+                <ContentRenderer v-if="pageType === 'page'" class="space-y-8" :value="page" />
 
                 <template v-else>
                     <BlogHeader :image="page.image" :alt="page.title">
                         <template #title>{{ page.title }}</template>
                     </BlogHeader>
                     <Container>
-                        <ContentRenderer class="space-y-8" :value="page" :prose="true" />
+                        <ContentRenderer class="space-y-8" :value="page" />
                     </Container>
                 </template>
             </main>
