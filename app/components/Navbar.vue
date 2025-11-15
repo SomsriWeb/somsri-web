@@ -61,7 +61,7 @@ onUnmounted(() => {
     <nav :class="navbarClass" class="px-5 lg:px-[4.6rem] py-2 text-white grid grid-cols-5 sm:grid-cols-12 gap-5 w-screen transition-all duration-300">
         <div class="sm:col-span-2">
             <NuxtLink to="/">
-                <ProseImg src="/logo.svg" alt="สมศรีมีเสื้อ" class="w-[3rem] md:w-[1.75rem] max-w-[40px] invert-0 sepia-0 saturate-[7500] hue-rotate-[313deg] brightness-[93] contrast-[107]" />
+                <Logo class="w-12 md:w-6 max-w-10" />
             </NuxtLink>
         </div>
 
@@ -70,7 +70,7 @@ onUnmounted(() => {
                 <Icon name="lucide:menu" class="w-6 h-6 xl:hidden" @click="toggleMenu" />
             </div>
 
-            <div :class="{ hidden: !showMenu && $viewport.isLessOrEquals('lg') }" class="mt-3 xl:mt-0 w-full flex flex-col xl:!flex-row items-center justify-center gap-3 xl:gap-1">
+            <div :class="{ hidden: !showMenu && $viewport.isLessOrEquals('lg') }" class="mt-3 xl:mt-0 w-full flex flex-col xl:flex-row! items-center justify-center gap-3 xl:gap-1">
                 <NuxtLink
                     v-for="menu in menus?.[0]?.data || []"
                     :key="menu.label"
