@@ -35,11 +35,11 @@ lineLink: https://contact.somsritshirt.com/ea797
     ::title-with-description
     #title
     :::prose-h2{class="text-primary md:text-xl"}
-    เนื้อผ้าและคุณสมบัติพิเศษ
+    ชนิดเนื้อผ้า
     :::
 
     :::prose-strong{class="text-[2rem] md:text-[2.5rem] text-primary"}
-    เสื้อ Jersey
+    ผ้าขนฟูไมโคร
     :::
 
     #description

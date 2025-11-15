@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // PROPS
 interface Props {
-    size?: 'sm' | 'lg';
+    size?: 'sm' | 'lg' | 'xl' | '2xl';
 }
 
 // PROPS
@@ -18,6 +18,10 @@ const sizeClass = computed(() => {
             return 'text-lg md:text-2xl';
         case 'lg':
             return 'text-xl md:text-3xl';
+        case 'xl':
+            return 'text-2xl md:text-4xl';
+        case '2xl':
+            return 'text-3xl md:text-5xl';
         default:
             return 'text-[2rem] md:text-[2.5rem]';
     }
