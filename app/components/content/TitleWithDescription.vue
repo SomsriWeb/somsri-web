@@ -1,4 +1,13 @@
 <script setup lang="ts">
+// PROPS
+interface Props {
+    spacing?: number;
+}
+const props = withDefaults(defineProps<Props>(), {
+    spacing: 1,
+});
+const { spacing } = toRefs(props);
+
 // SLOTS
 interface Slots {
     /**
@@ -12,9 +21,12 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
+// COMPUTED
+const spacingClass = computed<string>(() => `space-y-${spacing.value}`);
 </script>
 <template>
-    <div>
+    <div :class="[spacingClass]">
         <slot name="title" />
         <slot name="description" />
     </div>

@@ -8,7 +8,6 @@ withDefaults(defineProps<Props>(), {
 });
 
 interface Slots {
-
     /**
      * ข้อความภายในปุ่ม เเสดงเป็น P
      */
@@ -17,11 +16,8 @@ interface Slots {
 
 defineSlots<Slots>();
 
-
-
-
 // VARIABLE
-const { data: products } = await useAsyncData('products', () => queryCollection('product').where('name', 'NOT LIKE', 'หมวก').order('order', 'ASC').all());
+const { data: products } = await useAsyncData('products', () => queryCollection('product').order('order', 'ASC').all());
 </script>
 
 <template>
