@@ -4,13 +4,16 @@ interface Props {
     image: string;
     titleAsTag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
     alt?: string;
+    imageAnchor?: 'left' | 'center' | 'right' | string;
 }
-const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
+const { image, titleAsTag = 'h1', alt = '', imageAnchor = 'center' } = defineProps<Props>();
+
+const objectPosition = `object-${imageAnchor}`;
 </script>
 
 <template>
     <header class="relative">
-        <ProseImg :src="image" :alt="alt" class="w-screen! h-screen! object-cover" />
+        <ProseImg :src="image" :alt="alt" class="w-screen! h-screen! object-cover" :class="{ [objectPosition]: true }" />
         <div class="absolute inset-0 bg-black/30" />
         <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-20 left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-60 md:max-w-60 lg:max-w-[20rem] xl:max-w-120">
             <component :is="titleAsTag" class="text-3xl md:text-4xl lg:text-5xl font-bold leading-none"><slot name="title" mdc-unwrap="p" /></component>

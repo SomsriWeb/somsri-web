@@ -49,14 +49,12 @@ lineLink: https://contact.somsritshirt.com/600d2
     ผ้าไหมอิตาลีคือเนื้อผ้าพรีเมียมที่ให้สัมผัสนุ่ม ลื่น และเบาอย่าง หรูหรา มีความเงางามพอดี ให้ลุคดูแพงแต่ยังคงใส่สบายด้วยโครงสร้าง เส้นใยละเอียดจึงระบายอากาศได้ดี ไม่ร้อน พริ้วไหว สวยในทุกการเคลื่อนไหวเหมาะสำหรับเสื้อผ้าที่ต้อง การความ เรียบหรู ดูดี มีสไตล์ ทั้งในวันสบายๆหรือโอกาสพิเศษ
     ::
 
-    ::hawaiian-feature
+    ::hawaiian-feature{title-tag="h3"}
     ::
 
     ::center
-        ::line-link
-            ::u-button{to="/fabric-specification" icon="i-lucide:file-search"}
-            ดูเนื้อผ้าเพิ่มเติม
-            ::
+        ::u-button{to="/fabric-specification" icon="i-lucide:file-search"}
+        ดูเนื้อผ้าเพิ่มเติม
         ::
     ::
 ::
@@ -100,8 +98,7 @@ lineLink: https://contact.somsritshirt.com/600d2
     ::
 ::
 
-::container
-
+::container{:no-padding-top=true}
     ::title-with-description
     #title
     ## ตัวอย่างเสื้อเชิ้ตฮาวาย การันตีมาตรฐานจากสมศรี
@@ -126,9 +123,8 @@ lineLink: https://contact.somsritshirt.com/600d2
         ::
 
         ::line-link
-            ::u-button{to="/price" size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
+            ::u-button{size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
             ::
         ::
     ::
-
 ::
