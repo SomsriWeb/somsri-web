@@ -1,13 +1,15 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 
 html {
     font-size: 28px !important;
+    font-weight: 300;
 }
 
 @media (width < 640px) {
     html {
         font-size: 24px !important;
+        font-weight: 300;
     }
 }
 
@@ -20,9 +22,14 @@ h6 {
     font-stretch: condensed;
 }
 
+b,
+strong {
+    font-weight: bold;
+}
+
 @theme {
-    --font-sans: "DB Helvethaica X", "sans-serif";
-    --default-font-family: "DB Helvethaica X", "sans-serif";
+    --font-sans: 'DB Helvethaica X', 'sans-serif';
+    --default-font-family: 'DB Helvethaica X', 'sans-serif';
 
     --color-primary: oklch(47.783% 0.16585 13.291);
     --color-primary-50: oklch(76.021% 0.10361 4.3494);

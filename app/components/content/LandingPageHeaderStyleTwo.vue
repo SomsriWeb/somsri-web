@@ -11,10 +11,10 @@ const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
 <template>
     <div>
         <header>
-            <ProseImg :src="image" :alt="alt" class="!w-screen !h-screen object-cover" />
+            <ProseImg :src="image" :alt="alt" class="w-screen! h-screen! object-cover" />
             <div class="absolute inset-0 bg-black/30" />
-            <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-[5rem] left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-[15rem] md:max-w-[15rem] lg:max-w-[20rem] xl:max-w-[30rem]">
-                <component :is="titleAsTag" class="text-2xl md:text-3xl lg:text-4xl font-bold leading-none"><slot name="title" mdc-unwrap="p" /></component>
+            <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-20 left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-60 md:max-w-60 lg:max-w-[20rem] xl:max-w-120">
+                <component :is="titleAsTag" class="text-3xl md:text-4xl lg:text-5xl font-bold leading-none"><slot name="title" mdc-unwrap="p" /></component>
                 <p v-if="$slots['secondary-title']" class="font-bold text-lg lg:text-2xl">
                     <slot name="secondary-title" mdc-unwrap="p" />
                 </p>

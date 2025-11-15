@@ -33,7 +33,7 @@ const imgs = [
 //stot
 interface Slots {
     /**
-     * หัวข้อ 
+     * หัวข้อ
      */
     title(): unknown;
 
@@ -41,10 +41,8 @@ interface Slots {
      * รายละเอียด
      */
     description(): unknown;
-
 }
 defineSlots<Slots>();
-
 </script>
 
 <template>
@@ -56,7 +54,7 @@ defineSlots<Slots>();
 
         <ClientOnly>
             <Vue3Marquee class="rounded-xl" :duration="40">
-                <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-[17rem] object-cover" sizes="xs:400px sm:500px" />
+                <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-68 object-cover" sizes="sm:400px md:500px" />
             </Vue3Marquee>
         </ClientOnly>
     </div>

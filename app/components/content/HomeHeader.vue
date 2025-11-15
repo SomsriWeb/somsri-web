@@ -24,7 +24,7 @@ defineSlots<Slots>();
             <NuxtImg src="/home/header.jpg" class="w-screen h-screen object-cover object-right" format="webp" placeholder preload />
             <div class="absolute inset-0 bg-black/30" />
         </div>
-        <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-[5rem] left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-[15rem] md:max-w-[15rem] lg:max-w-[20rem] xl:max-w-[30rem]">
+        <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-20 left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-60 md:max-w-60 lg:max-w-[20rem] xl:max-w-120">
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
                 <slot name="title" mdc-unwrap="p" />
             </h1>
@@ -33,7 +33,7 @@ defineSlots<Slots>();
             </p>
 
             <LineLink>
-                <UButton color="primary" size="xl" class="!min-w-[9rem]">
+                <UButton color="primary" size="xl" class="min-w-36!">
                     <Icon name="lucide:message-circle" size="1rem" />
                     <slot name="button" mdc-unwrap="p" />
                 </UButton>
