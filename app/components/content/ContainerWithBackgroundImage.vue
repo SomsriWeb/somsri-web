@@ -19,11 +19,11 @@ interface Slots {
 defineSlots<Slots>();
 
 // VARIABLE
-const bgImageClass = `bg-[url(${image})] bg-center bg-cover`;
+const bgImageValue = `url(${image})`;
 </script>
 
 <template>
-    <div class="w-full px-5 lg:px-[4.6rem] py-12" :class="{ 'space-y-8': !noSpace, [bgImageClass]: true }">
+    <div class="w-full px-5 lg:px-[4.6rem] py-12 bg-center bg-cover" :class="{ 'space-y-8': !noSpace }" :style="{ backgroundImage: bgImageValue }">
         <slot />
     </div>
 </template>
