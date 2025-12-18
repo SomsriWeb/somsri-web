@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, watch } from 'vue';
+import { onMounted } from 'vue';
 
 interface TimelineItem {
     year: string;
@@ -9,35 +9,50 @@ interface TimelineItem {
     isVisible?: boolean;
 }
 
-// PROPS
-interface Props {
-    items?: TimelineItem[] | string;
-}
-
-const props = defineProps<Props>();
-
-// Parse items from props
-const parsedItems = computed<TimelineItem[]>(() => {
-    if (typeof props.items === 'string') {
-        try {
-            const parsed = JSON.parse(props.items);
-            return Array.isArray(parsed) ? parsed : [];
-        } catch {
-            return [];
-        }
-    }
-    return Array.isArray(props.items) ? props.items : [];
-});
-
-const timelineData = ref<TimelineItem[]>([]);
-
-// Initialize timelineData from parsedItems
-watch(() => parsedItems.value, (newItems) => {
-    timelineData.value = newItems.map(item => ({
-        ...item,
-        isVisible: false
-    }));
-}, { immediate: true });
+const timelineData = ref<TimelineItem[]>([
+    {
+        year: '2017',
+        title: 'ก่อตั้งกิจการ',
+        description: 'ก่อตั้งกิจการจากการเห็นช่องว่างจากการใช้software ในการช่วยซัพพอร์ทลูกค้าในการทำธุรกิจให้ง่ายขึ้น',
+        image: '/Timeline/Founded.jpg',
+    },
+    {
+        year: '2019',
+        title: 'ออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี',
+        description: 'ผู้เข้าใช้โปรแกรมออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี',
+        image: '/Timeline/2019.jpg',
+    },
+    {
+        year: '2020',
+        title: 'พัฒนา ERP ที่ชื่อว่า TEXCEL',
+        description: 'บริษัทได้ปล่อย ERP ที่ชื่อว่า TEXCEL ใช้สำหรับบริหารจัดการภายใน ที่พัฒนาโดยทีมงานในองค์กร และเดินหน้าลงทุนด้านการซอร์ฟแวร์อย่างต่อเนื่อง',
+        image: '/Timeline/2020.png',
+    },
+    {
+        year: '2021',
+        title: 'จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย',
+        description: 'จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย เพื่อนำผ้าเข้าสู่กระบวนการ Recycle ให้องค์กรเติบโตไปสู่ความยั่งยืนเพื่อโลกต่อไป',
+        image: '/Timeline/cloth.jpg',
+    },
+    {
+        year: '2022',
+        title: 'เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน)',
+        description: 'เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน) เพื่อนำระบบ lean มาใช้ในองค์กร ลดต้นทุนได้ราคาที่ลูกค้าได้รับจึงคุ้มค่ากว่าโรงงานอื่น',
+        image: '/Timeline/2022.jpg',
+    },
+    {
+        year: '2023',
+        title: 'ได้รับรางวัลเหรียญทอง Peer recognition organization',
+        description: 'ได้รับรางวัลเหรียญทอง Peer recognition organization องค์กรที่มีส่วนร่วมในการทำงานยอดเยี่ยม',
+        image: '/Timeline/2023.jpg',
+    },
+    {
+        year: '2026',
+        title: 'เติบโตเป็น eCommerce company',
+        description: 'เติบโตเป็น eCommerce company ลูกค้าทุกคนสามารถสั่งเสื้อผ้าผ่านหน้าเว็บไซต์ โดยทุกความต้องการของลูกค้าสามารถระบุได้บนเว็บไซต์',
+        image: '/Timeline/2026.jpg',
+    },
+]);
 
 // Refs สำหรับ animation
 const itemRefs = ref<(HTMLElement | null)[]>([]);
@@ -52,10 +67,13 @@ const setupIntersectionObserver = (): void => {
                 if (!item) return;
                 
                 if (entry.isIntersecting) {
+                    // เมื่อ element เข้ามาใน viewport
                     item.isVisible = true;
                 } else {
+                    // เมื่อ element ออกจาก viewport
                     const rect = entry.boundingClientRect;
                     const viewportHeight = window.innerHeight;
+
                     if (rect.top > viewportHeight) {
                         item.isVisible = false;
                     }
@@ -63,10 +81,11 @@ const setupIntersectionObserver = (): void => {
             });
         },
         {
-            threshold: 0.8,
+            threshold: 0.8, // Trigger เมื่อเห็น 20% ของ element
         },
     );
 
+    // Observe ทุก item
     itemRefs.value.forEach((el, index) => {
         if (el) {
             el.setAttribute('data-item-index', index.toString());
@@ -76,6 +95,7 @@ const setupIntersectionObserver = (): void => {
 };
 
 onMounted(() => {
+    // รอให้ DOM render เสร็จก่อน
     setTimeout(() => {
         setupIntersectionObserver();
     }, 100);
@@ -83,81 +103,46 @@ onMounted(() => {
 </script>
 
 <template>
-    <section class="min-h-screen font-sans" aria-labelledby="timeline-heading">
-        <h2 id="timeline-heading" class="sr-only">Timeline - ประวัติความเป็นมาของสมศรีมีเสื้อ</h2>
+    <div class="min-h-screen font-sans">
         <div class="container mx-auto px-4 max-w-6xl">
-            <div class="relative" role="list" aria-label="Timeline">
+            <div class="relative">
                 <!-- Timeline Items -->
-                <template v-if="timelineData.length > 0">
-                    <div
-                        v-for="(item, index) in timelineData"
-                        :key="`${item.year}-${index}`"
+                <div
+                    v-for="(item, index) in timelineData"
+                    :key="index"
                     :ref="
                         (el) => {
                             if (el) itemRefs[index] = el as HTMLElement;
                         }
                     "
-                    class="flex flex-col md:flex-row items-center justify-center w-full mb-14 relative timeline-item"
+                    class="flex items-center justify-center w-full mb-14 relative timeline-item"
                     :class="{ 'is-visible': item.isVisible }"
-                    role="listitem"
                 >
-                    <!-- เส้นเชื่อมระหว่าง dot นี้กับ dot ถัดไป (ซ่อนบนหน้าจอขนาดเล็ก) -->
+                    <!-- เส้นเชื่อมระหว่าง dot นี้กับ dot ถัดไป (ย้ายออกมาจาก element เพื่อไม่ให้ถูก overflow-hidden ครอบ) -->
                     <div
                         v-if="index < timelineData.length - 1"
-                        class="hidden md:block absolute left-1/2 top-1/2 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0 timeline-line"
+                        class="absolute left-1/2 top-1/2 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0 timeline-line"
                         style="height: calc(100% + 6rem)"
                         :class="{ 'timeline-line-visible': item.isVisible }"
                     ></div>
 
-                    <!-- Mobile Layout: ปี > รูปภาพ > ข้อความ -->
-                    <div class="w-full md:hidden flex flex-col items-center gap-4">
-                        <!-- ปี (Checkpoint) -->
-                        <div class="relative flex flex-col items-center justify-center z-10">
-                            <div
-                                class="w-20 h-20 flex flex-col items-center justify-center bg-primary text-white font-bold rounded-lg shadow-xl border-4 border-slate-100 transition-all duration-700 delay-100 z-20 timeline-checkpoint"
-                                :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
-                            >
-                                <span class="text-xs font-light opacity-80">YEAR</span>
-                                <span class="text-lg">{{ item.year }}</span>
-                            </div>
-                        </div>
-
-                        <!-- รูปภาพ -->
-                        <div class="w-full overflow-hidden rounded-xl" :class="{ 'is-visible': item.isVisible }">
-                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
-                        </div>
-
-                        <!-- ข้อความ -->
-                        <div class="w-full bg-white p-6 rounded-xl shadow-lg border border-slate-100" :class="{ 'is-visible': item.isVisible }">
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
-                            <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
-                        </div>
-                    </div>
-
-                    <!-- Desktop Layout: ซ้าย-กลาง-ขวา -->
                     <!-- ฝั่งซ้าย (Left Side) -->
-                    <div class="hidden md:flex w-5/12 justify-end px-4 relative">
+                    <div class="w-5/12 flex justify-end px-4 relative">
                         <!-- เลขคู่: ฝั่งซ้ายคือ "ข้อมูล (Content)" มีพื้นหลัง -->
                         <div v-if="index % 2 === 0" class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 timeline-content-left" :class="{ 'is-visible': item.isVisible }">
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
 
                         <!-- เลขคี่: ฝั่งซ้ายคือ "รูปภาพ (Image)" ไม่มีพื้นหลัง -->
                         <div v-else class="overflow-hidden rounded-xl timeline-image-left" :class="{ 'is-visible': item.isVisible }">
-                            <img
-                                :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
-                                :title="item.title"
-                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
-                                loading="lazy"
-                                decoding="async"
-                            />
+                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
                     <!-- ตรงกลาง (Center Checkpoint) -->
-                    <div class="hidden md:flex relative flex-col items-center justify-center w-24 z-10">
+                    <div class="relative flex flex-col items-center justify-center w-24 z-10">
+                        <!-- กล่อง Date Checkpoint (สี่เหลี่ยม) -->
                         <div
                             class="w-20 h-20 flex flex-col items-center justify-center bg-primary text-white font-bold rounded-lg shadow-xl border-4 border-slate-100 transition-all duration-700 delay-100 z-20 timeline-checkpoint"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
@@ -168,33 +153,22 @@ onMounted(() => {
                     </div>
 
                     <!-- ฝั่งขวา (Right Side) -->
-                    <div class="hidden md:flex w-5/12 justify-start px-4 relative">
+                    <div class="w-5/12 flex justify-start px-4 relative">
                         <!-- เลขคู่: ฝั่งขวาคือ "รูปภาพ (Image)" -->
                         <div v-if="index % 2 === 0" class="overflow-hidden rounded-xl timeline-image-right" :class="{ 'is-visible': item.isVisible }">
-                            <img
-                                :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
-                                :title="item.title"
-                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
-                                loading="lazy"
-                                decoding="async"
-                            />
+                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
                         </div>
 
                         <!-- เลขคี่: ฝั่งขวาคือ "ข้อมูล (Content)" มีพื้นหลัง -->
                         <div v-else class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 timeline-content-right" :class="{ 'is-visible': item.isVisible }">
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
                     </div>
                 </div>
-                </template>
-                <div v-else class="text-center text-gray-500 py-10">
-                    ไม่มีข้อมูล Timeline
-                </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <style scoped>
@@ -222,7 +196,7 @@ onMounted(() => {
 
 /* Animation สำหรับ Content ฝั่งซ้าย (เลขคู่) - สไลด์ออกจาก dot ไปทางซ้าย */
 .timeline-content-left {
-    opacity: 0 !important;
+    opacity: 0;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -230,13 +204,13 @@ onMounted(() => {
 }
 
 .timeline-content-left.is-visible {
-    opacity: 1 !important;
+    opacity: 1;
     transform: translateX(-40px);
 }
 
 /* Animation สำหรับ Image ฝั่งซ้าย (เลขคี่) - สไลด์ออกจาก dot ไปทางซ้าย */
 .timeline-image-left {
-    opacity: 0 !important;
+    opacity: 0;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -244,13 +218,13 @@ onMounted(() => {
 }
 
 .timeline-image-left.is-visible {
-    opacity: 1 !important;
+    opacity: 1;
     transform: translateX(-40px);
 }
 
 /* Animation สำหรับ Image ฝั่งขวา (เลขคู่) - สไลด์ออกจาก dot ไปทางขวา */
 .timeline-image-right {
-    opacity: 0 !important;
+    opacity: 0;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -258,13 +232,13 @@ onMounted(() => {
 }
 
 .timeline-image-right.is-visible {
-    opacity: 1 !important;
+    opacity: 1;
     transform: translateX(40px);
 }
 
 /* Animation สำหรับ Content ฝั่งขวา (เลขคี่) - สไลด์ออกจาก dot ไปทางขวา */
 .timeline-content-right {
-    opacity: 0 !important;
+    opacity: 0;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -272,20 +246,7 @@ onMounted(() => {
 }
 
 .timeline-content-right.is-visible {
-    opacity: 1 !important;
+    opacity: 1;
     transform: translateX(40px);
-}
-
-/* Animation สำหรับ Mobile Layout - Fade in แบบเดียวกับ year */
-.timeline-mobile-image {
-    transition:
-        opacity 0.7s ease-out,
-        transform 0.7s ease-out;
-}
-
-.timeline-mobile-content {
-    transition:
-        opacity 0.7s ease-out,
-        transform 0.7s ease-out;
 }
 </style>

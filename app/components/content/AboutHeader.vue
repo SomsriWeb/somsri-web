@@ -19,6 +19,7 @@ interface Slots {
      * ข้อความอธิบายแบบเป็นลิสต์
      */
     imageBannerList(): unknown;
+    descriptionList(): unknown;
 
     /**
      * ข้อความที่เป็นสโลแกน
@@ -48,27 +49,22 @@ defineSlots<Slots>();
 <template>
     <div>
         <h1 class="text-left font-bold bg-primary text-white py-1 rounded-2xl mt-2 text-3xl pl-2">
-            <slot name="header" mdc-unwrap="p" />
+            <slot name="header" mdc-unwrap="p"/>
         </h1>
 
-        <div class="grid gap-4 pt-5 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-4 pt-5">
             <slot mdc-unwrap="p" name="imageBanner" />
             <ProseP class="text-stone-500">
                 <slot mdc-unwrap="p" name="descriptionText" />
             </ProseP>
         </div>
+
+        <div class="font-light pt-5 text-stone-500">
+            
+        </div>
         <div class="grid grid-cols-2 gap-4 justify-center items-center text-stone-500 font-light text-left max-w-4xl w-full px-4">
             <slot mdc-unwrap="p" name="imageBannerList" />
-            <slot mdc-unwrap="p" name="descriptionSlogan" />
-        </div>
-        
-        <div class="flex gap-4 text-stone-500 font-light text-left max-w-4xl w-full px-4">
-            <div class="w-1/2 flex justify-center items-baseline">
-                <slot mdc-unwrap="p" name="strategyimage1" />
-            </div>
-            <div class="">
-                <slot mdc-unwrap="p" name="strategyList1" />
-            </div>
+            <slot mdc-unwrap="p" name="descriptionList" />
         </div>
     </div>
 </template>
