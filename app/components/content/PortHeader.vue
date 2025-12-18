@@ -32,7 +32,7 @@ defineSlots<Slots>();
 
 <template>
     <div>
-        <ProseH2 class="text-stert container text-5xl font-bold text-primary mb-3 pt-5">
+        <ProseH2 class="text-stert container text-5xl font-bold text-primary mb-3">
             <slot mdc-unwrap="p" name="othertitle" />
         </ProseH2>
 

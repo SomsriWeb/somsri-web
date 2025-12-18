@@ -18,6 +18,7 @@ interface Slots {
     /**
      * ข้อความอธิบายแบบเป็นลิสต์
      */
+    imageBannerList(): unknown;
     descriptionList(): unknown;
 
     /**
@@ -44,39 +45,23 @@ defineSlots<Slots>();
 </script>
 <template>
     <div>
-        <ProseH1 class="text-center font-bold bg-primary text-white py-3 rounded-2xl">
-            <slot name="header" mdc-unwrap="p" />
-        </ProseH1>
+        <h1 class="text-left font-bold bg-primary text-white py-1 rounded-2xl mt-2 text-3xl pl-2">
+            <slot name="header" mdc-unwrap="p"/>
+        </h1>
 
-        <div class="flex justify-center pt-5">
+        <div class="grid grid-cols-2 gap-4 pt-5">
             <slot mdc-unwrap="p" name="imageBanner" />
-        </div>
-
-        <div class="font-light pt-5 text-stone-500">
-            <ProseP>
+            <ProseP class="text-stone-500">
                 <slot mdc-unwrap="p" name="descriptionText" />
             </ProseP>
         </div>
-        <div class="flex justify-center text-stone-500 font-light text-left max-w-4xl w-full px-4">
+
+        <div class="font-light pt-5 text-stone-500">
+            
+        </div>
+        <div class="grid grid-cols-2 gap-4 justify-center items-center text-stone-500 font-light text-left max-w-4xl w-full px-4">
+            <slot mdc-unwrap="p" name="imageBannerList" />
             <slot mdc-unwrap="p" name="descriptionList" />
-        </div>
-
-        <div>
-            <ProseH2 class="text-center font-bold text-primary">
-                <slot mdc-unwrap="p" name="sloganText" />
-            </ProseH2>
-            <ProseP class="text-center font-bold text-primary">
-                <slot mdc-unwrap="p" name="descriptionSlogan" />
-            </ProseP>
-        </div>
-
-        <div>
-            <ProseP class="text-start font-bold text-primary">
-                <slot mdc-unwrap="p" name="strategyText" />
-            </ProseP>
-            <div class="flex justify-start font-light text-stone-500 max-w-4xl w-full px-4">
-                <slot mdc-unwrap="p" name="strategyList" />
-            </div>
         </div>
     </div>
 </template>
