@@ -55,10 +55,6 @@ defineSlots<Slots>();
                 <slot mdc-unwrap="p" name="descriptionText" />
             </ProseP>
         </div>
-
-        <div class="font-light pt-5 text-stone-500">
-            
-        </div>
         <div class="grid grid-cols-2 gap-4 justify-center items-center text-stone-500 font-light text-left max-w-4xl w-full px-4">
             <slot mdc-unwrap="p" name="imageBannerList" />
             <slot mdc-unwrap="p" name="descriptionList" />
