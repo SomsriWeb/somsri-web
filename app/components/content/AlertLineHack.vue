@@ -8,7 +8,7 @@
                     เพื่อความปลอดภัยและความต่อเนื่องในการสั่งซื้อ/สอบถามข้อมูล
                 </p>
                 <div>
-                    <p>รบกวนลูกค้าทุกท่านติดต่อเราผ่านทาง Line OA ใหม่ที่นี่เท่านั้น: 👉 Line ID: @464wedxi</p>
+                    <p>รบกวนลูกค้าทุกท่านติดต่อเราผ่านทาง Line OA ใหม่ที่นี่เท่านั้น: 👉 Line ID: @ssgm</p>
                     <p>หรือคลิก: <NuxtLink class="underline" href="https://lin.ee/EU8x2b5" external>https://lin.ee/EU8x2b5</NuxtLink></p>
                 </div>
                 <p>หรือทาง Facebook Page สมศรีมีเสื้อเท่านั้น</p>
