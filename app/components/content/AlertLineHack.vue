@@ -1,5 +1,5 @@
 <template>
-    <UModal :default-open="true">
+    <UModal :default-open="true" :close="false">
         <template #body>
             <div class="text-left space-y-3 block">
                 <p class="font-bold text-3xl">ประกาศสำคัญจาก "สมศรีมีเสื้อ"</p>
