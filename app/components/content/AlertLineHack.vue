@@ -9,7 +9,7 @@
                 </p>
                 <div>
                     <p>รบกวนลูกค้าทุกท่านติดต่อเราผ่านทาง Line OA ใหม่ที่นี่เท่านั้น: 👉 Line ID: @ssgm</p>
-                    <p>หรือคลิก: <NuxtLink class="underline" href="https://lin.ee/EU8x2b5" external>https://lin.ee/EU8x2b5</NuxtLink></p>
+                    <p>หรือคลิก: <NuxtLink class="underline" to="https://contact.somsritshirt.com/4d6df" external>https://lin.ee/EU8x2b5</NuxtLink></p>
                 </div>
                 <p>หรือทาง Facebook Page สมศรีมีเสื้อเท่านั้น</p>
                 <p>⚠️ ข้อควรระวัง: โปรดงดทำธุรกรรมหรือโอนเงินผ่านบัญชีไลน์เดิมจนกว่าจะมีประกาศเปลี่ยนแปลง ขออภัยในความไม่สะดวกอย่างสูงค่ะ</p>
