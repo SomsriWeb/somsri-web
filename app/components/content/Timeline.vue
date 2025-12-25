@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, watch } from 'vue';
 
 interface TimelineItem {
     year: string;
@@ -9,50 +9,35 @@ interface TimelineItem {
     isVisible?: boolean;
 }
 
-const timelineData = ref<TimelineItem[]>([
-    {
-        year: '2017',
-        title: 'ก่อตั้งกิจการ',
-        description: 'ก่อตั้งกิจการจากการเห็นช่องว่างจากการใช้software ในการช่วยซัพพอร์ทลูกค้าในการทำธุรกิจให้ง่ายขึ้น',
-        image: '/Timeline/Founded.jpg',
-    },
-    {
-        year: '2019',
-        title: 'ออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี',
-        description: 'ผู้เข้าใช้โปรแกรมออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี',
-        image: '/Timeline/2019.jpg',
-    },
-    {
-        year: '2020',
-        title: 'พัฒนา ERP ที่ชื่อว่า TEXCEL',
-        description: 'บริษัทได้ปล่อย ERP ที่ชื่อว่า TEXCEL ใช้สำหรับบริหารจัดการภายใน ที่พัฒนาโดยทีมงานในองค์กร และเดินหน้าลงทุนด้านการซอร์ฟแวร์อย่างต่อเนื่อง',
-        image: '/Timeline/2020.png',
-    },
-    {
-        year: '2021',
-        title: 'จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย',
-        description: 'จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย เพื่อนำผ้าเข้าสู่กระบวนการ Recycle ให้องค์กรเติบโตไปสู่ความยั่งยืนเพื่อโลกต่อไป',
-        image: '/Timeline/cloth.jpg',
-    },
-    {
-        year: '2022',
-        title: 'เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน)',
-        description: 'เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน) เพื่อนำระบบ lean มาใช้ในองค์กร ลดต้นทุนได้ราคาที่ลูกค้าได้รับจึงคุ้มค่ากว่าโรงงานอื่น',
-        image: '/Timeline/2022.jpg',
-    },
-    {
-        year: '2023',
-        title: 'ได้รับรางวัลเหรียญทอง Peer recognition organization',
-        description: 'ได้รับรางวัลเหรียญทอง Peer recognition organization องค์กรที่มีส่วนร่วมในการทำงานยอดเยี่ยม',
-        image: '/Timeline/2023.jpg',
-    },
-    {
-        year: '2026',
-        title: 'เติบโตเป็น eCommerce company',
-        description: 'เติบโตเป็น eCommerce company ลูกค้าทุกคนสามารถสั่งเสื้อผ้าผ่านหน้าเว็บไซต์ โดยทุกความต้องการของลูกค้าสามารถระบุได้บนเว็บไซต์',
-        image: '/Timeline/2026.jpg',
-    },
-]);
+// PROPS
+interface Props {
+    items?: TimelineItem[] | string;
+}
+
+const props = defineProps<Props>();
+
+// Parse items from props
+const parsedItems = computed<TimelineItem[]>(() => {
+    if (typeof props.items === 'string') {
+        try {
+            const parsed = JSON.parse(props.items);
+            return Array.isArray(parsed) ? parsed : [];
+        } catch {
+            return [];
+        }
+    }
+    return Array.isArray(props.items) ? props.items : [];
+});
+
+const timelineData = ref<TimelineItem[]>([]);
+
+// Initialize timelineData from parsedItems
+watch(() => parsedItems.value, (newItems) => {
+    timelineData.value = newItems.map(item => ({
+        ...item,
+        isVisible: false
+    }));
+}, { immediate: true });
 
 // Refs สำหรับ animation
 const itemRefs = ref<(HTMLElement | null)[]>([]);
@@ -67,13 +52,10 @@ const setupIntersectionObserver = (): void => {
                 if (!item) return;
                 
                 if (entry.isIntersecting) {
-                    // เมื่อ element เข้ามาใน viewport
                     item.isVisible = true;
                 } else {
-                    // เมื่อ element ออกจาก viewport
                     const rect = entry.boundingClientRect;
                     const viewportHeight = window.innerHeight;
-
                     if (rect.top > viewportHeight) {
                         item.isVisible = false;
                     }
@@ -81,11 +63,10 @@ const setupIntersectionObserver = (): void => {
             });
         },
         {
-            threshold: 0.8, // Trigger เมื่อเห็น 20% ของ element
+            threshold: 0.8,
         },
     );
 
-    // Observe ทุก item
     itemRefs.value.forEach((el, index) => {
         if (el) {
             el.setAttribute('data-item-index', index.toString());
@@ -95,7 +76,6 @@ const setupIntersectionObserver = (): void => {
 };
 
 onMounted(() => {
-    // รอให้ DOM render เสร็จก่อน
     setTimeout(() => {
         setupIntersectionObserver();
     }, 100);
@@ -107,9 +87,10 @@ onMounted(() => {
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="relative">
                 <!-- Timeline Items -->
-                <div
-                    v-for="(item, index) in timelineData"
-                    :key="index"
+                <template v-if="timelineData.length > 0">
+                    <div
+                        v-for="(item, index) in timelineData"
+                        :key="`${item.year}-${index}`"
                     :ref="
                         (el) => {
                             if (el) itemRefs[index] = el as HTMLElement;
@@ -166,6 +147,10 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
+                </template>
+                <div v-else class="text-center text-gray-500 py-10">
+                    ไม่มีข้อมูล Timeline
+                </div>
             </div>
         </div>
     </div>
@@ -196,7 +181,7 @@ onMounted(() => {
 
 /* Animation สำหรับ Content ฝั่งซ้าย (เลขคู่) - สไลด์ออกจาก dot ไปทางซ้าย */
 .timeline-content-left {
-    opacity: 0;
+    opacity: 0 !important;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -204,13 +189,13 @@ onMounted(() => {
 }
 
 .timeline-content-left.is-visible {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateX(-40px);
 }
 
 /* Animation สำหรับ Image ฝั่งซ้าย (เลขคี่) - สไลด์ออกจาก dot ไปทางซ้าย */
 .timeline-image-left {
-    opacity: 0;
+    opacity: 0 !important;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -218,13 +203,13 @@ onMounted(() => {
 }
 
 .timeline-image-left.is-visible {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateX(-40px);
 }
 
 /* Animation สำหรับ Image ฝั่งขวา (เลขคู่) - สไลด์ออกจาก dot ไปทางขวา */
 .timeline-image-right {
-    opacity: 0;
+    opacity: 0 !important;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -232,13 +217,13 @@ onMounted(() => {
 }
 
 .timeline-image-right.is-visible {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateX(40px);
 }
 
 /* Animation สำหรับ Content ฝั่งขวา (เลขคี่) - สไลด์ออกจาก dot ไปทางขวา */
 .timeline-content-right {
-    opacity: 0;
+    opacity: 0 !important;
     transform: translateX(0);
     transition:
         opacity 1s ease-out 0.3s,
@@ -246,7 +231,7 @@ onMounted(() => {
 }
 
 .timeline-content-right.is-visible {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateX(40px);
 }
 </style>
