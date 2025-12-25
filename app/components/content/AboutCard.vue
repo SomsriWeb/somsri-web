@@ -12,22 +12,38 @@ interface Slots {
 defineSlots<Slots>();
 </script>
 <template>
-    <div class="grid grid-cols-4 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
-        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center">
-            <slot name="strategyimage1" mdc-unwrap="p" />
-            <slot name="strategyList1" mdc-unwrap="p" />
+    <div class="grid grid-cols-4 gap-4 text-sm">
+        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="m-2">
+                <slot name="strategyimage1" mdc-unwrap="p" />
+            </div>
+            <div class="text-center">
+                <slot name="strategyList1" mdc-unwrap="p" />
+            </div>
         </div>
-        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center">
-            <slot name="strategyimage2" mdc-unwrap="p" />
+        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="m-2">
+                <slot name="strategyimage2" mdc-unwrap="p" />
+            </div>
+            <div class="text-center">
             <slot name="strategyList2" mdc-unwrap="p" />
+            </div>
         </div>
-        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center">
-            <slot name="strategyimage3" mdc-unwrap="p" />
+        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="m-2">
+                <slot name="strategyimage3" mdc-unwrap="p" />
+            </div>
+            <div class="text-center">
             <slot name="strategyList3" mdc-unwrap="p" />
+            </div>
         </div>
-        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center">
-            <slot name="strategyimage4" mdc-unwrap="p" />
+        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div class="m-2">
+                <slot name="strategyimage4" mdc-unwrap="p" class="rounded-lg"/>
+            </div>
+            <div class="text-center">
             <slot name="strategyList4" mdc-unwrap="p" />
+            </div>
         </div>
     </div>
 </template>

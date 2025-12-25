@@ -21,9 +21,20 @@ interface Slots {
     imageBannerList(): unknown;
 
     /**
+     * ข้อความที่เป็นสโลแกน
+     */
+    sloganText(): unknown;
+
+    /**
      * ข้อความอธิบายสโลแกน
      */
     descriptionSlogan(): unknown;
+
+    /**
+     * ข้อความอธิบายทั่วไป
+     */
+    strategyTextHeader(): unknown;
+    strategyText(): unknown;
 
     /**
      * ข้อความอธิบายแบบเป็นลิสต์
@@ -50,12 +61,12 @@ defineSlots<Slots>();
             <slot mdc-unwrap="p" name="imageBannerList" />
             <slot mdc-unwrap="p" name="descriptionSlogan" />
         </div>
-
-        <div class="flex flex-col gap-4 text-stone-500 font-light max-w-4xl w-full px-4 md:flex-row items-center">
-            <div class="w-1/2 flex sm:w-2/3 lg:w-1/2 justify-center items-center">
+        
+        <div class="flex gap-4 text-stone-500 font-light text-left max-w-4xl w-full px-4">
+            <div class="w-1/2 flex justify-center items-baseline">
                 <slot mdc-unwrap="p" name="strategyimage1" />
             </div>
-            <div>
+            <div class="">
                 <slot mdc-unwrap="p" name="strategyList1" />
             </div>
         </div>

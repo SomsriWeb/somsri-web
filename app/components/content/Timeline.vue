@@ -16,9 +16,6 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const config = useRuntimeConfig();
-const siteUrl = (config.public as any)?.site?.url || 'https://somsritshirt.com';
-
 // Parse items from props
 const parsedItems = computed<TimelineItem[]>(() => {
     if (typeof props.items === 'string') {
