@@ -88,6 +88,16 @@ export default defineContentConfig({
             }),
         }),
 
+        portfolioCard: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-card/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
+            }),
+        }),
+
         pin: defineCollection({
             type: 'data',
             source: 'data/pin/**.json',
