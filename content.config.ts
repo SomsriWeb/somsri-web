@@ -98,6 +98,16 @@ export default defineContentConfig({
             }),
         }),
 
+        portfolioReview: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-review/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
+            }),
+        }),
+
         pin: defineCollection({
             type: 'data',
             source: 'data/pin/**.json',
