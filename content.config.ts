@@ -287,6 +287,17 @@ export default defineContentConfig({
             }),
         }),
 
+        social: defineCollection({
+            type: 'data',
+            source: 'data/social/**.json',
+            schema: z.object({
+                label: z.string(),
+                label2: z.string().optional(),
+                image: z.string(),
+                order: z.number(),
+            }),
+        }),
+
         howToOrder: defineCollection({
             type: 'data',
             source: 'data/how-to-order/**.json',
