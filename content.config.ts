@@ -98,6 +98,16 @@ export default defineContentConfig({
             }),
         }),
 
+        portfolioReview: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-review/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
+            }),
+        }),
+
         pin: defineCollection({
             type: 'data',
             source: 'data/pin/**.json',
@@ -273,6 +283,17 @@ export default defineContentConfig({
                 label: z.string(),
                 icon: z.string().optional(),
                 image: z.string().optional(),
+                order: z.number(),
+            }),
+        }),
+
+        social: defineCollection({
+            type: 'data',
+            source: 'data/social/**.json',
+            schema: z.object({
+                label: z.string(),
+                label2: z.string().optional(),
+                image: z.string(),
                 order: z.number(),
             }),
         }),
