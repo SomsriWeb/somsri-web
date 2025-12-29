@@ -39,8 +39,6 @@ provide(LANGUAGE, page.value.language || 'th');
     <div v-if="page">
         <Metadata :page="page" />
         <NuxtLayout :name="page.activeNavbar || pageType === 'blog' ? 'color' : 'default'">
-            <AlertLineHack />
-
             <main>
                 <ContentRenderer v-if="pageType === 'page'" class="space-y-8" :value="page" />
 

@@ -17,6 +17,8 @@ RUN bun --bun run build
 FROM oven/bun:1 AS production
 WORKDIR /app
 
+ENV NODE_ENV=production
+
 # Only `.output` folder is needed from the build stage
 COPY --from=build /app/.output /app
 COPY --from=build /app/entrypoint.js /app
