@@ -3,7 +3,8 @@
 interface SocialItem {
     label: string;
     label2?: string;
-    image: string;
+    image?: string;
+    icon?: string;
     order: number;
 }
 
@@ -21,11 +22,16 @@ const { data } = await useAsyncData('social', () =>
             class="grid grid-cols-[auto_1fr] items-center gap-3"
         >
             <div class="w-12 h-12 flex items-center justify-center">
+                <Icon
+                    v-if="item.icon"
+                    :name="item.icon"
+                    class="w-full h-full text-primary"
+                />
                 <ProseImg
-                    v-if="item.image"
+                    v-else-if="item.image"
                     :src="item.image"
                     :alt="item.label"
-                    class="w-full h-full object-contain"
+                    class="max-w-full max-h-full object-contain"
                 />
             </div>
             <div class="grid grid-cols-1">
