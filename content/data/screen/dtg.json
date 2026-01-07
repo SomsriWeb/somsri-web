@@ -4,6 +4,9 @@
     "image": "/screen/fade.jpg",
     "alt": "รับผลิตเสื้อยืด สกรีนแบบไฮเดน",
     "alt-en": "Custom T-shirt Production with Fade Screen Printing",
-    "url": "/screen/fade",
-    "order": 3
+    "url": "/screen/dtg",
+    "order": 3,
+    "category": "DTG"
 }
+
+

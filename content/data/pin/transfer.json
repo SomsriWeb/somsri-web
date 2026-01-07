@@ -5,5 +5,8 @@
     "alt": "ทางเรารับงานทำเสื้อแบบปักทรานเฟอร์",
     "alt-en": "We produce custom shirts with heat transfer embroidery",
     "url": "/pin/transfer",
-    "order": 2
+    "order": 1,
+    "category": "transfer"
 }
+
+

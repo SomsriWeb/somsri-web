@@ -5,6 +5,7 @@
     "alt": "รับผลิตเสื้อยืดสกรีน",
     "alt-en": "Custom Screen Printing T-shirts",
     "url": "/screen",
-    "order": 16
+    "order": 16,
+    "category": "default"
 }
 

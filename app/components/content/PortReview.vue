@@ -35,7 +35,7 @@ const { data: reviews } = await useAsyncData('data-portfolio-reviews', () => {
             dots
             :autoplay="{ delay: 3000 }"
             :ui="{
-                item: 'basis-1/3 ps-4',
+                item: 'ps-4 sm:basis-1/1 md:basis-1/2 lg:basis-1/3',
                 dot: 'bg-stone-200 shadow-md data-[state=active]:bg-primary'
             }"
             class="w-full"

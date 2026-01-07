@@ -1,10 +1,12 @@
 {
     "name": "งานปักซาติน(ธรรมดา)",
     "name-en": "Somsri Embroidery",
-    "image": "/pin/งานปักสมศรี6.jpg",
+    "image": "/pin/งานปักสมศรี4.jpg",
     "alt": "งานปักซาติน(ธรรมดา)",
     "alt-en": "Somsri Embroidery Work",
-    "url": "/pin/pin",
-    "order": 5
+    "url": "/pin/satin2",
+    "order": 2,
+    "category": "satin"
 }
+
 

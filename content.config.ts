@@ -85,6 +85,7 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
             }),
         }),
 
@@ -119,6 +120,7 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
             }),
         }),
 
