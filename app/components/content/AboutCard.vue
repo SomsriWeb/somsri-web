@@ -12,8 +12,8 @@ interface Slots {
 defineSlots<Slots>();
 </script>
 <template>
-    <section class="grid grid-cols-2 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4" role="list" aria-label="กลยุทธ์และจุดเด่น">
-        <article class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center" role="listitem">
+    <div class="grid grid-cols-2 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center">
             <slot name="strategyimage1" mdc-unwrap="p" />
             <slot name="strategyList1" mdc-unwrap="p" />
         </article>

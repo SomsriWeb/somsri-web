@@ -130,14 +130,7 @@ onMounted(() => {
                             class="w-full overflow-hidden rounded-xl transition-all duration-700 delay-200 timeline-mobile-image"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
                         >
-                            <img
-                                :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
-                                :title="item.title"
-                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
-                                loading="lazy"
-                                decoding="async"
-                            />
+                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
                         </div>
 
                         <!-- ข้อความ -->
@@ -145,7 +138,7 @@ onMounted(() => {
                             class="w-full bg-white p-6 rounded-xl shadow-lg border border-slate-100 transition-all duration-700 delay-300 timeline-mobile-content"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
                         >
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
                     </div>
