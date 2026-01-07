@@ -96,19 +96,45 @@ onMounted(() => {
                             if (el) itemRefs[index] = el as HTMLElement;
                         }
                     "
-                    class="flex items-center justify-center w-full mb-14 relative timeline-item"
+                    class="flex flex-col md:flex-row items-center justify-center w-full mb-14 relative timeline-item"
                     :class="{ 'is-visible': item.isVisible }"
                 >
-                    <!-- เส้นเชื่อมระหว่าง dot นี้กับ dot ถัดไป (ย้ายออกมาจาก element เพื่อไม่ให้ถูก overflow-hidden ครอบ) -->
+                    <!-- เส้นเชื่อมระหว่าง dot นี้กับ dot ถัดไป (ซ่อนบนหน้าจอขนาดเล็ก) -->
                     <div
                         v-if="index < timelineData.length - 1"
-                        class="absolute left-1/2 top-1/2 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0 timeline-line"
+                        class="hidden md:block absolute left-1/2 top-1/2 w-0.5 bg-gray-200 transform -translate-x-1/2 z-0 timeline-line"
                         style="height: calc(100% + 6rem)"
                         :class="{ 'timeline-line-visible': item.isVisible }"
                     ></div>
 
+                    <!-- Mobile Layout: ปี > รูปภาพ > ข้อความ -->
+                    <div class="w-full md:hidden flex flex-col items-center gap-4">
+                        <!-- ปี (Checkpoint) -->
+                        <div class="relative flex flex-col items-center justify-center z-10">
+                            <div
+                                class="w-20 h-20 flex flex-col items-center justify-center bg-primary text-white font-bold rounded-lg shadow-xl border-4 border-slate-100 transition-all duration-700 delay-100 z-20 timeline-checkpoint"
+                                :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
+                            >
+                                <span class="text-xs font-light opacity-80">YEAR</span>
+                                <span class="text-lg">{{ item.year }}</span>
+                            </div>
+                        </div>
+
+                        <!-- รูปภาพ -->
+                        <div class="w-full overflow-hidden rounded-xl" :class="{ 'is-visible': item.isVisible }">
+                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
+                        </div>
+
+                        <!-- ข้อความ -->
+                        <div class="w-full bg-white p-6 rounded-xl shadow-lg border border-slate-100" :class="{ 'is-visible': item.isVisible }">
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
+                            <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Layout: ซ้าย-กลาง-ขวา -->
                     <!-- ฝั่งซ้าย (Left Side) -->
-                    <div class="w-5/12 flex justify-end px-4 relative">
+                    <div class="hidden md:flex w-5/12 justify-end px-4 relative">
                         <!-- เลขคู่: ฝั่งซ้ายคือ "ข้อมูล (Content)" มีพื้นหลัง -->
                         <div v-if="index % 2 === 0" class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 timeline-content-left" :class="{ 'is-visible': item.isVisible }">
                             <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
@@ -122,8 +148,7 @@ onMounted(() => {
                     </div>
 
                     <!-- ตรงกลาง (Center Checkpoint) -->
-                    <div class="relative flex flex-col items-center justify-center w-24 z-10">
-                        <!-- กล่อง Date Checkpoint (สี่เหลี่ยม) -->
+                    <div class="hidden md:flex relative flex-col items-center justify-center w-24 z-10">
                         <div
                             class="w-20 h-20 flex flex-col items-center justify-center bg-primary text-white font-bold rounded-lg shadow-xl border-4 border-slate-100 transition-all duration-700 delay-100 z-20 timeline-checkpoint"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
@@ -134,7 +159,7 @@ onMounted(() => {
                     </div>
 
                     <!-- ฝั่งขวา (Right Side) -->
-                    <div class="w-5/12 flex justify-start px-4 relative">
+                    <div class="hidden md:flex w-5/12 justify-start px-4 relative">
                         <!-- เลขคู่: ฝั่งขวาคือ "รูปภาพ (Image)" -->
                         <div v-if="index % 2 === 0" class="overflow-hidden rounded-xl timeline-image-right" :class="{ 'is-visible': item.isVisible }">
                             <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
