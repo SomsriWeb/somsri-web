@@ -12,4 +12,6 @@ lineLink: https://contact.somsritshirt.com/af2fd
   #title
   วิธีการสั่งเสื้อ กับสมศรี
   :::
+  :::social
+  :::
 ::

@@ -85,6 +85,27 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
+            }),
+        }),
+
+        portfolioCard: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-card/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
+            }),
+        }),
+
+        portfolioReview: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-review/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
             }),
         }),
 
@@ -99,6 +120,7 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
             }),
         }),
 
@@ -263,6 +285,18 @@ export default defineContentConfig({
                 label: z.string(),
                 icon: z.string().optional(),
                 image: z.string().optional(),
+                order: z.number(),
+            }),
+        }),
+
+        social: defineCollection({
+            type: 'data',
+            source: 'data/social/**.json',
+            schema: z.object({
+                label: z.string(),
+                label2: z.string().optional(),
+                image: z.string().optional(),
+                icon: z.string().optional(),
                 order: z.number(),
             }),
         }),
