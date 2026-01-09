@@ -112,9 +112,15 @@ watch(() => initialIndex, (newIndex) => {
     }
 });
 
-// Watch for modal open to scroll to thumbnail
+// Watch for modal open to reset index and scroll to thumbnail
 watch(open, (isOpen) => {
     if (isOpen) {
+        // Reset to initial index when modal opens
+        if (initialIndex >= 0 && initialIndex < images.length) {
+            currentImageIndex.value = initialIndex;
+        } else {
+            currentImageIndex.value = 0;
+        }
         nextTick(() => {
             scrollToThumbnail(currentImageIndex.value);
         });
