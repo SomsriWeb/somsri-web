@@ -438,5 +438,18 @@ export default defineContentConfig({
                 order: z.number(),
             }),
         }),
+
+        mediaVideos: defineCollection({
+            type: 'data',
+            source: 'data/media-videos/**.json',
+            schema: z.object({
+                videoId: z.string(),
+                title: z.string().optional(),
+                category: z.string().optional(),
+                platform: z.enum(['youtube', 'facebook']).default('youtube'),
+                order: z.number(),
+                thumbnail: z.string().optional(),
+            }),
+        }),
     },
 });

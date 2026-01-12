@@ -53,6 +53,12 @@
             "label-en": "About Us",
             "url": "/about",
             "url-en": "/about"
+        },
+        {
+            "label": "สื่อ",
+            "label-en": "Media",
+            "url": "/media",
+            "url-en": "/media"
         }
     ]
 }
