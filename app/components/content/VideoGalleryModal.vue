@@ -24,44 +24,6 @@ const currentVideo = computed(() => videos?.[currentVideoIndex.value] ?? null);
 const hasNext = computed(() => currentVideoIndex.value < videos.length - 1);
 const hasPrev = computed(() => currentVideoIndex.value > 0);
 
-// Calculate video dimensions based on container size
-const videoDimensions = computed(() => {
-    if (!currentVideo.value) return { width: 0, height: 0 };
-
-    const containerW = unref(containerWidth) || 1000;
-    const containerH = unref(containerHeight) || 600;
-    
-    // Account for padding and buttons (less padding for larger videos)
-    const availableWidth = containerW - 100; // 50px padding on each side for buttons
-    const availableHeight = containerH - 20; // Minimal padding
-
-    if (currentVideo.value.platform === 'facebook') {
-        // Facebook videos can be square (1:1) or 16:9
-        // Use most of the available space for larger display
-        // Use 90% of available space for better visibility
-        const useWidth = Math.floor(availableWidth * 0.9);
-        const useHeight = Math.floor(availableHeight * 0.9);
-        const maxWidth = Math.min(useWidth, 1600); // Increased max width
-        const maxHeight = Math.min(useHeight, 1200); // Increased max height
-        
-        // If container is wider, use 16:9 format for better display
-        if (availableWidth / availableHeight > 1.2) {
-            const height = Math.min(maxHeight, Math.round(maxWidth * (9 / 16)));
-            const width = Math.round(height * (16 / 9));
-            return { width, height };
-        }
-        
-        // Otherwise use square format, but make it larger
-        const squareSize = Math.min(maxWidth, maxHeight);
-        return { width: squareSize, height: squareSize };
-    }
-
-    // YouTube videos are 16:9 aspect ratio
-    const height = Math.min(availableHeight, Math.round(availableWidth * (9 / 16)));
-    const width = Math.round(height * (16 / 9));
-    return { width, height };
-});
-
 const embedUrl = computed(() => {
     if (!currentVideo.value) return '';
 
@@ -71,12 +33,44 @@ const embedUrl = computed(() => {
             ? `https://www.facebook.com/${currentVideo.value.videoId}`
             : `https://www.facebook.com/reel/${currentVideo.value.videoId}/`;
         const encodedUrl = encodeURIComponent(videoUrl);
-        // Use calculated dimensions for responsive sizing
-        const { width, height } = videoDimensions.value;
-        return `https://www.facebook.com/plugins/video.php?href=${encodedUrl}&show_text=false&width=${width}&height=${height}`;
+        return `https://www.facebook.com/plugins/video.php?href=${encodedUrl}&show_text=false&width=734&height=734`;
     }
 
     return `https://www.youtube.com/embed/${currentVideo.value.videoId}?rel=0`;
+});
+
+// Extract width and height from embed URL
+const videoDimensions = computed(() => {
+    if (!currentVideo.value || !embedUrl.value) return { width: 0, height: 0 };
+
+    try {
+        const url = new URL(embedUrl.value);
+        const urlWidth = url.searchParams.get('width');
+        const urlHeight = url.searchParams.get('height');
+
+        if (urlWidth && urlHeight) {
+            return {
+                width: parseInt(urlWidth),
+                height: parseInt(urlHeight),
+            };
+        }
+
+        // Fallback: use container size for YouTube
+        if (currentVideo.value.platform === 'youtube') {
+            const height = unref(containerHeight) || 400;
+            return { width: Math.round(height * (16 / 9)), height };
+        }
+
+        // Fallback for Facebook
+        return { width: 734, height: 734 };
+    } catch {
+        // If URL parsing fails, use defaults
+        if (currentVideo.value.platform === 'facebook') {
+            return { width: 734, height: 734 };
+        }
+        const height = unref(containerHeight) || 400;
+        return { width: Math.round(height * (16 / 9)), height };
+    }
 });
 
 function nextVideo() {
@@ -156,7 +150,6 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    aria-label="วิดีโอก่อนหน้า"
                     @click="prevVideo"
                 />
 
@@ -164,18 +157,17 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                     ref="videoContainer"
                     class="relative mx-auto"
                     :style="{
-                        width: videoDimensions.width > 0 ? `${videoDimensions.width}px` : '100%',
-                        height: videoDimensions.height > 0 ? `${videoDimensions.height}px` : '100%',
+                        width: videoDimensions.width > 0 ? `${Math.min(videoDimensions.width, unref(containerWidth) || 1000)}px` : '100%',
+                        height: videoDimensions.height > 0 ? `${Math.min(videoDimensions.height, unref(containerHeight) || 1000)}px` : '100%',
                         maxWidth: '100%',
                         maxHeight: '100%',
                     }"
                 >
                     <iframe
                         v-if="currentVideo && videoDimensions.width > 0"
-                        class="absolute top-0 left-0 w-full h-full rounded"
+                        class="rounded"
                         :src="embedUrl"
-                        :title="currentVideo.title || 'วิดีโอ'"
-                        :aria-label="`วิดีโอ: ${currentVideo.title || 'วิดีโอ'} (${currentVideoIndex + 1} จาก ${videos.length})`"
+                        :title="currentVideo.title || 'Video'"
                         :width="String(videoDimensions.width)"
                         :height="String(videoDimensions.height)"
                         style="border:none;overflow:hidden"
@@ -184,7 +176,6 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                         allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         allowFullScreen="true"
-                        loading="lazy"
                     />
                 </div>
 
@@ -195,7 +186,6 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    aria-label="วิดีโอถัดไป"
                     @click="nextVideo"
                 />
             </div>
