@@ -16,6 +16,9 @@ interface Props {
 
 const props = defineProps<Props>();
 
+const config = useRuntimeConfig();
+const siteUrl = (config.public as any)?.site?.url || 'https://somsritshirt.com';
+
 // Parse items from props
 const parsedItems = computed<TimelineItem[]>(() => {
     if (typeof props.items === 'string') {
@@ -83,9 +86,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="min-h-screen font-sans">
+    <section class="min-h-screen font-sans" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading" class="sr-only">Timeline - ประวัติความเป็นมาของสมศรีมีเสื้อ</h2>
         <div class="container mx-auto px-4 max-w-6xl">
-            <div class="relative">
+            <div class="relative" role="list" aria-label="Timeline">
                 <!-- Timeline Items -->
                 <template v-if="timelineData.length > 0">
                     <div
@@ -98,6 +102,7 @@ onMounted(() => {
                     "
                     class="flex flex-col md:flex-row items-center justify-center w-full mb-14 relative timeline-item"
                     :class="{ 'is-visible': item.isVisible }"
+                    role="listitem"
                 >
                     <!-- เส้นเชื่อมระหว่าง dot นี้กับ dot ถัดไป (ซ่อนบนหน้าจอขนาดเล็ก) -->
                     <div
@@ -125,7 +130,14 @@ onMounted(() => {
                             class="w-full overflow-hidden rounded-xl transition-all duration-700 delay-200 timeline-mobile-image"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
                         >
-                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
+                            <img
+                                :src="item.image"
+                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :title="item.title"
+                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </div>
 
                         <!-- ข้อความ -->
@@ -133,7 +145,7 @@ onMounted(() => {
                             class="w-full bg-white p-6 rounded-xl shadow-lg border border-slate-100 transition-all duration-700 delay-300 timeline-mobile-content"
                             :class="item.isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'"
                         >
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
                     </div>
@@ -143,13 +155,20 @@ onMounted(() => {
                     <div class="hidden md:flex w-5/12 justify-end px-4 relative">
                         <!-- เลขคู่: ฝั่งซ้ายคือ "ข้อมูล (Content)" มีพื้นหลัง -->
                         <div v-if="index % 2 === 0" class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 timeline-content-left" :class="{ 'is-visible': item.isVisible }">
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
 
                         <!-- เลขคี่: ฝั่งซ้ายคือ "รูปภาพ (Image)" ไม่มีพื้นหลัง -->
                         <div v-else class="overflow-hidden rounded-xl timeline-image-left" :class="{ 'is-visible': item.isVisible }">
-                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
+                            <img
+                                :src="item.image"
+                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :title="item.title"
+                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </div>
                     </div>
 
@@ -168,12 +187,19 @@ onMounted(() => {
                     <div class="hidden md:flex w-5/12 justify-start px-4 relative">
                         <!-- เลขคู่: ฝั่งขวาคือ "รูปภาพ (Image)" -->
                         <div v-if="index % 2 === 0" class="overflow-hidden rounded-xl timeline-image-right" :class="{ 'is-visible': item.isVisible }">
-                            <img :src="item.image" :alt="item.title" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500" />
+                            <img
+                                :src="item.image"
+                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :title="item.title"
+                                class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </div>
 
                         <!-- เลขคี่: ฝั่งขวาคือ "ข้อมูล (Content)" มีพื้นหลัง -->
                         <div v-else class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 timeline-content-right" :class="{ 'is-visible': item.isVisible }">
-                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.title }}</h3>
+                            <h3 class="text-xl font-bold text-primary mb-2">{{ item.year }} - {{ item.title }}</h3>
                             <p class="text-stone-500 leading-relaxed">{{ item.description }}</p>
                         </div>
                     </div>
@@ -184,7 +210,7 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>

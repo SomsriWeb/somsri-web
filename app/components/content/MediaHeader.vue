@@ -46,24 +46,29 @@ interface Slots {
 defineSlots<Slots>();
 </script>
 <template>
-    <div>
+    <header>
         <ProseH1 class="text-center font-bold bg-primary text-white py-3 rounded-2xl">
             <slot name="header" mdc-unwrap="p" />
         </ProseH1>
 
-        <ProseH2 class="font-bold text-primary">
-            <slot mdc-unwrap="p" name="strategyText" />
-        </ProseH2>
+        <section aria-labelledby="media-section">
+            <ProseH2 id="media-section" class="font-bold text-primary">
+                <slot mdc-unwrap="p" name="strategyText" />
+            </ProseH2>
 
-        <div class="w-full px-4">
-            <slot mdc-unwrap="p" name="contentMedia" />
-        </div>
-        <ProseH2 class="font-bold text-primary">
-            <slot mdc-unwrap="p" name="strategyTextSocialMedia" />
-        </ProseH2>
+            <div class="w-full px-4">
+                <slot mdc-unwrap="p" name="contentMedia" />
+            </div>
+        </section>
+        
+        <section aria-labelledby="social-section">
+            <ProseH2 id="social-section" class="font-bold text-primary">
+                <slot mdc-unwrap="p" name="strategyTextSocialMedia" />
+            </ProseH2>
 
-        <div class="w-full px-4">
-            <slot mdc-unwrap="p" name="contentSocialMedia" />
-        </div>
-    </div>
+            <div class="w-full px-4">
+                <slot mdc-unwrap="p" name="contentSocialMedia" />
+            </div>
+        </section>
+    </header>
 </template>
