@@ -51,7 +51,7 @@ function openModal(index: number) {
 
 <template>
     <div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div v-for="(video, index) in videos" :key="video.videoId" class="relative group cursor-pointer" @click="openModal(index)">
                 <!-- Thumbnail with play button overlay -->
                 <div class="relative w-full overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]" style="aspect-ratio: 16/9">
