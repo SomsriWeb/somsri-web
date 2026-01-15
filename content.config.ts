@@ -295,7 +295,7 @@ export default defineContentConfig({
             schema: z.object({
                 label: z.string(),
                 label2: z.string().optional(),
-                image: z.string(),
+                icon: z.string().optional(),
                 order: z.number(),
             }),
         }),
