@@ -3,7 +3,6 @@
 interface SocialItem {
     label: string;
     label2?: string;
-    image?: string;
     icon?: string;
     order: number;
     url?: string;
@@ -70,13 +69,6 @@ useHead({
                     v-if="item.icon"
                     :name="item.icon"
                     class="w-full h-full text-primary"
-                />
-                <ProseImg
-                    v-else-if="item.image"
-                    :src="item.image"
-                    :alt="`${item.label} icon`"
-                    class="max-w-full max-h-full object-contain"
-                    loading="lazy"
                 />
             </div>
             <div class="grid grid-cols-1">
