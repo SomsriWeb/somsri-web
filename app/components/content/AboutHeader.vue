@@ -22,20 +22,9 @@ interface Slots {
     descriptionList(): unknown;
 
     /**
-     * ข้อความที่เป็นสโลแกน
-     */
-    sloganText(): unknown;
-
-    /**
      * ข้อความอธิบายสโลแกน
      */
     descriptionSlogan(): unknown;
-
-    /**
-     * ข้อความอธิบายทั่วไป
-     */
-    strategyTextHeader(): unknown;
-    strategyText(): unknown;
 
     /**
      * ข้อความอธิบายแบบเป็นลิสต์
