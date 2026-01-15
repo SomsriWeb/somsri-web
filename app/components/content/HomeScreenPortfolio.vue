@@ -165,7 +165,6 @@ function openModal(screen: NonNullable<typeof screens.value>[number]) {
 
         <!-- Modal Component -->
         <ImageGalleryModal
-            :key="selectedCategory || 'default'"
             v-model:open="isModalOpen"
             :images="galleryImages"
             :lang="lang"

@@ -1,11 +1,11 @@
 {
     "name": "สกรีนฟรอยทอง",
-    "name-en": "Gold Foil Printing",
-    "image": "/screen/งานสกรีนฟรอยทอง2.jpg",
+    "name-en": "Gold Foil Printing T-shirts",
+    "image": "/screen/gold.jpg",
     "alt": "รับสกรีนเสื้อแบบฟรอยทอง",
     "alt-en": "Custom T-shirts with Gold Foil Printing",
-    "url": "/screen/foil-gold",
-    "order": 7,
+    "url": "/screen/gold",
+    "order": 5,
     "category": "foil"
 }
 
