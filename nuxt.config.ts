@@ -120,17 +120,6 @@ export default defineNuxtConfig({
             },
         ],
     },
-    content: {
-        preview: {
-            api: 'https://api.nuxt.studio',
-            dev: true,
-            gitInfo: {
-                name: 'somsri-web',
-                owner: 'SomsriWeb',
-                url: 'https://github.com/SomsriWeb/somsri-web',
-            },
-        },
-    },
     colorMode: {
         preference: 'light',
         fallback: 'light',
@@ -222,7 +211,6 @@ export default defineNuxtConfig({
             provider: 'github', // 'github' or 'gitlab'
             owner: 'SomsriWeb',
             repo: 'somsri-web',
-            branch: process.env.STUDIO_BRANCH_NAME || 'main',
         },
         route: '/_editor',
     },
