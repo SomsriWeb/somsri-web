@@ -8,7 +8,20 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/seo', '@nuxt/content', '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@nuxt/eslint', 'nuxt-swiper', 'nuxt-viewport', '@nuxtjs/device', '@vueuse/nuxt', '@nuxt/scripts'],
+    modules: [
+        '@nuxtjs/seo',
+        '@nuxt/content',
+        '@nuxt/ui',
+        '@nuxt/image',
+        '@nuxt/fonts',
+        '@nuxt/eslint',
+        'nuxt-swiper',
+        'nuxt-viewport',
+        '@nuxtjs/device',
+        '@vueuse/nuxt',
+        '@nuxt/scripts',
+        'nuxt-studio',
+    ],
     app: {
         head: {
             htmlAttrs: {
@@ -203,5 +216,14 @@ export default defineNuxtConfig({
             },
         },
         env: process.env.NODE_ENV || 'production',
+    },
+    studio: {
+        repository: {
+            provider: 'github', // 'github' or 'gitlab'
+            owner: 'SomsriWeb',
+            repo: 'somsri-web',
+            branch: process.env.STUDIO_BRANCH_NAME || 'main',
+        },
+        route: '/_editor',
     },
 });
