@@ -78,7 +78,6 @@ export default defineNuxtConfig({
                 {
                     rel: 'preconnect',
                     href: 'https://somsritshirt.com',
-                    crossorigin: '',
                 },
             ],
             meta: [

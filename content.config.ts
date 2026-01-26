@@ -4,8 +4,6 @@ import { z } from 'zod/v4';
 const commonContentSchema = z.object({
     activeNavbar: z.boolean().default(false),
     lineLink: z.string().default('https://line.me/R/ti/p/%40diz8986o'),
-    title: z.string(),
-    description: z.string(),
     image: property(z.string()).editor({ input: 'media' }),
     date: z.string(),
     author: z.string(),
