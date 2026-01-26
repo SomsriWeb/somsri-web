@@ -26,8 +26,8 @@ image: /blog/collection-of-ideas-for-fan-club-shirts-header.jpg
 
 โดยส่วนมาก เสื้อแฟนคลับมักไม่ได้ใส่เพียงแค่ในห้องแอร์ การเลือกเนื้อผ้าควรขึ้นอยู่กับบริบทการใช้งาน เช่น
 
-- **ใส่กลางแจ้ง/คอนเสิร์ต** เลือกผ้าที่ระบายอากาศได้ดี เช่น [Cotton](/blog/what-is-cotton) 100% หรือ Cotton Combed ที่สวมใส่สบาย ไม่อับชื้นแม้ต้องยืนนาน
-- **ใส่ถ่ายรูปรวม/ใช้ในอาคาร** เลือก[ผ้า TK](/blog/what-is-tk-fabric) หรือ[ผ้า TC](/blog/what-is-tc-fabric-what-type-of-fabric) ที่ผิวสัมผัสเรียบ มีความเงาเล็กน้อย ถ่ายรูปออกมาสวย
+- **ใส่กลางแจ้ง/คอนเสิร์ต** เลือกผ้าที่ระบายอากาศได้ดี เช่น [Cotton](/what-is-cotton) 100% หรือ Cotton Combed ที่สวมใส่สบาย ไม่อับชื้นแม้ต้องยืนนาน
+- **ใส่ถ่ายรูปรวม/ใช้ในอาคาร** เลือก[ผ้า TK](/what-is-tk-fabric) หรือ[ผ้า TC](/what-is-tc-fabric-what-type-of-fabric) ที่ผิวสัมผัสเรียบ มีความเงาเล็กน้อย ถ่ายรูปออกมาสวย
 - **ใส่ทำกิจกรรม** เช่น แฟนมีตหรือกิจกรรมเชียร์ ใช้ผ้า [Dry-Tech](what-is-dry-tech-fabric-polo-shirt) หรือ [Microfiber](https://www.greenpeace.org/international/story/6956/what-are-microfibers-and-why-are-our-clothes-polluting-the-oceans/) ที่ซับเหงื่อได้ดี แห้งเร็ว
 
 **เคล็ดลับ:** ถ้ามีงบ ให้ใช้ผ้าหลายชนิดตาม แบ่งราคาความต้องการของกลุ่ม เช่น รุ่นธรรมดาและรุ่นพรีเมียมให้เลือก
@@ -80,7 +80,7 @@ image: /blog/collection-of-ideas-for-fan-club-shirts-header.jpg
 
 การเลือกเทคนิคพิมพ์เสื้อมีผลอย่างมากต่อคุณภาพลาย ความสวยงาม และอายุการใช้งาน โดยเฉพาะเมื่อใช้บริการกับโรงงานที่มีความเชี่ยวชาญ
 
-สำหรับเสื้อแฟนคลับในปัจจุบัน นิยมใช้เทคนิคการพิมพ์อยู่หลัก ๆ 3 แบบ ซึ่งทาง “สมศรี” มีให้บริการครบทั้งหมด ได้แก่ [DTF (Direct to Film)](/blog/what-is-dtg-vs-dtf), [DTG (Direct to Garment)](/blog/what-is-dtg-screen) และ [ซิลค์สกรีน (Silkscreen)](/blog/what-is-silks-creen) โดยแต่ละแบบมีจุดเด่นต่างกันไป และเหมาะกับการใช้งานที่ต่างกันด้วย
+สำหรับเสื้อแฟนคลับในปัจจุบัน นิยมใช้เทคนิคการพิมพ์อยู่หลัก ๆ 3 แบบ ซึ่งทาง “สมศรี” มีให้บริการครบทั้งหมด ได้แก่ [DTF (Direct to Film)](/what-is-dtg-vs-dtf), [DTG (Direct to Garment)](/what-is-dtg-screen) และ [ซิลค์สกรีน (Silkscreen)](/what-is-silks-screen) โดยแต่ละแบบมีจุดเด่นต่างกันไป และเหมาะกับการใช้งานที่ต่างกันด้วย
 
 ::line-button{href="https://contact.somsritshirt.com/2d9ca"}
 สอบถามเพิ่มเติม

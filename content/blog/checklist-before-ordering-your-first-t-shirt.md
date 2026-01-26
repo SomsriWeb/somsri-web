@@ -55,10 +55,10 @@ image: /blog/checklist-before-ordering-your-first-t-shirt-header.jpg
 
 ### 4. เลือกเทคนิคการสกรีนให้เหมาะสม
 
-- [DTG (Direct to Garment):](/blog/what-is-dtg-screen) พิมพ์ลงผ้าโดยตรง เหมาะกับงานหลายสี
-- [DTF (Direct to Film):](/blog/what-is-dtg-vs-dtf) พิมพ์ลงฟิล์มก่อนรีดลงผ้า คมชัด เหมาะกับจำนวนไม่มาก
-- [Sublimation:](/blog/t-shirt-screen-printing-sublimation) เหมาะกับผ้าโพลีเอสเตอร์ สีสวยคงทน
-- [Flex Printing:](/blog/what-is-flex-screen) เหมาะกับลายเรียบๆ สีเดี่ยว
+- [DTG (Direct to Garment):](/what-is-dtg-screen) พิมพ์ลงผ้าโดยตรง เหมาะกับงานหลายสี
+- [DTF (Direct to Film):](/what-is-dtg-vs-dtf) พิมพ์ลงฟิล์มก่อนรีดลงผ้า คมชัด เหมาะกับจำนวนไม่มาก
+- [Sublimation:](/t-shirt-screen-printing-sublimation) เหมาะกับผ้าโพลีเอสเตอร์ สีสวยคงทน
+- [Flex Printing:](/what-is-flex-screen) เหมาะกับลายเรียบๆ สีเดี่ยว
 
 ### 5. เตรียมไฟล์ Artwork ที่พร้อมสกรีน
 

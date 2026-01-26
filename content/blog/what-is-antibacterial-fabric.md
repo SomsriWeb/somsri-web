@@ -118,7 +118,7 @@ activeNavbar: false
 1. ประเภทของผ้าที่สามารถพิมพ์ลายได้
 
 - Polyester / Dry-Tech / ผ้าไมโครไฟเบอร์ – เหมาะกับ[การพิมพ์แบบ Sublimation](/t-shirt-screen-printing-sublimation) เพราะหมึกสามารถซึมเข้าไปในเส้นใยได้ ทำให้ลวดลายชัดและทนการซัก
-- [Cotton](/how-many-grades-of-cotton-are-there) หรือผ้าฝ้ายผสม – ใช้[การพิมพ์แบบสกรีน (Silkscreen)](/what-is-silks-creen) หรือ [การพิมพ์ดิจิทัล (DTG)](/what-is-dtg-screen) ได้ แต่ต้องดูว่าสารแอนตี้แบคทีเรียจะไม่ทำให้หมึกจับไม่ติด
+- [Cotton](/how-many-grades-of-cotton-are-there) หรือผ้าฝ้ายผสม – ใช้[การพิมพ์แบบสกรีน (Silkscreen)](/what-is-silks-screen) หรือ [การพิมพ์ดิจิทัล (DTG)](/what-is-dtg-screen) ได้ แต่ต้องดูว่าสารแอนตี้แบคทีเรียจะไม่ทำให้หมึกจับไม่ติด
 
 2. ต้องพิมพ์ก่อนหรือหลังเคลือบสาร?
 

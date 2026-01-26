@@ -1,11 +1,12 @@
-import { defineContentConfig, defineCollection, z } from '@nuxt/content';
+import { defineContentConfig, defineCollection, property } from '@nuxt/content';
+import { z } from 'zod/v4';
 
 const commonContentSchema = z.object({
     activeNavbar: z.boolean().default(false),
     lineLink: z.string().default('https://line.me/R/ti/p/%40diz8986o'),
     title: z.string(),
     description: z.string(),
-    image: z.string(),
+    image: property(z.string()).editor({ input: 'media' }),
     date: z.string(),
     author: z.string(),
     lineFloatingButton: z.boolean().default(true),
@@ -66,7 +67,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 'name-en': z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 url: z.string(),
                 featured: z.boolean().optional(),
@@ -80,7 +81,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 'name-en': z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 'alt-en': z.string().optional(),
                 url: z.string(),
@@ -94,7 +95,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 'name-en': z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 'alt-en': z.string().optional(),
                 url: z.string(),
@@ -107,7 +108,7 @@ export default defineContentConfig({
             source: 'data/print/**.json',
             schema: z.object({
                 name: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 url: z.string(),
                 order: z.number(),
@@ -130,7 +131,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
 
@@ -140,7 +141,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
 
@@ -150,7 +151,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
 
@@ -160,8 +161,8 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 alt: z.string().optional(),
-                imgUrl: z.string(),
-                popupImageUrl: z.string(),
+                imgUrl: property(z.string()).editor({ input: 'media' }),
+                popupImageUrl: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -170,7 +171,7 @@ export default defineContentConfig({
             type: 'data',
             source: 'data/sportcarousel/**.json',
             schema: z.object({
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),
@@ -182,7 +183,7 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
-                imageUrl: z.string(),
+                imageUrl: property(z.string()).editor({ input: 'media' }),
                 conditions: z.array(
                     z.object({
                         text: z.string(),
@@ -210,7 +211,7 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
-                imageUrl: z.string(),
+                imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),
@@ -220,7 +221,7 @@ export default defineContentConfig({
             source: 'data/steporder/**.json',
             schema: z.object({
                 name: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -231,7 +232,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),
@@ -241,7 +242,7 @@ export default defineContentConfig({
             type: 'data',
             source: 'data/brand/brandportcard/**.json',
             schema: z.object({
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -250,7 +251,7 @@ export default defineContentConfig({
             source: 'data/mask/**.json',
             schema: z.object({
                 name: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),
@@ -262,7 +263,7 @@ export default defineContentConfig({
             schema: z.object({
                 label: z.string(),
                 icon: z.string().optional(),
-                image: z.string().optional(),
+                image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -274,7 +275,7 @@ export default defineContentConfig({
                 label: z.string(),
                 description: z.string().optional(),
                 icon: z.string().optional(),
-                image: z.string().optional(),
+                image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -285,7 +286,7 @@ export default defineContentConfig({
             schema: z.object({
                 label: z.string(),
                 icon: z.string().optional(),
-                image: z.string().optional(),
+                image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -294,7 +295,7 @@ export default defineContentConfig({
             type: 'data',
             source: 'data/hat-styles/**.json',
             schema: z.object({
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 label: z.string(),
                 order: z.number(),
             }),
@@ -305,9 +306,9 @@ export default defineContentConfig({
             source: 'data/fabrics/**',
             schema: z.object({
                 uid: z.string(),
-                imageUrl: z.string(),
+                imageUrl: property(z.string()).editor({ input: 'media' }),
                 imageAlt: z.string().optional(),
-                popupImageUrl: z.string().optional(),
+                popupImageUrl: property(z.string().optional()).editor({ input: 'media' }),
                 popupImageAlt: z.string().optional(),
                 forProductType: z.array(z.enum(['tshirt', 'polo', 'sport', 'totebag', 'hat', 'mask', 'brand', 'pants', 'other'])),
                 nameTh: z.string(),
@@ -355,7 +356,7 @@ export default defineContentConfig({
                 'title-en': z.string(),
                 description: z.string(),
                 'description-en': z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -367,7 +368,7 @@ export default defineContentConfig({
                 uid: z.string(),
                 title: z.string(),
                 description: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
         }),
@@ -377,7 +378,7 @@ export default defineContentConfig({
             source: 'data/polo-product/**.json',
             schema: z.object({
                 name: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),
@@ -387,7 +388,7 @@ export default defineContentConfig({
             source: 'data/product-en/**.json',
             schema: z.object({
                 name: z.string(),
-                image: z.string(),
+                image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
                 url: z.string(),
@@ -399,7 +400,7 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
-                imageUrl: z.string(),
+                imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
             }),

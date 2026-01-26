@@ -17,7 +17,7 @@ const { data } = await useAsyncData('fabrics', () => {
 
 // COMPUTED
 const fabrics = computed(() => {
-    return data.value?.filter((fabric) => fabric.forProductType.includes(type));
+    return (data.value || []).filter((fabric) => fabric.forProductType?.includes(type));
 });
 </script>
 <template>

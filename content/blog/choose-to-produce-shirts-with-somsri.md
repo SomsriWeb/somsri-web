@@ -37,7 +37,7 @@ image: /blog/choose-to-produce-shirts-with-somsri-header.jpg
 
 - รองรับเทคนิคการพิมพ์ทุกรูปแบบ
 
-ไม่ว่าจะเป็น **[DTF, DTG](what-is-dft-dtg), [Silkscreen](what-is-silks-creen), [Sublimation](t-shirt-screen-printing-sublimation) หรือ Embroidery**เรามีเครื่องจักรและทีมงานที่เชี่ยวชาญทุกเทคนิค
+ไม่ว่าจะเป็น **[DTF, DTG](what-is-dft-dtg), [Silkscreen](what-is-silks-screen), [Sublimation](t-shirt-screen-printing-sublimation) หรือ Embroidery**เรามีเครื่องจักรและทีมงานที่เชี่ยวชาญทุกเทคนิค
 
 - งานคุณภาพ ส่งตรงเวลา
 

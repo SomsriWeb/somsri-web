@@ -163,14 +163,15 @@ export default defineNuxtConfig({
         fallbackBreakpoint: 'lg',
     },
     routeRules: {
-        '/shop': { ssr: false },
+        '/shop': { ssr: false, prerender: false },
+        '/tshirt': { prerender: false },
         '/**': {
             prerender: true,
         },
     },
     nitro: {
         prerender: {
-            routes: ['/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
+            routes: ['/', '/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
         },
         preset: 'bun',
@@ -225,5 +226,8 @@ export default defineNuxtConfig({
             branch: process.env.STUDIO_BRANCH_NAME || 'main',
         },
         route: '/_editor',
+    },
+    icon: {
+        serverBundle: 'local',
     },
 });
