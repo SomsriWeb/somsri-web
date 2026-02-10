@@ -154,8 +154,8 @@ image: /faded-shirt/banner.png
 
 :what-cost-saving
 
-#default
 ::line-link
+#default
   :::line-button
   สอบถามเพิ่มเติม
   :::
