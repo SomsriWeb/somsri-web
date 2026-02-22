@@ -116,10 +116,16 @@ slides-per-view: 2
 ::
 
 ::content-section-caution
+#title
+ข้อควรระวัง
+#card1Image
+![](/somsri-with-tie-dye/Wash_separately.png)
 #card1Title
 แยกซักกับผ้าชนิดอื่น
 #card1Description
 ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ
+#card2Image
+![](/somsri-with-tie-dye/strong_detergents.png)
 #card2Title
 เลี่ยงการใช้ผงซักฟอกเข้มข้น
 #card2Description
