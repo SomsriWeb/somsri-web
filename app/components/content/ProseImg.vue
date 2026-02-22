@@ -9,8 +9,11 @@ interface Props {
     alt?: string;
     width?: string | number;
     height?: string | number;
-    lazy?: boolean;
+    /** true = lazy load, false หรือ "false" = โหลดทันที (eager) */
+    lazy?: boolean | string;
     sizes?: string;
+    /** คลาสเพิ่มเติมจาก markdown เช่น class="max-w-sm mx-auto" */
+    class?: string;
 }
 const props = withDefaults(defineProps<Props>(), {
     src: '',
@@ -19,6 +22,7 @@ const props = withDefaults(defineProps<Props>(), {
     height: undefined,
     lazy: true,
     sizes: undefined,
+    class: undefined,
 });
 
 const refinedSrc = computed(() => {
@@ -30,12 +34,20 @@ const refinedSrc = computed(() => {
     }
     return props.src;
 });
+
+/** รองรับ lazy จาก markdown เป็น string "false" / "true" */
+const isLazy = computed(() => {
+    const v = props.lazy;
+    if (v === false || v === 'false') return false;
+    if (v === true || v === 'true') return true;
+    return true;
+});
 </script>
 
 <template>
     <component
         :is="NuxtImg"
-        class="w-full"
+        :class="[props.class ? '' : 'w-full', props.class]"
         :src="refinedSrc"
         :alt="props.alt"
         :width="props.width"
@@ -43,6 +55,6 @@ const refinedSrc = computed(() => {
         format="webp"
         :sizes="props.sizes"
         placeholder
-        :loading="props.lazy ? 'lazy' : 'eager'"
+        :loading="isLazy ? 'lazy' : 'eager'"
     />
 </template>
