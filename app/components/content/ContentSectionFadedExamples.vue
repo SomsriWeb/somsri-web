@@ -14,6 +14,11 @@ interface Slots {
 }
 defineSlots<Slots>();
 
+const slots = useSlots();
+const hasImage1 = computed(() => (slots.image1?.()?.length ?? 0) > 0);
+const hasImage2 = computed(() => (slots.image2?.()?.length ?? 0) > 0);
+const hasImage3 = computed(() => (slots.image3?.()?.length ?? 0) > 0);
+
 const cardUi = {
     root: 'rounded-lg bg-white border-2 border-white shadow-sm flex flex-col',
     body: 'p-2 md:p-3 space-y-3 flex flex-col',
@@ -25,7 +30,8 @@ const cardUi = {
         <ProseH2 class="text-white text-center text-2xl md:text-3xl font-bold mb-6 md:mb-8">
             <slot name="title" mdc-unwrap="p" />
         </ProseH2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
+        <div class="flex flex-col md:flex-row md:flex-nowrap md:justify-around gap-4 md:gap-6 mb-8">
+            <div v-if="hasImage1" class="w-full sm:flex-1 lg:min-w-0 lg:max-w-3xs">
             <UCard :ui="cardUi">
                 <div class="aspect-square overflow-hidden rounded-md bg-stone-100 relative [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
                     <slot name="image1" />
@@ -37,6 +43,8 @@ const cardUi = {
                     <slot name="image1subalt" mdc-unwrap="p" />
                 </p>
             </UCard>
+            </div>
+            <div v-if="hasImage2" class="w-full sm:flex-1 lg:min-w-0 lg:max-w-3xs">
             <UCard :ui="cardUi">
                 <div class="aspect-square overflow-hidden rounded-md bg-stone-100 [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
                     <slot name="image2" />
@@ -48,6 +56,8 @@ const cardUi = {
                     <slot name="image2subalt" mdc-unwrap="p" />
                 </p>
             </UCard>
+            </div>
+            <div v-if="hasImage3" class="w-full sm:flex-1 lg:min-w-0 lg:max-w-3xs">
             <UCard :ui="cardUi">
                 <div class="aspect-square overflow-hidden rounded-md bg-stone-100 [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
                     <slot name="image3" />
@@ -59,6 +69,7 @@ const cardUi = {
                     <slot name="image3subalt" mdc-unwrap="p" />
                 </p>
             </UCard>
+            </div>
         </div>
         <div class="flex justify-center">
             <slot name="action" />

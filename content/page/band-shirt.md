@@ -43,83 +43,66 @@ lineLink: https://contact.somsritshirt.com/c4119
     #description
     สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
     ::
+::
 
-    ::title-with-description
-    #title
-    ## ตัวอย่างงานเสื้อวง 
+::content-section-faded-examples
+#title
+ตัวอย่างงานเสื้อวง
+#image1
+![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-1.png)
+#image1alt
+Cotton 100%
+#image1subalt
+ผ้าคอตตอน 100 %
 
-    #description
-    “สมศรีมีเสื้อ” มีกระบวนการผลิตที่ได้มาตรฐาน ความเชี่ยวชาญในการผลิตเสื้อวงดนตรีคุณภาพสูง เพื่อให้เสื้อผ้าที่ผลิตออกมาทนทาน และมีอายุการใช้งานยาวนาน ใส่ใจทุกขั้นตอนการผลิต ไม่ว่าจะงานเล็กงานใหญ่ ผลิตตามความต้องการของลูกค้า เริ่มต้นการผลิตเพียงแค่ 100 ตัว!!
+#image2
+![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-2.jpg)
+#image2alt
+Faded Color
+#image2subalt
+สีฟอก สีเฟด
+#action
+::line-link
+    ::line-button
+    สอบถามเพิ่มเติม
     ::
+::
+::
 
-    ::center{class="gap-5 flex-col sm:flex-row items-start"}
-        ::card{}
-        ![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-1.png)
+::content-section-price-faded
+#title
+ราคาสั่งผลิตเสื้อวง
 
-            ::center
-            <ProseH3 as="h4" class="text-center">Cotton 100%</ProseH3>
-            <ProseP class="text-center">ผ้าคอตตอน 100%</ProseP>
-            ::
-        ::
+#default
+::slider
+---
+items: 2
+slides-per-view: 2
+---
+#item-1
+:prose-img{src="/produce-tshirt/price-chart-cotton-100.png" lazy="false"}
 
-        ::card{}
-        ![](/band-shirt/sample-2.jpg)
-        
-            ::center
-            <ProseH3 as="h4" class="text-center">Faded Color</ProseH3>
-            <ProseP class="text-center">สีฟอก สีเฟด</ProseP>
-            ::
-        ::
-    ::
-
-
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
-
-## ราคาสั่งผลิตเสื้อวง
-
-    ::slider{:items="2" :slidesPerView="2"}
-    #item-1
-    <ProseImg src="/produce-tshirt/price-chart-cotton-100.png" />
-
-    #item-2
-    <ProseImg src="/produce-tshirt/price-chart-cotton-comb-32.png" />
-    ::
-
-    ::center
-    <ProseH3 as="p" class="text-center">** ราคาเสื้อมัดย้อมจะบวกเพิ่ม 60 บาทจากราคาเสื้อยืดธรรมดา **</ProseH3>
-    ::
-
-## ข้อควรระวัง
-
-    ::center{class="gap-5 flex-col sm:flex-row items-start"}
-        ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-caution-1.png)
-
-            ::center
-            <ProseH3 as="h4" class="text-center">แยกซักกับผ้าชนิดอื่น</ProseH3>
-            <ProseP class="text-center">ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ</ProseP>
-            ::
-        ::
-
-        ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-caution-2.png)
-        
-            ::center
-            <ProseH3 as="h4" class="text-center">เลี่ยงการใช้ผงซักฟอกเข้มข้น</ProseH3>
-            <ProseP class="text-center">ผงซักฟอกเข้มข้นจะทำให้ผ้ามัดย้อมสีจางลง และควรกลับด้าผ้าก่อนนำไปตากแดด</ProseP>
-            ::
-        ::
-    ::
-
-    ::center
-    <ProseH3 as="p" class="text-center">งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ</ProseH3>
-    ::
+#item-2
+:prose-img{src="/produce-tshirt/price-chart-cotton-comb-32.png" lazy="false"}
+::
+::
+::content-section-caution
+#title
+ข้อควรระวัง
+#card1Image
+![](/somsri-with-tie-dye/Wash_separately.png)
+#card1Title
+แยกซักกับผ้าชนิดอื่น
+#card1Description
+ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ
+#card2Image
+![](/somsri-with-tie-dye/strong_detergents.png)
+#card2Title
+เลี่ยงการใช้ผงซักฟอกเข้มข้น
+#card2Description
+ผงซักฟอกเข้มข้นจะทำให้ผ้ามัดย้อมสีจางลง และควรกลับด้านผ้าก่อนนำไปตากแดด
+#footer
+งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ
 ::
 
 ::why-choose-somsri
@@ -133,13 +116,10 @@ lineLink: https://contact.somsritshirt.com/c4119
 ::
 
 ::what-cost-saving
-
-::
-
-::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-::
+#default
+  ::line-link
+  #default
+    ::line-button
+    สอบถามเพิ่มเติม
+    ::
+  ::

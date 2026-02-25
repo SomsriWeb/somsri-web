@@ -84,7 +84,7 @@
 				v-else
 				:src="image"
 				:alt="alt"
-				class="rounded-xl aspect-square object-cover lg:aspect-auto lg:object-contain"
+				class="rounded-xl aspect-square object-cover w-3/4 max-w-sm lg:max-w-md lg:aspect-auto lg:object-contain"
 			/>
 		</div>
 
