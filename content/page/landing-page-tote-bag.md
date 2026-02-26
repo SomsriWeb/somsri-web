@@ -1,6 +1,6 @@
 ---
 title: รับผลิตกระเป๋า ราคาถูก โรงงานผลิตกระเป๋าคุณภาพดี ออกแบบฟรี
-activeNavbar: false
+activeNavbar: true
 description: บริการรับผลิตกระเป๋าตามสั่งทุกรูปแบบ กระเป๋าผ้า พรีเมียมแคนวาส พร้อมสกรีนและปักโลโก้ งานประณีต เริ่มต้นชิ้นละ 55 บาท จัดส่งทั่วไทย มั่นใจคุณภาพระดับพรีเมียม
 footer: false
 language: th
@@ -12,7 +12,7 @@ seo:
   description: บริการรับผลิตกระเป๋าตามสั่งทุกรูปแบบ กระเป๋าผ้า พรีเมียมแคนวาส พร้อมสกรีนและปักโลโก้ งานประณีต เริ่มต้นชิ้นละ 55 บาท จัดส่งทั่วไทย มั่นใจคุณภาพระดับพรีเมียม
 เพิ่ม script ใน head:
   - type: application/ld+json
-    content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตกระเป๋า",   "image": "https://somsritshirt.com/_ipx/f_webp/logo.svg",   "description": "โรงงานรับผลิตกระเป๋าครบวงจร รับทำกระเป๋าผ้า พร้อมสกรีนโลโก้ ราคาโรงงาน",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "url": "https://somsritshirt.com/landing-page-tote-bag",     "priceCurrency": "THB",     "price": "55",     "availability": "https://schema.org/InStock",     "itemCondition": "https://schema.org/NewCondition"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.9",     "reviewCount": "304"   } }'
+    content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตกระเป๋า",   "image": "https://somsritshirt.com/_ipx/f_webp/bag/cover-2-unsmushed.png",   "description": "โรงงานรับผลิตกระเป๋าครบวงจร รับทำกระเป๋าผ้า พร้อมสกรีนโลโก้ ราคาโรงงาน",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "url": "https://somsritshirt.com/landing-page-tote-bag",     "priceCurrency": "THB",     "price": "55",     "availability": "https://schema.org/InStock",     "itemCondition": "https://schema.org/NewCondition"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.9",     "reviewCount": "304"   } }'
 ---
 
 ::landing-page-header-style-one

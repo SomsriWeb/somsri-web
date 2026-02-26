@@ -1,11 +1,24 @@
 ---
-title: Search_ผลิต ปัก สกรีนเสื้อโปโล [A] - สมศรีมีเสื้อ
-navbar: false
+title: รับผลิตเสื้อโปโล ปักโลโก้ โรงงานผลิตเสื้อโปโลคุณภาพ | สมศรีมีเสื้อ
+activeNavbar: true
+description: บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี เหมาะสำหรับชุดยูนิฟอร์มและเสื้อทีม เช็คราคาเลย
 footer: false
+language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/6e554
+navbar: false
+seo:
+  title: Search_ผลิต ปัก สกรีนเสื้อโปโล [A] - สมศรีมีเสื้อ
+  description: บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี เหมาะสำหรับชุดยูนิฟอร์มและเสื้อทีม เช็คราคาเลย
+เพิ่ม script ใน head:
+  - type: application/ld+json
+    content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อโปโล",   "image": "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",   "description": "บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "205",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อโปโล"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "421"   }} '
 ---
-::landing-page-header-style-three{image="/somsri-can-screen-and-pin/banner.png"}
+
+::landing-page-header-style-three
+---
+image: /somsri-can-screen-and-pin/banner.png
+---
 #title
 รับผลิตเสื้อโปโล
 
@@ -17,68 +30,74 @@ lineLink: https://contact.somsritshirt.com/6e554
 ::
 
 ::container
-    ::somsri-produce-for
-    #title
-    Our customers
+  :::somsri-produce-for
+  #title
+  Our customers
 
-    #description
-    สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
-    ::
+  #description
+  สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
+  :::
 
-    ::home-pin-portfolio
-    #title
-    ตัวอย่างงานปัก
-    ::
+  :::home-pin-portfolio
+  #title
+  ตัวอย่างงานปัก
+  :::
 
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
+  :::line-link
+    ::::line-button
+    สอบถามเพิ่มเติม
+    ::::
+  :::
 
 ## ชนิดผ้าและราคาเสื้อโปโล
 
-    ::slider{:items="2" :slidesPerView="2"}
-    #item-1
-    <ProseImg src="/somsri-can-screen-and-pin/polo-price-table-1.png" />
+  :::slider
+  ---
+  items: 2
+  slides-per-view: 2
+  ---
+  #item-1
+  :prose-img{src="/somsri-can-screen-and-pin/polo-price-table-1.png"}
 
-    #item-2
-    <ProseImg src="/somsri-can-screen-and-pin/polo-price-table-2.png" />
-    ::
+  #item-2
+  :prose-img{src="/somsri-can-screen-and-pin/polo-price-table-2.png"}
+  :::
 
-<ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>
+  :::prose-p{.!text-primary.text-center.text-xl}
+  \*\*ทางเรามีบริการ QC & Pack อย่างดี \*\*
+  :::
 
 ## ตารางขนาดสกรีน
 
-    ::slider{:items="7"}
-    #item-1
-    <ProseImg src="/produce-tshirt/screen-size-1.png" />
+  :::slider
+  ---
+  items: 7
+  ---
+  #item-1
+  :prose-img{src="/produce-tshirt/screen-size-1.png"}
 
-    #item-2
-    <ProseImg src="/produce-tshirt/screen-size-2.png" />
+  #item-2
+  :prose-img{src="/produce-tshirt/screen-size-2.png"}
 
-    #item-3
-    <ProseImg src="/produce-tshirt/screen-size-3.png" />
+  #item-3
+  :prose-img{src="/produce-tshirt/screen-size-3.png"}
 
-    #item-4
-    <ProseImg src="/produce-tshirt/screen-size-4.png" />
-    
-    #item-5
-    <ProseImg src="/produce-tshirt/screen-size-5.png" />
+  #item-4
+  :prose-img{src="/produce-tshirt/screen-size-4.png"}
 
-    #item-6
-    <ProseImg src="/produce-tshirt/screen-size-6.png" />
+  #item-5
+  :prose-img{src="/produce-tshirt/screen-size-5.png"}
 
-    #item-7
-    <ProseImg src="/produce-tshirt/screen-size-7.png" />
-    ::
+  #item-6
+  :prose-img{src="/produce-tshirt/screen-size-6.png"}
+
+  #item-7
+  :prose-img{src="/produce-tshirt/screen-size-7.png"}
+  :::
 
 ## ราคางานปัก
-    
-    ::landing-page-pin
-    ::
+
+:landing-page-pin
 ::
 
 ::why-choose-somsri
@@ -87,21 +106,16 @@ lineLink: https://contact.somsritshirt.com/6e554
 ::
 
 ::container
-    ::how-to-order
-    #title
-    ขั้นตอนการสั่งซื้อ
-    ::
+  :::how-to-order
+  #title
+  ขั้นตอนการสั่งซื้อ
+  :::
 ::
 
-::what-cost-saving
+:what-cost-saving
 
-::
-
-
-::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
+::line-link
+  :::line-button
+  สอบถามเพิ่มเติม
+  :::
 ::

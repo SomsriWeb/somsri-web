@@ -1,6 +1,6 @@
 ---
 title: รับผลิตหมวกครบวงจร ราคาถูก โรงงานผลิตหมวกคุณภาพดี สมศรีมีเสื้อ
-activeNavbar: false
+activeNavbar: true
 description: บริการรับผลิตหมวกทุกรูปแบบ หมวกแก็ป หมวกบัคเก็ต หมวกลูกฟูก หนังกลับ พร้อมปักและสกรีนโลโก้ การันตีคุณภาพงานระดับพรีเมี่ยม จัดส่งรวดเร็วทั่วไทย ประเมินราคาฟรี
 footer: false
 language: th
@@ -12,7 +12,7 @@ seo:
   description: บริการรับผลิตหมวกทุกรูปแบบ หมวกแก็ป หมวกบัคเก็ต หมวกลูกฟูก หนังกลับ พร้อมปักและสกรีนโลโก้ การันตีคุณภาพงานระดับพรีเมี่ยม จัดส่งรวดเร็วทั่วไทย ประเมินราคาฟรี
 เพิ่ม script ใน head:
   - type: application/ld+json
-    content: '{"@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตหมวก",   "image": "https://somsritshirt.com/_ipx/f_webp/logo.svg",   "description": "รับผลิตหมวกทุกรูปแบบ หมวกแก๊ป หมวกบัคเก็ต คุณภาพสูง ราคาโรงงาน",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "60",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตหมวกตามออเดอร์"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "205"   }} '
+    content: '{"@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตหมวก",   "image": "https://somsritshirt.com/_ipx/f_webp/landing-page-real-hat/hat-style-1.png",   "description": "รับผลิตหมวกทุกรูปแบบ หมวกแก๊ป หมวกบัคเก็ต คุณภาพสูง ราคาโรงงาน",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "60",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตหมวกตามออเดอร์"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "205"   }} '
 ---
 
 ::landing-page-header-style-one

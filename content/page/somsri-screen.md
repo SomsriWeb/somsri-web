@@ -1,12 +1,24 @@
 ---
-title: Search_สกรีน - สมศรีมีเสื้อ
-navbar: false
+title: รับสกรีนเสื้อทุกชนิด สกรีนด่วน สกรีนโลโก้คมชัด ราคาโรงงาน | สมศรีมีเสื้อ
+activeNavbar: true
+description: บริการรับสกรีนเสื้อยืด เสื้อทีม เสื้อกิจกรรม ด้วยระบบ DFT, Silk Screen,DTG และอื่นๆ สีสด ทนนาน ไม่หลุดลอก ออกแบบฟรี ขั้นต่ำน้อย งานด่วนสั่งได้ พร้อมจัดส่งทั่วประเทศ
 footer: false
+language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/aab2b
+navbar: false
+seo:
+  title: Search_สกรีน - สมศรีมีเสื้อ
+  description: บริการรับสกรีนเสื้อยืด เสื้อทีม เสื้อกิจกรรม ด้วยระบบ DFT, Silk Screen,DTG และอื่นๆ สีสด ทนนาน ไม่หลุดลอก ออกแบบฟรี ขั้นต่ำน้อย งานด่วนสั่งได้ พร้อมจัดส่งทั่วประเทศ
+เพิ่ม script ใน head:
+  - type: application/ld+json
+    content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": " รับสกรีนเสื้อ",   "image": "https://somsritshirt.com/_ipx/f_webp/produce-tshirt/sublimation-port-1.png",   "description": "รับสกรีนเสื้อทุกชนิด สกรีนด่วน สกรีนโลโก้คมชัด ราคาโรงงาน",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "20",     "itemOffered": {       "@type": "Service",       "name": " รับสกรีนเสื้อ"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "389"   }} '
 ---
 
-::landing-page-header-style-two{image="/produce-tshirt/banner.png"}
+::landing-page-header-style-two
+---
+image: /produce-tshirt/banner.png
+---
 #title
 รับสกรีนเสื้อ - ผลิตเสื้อ ครบวงจร
 
@@ -18,13 +30,13 @@ lineLink: https://contact.somsritshirt.com/aab2b
 ::
 
 ::container
-    ::somsri-produce-for
-    #title
-    Our customers
+  :::somsri-produce-for
+  #title
+  Our customers
 
-    #description
-    สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
-    ::
+  #description
+  สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
+  :::
 ::
 
 ::why-choose-somsri
@@ -33,126 +45,129 @@ lineLink: https://contact.somsritshirt.com/aab2b
 ::
 
 ::container
-    ::how-to-order
-    #title
-    ขั้นตอนการสั่งซื้อ
-    ::
+  :::how-to-order
+  #title
+  ขั้นตอนการสั่งซื้อ
+  :::
 
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
-    
+  :::line-link
+    ::::line-button
+    สอบถามเพิ่มเติม
+    ::::
+  :::
+
 ## ชนิดผ้าและราคาเสื้อ
 
-    ::slider{:items="2" :slidesPerView="2"}
-    #item-1
-    <ProseImg src="/produce-tshirt/price-chart-cotton-100.png" />
+  :::slider
+  ---
+  items: 2
+  slides-per-view: 2
+  ---
+  #item-1
+  :prose-img{src="/produce-tshirt/price-chart-cotton-100.png"}
 
-    #item-2
-    <ProseImg src="/produce-tshirt/price-chart-cotton-comb-32.png" />
-    ::
+  #item-2
+  :prose-img{src="/produce-tshirt/price-chart-cotton-comb-32.png"}
+  :::
 
-<ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>
+  :::prose-p{.!text-primary.text-center.text-xl}
+  \*\*ทางเรามีบริการ QC & Pack อย่างดี \*\*
+  :::
 
 ## ตารางขนาดสกรีน
 
-    ::slider{:items="7"}
-    #item-1
-    <ProseImg src="/produce-tshirt/screen-size-1.png" />
+  :::slider
+  ---
+  items: 7
+  ---
+  #item-1
+  :prose-img{src="/produce-tshirt/screen-size-1.png"}
 
-    #item-2
-    <ProseImg src="/produce-tshirt/screen-size-2.png" />
+  #item-2
+  :prose-img{src="/produce-tshirt/screen-size-2.png"}
 
-    #item-3
-    <ProseImg src="/produce-tshirt/screen-size-3.png" />
+  #item-3
+  :prose-img{src="/produce-tshirt/screen-size-3.png"}
 
-    #item-4
-    <ProseImg src="/produce-tshirt/screen-size-4.png" />
-    
-    #item-5
-    <ProseImg src="/produce-tshirt/screen-size-5.png" />
+  #item-4
+  :prose-img{src="/produce-tshirt/screen-size-4.png"}
 
-    #item-6
-    <ProseImg src="/produce-tshirt/screen-size-6.png" />
+  #item-5
+  :prose-img{src="/produce-tshirt/screen-size-5.png"}
 
-    #item-7
-    <ProseImg src="/produce-tshirt/screen-size-7.png" />
-    ::
+  #item-6
+  :prose-img{src="/produce-tshirt/screen-size-6.png"}
+
+  #item-7
+  :prose-img{src="/produce-tshirt/screen-size-7.png"}
+  :::
 
 ## ราคางานสกรีน
 
-    ::title-with-description
-    #title
-    ### 1. สกรีนธรรมดา (Silk Screen)
+  :::title-with-description
+  #title
+  ### 1. สกรีนธรรมดา (Silk Screen)
 
-    #description
-    ราคา สีและจุดแรก 10 บาท สีและจุดถัดไป 5 บาท
-    ::
+  #description
+  ราคา สีและจุดแรก 10 บาท สีและจุดถัดไป 5 บาท
+  :::
 
-    ::landing-page-slik-screen
-    ::
+:landing-page-slik-screen
 
-    ::title-with-description
-    #title
-    ### 2. สกรีนเม็ดสี
+  :::title-with-description
+  #title
+  ### 2. สกรีนเม็ดสี
 
-    #description
-    ราคา 45 บาท/จุด
-    ::
+  #description
+  ราคา 45 บาท/จุด
+  :::
 
-    ::landing-page-color-screen
-    ::
+:landing-page-color-screen
 
-    ::landing-page-other-screen
-    ::
+:landing-page-other-screen
 
 ## ราคางานปัก
-    
-    ::landing-page-pin
-    ::
+
+:landing-page-pin
 
 ## ราคางาน Sublimation
-    
-    ::landing-page-sublimation-price
-    ::
 
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
+:landing-page-sublimation-price
 
-    ::home-screen-portfolio
-    #title
-    ตัวอย่างงานสกรีน
-    ::
+  :::line-link
+    ::::line-button
+    สอบถามเพิ่มเติม
+    ::::
+  :::
 
-    ::home-pin-portfolio
-    #title
-    ตัวอย่างงานปัก
-    ::
+  :::home-screen-portfolio
+  #title
+  ตัวอย่างงานสกรีน
+  :::
 
-<ProseH2 class="text-[2.5rem] md:text-[4rem]">ตัวอย่างงาน Sublimation</ProseH2>
+  :::home-pin-portfolio
+  #title
+  ตัวอย่างงานปัก
+  :::
 
-    ::slider{:items="2"}
-    #item-1
-    <ProseImg src="/produce-tshirt/sublimation-port-1.png" />
+  :::prose-h2{.md:text-[4rem] class="text-[2.5rem]"}
+  ตัวอย่างงาน Sublimation
+  :::
 
-    #item-2
-    <ProseImg src="/produce-tshirt/sublimation-port-2.png" />
-    ::
+  :::slider
+  ---
+  items: 2
+  ---
+  #item-1
+  :prose-img{src="/produce-tshirt/sublimation-port-1.png"}
 
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
+  #item-2
+  :prose-img{src="/produce-tshirt/sublimation-port-2.png"}
+  :::
+
+  :::line-link
+    ::::line-button
+    สอบถามเพิ่มเติม
+    ::::
+  :::
 ::
