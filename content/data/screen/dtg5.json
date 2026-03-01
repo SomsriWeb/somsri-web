@@ -1,12 +1,10 @@
 {
     "name": "สกรีน DTG ",
     "name-en": "Fade Printing T-shirts",
-    "image": "/screen/สกรีนdtg4.jpg",
+    "image": "/screen/สกรีนDTG4.jpg",
     "alt": "รับผลิตเสื้อยืด สกรีนแบบ DTG",
     "alt-en": "Custom T-shirt Production with DTG Screen Printing",
     "url": "/screen/dtg",
     "order": 13,
     "category": "DTG"
 }
-
-

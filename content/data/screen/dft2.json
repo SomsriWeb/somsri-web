@@ -1,12 +1,10 @@
 {
     "name": "สกรีน DFT",
     "name-en": "DFT Heat Press",
-    "image": "/screen/สกรีนdft2.jpg",
+    "image": "/screen/สกรีนDFT2.jpg",
     "alt": "รับทำเสื้อยืดแบบรีดร้อน DFT",
     "alt-en": "Custom T-shirts with DFT Heat Press Printing",
     "url": "/screen/dft",
     "order": 10,
     "category": "DFT"
 }
-
-
