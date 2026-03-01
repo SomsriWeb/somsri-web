@@ -43,6 +43,10 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
+const { data: portfolioCards } = await useAsyncData('data-portfolio-cards', () => {
+    return queryCollection('portfolioCard').order('order', 'ASC').all();
+});
 </script>
 
 <template>
@@ -57,5 +61,16 @@ defineSlots<Slots>();
                 <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-68 object-cover" sizes="sm:400px md:500px" />
             </Vue3Marquee>
         </ClientOnly>
+        <!-- ใช้ grid แทน swiper -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-2">
+            <HomePortfolioCard
+                v-for="card in portfolioCards"
+                :key="card.image"
+                :name="card.alt"
+                url="#"
+                :image="card.image"
+                :alt="card.alt"
+            />
+        </div>
     </div>
 </template>

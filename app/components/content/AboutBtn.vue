@@ -10,7 +10,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center mb-2">
         <a :href="props.actionLink" target="_blank">
             <UButton icon="ix:user-manual-filled" class="relative inline-flex rounded-lg px-4 py-3 text-white bg-primary hover:bg-primary-50 cursor-pointer">
                 สามารถอ่านต่อได้ที่
