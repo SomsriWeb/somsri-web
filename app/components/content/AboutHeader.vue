@@ -18,12 +18,7 @@ interface Slots {
     /**
      * ข้อความอธิบายแบบเป็นลิสต์
      */
-    descriptionList(): unknown;
-
-    /**
-     * ข้อความที่เป็นสโลแกน
-     */
-    sloganText(): unknown;
+    imageBannerList(): unknown;
 
     /**
      * ข้อความอธิบายสโลแกน
@@ -31,51 +26,37 @@ interface Slots {
     descriptionSlogan(): unknown;
 
     /**
-     * ข้อความอธิบายทั่วไป
-     */
-    strategyText(): unknown;
-
-    /**
      * ข้อความอธิบายแบบเป็นลิสต์
      */
-    strategyList(): unknown;
+    strategyimage1(): unknown;
+
+    strategyList1(): unknown;
 }
 defineSlots<Slots>();
 </script>
 <template>
     <div>
-        <ProseH1 class="text-center font-bold bg-primary text-white py-3 rounded-2xl">
+        <h1 class="text-left font-bold bg-primary text-white py-1 rounded-2xl mt-2 text-3xl pl-2">
             <slot name="header" mdc-unwrap="p" />
-        </ProseH1>
+        </h1>
 
-        <div class="flex justify-center pt-5">
+        <div class="grid gap-4 pt-5 md:grid-cols-2">
             <slot mdc-unwrap="p" name="imageBanner" />
-        </div>
-
-        <div class="font-light pt-5 text-stone-500">
-            <ProseP>
+            <ProseP class="text-stone-500">
                 <slot mdc-unwrap="p" name="descriptionText" />
             </ProseP>
         </div>
-        <div class="flex justify-center text-stone-500 font-light text-left max-w-4xl w-full px-4">
-            <slot mdc-unwrap="p" name="descriptionList" />
+        <div class="grid gap-4 justify-center items-center text-stone-500 font-light text-left max-w-4xl w-full px-4 md:grid-cols-2">
+            <slot mdc-unwrap="p" name="imageBannerList" />
+            <slot mdc-unwrap="p" name="descriptionSlogan" />
         </div>
 
-        <div>
-            <ProseH2 class="text-center font-bold text-primary">
-                <slot mdc-unwrap="p" name="sloganText" />
-            </ProseH2>
-            <ProseP class="text-center font-bold text-primary">
-                <slot mdc-unwrap="p" name="descriptionSlogan" />
-            </ProseP>
-        </div>
-
-        <div>
-            <ProseP class="text-start font-bold text-primary">
-                <slot mdc-unwrap="p" name="strategyText" />
-            </ProseP>
-            <div class="flex justify-start font-light text-stone-500 max-w-4xl w-full px-4">
-                <slot mdc-unwrap="p" name="strategyList" />
+        <div class="flex flex-col gap-4 text-stone-500 font-light max-w-4xl w-full px-4 md:flex-row items-center">
+            <div class="w-1/2 flex sm:w-2/3 lg:w-1/2 justify-center items-center">
+                <slot mdc-unwrap="p" name="strategyimage1" />
+            </div>
+            <div>
+                <slot mdc-unwrap="p" name="strategyList1" />
             </div>
         </div>
     </div>

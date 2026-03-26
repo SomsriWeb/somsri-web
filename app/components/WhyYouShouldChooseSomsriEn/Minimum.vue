@@ -27,19 +27,19 @@ function closeModal() {
           Small order? No problem because
         </p>
         <p class="text-[4rem] font-bold leading-16 text-stone-800">
-          Minimum order of just 100 pieces.
+          Minimum order of just 150 pieces.
         </p>
         <p class="text-stone-800 text-xl font-light">
-          Even with a minimum order of just 100 pieces<sup>(1)</sup> SomsriShirt
+          Even with a minimum order of just 150 pieces<sup>(1)</sup> SomsriShirt
           pays attention to every step of the design process to ensure results
           that truly satisfy our clients. Quality is guaranteed backed by
           countless customer reviews. With premium fabrics, sharp colors,
           durable prints, and long-lasting wear, every shirt is made to
           impress.
         </p>
-        <ol class="list-decimal list-inside text-stone-500 text-sm font-light">
+        <!-- <ol class="list-decimal list-inside text-stone-500 text-sm font-light">
           <li>Except polo shirts minimum order only 50 pieces.</li>
-        </ol>
+        </ol> -->
 
         <NuxtLink
           to="/portfolio"

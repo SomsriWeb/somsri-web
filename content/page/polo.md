@@ -1,10 +1,18 @@
 ---
-title: รับผลิตเสื้อโปโล พร้อมออกแบบฟรี เนื้อผ้าคุณภาพดี ราคาส่ง
-description: โรงงานรับผลิตเสื้อโปโล สมศรีมีเสื้อ ออกแบบฟรี พร้อมปักโลโก้
-  เสื้อโปโลพนักงาน เสื้อคอปก เสื้อบริษัท เนื้อผ้าหลากหลาย คุณภาพดี รับประกัน 90
-  วัน
+title: เสื้อโปโล เสื้อยูนิฟอร์มพนักงาน เสื้อคอปก ราคาโรงงาน | สมศรีมีเสื้อ
 activeNavbar: true
+description: รับผลิตเสื้อโปโล เสื้อคอปก เสื้อพนักงาน เสื้อบริษัท พร้อมปักสกรีนโลโก้ ครบวงจร ราคาไม่แพง มีเนื้อผ้าคุณภาพดีให้เลือกหลายแบบ ออกแบบได้ตามต้องการ รับประกัน 90 วัน
+footer: true
+language: th
+lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/c0087
+navbar: true
+seo:
+  title: รับผลิตเสื้อโปโล พร้อมออกแบบฟรี เนื้อผ้าคุณภาพดี ราคาส่ง
+  description: โรงงานรับผลิตเสื้อโปโล สมศรีมีเสื้อ ออกแบบฟรี พร้อมปักโลโก้ เสื้อโปโลพนักงาน เสื้อคอปก เสื้อบริษัท เนื้อผ้าหลากหลาย คุณภาพดี รับประกัน 90 วัน
+เพิ่ม script ใน head:
+  - type: application/ld+json
+    content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตเสื้อโปโล เสื้อทีม ยูนิฟอร์มพนักงาน พร้อมปัก-สกรีน",   "image": [         "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",     "https://somsritshirt.com/_ipx/f_webp/product/band.jpg"   ],   "description": "บริการรับผลิตเสื้อโปโลและเสื้อคอปกครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมบริการปักและสกรีนโลโก้ตามสั่ง ราคาโรงงาน คุณภาพพรีเมียม",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "AggregateOffer",     "url": "https://somsritshirt.com/polo",     "priceCurrency": "THB",     "lowPrice": "120",     "highPrice": "235"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.87",     "bestRating": "5",     "worstRating": "1",     "ratingCount": "142"   },   "mainEntityOfPage": {     "@type": "Service",     "serviceType": "Custom Apparel Manufacturing",     "provider": {       "@type": "LocalBusiness",       "name": "สมศรีมีเสื้อ",       "address": {         "@type": "PostalAddress",         "streetAddress": "บริษัท สมศรีการ์เมนท์ จำกัด 1033/6 ถนนเพชรเกษม 106 แขวงหนองค้างพลู",         "addressLocality": "เขตหนองแขม",         "addressRegion": "กรุงเทพมหานคร",         "postalCode": "10160",         "addressCountry": "TH"       }     }   } }'
 ---
 
 ::landing-page-header-style-four
@@ -18,7 +26,7 @@ image: /polo/cover-1.png
 ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
 
 #description
-เสื้อโปโลขั้นต่ำ 50 ตัว
+เสื้อโปโลขั้นต่ำ 100 ตัว
 ::
 
 ::container
@@ -36,13 +44,11 @@ image: /polo/cover-1.png
 
 ##
 
-  :::polo-product
-  :::
+:polo-product
 
 ### เนื้อผ้าอื่น ๆ
 
-  :::polo-fabric
-  :::
+:polo-fabric
 
 ## [เทคนิคสกรีนเสื้อโปโลหลากหลาย เลือกได้ตามความต้องการ]{style="display: block; padding-bottom: 15px;"}
 

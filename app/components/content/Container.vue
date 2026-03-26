@@ -21,7 +21,7 @@ defineSlots<Slots>();
 </script>
 
 <template>
-    <div class="w-full px-5 lg:px-[4.6rem] py-12" :class="{ 'space-y-8': !noSpace, 'pt-0': !noPaddingTop }">
+    <div class="w-full px-5 lg:px-[4.6rem] py-12 mt-2" :class="{ 'space-y-8': !noSpace, 'pt-0': !noPaddingTop }">
         <slot />
     </div>
 </template>

@@ -84,6 +84,27 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
+            }),
+        }),
+
+        portfolioCard: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-card/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
+            }),
+        }),
+
+        portfolioReview: defineCollection({
+            type: 'data',
+            source: 'data/portfolio-review/**.json',
+            schema: z.object({
+                image: z.string(),
+                alt: z.string(),
+                order: z.number(),
             }),
         }),
 
@@ -98,6 +119,7 @@ export default defineContentConfig({
                 'alt-en': z.string().optional(),
                 url: z.string(),
                 order: z.number(),
+                category: z.string().optional(),
             }),
         }),
 
@@ -266,6 +288,17 @@ export default defineContentConfig({
             }),
         }),
 
+        social: defineCollection({
+            type: 'data',
+            source: 'data/social/**.json',
+            schema: z.object({
+                label: z.string(),
+                label2: z.string().optional(),
+                icon: z.string().optional(),
+                order: z.number(),
+            }),
+        }),
+
         howToOrder: defineCollection({
             type: 'data',
             source: 'data/how-to-order/**.json',
@@ -401,6 +434,19 @@ export default defineContentConfig({
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
+            }),
+        }),
+
+        mediaVideos: defineCollection({
+            type: 'data',
+            source: 'data/media-videos/**.json',
+            schema: z.object({
+                videoId: z.string(),
+                title: z.string().optional(),
+                category: z.string().optional(),
+                platform: z.enum(['youtube', 'facebook']).default('youtube'),
+                order: z.number(),
+                thumbnail: z.string().optional(),
             }),
         }),
     },
