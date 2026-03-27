@@ -23,11 +23,11 @@ const socialMedias = [
 </script>
 <template>
     <footer>
-        <div class="bg-primary grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 md:px-[4.6rem] py-5">
-            <FooterAbout />
-            <FooterMenu />
-            <div>
-                <FooterAddress class="mb-5" />
+        <div class="flex flex-col bg-primary px-2 py-2 md:px-4 md:py-4 lg:flex-row">
+            <FooterAbout class="mt-2 lg:flex-[1_1_30%]" />
+            <FooterMenu class="mt-2 lg:flex-[1_1_30%] lg:relative lg:-right-16" />
+            <div class="mt-2 md:w-[72vw] lg:flex-[1_1_40%]">
+                <FooterAddress class="mb-2" />
                 <FooterContact />
             </div>
         </div>
