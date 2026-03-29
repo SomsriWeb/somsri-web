@@ -91,22 +91,16 @@ function openItemModal(uid: string) {
             <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
         </h2>
 
-        <ClientOnly>
-            <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr  ">
-                <swiper-slide v-for="item in content" :key="item.title">
-                    <InformationCard
-                        :title="lang === 'th' ? item.title : item['title-en']"
-                        :description="lang === 'th' ? item.description : item['description-en']"
-                        :image="item.image"
-                        @click="openItemModal(item.uid)"
-                    />
-                </swiper-slide>
-            </swiper-container>
-        </ClientOnly>
-
-        <div class="flex justify-end gap-5 ">
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
+        <div class="mb-5 flex flex-col lg:flex-row items-stretch gap-3">
+            <InformationCard
+                v-for="item in content"
+                :key="item.title"
+                class="flex-1"
+                :title="lang === 'th' ? item.title : item['title-en']"
+                :description="lang === 'th' ? item.description : item['description-en']"
+                :image="item.image"
+                @click="openItemModal(item.uid)"
+            />
         </div>
 
         <MinimumModal v-model:open="minimumModalState" />
