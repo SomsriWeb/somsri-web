@@ -25,7 +25,7 @@ const secondColumnMenus = computed(() => menuItems.value.slice(5));
                     <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">{{ LANG === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
                 </li>
             </ul>
-            <ul class="font-light lg:relative lg:-left-10">
+            <ul class="font-light lg:relative">
                 <li v-for="menu in secondColumnMenus" :key="menu.label">
                     <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">{{ LANG === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
                 </li>

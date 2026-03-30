@@ -23,15 +23,15 @@ const socialMedias = [
 </script>
 <template>
     <footer>
-        <div class="flex flex-col bg-primary px-2 py-2 md:px-4 md:py-4 lg:flex-row">
+        <div class="flex flex-col bg-primary px-5 py-2 md:px-10 md:py-4 lg:flex-row lg:px-19 gap-3">
             <FooterAbout class="mt-2 lg:flex-[1_1_30%]" />
-            <FooterMenu class="mt-2 lg:flex-[1_1_30%] lg:relative lg:-right-16" />
-            <div class="mt-2 md:w-[72vw] lg:flex-[1_1_40%]">
+            <FooterMenu class="mt-2 lg:flex-[1_1_24%] lg:relative" />
+            <div class="mt-2 md:w-[72vw] lg:flex-[1_1_46%]">
                 <FooterAddress class="mb-2" />
                 <FooterContact />
             </div>
         </div>
-        <div class="bg-primary-600 flex justify-between items-center px-5 md:px-[4.6rem] py-2">
+        <div class="bg-primary-600 flex justify-between items-center px-5 py-2 md:px-[2.6rem] lg:px-[4.6rem]">
             <ProseImg src="/footer/footer-logo.png" alt="สมศรีมีเสื้อ" class="max-w-[3.5rem] sm:max-w-[5rem]" />
             <div class="flex items-center gap-2 sm:gap-5">
                 <NuxtLink v-for="socialMedia in socialMedias" :key="socialMedia.url" :to="socialMedia.url" class="flex" external>
