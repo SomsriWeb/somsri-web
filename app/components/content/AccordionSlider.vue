@@ -22,10 +22,8 @@ interface Slots {
 }
 defineSlots<Slots>();
 
-// Reactive state for tracking active item
 const activeIndex = ref<number | null>(null);
 
-// Mapped data for the slider components
 const slides = [
     {
         image: '/faded-shirt/banner.png',
@@ -59,8 +57,6 @@ const slides = [
     },
 ];
 
-// Methods
-// ตรวจสอบว่าเป็น Desktop (ความกว้าง >= 1024px) ตาม breakpoint 'lg' ของ Tailwind
 const isDesktop = () => typeof window !== 'undefined' && window.innerWidth >= 1024;
 
 const handleMouseEnter = (index: number) => {
@@ -77,25 +73,20 @@ const handleMouseLeave = () => {
 
 const handleClick = (index: number) => {
     if (!isDesktop()) {
-        // สำหรับ Mobile/Tablet ให้คลิกเพื่อเปิด/ปิด
         activeIndex.value = activeIndex.value === index ? null : index;
     }
 };
 </script>
 
 <template>
-    <div class="flex min-h-screen items-center justify-center bg-gray-100">
+    <div class="flex min-h-screen items-center justify-center">
         <div class="w-full max-w-7xl flex flex-col lg:flex-row h-screen lg:h-[80vh] lg:max-h-[600px] shadow-2xl">
             <!-- Data Iteration via v-for -->
             <div
                 v-for="(slide, index) in slides"
                 :key="index"
                 class="img-box bg-cover bg-center bg-no-repeat transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] relative overflow-hidden cursor-pointer border-b lg:border-b-0 lg:border-r border-white/20 last:border-none"
-                :class="[
-                    activeIndex === index 
-                        ? 'flex-grow-[6] grayscale-0 opacity-100' 
-                        : 'flex-grow grayscale opacity-80'
-                ]"
+                :class="[activeIndex === index ? 'flex-grow-[6] grayscale-0 opacity-100' : 'flex-grow grayscale opacity-80']"
                 :style="{ backgroundImage: `url(${slide.image})` }"
                 @mouseenter="handleMouseEnter(index)"
                 @mouseleave="handleMouseLeave"
@@ -107,7 +98,7 @@ const handleClick = (index: number) => {
                     :class="[
                         activeIndex === index
                             ? 'bottom-[calc(100%-50px)] lg:bottom-[calc(100%-80px)] rotate-0 translate-y-0'
-                            : 'bottom-1/2 lg:bottom-[30px] translate-y-1/2 lg:translate-y-0 rotate-0 lg:-rotate-90'
+                            : 'bottom-1/2 lg:bottom-[30px] translate-y-1/2 lg:translate-y-0 rotate-0 lg:-rotate-90',
                     ]"
                 >
                     <h2 class="m-0 p-0 uppercase text-[24px] lg:text-[32px] text-white text-shadow-custom-lg tracking-wide">{{ slide.title }}</h2>
@@ -116,11 +107,7 @@ const handleClick = (index: number) => {
                 <!-- Content (เนื้อหา) -->
                 <div
                     class="content text-white bg-black/60 backdrop-blur-sm opacity-0 text-left absolute rounded-lg transition-all duration-500 ease-in-out pointer-events-none z-10 top-[60px] lg:top-[100px] left-[20px] lg:left-[30px] w-[90%] lg:w-[80%] max-w-none lg:max-w-[65%] p-[15px] lg:p-5"
-                    :class="[
-                        activeIndex === index 
-                            ? 'translate-y-0 opacity-100 pointer-events-auto' 
-                            : 'translate-y-10'
-                    ]"
+                    :class="[activeIndex === index ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-10']"
                     :style="{ transitionDelay: activeIndex === index ? '0.4s' : '0s' }"
                 >
                     <h4 class="m-0 mb-2.5 text-[18px] lg:text-[26px] text-white text-shadow-custom-md">{{ slide.subtitle }}</h4>
