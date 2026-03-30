@@ -101,7 +101,7 @@ const handleClick = (index: number) => {
                             : 'bottom-1/2 lg:bottom-[30px] translate-y-1/2 lg:translate-y-0 rotate-0 lg:-rotate-90',
                     ]"
                 >
-                    <h2 class="m-0 p-0 uppercase text-[24px] lg:text-[32px] text-white text-shadow-custom-lg tracking-wide">{{ slide.title }}</h2>
+                    <h2 class="m-0 p-0 uppercase text-[24px] lg:text-[32px] text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)] tracking-wide">{{ slide.title }}</h2>
                 </div>
 
                 <!-- Content (เนื้อหา) -->
@@ -110,21 +110,10 @@ const handleClick = (index: number) => {
                     :class="[activeIndex === index ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-10']"
                     :style="{ transitionDelay: activeIndex === index ? '0.4s' : '0s' }"
                 >
-                    <h4 class="m-0 mb-2.5 text-[18px] lg:text-[26px] text-white text-shadow-custom-md">{{ slide.subtitle }}</h4>
-                    <p class="m-0 p-0 text-[13px] lg:text-[20px] leading-relaxed text-shadow-custom-md">{{ slide.desc }}</p>
+                    <h4 class="m-0 mb-2.5 text-[18px] lg:text-[26px] text-white [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.subtitle }}</h4>
+                    <p class="m-0 p-0 text-[13px] lg:text-[20px] leading-relaxed [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.desc }}</p>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
-<style scoped>
-/* Text shadow utilities */
-.text-shadow-custom-lg {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.text-shadow-custom-md {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-</style>
