@@ -51,32 +51,32 @@ function toggleAccordion(index: number) {
         <h2 class="text-xl font-semibold text-[#a52241] mb-2">คำถามที่ลูกค้าชอบถาม</h2>
 
         <div class="space-y-4">
-            <div class="rounded-lg bg-white shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.15),-6px_-6px_10px_-1px_rgba(255,255,255,0.7)] border border-[#e5e5e5]">
-                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer border-3 border-[#e5e5e5] rounded-lg select-none" @click="toggleAccordion(0)">
+            <div class="rounded-lg bg-white border border-3 border-[#e5e5e5]">
+                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer rounded-lg select-none" @click="toggleAccordion(0)">
                     <span class="mr-3 text-2xl font-bold text-[#a52241]">{{ isOpen[0] ? '−' : '+' }}</span>
                     ซักแล้วลายจะหลุดไหม
                 </div>
                 <div class="text-gray-600 p-4" v-show="isOpen[0]">ไม่หลุด ไม่แตก ไม่ลอก เพราะใช้การพิมพ์แบบ Sublimation สีจะซึมเข้าไปในเนื้อผ้า ทำให้ลายติดทน ซักได้ยาวๆ สีไม่ซีดง่าย</div>
             </div>
 
-            <div class="rounded-lg bg-white shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.15),-6px_-6px_10px_-1px_rgba(255,255,255,0.7)] border border-[#e5e5e5]">
-                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer border-3 border-[#e5e5e5] rounded-lg select-none" @click="toggleAccordion(1)">
+            <div class="rounded-lg bg-white border border-3 border-[#e5e5e5]">
+                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer rounded-lg select-none" @click="toggleAccordion(1)">
                     <span class="mr-3 text-2xl font-bold text-[#a52241]">{{ isOpen[1] ? '−' : '+' }}</span>
                     ทำขั้นต่ำกี่ตัว?
                 </div>
                 <div class="text-gray-600 p-4" v-show="isOpen[1]">เริ่มต้นขั้นต่ำ 100 ตัวเท่านั้น</div>
             </div>
 
-            <div class="rounded-lg bg-white shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.15),-6px_-6px_10px_-1px_rgba(255,255,255,0.7)] border border-[#e5e5e5]">
-                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer border-3 border-[#e5e5e5] rounded-lg select-none" @click="toggleAccordion(2)">
+            <div class="rounded-lg bg-white border border-3 border-[#e5e5e5]">
+                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer rounded-lg select-none" @click="toggleAccordion(2)">
                     <span class="mr-3 text-2xl font-bold text-[#a52241]">{{ isOpen[2] ? '−' : '+' }}</span>
                     ใช้เวลาผลิตกี่วัน?
                 </div>
                 <div class="text-gray-600 p-4" v-show="isOpen[2]">รับประกันได้รับสินค้าภายใน 90 วัน</div>
             </div>
 
-            <div class="rounded-lg bg-white shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.15),-6px_-6px_10px_-1px_rgba(255,255,255,0.7)] border border-[#e5e5e5]">
-                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer border-3 border-[#e5e5e5] rounded-lg select-none" @click="toggleAccordion(3)">
+            <div class="rounded-lg bg-white border border-3 border-[#e5e5e5]">
+                <div class="flex items-center p-3 text-lg font-semibold cursor-pointer rounded-lg select-none" @click="toggleAccordion(3)">
                     <span class="mr-3 text-2xl font-bold text-[#a52241]">{{ isOpen[3] ? '−' : '+' }}</span>
                     เสื้อจะหดหรือย้วยไหม?
                 </div>
