@@ -283,10 +283,10 @@ watch(windowWidth, () => {
                 </swiper-container>
             </div>
 
-            <!-- z สูง: อยู่เหนือวิดเจ็ตลอยมุมขวา (เช่น LINE) ที่มักทับแค่ปุ่มขวา -->
+            <!-- z-index ต่ำ: ไม่ให้ทับ Navbar -->
             <div
                 v-if="props.showNavigation"
-                class="relative z-9999 isolate flex justify-end gap-3 mt-5"
+                class="relative z-0 flex justify-end gap-3 mt-5"
             >
                 <UButton
                     icon="i-heroicons-chevron-left"

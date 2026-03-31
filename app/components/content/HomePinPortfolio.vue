@@ -162,8 +162,9 @@ function openModal(pin: NonNullable<typeof pins.value>[number]) {
                 viewport: 'min-w-0',
                 container: 'flex gap-5',
                 item: 'min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 md:basis-1/3 xl:basis-1/5',
-                controls: 'relative z-9999 isolate flex justify-end gap-3 mt-5',
-                arrows: 'flex justify-end gap-3 w-full',
+                // บังคับให้ปุ่มอยู่ “ด้านล่าง ชิดขวา” และไม่ลอยไปทับ Navbar
+                controls: '!static !relative z-0 flex justify-end mt-5',
+                arrows: 'flex justify-end gap-3',
                 prev: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
                 next: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
             }"
