@@ -22,7 +22,7 @@ interface Slots {
 defineSlots<Slots>();
 
 // VARIABLE
-const { data: screens } = await useAsyncData('data-screens', () => {
+const { data: screens } = useAsyncData('data-screens', () => {
     return queryCollection('screen').order('order', 'ASC').all();
 });
 
@@ -30,6 +30,15 @@ const { data: screens } = await useAsyncData('data-screens', () => {
 const isModalOpen = ref(false);
 const initialImageIndex = ref(0);
 const selectedCategory = ref<string | null>(null);
+
+interface PortfolioScreenItem {
+    name: string;
+    'name-en'?: string;
+    url: string;
+    image: string;
+    alt?: string;
+    'alt-en'?: string;
+}
 
 // COMPUTED
 // Group screens by category
@@ -138,6 +147,28 @@ function openModal(screen: NonNullable<typeof screens.value>[number]) {
     initialImageIndex.value = 0;
     isModalOpen.value = true;
 }
+
+function openModalFromItem(item: unknown) {
+    openModal(item as NonNullable<typeof screens.value>[number]);
+}
+
+function getScreenName(item: unknown) {
+    const screen = item as PortfolioScreenItem;
+    return lang === 'th' ? screen.name : (screen['name-en'] || screen.name);
+}
+
+function getScreenAlt(item: unknown) {
+    const screen = item as PortfolioScreenItem;
+    return lang === 'th' ? (screen.alt || '') : (screen['alt-en'] || screen.alt || '');
+}
+
+function getScreenUrl(item: unknown) {
+    return (item as PortfolioScreenItem).url;
+}
+
+function getScreenImage(item: unknown) {
+    return (item as PortfolioScreenItem).image;
+}
 </script>
 
 <template>
@@ -147,21 +178,42 @@ function openModal(screen: NonNullable<typeof screens.value>[number]) {
             <slot name="description" />
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
+        <UCarousel
+            v-slot="{ item }"
+            :items="displayedScreens"
+            loop
+            :start-index="2"
+            align="center"
+            :contain-scroll="false"
+            arrows
+            prev-icon="i-heroicons-chevron-left"
+            next-icon="i-heroicons-chevron-right"
+            class="w-full"
+            :ui="{
+                viewport: 'min-w-0',
+                container: 'flex gap-5',
+                item: 'min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 md:basis-1/3 xl:basis-1/5',
+                controls: 'relative z-9999 isolate flex justify-end gap-3 mt-5',
+                arrows: 'flex justify-end gap-3 w-full',
+                prev: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
+                next: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
+            }"
+            :prev="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
+            :next="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
+            aria-label="ผลงานพอร์ตโฟลิโอ"
+        >
             <div
-                v-for="(screen, index) in displayedScreens"
-                :key="screen.name"
-                class="relative group cursor-pointer"
-                @click="openModal(screen)"
+                class="relative min-w-0 w-full cursor-pointer group"
+                @click="openModalFromItem(item)"
             >
                 <HomePortfolioCard
-                    :name="lang === 'th' ? screen.name : screen['name-en']"
-                    :url="screen.url"
-                    :image="screen.image"
-                    :alt="lang === 'th' ? screen.alt : screen['alt-en']"
+                    :name="getScreenName(item)"
+                    :url="getScreenUrl(item)"
+                    :image="getScreenImage(item)"
+                    :alt="getScreenAlt(item)"
                 />
             </div>
-        </div>
+        </UCarousel>
 
         <!-- Modal Component -->
         <ImageGalleryModal
