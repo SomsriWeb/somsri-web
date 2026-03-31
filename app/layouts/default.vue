@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BackToTop from '~/components/content/BackToTop.vue';
 import { USE_FOOTER } from '~/lib/useFooter';
 import { USE_NAVBAR } from '~/lib/useNavbar';
 
@@ -10,6 +11,7 @@ const useFooter = inject(USE_FOOTER, true);
     <div>
         <Navbar v-if="useNavbar" class="fixed top-0 left-0 right-0 z-50" />
         <slot />
+        <BackToTop />
         <Footer v-if="useFooter" />
     </div>
 </template>
