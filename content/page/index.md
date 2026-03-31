@@ -26,7 +26,17 @@ lineLink: https://contact.somsritshirt.com/3d975
   :::somsri-produce-for
   #title
   ## สมศรีผลิตให้กับใครบ้าง
-   
+  :::
+
+  :::stats-banner{count1="100" suffix1=" +" count2="10" count3="10000" suffix3=" +" count4="5000"}
+  #item-1
+  <div class="text-xl">แบรนด์ที่ไว้ใจ</div>
+  #item-2
+  <div class="text-xl">ปีในอุตสาหกรรม</div>
+  #item-3
+  <div class="text-xl">ออเดอร์ที่สำเร็จ</div>
+  #item-4
+  <div class="text-xl">กำลังผลิตต่อเดือน</div>
   :::
 
   :::home-all-product
