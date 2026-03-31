@@ -26,11 +26,23 @@ lineLink: https://contact.somsritshirt.com/3d975
   :::somsri-produce-for
   #title
   ## สมศรีผลิตให้กับใครบ้าง
-   
-  #description
-  สมศรีรับผลิตเสื้อ เราเป็นโรงงานผลิตเสื้อ รับสกรีนเสื้อ สั่งทำเสื้อยืดพร้อมสกรีน และสินค้าอื่น ๆ หลากหลายประเภท ครบวงจร ผลิตส่งตรงจากโรงงานสมศรีมีเสื้อ ผู้เชี่ยวชาญการผลิตและสกรีนเสื้อ ปัก สกรีนโลโก้ ตกแต่ง พร้อมออกแบบเสื้อได้ตามที่ลูกค้าต้องการ หลากหลายแบรนด์ไว้วางใจให้สมศรีมีเสื้อผลิตสินค้าต่าง ๆ ไม่ว่าจะเป็นเสื้อยืด เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ
   :::
 
+  :::stats-banner
+  #item-1
+  <div class="text-5xl font-bold leading-none">100 +</div>
+  <div class="mt-2 text-xl">แบรนด์ที่ไว้ใจ</div>
+  #item-2
+  <div class="text-5xl font-bold leading-none">10</div>
+  <div class="mt-2 text-xl">ปีในอุตสาหกรรม</div>
+  #item-3
+  <div class="text-5xl font-bold leading-none">10,000 +</div>
+  <div class="mt-2 text-xl">ออเดอร์ที่สำเร็จ</div>
+  #item-4
+  <div class="text-5xl font-bold leading-none">5,000</div>
+  <div class="mt-2 text-xl">กำลังผลิตต่อเดือน</div>
+  :::
+  
   :::home-all-product
   #title
   ## สินค้าทั้งหมด
