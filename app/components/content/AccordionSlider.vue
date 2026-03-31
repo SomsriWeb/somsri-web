@@ -85,7 +85,7 @@ const handleClick = (index: number) => {
             <div
                 v-for="(slide, index) in slides"
                 :key="index"
-                class="img-box bg-cover bg-center bg-no-repeat transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] relative overflow-hidden cursor-pointer border-b lg:border-b-0 lg:border-r border-white/20 last:border-none"
+                class="bg-cover bg-center bg-no-repeat transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)] relative overflow-hidden cursor-pointer border-b lg:border-b-0 lg:border-r border-white/20 last:border-none"
                 :class="[activeIndex === index ? 'flex-grow-[6] grayscale-0 opacity-100' : 'flex-grow grayscale opacity-80']"
                 :style="{ backgroundImage: `url(${slide.image})` }"
                 @mouseenter="handleMouseEnter(index)"
@@ -94,24 +94,23 @@ const handleClick = (index: number) => {
             >
                 <!-- Topic (หัวข้อ) -->
                 <div
-                    class="topic absolute left-[20px] lg:left-[30px] origin-bottom-left transition-all duration-600 ease-in-out w-max z-20"
+                    class="absolute left-[20px] lg:left-[80px] origin-bottom-left transition-all duration-600 ease-in-out w-max z-20"
                     :class="[
                         activeIndex === index
-                            ? 'bottom-[calc(100%-50px)] lg:bottom-[calc(100%-80px)] rotate-0 translate-y-0'
+                            ? 'bottom-[calc(100%-50px)] lg:bottom-[calc(100%-100px)] rotate-0 translate-y-0'
                             : 'bottom-1/2 lg:bottom-[30px] translate-y-1/2 lg:translate-y-0 rotate-0 lg:-rotate-90',
                     ]"
                 >
-                    <h2 class="m-0 p-0 uppercase text-[24px] lg:text-[32px] text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)] tracking-wide">{{ slide.title }}</h2>
+                    <h2 class="m-0 p-0 uppercase text-[24px] lg:text-[62px] text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)] tracking-wide">{{ slide.title }}</h2>
                 </div>
 
                 <!-- Content (เนื้อหา) -->
                 <div
-                    class="content text-white bg-black/60 backdrop-blur-sm opacity-0 text-left absolute rounded-lg transition-all duration-500 ease-in-out pointer-events-none z-10 top-[60px] lg:top-[100px] left-[20px] lg:left-[30px] w-[90%] lg:w-[80%] max-w-none lg:max-w-[65%] p-[15px] lg:p-5"
-                    :class="[activeIndex === index ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-10']"
-                    :style="{ transitionDelay: activeIndex === index ? '0.4s' : '0s' }"
+                    class="text-white bg-black/60 backdrop-blur-sm opacity-0 text-left absolute rounded-lg transition-all duration-500 ease-in-out pointer-events-none z-10 top-[60px] lg:top-[100px] left-[20px] lg:left-[30px] w-[90%] lg:w-[80%] max-w-none lg:max-w-[65%] p-[15px] lg:p-5"
+                    :class="[activeIndex === index ? 'translate-y-0 opacity-100 pointer-events-auto delay-[400ms]' : 'translate-y-10 delay-0']"
                 >
-                    <h4 class="m-0 mb-2.5 text-[18px] lg:text-[26px] text-white [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.subtitle }}</h4>
-                    <p class="m-0 p-0 text-[13px] lg:text-[20px] leading-relaxed [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.desc }}</p>
+                    <h4 class="m-0 mb-2.5 text-[18px] md:text-[24px] lg:text-[26px] text-white [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.subtitle }}</h4>
+                    <p class="m-0 p-0 text-[13px] md:text-[20px] leading-relaxed [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.desc }}</p>
                 </div>
             </div>
         </div>
