@@ -20,8 +20,17 @@ defineSlots<Slots>();
 
 <template>
     <header>
-        <div class="relative">
-            <NuxtImg src="/home/header.jpg" class="w-screen h-screen object-cover object-right" format="webp" placeholder preload />
+        <div class="relative overflow-hidden h-screen">
+            <video
+                class="absolute inset-0 h-full w-full object-cover"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+            >
+                <source src="/home/SomsriGarment.mp4" type="video/mp4" />
+            </video>
             <div class="absolute inset-0 bg-black/30" />
         </div>
         <div class="p-5 sm:p-0 absolute bottom-5 lg:bottom-10 xl:bottom-20 left-2 sm:left-5 lg:left-[4.6rem] text-white sm:max-w-60 md:max-w-60 lg:max-w-[20rem] xl:max-w-120">
