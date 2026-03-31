@@ -159,17 +159,27 @@ function openModal(pin: NonNullable<typeof pins.value>[number]) {
             next-icon="i-heroicons-chevron-right"
             class="w-full"
             :ui="{
-                viewport: 'min-w-0',
+                root: 'relative w-full min-w-0 overflow-hidden',
+                viewport: 'min-w-0 px-10 sm:px-12',
                 container: 'flex gap-5',
                 item: 'min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 md:basis-1/3 xl:basis-1/5',
-                // บังคับให้ปุ่มอยู่ “ด้านล่าง ชิดขวา” และไม่ลอยไปทับ Navbar
-                controls: '!static !relative z-0 flex justify-end mt-5',
-                arrows: 'flex justify-end gap-3',
-                prev: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
-                next: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
+                controls: 'absolute inset-0 z-10 pointer-events-none',
+                arrows: 'absolute inset-0 flex items-center justify-between px-2 sm:px-3',
+                prev: '!static !relative !inset-auto !translate-none sm:!start-auto sm:!end-auto pointer-events-auto z-20 rounded-full bg-primary text-white shadow-md',
+                next: '!static !relative !inset-auto !translate-none sm:!start-auto sm:!end-auto pointer-events-auto z-20 rounded-full bg-primary text-white shadow-md',
             }"
-            :prev="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
-            :next="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
+            :prev="{
+                color: 'neutral',
+                variant: 'solid',
+                disabled: false,
+                class: 'min-w-fit! p-2! sm:p-2.5! rounded-full',
+            }"
+            :next="{
+                color: 'neutral',
+                variant: 'solid',
+                disabled: false,
+                class: 'min-w-fit! p-2! sm:p-2.5! rounded-full',
+            }"
             aria-label="ผลงานพิน"
         >
             <div

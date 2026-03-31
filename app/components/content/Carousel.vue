@@ -269,8 +269,8 @@ watch(windowWidth, () => {
 <template>
     <div>
         <ClientOnly>
-            <!-- overflow-hidden: กันพื้นที่สัมผัสของ swiper ล้นไปทับแถวปุ่ม -->
-            <div class="min-w-0 overflow-hidden">
+            <!-- ปุ่มซ้าย/ขวาลอยด้านข้างเหมือน UCarousel ใน SomsriProduceFor -->
+            <div class="relative min-w-0 overflow-hidden">
                 <swiper-container ref="containerRef" :class="props.containerClass">
                     <swiper-slide v-for="slide in slides" :key="slide.key" class="h-auto! min-w-0">
                         <template v-if="slide.dynamic">
@@ -281,29 +281,28 @@ watch(windowWidth, () => {
                         </template>
                     </swiper-slide>
                 </swiper-container>
-            </div>
 
-            <!-- z-index ต่ำ: ไม่ให้ทับ Navbar -->
-            <div
-                v-if="props.showNavigation"
-                class="relative z-0 flex justify-end gap-3 mt-5"
-            >
-                <UButton
-                    icon="i-heroicons-chevron-left"
-                    class="text-primary! min-w-fit! rounded-full"
-                    color="neutral"
-                    variant="outline"
-                    aria-label="สไลด์ก่อนหน้า"
-                    @click="handlePrev"
-                />
-                <UButton
-                    icon="i-heroicons-chevron-right"
-                    class="text-primary! min-w-fit! rounded-full"
-                    color="neutral"
-                    variant="outline"
-                    aria-label="สไลด์ถัดไป"
-                    @click="handleNext"
-                />
+                <div
+                    v-if="props.showNavigation"
+                    class="pointer-events-none absolute inset-0 z-10 flex items-center justify-between px-2 sm:px-3"
+                >
+                    <UButton
+                        icon="i-heroicons-chevron-left"
+                        color="neutral"
+                        variant="solid"
+                        class="pointer-events-auto min-w-fit! p-2! sm:p-2.5! rounded-full bg-primary text-white shadow-md"
+                        aria-label="สไลด์ก่อนหน้า"
+                        @click="handlePrev"
+                    />
+                    <UButton
+                        icon="i-heroicons-chevron-right"
+                        color="neutral"
+                        variant="solid"
+                        class="pointer-events-auto min-w-fit! p-2! sm:p-2.5! rounded-full bg-primary text-white shadow-md"
+                        aria-label="สไลด์ถัดไป"
+                        @click="handleNext"
+                    />
+                </div>
             </div>
         </ClientOnly>
     </div>
