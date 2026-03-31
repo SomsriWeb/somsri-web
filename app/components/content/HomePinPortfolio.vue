@@ -22,7 +22,7 @@ interface Slots {
 defineSlots<Slots>();
 
 // VARIABLE
-const { data: pins } = await useAsyncData('data-pin', () => {
+const { data: pins } = useAsyncData('data-pin', () => {
     return queryCollection('pin').order('order', 'ASC').all();
 });
 
@@ -147,21 +147,43 @@ function openModal(pin: NonNullable<typeof pins.value>[number]) {
             <slot name="description" />
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
+        <UCarousel
+            v-slot="{ item }"
+            :items="displayedPins"
+            loop
+            :start-index="2"
+            align="center"
+            :contain-scroll="false"
+            arrows
+            prev-icon="i-heroicons-chevron-left"
+            next-icon="i-heroicons-chevron-right"
+            class="w-full"
+            :ui="{
+                viewport: 'min-w-0',
+                container: 'flex gap-5',
+                item: 'min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 md:basis-1/3 xl:basis-1/5',
+                // บังคับให้ปุ่มอยู่ “ด้านล่าง ชิดขวา” และไม่ลอยไปทับ Navbar
+                controls: '!static !relative z-0 flex justify-end mt-5',
+                arrows: 'flex justify-end gap-3',
+                prev: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
+                next: '!static !relative !top-auto !end-auto !start-auto !-translate-y-0 text-primary min-w-fit rounded-full',
+            }"
+            :prev="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
+            :next="{ color: 'neutral', variant: 'outline', disabled: false, class: '!min-w-fit !p-2 rounded-full' }"
+            aria-label="ผลงานพิน"
+        >
             <div
-                v-for="(pin, index) in displayedPins"
-                :key="pin.name"
-                class="relative group cursor-pointer"
-                @click="openModal(pin)"
+                class="relative min-w-0 w-full cursor-pointer group"
+                @click="openModal(item)"
             >
                 <HomePortfolioCard
-                    :name="lang === 'th' ? pin.name : pin['name-en']"
-                    :url="pin.url"
-                    :image="pin.image"
-                    :alt="lang === 'th' ? pin.alt : pin['alt-en']"
+                    :name="lang === 'th' ? item.name : item['name-en']"
+                    :url="item.url"
+                    :image="item.image"
+                    :alt="lang === 'th' ? item.alt : item['alt-en']"
                 />
             </div>
-        </div>
+        </UCarousel>
 
         <!-- Modal Component -->
         <ImageGalleryModal
