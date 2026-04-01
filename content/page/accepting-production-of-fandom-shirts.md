@@ -74,7 +74,7 @@ image: /portfolio/cry-baby.jpeg
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -116,7 +116,7 @@ class: pt-5
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 

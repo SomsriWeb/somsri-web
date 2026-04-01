@@ -9,8 +9,8 @@ interface SocialItem {
 }
 
 // VARIABLE
-const { data } = await useAsyncData('social', () => 
-    queryCollection('social' as any).order('order' as any, 'ASC').all() as Promise<SocialItem[]>
+const { data } = useAsyncData('social', () =>
+    queryCollection('social' as any).order('order' as any, 'ASC').all() as Promise<SocialItem[]>,
 );
 
 const config = useRuntimeConfig();

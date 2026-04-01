@@ -116,15 +116,10 @@ lineLink: https://contact.somsritshirt.com/600d2
     ::
 
     ::center
-        ::line-link
-            ::action-button-with-ping
-            ส่งทำเสื้อ
-            ::
-        ::
-
-        ::line-link
-            ::u-button{size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
-            ::
-        ::
+        :::line-link
+            ::::line-button
+            แอดไลน์สั่งทำเสื้อ
+            ::::
+        :::
     ::
 ::

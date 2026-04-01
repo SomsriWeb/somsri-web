@@ -45,7 +45,7 @@ image: /somsri-can-screen-and-pin/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 

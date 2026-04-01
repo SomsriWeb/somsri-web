@@ -46,7 +46,7 @@ image: /faded-shirt/banner.png
 
   :::line-link{class="https://contact.somsritshirt.com/c4119"}
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -94,7 +94,7 @@ image: /faded-shirt/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -158,6 +158,6 @@ image: /faded-shirt/banner.png
 
 ::line-link
   :::line-button
-  สอบถามเพิ่มเติม
+  แอดไลน์สั่งทำเสื้อ
   :::
 ::

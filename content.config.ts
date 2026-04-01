@@ -296,6 +296,7 @@ export default defineContentConfig({
                 label2: z.string().optional(),
                 icon: z.string().optional(),
                 order: z.number(),
+                url: z.string().optional(),
             }),
         }),
 

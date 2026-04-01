@@ -45,7 +45,7 @@ image: /produce-tshirt/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -143,7 +143,7 @@ image: /produce-tshirt/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -176,7 +176,7 @@ image: /produce-tshirt/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 ::

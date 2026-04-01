@@ -81,7 +81,7 @@ image: /company-shirt/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 
@@ -139,7 +139,7 @@ image: /company-shirt/banner.png
 ::container
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำเสื้อ
     ::::
   :::
 

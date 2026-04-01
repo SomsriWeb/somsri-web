@@ -100,7 +100,7 @@ TOTE BAG
 ::container
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำกระเป๋า
     ::::
   :::
 ::
