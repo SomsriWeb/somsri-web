@@ -104,7 +104,7 @@ function openItemModal(uid: string) {
             </swiper-container>
         </ClientOnly>
 
-        <div class="flex justify-end gap-5 ">
+        <div class="flex justify-end gap-5 xl:hidden">
             <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
             <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
         </div>

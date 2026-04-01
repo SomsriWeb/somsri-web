@@ -24,7 +24,10 @@ navbar: true
 ::
 
 ::container
-  :::split-content{direction="left-to-right"}
+  :::split-content
+  ---
+  direction: left-to-right
+  ---
   #Headertitle
   ## สมศรีมีเสื้อ โรงงานผลิตเสื้อ รับสกรีนเสื้อ งานปัก และงานออกแบบเสื้อทุกรูปแบบ
 
@@ -32,24 +35,44 @@ navbar: true
   **รับผลิตเสื้อ** สั่งทำเสื้อหลากหลายประเภท พร้อมบริการรับสกรีนเสื้อครบทุกขั้นตอน โรงงานผลิตเสื้อ คุณภาพครบวงจร สมศรีมีเสื้อ ใส่ใจทุกรายละเอียดในการผลิต ผลิตด้วยเนื้อผ้าคุณภาพดีที่สุด เพื่อให้ได้เสื้อที่สวยงาม คงทน และได้มาตรฐาน การันตีคุณภาพทุกชิ้นที่ผลิต พร้อมบริการลูกค้าด้วยใจ
 
   #image
-  :prose-img{src="../public/home/tshirt2.png" alt="ตัวอย่างงานเสื้อ" class="rounded-lg object-cover aspect-square"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างงานเสื้อ" src="../public/home/tshirt2.png"}
   :::
+
   :::somsri-produce-for
   #title
   ## สมศรีผลิตให้กับใครบ้าง
   :::
 
-  :::stats-banner{count1="100" suffix1=" +" count2="10" count3="10000" suffix3=" +" count4="5000"}
+  :::stats-banner
+  ---
+  count1: "100"
+  count2: "10"
+  count3: "10000"
+  count4: "5000"
+  suffix1: +
+  suffix3: +
+  ---
   #item-1
-  <div class="text-xl">แบรนด์ที่ไว้ใจ</div>
+    ::::div{.text-xl}
+    แบรนด์ที่ไว้ใจ
+    ::::
+
   #item-2
-  <div class="text-xl">ปีในอุตสาหกรรม</div>
+    ::::div{.text-xl}
+    ปีในอุตสาหกรรม
+    ::::
+
   #item-3
-  <div class="text-xl">ออเดอร์ที่สำเร็จ</div>
+    ::::div{.text-xl}
+    ออเดอร์ที่สำเร็จ
+    ::::
+
   #item-4
-  <div class="text-xl">กำลังผลิตต่อเดือน</div>
+    ::::div{.text-xl}
+    กำลังผลิตต่อเดือน
+    ::::
   :::
-  
+
   :::home-all-product
   #title
   ## สินค้าทั้งหมด
@@ -82,6 +105,36 @@ navbar: true
   ตัวอย่างงานปักเสื้อจากสมศรี ที่นอกจากเทคนิคการปักที่หลากหลายแล้ว เรายังมีภาพผลงานจริงจากลูกค้าให้ได้รับชมก่อนตัดสินใจ ซึ่งเรามีทั้งงานปักโลโก้บริษัท ปักตัวอักษร ไปจนถึงงานปักลวดลายพิเศษที่ต้องการความละเอียดสูงที่ลูกค้าได้ออกแบบมาเอง ซึ่งทุกขั้นตอนเรามีทีมงานคอยดูแล เพื่อให้ได้ผลงานที่มีความคมชัด สวยงาม และทนทานต่อการใช้งานในระยะยาว
   :::
 
+  :::video-carousel
+  ---
+  slides-per-view: 3
+  space-between: 16
+  loop: true
+  show-navigation: true
+  items:
+    - videoId: "970390282007755"
+      title: ผลิตเสื้อ
+      platform: facebook
+      muted: false
+      aspectRatio: "9/16"
+    - videoId: "970390282007755"
+      title: ผลิตเสื้อ
+      platform: facebook
+      muted: false
+      aspectRatio: "9/16"
+    - videoId: "970390282007755"
+      title: ผลิตเสื้อ
+      platform: facebook
+      muted: false
+      aspectRatio: "9/16"
+    - videoId: "970390282007755"
+      title: ผลิตเสื้อ
+      platform: facebook
+      muted: false
+      aspectRatio: "9/16"
+  ---
+  :::
+
   :::why-you-should-choose-somsri
   #title
   :::
@@ -94,6 +147,5 @@ navbar: true
   ผลิตเสื้อครบวงจร ต้อง **สมศรี** เราคือโรงงานผลิตเสื้อตัวจริง ดูแลครบจบทุุกขั้นตอน ตั้งแต่ออกแบบ ผลิต สกรีน และงานปัก มั่นใจได้งานคุณภาพ เนื้อผ้าดี สีคมชัด ทนทาน ไม่หลุดลอก สั่งทำง่าย รวดเร็ว พร้อมทีมงานมืออาชีพให้คำปรึกษาฟรี เปลี่ยนเรื่องเสื้อให้เป็นเรื่องง่ายสำหรับคุณ
   :::
 
-  :::accordion-slider
-  :::
+:accordion-slider
 ::
