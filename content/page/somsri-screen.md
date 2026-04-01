@@ -33,7 +33,7 @@ image: produce-tshirt/Banner.png
 ::container
   :::somsri-produce-for
   #title
-  Our customers
+  ## Our customers
 
   #description
   สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
@@ -51,11 +51,13 @@ image: produce-tshirt/Banner.png
   ขั้นตอนการสั่งซื้อ
   :::
 
-  :::line-link
-    ::::line-button
-    สอบถามเพิ่มเติม
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 
 ## ชนิดผ้าและราคาเสื้อ
 
@@ -135,11 +137,13 @@ image: produce-tshirt/Banner.png
 
 :landing-page-sublimation-price
 
-  :::line-link
-    ::::line-button
-    สอบถามเพิ่มเติม
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 
   :::home-screen-portfolio
   #title
@@ -166,9 +170,11 @@ image: produce-tshirt/Banner.png
   :prose-img{src="/produce-tshirt/sublimation-port-2.png"}
   :::
 
-  :::line-link
-    ::::line-button
-    สอบถามเพิ่มเติม
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 ::

@@ -72,11 +72,13 @@ image: /polo/cover-1.png
   ขั้นตอนการสั่งผลิต
   :::
 
-  :::line-link{.text-center style="display: block;"}
-    ::::u-button{icon="i-lucide-send" size="xl"}
-    สั่งทำเสื้อ
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 
 ## [ตัวอย่างเสื้อโปโล การันตีคุณภาพ]{.text-center}
 

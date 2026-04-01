@@ -138,8 +138,10 @@ image: /somsri-with-the-elephant-pants/banner.png
 
 :what-cost-saving
 
-::line-link
-  :::line-button
-  สอบถามเพิ่มเติม
-  :::
+::center
+    :::line-link
+        ::::line-button
+        แอดไลน์สั่งทำเสื้อ
+        ::::
+    :::
 ::

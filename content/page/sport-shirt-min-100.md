@@ -56,11 +56,13 @@ image: /sport-shirt-min-100/banner.png
   :prose-img{src="/produce-tshirt/sublimation-port-2.png"}
   :::
 
-  :::line-link
-    ::::line-button
-    สอบถามเพิ่มเติม
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 
 ## ชนิดผ้าและราคาเสื้อ
 
@@ -99,8 +101,10 @@ image: /sport-shirt-min-100/banner.png
 
 :what-cost-saving
 
-::line-link
-  :::line-button
-  สอบถามเพิ่มเติม
-  :::
+::center
+    :::line-link
+        ::::line-button
+        แอดไลน์สั่งทำเสื้อ
+        ::::
+    :::
 ::

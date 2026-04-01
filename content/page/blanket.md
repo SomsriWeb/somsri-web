@@ -24,9 +24,9 @@ lineLink: https://contact.somsritshirt.com/99c42
 
     ::title-with-description{:spacing=3}
     #title
-    ::prose-h2{size="2xl" align="center"}
+    :::prose-h2{size="2xl" align="center"}
     รับผลิตผ้าห่ม เกรดพรีเมียม
-    ::
+    :::
 
     #description
     ผลิตผ้าห่มคุณภาพสูงจากโรงงาน ที่ใส่ใจในทุกรายละเอียด เลือกเนื้อผ้าได้หลากหลาย ทั้งไมโครฟลีซ ซูเปอร์ซอฟฟ์ และนาโนกันน้ำ สัมผัสนุ่ม อุ่นสบาย เย็บเรียบเนียน เหมาะสำหรับของพรีเมียม ของขวัญองค์กร โรงแรม และรีสอร์ท ทุกผืนผ่านการ QC อย่างพิถีพิถันเพื่อให้คุณมั่นใจ ในคุณภาพจาก “สมศรีมีเสื้อ”
@@ -41,27 +41,27 @@ lineLink: https://contact.somsritshirt.com/99c42
     ::
 
     ::grid-2
-    #Col1
-    ::title-with-description{:spacing=3}
-    #title
-    :::prose-h2{class="text-primary md:text-xl"}
-    ชนิดเนื้อผ้า
-    :::
+        #Col1
+        :::title-with-description{:spacing=3}
+        #title
+        ::::prose-h2{class="text-primary md:text-xl"}
+        ชนิดเนื้อผ้า
+        ::::
 
-    :::prose-strong{class="text-xl md:text-3xl text-primary"}
-    ผ้าขนฟูไมโคร
-    :::
+        ::::prose-strong{class="text-xl md:text-3xl text-primary"}
+        ผ้าขนฟูไมโคร
+        ::::
 
-    #description
-    หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่มพรีเมียมด้วยเส้นใยไมโครไฟเบอร์ที่ละเอียดกว่าผ้าทั่วไปหลายเท่า ทำให้ผ้ามีความนุ่ม พิเศษ อุ้มน้ำน้อย แห้งไว และให้ความอบอุ่นสูงโดยไม่รู้สึกหนัก หรือร้อนจนเกินไป
+        #description
+        หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่มพรีเมียมด้วยเส้นใยไมโครไฟเบอร์ที่ละเอียดกว่าผ้าทั่วไปหลายเท่า ทำให้ผ้ามีความนุ่ม พิเศษ อุ้มน้ำน้อย แห้งไว และให้ความอบอุ่นสูงโดยไม่รู้สึกหนัก หรือร้อนจนเกินไป
 
-    :::blanket-feature
-    :::
+        ::::blanket-feature
+        ::::
 
-    ::
-    
-    #Col2
-    ![](/blanket/blanket-feature.png)
+        :::
+        
+        #Col2
+        ![](/blanket/blanket-feature.png)
     ::
 
     ::center
@@ -122,15 +122,10 @@ lineLink: https://contact.somsritshirt.com/99c42
     ::
 
     ::center
-        ::line-link
-            ::action-button-with-ping
-            ส่งทำเสื้อ
-            ::
-        ::
-
-        ::line-link
-            ::u-button{size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
-            ::
-        ::
+        :::line-link
+            ::::line-button
+            แอดไลน์สั่งทำผ้าห่ม
+            ::::
+        :::
     ::
 ::

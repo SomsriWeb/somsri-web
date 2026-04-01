@@ -44,7 +44,7 @@ lineLink: https://contact.somsritshirt.com/ea797
 
     #description
     เสื้อ Jersey ใช้ผ้า ไมโครสปอร์ต (Micro Sport Fabric) เป็นวัสดุ หลัก ซึ่งเป็นผ้าไมโครไฟเบอร์ชนิดพิเศษที่มีคุณสมบัติ เบา นุ่ม แห้งไว และระบายอากาศได้ดี แม้จะเป็นผ้าประเภทเดียวกัน แต่ สามารถเลือกใช้ได้หลายลักษณะ เช่น ไมโครบาง ไมโครหนา หรือ ไมโครเม็ดข้าวโพด เพื่อให้เหมาะกับสไตล์ของเสื้อแต่ละแบบผ้าทุก ชนิดให้สัมผัสสบาย ไม่ร้อน พร้อมคุณสมบัติ Quick Dry ระบาย เหงื่อไว, ไม่ยับง่าย, และให้ลุคสปอร์ตพรีเมียม เหมาะสำหรับทั้งเสื้อ ทีมกีฬาและเสื้อแนวแฟชั่นสตรีท
-    ::
+    
 
     #Col2
     :::jersey-feature
@@ -90,15 +90,10 @@ lineLink: https://contact.somsritshirt.com/ea797
     ::
 
     ::center
-        ::line-link
-            ::action-button-with-ping{}
-            ส่งทำเสื้อ
-            ::
-        ::
-
-        ::line-link
-            ::u-button{to="/price" size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
-            ::
-        ::
+        :::line-link
+            ::::line-button
+            แอดไลน์สั่งทำเสื้อ
+            ::::
+        :::
     ::
 ::

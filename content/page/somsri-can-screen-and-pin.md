@@ -32,7 +32,7 @@ image: /somsri-can-screen-and-pin/banner.png
 ::container
   :::somsri-produce-for
   #title
-  Our customers
+  ## Our customers
 
   #description
   สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
@@ -40,13 +40,15 @@ image: /somsri-can-screen-and-pin/banner.png
 
   :::home-pin-portfolio
   #title
-  ตัวอย่างงานปัก
+  ## ตัวอย่างงานปัก
   :::
 
-  :::line-link
-    ::::line-button
-    สอบถามเพิ่มเติม
-    ::::
+  :::center
+      ::::line-link
+          :::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          :::::
+      ::::
   :::
 
 ## ชนิดผ้าและราคาเสื้อโปโล
@@ -97,7 +99,8 @@ image: /somsri-can-screen-and-pin/banner.png
 
 ## ราคางานปัก
 
-:landing-page-pin
+:::landing-page-pin
+:::
 ::
 
 ::why-choose-somsri
@@ -112,10 +115,12 @@ image: /somsri-can-screen-and-pin/banner.png
   :::
 ::
 
-:what-cost-saving
-
-::line-link
-  :::line-button
-  สอบถามเพิ่มเติม
-  :::
+::what-cost-saving
+::
+::center
+    :::line-link
+        ::::line-button
+        แอดไลน์สั่งทำเสื้อ
+        ::::
+    :::
 ::

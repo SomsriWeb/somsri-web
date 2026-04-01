@@ -57,7 +57,7 @@ image: /landing-page-real-hat/banner.png
 
   :::line-link
     ::::line-button
-    สอบถามเพิ่มเติม
+    แอดไลน์สั่งทำหมวก
     ::::
   :::
 ::
@@ -72,6 +72,6 @@ image: /landing-page-real-hat/banner.png
 
 ::line-link
   :::line-button
-  สอบถามเพิ่มเติม
+  แอดไลน์สั่งทำหมวก
   :::
 ::
