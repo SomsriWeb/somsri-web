@@ -53,7 +53,7 @@ const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
                     <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
                         <div>
                             <p>095-454-6693</p>
-                            <p>เซลล์ (คุณมุก)</p>
+                            <p>เซลล์ (คุณแนน)</p>
                         </div>
                     </UButton>
                 </NuxtLink>
