@@ -12,7 +12,7 @@ title: Soft-power - สมศรีมีเสื้อ
 
     ::home-portfolio
     #title
-    ตัวอย่างผลงานจากเรา
+    ## ตัวอย่างผลงานจากเรา
     ::
 
     ::center
