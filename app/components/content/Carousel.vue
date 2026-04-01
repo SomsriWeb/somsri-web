@@ -82,7 +82,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 // SLOTS
 type CarouselSlots = {
-    default?(p: { item: unknown; index: number }): unknown;
+    default?(p: { item: unknown; index: number; active: boolean }): unknown;
 } & Record<string, () => unknown>;
 
 defineSlots<CarouselSlots>();
@@ -95,6 +95,14 @@ type SwiperContainerEl = HTMLElement & {
 const containerRef = ref<SwiperContainerEl | null>(null);
 /** เก็บ Swiper instance เอง — init หลัง `containerRef` พร้อม (อยู่ใน ClientOnly ไม่ใช้ useSwiper) */
 const swiperInstance = ref<Swiper | null>(null);
+/** index ของสไลด์ที่อยู่กลาง/active (อิง realIndex) */
+const activeRealIndex = ref(0);
+
+function syncActiveIndex(inst?: Swiper | null) {
+    if (!inst) return;
+    // realIndex สอดคล้องกับ itemsData index แม้เปิด loop
+    activeRealIndex.value = typeof inst.realIndex === 'number' ? inst.realIndex : inst.activeIndex ?? 0;
+}
 
 function dynamicSlideKey(item: unknown, index: number): string {
     if (item !== null && typeof item === 'object' && 'id' in item) {
@@ -178,12 +186,14 @@ function mountSwiperElement() {
 
     if (el.swiper) {
         swiperInstance.value = el.swiper;
+        syncActiveIndex(el.swiper);
         refreshSwiperLayout();
         return;
     }
 
     el.initialize?.();
     swiperInstance.value = el.swiper ?? null;
+    syncActiveIndex(swiperInstance.value);
     nextTick(refreshSwiperLayout);
 }
 
@@ -235,8 +245,19 @@ watch(swiperOptions, () => {
     Object.assign(el, swiperOptions.value as Record<string, unknown>);
     if (el.swiper) {
         swiperInstance.value = el.swiper;
+        syncActiveIndex(el.swiper);
         nextTick(refreshSwiperLayout);
     }
+});
+
+watch(swiperInstance, (inst, prev) => {
+    if (!inst || inst === prev) return;
+    syncActiveIndex(inst);
+    // อัปเดต index เมื่อเลื่อน/transition จบ เพื่อให้ “กลาง” แม่นยำ
+    const handler = () => syncActiveIndex(inst);
+    inst.on?.('init', handler);
+    inst.on?.('slideChange', handler);
+    inst.on?.('transitionEnd', handler);
 });
 
 /** itemsData โหลดทีหลัง (เช่น useAsyncData) — ต้อง init/update ใหม่เมื่อจำนวน slide เปลี่ยน */
@@ -274,7 +295,11 @@ watch(windowWidth, () => {
                 <swiper-container ref="containerRef" :class="props.containerClass">
                     <swiper-slide v-for="slide in slides" :key="slide.key" class="h-auto! min-w-0">
                         <template v-if="slide.dynamic">
-                            <slot :item="slide.item" :index="slide.index" />
+                            <slot
+                                :item="slide.item"
+                                :index="slide.index"
+                                :active="slide.index === activeRealIndex"
+                            />
                         </template>
                         <template v-else>
                             <slot :name="`item-${slide.slotIndex}`" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
