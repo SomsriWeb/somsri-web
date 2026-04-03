@@ -29,7 +29,7 @@ defineSlots<Slots>();
                 playsinline
                 preload="metadata"
             >
-                <source src="/home/SomsriGarment.mp4" type="video/mp4" />
+                <source src="https://s3.somsritshirt.com/somsri-web/SomsriGarment.mp4" type="video/mp4" />
             </video>
             <div class="absolute inset-0 bg-black/30" />
         </div>

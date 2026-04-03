@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
+
 const imgs = [
     {
         alt: 'โรงงานผลิตเสื้อพร้อมสกรีน',

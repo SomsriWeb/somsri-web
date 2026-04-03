@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { Swiper } from 'swiper/types';
 import { useDebounceFn, useResizeObserver, useWindowSize } from '@vueuse/core';
+import { useScrollTriggerRef } from '~/composables/useScrollTriggerRef';
+
 // PROPS
 interface Props {
     /**

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
 // PROPS
 interface Props {
     /**

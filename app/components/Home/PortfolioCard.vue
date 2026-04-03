@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useScrollTriggerRef } from '~/composables/useScrollTriggerRef';
 // PROPS
 interface Props {
     name: string;
@@ -69,7 +70,7 @@ useScrollTriggerRef(rootRef, ({ gsap, el }) => {
                 <ProseImg
                     :src="image"
                     :alt="alt || name"
-                    class="h-full w-full aspect-5/7 object-cover"
+                    :class="['h-full w-full aspect-5/7 object-cover', props.imageRotateClass]"
                     sizes="sm:300px 3xl:400px"
                 />
                 <div class="absolute inset-0 bg-black/15" />

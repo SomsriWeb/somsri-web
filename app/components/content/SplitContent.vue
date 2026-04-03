@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
+
 // PROPS
 type SplitDirection = 'left-to-right' | 'right-to-left';
 

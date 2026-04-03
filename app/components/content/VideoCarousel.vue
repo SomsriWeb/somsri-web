@@ -10,7 +10,10 @@ type VideoItem = {
 };
 
 interface Props {
-    items: VideoItem[];
+    /** ระบุ items เอง (override การดึงจาก content) */
+    items?: VideoItem[];
+    /** ดึงข้อมูลจาก `content/data/media-videos/*.json` โดย filter category */
+    category?: string;
     slidesPerView?: number;
     spaceBetween?: number;
     loop?: boolean;
@@ -28,6 +31,25 @@ const props = withDefaults(defineProps<Props>(), {
     showNavigation: true,
     containerClass: 'w-full max-w-full',
     hoverDelayMs: 250,
+});
+
+const cacheKey = computed(() => (props.category ? `video-carousel-${props.category}` : 'video-carousel'));
+
+const { data: contentItems } = useAsyncData(cacheKey, async () => {
+    if (!props.category) return [];
+    const videos = await queryCollection('mediaVideos').where('category', '=', props.category).order('order', 'ASC').all();
+    return videos.map((v) => ({
+        videoId: v.videoId,
+        title: v.title,
+        platform: (v.platform as Platform) || 'facebook',
+        muted: true,
+        aspectRatio: '9/16' as const,
+    }));
+});
+
+const resolvedItems = computed<VideoItem[]>(() => {
+    if (props.items && props.items.length) return props.items;
+    return (contentItems.value as VideoItem[] | null) ?? [];
 });
 
 const activeHoverIndex = ref<number | null>(null);
@@ -62,7 +84,7 @@ function onDesktopLeave(index: number) {
         <!-- Desktop: grid 4 คลิป เล่นเมื่อ hover -->
         <div class="hidden md:grid md:grid-cols-4 gap-4">
             <div
-                v-for="(it, index) in props.items"
+                v-for="(it, index) in resolvedItems"
                 :key="`${it.platform || 'facebook'}-${it.videoId}-${index}`"
                 class="min-w-0"
                 @mouseenter="onDesktopEnter(index)"
@@ -87,7 +109,7 @@ function onDesktopLeave(index: number) {
         <!-- Mobile: ใช้ carousel component และเล่นเฉพาะสไลด์ที่ active -->
         <div class="md:hidden">
             <Carousel
-                :items-data="props.items"
+                :items-data="resolvedItems"
                 :slides-per-view="1"
                 :space-between="props.spaceBetween"
                 :loop="props.loop"

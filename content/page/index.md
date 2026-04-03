@@ -111,27 +111,7 @@ navbar: true
   space-between: 16
   loop: true
   show-navigation: true
-  items:
-    - videoId: "970390282007755"
-      title: ผลิตเสื้อ
-      platform: facebook
-      muted: false
-      aspectRatio: "9/16"
-    - videoId: "970390282007755"
-      title: ผลิตเสื้อ
-      platform: facebook
-      muted: false
-      aspectRatio: "9/16"
-    - videoId: "970390282007755"
-      title: ผลิตเสื้อ
-      platform: facebook
-      muted: false
-      aspectRatio: "9/16"
-    - videoId: "970390282007755"
-      title: ผลิตเสื้อ
-      platform: facebook
-      muted: false
-      aspectRatio: "9/16"
+  category: home
   ---
   :::
 
