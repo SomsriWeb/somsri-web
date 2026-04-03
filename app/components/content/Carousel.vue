@@ -78,6 +78,13 @@ interface Props {
      * ไม่ระบุและเปิด `slideOverflowVisible` → ใช้ 12px; ส่ง `0` เพื่อปิด
      */
     slideSpaceExtra?: number;
+
+    /** fade + เลื่อนขึ้นเมื่อสกรอล์ถึงแคโรเซล */
+    revealOnScroll?: boolean;
+    /** ScrollTrigger `start` สำหรับ reveal */
+    revealStart?: string;
+    revealDuration?: number;
+    revealY?: number;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -92,6 +99,10 @@ const props = withDefaults(defineProps<Props>(), {
     breakpointsPreset: 'simple',
     breakpointsBase: 'container',
     slideOverflowVisible: false,
+    revealOnScroll: true,
+    revealStart: 'top 78%',
+    revealDuration: 0.85,
+    revealY: 36,
 });
 
 const slideInnerGutterX = computed(() =>
@@ -320,13 +331,30 @@ const { width: windowWidth } = useWindowSize();
 watch(windowWidth, () => {
     debouncedRefresh();
 });
+
+const revealRootRef = ref<HTMLElement | null>(null);
+
+useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
+    if (!props.revealOnScroll) return;
+    gsap.from(el, {
+        opacity: 0,
+        y: props.revealY,
+        duration: props.revealDuration,
+        ease: 'power2.out',
+        scrollTrigger: {
+            trigger: el,
+            start: props.revealStart,
+            toggleActions: 'play none none reverse',
+        },
+    });
+});
 </script>
 
 <template>
     <div>
         <ClientOnly>
             <!-- ตัดการ์ด/สไลด์ที่ล้นออกนอกความกว้างเลย์เอาต์ (โดยเฉพาะ centeredSlides) — ชั้นใน overflow-visible ได้เมื่อ slideOverflowVisible เพื่อ scale ทับการ์ดข้าง -->
-            <div class="min-w-0 w-full max-w-full overflow-x-hidden">
+            <div ref="revealRootRef" class="min-w-0 w-full max-w-full overflow-x-hidden">
                 <div
                     class="relative min-w-0"
                     :class="props.slideOverflowVisible ? 'overflow-visible' : 'overflow-hidden'"
@@ -392,13 +420,12 @@ watch(windowWidth, () => {
     </div>
 </template>
 
-<!-- Swiper ใช้ shadow DOM — ต้อง ::part(container) เพื่อยก overflow:hidden ของ .swiper -->
 <style>
+/* Shadow DOM (swiper-container): ยก overflow:hidden ของ .swiper / wrapper เมื่อใช้คลาส carousel-slide-overflow-visible */
 .carousel-slide-overflow-visible::part(container) {
     overflow: visible;
 }
 
-/* เผื่อ Swiper / โมดูลตั้ง overflow บน wrapper — การ์ด scale ล้นข้างต้องไม่ถูกตัด */
 .carousel-slide-overflow-visible::part(wrapper) {
     overflow: visible;
 }

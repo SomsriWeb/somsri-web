@@ -30,7 +30,7 @@ const imgs = [
     },
 ];
 
-//stot
+// SLOTS
 interface Slots {
     /**
      * หัวข้อ
@@ -47,22 +47,46 @@ defineSlots<Slots>();
 const { data: portfolioCards } = await useAsyncData('data-portfolio-cards', () => {
     return queryCollection('portfolioCard').order('order', 'ASC').all();
 });
+
+const headerRef = ref<HTMLElement | null>(null);
+const marqueeWrapRef = ref<HTMLElement | null>(null);
+
+useScrollRevealUp(headerRef, {
+    childSelector: ':scope > *',
+    start: 'top 85%',
+    duration: 0.7,
+    stagger: 0.12,
+    y: 32,
+});
+
+useScrollRevealUp(marqueeWrapRef, {
+    childSelector: null,
+    start: 'top 82%',
+    duration: 0.85,
+    y: 36,
+});
+
 </script>
 
 <template>
     <div>
-        <div class="mb-5">
+        <div ref="headerRef" class="mb-5">
             <slot name="title" />
             <slot name="description" />
         </div>
 
         <ClientOnly>
-            <Vue3Marquee class="rounded-xl" :duration="40">
-                <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-68 object-cover" sizes="sm:400px md:500px" />
-            </Vue3Marquee>
+            <div ref="marqueeWrapRef">
+                <Vue3Marquee class="rounded-xl" :duration="40">
+                    <ProseImg v-for="img in imgs" :key="img.src" :src="img.src" :alt="img.alt" class="h-full max-h-68 object-cover" sizes="sm:400px md:500px" />
+                </Vue3Marquee>
+            </div>
         </ClientOnly>
         <!-- ใช้ grid แทน swiper -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-2">
+        <div
+            v-if="portfolioCards?.length"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-2"
+        >
             <HomePortfolioCard
                 v-for="card in portfolioCards"
                 :key="card.image"

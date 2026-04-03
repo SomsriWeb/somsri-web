@@ -7,6 +7,7 @@ interface Props {
     alt?: string;
 }
 defineProps<Props>();
+
 </script>
 <template>
     <div class="relative rounded-2xl overflow-hidden">
