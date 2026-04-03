@@ -90,7 +90,6 @@ function onDesktopLeave(index: number) {
                 :items-data="props.items"
                 :slides-per-view="1"
                 :space-between="props.spaceBetween"
-                :autoplay-delay="null"
                 :loop="props.loop"
                 :show-navigation="props.showNavigation"
                 breakpoints-preset="simple"

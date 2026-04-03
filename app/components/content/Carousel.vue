@@ -28,11 +28,6 @@ interface Props {
     spaceBetween?: number;
 
     /**
-     * delay ของ autoplay (ms) หรือ `null` เพื่อปิด autoplay
-     */
-    autoplayDelay?: number | null;
-
-    /**
      * เปิด/ปิด loop
      */
     loop?: boolean;
@@ -64,6 +59,25 @@ interface Props {
      * - `window`: ตามความกว้างหน้าต่าง
      */
     breakpointsBase?: 'window' | 'container';
+
+    /**
+     * เปิด overflow ให้สไลด์ขยาย (เช่น `scale` เมื่อ hover) ล้นออกมาทับการ์ดข้างได้
+     * ค่าเริ่มต้นตัดด้วย overflow-hidden ทั้ง wrapper และ `.swiper` ใน shadow DOM
+     * เมื่อเปิด: ปิด Swiper `observer` / `resizeObserver` ค่าเริ่มต้นของ element — ไม่ให้ความสูงที่เปลี่ยนตอน hover ไปเรียก `update()` แล้วเลื่อน/สลับการ์ด
+     */
+    slideOverflowVisible?: boolean;
+
+    /**
+     * padding ซ้าย-ขวาในแต่ละสไลด์ (px) — ดันเนื้อหาเข้ากลางช่อง ลดโอกาสการ์ดขยายไปทับการ์ดข้าง
+     * ไม่ระบุและเปิด `slideOverflowVisible` → ใช้ 16px; ส่ง `0` เพื่อปิด
+     */
+    slideGutterX?: number;
+
+    /**
+     * บวกเพิ่มจาก `spaceBetween` (px) ให้สไลด์ห่างกันมากขึ้น
+     * ไม่ระบุและเปิด `slideOverflowVisible` → ใช้ 12px; ส่ง `0` เพื่อปิด
+     */
+    slideSpaceExtra?: number;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -71,14 +85,22 @@ const props = withDefaults(defineProps<Props>(), {
     itemsData: () => [],
     slidesPerView: 1,
     spaceBetween: 16,
-    autoplayDelay: 3000,
     loop: true,
     showNavigation: true,
     effect: 'slide',
     containerClass: '',
     breakpointsPreset: 'simple',
     breakpointsBase: 'container',
+    slideOverflowVisible: false,
 });
+
+const slideInnerGutterX = computed(() =>
+    props.slideGutterX !== undefined ? props.slideGutterX : props.slideOverflowVisible ? 16 : 0,
+);
+
+const slideSpaceExtraPx = computed(() =>
+    props.slideSpaceExtra !== undefined ? props.slideSpaceExtra : props.slideOverflowVisible ? 12 : 0,
+);
 
 // SLOTS
 type CarouselSlots = {
@@ -137,7 +159,7 @@ const slides = computed((): SlideUnion[] => {
 });
 
 const swiperOptions = computed(() => {
-    const spaceBetween = props.spaceBetween;
+    const spaceBetween = props.spaceBetween + slideSpaceExtraPx.value;
     const isPortfolioGrid = props.breakpointsPreset === 'portfolio-grid';
 
     const breakpoints = isPortfolioGrid
@@ -160,16 +182,19 @@ const swiperOptions = computed(() => {
         // ต้องการให้รูปแรก/รูปสุดท้ายก็อยู่กลางได้ (ซ้าย/ขวาเว้นว่างได้)
         centeredSlidesBounds: false,
         centerInsufficientSlides: true,
-        autoplay:
-            props.autoplayDelay === null
-                ? false
-                : {
-                      delay: props.autoplayDelay,
-                      disableOnInteraction: false,
-                  },
+        autoplay: false,
         loop: props.loop,
         effect: props.effect,
         breakpoints,
+        /* swiper element ใส่ observer/resizeObserver เป็นค่าเริ่มต้น — hover ทำให้สูงสไลด์เปลี่ยนแล้ว Swiper update → slideTo ดูเหมือนการ์ดสลับ */
+        ...(props.slideOverflowVisible
+            ? {
+                  observer: false,
+                  observeParents: false,
+                  observeSlideChildren: false,
+                  resizeObserver: false,
+              }
+            : {}),
     };
 });
 
@@ -221,6 +246,20 @@ function handleNext() {
 }
 
 const debouncedRefresh = useDebounceFn(() => nextTick(refreshSwiperLayout), 100);
+
+/** รีเฟรช Swiper เฉพาะเมื่อความกว้างแคโรเซลเปลี่ยน — ไม่ตอบสนองแค่ความสูงจาก hover/ข้อความ */
+const lastCarouselObservedWidth = ref<number | null>(null);
+
+useResizeObserver(containerRef, (entries) => {
+    const entry = entries[0];
+    if (!entry) return;
+    const w = entry.contentRect.width;
+    if (lastCarouselObservedWidth.value !== null && Math.abs(w - lastCarouselObservedWidth.value) < 1) {
+        return;
+    }
+    lastCarouselObservedWidth.value = w;
+    debouncedRefresh();
+});
 
 watch(
     containerRef,
@@ -277,10 +316,6 @@ watch(
     },
 );
 
-useResizeObserver(containerRef, () => {
-    debouncedRefresh();
-});
-
 const { width: windowWidth } = useWindowSize();
 watch(windowWidth, () => {
     debouncedRefresh();
@@ -290,26 +325,49 @@ watch(windowWidth, () => {
 <template>
     <div>
         <ClientOnly>
-            <!-- ปุ่มซ้าย/ขวาลอยด้านข้างเหมือน UCarousel ใน SomsriProduceFor -->
-            <div class="relative min-w-0 overflow-hidden">
-                <swiper-container ref="containerRef" :class="props.containerClass">
+            <!-- ตัดการ์ด/สไลด์ที่ล้นออกนอกความกว้างเลย์เอาต์ (โดยเฉพาะ centeredSlides) — ชั้นใน overflow-visible ได้เมื่อ slideOverflowVisible เพื่อ scale ทับการ์ดข้าง -->
+            <div class="min-w-0 w-full max-w-full overflow-x-hidden">
+                <div
+                    class="relative min-w-0"
+                    :class="props.slideOverflowVisible ? 'overflow-visible' : 'overflow-hidden'"
+                >
+                <swiper-container
+                    ref="containerRef"
+                    :class="[
+                        props.containerClass,
+                        props.slideOverflowVisible ? 'carousel-slide-overflow-visible' : '',
+                    ]"
+                >
                     <swiper-slide v-for="slide in slides" :key="slide.key" class="h-auto! min-w-0">
-                        <template v-if="slide.dynamic">
-                            <slot
-                                :item="slide.item"
-                                :index="slide.index"
-                                :active="slide.index === activeRealIndex"
-                            />
-                        </template>
-                        <template v-else>
-                            <slot :name="`item-${slide.slotIndex}`" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
-                        </template>
+                        <div
+                            class="box-border min-h-0 min-w-0"
+                            :style="
+                                slideInnerGutterX > 0
+                                    ? {
+                                          paddingLeft: `${slideInnerGutterX}px`,
+                                          paddingRight: `${slideInnerGutterX}px`,
+                                      }
+                                    : undefined
+                            "
+                        >
+                            <template v-if="slide.dynamic">
+                                <slot
+                                    :item="slide.item"
+                                    :index="slide.index"
+                                    :active="slide.index === activeRealIndex"
+                                />
+                            </template>
+                            <template v-else>
+                                <slot :name="`item-${slide.slotIndex}`" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
+                            </template>
+                        </div>
                     </swiper-slide>
                 </swiper-container>
 
                 <div
                     v-if="props.showNavigation"
-                    class="pointer-events-none absolute inset-0 z-10 flex items-center justify-between px-2 sm:px-3"
+                    class="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 flex items-center justify-between px-2 sm:px-3"
+                    :class="props.slideOverflowVisible ? 'z-30' : 'z-10'"
                 >
                     <UButton
                         icon="i-heroicons-chevron-left"
@@ -328,7 +386,20 @@ watch(windowWidth, () => {
                         @click="handleNext"
                     />
                 </div>
+                </div>
             </div>
         </ClientOnly>
     </div>
 </template>
+
+<!-- Swiper ใช้ shadow DOM — ต้อง ::part(container) เพื่อยก overflow:hidden ของ .swiper -->
+<style>
+.carousel-slide-overflow-visible::part(container) {
+    overflow: visible;
+}
+
+/* เผื่อ Swiper / โมดูลตั้ง overflow บน wrapper — การ์ด scale ล้นข้างต้องไม่ถูกตัด */
+.carousel-slide-overflow-visible::part(wrapper) {
+    overflow: visible;
+}
+</style>

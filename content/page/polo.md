@@ -50,13 +50,39 @@ image: /polo/cover-1.png
 
 :polo-fabric
 
-## [เทคนิคสกรีนเสื้อโปโลหลากหลาย เลือกได้ตามความต้องการ]{style="display: block; padding-bottom: 15px;"}
+## [สมศรีมีเสื้อมีเทคนิคทำโลโก้เสื้อโปโลหลากหลาย]{style="display: block;"}
 
 เรารับทำโลโก้ด้วยเทคนิคที่หลากหลาย สามารถเลือกได้ตามความต้องการ เช่น ปัก, ปักทรานส์เฟอร์, สกรีน และ พิมพ์ลาย ซึ่งเทคนิคแต่ละแบบจะเหมาะกับรูปแบบการสวมใส่ที่แตกต่างกัน เช่น งานปักให้ความทนทาน เหมาะกับเสื้อโปโลพนักงานหรือเสื้อองค์กร งานสกรีนและพิมพ์ลาย เหมาะกับเสื้อโปโลที่ต้องการสีสันหรือดีไซน์เฉพาะตัว ซึ่งในการผลิตเสื้อโปโลกับเรา ลูกค้าสามารถเลือกเทคนิคการสกรีนให้เหมาะสมกับรูปแบบการใช้งานของลูกค้าได้ เรามีทีมงานคอยให้คำแนะนำทุกขั้นตอน เพื่อให้ลูกค้ามั่นใจว่าจะได้เสื้อโปโลที่มีแบบตรงความต้องการทุกตัว
 
 ##
 
-![เทคนิคสกรีน](/polo/type-1-unsmushed.png)
+::carousel{:items="3" :slidesPerView="3" :spaceBetween="16" :slideOverflowVisible="true" :loop="false"}
+#item-1
+  :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
+    :prose-img{src="/pin/งานปักสมศรี1.jpg" alt="ตัวอย่างงานพิมพ์ลาย" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #hover
+    :prose-img{src="/pin/งานปักสมศรี2.jpg" alt="ตัวอย่างงานพิมพ์ลาย เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #caption
+    <p class="text-center text-primary font-medium text-sm sm:text-base">พิมพ์ลาย</p>
+  :::
+#item-2
+  :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
+    :prose-img{src="/pin/งานปักสมศรี4.jpg" alt="ตัวอย่างงานปัก" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #hover
+    :prose-img{src="/pin/งานปักสมศรี6.jpg" alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #caption
+    <p class="text-center text-primary font-medium text-sm sm:text-base">ปักธรรมดา</p>
+  :::
+
+#item-3
+  :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
+    :prose-img{src="/pin/งานปักสมศรี7.jpg" alt="ตัวอย่างงานสกรีน" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #hover
+    :prose-img{src="/pin/งานปักสมศรี8.jpg" alt="ตัวอย่างงานสกรีน เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #caption
+    <p class="text-center text-primary font-medium text-sm sm:text-base">สกรีน</p>
+  :::
+::
 
 ## เรทราคาเสื้อโปโล
 
