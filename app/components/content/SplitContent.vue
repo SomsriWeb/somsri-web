@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
+
 // PROPS
 type SplitDirection = 'left-to-right' | 'right-to-left';
 
@@ -37,10 +39,14 @@ defineSlots<Slots>();
 
 // COMPUTED
 const isRightToLeft = computed(() => props.direction === 'right-to-left');
+
+const rootRef = ref<HTMLElement | null>(null);
+
+useScrollRevealUp(rootRef, { start: 'top 60%' });
 </script>
 
 <template>
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
+    <section ref="rootRef" class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
         <div :class="[props.textClass, isRightToLeft ? 'md:order-2' : 'md:order-1']" class="space-y-4">
             <ProseH2 class="text-primary">
                 <slot name="Headertitle" mdc-unwrap="p" />

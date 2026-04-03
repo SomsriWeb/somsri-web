@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "build": "bunx nuxt build",
+    "dev": "bunx nuxt dev",
+    "generate": "bunx nuxt generate",
+    "preview": "bunx nuxt preview",
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "caniuse-lite": "^1.0.30001754",
     "eslint": "^9.39.2",
     "fabric": "^6.9.0",
+    "gsap": "^3.13.0",
     "libphonenumber-js": "^1.12.35",
     "nuxt": "^4.3.0",
     "nuxt-studio": "1.2.0",

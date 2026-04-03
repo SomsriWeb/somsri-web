@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
+
 // PROPS
 interface Props {
     /**
@@ -13,6 +15,17 @@ withDefaults(defineProps<Props>(), {
 const { data: products } = await useAsyncData('data-products', () => {
     return queryCollection('product').where('featured', '=', true).order('order', 'ASC').all();
 });
+
+const cardsGridRef = ref<HTMLElement | null>(null);
+
+/** แต่ละ HomeProductCard เป็นลูกตรงของ grid — stagger ทีละใบ */
+useScrollRevealUp(cardsGridRef, {
+    childSelector: ':scope > *',
+    start: 'top 75%',
+    duration: 0.75,
+    stagger: 0.14,
+    y: 40,
+});
 </script>
 
 <template>
@@ -22,7 +35,11 @@ const { data: products } = await useAsyncData('data-products', () => {
             <slot name="description" />
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-[2.5rem] mb-5">
+        <div
+            v-if="products?.length"
+            ref="cardsGridRef"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-[2.5rem] mb-5"
+        >
             <HomeProductCard
                 v-for="product in products"
                 :key="product.name"
