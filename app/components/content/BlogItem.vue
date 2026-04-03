@@ -15,7 +15,7 @@
 </script>
 
 <template>
-	<UCard :ui="ui">
+	<UCard :ui="ui" class="shadow hover:scale-105 transition duration-300">
 		<template #header>
 			<div class="aspect-4/3 overflow-hidden">
 				<ProseImg :src="blog.image" :alt="blog.title" class="h-full w-full object-cover" />
