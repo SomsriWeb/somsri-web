@@ -24,10 +24,10 @@ const { data } = await useAsyncData('why-choose-somsri', () => queryCollection('
 </script>
 
 <template>
-    <Container class="bg-primary" no-space>
+    <Container class="bg-primary py-5!" no-space>
         <component :is="titleAsTag" class="font-bold text-white text-4xl mb-5 leading-none"><slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot></component>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 ">
             <div v-for="item in data" :key="item.label" class="flex flex-col justify-start items-center">
                 <ProseImg v-if="item.image" :src="item.image" :alt="item.label" class="max-w-[4rem]" />
                 <p class="font-bold font-stretch-condensed text-xl text-white leading-none text-center mt-3">
