@@ -241,11 +241,27 @@ const iframeKey = computed(() => {
 });
 
 watch(
-    () => [props.active, props.controlMode, props.videoId, props.platform] as const,
-    async () => {
+    () => ({
+        videoId: props.videoId,
+        platform: props.platform,
+        controlMode: props.controlMode,
+        active: props.active,
+        autoplayWhenActive: props.autoplayWhenActive,
+        muted: props.muted,
+    }),
+    async (curr, prev) => {
         if (props.platform !== 'facebook') return;
         if (effectiveControlMode.value !== 'facebook-sdk') return;
-        // ให้แน่ใจว่า player ถูก init
+        const identityChanged =
+            !prev ||
+            prev.videoId !== curr.videoId ||
+            prev.platform !== curr.platform ||
+            prev.controlMode !== curr.controlMode;
+        // เปลี่ยนคลิป / โหมด → ต้อง parse XFBML ใหม่ (ก่อนหน้านี้แค่สั่ง play บน instance เก่า)
+        if (identityChanged) {
+            await initFacebookPlayer();
+            return;
+        }
         if (!fbReady.value) await initFacebookPlayer();
         const inst = fbPlayer.value;
         if (!inst) return;
@@ -317,6 +333,7 @@ useHead(() => {
     return {
         script: [
             {
+                key: `prose-video-ld-${fbPlayerId}`,
                 type: 'application/ld+json',
                 children: JSON.stringify(videoStructuredData.value),
             },
