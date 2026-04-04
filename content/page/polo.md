@@ -17,7 +17,7 @@ seo:
 
 ::landing-page-header-style-four
 ---
-image: /polo/cover-1.png
+image: /polo/header.jpg
 ---
 #title
 รับผลิตเสื้อโปโล

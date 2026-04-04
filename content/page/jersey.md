@@ -4,21 +4,16 @@ description: เราเป็น โรงงานผลิตเสื้อ
   รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
 lineLink: https://contact.somsritshirt.com/ea797
 ---
-::landing-page-header-style-two{image="/jersey/banner.png"}
+::landing-page-header-style-four
+---
+image: /jersey/Jersey.png
+---
 #title
 รับผลิตเสื้อ Jersey
 
 #description
 รับผลิตเสื้อทีม / เสื้อกีฬา Jersey คุณภาพพรีเมียม เนื้อผ้าไมโครสปอร์ต ระบายอากาศดี พิมพ์ลายคมชัด ไม่ลอก ไม่ซีด
-
-#cta
-    ::line-link
-        ::u-button{icon="i-lucide-message-circle"}
-        สอบถามสั่งผลิต
-        ::
-    ::
 ::
-
 ::container
     ::title-with-description{:spacing=3}
     #title

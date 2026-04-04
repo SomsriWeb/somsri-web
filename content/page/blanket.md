@@ -5,19 +5,16 @@ description: เราเป็น โรงงานผลิตเสื้อ
 lineLink: https://contact.somsritshirt.com/99c42
 ---
 
-::landing-page-header-style-two{image="/blanket/banner.png" image-anchor="right"}
+::landing-page-header-style-four
+---
+image: /blanket/blanket-banner.png
+---
 #title
 รับผลิตผ้าห่มคุณภาพสูง นุ่ม อุ่น เกรดพรีเมียม
 
 #description
 เหมาะสำหรับองค์กร โรงแรม รีสอร์ท ของพรีเมียม และแคมเปญของขวัญ เลือกเนื้อผ้า สี และแพ็กเกจจิ้งได้ตามต้องการ
 
-#cta
-    ::line-link
-        ::u-button{icon="i-lucide-message-circle"}
-        สอบถามสั่งผลิต
-        ::
-    ::
 ::
 
 ::container

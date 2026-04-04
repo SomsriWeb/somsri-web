@@ -1,6 +1,6 @@
 ---
 title: รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อยืดสีเฟด ครบวงจร - สมศรีมีเสื้อ
-activeNavbar: false
+activeNavbar: true
 description: โรงงานรับผลิตเสื้อฟอกเกรดพรีเมียมและเสื้อเฟดสไตล์วินเทจยอดนิยม พร้อมเทคนิคพิเศษ ออกแบบฟรี มั่นใจในคุณภาพและประสบการณ์จริงจาก สมศรีมีเสื้อ
 footer: true
 language: th
@@ -12,10 +12,10 @@ navbar: true
     type: application/ld+json
 ---
 
-::landing-page-header-style-three
+::landing-page-header-style-four
 ---
 alt: รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ
-image: /faded-shirt/banner.png
+image: /faded-shirt/faded-banner.png
 ---
 #title
 รับผลิตเสื้อฟอก เสื้อวินเทจ
