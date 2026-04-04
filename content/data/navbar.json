@@ -1,5 +1,5 @@
 {
-    "data": [
+    "main": [
         {
             "label": "หน้าหลัก",
             "label-en": "Home",
@@ -60,5 +60,131 @@
             "url": "/media",
             "url-en": "/media"
         }
-    ]
+    ],
+    "products": {
+        "previewCategories": [
+            {
+                "id": "tshirt",
+                "label": "เสื้อยืด",
+                "label-en": "T-Shirt",
+                "desc": "สวมใส่สบาย ระบายอากาศได้ดี เหมาะกับทุกโอกาส ทั้งลุคลำลองและออกกำลังกาย",
+                "desc-en": "Comfortable and breathable. Suitable for all occasions, from casual wear to workouts.",
+                "image": "/product/tshirt.jpg",
+                "url": "/tshirt",
+                "url-en": "/tshirt-en"
+            },
+            {
+                "id": "polo",
+                "label": "เสื้อโปโล",
+                "label-en": "Polo",
+                "desc": "กึ่งทางการ (Smart Casual) หรือชุดยูนิฟอร์ม ให้ความรู้สึกสุภาพกว่าเสื้อยืดแต่ใส่สบายกว่าเสื้อเชิ้ต",
+                "desc-en": "Smart casual or uniform style. Offers a more polished look than a t-shirt while being more comfortable than a button-down shirt.",
+                "image": "/product/polo.jpg",
+                "url": "/polo",
+                "url-en": "/polo-en"
+            }
+        ],
+        "shrinkCategories": [
+            {
+                "id": "sports",
+                "label": "เสื้อกีฬา",
+                "label-en": "Sport Shirts",
+                "desc": "มีน้ำหนักเบา แห้งไว ลายไม่หลุดลอก ระบายอากาศได้ดี และไม่ติดตัว",
+                "desc-en": "Lightweight, quick-drying, with durable prints. Highly breathable and non-clingy.",
+                "image": "/product/sport.jpg",
+                "url": "/sport",
+                "url-en": "/sport-en"
+            },
+            {
+                "id": "bag",
+                "label": "กระเป๋า",
+                "label-en": "Totebag",
+                "desc": "น้ำหนักเบา จุของได้เยอะ พับเก็บง่ายและเป็นมิตรกับสิ่งแวดล้อม เหมาะสำหรับวันสบายๆ หรือใช้พกพาเป็นกระเป๋าสำรอง",
+                "desc-en": "Lightweight, spacious, foldable, and eco-friendly. Perfect for casual days or as a handy spare bag.",
+                "image": "/product/totebag.png",
+                "url": "/bag",
+                "url-en": "/bag-en"
+            },
+            {
+                "id": "mask",
+                "label": "หน้ากาก",
+                "label-en": "Masks",
+                "desc": "นุ่มกระชับรับรูปหน้า หายใจสะดวก ไม่ระคายเคืองผิว ช่วยปกป้องจากฝุ่นละอองและมลภาวะ ซักทำความสะอาดได้ เหมาะสำหรับการสวมใส่เพื่อสุขอนามัยในทุกๆ วัน",
+                "desc-en": "Soft, snug fit, breathable, and skin-friendly. Protects against dust and pollution. Washable and ideal for daily hygiene.",
+                "image": "/product/mask.jpg",
+                "url": "/mask",
+                "url-en": "/mask-en"
+            },
+            {
+                "id": "hat",
+                "label": "หมวก",
+                "label-en": "Hats",
+                "desc": "น้ำหนักเบา สวมใส่กระชับ ช่วยปกป้องศีรษะและใบหน้าจากรังสียูวี ผลิตจากวัสดุที่ระบายอากาศได้ดี ไม่สะสมความร้อน ช่วยเสริมสไตล์ให้ดูโดดเด่นและพร้อมรับทุกกิจกรรมกลางแจ้ง",
+                "desc-en": "Lightweight and secure fit. Protects your head and face from UV rays. Made from breathable, heat-dissipating materials to elevate your style for any outdoor activity.",
+                "image": "/product/hat.png",
+                "url": "/hat",
+                "url-en": "/hat-en"
+            },
+            {
+                "id": "jersey",
+                "label": "เสื้อ Jersey",
+                "label-en": "Jersey",
+                "desc": "โดดเด่นด้วยเนื้อผ้าที่เบาสบาย ทนทาน และแห้งไวเป็นพิเศษ รองรับงานพิมพ์ลายกราฟิกได้เต็มตัว สีสันคมชัดไม่ซีดจาง ออกแบบมาเพื่อประสิทธิภาพสูงสุดในการเล่นกีฬาและกิจกรรมที่ต้องการความคล่องตัว",
+                "desc-en": "Features exceptionally lightweight, durable, and quick-drying fabrics. Supports full-body vibrant, fade-resistant graphic prints. Designed for maximum performance in sports and high-mobility activities.",
+                "image": "/product/jersey.png",
+                "url": "/jersey",
+                "url-en": "/jersey-en"
+            },
+            {
+                "id": "brand",
+                "label": "เสื้อแบรนด์",
+                "label-en": "Brand",
+                "desc": "เสื้อผ้าสั่งผลิตที่เน้นคุณภาพการตัดเย็บระดับพรีเมียมและวัสดุเกรดเยี่ยม ถ่ายทอดเอกลักษณ์เฉพาะตัวผ่านดีไซน์ สีสัน งานสกรีน และงานปักที่ละเอียดอ่อน เพื่อสร้างมูลค่า ความน่าเชื่อถือ และประสบการณ์ที่ดีที่สุดแก่ผู้สวมใส่",
+                "desc-en": "Custom-made apparel focusing on premium tailoring and top-grade materials. Reflects unique brand identity through design, color, and delicate screen printing or embroidery to create value, trust, and the best wearer experience.",
+                "image": "/product/band.jpg",
+                "url": "/brand",
+                "url-en": "/brand-en"
+            },
+            {
+                "id": "hawaii",
+                "label": "เสื้อเชิ้ตฮาวาย",
+                "label-en": "Hawaiian Shirt",
+                "desc": "เสื้อเชิ้ตทรงหลวมคอปกเปิด (Camp Collar) สวมใส่สบาย ระบายความร้อนได้ดี โดดเด่นด้วยเนื้อผ้าที่น้ำหนักเบาและลวดลายพิมพ์ที่สดใสเต็มตัว ให้ลุคที่ดูผ่อนคลาย คล่องตัว เหมาะสำหรับช่วงซัมเมอร์และวันหยุดพักผ่อน",
+                "desc-en": "Loose-fitting camp collar shirt that is comfortable and heat-dissipating. Features lightweight fabric with vibrant all-over prints. Provides a relaxed, agile look perfect for summer and vacations.",
+                "image": "/product/hawaiian-shirt.png",
+                "url": "/hawaiian-shirt",
+                "url-en": "/hawaiian-shirt-en"
+            },
+            {
+                "id": "blanket",
+                "label": "ผ้าห่ม",
+                "label-en": "Blanket",
+                "desc": "มอบสัมผัสที่นุ่มนวลและกักเก็บความอบอุ่นได้อย่างพอเหมาะ ผลิตจากวัสดุที่ระบายอากาศได้ดี ไม่ก่อให้เกิดการระคายเคืองและไม่กักเก็บฝุ่นละออง ออกแบบมาเพื่อสร้างประสบการณ์การนอนหลับและการพักผ่อนที่สมบูรณ์แบบที่สุด",
+                "desc-en": "Provides a soft touch and optimal warmth. Made from breathable, non-irritating, and dust-resistant materials. Designed to create the perfect sleep and relaxation experience.",
+                "image": "/product/blanket.png",
+                "url": "/blanket",
+                "url-en": "/blanket-en"
+            },
+            {
+                "id": "pants",
+                "label": "กางเกง",
+                "label-en": "Pants",
+                "desc": "ออกแบบโดยคำนึงถึงสรีระและความคล่องตัวเป็นหลัก เลือกใช้วัสดุที่ทนทาน สวมใส่สบาย ตัดเย็บประณีตเพื่อให้ได้ทรงที่สวยงามและอยู่ตัว ช่วยเสริมบุคลิกภาพ พร้อมตอบโจทย์ทุกกิจกรรมและสไตล์การใช้ชีวิต",
+                "desc-en": "Designed with anatomy and mobility in mind. Uses durable, comfortable materials with neat tailoring for a beautiful, shape-retaining fit. Enhances your look and suits all activities and lifestyles.",
+                "image": "/product/pants.jpg",
+                "url": "/pants",
+                "url-en": "/pants-en"
+            },
+            {
+                "id": "others",
+                "label": "สินค้าอื่นๆ",
+                "label-en": "Other Products",
+                "desc": "รวบรวมผลิตภัณฑ์สิ่งทอและอุปกรณ์เสริมที่ผลิตด้วยความประณีต เน้นฟังก์ชันการใช้งานที่ตอบโจทย์เฉพาะทาง วัสดุทนทานและดูแลรักษาง่าย เพื่อเติมเต็มความสมบูรณ์แบบให้กับทุกไลฟ์สไตล์และทุกธุรกิจ",
+                "desc-en": "A collection of meticulously crafted textile products and accessories. Focuses on specialized functions, durable materials, and easy care to complement every lifestyle and business.",
+                "image": "/product/other.jpg",
+                "url": "/other-product",
+                "url-en": "/other-product-en"
+            }
+        ]
+    }
 }
