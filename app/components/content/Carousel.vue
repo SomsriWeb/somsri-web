@@ -51,9 +51,10 @@ interface Props {
 
     /**
      * `simple`: มือถือ 1 คอลัมน์, ≥640px ใช้ slidesPerView
+     * `simple-lg`: 1 คอลัมน์จนกว่า ≥1024px (lg) แล้วค่อยใช้ slidesPerView
      * `portfolio-grid`: สอดคล้อง grid หน้าแรก — 1 / sm:2 / md:3 / xl:slidesPerView
      */
-    breakpointsPreset?: 'simple' | 'portfolio-grid';
+    breakpointsPreset?: 'simple' | 'simple-lg' | 'portfolio-grid';
 
     /**
      * ฐานความกว้างสำหรับ breakpoints ของ Swiper
@@ -174,6 +175,7 @@ const slides = computed((): SlideUnion[] => {
 const swiperOptions = computed(() => {
     const spaceBetween = props.spaceBetween + slideSpaceExtraPx.value;
     const isPortfolioGrid = props.breakpointsPreset === 'portfolio-grid';
+    const isSimpleLg = props.breakpointsPreset === 'simple-lg';
 
     const breakpoints = isPortfolioGrid
         ? {
@@ -181,10 +183,15 @@ const swiperOptions = computed(() => {
               768: { slidesPerView: 3, spaceBetween },
               1280: { slidesPerView: props.slidesPerView, spaceBetween },
           }
-        : {
-              320: { slidesPerView: 1, spaceBetween },
-              640: { slidesPerView: props.slidesPerView, spaceBetween },
-          };
+        : isSimpleLg
+          ? {
+                320: { slidesPerView: 1, spaceBetween },
+                1024: { slidesPerView: props.slidesPerView, spaceBetween },
+            }
+          : {
+                320: { slidesPerView: 1, spaceBetween },
+                640: { slidesPerView: props.slidesPerView, spaceBetween },
+            };
 
     return {
         breakpointsBase: props.breakpointsBase,

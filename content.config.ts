@@ -448,6 +448,8 @@ export default defineContentConfig({
                 platform: z.enum(['youtube', 'facebook']).default('youtube'),
                 order: z.number(),
                 thumbnail: z.string().optional(),
+                muted: z.boolean().optional(),
+                aspectRatio: z.enum(['16/9', '9/16']).optional(),
             }),
         }),
     },

@@ -116,14 +116,58 @@ function loadFacebookSdk(): Promise<any> {
 const fbContainer = ref<HTMLElement | null>(null);
 const fbPlayer = shallowRef<any>(null);
 const fbReady = ref(false);
-const fbPlayerId = `fb-video-${Math.random().toString(36).slice(2)}`;
+/** id คงที่ต่อ instance — ใช้ useId แทน Math.random() เพื่อ SSR/hydration */
+const fbPlayerId = `fb-video-${useId().replace(/[^\w-]/g, '')}`;
 const fbSdkFailed = ref(false);
+/** เก็บ handler เดิมเพื่อ unsubscribe ก่อน init ซ้ำ / unmount */
+let xfbmlReadyHandler: ((msg: any) => void) | null = null;
 
 const effectiveControlMode = computed<'src' | 'facebook-sdk'>(() => {
     if (props.platform !== 'facebook') return 'src';
     if (props.controlMode !== 'facebook-sdk') return 'src';
     return fbSdkFailed.value ? 'src' : 'facebook-sdk';
 });
+
+/** URL หน้าวิดีโอบน Facebook (ใช้ทั้ง XFBML data-href, iframe, schema) */
+const facebookPageUrl = computed(() =>
+    props.videoId.includes('/') ? `https://www.facebook.com/${props.videoId}` : `https://www.facebook.com/watch/?v=${props.videoId}`,
+);
+
+function buildFacebookPluginUrl(includeAutoplay: boolean) {
+    const p = new URLSearchParams();
+    p.set('href', facebookPageUrl.value);
+    p.set('show_text', 'false');
+    p.set('width', '560');
+    const wantAutoplay = includeAutoplay && (props.autoplay || props.autoplayWhenActive) && props.active;
+    if (wantAutoplay) {
+        p.set('autoplay', '1');
+        if (props.muted || props.autoplayWhenActive) p.set('mute', '1');
+    }
+    return `https://www.facebook.com/plugins/video.php?${p.toString()}`;
+}
+
+/** YouTube: allowAutoplay=false = โหมด inactive (ไม่ส่ง autoplay; mute เฉพาะเมื่อ props.muted) */
+function buildYoutubeEmbedUrl(allowAutoplay: boolean) {
+    const shouldAutoplay = allowAutoplay && (props.autoplay || props.autoplayWhenActive) && props.active;
+    const params = new URLSearchParams();
+    if (shouldAutoplay) params.append('autoplay', '1');
+    if (props.muted || shouldAutoplay) params.append('mute', '1');
+    params.append('rel', '0');
+    const qs = params.toString();
+    return `https://www.youtube.com/embed/${props.videoId}${qs ? `?${qs}` : ''}`;
+}
+
+function applyFacebookPlayerAV(inst: any) {
+    try {
+        if (props.autoplayWhenActive) inst.mute?.();
+        else if (props.muted) inst.mute?.();
+        else inst.unmute?.();
+        if (props.active) inst.play?.();
+        else inst.pause?.();
+    } catch {
+        // ignore
+    }
+}
 
 async function initFacebookPlayer() {
     if (props.platform !== 'facebook') return;
@@ -144,10 +188,7 @@ async function initFacebookPlayer() {
     const div = document.createElement('div');
     div.className = 'fb-video';
     div.id = fbPlayerId;
-    div.setAttribute(
-        'data-href',
-        props.videoId.includes('/') ? `https://www.facebook.com/${props.videoId}` : `https://www.facebook.com/watch/?v=${props.videoId}`,
-    );
+    div.setAttribute('data-href', facebookPageUrl.value);
     div.setAttribute('data-allowfullscreen', 'true');
     div.setAttribute('data-autoplay', 'false');
     div.setAttribute('data-show-text', 'false');
@@ -156,74 +197,35 @@ async function initFacebookPlayer() {
     div.setAttribute('data-width', '560');
     fbContainer.value.appendChild(div);
 
-    FB.Event.subscribe('xfbml.ready', (msg: any) => {
+    if (xfbmlReadyHandler) {
+        try {
+            FB.Event?.unsubscribe?.('xfbml.ready', xfbmlReadyHandler);
+        } catch {
+            // ignore
+        }
+        xfbmlReadyHandler = null;
+    }
+
+    xfbmlReadyHandler = (msg: any) => {
         if (msg?.type !== 'video') return;
         if (msg?.id !== fbPlayerId) return;
         fbPlayer.value = msg.instance;
         fbReady.value = true;
-        try {
-            if (props.autoplayWhenActive) msg.instance?.mute?.();
-            else if (props.muted) msg.instance?.mute?.();
-            else msg.instance?.unmute?.();
-            if (props.active) msg.instance?.play?.();
-            else msg.instance?.pause?.();
-        } catch {
-            // ignore
-        }
-    });
+        applyFacebookPlayerAV(msg.instance);
+    };
+    FB.Event.subscribe('xfbml.ready', xfbmlReadyHandler);
 
     FB.XFBML?.parse?.(fbContainer.value);
 }
 
-const embedUrl = computed(() => {
-    const shouldAutoplay = (props.autoplay || props.autoplayWhenActive) && props.active;
+const embedUrl = computed(() =>
+    props.platform === 'facebook' ? buildFacebookPluginUrl(true) : buildYoutubeEmbedUrl(true),
+);
 
-    if (props.platform === 'facebook') {
-        // Facebook Video Embed - support both watch and reel formats
-        const videoUrl = props.videoId.includes('/')
-            ? `https://www.facebook.com/${props.videoId}`
-            : `https://www.facebook.com/watch/?v=${props.videoId}`;
-        const params = new URLSearchParams();
-        params.set('href', videoUrl);
-        params.set('show_text', 'false');
-        params.set('width', '560');
-        if (shouldAutoplay) {
-            params.set('autoplay', '1');
-            // Facebook autoplay มักต้อง mute
-            if (props.muted || props.autoplayWhenActive) params.set('mute', '1');
-        }
-        return `https://www.facebook.com/plugins/video.php?${params.toString()}`;
-    }
-
-    // YouTube Video Embed
-    const params = new URLSearchParams();
-    if (shouldAutoplay) params.append('autoplay', '1');
-    if (props.muted || shouldAutoplay) params.append('mute', '1');
-    params.append('rel', '0');
-
-    const queryString = params.toString();
-    return `https://www.youtube.com/embed/${props.videoId}${queryString ? '?' + queryString : ''}`;
-});
-
-const inactiveEmbedUrl = computed(() => {
-    // เหมือน embedUrl แต่ “ไม่ autoplay” เพื่อให้เห็นตัว player/thumbnail ที่สไลด์ข้างๆ
-    if (props.platform === 'facebook') {
-        const videoUrl = props.videoId.includes('/')
-            ? `https://www.facebook.com/${props.videoId}`
-            : `https://www.facebook.com/watch/?v=${props.videoId}`;
-        const params = new URLSearchParams();
-        params.set('href', videoUrl);
-        params.set('show_text', 'false');
-        params.set('width', '560');
-        return `https://www.facebook.com/plugins/video.php?${params.toString()}`;
-    }
-
-    const params = new URLSearchParams();
-    if (props.muted) params.append('mute', '1');
-    params.append('rel', '0');
-    const queryString = params.toString();
-    return `https://www.youtube.com/embed/${props.videoId}${queryString ? '?' + queryString : ''}`;
-});
+/** ไม่ autoplay — สไลด์ข้างๆ / JSON-LD */
+const inactiveEmbedUrl = computed(() =>
+    props.platform === 'facebook' ? buildFacebookPluginUrl(false) : buildYoutubeEmbedUrl(false),
+);
 
 const iframeSrc = computed(() => {
     if (props.pauseMode === 'blank') return props.active ? embedUrl.value : 'about:blank';
@@ -247,13 +249,7 @@ watch(
         if (!fbReady.value) await initFacebookPlayer();
         const inst = fbPlayer.value;
         if (!inst) return;
-        try {
-            if (props.active && props.autoplayWhenActive) inst.mute?.();
-            if (props.active) inst.play?.();
-            else inst.pause?.();
-        } catch {
-            // ignore
-        }
+        applyFacebookPlayerAV(inst);
     },
     { flush: 'post' },
 );
@@ -264,15 +260,24 @@ onMounted(() => {
     }
 });
 
-// Get video URL for structured data
-const videoUrl = computed(() => {
-    if (props.platform === 'facebook') {
-        return props.videoId.includes('/')
-            ? `https://www.facebook.com/${props.videoId}`
-            : `https://www.facebook.com/watch/?v=${props.videoId}`;
+onBeforeUnmount(() => {
+    const FB = typeof window !== 'undefined' ? window.FB : null;
+    if (xfbmlReadyHandler && FB?.Event?.unsubscribe) {
+        try {
+            FB.Event.unsubscribe('xfbml.ready', xfbmlReadyHandler);
+        } catch {
+            // ignore
+        }
     }
-    return `https://www.youtube.com/watch?v=${props.videoId}`;
+    xfbmlReadyHandler = null;
+    fbPlayer.value = null;
+    fbReady.value = false;
+    if (fbContainer.value) fbContainer.value.innerHTML = '';
 });
+
+const videoUrl = computed(() =>
+    props.platform === 'facebook' ? facebookPageUrl.value : `https://www.youtube.com/watch?v=${props.videoId}`,
+);
 
 // Get thumbnail URL for structured data
 const thumbnailUrl = computed(() => {
@@ -285,18 +290,17 @@ const thumbnailUrl = computed(() => {
     return `${siteUrl}/placeholder-video.png`;
 });
 
-// Structured data for VideoObject
+// Structured data for VideoObject (embedUrl คงที่ — ไม่ผูกกับ active เพื่อไม่ให้ JSON-LD เปลี่ยนตามสไลด์)
 const videoStructuredData = computed(() => {
     return {
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
-        '@id': `${siteUrl}/video/${props.videoId}`,
+        '@id': `${siteUrl}/video/${encodeURIComponent(props.videoId)}`,
         name: props.title,
         description: props.description || props.title,
         thumbnailUrl: thumbnailUrl.value,
-        uploadDate: new Date().toISOString(),
         contentUrl: videoUrl.value,
-        embedUrl: embedUrl.value,
+        embedUrl: inactiveEmbedUrl.value,
         publisher: {
             '@type': 'Organization',
             name: 'สมศรีมีเสื้อ',
@@ -308,16 +312,16 @@ const videoStructuredData = computed(() => {
     };
 });
 
-// Add structured data to head
-useHead({
-    script: [
-        videoStructuredData.value
-            ? {
-                  type: 'application/ld+json',
-                  children: JSON.stringify(videoStructuredData.value),
-              }
-            : null,
-    ].filter(Boolean),
+useHead(() => {
+    if (!props.videoId) return {};
+    return {
+        script: [
+            {
+                type: 'application/ld+json',
+                children: JSON.stringify(videoStructuredData.value),
+            },
+        ],
+    };
 });
 </script>
 
