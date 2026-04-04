@@ -57,7 +57,7 @@ useScrollRevealUp(rootRef, { start: 'top 60%' });
             <slot name="textExtra" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
         </div>
 
-        <div :class="[props.imageClass, isRightToLeft ? 'md:order-1' : 'md:order-2']" class="max-w-full ">
+        <div :class="[props.imageClass, isRightToLeft ? 'md:order-1' : 'md:order-2']" class="max-w-4/5 mx-auto">
             <slot name="image" mdc-unwrap="p" />
         </div>
     </section>
