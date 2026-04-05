@@ -15,9 +15,9 @@ seo:
     type: application/ld+json
 ---
 
-::landing-page-header-style-two
+::landing-page-header-style-four
 ---
-image: /sport-shirt-min-100/banner.png
+image: /sport/sport-banner.png
 ---
 #title
 รับผลิตเสื้อกีฬา
@@ -61,15 +61,15 @@ image: /sport-shirt-min-100/banner.png
   :prose-img{.max-w-[40rem] alt="sport price" src="/sport/price_table.jpg"}
   :::
 
-:how-to-order
+  :how-to-order
 
-  :::line-link
-    ::::u-button
-      :::::unwrap-mdc
-      สั่งทำเสื้อ
-      :::::
-    ::::
-  :::
+  ::center
+    :::line-link
+      ::::line-button
+      แอดไลน์สั่งทำเสื้อ
+      ::::
+    :::
+  ::
 
   :::sport
   #subtitle
@@ -78,8 +78,8 @@ image: /sport-shirt-min-100/banner.png
   #description
   รับประกันความพึงพอใจมากถึง 90 วัน
   :::
-
-:prose-img{.max-w-[40rem] alt="งบประมาณ ทำเสื้อแบรนด์ตัวเอง เราต้องคิดเรื่องค่าออกแบบด้วย" src="/sport/preview-unsmushed.png"}
-
-:sport-btn
+  ::center
+    :prose-img{.max-w-[40rem] alt="งบประมาณ ทำเสื้อแบรนด์ตัวเอง เราต้องคิดเรื่องค่าออกแบบด้วย" src="/sport/preview-unsmushed.png"}
+  ::
+  :sport-btn
 ::

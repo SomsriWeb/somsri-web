@@ -1,0 +1,15 @@
+{
+    "uid": "baby-french",
+    "imageUrl": "/fabrics/baby-french.jpg",
+    "forProductType": ["tshirt", "polo", "sport"],
+    "nameTh": "เบบี้เฟรนช์เทอร์รี",
+    "nameEn": "Baby French Terry",
+    "recommendForStyle": "เสื้อแจ็คเก็ตเบา ชุดกีฬา ลุคสตรีท",
+    "advantage": [
+        "ผิวด้านในนุ่ม สัมผัสสบาย",
+        "ซับเหงื่อได้ดี",
+        "ยืดหยุ่น พับเก็บง่าย"
+    ],
+    "disadvantage": [],
+    "order": 17
+}

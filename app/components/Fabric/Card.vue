@@ -24,12 +24,16 @@ function openPopup() {
 }
 </script>
 <template>
-    <div class="cursor-pointer">
-        <div class="relative rounded-xl overflow-hidden hover:scale-105 transition-all duration-300">
+    <div class="fabric-card cursor-pointer h-full min-w-0">
+        <div
+            class="fabric-card__media relative aspect-square w-full overflow-hidden rounded-xl transition-all duration-300 hover:scale-105"
+        >
             <ProseImg :src="imageUrl" :alt="alt || name" @click="openPopup" />
 
-            <div class="bg-primary absolute bottom-0 w-full p-0.5 px-2 md:px-3 text-white font-medium text-xs xl:text-lg">
-                <p>{{ name }}</p>
+            <div
+                class="bg-primary absolute inset-x-0 bottom-0 w-full p-0.5 px-2 md:px-3 text-white font-medium text-xs xl:text-lg"
+            >
+                <p class="line-clamp-2 min-h-[2lh] leading-tight">{{ name }}</p>
             </div>
         </div>
 
@@ -40,3 +44,13 @@ function openPopup() {
         </UModal>
     </div>
 </template>
+
+<style scoped>
+/* ProseImg ใส่ w-full อย่างเดียว — บังคับเต็มกรอบจัตุรัส + crop ให้การ์ดเท่ากัน */
+.fabric-card__media :deep(img) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+</style>

@@ -1,0 +1,15 @@
+{
+    "uid": "uv-protection",
+    "imageUrl": "/fabrics/ผ้ากัน-UV.jpg",
+    "forProductType": ["tshirt", "polo", "sport"],
+    "nameTh": "ผ้ากัน UV",
+    "nameEn": "UV Protection Fabric",
+    "recommendForStyle": "เสื้อกลางแจ้ง กิจกรรมแดดจัด",
+    "advantage": [
+        "ช่วยป้องกันรังสียูวี",
+        "เหมาะงานกีฬาและท่องเที่ยว",
+        "สวมใส่สบาย"
+    ],
+    "disadvantage": [],
+    "order": 27
+}

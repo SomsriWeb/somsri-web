@@ -1,0 +1,15 @@
+{
+    "uid": "drytech-air",
+    "imageUrl": "/fabrics/Drytech-air.jpg",
+    "forProductType": ["tshirt", "polo", "sport"],
+    "nameTh": "ดรายเทค แอร์",
+    "nameEn": "Drytech Air",
+    "recommendForStyle": "เสื้อกีฬา กิจกรรมกลางแจ้ง",
+    "advantage": [
+        "ระบายอากาศ แห้งไว",
+        "เบา สวมสบาย",
+        "เหมาะอากาศร้อน"
+    ],
+    "disadvantage": [],
+    "order": 24
+}
