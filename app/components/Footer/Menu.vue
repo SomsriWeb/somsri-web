@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { LANGUAGE } from '~/lib/language';
+import type { NavbarCollectionItem } from '@nuxt/content';
 
 const { data: menus } = await useAsyncData('menu', () => queryCollection('navbar').all());
 const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
@@ -12,7 +13,8 @@ const data = {
     },
 };
 
-const menuItems = computed(() => menus.value?.[0]?.data || []);
+const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
+const menuItems = computed(() => navbarData.value.main || []);
 const firstColumnMenus = computed(() => menuItems.value.slice(0, 5));
 const secondColumnMenus = computed(() => menuItems.value.slice(5));
 </script>
