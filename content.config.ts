@@ -48,7 +48,7 @@ export default defineContentConfig({
             type: 'data',
             source: 'data/navbar.json',
             schema: z.object({
-                data: z.array(
+                main: z.array(
                     z.object({
                         label: z.string(),
                         'label-en': z.string(),
@@ -56,6 +56,38 @@ export default defineContentConfig({
                         'url-en': z.string(),
                     }),
                 ),
+                products: z
+                    .object({
+                        previewCategories: z
+                            .array(
+                                z.object({
+                                    id: z.string(),
+                                    label: z.string(),
+                                    'label-en': z.string(),
+                                    url: z.string(),
+                                    'url-en': z.string(),
+                                    image: property(z.string()).editor({ input: 'media' }),
+                                    desc: z.string().optional(),
+                                    'desc-en': z.string().optional(),
+                                }),
+                            )
+                            .optional(),
+                        shrinkCategories: z
+                            .array(
+                                z.object({
+                                    id: z.string(),
+                                    label: z.string(),
+                                    'label-en': z.string(),
+                                    url: z.string(),
+                                    'url-en': z.string(),
+                                    image: property(z.string()).editor({ input: 'media' }),
+                                    desc: z.string().optional(),
+                                    'desc-en': z.string().optional(),
+                                }),
+                            )
+                            .optional(),
+                    })
+                    .optional(),
             }),
         }),
 
