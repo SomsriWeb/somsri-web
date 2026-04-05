@@ -26,31 +26,31 @@ const activeIndex = ref<number | null>(null);
 
 const slides = [
     {
-        image: '/faded-shirt/banner.png',
+        image: '/faded-shirt/SoftWash.png',
         title: 'Soft Wash',
         subtitle: 'เทคนิคฟอกแบบละเอียด',
         desc: 'ฟอกแบบควบคุมโทนอย่างละเอียดสีเนียนสม่ำเสมอ ไม่มีลายด่างชัด แทบดูไม่ออกว่าฟอก ให้ลุคมินิมอล สะอาด ดูดี',
     },
     {
-        image: '/faded-shirt/maiyarap.png',
+        image: '/faded-shirt/RoughWash.png',
         title: 'Rough Wash',
         subtitle: 'เทคนิคฟอกแบบหยาบ',
         desc: 'สีจะซีดแบบ "ไม่เนียน" มีรอยด่าง รอยถู ให้ความรู้สึกผ่านการใช้งานมาแล้ว เหมาะกับแบรนด์สายฮาร์ด สายลุย ลุคดิบ เท่ แบบสาย วินเทจจริงจัง',
     },
     {
-        image: '/faded-shirt/what-is-faded-shirt.jpg',
+        image: '/faded-shirt/CrackleWash.png',
         title: 'Crackle Wash',
         subtitle: 'เทคนิคฟอกแบบหินแตก',
         desc: 'ลายเหมือน "พื้นดินแตกระแหง" สีจะแตกเป็นเส้นๆ ไม่สม่ำเสมอ เหมาะกับสายสตรีท เกิดจากจากฟอก + เคมี + การบิด/กดผ้าให้แตกตัว',
     },
     {
-        image: '/faded-shirt/banner.png',
+        image: '/faded-shirt/SnowWash.png',
         title: 'Snow Wash',
         subtitle: 'เทคนิคฟอกแบบสโนว์',
         desc: 'ลายกระจายเป็น "จุดขาวๆ คล้ายหิมะ" ใช้การพ่นสารฟอกแบบสุ่มลงบนผ้า สีพื้นยังอยู่ แต่มีจุดด่างทั่วตัว ดูแฟชั่น มีลูกเล่น แต่ไม่แรงเกิน',
     },
     {
-        image: '/faded-shirt/maiyarap.png',
+        image: '/faded-shirt/GarmentWash.png',
         title: 'Garment Wash',
         subtitle: 'เทคนิคฟอกแบบเก่า',
         desc: 'สีซีดลงทั้งตัวแบบ "ธรรมชาติ" ไม่มีลายแตกชัด เน้นความนุ่มและสีเฟด ผ้านุ่ม ใส่สบาย ดูคลาสสิค',

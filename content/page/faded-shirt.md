@@ -28,136 +28,215 @@ image: /faded-shirt/faded-banner.png
 ::
 
 ::container
-  :::prose-p{.text-center}
-  หากคุณกำลังมองหาแหล่งรับผลิตเสื้อฟอกคุณภาพดี หรือต้องการสร้างแบรนด์ที่มีเอกลักษณ์เฉพาะตัวไม่เหมือนใคร ไม่ว่าจะเป็นเสื้อยืดสีฟอกสำหรับผู้ชายหรือผู้หญิง ในราคาขายส่ง
-  :::
-
-  :::prose-p{.text-center}
-  บริการรับผลิตเสื้อฟอก เสื้อวินเทจ ตอบโจทย์ความต้องการตรงจุด โดยที่คุณสามารถกำหนดรายละเอียดต่าง ๆ ได้เองไม่ว่าจะเป็น ตั้งแต่ขั้นตอนการออกแบบแพทเทิร์นเสื้อผ้า เลือกคุณภาพเนื้อผ้า การออกแบบลวดลายของระดับการฟอกฟรี ด้วยเทคนิค และประสบการณ์มากมาย
-  :::
-
-![ตัวอย่าง สั่งผลิตเสื้อวินเทจ สี Faded กับสมศรีมีเสื้อ](/faded-shirt/maiyarap.png)
-
-## เสื้อฟอกสีเฟด คืออะไร
-
-เสื้อฟอกสีเฟดยอดนิยมที่เป็นตำนานมาหลายยุค สำหรับเหล่าผู้ชื่นชอบในแฟชั่นแบบวินเทจ มักจะเป็นโทนสีดำเทา แบ่งเป็นหลายเฉดสีด้วยกัน อย่างดำสนิท ดำซีด ดำออกแดง หรือออกเขียว มาการเพิ่มมูลค่าให้กับเสื้อ โดยการนำเสื้อใหม่มือหนึ่งไปผ่านกระบวนการฟอก หรือลงสารเคมี Bleach ให้เกิดลักษณะพิเศษ สีซีดลง รอยด่างประปราย เป็นเอกลักษณ์เฉพาะตัว โดยทำให้มีความคล้ายผ้าที่ผ่านการใช้งานมาแล้ว หรือที่เรียกกันว่า ผ้าวินเทจ (Vintage)
-
-ซึ่งในปัจจุบันได้รับความนิยมอย่างมาก เพราะลวดลายของเสื้อดูมีมิติ ดูคูลๆ ไม่ซ้ำใคร โดยผ้าที่ใช้เป็นผ้า cotton หรือผ้าฝ้ายเกรดพรีเมี่ยมแท้ 100% ที่ความหนา 20 Comb เพื่อให้ระบายอากาศดี ผ้าฟูขึ้น ได้ผิวสัมผัสอ่อนนุ่มสบายผิว ซึมซับเหงื่อได้ดี ทนทาน และมักจะสั่งผลิตเสื้อฟอกทรงโอเวอร์ไซส์ (Oversize) หรือทรงเสื้อหลวมๆ ที่มีขนาดใหญ่กว่าไซส์ปกติเพื่อเพิ่มความเท่ ดูมีสไตล์ เคลื่อนไหวสะดวก ไม่อึดอัด ไม่รัด
-
-  :::line-link{class="https://contact.somsritshirt.com/c4119"}
-    ::::line-button
-    แอดไลน์สั่งทำเสื้อ
-    ::::
-  :::
-
-![เสื้อสีฟอก หรือ เสื้อสี Faded กำลังได้รับความนิยมในปัจจุบัน กับสไตล์วินเทจ โดยผ่าน กระบวนการฟอกสีเสื้อ](/faded-shirt/what-is-faded-shirt.jpg)
-
-  :::somsri-produce-for
+  :::title-with-description{:spacing=3}
   #title
-  ลูกค้าที่เคยใช้บริการ ผลิตเสื้อวินเทจ
+  :::prose-h2{size="2xl"}
+  เสื้อฟอกคืออะไร ?
+  :::
 
   #description
-  สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
+  ::::prose-p
+  เสื้อฟอกสีเฟดยอดนิยมที่เป็นตำนานมาหลายยุค สำหรับเหล่าผู้ชื่นชอบในแฟชั่นแบบวินเทจ มักจะเป็นโทนสีดำเทา แบ่งเป็นหลายเฉดสีด้วยกัน อย่างดำสนิท ดำซีด ดำออกแดง หรือออกเขียว มาการเพิ่มมูลค่าให้กับเสื้อ โดยการนำเสื้อใหม่มือหนึ่งไปผ่านกระบวนการฟอก หรือลงสารเคมี Bleach ให้เกิดลักษณะพิเศษ สีซีดลง รอยด่างประปราย เป็นเอกลักษณ์เฉพาะตัว โดยทำให้มีความคล้ายผ้าที่ผ่านการใช้งานมาแล้ว หรือที่เรียกกันว่า ผ้าวินเทจ (Vintage)
   :::
 
-  :::title-with-description
-  #title
-  ## ตัวอย่างงานเสื้อฟอก
+  :::prose-p
+  ซึ่งในปัจจุบันได้รับความนิยมอย่างมาก เพราะลวดลายของเสื้อดูมีมิติ ดูคูลๆ ไม่ซ้ำใคร โดยผ้าที่ใช้เป็นผ้า cotton หรือผ้าฝ้ายเกรดพรีเมี่ยมแท้ 100% ที่ความหนา 20 Comb เพื่อให้ระบายอากาศดี ผ้าฟูขึ้น ได้ผิวสัมผัสอ่อนนุ่มสบายผิว ซึมซับเหงื่อได้ดี ทนทาน และมักจะสั่งผลิตเสื้อฟอกทรงโอเวอร์ไซส์ (Oversize) หรือทรงเสื้อหลวมๆ ที่มีขนาดใหญ่กว่าไซส์ปกติเพื่อเพิ่มความเท่ ดูมีสไตล์ เคลื่อนไหวสะดวก ไม่อึดอัด ไม่รัด
+  :::
 
+  :::split-content
+  ---
+  direction: left-to-right
+  compact: true
+  ---
+  #Headertitle
+  ข้อดีของเสื้อฟอก
   #description
-  “สมศรีมีเสื้อ” มีกระบวนการผลิตที่ได้มาตรฐาน ความเชี่ยวชาญในการผลิตเสื้อวงดนตรีคุณภาพสูง เพื่อให้เสื้อผ้าที่ผลิตออกมาทนทาน และมีอายุการใช้งานยาวนาน ใส่ใจทุกขั้นตอนการผลิต ไม่ว่าจะงานเล็กงานใหญ่ ผลิตตามความต้องการของลูกค้า เริ่มต้นการผลิตเพียงแค่ 100 ตัว!!
+  - นุ่ม ใส่สบายตั้งแต่ครั้งแรก ไม่ต้องรอให้ซักหลายรอบ
+  - สีดูเท่ มีสไตล์ ไม่เรียบจนเกินไป
+  - หดตัวน้อย เพราะผ่านการซักมาแล้วก่อนขาย
+  - ให้ลุควินเทจแบบธรรมชาติ ใส่ง่าย เข้ากับหลายสไตล์
+
+  #image
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/faded-shirt1.jpg"}
   :::
 
-  :::card
-  ![รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ](/band-shirt/sample-1.png)
-
-    ::::prose-h3{.text-center as="h4"}
-    Cotton 100%
-    ::::
-
-    ::::prose-p{.text-center}
-    ผ้าคอตตอน 100%
-    ::::
+  :::prose-h2
+  เนื้อผ้าแนะนำสำหรับเสื้อฟอก
   :::
-
-  :::card
-  ![closeup-texture-tshirt-stone-washed-min](/band-shirt/sample-2.jpg)
-
-    ::::prose-h3{.text-center as="h4"}
-    Faded Color
-    ::::
-
-    ::::prose-p{.text-center}
-    สีฟอก สีเฟด
-    ::::
-  :::
-
-  :::line-link
-    ::::line-button
-    แอดไลน์สั่งทำเสื้อ
-    ::::
-  :::
-
-## ราคาสั่งผลิตเสื้อฟอก
-
-  :::slider
+  :::split-content
   ---
-  items: 2
-  slides-per-view: 2
+  direction: right-to-left
+  compact: false
   ---
+  #Headertitle
+  Cotton Comb20 
+  #description
+  :::prose-p
+  มาตรฐาน หนานุ่ม เป็นเนื้อผ้าที่ทอละเอียดจนเนื้อผ้าอ่อนนุ่ม จะมีเส้นด้ายขนาดใหญ่ เป็นเนื้อผ้าที่มีความหนาพอดี เหมาะสำหรับทำเสื้อฟอกที่สุด
+  :::
+
+  :::icon-feature-grid
   #item-1
-  :prose-img{src="/produce-tshirt/price-chart-cotton-100.png"}
+  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  เหมาะกับทำเสื้อยืดเกรดแบรนด์
 
   #item-2
-  :prose-img{src="/produce-tshirt/price-chart-cotton-comb-32.png"}
+  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  Cotton 100%
+  
+  #item-3
+  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  ไม่ยับง่าย
+
+  #item-4
+  :prose-img{src="/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
+  190 - 220 gsm
+
+  #item-5
+  :prose-img{src="/icon-detail/icon-3.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
+  เนื้อผ้าเนียนนุ่ม
+  
   :::
 
-## ข้อควรระวัง
-
-  :::card
-  ![](/somsri-with-tie-dye/tie-dye-caution-1.png)
-
-    ::::prose-h3{.text-center as="h4"}
-    แยกซักกับผ้าชนิดอื่น
-    ::::
-
-    ::::prose-p{.text-center}
-    ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ
-    ::::
+  #image
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb20.jpg"}
   :::
 
-  :::card
-  ![](/somsri-with-tie-dye/tie-dye-caution-2.png)
-
-    ::::prose-h3{.text-center as="h4"}
-    เลี่ยงการใช้ผงซักฟอกเข้มข้น
-    ::::
-
-    ::::prose-p{.text-center}
-    ผงซักฟอกเข้มข้นจะทำให้ผ้ามัดย้อมสีจางลง และควรกลับด้าผ้าก่อนนำไปตากแดด
-    ::::
+  :::split-content
+  ---
+  direction: right-to-left
+  compact: false
+  ---
+  #Headertitle
+  Cotton Comb25 
+  #description
+  :::prose-p
+  มาตรฐานผ้าระดับเริ่มต้นถึงกลาง เนื้อผ้ามีความหนาแน่นกว่าเบอร์ 32 ให้ฟีลอยู่ทรงมากขึ้น เหมาะสำหรับงานเสื้อที่ต้องการลุคชัด ใส่แล้วดูมีโครงสร้าง
   :::
 
-\::
+  :::icon-feature-grid
+  #item-1
+  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  เหมาะกับทำเสื้อยืดเกรดแบรนด์
 
-  :::prose-h3{.text-center as="p"}
-  งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ
+  #item-2
+  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  Cotton 100%
+  
+
+  #item-3
+  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  ไม่ยับง่าย
+
+  #item-4
+  :prose-img{src="/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
+  180 – 200 gsm.
+
+  #item-5
+  :prose-img{src="/icon-detail/icon-7.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
+  เนื้อผ้ายังนุ่ม แต่จะไม่บางพลิ้ว
+  :::
+
+  #image
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb25.jpg"}
+  :::
+
+  :::split-content
+  ---
+  direction: right-to-left
+  compact: false
+  ---
+  #Headertitle
+  Cotton Comb32 
+  #description
+  :::prose-p
+  มาตราฐาน เป็นที่นิยม เกรดผ้าหนาระดับปานกลาง ผ้าจะทิ้งตัว สวมใส่สบาย ระบายอากาศได้อย่างดีเยี่ยม เหมาะสำหรับคนเริ่มต้นสร้างแบรนด์เสื้อผ้า
+  :::
+
+  :::icon-feature-grid
+  #item-1
+  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  เหมาะกับทำเสื้อยืดเกรดแบรนด์
+
+  #item-2
+  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  Cotton 100%
+  
+
+  #item-3
+  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  ไม่ยับง่าย
+
+  #item-4
+  :prose-img{src="/icon-detail/icon-5.jpg" alt="180 – 200 gsm."}
+  180 – 200 gsm.
+
+  #item-5
+  :prose-img{src="/icon-detail/icon-6.jpg" alt="ระบายอากาศได้ดี"}
+  ระบายอากาศได้ดี
+  :::
+
+  #image
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb32.jpg"}
+  :::
+
+## เสื้อฟอกที่ สมศรีมีเสื้อ มีกี่รูปแบบ
+  :::accordion-slider
+  :::
+
+  :::prose-h2{.text-center.text-primary.mb-4.md:mb-6}
+  ตัวอย่างงานเสื้อฟอก
+  :::
+
+  :::image-grid
+  ---
+  items: 9
+  imageFit: cover
+  gapClass: gap-3 md:gap-4
+  cellClass: '!rounded-2xl'
+  ---
+  #item-1
+  :prose-img{src="/faded-shirt/shirt/faded-shirt1.jpg" alt="ตัวอย่างงานเสื้อฟอก 1"}
+  #item-2
+  :prose-img{src="/faded-shirt/shirt/faded-shirt2.jpg" alt="ตัวอย่างงานเสื้อฟอก 2"}
+  #item-3
+  :prose-img{src="/faded-shirt/shirt/faded-shirt3.jpg" alt="ตัวอย่างงานเสื้อฟอก 3"}
+  #item-4
+  :prose-img{src="/faded-shirt/shirt/faded-shirt4.jpg" alt="ตัวอย่างงานเสื้อฟอก 4"}
+  #item-5
+  :prose-img{src="/faded-shirt/shirt/faded-shirt5.jpg" alt="ตัวอย่างงานเสื้อฟอก 5"}
+  #item-6
+  :prose-img{src="/faded-shirt/shirt/faded-shirt6.jpg" alt="ตัวอย่างงานเสื้อฟอก 6"}
+  #item-7
+  :prose-img{src="/faded-shirt/shirt/faded-shirt7.jpg" alt="ตัวอย่างงานเสื้อฟอก 7"}
+  #item-8
+  :prose-img{src="/faded-shirt/shirt/faded-shirt8.jpg" alt="ตัวอย่างงานเสื้อฟอก 8"}
+  #item-9
+  :prose-img{src="/faded-shirt/shirt/faded-shirt9.jpg" alt="ตัวอย่างงานเสื้อฟอก 9"}
+  :::
+
+  :::title-with-description{:spacing=3}
+  #title
+  :::prose-h2{size="2xl"}
+  ข้อควรระวัง
+  :::
+  #description
+  **แยกซักกับผ้าชนิดอื่น** : ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ
+
+  **หลีกเลี่ยงการใช้ผงซักฟอกเข้มข้น** : ผ้ามัดย้อมที่เพิ่งซื้อมาใหม่ อาจมีสีตกออกมา จึงไม่ควรซักปะปนกับผ้าชนิดอื่น ๆ
   :::
 ::
-
 ::why-choose-somsri
 #title
 เลือกผลิตเสื้อวินเทจกับเสื้อ Somsri แล้วดียังไง?
 ::
-
 ::container
 :how-to-order
-::
-
-:what-cost-saving
-
 ::line-link
   :::line-button
   แอดไลน์สั่งทำเสื้อ
   :::
+::
+:::accordion-
+:::
 ::
