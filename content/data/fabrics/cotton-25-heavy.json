@@ -1,0 +1,15 @@
+{
+    "uid": "cotton-25-heavy",
+    "imageUrl": "/fabrics/cotton-25heavy.jpg",
+    "forProductType": ["tshirt", "polo"],
+    "nameTh": "คอตตอน 25 เฮวี",
+    "nameEn": "Cotton 25 Heavy",
+    "recommendForStyle": "เสื้อโทนหนา ลุคสตรีท โอเวอร์ไซส์",
+    "advantage": [
+        "เนื้อหนา ทิ้งตัวสวย",
+        "อบอุ่น พอดีกับห้องแอร์",
+        "ทนทานต่อการใช้งาน"
+    ],
+    "disadvantage": [],
+    "order": 20
+}

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
 // PROPS
 interface Props {
     /**
@@ -22,7 +23,7 @@ interface Slots {
 defineSlots<Slots>();
 
 // VARIABLE
-const { data: pins } = await useAsyncData('data-pin', () => {
+const { data: pins } = useAsyncData('data-pin', () => {
     return queryCollection('pin').order('order', 'ASC').all();
 });
 
@@ -138,29 +139,81 @@ function openModal(pin: NonNullable<typeof pins.value>[number]) {
     initialImageIndex.value = 0;
     isModalOpen.value = true;
 }
+
+const headerRef = ref<HTMLElement | null>(null);
+const carouselRef = ref<HTMLElement | null>(null);
+
+useScrollRevealUp(headerRef, {
+    childSelector: ':scope > *',
+    start: 'top 85%',
+    duration: 1,
+    stagger: 0.12,
+    y: 32,
+});
+
+useScrollRevealUp(carouselRef, {
+    childSelector: null,
+    start: 'top 78%',
+    duration: 1.25,
+    y: 40,
+});
 </script>
 
 <template>
     <div>
-        <div class="mb-5">
+        <div ref="headerRef" class="mb-5">
             <slot name="title" />
             <slot name="description" />
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
-            <div
-                v-for="(pin, index) in displayedPins"
-                :key="pin.name"
-                class="relative group cursor-pointer"
-                @click="openModal(pin)"
+        <div v-if="displayedPins.length" ref="carouselRef" class="w-full">
+            <UCarousel
+                v-slot="{ item }"
+                :items="displayedPins"
+                loop
+                :start-index="2"
+                align="center"
+                :contain-scroll="false"
+                arrows
+                prev-icon="i-heroicons-chevron-left"
+                next-icon="i-heroicons-chevron-right"
+                class="w-full"
+                :ui="{
+                    root: 'relative w-full min-w-0 overflow-hidden',
+                    viewport: 'min-w-0 px-10 sm:px-12',
+                    container: 'flex gap-5',
+                    item: 'min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 md:basis-1/3 xl:basis-1/5',
+                    controls: 'absolute inset-0 z-10 pointer-events-none',
+                    arrows: 'absolute inset-0 flex items-center justify-between px-2 sm:px-3',
+                    prev: '!static !relative !inset-auto !translate-none sm:!start-auto sm:!end-auto pointer-events-auto z-20 rounded-full bg-primary text-white shadow-md',
+                    next: '!static !relative !inset-auto !translate-none sm:!start-auto sm:!end-auto pointer-events-auto z-20 rounded-full bg-primary text-white shadow-md',
+                }"
+                :prev="{
+                    color: 'neutral',
+                    variant: 'solid',
+                    disabled: false,
+                    class: 'min-w-fit! p-2! sm:p-2.5! rounded-full',
+                }"
+                :next="{
+                    color: 'neutral',
+                    variant: 'solid',
+                    disabled: false,
+                    class: 'min-w-fit! p-2! sm:p-2.5! rounded-full',
+                }"
+                aria-label="ผลงานพิน"
             >
-                <HomePortfolioCard
-                    :name="lang === 'th' ? pin.name : pin['name-en']"
-                    :url="pin.url"
-                    :image="pin.image"
-                    :alt="lang === 'th' ? pin.alt : pin['alt-en']"
-                />
-            </div>
+                <div
+                    class="relative min-w-0 w-full cursor-pointer group"
+                    @click="openModal(item)"
+                >
+                    <HomePortfolioCard
+                        :name="lang === 'th' ? item.name : item['name-en']"
+                        :url="item.url"
+                        :image="item.image"
+                        :alt="lang === 'th' ? item.alt : item['alt-en']"
+                    />
+                </div>
+            </UCarousel>
         </div>
 
         <!-- Modal Component -->

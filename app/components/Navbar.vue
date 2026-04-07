@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { LANGUAGE } from '~/lib/language';
+import type { NavigationMenuItem } from '@nuxt/ui';
+import type { NavbarCollectionItem } from '@nuxt/content';
 
 // PROPS
 interface Props {
@@ -18,6 +20,41 @@ const { data: menus } = await useAsyncData('navbar-menus', () => queryCollection
 const isScrolled = ref<boolean>(false);
 const showMenu = ref<boolean>(false);
 const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
+const lang = unref(LANG);
+const isSlideOverOpen = ref(false);
+
+const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
+const productItems = computed(() => {
+    return navbarData.value.products || { previewCategories: [], shrinkCategories: [] };
+});
+
+const mainNavItemsBase = computed<NavigationMenuItem[]>(() => {
+    return (navbarData.value.main || []).map((menu) => {
+        const url = lang === 'th' ? menu.url : menu['url-en'];
+        return {
+            label: lang === 'th' ? menu.label : menu['label-en'],
+            to: url,
+            class: activeMenuClass(url, false),
+        };
+    });
+});
+
+const items = computed<NavigationMenuItem[]>(() => {
+    const products = [...(productItems.value.previewCategories || []), ...(productItems.value.shrinkCategories || [])];
+
+    return mainNavItemsBase.value.map((item, index) => {
+        if (index !== 1 || products.length === 0) return item;
+        return {
+            ...item,
+            slot: 'megamenu' as const,
+            children: products.map((prod) => ({
+                label: lang === 'th' ? prod.label : prod['label-en'],
+                to: lang === 'th' ? prod.url : prod['url-en'],
+                class: activeMenuClass(prod.url, true),
+            })),
+        };
+    });
+});
 
 // COMPUTED
 const navbarClass = computed(() => {
@@ -25,21 +62,21 @@ const navbarClass = computed(() => {
     return isScrolled.value || activeNavbar.value ? '!bg-primary shadow-lg' : 'bg-transparent';
 });
 
-function activeMenuClass(url: string) {
-    if (route.path === url) {
-        return isScrolled.value || activeNavbar.value ? 'font-bold underline' : 'font-bold !text-primary underline';
-    } else {
+function activeMenuClass(url: string, isSubURL: boolean) {
+    if (route.path !== url) {
         return 'font-normal';
     }
+
+    if ($viewport.isLessOrEquals('lg') || (!isSubURL && (isScrolled.value || activeNavbar.value))) {
+        return 'font-bold underline';
+    }
+
+    return 'font-bold !text-primary underline';
 }
 
 // FUNCTION
 function handleScroll() {
     isScrolled.value = window.scrollY > 100;
-}
-
-function toggleMenu() {
-    showMenu.value = !showMenu.value;
 }
 
 // WATCH
@@ -58,33 +95,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav :class="navbarClass" class="px-5 lg:px-[4.6rem] py-2 text-white grid grid-cols-5 sm:grid-cols-12 gap-5 w-screen transition-all duration-300">
-        <div class="sm:col-span-2">
-            <NuxtLink to="/">
-                <Logo class="w-12 md:w-6 max-w-10" />
-            </NuxtLink>
-        </div>
+    <nav :class="navbarClass" class="text-white flex justify-between px-6 py-2 md:py-5 lg:px-18 lg:py-0 lg:max-h-[72px]">
+        <NavbarDesktop :show-menu="showMenu" :items="items" :product-items="productItems" :lang="lang" />
 
-        <div class="col-span-4 sm:col-span-10 xl:col-span-8 flex flex-col items-end md:items-center justify-end">
-            <div class="flex w-full justify-end">
-                <Icon name="lucide:menu" class="w-6 h-6 xl:hidden" @click="toggleMenu" />
-            </div>
-
-            <div :class="{ hidden: !showMenu && $viewport.isLessOrEquals('lg') }" class="mt-3 xl:mt-0 w-full flex flex-col xl:flex-row! items-center justify-center gap-3 xl:gap-1">
-                <NuxtLink
-                    v-for="menu in menus?.[0]?.data || []"
-                    :key="menu.label"
-                    :to="LANG === 'th' ? menu.url : menu['url-en']"
-                    :class="[activeMenuClass(LANG === 'th' ? menu.url : menu['url-en'])]"
-                    class="w-full block text-[0.7rem] xl:text-[0.68rem] text-right xl:text-center font-stretch-condensed hover:underline transition-all"
-                    >{{ LANG === 'th' ? menu.label : menu['label-en'] }}</NuxtLink
-                >
-            </div>
-        </div>
-
-        <div class="col-span-2 hidden xl:flex items-center justify-end gap-5">
-            <NuxtLink to="tel:024300678" class="flex items-center" external><Icon name="lucide:phone" class="mr-1" /></NuxtLink>
-            <NuxtLink to="/en" class="flex items-center"><Icon name="lucide:languages" /></NuxtLink>
-        </div>
+        <NavbarMobile v-model:open="isSlideOverOpen" :items="items" />
     </nav>
 </template>

@@ -1,0 +1,15 @@
+{
+    "uid": "cvc-fish-scale",
+    "imageUrl": "/fabrics/cvc-เกล็ดปลา.jpg",
+    "forProductType": ["tshirt", "polo"],
+    "nameTh": "CVC เกล็ดปลา",
+    "nameEn": "CVC Fish Scale",
+    "recommendForStyle": "เสื้อลายผิวพิเศษ ลุคไม่ซ้ำใคร",
+    "advantage": [
+        "ลายผ้าเกล็ดปลา มีมิติ",
+        "ผสมโพลีเอสเตอร์ ทนทาน",
+        "รีดง่าย ดูแลไม่ยุ่งยาก"
+    ],
+    "disadvantage": [],
+    "order": 23
+}

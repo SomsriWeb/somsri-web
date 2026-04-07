@@ -1,0 +1,15 @@
+{
+    "uid": "240-max",
+    "imageUrl": "/fabrics/240-Max.jpg",
+    "forProductType": ["tshirt", "polo"],
+    "nameTh": "ผ้า 240 Max",
+    "nameEn": "240 Max",
+    "recommendForStyle": "เสื้อยืด เสื้อโปโล งานแบรนด์",
+    "advantage": [
+        "เนื้อผ้าหนาแน่น ทนทาน",
+        "ทรงสวย ไม่บางจนโปร่ง",
+        "เหมาะงานสกรีนและงานปัก"
+    ],
+    "disadvantage": [],
+    "order": 16
+}

@@ -18,14 +18,14 @@ interface Slots {
 defineSlots<Slots>();
 </script>
 <template>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 gap-5">
         <TitleWithDescription>
             <template #title>
                 <slot name="title"><ProseH2>สมศรีผลิตให้กับใครบ้าง </ProseH2></slot>
             </template>
-            <template #description>
+            <!-- <template #description>
                 <slot name="description"><ProseP>หลากหลายแบรนด์ไว้วางใจให้สมศรีมีเสื้อผลิตสินค้าต่าง ๆ ไม่ว่าจะเป็นเสื้อยืด เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ</ProseP> </slot>
-            </template>
+            </template> -->
         </TitleWithDescription>
 
         <ClientOnly>

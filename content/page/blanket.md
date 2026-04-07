@@ -5,111 +5,164 @@ description: เราเป็น โรงงานผลิตเสื้อ
 lineLink: https://contact.somsritshirt.com/99c42
 ---
 
-::landing-page-header-style-two{image="/blanket/banner.png" image-anchor="right"}
+::landing-page-header-style-four
+---
+image: /blanket/blanket-banner.png
+---
 #title
 รับผลิตผ้าห่มคุณภาพสูง นุ่ม อุ่น เกรดพรีเมียม
 
 #description
 เหมาะสำหรับองค์กร โรงแรม รีสอร์ท ของพรีเมียม และแคมเปญของขวัญ เลือกเนื้อผ้า สี และแพ็กเกจจิ้งได้ตามต้องการ
 
-#cta
-    ::line-link
-        ::u-button{icon="i-lucide-message-circle"}
-        สอบถามสั่งผลิต
-        ::
-    ::
 ::
 
 ::container
 
     ::title-with-description{:spacing=3}
     #title
-    ::prose-h2{size="2xl" align="center"}
+    :::prose-h2{size="2xl" align="center"}
     รับผลิตผ้าห่ม เกรดพรีเมียม
-    ::
+    :::
 
     #description
     ผลิตผ้าห่มคุณภาพสูงจากโรงงาน ที่ใส่ใจในทุกรายละเอียด เลือกเนื้อผ้าได้หลากหลาย ทั้งไมโครฟลีซ ซูเปอร์ซอฟฟ์ และนาโนกันน้ำ สัมผัสนุ่ม อุ่นสบาย เย็บเรียบเนียน เหมาะสำหรับของพรีเมียม ของขวัญองค์กร โรงแรม และรีสอร์ท ทุกผืนผ่านการ QC อย่างพิถีพิถันเพื่อให้คุณมั่นใจ ในคุณภาพจาก “สมศรีมีเสื้อ”
     ::
 
-    ::title-with-description{:spacing=3}
-    #title
-    ## เนื้อผ้าและคุณสมบัติของผ้าห่ม
+    :::prose-h2
+    รับผลิตผ้าห่ม เกรดพรีเมียม
+    :::
 
+    :::split-content
+    ---
+    direction: right-to-left
+    compact: false
+    ---
+    #Headertitle
+    นาโนกันน้ำ (Nano)
     #description
-    ที่ สมศรีมีเสื้อ เราให้ความสำคัญกับ “สัมผัส” และ “คุณภาพ” ของผ้าห่มทุกผืน เพราะเราเข้าใจว่าผ้าห่มที่ดี ไม่ได้มีแค่ความสวยงาม แต่ต้อง ให้ความอบอุ่น สบายตัว และทนทานต่อการใช้งานระยะยาว เราคัดสรรเนื้อผ้าหลากหลายชนิด ตั้งแต่ผ้าขนฟูเนื้อนุ่ม ไปจนถึงผ้านาโนกันน้ำ เพื่อให้ตอบโจทย์ทุกการใช้งานของคุณ
-    ::
-
-    ::grid-2
-    #Col1
-    ::title-with-description{:spacing=3}
-    #title
-    :::prose-h2{class="text-primary md:text-xl"}
-    ชนิดเนื้อผ้า
+    :::prose-p
+    หนึ่งในตัวเลือกเนื้อผ้าสำหรับผลิตผ้าห่มที่ผ่านการเคลือบเทคโนโลยีนาโน เหมาะสำหรับการใช้งานที่ต้องการความทนทานและใช้งานได้หลากหลาย
     :::
+    :::icon-feature-grid
+    #item-1
+    :prose-img{src="/icon-detail/icon-1.jpg" alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม"}
+    เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม
 
-    :::prose-strong{class="text-xl md:text-3xl text-primary"}
-    ผ้าขนฟูไมโคร
-    :::
-
-    #description
-    หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่มพรีเมียมด้วยเส้นใยไมโครไฟเบอร์ที่ละเอียดกว่าผ้าทั่วไปหลายเท่า ทำให้ผ้ามีความนุ่ม พิเศษ อุ้มน้ำน้อย แห้งไว และให้ความอบอุ่นสูงโดยไม่รู้สึกหนัก หรือร้อนจนเกินไป
-
-    :::blanket-feature
-    :::
-
-    ::
+    #item-2
+    :prose-img{src="/icon-detail/icon-8.jpg" alt="ความทนทานสูง"}
+    ความทนทานสูง
     
-    #Col2
-    ![](/blanket/blanket-feature.png)
-    ::
+    #item-3
+    :prose-img{src="/icon-detail/icon-9.jpg" alt="ผิวเรียบ ไม่ซับน้ำ"}
+    ผิวเรียบ ไม่ซับน้ำ
 
-    ::center
-        ::u-button{to="/fabric-specification" icon="i-lucide:file-search"}
-        ดูเนื้อผ้าเพิ่มเติม
-        ::
-    ::
-::
+    #item-4
+    :prose-img{src="/icon-detail/icon-10.jpg" alt="Polyester เคลือบ Nanom"}
+    Polyester เคลือบ Nano
 
-::landing-page-header-style-five{image="/blanket/ad-banner.png" :screen-height=false image-anchor="left"}
-#title
-    ::logo{class="w-12 max-w-10 mb-3"}
+    #item-5
+    :prose-img{src="/icon-detail/icon-5.jpg" alt=" 150 – 220 gsm."}
+     150 – 220 gsm.
+    
+    :::
 
-    ::
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/blanket/Nano.jpg"}
+    :::
 
-    ::prose-h2{class="text-white"}
-    พร้อมสั่งผลิตผ้าห่มพรีเมียมในแบบของคุณหรือยัง?
-    ::
+    :::split-content
+    ---
+    direction: right-to-left
+    compact: false
+    ---
+    #Headertitle
+    ไมโครฟลีซ (Micro Fleece)
+    #description
+    :::prose-p
+    หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่ม ด้วยเส้นใยไมโครไฟเบอร์ที่ละเอียด ให้ความอบอุ่นได้ดี น้ำหนักเบา สัมผัสสบาย 
+    :::
+    :::icon-feature-grid
+    #item-1
+    :prose-img{src="/icon-detail/icon-1.jpg" alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม"}
+    เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม
 
-#description
-เลือกผ้า สี และแพ็กเกจได้ครบในที่เดียว ผลิตโดย สมศรี การันตีคุณภาพทุกผืน
+    #item-2
+    :prose-img{src="/icon-detail/icon-11.jpg" alt="ให้ความอบอุ่นดี"}
+    ให้ความอบอุ่นดี
+    
+    #item-3
+    :prose-img{src="/icon-detail/icon-3.jpg" alt="น้ำหนักเบา พับเก็บง่าย"}
+    น้ำหนักเบา พับเก็บง่าย
 
-#cta
-    ::line-link
-        ::action-button-with-ping
-        สั่งทำผ้าห่ม
-        ::
-    ::
-::
+    #item-4
+    :prose-img{src="/icon-detail/icon-10.jpg" alt="Polyester 100%"}
+    Polyester 100%
 
-::container
-    ::how-to-order
+    #item-5
+    :prose-img{src="/icon-detail/icon-5.jpg" alt="180 – 250 gsm."}
+    180 – 250 gsm.
+    
+    :::
 
-    ::
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/blanket/MicroFleece.jpg"}
+    :::
 
-    ::center
-        ::line-link
-            ::action-button-with-ping{}
-            สั่งทำผ้าห่ม
-            ::
-        ::
+    :::split-content
+    ---
+    direction: right-to-left
+    compact: false
+    ---
+    #Headertitle
+    ซูเปอร์ซอฟฟ์ (Super Soft)
+    #description
+    :::prose-p
+    หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่ม ด้วยเส้นใยไมโครไฟเบอร์ที่ให้สัมผัสนุ่มลื่นเป็นพิเศษ มอบความรู้สึกสบายทุกครั้งที่ใช้งาน
+    :::
+    :::icon-feature-grid
+    #item-1
+    :prose-img{src="/icon-detail/icon-1.jpg" alt="พรีเมียมเหมาะทำของขวัญ"}
+    พรีเมียมเหมาะทำของขวัญ
 
-        ::u-button{to="/price" size="xl" variant="outline" icon="i-hugeicons-sale-tag-02" label="เรทราคาผ้าห่ม"}
-        ::
-    ::
-::
+    #item-2
+    :prose-img{src="/icon-detail/icon-11.jpg" alt="ให้ความอบอุ่นสูง"}
+    ให้ความอบอุ่นสูง
+    
+    #item-3
+    :prose-img{src="/icon-detail/icon-12.jpg" alt="นุ่มฟู น่ากอด"}
+    นุ่มฟู น่ากอด
 
-::container
+    #item-4
+    :prose-img{src="/icon-detail/icon-10.jpg" alt="Polyester 100%"}
+    Polyester 100%
+
+    #item-5
+    :prose-img{src="/icon-detail/icon-5.jpg" alt="250 – 350 gsm."}
+    250 – 350 gsm.
+    
+    :::
+
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/blanket/Super-soft.jpg"}
+    :::
+
+    :::prose-h2{class="text-center"}
+    เรทราคา
+    :::
+    :::image-grid
+    ---
+    items: 2
+    centered: true
+    imageFit: cover
+    gapClass: gap-3 md:gap-4
+    cellClass: '!rounded-2xl'
+    ---
+    #item-1
+    :prose-img{src="/blanket/price-1.jpg" alt="เรทราคา 1"}
+    #item-2
+    :prose-img{src="/blanket/price-2.jpg" alt="เรทราคา "}
+    :::
     ::title-with-description
     #title
     ## ตัวอย่างผ้าห่ม การันตีมาตรฐานจากสมศรี
@@ -120,17 +173,19 @@ lineLink: https://contact.somsritshirt.com/99c42
 
     ::blanket-showcase
     ::
+::
+::why-choose-somsri
+#title
+เลือกผลิตเสื้อวินเทจกับเสื้อ Somsri แล้วดียังไง?
+::
+::container
+:how-to-order
 
     ::center
         ::line-link
-            ::action-button-with-ping
-            ส่งทำเสื้อ
-            ::
-        ::
-
-        ::line-link
-            ::u-button{size="xl" variant="outline" icon="i-fa6-brands:line" label="Add Line OA"}
-            ::
+            :::line-button
+            แอดไลน์สั่งทำผ้าห่ม
+            :::
         ::
     ::
 ::

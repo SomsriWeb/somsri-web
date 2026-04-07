@@ -1,0 +1,10 @@
+{
+    "name": "สกรีน CMYK",
+    "name-en": "DFT Heat Press",
+    "image": "/screen/CMYK2.jpg",
+    "alt": "รับทำเสื้อยืดแบบสกรีน CMYK",
+    "alt-en": "Custom T-shirts with CMYK Screen Printing",
+    "url": "/screen/cmyk",
+    "order": 10,
+    "category": "CMYK"
+}
