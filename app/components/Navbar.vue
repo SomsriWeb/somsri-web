@@ -28,52 +28,31 @@ const productItems = computed(() => {
     return navbarData.value.products || { previewCategories: [], shrinkCategories: [] };
 });
 
-const items = computed<NavigationMenuItem[]>(() => {
-    const mainItems = navbarData.value.main || [];
-
-    return mainItems.map((menu, index: number) => {
+const mainNavItemsBase = computed<NavigationMenuItem[]>(() => {
+    return (navbarData.value.main || []).map((menu) => {
         const url = lang === 'th' ? menu.url : menu['url-en'];
-
-        const item: NavigationMenuItem = {
+        return {
             label: lang === 'th' ? menu.label : menu['label-en'],
             to: url,
             class: activeMenuClass(url, false),
         };
-
-        // Add products as children to the second menu item (index 1)
-        const products = navbarData.value.products;
-        if (index === 1 && products && ((products.previewCategories?.length ?? 0) > 0 || (products.shrinkCategories?.length ?? 0) > 0)) {
-            item.slot = 'megamenu' as const;
-        }
-
-        return item;
     });
 });
 
-const mobileItems = computed<NavigationMenuItem[]>(() => {
-    const mainItems = navbarData.value.main || [];
+const items = computed<NavigationMenuItem[]>(() => {
+    const products = [...(productItems.value.previewCategories || []), ...(productItems.value.shrinkCategories || [])];
 
-    return mainItems.map((menu, index: number) => {
-        const url = lang === 'th' ? menu.url : menu['url-en'];
-
-        const item: NavigationMenuItem = {
-            label: lang === 'th' ? menu.label : menu['label-en'],
-            to: url,
-            class: activeMenuClass(url, false),
-        };
-
-        // Add products as children to the second menu item (index 1)
-        const allProducts = [...(productItems.value.previewCategories || []), ...(productItems.value.shrinkCategories || [])];
-
-        if (index === 1 && allProducts.length > 0) {
-            item.children = allProducts.map((prod) => ({
+    return mainNavItemsBase.value.map((item, index) => {
+        if (index !== 1 || products.length === 0) return item;
+        return {
+            ...item,
+            slot: 'megamenu' as const,
+            children: products.map((prod) => ({
                 label: lang === 'th' ? prod.label : prod['label-en'],
                 to: lang === 'th' ? prod.url : prod['url-en'],
                 class: activeMenuClass(prod.url, true),
-            }));
-        }
-
-        return item;
+            })),
+        };
     });
 });
 
@@ -119,6 +98,6 @@ onUnmounted(() => {
     <nav :class="navbarClass" class="text-white flex justify-between px-6 py-2 md:py-5 lg:px-18 lg:py-0 lg:max-h-[72px]">
         <NavbarDesktop :show-menu="showMenu" :items="items" :product-items="productItems" :lang="lang" />
 
-        <NavbarMobile v-model:open="isSlideOverOpen" :items="mobileItems" />
+        <NavbarMobile v-model:open="isSlideOverOpen" :items="items" />
     </nav>
 </template>

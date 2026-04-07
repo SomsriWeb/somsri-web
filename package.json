@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bunx nuxt build",
-    "dev": "bunx nuxt dev",
-    "generate": "bunx nuxt generate",
-    "preview": "bunx nuxt preview",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
