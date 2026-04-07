@@ -12,7 +12,7 @@ navbar: true
     type: application/ld+json
 ---
 
-::landing-page-header-style-two
+::landing-page-header-style-four
 ---
 image: /tshirt/banner.png
 ---
@@ -21,15 +21,6 @@ image: /tshirt/banner.png
 
 #description
 สมศรีรับผลิตเสื้อยืดไม่ว่าจะเป็นการสกรีนเสื้อบริษัท รูปแบบไหน เราผลิตได้ตามความต้องการเน้นคุณภาพและการบริการ ความพึงพอใจเกินความคาดหมาย
-
-#cta
-  :::line-link
-    ::::u-button
-      :::::unwrap-mdc
-      สั่งผลิตกับสมศรี
-      :::::
-    ::::
-  :::
 ::
 
 ::container

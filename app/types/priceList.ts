@@ -1,5 +1,6 @@
 export interface PriceList {
 	fabricName: string
+	fabricNameEn?: string
 	rates: {
 		min: number
 		max: number | null

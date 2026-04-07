@@ -183,6 +183,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -193,6 +194,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -203,6 +205,7 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -235,15 +238,18 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
+                'name-en': z.string().optional(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 conditions: z.array(
                     z.object({
                         text: z.string(),
+                        'text-en': z.string().optional(),
                     }),
                 ),
                 priceLists: z.array(
                     z.object({
                         fabricName: z.string(),
+                        fabricNameEn: z.string().optional(),
                         rates: z.array(
                             z.object({
                                 min: z.number(),
@@ -263,6 +269,7 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
+                'name-en': z.string().optional(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
@@ -314,6 +321,7 @@ export default defineContentConfig({
             source: 'data/why-choose-somsri/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
@@ -337,7 +345,9 @@ export default defineContentConfig({
             source: 'data/how-to-order/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 description: z.string().optional(),
+                'description-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
@@ -349,6 +359,7 @@ export default defineContentConfig({
             source: 'data/what-cost-saving/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
@@ -378,8 +389,11 @@ export default defineContentConfig({
                 nameTh: z.string(),
                 nameEn: z.string(),
                 recommendForStyle: z.string(),
+                recommendForStyleEn: z.string().optional(),
                 advantage: z.array(z.string()),
+                advantageEn: z.array(z.string()).optional(),
                 disadvantage: z.array(z.string()),
+                disadvantageEn: z.array(z.string()).optional(),
                 order: z.number(),
             }),
         }),

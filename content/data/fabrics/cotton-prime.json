@@ -1,7 +1,11 @@
 {
     "uid": "cotton-prime",
     "imageUrl": "/fabrics/cotton-prime.jpg",
-    "forProductType": ["tshirt", "polo", "brand"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "brand"
+    ],
     "nameTh": "คอตตอนไพรม์",
     "nameEn": "Cotton Prime",
     "recommendForStyle": "เสื้อพรีเมียม งานแบรนด์",
@@ -11,5 +15,12 @@
         "เหมาะงานที่ต้องการภาพลักษณ์พรีเมียม"
     ],
     "disadvantage": [],
-    "order": 21
+    "order": 21,
+    "recommendForStyleEn": "Premium shirts, brand orders",
+    "advantageEn": [
+        "Carefully selected premium grade",
+        "Soft and smooth hand-feel",
+        "Ideal for a premium look"
+    ],
+    "disadvantageEn": []
 }

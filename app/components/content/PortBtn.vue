@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 interface Props {
   /**
    * กำหนดเส้นทางของ LINK
@@ -6,6 +8,9 @@ interface Props {
   to: string;
 }
 const { to } = defineProps<Props>();
+
+const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
+const btnLabel = computed(() => (LANG === 'en' ? 'View pricing' : 'เรทราคาเสื้อ'));
 </script>
 
 <template>
@@ -19,7 +24,7 @@ const { to } = defineProps<Props>();
         icon="i-lucide-send"
         class="relative"
       >
-        เรทราคาเสื้อ
+        {{ btnLabel }}
         <!-- จุด ping animation -->
         <span
           class="absolute top-0 right-0 -mt-1 -mr-1 flex size-3 rounded-full bg-primary-200 animate-ping"

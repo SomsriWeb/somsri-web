@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 // PROPS
 interface Props {
     image: string;
     alt?: string;
 }
 const { image, alt = '' } = defineProps<Props>();
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+const ctaLabel = computed(() => (lang.value === 'en' ? 'Free consultation' : 'ปรึกษาฟรี!'));
 </script>
 <template>
     <div class="grid grid-cols-1 md:grid-cols-5">
@@ -26,7 +32,7 @@ const { image, alt = '' } = defineProps<Props>();
             <div class="mt-5">
                 <slot name="cta">
                     <LineLink>
-                        <UButton>ปรึกษาฟรี!</UButton>
+                        <UButton>{{ ctaLabel }}</UButton>
                     </LineLink>
                 </slot>
             </div>

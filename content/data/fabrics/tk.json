@@ -16,5 +16,13 @@
         "ทนต่อการซัก"
     ],
     "disadvantage": [],
-    "order": 15
+    "order": 15,
+    "recommendForStyleEn": "Brand T-shirts",
+    "advantageEn": [
+        "Dense fabric, breathable",
+        "Easy to iron, wrinkle-resistant",
+        "Colorfast",
+        "Wash-durable"
+    ],
+    "disadvantageEn": []
 }

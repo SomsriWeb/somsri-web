@@ -1,11 +1,16 @@
 <script setup lang="ts">
 	import type { BlogCollectionItem } from "@nuxt/content"
+	import { LANGUAGE } from "~/lib/language"
 
 	// PROPS
 	interface Props {
 		blog: BlogCollectionItem
 	}
 	const { blog } = defineProps<Props>()
+
+	const LANG = inject<"th" | "en" | Ref<"th" | "en">>(LANGUAGE, "th")
+	const lang = computed<"th" | "en">(() => (typeof LANG === "string" ? LANG : LANG.value))
+	const readMoreLabel = computed(() => (lang.value === "en" ? "Read more" : "อ่านต่อ"))
 
 	// VARIABLE
 	const ui = {
@@ -27,7 +32,7 @@
 		</NuxtLink>
 		<ProseP>{{ blog.date }}</ProseP>
 		<NuxtLink :to="blog.path" class="block w-full text-left">
-			<UButton variant="link" color="primary" class="justify-start! px-0 text-stone-600">อ่านต่อ</UButton>
+			<UButton variant="link" color="primary" class="justify-start! px-0 text-stone-600">{{ readMoreLabel }}</UButton>
 		</NuxtLink>
 	</UCard>
 </template>

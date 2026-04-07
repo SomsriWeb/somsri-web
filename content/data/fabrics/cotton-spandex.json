@@ -1,7 +1,11 @@
 {
     "uid": "cotton-spandex",
     "imageUrl": "/fabrics/cotton-spandex.jpg",
-    "forProductType": ["tshirt", "polo", "sport"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "sport"
+    ],
     "nameTh": "คอตตอนสแปนเด็กซ์",
     "nameEn": "Cotton Spandex",
     "recommendForStyle": "เสื้อรัดรูปเล็กน้อย กิจกรรม กีฬาเบา",
@@ -11,5 +15,12 @@
         "สวมใส่สบาย"
     ],
     "disadvantage": [],
-    "order": 22
+    "order": 22,
+    "recommendForStyleEn": "Slightly fitted tops, activities, light sports",
+    "advantageEn": [
+        "Stretchy and flexible",
+        "Good recovery (won’t bag out easily)",
+        "Comfortable to wear"
+    ],
+    "disadvantageEn": []
 }

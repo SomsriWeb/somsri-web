@@ -1,7 +1,10 @@
 {
     "uid": "240-max",
     "imageUrl": "/fabrics/240-Max.jpg",
-    "forProductType": ["tshirt", "polo"],
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
     "nameTh": "ผ้า 240 Max",
     "nameEn": "240 Max",
     "recommendForStyle": "เสื้อยืด เสื้อโปโล งานแบรนด์",
@@ -11,5 +14,12 @@
         "เหมาะงานสกรีนและงานปัก"
     ],
     "disadvantage": [],
-    "order": 16
+    "order": 16,
+    "recommendForStyleEn": "T-shirts, polo shirts, brand orders",
+    "advantageEn": [
+        "Thick, durable fabric",
+        "Holds shape; not see-through",
+        "Great for screen printing and embroidery"
+    ],
+    "disadvantageEn": []
 }

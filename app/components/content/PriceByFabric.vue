@@ -5,12 +5,16 @@ import type { PriceByFabricPriceList } from '~/types/priceList';
 import FabricButtonContent from '@/components/PriceByFabric/FabricButtonContent.vue';
 import type { FabricsCollectionItem } from '@nuxt/content';
 import type { ProductTypeIdEnum } from '~/types/global';
+import { LANGUAGE } from '~/lib/language';
 
 // PROPS
 interface Props {
     type: ProductTypeIdEnum;
 }
 const { type } = defineProps<Props>();
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
 
 // VARIABLE
 const { data } = await useAsyncData('fabrics', () => {
@@ -52,7 +56,9 @@ function getPriceListFromFabricId(fabricId: string) {
         </USelectMenu>
 
         <div v-for="fabric in fabrics" :key="fabric.id" :class="{ hidden: activeFabric !== fabric.nameEn }">
-            <h3 class="text-2xl font-bold font-stretch-condensed uppercase text-stone-700 mb-3">ผ้า {{ fabric.nameEn }}</h3>
+            <h3 class="text-2xl font-bold font-stretch-condensed uppercase text-stone-700 mb-3">
+                {{ lang === 'en' ? 'Fabric' : 'ผ้า' }} {{ fabric.nameEn }}
+            </h3>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
                 <RateCard v-for="rate in getPriceListFromFabricId(fabric.uid)?.lists" :key="generateKey(fabric.id, rate)" :data="rate" />
@@ -60,7 +66,7 @@ function getPriceListFromFabricId(fabricId: string) {
         </div>
 
         <LineLink>
-            <UButton class="font-bold">สั่งผลิตเลย</UButton>
+            <UButton class="font-bold">{{ lang === 'en' ? 'Order now' : 'สั่งผลิตเลย' }}</UButton>
         </LineLink>
     </div>
 </template>

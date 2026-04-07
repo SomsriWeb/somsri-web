@@ -3,6 +3,7 @@ import MinimumModal from '../WhyYouShouldChooseSomsri/Minimum.vue';
 import PerfectDesignModal from '../WhyYouShouldChooseSomsri/PerfectDesign.vue';
 import GuaranteeModal from '../WhyYouShouldChooseSomsri/Guarantee.vue';
 import FreeShippingModal from '../WhyYouShouldChooseSomsri/FreeShipping.vue';
+import { LANGUAGE } from '~/lib/language';
 
 // PROPS
 interface Props {
@@ -12,9 +13,11 @@ interface Props {
      */
     lang?: 'th' | 'en';
 }
-withDefaults(defineProps<Props>(), {
-    lang: 'th',
-});
+const props = defineProps<Props>();
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const injectedLang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+const effectiveLang = computed<'th' | 'en'>(() => props.lang ?? injectedLang.value);
 
 // SLOTS
 interface Slots {
@@ -88,15 +91,17 @@ function openItemModal(uid: string) {
 <template>
     <div>
         <h2 class="text-primary text-4xl leading-none font-bold mb-5">
-            <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
+            <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">
+                {{ effectiveLang === 'en' ? 'Why order with Somsri?' : 'สั่งผลิตเสื้อกับสมศรีดียังไง?' }}
+            </slot>
         </h2>
 
         <ClientOnly>
             <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr  ">
                 <swiper-slide v-for="item in content" :key="item.title">
                     <InformationCard
-                        :title="lang === 'th' ? item.title : item['title-en']"
-                        :description="lang === 'th' ? item.description : item['description-en']"
+                        :title="effectiveLang === 'th' ? item.title : item['title-en']"
+                        :description="effectiveLang === 'th' ? item.description : item['description-en']"
                         :image="item.image"
                         @click="openItemModal(item.uid)"
                     />

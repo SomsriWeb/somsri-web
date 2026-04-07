@@ -1,5 +1,6 @@
 {
     "label": "ค่าส่งที่บานปลาย",
     "image": "/what-cost-saving/1.png",
-    "order": 1
+    "order": 1,
+    "label-en": "Runaway shipping costs"
 }

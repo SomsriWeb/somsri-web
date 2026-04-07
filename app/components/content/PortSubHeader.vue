@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import ProseP from './ProseP.vue';
+import { LANGUAGE } from '~/lib/language';
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+const groupLabel = computed(() => (lang.value === 'en' ? 'Customer group' : 'กลุ่มลูกค้า'));
 
 // SLOT
 interface Slots {
@@ -26,7 +31,7 @@ defineSlots<Slots>();
     <!-- ฝั่งข้อความฝั่งซ้าย -->
     <div class="py-[3rem] flex flex-col justify-center px-4">
       <span class="text-start text-5xl font-bold text-primary mb-3">
-        <div class="text-xl mb-1 text-primary">กลุ่มลูกค้า</div>
+        <div class="text-xl mb-1 text-primary">{{ groupLabel }}</div>
         <slot mdc-unwrap="p" name="subtitle" />
       </span>
       <ProseP class="text-start text-stone-500 text-lg font-light">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 	// PROPS
 	interface Props {
 		image: string
@@ -6,6 +8,10 @@
 		alt?: string
 	}
 	const { image, titleAsTag = "h1", alt = "" } = defineProps<Props>()
+
+	const LANG = inject<"th" | "en" | Ref<"th" | "en">>(LANGUAGE, "th")
+	const lang = computed<"th" | "en">(() => (typeof LANG === "string" ? LANG : LANG.value))
+	const ctaLabel = computed(() => (lang.value === "en" ? "Free consultation" : "ปรึกษาฟรี"))
 </script>
 
 <template>
@@ -38,7 +44,7 @@
 			<div class="mt-3 flex justify-center md:justify-start">
 				<slot name="cta">
 					<LineLink>
-						<UButton color="neutral">ปรึกษาฟรี</UButton>
+						<UButton color="neutral">{{ ctaLabel }}</UButton>
 					</LineLink>
 				</slot>
 			</div>

@@ -15,5 +15,13 @@
         "ไม่หด ไม่ย้วย"
     ],
     "disadvantage": [],
-    "order": 2
+    "order": 2,
+    "recommendForStyleEn": "Brand T-shirts",
+    "advantageEn": [
+        "Comfortable and not hot",
+        "Wrinkle-resistant",
+        "Breathable",
+        "Holds shape (less shrink and stretch)"
+    ],
+    "disadvantageEn": []
 }

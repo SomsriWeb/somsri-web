@@ -16,49 +16,49 @@
             "label": "เนื้อผ้า",
             "label-en": "Fabric",
             "url": "/fabric-specification",
-            "url-en": "/fabric-specification"
+            "url-en": "/fabric-specification-en"
         },
         {
             "label": "ออกแบบเสื้อ",
             "label-en": "Design",
             "url": "/shop",
-            "url-en": "/shop"
+            "url-en": "/shop-en"
         },
         {
             "label": "ราคา",
             "label-en": "Price",
             "url": "/price",
-            "url-en": "/price"
+            "url-en": "/price-en"
         },
         {
             "label": "ผลงาน",
             "label-en": "Portfolio",
             "url": "/portfolio",
-            "url-en": "/portfolio"
+            "url-en": "/portfolio-en"
         },
         {
             "label": "วิธีสั่งซื้อ",
             "label-en": "How to Order",
             "url": "/how-to-order",
-            "url-en": "/how-to-order"
+            "url-en": "/how-to-order-en"
         },
         {
             "label": "บทความ",
             "label-en": "Blog",
             "url": "/blog",
-            "url-en": "/blog"
+            "url-en": "/blog-en"
         },
         {
             "label": "เกี่ยวกับเรา",
             "label-en": "About Us",
             "url": "/about",
-            "url-en": "/about"
+            "url-en": "/about-en"
         },
         {
             "label": "สื่อ",
             "label-en": "Media",
             "url": "/media",
-            "url-en": "/media"
+            "url-en": "/media-en"
         }
     ],
     "products": {

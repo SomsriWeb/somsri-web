@@ -1,11 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+
+const title = computed(() => (lang.value === 'en' ? 'Ask us more' : 'สอบถามเพิ่มเติม'));
+</script>
 
 <template>
     <div class="flex justify-center p-4">
         <div class="bg-primary w-full max-w-2xl sm:max-w-3xl md:max-w-4xl p-6 sm:p-8 rounded-2xl mx-auto">
             <!-- Title -->
             <div class="text-center">
-                <ProseH2 class="text-white text-lg"> สอบถามเพิ่มเติม </ProseH2>
+                <ProseH2 class="text-white text-lg">{{ title }}</ProseH2>
             </div>
             <div class="flex justify-center items-center gap-2 pt-2 lg:gap-5 sm:gap-5 md:gap-5">
                 <nuxt-link to="https://www.facebook.com/somsritshirt/" target="_blank" aria-label="Facebook">
@@ -20,7 +27,7 @@
                     <NuxtImg src="/bag/ig-2-unsmushed.png" class="w-5 sm:w-8 object-contain" alt="Instagram" />
                 </nuxt-link>
 
-                <nuxt-link to="tel:0634216521" target="_blank" aria-label="โทรศัพท์">
+                <nuxt-link to="tel:0634216521" target="_blank" :aria-label="lang === 'en' ? 'Phone' : 'โทรศัพท์'">
                     <NuxtImg src="/bag/tel-1-unsmushed.png" class="w-5 sm:w-8 object-contain" alt="Phone" />
                 </nuxt-link>
             </div>

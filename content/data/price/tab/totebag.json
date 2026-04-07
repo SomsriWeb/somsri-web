@@ -1,6 +1,7 @@
 {
     "uid": "totebag",
     "name": "กระเป๋าผ้า",
+    "name-en": "Tote bags",
     "imageUrl": "/price/totebag.jpg",
     "alt": "เรทราคาสั่งผลิตกระเป๋าผ้า",
     "order": 1

@@ -1,5 +1,6 @@
 {
     "label": "ราคาคุ้มค่า",
     "image": "/why-choose-somsri/2.png",
-    "order": 2
+    "order": 2,
+    "label-en": "Great value pricing"
 }

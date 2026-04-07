@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 // PROPS
 interface Props {
     image: string;
@@ -12,6 +14,10 @@ const { image, titleAsTag = 'h1', alt = '', screenHeight = true, imageAnchor = '
 // VARIABLE
 const minImageHeight = 'min-h-[20rem]';
 const objectPosition = `object-${imageAnchor}`;
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+const ctaLabel = computed(() => (lang.value === 'en' ? 'Free consultation' : 'ปรึกษาฟรี'));
 </script>
 
 <template>
@@ -36,7 +42,7 @@ const objectPosition = `object-${imageAnchor}`;
             <div class="mt-5">
                 <slot name="cta">
                     <LineLink>
-                        <UButton>ปรึกษาฟรี</UButton>
+                        <UButton>{{ ctaLabel }}</UButton>
                     </LineLink>
                 </slot>
             </div>

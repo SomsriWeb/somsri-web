@@ -1,7 +1,7 @@
 ---
 title: Garment factory offering T-shirt and polo shirt production, custom-made apparel, and bulk orders.
 description: We are a garment factory specializing in custom T-shirt production with screen printing — delivering high quality at wholesale prices. We produce and supply shirts with custom logo printing, helping you build your own brand.
-lineLink: https://contact.somsritshirt.com/3d975
+lineLink: https://contact.somsritshirt.com/6e9b2
 เพิ่ม script ใน head:
     - content: '{   "@context": "https://schema.org",   "@type":
           "Organization",   "name": "สมศรีมีเสื้อ",   "url":

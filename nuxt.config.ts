@@ -152,6 +152,7 @@ export default defineNuxtConfig({
     },
     routeRules: {
         '/shop': { ssr: false, prerender: false },
+        '/shop-en': { ssr: false, prerender: false },
         '/tshirt': { prerender: false },
         '/**': {
             prerender: true,

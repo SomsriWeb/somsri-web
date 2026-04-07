@@ -1,13 +1,22 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 interface Props {
     type: 'portCardArtist' | 'portCardOrganization' | 'portCardOther';
 }
 
 const props = defineProps<Props>();
 
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+
 const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
     return queryCollection(props.type).order('name', 'ASC').all();
 });
+
+function methodText(item: { method: string; 'method-en'?: string }) {
+    return lang.value === 'en' && item['method-en'] ? item['method-en'] : item.method;
+}
 </script>
 
 <template>
@@ -23,7 +32,7 @@ const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
                 <span class="text-base sm:text-lg font-semibold text-primary mt-3">
                     {{ item.name }}
                 </span>
-                <p class="text-sm text-primary mt-1">• {{ item.method }}</p>
+                <p class="text-sm text-primary mt-1">• {{ methodText(item) }}</p>
             </div>
         </div>
     </div>

@@ -1,13 +1,24 @@
+<script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+
+const shopTo = computed(() => (lang.value === 'en' ? '/shop-en' : '/shop'));
+const designLabel = computed(() => (lang.value === 'en' ? 'Design a tote bag' : 'ออกแบบกระเป๋าผ้า'));
+const contactLabel = computed(() => (lang.value === 'en' ? 'Contact us' : 'ติดต่อสอบถาม'));
+</script>
+
 <template>
 	<div class="flex justify-center gap-5">
 		<!-- ปุ่มออกแบบ -->
-		<NuxtLink to="/shop">
+		<NuxtLink :to="shopTo">
 			<UButton
 				icon="material-symbols:shopping-basket-sharp"
 				class="w-full bg-primary text-white text-sm px-4 py-2"
 				size="md"
 			>
-				ออกแบบกระเป๋าผ้า
+				{{ designLabel }}
 			</UButton>
 		</NuxtLink>
 
@@ -18,7 +29,7 @@
 				class="w-full bg-primary text-white text-sm px-4 py-2"
 				size="md"
 			>
-				ติดต่อสอบถาม
+				{{ contactLabel }}
 			</UButton>
 		</LineLink>
 	</div>

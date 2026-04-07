@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 // PROPS
 interface Props {
     image: string;
@@ -6,6 +8,10 @@ interface Props {
     alt?: string;
 }
 const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+const ctaLabel = computed(() => (lang.value === 'en' ? 'Free consultation' : 'ปรึกษาฟรี'));
 </script>
 
 <template>
@@ -19,16 +25,16 @@ const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
             class="relative z-10 flex min-h-[min(72vh,28rem)] flex-col justify-between p-5 text-primary lg:text-white sm:min-h-[min(65vh,26rem)] md:min-h-0 md:p-12 lg:min-h-0 lg:pr-5 xl:pr-12"
         >
             <div class="flex flex-col justify-center">
-                <component :is="titleAsTag" class="text-center text-7xl leading-none font-bold md:text-left">
+                <component :is="titleAsTag" class="text-center text-5xl leading-none font-bold md:text-left">
                     <slot name="title" mdc-unwrap="p" />
                 </component>
                 <p
                     v-if="$slots['secondary-title']"
-                    class="text-center text-2xl leading-none font-bold font-stretch-condensed md:text-left"
+                    class="text-center leading-none font-bold font-stretch-condensed md:text-left"
                 >
                     <slot name="secondary-title" mdc-unwrap="p" />
                 </p>
-                <p v-if="$slots.description" class="mt-1 text-center text-2xl leading-none font-light md:text-left" mdc-unwrap="p">
+                <p v-if="$slots.description" class="mt-1 text-center leading-none font-light md:text-left" mdc-unwrap="p">
                     <slot name="description" mdc-unwrap="p" />
                 </p>
 
@@ -43,7 +49,7 @@ const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
                             color="neutral"
                         >
                             <Icon name="lucide:message-circle" size="1rem" class="shrink-0 text-primary" />
-                            ปรึกษาฟรี
+                            {{ ctaLabel }}
                         </UButton>
                     </LineLink>
                 </slot>

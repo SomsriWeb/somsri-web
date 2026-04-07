@@ -1,7 +1,10 @@
 {
     "uid": "c20-oe",
     "imageUrl": "/fabrics/c20-OE.jpg",
-    "forProductType": ["tshirt", "polo"],
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
     "nameTh": "คอตตอน 20 OE",
     "nameEn": "Cotton 20 OE",
     "recommendForStyle": "เสื้อยืดราคาประหยัด งานโปรโมชัน",
@@ -11,5 +14,12 @@
         "เหมาะงานพิมพ์ลายทั่วไป"
     ],
     "disadvantage": [],
-    "order": 18
+    "order": 18,
+    "recommendForStyleEn": "Budget T-shirts, promotional orders",
+    "advantageEn": [
+        "Affordable pricing",
+        "Comfortable and breathable",
+        "Suitable for general printing"
+    ],
+    "disadvantageEn": []
 }

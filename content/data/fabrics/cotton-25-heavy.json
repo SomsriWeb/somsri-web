@@ -1,7 +1,10 @@
 {
     "uid": "cotton-25-heavy",
     "imageUrl": "/fabrics/cotton-25heavy.jpg",
-    "forProductType": ["tshirt", "polo"],
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
     "nameTh": "คอตตอน 25 เฮวี",
     "nameEn": "Cotton 25 Heavy",
     "recommendForStyle": "เสื้อโทนหนา ลุคสตรีท โอเวอร์ไซส์",
@@ -11,5 +14,12 @@
         "ทนทานต่อการใช้งาน"
     ],
     "disadvantage": [],
-    "order": 20
+    "order": 20,
+    "recommendForStyleEn": "Heavyweight tees, streetwear, oversized fits",
+    "advantageEn": [
+        "Thick fabric with a nice drape",
+        "Warm and comfortable in air-conditioned rooms",
+        "Durable for daily wear"
+    ],
+    "disadvantageEn": []
 }

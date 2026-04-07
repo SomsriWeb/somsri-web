@@ -1,13 +1,16 @@
 {
     "uid": "tshirt",
     "name": "เสื้อยืดรวมสกรีน",
+    "name-en": "T-shirt with screen printing (rates shown)",
     "imageUrl": "/price/tshirt.jpg",
     "conditions": [
         {
-            "text": "ราคานี้เฉพาะสกรีน 1 สี 1 จุดเท่านั้น"
+            "text": "ราคานี้เฉพาะสกรีน 1 สี 1 จุดเท่านั้น",
+            "text-en": "Rates apply to 1-color, 1-location screen printing only."
         },
         {
-            "text": "สั่งซื้อต่ำกว่า 100 ตัว มีค่าบล็อค 300 บาท"
+            "text": "สั่งซื้อต่ำกว่า 100 ตัว มีค่าบล็อค 300 บาท",
+            "text-en": "Orders under 100 pcs: 300 THB screen/setup fee applies."
         }
     ],
     "priceLists": [
@@ -48,6 +51,7 @@
         },
         {
             "fabricName": "COTTON พรีเมียม 32",
+            "fabricNameEn": "COTTON Premium 32",
             "rates": [
                 {
                     "min": 100,
@@ -83,6 +87,7 @@
         },
         {
             "fabricName": "COTTON พรีเมียม 20",
+            "fabricNameEn": "COTTON Premium 20",
             "rates": [
                 {
                     "min": 100,
@@ -118,6 +123,7 @@
         },
         {
             "fabricName": "SUPERSOFF นุ่มพิเศษ",
+            "fabricNameEn": "SUPERSOFF ultra-soft",
             "rates": [
                 {
                     "min": 100,
@@ -188,6 +194,7 @@
         },
         {
             "fabricName": "ไมโครกีฬา แห้งเร็ว",
+            "fabricNameEn": "Micro sport quick-dry",
             "rates": [
                 {
                     "min": 100,

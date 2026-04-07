@@ -1,5 +1,6 @@
 {
     "label": "ชำระยอดส่วนที่เหลือ ก่อนวันที่จัดส่ง",
+    "label-en": "Pay balance before shipment",
     "image": "/how-to-order/7.png",
     "order": 7
 }

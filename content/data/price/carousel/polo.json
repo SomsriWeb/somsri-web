@@ -1,10 +1,12 @@
 {
     "uid": "polo",
     "name": "เสื้อโปโลเปล่า",
+    "name-en": "Plain polo shirt (embroidery quoted separately)",
     "imageUrl": "/price/polo.jpg",
     "conditions": [
         {
-            "text": "ราคาปักเป็นราคาที่ยืดหยุ่นสูง มีความจำเป็น ต้องส่งลายเพื่อประเมินราคาก่อน"
+            "text": "ราคาปักเป็นราคาที่ยืดหยุ่นสูง มีความจำเป็น ต้องส่งลายเพื่อประเมินราคาก่อน",
+            "text-en": "Embroidery pricing varies; please send artwork for a quote."
         }
     ],
     "priceLists": [
@@ -45,6 +47,7 @@
         },
         {
             "fabricName": "ไมโครกีฬา / จูติไมโคร",
+            "fabricNameEn": "Micro sport / Juti micro",
             "rates": [
                 {
                     "min": 100,
@@ -75,6 +78,7 @@
         },
         {
             "fabricName": "TC-Lacoste สีขาว",
+            "fabricNameEn": "TC-Lacoste white",
             "rates": [
                 {
                     "min": 50,
@@ -110,6 +114,7 @@
         },
         {
             "fabricName": "TC-Lacoste สีอื่น ๆ",
+            "fabricNameEn": "TC-Lacoste (other colors)",
             "rates": [
                 {
                     "min": 50,

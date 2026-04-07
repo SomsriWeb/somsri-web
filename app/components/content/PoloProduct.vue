@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { LANGUAGE } from '~/lib/language';
+
 const { data: polo } = await useAsyncData('poloProduct', () => queryCollection('poloProduct').order('order', 'ASC').all());
 
 /** แบ่งเป็นแถวละ 2 รูป — แถวสุดท้ายที่เหลือ 1 รูปให้อยู่กลาง */
@@ -10,6 +12,15 @@ const rows = computed(() => {
     }
     return chunks;
 });
+
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
+
+const fabricSpecTo = computed(() => (lang.value === 'en' ? '/fabric-specification-en' : '/fabric-specification'));
+const shopTo = computed(() => (lang.value === 'en' ? '/shop-en' : '/shop'));
+
+const moreLabel = computed(() => (lang.value === 'en' ? 'Learn more' : 'ดูเพิ่มเติม'));
+const designLabel = computed(() => (lang.value === 'en' ? 'Design a polo shirt' : 'ออกแบบเสื้อโปโล'));
 </script>
 
 <template>
@@ -42,12 +53,16 @@ const rows = computed(() => {
         </div>
 
         <div class="mt-10 flex flex-row flex-wrap justify-center items-center gap-4 px-5">
-            <NuxtLink to="/fabric-specification">
-                <UButton size="xl" color="primary" variant="solid" icon="i-lucide-file-search" class="min-w-[9rem] px-4"> ดูเพิ่มเติม </UButton>
+            <NuxtLink :to="fabricSpecTo">
+                <UButton size="xl" color="primary" variant="solid" icon="i-lucide-file-search" class="min-w-[9rem] px-4">
+                    {{ moreLabel }}
+                </UButton>
             </NuxtLink>
 
-            <NuxtLink to="/shop">
-                <UButton size="xl" color="primary" variant="solid" icon="i-lucide-shirt" class="min-w-[12rem] px-4"> ออกแบบเสื้อโปโล </UButton>
+            <NuxtLink :to="shopTo">
+                <UButton size="xl" color="primary" variant="solid" icon="i-lucide-shirt" class="min-w-[12rem] px-4">
+                    {{ designLabel }}
+                </UButton>
             </NuxtLink>
         </div>
     </section>

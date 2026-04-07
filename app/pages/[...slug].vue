@@ -8,6 +8,7 @@ import { USE_NAVBAR } from '~/lib/useNavbar';
 
 const route = useRoute();
 const pageType = ref<'page' | 'blog'>('page');
+const languageState = useState<'th' | 'en'>('language', () => 'th');
 
 const { data: page } = await useAsyncData('page-' + route.path, async () => {
     let data = await queryCollection('content').path(route.path).first();
@@ -32,7 +33,8 @@ provide(LINE_LINK, page.value.lineLink);
 provide(USE_NAVBAR, page.value.navbar);
 provide(USE_FOOTER, page.value.footer);
 provide(USE_LINE_FLOATING_BUTTON, page.value.lineFloatingButton);
-provide(LANGUAGE, page.value.language || 'th');
+languageState.value = ((page.value.language || 'th') as 'th' | 'en') ?? 'th';
+provide(LANGUAGE, languageState);
 </script>
 
 <template>

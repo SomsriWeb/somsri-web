@@ -19,8 +19,8 @@ const { $viewport } = useNuxtApp();
 const { data: menus } = await useAsyncData('navbar-menus', () => queryCollection('navbar').all());
 const isScrolled = ref<boolean>(false);
 const showMenu = ref<boolean>(false);
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
-const lang = unref(LANG);
+const LANG = inject<'th' | 'en' | Ref<'th' | 'en'>>(LANGUAGE, 'th');
+const lang = computed<'th' | 'en'>(() => (typeof LANG === 'string' ? LANG : LANG.value));
 const isSlideOverOpen = ref(false);
 
 const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
@@ -30,9 +30,9 @@ const productItems = computed(() => {
 
 const mainNavItemsBase = computed<NavigationMenuItem[]>(() => {
     return (navbarData.value.main || []).map((menu) => {
-        const url = lang === 'th' ? menu.url : menu['url-en'];
+        const url = lang.value === 'th' ? menu.url : menu['url-en'];
         return {
-            label: lang === 'th' ? menu.label : menu['label-en'],
+            label: lang.value === 'th' ? menu.label : menu['label-en'],
             to: url,
             class: activeMenuClass(url, false),
         };
@@ -48,8 +48,8 @@ const items = computed<NavigationMenuItem[]>(() => {
             ...item,
             slot: 'megamenu' as const,
             children: products.map((prod) => ({
-                label: lang === 'th' ? prod.label : prod['label-en'],
-                to: lang === 'th' ? prod.url : prod['url-en'],
+                label: lang.value === 'th' ? prod.label : prod['label-en'],
+                to: lang.value === 'th' ? prod.url : prod['url-en'],
                 class: activeMenuClass(prod.url, true),
             })),
         };

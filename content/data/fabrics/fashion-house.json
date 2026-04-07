@@ -1,7 +1,11 @@
 {
     "uid": "fashion-house",
     "imageUrl": "/fabrics/Fashion-house.jpg",
-    "forProductType": ["tshirt", "polo", "brand"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "brand"
+    ],
     "nameTh": "แฟชั่นเฮาส์",
     "nameEn": "Fashion House",
     "recommendForStyle": "เสื้อแฟชั่น งานคอลเลกชัน",
@@ -11,5 +15,12 @@
         "คุณภาพเหมาะงานแบรนด์"
     ],
     "disadvantage": [],
-    "order": 25
+    "order": 25,
+    "recommendForStyleEn": "Fashion shirts, collection pieces",
+    "advantageEn": [
+        "Modern, fashion-forward look",
+        "Suitable for many cuts and styles",
+        "Brand-ready quality"
+    ],
+    "disadvantageEn": []
 }

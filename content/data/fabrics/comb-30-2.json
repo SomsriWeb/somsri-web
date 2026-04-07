@@ -1,7 +1,10 @@
 {
     "uid": "comb-30-2",
     "imageUrl": "/fabrics/comb-30_2.jpg",
-    "forProductType": ["tshirt", "polo"],
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
     "nameTh": "คอมป์ 30/2",
     "nameEn": "Comb 30/2",
     "recommendForStyle": "เสื้อแบรนด์ เสื้อยืดเกรดดี",
@@ -11,5 +14,12 @@
         "สีสด คมชัดเมื่อสกรีน"
     ],
     "disadvantage": [],
-    "order": 19
+    "order": 19,
+    "recommendForStyleEn": "Brand T-shirts, premium tees",
+    "advantageEn": [
+        "Smooth yarn surface",
+        "Wrinkle-resistant",
+        "Vibrant, sharp prints"
+    ],
+    "disadvantageEn": []
 }

@@ -15,5 +15,13 @@
         "ราคาไม่สูง"
     ],
     "disadvantage": [],
-    "order": 3
+    "order": 3,
+    "recommendForStyleEn": "All types of T-shirts",
+    "advantageEn": [
+        "Thicker fabric",
+        "Medium hand-feel",
+        "Wrinkle-resistant",
+        "Affordable price"
+    ],
+    "disadvantageEn": []
 }
