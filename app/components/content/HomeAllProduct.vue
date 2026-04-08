@@ -37,16 +37,6 @@ function productCardBindings(p: ProductRow) {
     };
 }
 
-function productCardBindings(p: ProductRow) {
-    return {
-        name: props.lang === 'th' ? p.name : p['name-en'],
-        url: p.url,
-        image: p.image,
-        alt: props.lang === 'th' ? p.alt : p['alt-en'],
-        lang: props.lang,
-    };
-}
-
 const { data: products } = await useAsyncData('data-products', () => {
     return queryCollection('product').where('featured', '=', true).order('order', 'ASC').all();
 });
