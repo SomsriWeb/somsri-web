@@ -6,6 +6,8 @@ interface Props {
     alt?: string;
 }
 const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -43,7 +45,7 @@ const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
                             color="neutral"
                         >
                             <Icon name="lucide:message-circle" size="1rem" class="shrink-0 text-primary" />
-                            ปรึกษาฟรี
+                            {{ t('cta.freeConsultation') }}
                         </UButton>
                     </LineLink>
                 </slot>

@@ -20,13 +20,13 @@ seo:
 image: /polo/header.jpg
 ---
 #title
-รับผลิตเสื้อโปโล
+:I18nText{k="polo.hero.title"}
 
 #secondary-title
-ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
+:I18nText{k="polo.hero.subtitle"}
 
 #description
-เสื้อโปโลขั้นต่ำ 100 ตัว
+:I18nText{k="polo.hero.description"}
 ::
 
 ::prose-h2{.text-center}
@@ -120,7 +120,7 @@ image: /polo/header.jpg
   ::center
       :::line-link
           ::::line-button
-          แอดไลน์สั่งทำเสื้อ
+          :I18nText{k="polo.line.addLineOrder"}
           ::::
       :::
   ::
@@ -171,7 +171,7 @@ image: /polo/header.jpg
   ::center
   :::line-link
     ::::line-button
-    แอดไลน์สั่งทำเสื้อ
+    :I18nText{k="polo.line.addLineOrder"}
     ::::
   :::
   ::

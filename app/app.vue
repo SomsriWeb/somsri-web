@@ -4,6 +4,13 @@ const { proxy: metaPixel } = useScriptMetaPixel();
 
 // VARIABLE
 const config = useRuntimeConfig();
+const { locale } = useI18n();
+
+useHead({
+    htmlAttrs: {
+        lang: computed(() => (locale.value === 'en' ? 'en' : 'th')),
+    },
+});
 
 if (config.env === 'production') {
     // RUN GTAG

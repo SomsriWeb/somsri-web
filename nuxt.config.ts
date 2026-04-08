@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxt/fonts',
         '@nuxt/eslint',
+        '@nuxtjs/i18n',
         'nuxt-swiper',
         'nuxt-viewport',
         '@nuxtjs/device',
@@ -24,9 +25,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            htmlAttrs: {
-                lang: 'th',
-            },
+            // htmlAttrs.lang will be set dynamically by i18n (see app/app.vue)
             link: [
                 {
                     rel: 'apple-touch-icon',
@@ -91,6 +90,15 @@ export default defineNuxtConfig({
                 },
             ],
         },
+    },
+    i18n: {
+        strategy: 'no_prefix',
+        locales: [
+            { code: 'th', iso: 'th-TH', name: 'ไทย' },
+            { code: 'en', iso: 'en-US', name: 'English' },
+        ],
+        defaultLocale: 'th',
+        vueI18n: './i18n.config.ts',
     },
     seo: {},
     site: {

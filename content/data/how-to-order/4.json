@@ -1,6 +1,8 @@
 {
     "label": "ชำระยอดมัดจำ 50%",
+    "label-en": "Pay 50% deposit",
     "description": "(กรณียอดต่ำกว่า 50,000 บาท ชำระเต็มจำนวน)",
+    "description-en": "(For orders under 50,000 THB, full payment is required.)",
     "image": "/how-to-order/4.png",
     "order": 4
 }

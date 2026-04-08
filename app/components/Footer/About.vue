@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { LANGUAGE } from '~/lib/language';
-
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
+const { locale, t } = useI18n();
+const lang = computed<'th' | 'en'>(() => (locale.value === 'en' ? 'en' : 'th'));
 const data = {
     th: {
         title: 'เกี่ยวกับเรา',
@@ -17,9 +16,9 @@ const data = {
 </script>
 <template>
     <div class="text-white">
-        <FooterTitle>{{ data[LANG].title }}</FooterTitle>
+        <FooterTitle>{{ t('footer.aboutTitle') }}</FooterTitle>
         <p class="font-light">
-            {{ data[LANG].description }}
+            {{ data[lang].description }}
         </p>
     </div>
 </template>

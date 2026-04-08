@@ -1,0 +1,34 @@
+{
+  "common": {
+    "learnMore": "ดูเพิ่มเติม",
+    "viewMoreProducts": "ดูสินค้าอื่น ๆ"
+  },
+  "footer": {
+    "menu": "เมนู",
+    "aboutTitle": "เกี่ยวกับเรา",
+    "contactTitle": "ติดต่อเรา",
+    "phoneNumbersTitle": "เบอร์โทรศัพท์"
+  },
+  "portfolio": {
+    "customerGroup": "กลุ่มลูกค้า",
+    "viewPricing": "เรทราคาเสื้อ",
+    "customerReviews": "รีวิวลูกค้า"
+  },
+  "cta": {
+    "freeConsultation": "ปรึกษาฟรี",
+    "contactUs": "ติดต่อสอบถาม",
+    "designToteBag": "ออกแบบกระเป๋าผ้า",
+    "designPolo": "ออกแบบเสื้อโปโล"
+  },
+  "polo": {
+    "hero": {
+      "title": "รับผลิตเสื้อโปโล",
+      "subtitle": "ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์",
+      "description": "เสื้อโปโลขั้นต่ำ 100 ตัว"
+    },
+    "line": {
+      "addLineOrder": "แอดไลน์สั่งทำเสื้อ"
+    }
+  }
+}
+

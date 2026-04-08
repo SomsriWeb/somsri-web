@@ -1,0 +1,34 @@
+{
+  "common": {
+    "learnMore": "Learn more",
+    "viewMoreProducts": "View more products"
+  },
+  "footer": {
+    "menu": "Menu",
+    "aboutTitle": "About Us",
+    "contactTitle": "Contact Us",
+    "phoneNumbersTitle": "Phone Numbers"
+  },
+  "portfolio": {
+    "customerGroup": "Customer group",
+    "viewPricing": "View pricing",
+    "customerReviews": "Customer reviews"
+  },
+  "cta": {
+    "freeConsultation": "Free consultation",
+    "contactUs": "Contact us",
+    "designToteBag": "Design a tote bag",
+    "designPolo": "Design a polo shirt"
+  },
+  "polo": {
+    "hero": {
+      "title": "Custom polo shirts",
+      "subtitle": "Premium fabric, export-grade quality, brand-level work at a great value",
+      "description": "Minimum order: 100 pieces"
+    },
+    "line": {
+      "addLineOrder": "Add LINE to order"
+    }
+  }
+}
+

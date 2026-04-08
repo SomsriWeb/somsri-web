@@ -337,7 +337,9 @@ export default defineContentConfig({
             source: 'data/how-to-order/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 description: z.string().optional(),
+                'description-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),

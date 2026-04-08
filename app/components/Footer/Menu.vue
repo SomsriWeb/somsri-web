@@ -1,17 +1,9 @@
 <script lang="ts" setup>
-import { LANGUAGE } from '~/lib/language';
 import type { NavbarCollectionItem } from '@nuxt/content';
 
 const { data: menus } = await useAsyncData('menu', () => queryCollection('navbar').all());
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
-const data = {
-    th: {
-        menu: 'เมนู',
-    },
-    en: {
-        menu: 'Menu',
-    },
-};
+const { locale, t } = useI18n();
+const lang = computed<'th' | 'en'>(() => (locale.value === 'en' ? 'en' : 'th'));
 
 const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
 const menuItems = computed(() => navbarData.value.main || []);
@@ -20,16 +12,16 @@ const secondColumnMenus = computed(() => menuItems.value.slice(5));
 </script>
 <template>
     <div class="text-white">
-        <FooterTitle>{{ data[LANG].menu }}</FooterTitle>
+        <FooterTitle>{{ t('footer.menu') }}</FooterTitle>
         <nav class="grid grid-cols-2 gap-3">
             <ul class="font-light">
                 <li v-for="menu in firstColumnMenus" :key="menu.label">
-                    <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">{{ LANG === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
+                    <NuxtLink :to="lang === 'th' ? menu.url : menu['url-en']" class="underline">{{ lang === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
                 </li>
             </ul>
             <ul class="font-light lg:relative">
                 <li v-for="menu in secondColumnMenus" :key="menu.label">
-                    <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">{{ LANG === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
+                    <NuxtLink :to="lang === 'th' ? menu.url : menu['url-en']" class="underline">{{ lang === 'th' ? menu.label : menu['label-en'] }}</NuxtLink>
                 </li>
             </ul>
         </nav>
