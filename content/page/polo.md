@@ -75,31 +75,41 @@ image: /polo/header.jpg
 
 ##
 
-::carousel{:items="3" :slidesPerView="3" :spaceBetween="16" :slideOverflowVisible="true" :loop="false"}
+::carousel{:items="4" :slidesPerView="3" :spaceBetween="16" :slideOverflowVisible="true" :loop="false"}
 #item-1
   :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
-    :prose-img{src="/pin/งานปักสมศรี1.jpg" alt="ตัวอย่างงานพิมพ์ลาย" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/พิมพ์ลาย2.jpg" alt="ตัวอย่างงานพิมพ์ลาย" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #hover
-    :prose-img{src="/pin/งานปักสมศรี2.jpg" alt="ตัวอย่างงานพิมพ์ลาย เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/พิมพ์ลาย.jpg" alt="ตัวอย่างงานพิมพ์ลาย เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #caption
     <p class="text-center text-primary font-medium text-sm sm:text-base">พิมพ์ลาย</p>
   :::
 #item-2
   :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
-    :prose-img{src="/pin/งานปักสมศรี4.jpg" alt="ตัวอย่างงานปัก" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/ปักทรานเฟอร์2.jpg" alt="ตัวอย่างงานปัก" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #hover
-    :prose-img{src="/pin/งานปักสมศรี6.jpg" alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/ปักทรานเฟอร์2.jpg" alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #caption
-    <p class="text-center text-primary font-medium text-sm sm:text-base">ปักธรรมดา</p>
+    <p class="text-center text-primary font-medium text-sm sm:text-base">ปักทรานเฟอร์</p>
   :::
 
 #item-3
   :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
-    :prose-img{src="/pin/งานปักสมศรี7.jpg" alt="ตัวอย่างงานสกรีน" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/สกรีน2.jpg" alt="ตัวอย่างงานสกรีน" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #hover
-    :prose-img{src="/pin/งานปักสมศรี8.jpg" alt="ตัวอย่างงานสกรีน เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/สกรีน.jpg" alt="ตัวอย่างงานสกรีน เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #caption
     <p class="text-center text-primary font-medium text-sm sm:text-base">สกรีน</p>
+  :::
+::
+
+#item-4
+  :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
+    :prose-img{src="/polo/ปักธรรมดา2.jpg" alt="ปักธรรมดา" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #hover
+    :prose-img{src="/polo/ปักธรรมดา.jpg" alt="ตัวอย่างงานปักธรรมดา เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+  #caption
+    <p class="text-center text-primary font-medium text-sm sm:text-base">ปักธรรมดา</p>
   :::
 ::
 
