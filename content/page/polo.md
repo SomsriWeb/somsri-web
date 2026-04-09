@@ -15,7 +15,7 @@ seo:
     content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตเสื้อโปโล เสื้อทีม ยูนิฟอร์มพนักงาน พร้อมปัก-สกรีน",   "image": [         "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",     "https://somsritshirt.com/_ipx/f_webp/product/band.jpg"   ],   "description": "บริการรับผลิตเสื้อโปโลและเสื้อคอปกครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมบริการปักและสกรีนโลโก้ตามสั่ง ราคาโรงงาน คุณภาพพรีเมียม",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "AggregateOffer",     "url": "https://somsritshirt.com/polo",     "priceCurrency": "THB",     "lowPrice": "120",     "highPrice": "235"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.87",     "bestRating": "5",     "worstRating": "1",     "ratingCount": "142"   },   "mainEntityOfPage": {     "@type": "Service",     "serviceType": "Custom Apparel Manufacturing",     "provider": {       "@type": "LocalBusiness",       "name": "สมศรีมีเสื้อ",       "address": {         "@type": "PostalAddress",         "streetAddress": "บริษัท สมศรีการ์เมนท์ จำกัด 1033/6 ถนนเพชรเกษม 106 แขวงหนองค้างพลู",         "addressLocality": "เขตหนองแขม",         "addressRegion": "กรุงเทพมหานคร",         "postalCode": "10160",         "addressCountry": "TH"       }     }   } }'
 ---
 
-::landing-page-header-style-four
+::landing-page-header-style-two
 ---
 image: /polo/header.jpg
 ---
@@ -88,7 +88,7 @@ image: /polo/header.jpg
   :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}
     :prose-img{src="/polo/ปักทรานเฟอร์2.jpg" alt="ตัวอย่างงานปัก" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #hover
-    :prose-img{src="/polo/ปักทรานเฟอร์2.jpg" alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
+    :prose-img{src="/polo/ปักทรานเฟอร์.jpg" alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" class="rounded-xl object-cover aspect-square w-full shadow-sm"}
   #caption
     <p class="text-center text-primary font-medium text-sm sm:text-base">ปักทรานเฟอร์</p>
   :::
@@ -101,7 +101,6 @@ image: /polo/header.jpg
   #caption
     <p class="text-center text-primary font-medium text-sm sm:text-base">สกรีน</p>
   :::
-::
 
 #item-4
   :::hover-preview{:expandOnHover="true" :hoverScale="1.2" :transitionMs="280" wrapperClass="rounded-xl"}

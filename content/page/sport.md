@@ -15,7 +15,7 @@ seo:
     type: application/ld+json
 ---
 
-::landing-page-header-style-four
+::landing-page-header-style-two
 ---
 image: /sport/sport-banner.png
 ---
