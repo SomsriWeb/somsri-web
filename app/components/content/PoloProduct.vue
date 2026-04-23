@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: polo } = await useAsyncData('poloProduct', () => queryCollection('poloProduct').order('order', 'ASC').all());
+const { data: polo } = useAsyncData('poloProduct', () => queryCollection('poloProduct').order('order', 'ASC').all());
 
 /** แบ่งเป็นแถวละ 2 รูป — แถวสุดท้ายที่เหลือ 1 รูปให้อยู่กลาง */
 const rows = computed(() => {
@@ -14,26 +14,14 @@ const rows = computed(() => {
 
 <template>
     <section class="space-y-5">
-        <!-- แถว 2 รูป: grid คอลัมน์เท่ากัน | แถว 1 รูป: flex กลาง ความกว้างเท่า 1 ช่องของ grid -->
+        <!-- 1 col: รูปเรียงลงมา -->
         <div class="mx-auto w-full max-w-4xl space-y-5">
             <template v-for="(row, rowIdx) in rows" :key="rowIdx">
-                <div
-                    v-if="row.length === 2"
-                    class="grid grid-cols-1 gap-5 md:grid-cols-2 md:items-stretch md:gap-5"
-                >
+                <div class="flex flex-col items-center justify-center gap-5">
                     <div
                         v-for="(item, idx) in row"
                         :key="idx"
-                        class="polo-product__cell relative flex aspect-4/3 min-h-0 w-full items-center justify-center overflow-hidden"
-                    >
-                        <ProseImg :src="item.image" :alt="item.alt || item.name" />
-                    </div>
-                </div>
-                <div v-else class="flex w-full justify-center">
-                    <div
-                        v-for="(item, idx) in row"
-                        :key="idx"
-                        class="polo-product__cell relative flex aspect-4/3 min-h-0 w-full max-w-md items-center justify-center overflow-hidden md:max-w-none md:w-[calc((100%-1.25rem)/2)]"
+                        class="polo-product__cell relative flex w-full max-w-md items-center justify-center overflow-hidden md:max-w-none md:w-[calc((100%-1.25rem)/2)]"
                     >
                         <ProseImg :src="item.image" :alt="item.alt || item.name" />
                     </div>

@@ -1,7 +1,7 @@
 {
     "uid": "cotton-spandex",
     "imageUrl": "/fabrics/cotton-spandex.jpg",
-    "forProductType": ["tshirt", "polo", "sport"],
+    "forProductType": ["tshirt", "polo"],
     "nameTh": "คอตตอนสแปนเด็กซ์",
     "nameEn": "Cotton Spandex",
     "recommendForStyle": "เสื้อรัดรูปเล็กน้อย กิจกรรม กีฬาเบา",

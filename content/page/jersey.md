@@ -4,7 +4,7 @@ description: เราเป็น โรงงานผลิตเสื้อ
   รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
 lineLink: https://contact.somsritshirt.com/ea797
 ---
-::landing-page-header-style-four
+::landing-page-header-style-two
 ---
 image: /jersey/Jersey.png
 ---
@@ -29,25 +29,100 @@ image: /jersey/Jersey.png
     :::
     :::split-content
     ---
-    direction: right-to-left
+    direction: left-to-right
     compact: true
     ---
     #Headertitle
     
     #description
     :::prose-h2{class="text-primary md:text-xl"}
-    ไมโครสปอร์ต (Micro Sport Fabric)
+    เนื้อผ้าสายฟ้า หรือผ้ารันเวย์ (Runway) 
     :::
-    เสื้อ Jersey ใช้ผ้า ไมโครสปอร์ต (Micro Sport Fabric) เป็นวัสดุ หลัก ซึ่งเป็นผ้าไมโครไฟเบอร์ชนิดพิเศษที่มีคุณสมบัติ เบา นุ่ม แห้งไว และระบายอากาศได้ดี แม้จะเป็นผ้าประเภทเดียวกัน แต่ สามารถเลือกใช้ได้หลายลักษณะ เช่น ไมโครบาง ไมโครหนา หรือ ไมโครเม็ดข้าวโพด เพื่อให้เหมาะกับสไตล์ของเสื้อแต่ละแบบผ้าทุก ชนิดให้สัมผัสสบาย ไม่ร้อน พร้อมคุณสมบัติ Quick Dry ระบาย เหงื่อไว, ไม่ยับง่าย, และให้ลุคสปอร์ตพรีเมียม เหมาะสำหรับทั้งเสื้อ ทีมกีฬาและเสื้อแนวแฟชั่นสตรีท
+    ลายทอที่มีเอกลักษณ์เป็นเส้นทแยงหรือลวดลายซิกแซก คล้ายกับสายฟ้าที่เคลื่อนที่ น้ำหนักเบา ฉีกขาดได้ยาก รองรับการเคลื่อนไหวแบบฉับพลันได้อย่างดีเยี่ยม ช่วยขับเน้นกราฟิกที่ดู "Speed" หรือ "Dynamic" ให้โดดเด่นขึ้นมาก เหมาะอย่างยิ่งสำหรับเจอร์ซี่ฟุตบอล บาสเกตบอล หรือเสื้อทีม E-Sport ที่ต้องการลุคที่ดูดุดันและทันสมัย
 
     #image
-    :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-xs md:max-w-sm" alt="ตัวอย่างงานเสื้อ" src="/jersey/micro-sport.jpg"}
+    :prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าสายฟ้า" src="/jersey/fabrics/runway.png"}
+    :::
+
+    :::split-content
+    ---
+    direction: left-to-right
+    compact: true
+    ---
+    #Headertitle
+    
+    #description
+    :::prose-h2{class="text-primary md:text-xl"}
+    เนื้อผ้ารังผึ้งไมโคร (Micro Honeycomb)
+    :::
+    นิยมใช้ทำเสื้อเจอร์ซี่แนวสปอร์ตแฟชั่น หรือเสื้อแข่งกอล์ฟและเสื้อโปโลทีมที่ต้องการภาพลักษณ์ภูมิฐาน ผิวสัมผัสที่เป็นหลุมและนูน ลดพื้นที่การสัมผัสโดยตรงระหว่างผิวหนังกับเนื้อผ้า ทำให้รู้สึกแห้งสบาย ไม่เหนียวเหนอะหนะ แม้เหงื่อออกมากโครงสร้างรังผึ้งมีความแข็งแรงสูง ไม่ย้วยง่ายแม้ผ่านการซักซ้ำหลายครั้ง
+
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้ารังผึ้งไมโคร" src="/jersey/fabrics/micro-honeycomb.png"}
+    :::
+
+    :::split-content
+    ---
+    direction: left-to-right
+    compact: true
+    ---
+    #Headertitle
+    
+    #description
+    :::prose-h2{class="text-primary md:text-xl"}
+    ดาวกระจายไมโคร (Micro Star)
+    :::
+    เนื้อผ้าที่มีรูระบายอากาศขนาดจิ๋วกระจายตัวอยู่ทั่วผืนผ้า เป็นเนื้อผ้าที่ขึ้นชื่อ ราชาแห่งการระบายอากาศ (King of Ventilation)  มีน้ำหนักเบา เหมาะสำหรับกิจกรรมกลางแจ้ง 
+
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าดาวกระจายไมโคร" src="/jersey/fabrics/micro-star.jpg"}
+    :::
+
+    :::split-content
+    ---
+    direction: left-to-right
+    compact: true
+    ---
+    #Headertitle
+    
+    #description
+    :::prose-h2{class="text-primary md:text-xl"}
+    เนื้อผ้าเม็ดข้าวสาร (Rice Grain)
+    :::
+    ลวดลายการทอเป็นรูปทรงรีขนาดเล็กจิ๋ว เรียงตัวสลับกันดูคล้ายเมล็ดข้าวสาร เป็นผ้าที่ "ถึกและทน" ที่สุดในบรรดาทั้งหมด โครงสร้างการทอแบบเม็ดข้าวสารมีความละเอียดสูง คืนตัวได้ดีมาก สะบัดแล้วใส่ได้เลยโดยไม่ต้องรีด ผิวสัมผัสที่นุ่มเนียน ทำให้งานพิมพ์ Sublimation ออกมาคมชัดมากเป็นพิเศษ เหมาะสำหรับเสื้อเจอร์ซี่หรือเสื้อกิจกรรมกลางแจ้งที่ต้องการความทนทานสูง 
+
+    #image
+    :prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าเม็ดข้าวสาร" src="/jersey/fabrics/rice-grain.jpg"}
     :::
     ::title-with-description
     #title
     ## เทคนิกการพิมพ์ (Sublimation)
     #description
     กระบวนการพิมพสกรีนอีกรูปแบบหนึ่ง ที่ไดรับความนิยมเป็นอยางสูง โดยใช้ ความร้อนเข้ามาทำใหน้ำหมึกซึมเขาไปในเนื้อผ้า นิยมทำเป็นเสื้อกีฬา เสื้อโปโล และเสื้อเจอร์ซี่
+    ::
+
+    :::prose-h2{class="text-primary !mb-3 md:!mb-3.5"}
+    ตารางเปรียบเทียบ
+    :::
+    ::fabric-comparison-table
+    ---
+    fabricHeaders:
+      - ผ้า รังผึ้งไมโคร
+      - ผ้า สายฟ้า
+      - ดาวกระจาย
+      - เม็ดข้าวสาร
+    rows:
+      - label: การระบายอากาศ
+        ratings: ["⭐⭐⭐⭐⭐", "⭐⭐⭐","⭐⭐⭐⭐⭐","⭐⭐⭐"]
+      - label: ความยืดหยุ่น
+        ratings: ["⭐⭐⭐", "⭐⭐⭐⭐⭐","⭐⭐⭐⭐","⭐⭐⭐"]
+      - label: ความทนทาน/แข็งแรง
+        ratings: ["⭐⭐⭐⭐", "⭐⭐⭐⭐","⭐⭐⭐","⭐⭐⭐⭐⭐"]
+      - label: ความชัดของลายพิมพ์
+        ratings: ["⭐⭐⭐", "⭐⭐⭐⭐","⭐⭐⭐⭐","⭐⭐⭐⭐⭐"]
+      - label: ความเบาสบาย
+        ratings: ["⭐⭐⭐⭐", "⭐⭐⭐⭐","⭐⭐⭐⭐⭐","⭐⭐⭐⭐"]
+    ---
     ::
 
     :::prose-h2{class="text-primary !mb-3 md:!mb-3.5"}
@@ -69,12 +144,11 @@ image: /jersey/Jersey.png
     #item-5
     :prose-img{src="/jersey/fabrics/jersey5.jpg" alt="เสื้อ Jersey พิมพ์ลายด้านหลัง"}
     :::
-
     ::prose-h2
-    เลือกผ้าไมโครสปอร์ตที่เหมาะกับคุณ
+    เรทราคา Sublimation
     ::
-
-    ::jersey-fabric-list
+    ::center
+      :prose-img{.max-w-[20rem] src="/jersey/price_table.jpg" alt="เรทราคา Sublimation"}
     ::
     
     ::how-to-order{:titleCenter=true}
@@ -94,12 +168,12 @@ image: /jersey/Jersey.png
     :::accordion-
     ---
     items:
+      - question: ซักแล้วลายจะหลุดไหม?
+        answer: ไม่หลุด ไม่แตก ไม่ลอก เพราะใช้การพิมพ์แบบ Sublimation สีจะซึมเข้าไปในเนื้อผ้า ทำให้ลายติดทน ซักได้ยาวๆ สีไม่ซีดง่าย
       - question: ทำขั้นต่ำกี่ตัว?
         answer: เริ่มต้นขั้นต่ำ 100 ตัวเท่านั้น
-      - question: ซักแล้วลายจะหลุดไหม?
-        answer: ไม่หลุด ไม่แตก ไม่ลอก เพราะใช้การพิมพ์แบบ Sublimation สีจะซึมเข้าไปในเนื้อผ้า
       - question: ใช้เวลาผลิตกี่วัน?
-        answer: ระยะเวลาผลิตขึ้นอยู่กับจำนวนและรายละเอียดงาน สามารถทักไลน์เพื่อประเมินเวลาได้ทันที
+        answer: รับประกันได้รับสินค้าภายใน 90 วัน
       - question: เสื้อจะหดหรือย้วยไหม?
         answer: ไม่หด ไม่ย้วยง่าย เพราะผ้าสำหรับเสื้อกีฬาอยู่ทรงดี ซักแล้วไม่เสียรูป
     ---

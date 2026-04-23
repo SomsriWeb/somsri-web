@@ -31,7 +31,9 @@ const fabrics = computed(() => {
             </h3>
 
             <!-- คำอธิบาย (เทา) -->
-            <p class="text-stone-500 text-sm leading-normal w-max mb-1">สำหรับทำ{{ fabric.recommendForStyle }}</p>
+            <p class="text-stone-500 text-sm leading-normal w-full break-words whitespace-normal mb-1">
+                สำหรับทำ{{ fabric.recommendForStyle }}
+            </p>
 
             <!-- รายการ (แดง) -->
             <ul class="list-disc list-inside font-light text-primary space-y-1">

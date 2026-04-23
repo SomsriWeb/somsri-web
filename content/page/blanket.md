@@ -1,11 +1,11 @@
 ---
-title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
-description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง
-  รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+title: รับผลิตผ้าห่มพรีเมียม (นาโนกันน้ำ / ไมโครฟลีซ) | สมศรีมีเสื้อ
+description: โรงงานรับผลิตผ้าห่มเกรดพรีเมียม นุ่ม อุ่น งานเย็บเรียบร้อย 
+เหมาะสำหรับองค์กร โรงแรม รีสอร์ท ของพรีเมียม และของขวัญบริษัท เลือกเนื้อผ้า สี และแพ็กเกจจิ้งได้
 lineLink: https://contact.somsritshirt.com/99c42
 ---
 
-::landing-page-header-style-four
+::landing-page-header-style-two
 ---
 image: /blanket/blanket-banner.png
 ---
@@ -35,7 +35,7 @@ image: /blanket/blanket-banner.png
 
     :::split-content
     ---
-    direction: right-to-left
+    direction: left-to-right
     compact: false
     ---
     #Headertitle
@@ -73,7 +73,7 @@ image: /blanket/blanket-banner.png
 
     :::split-content
     ---
-    direction: right-to-left
+    direction: left-to-right
     compact: false
     ---
     #Headertitle
@@ -109,43 +109,6 @@ image: /blanket/blanket-banner.png
     :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/blanket/MicroFleece.jpg"}
     :::
 
-    :::split-content
-    ---
-    direction: right-to-left
-    compact: false
-    ---
-    #Headertitle
-    ซูเปอร์ซอฟฟ์ (Super Soft)
-    #description
-    :::prose-p
-    หนึ่งในเนื้อผ้ายอดนิยมสำหรับผลิตผ้าห่ม ด้วยเส้นใยไมโครไฟเบอร์ที่ให้สัมผัสนุ่มลื่นเป็นพิเศษ มอบความรู้สึกสบายทุกครั้งที่ใช้งาน
-    :::
-    :::icon-feature-grid
-    #item-1
-    :prose-img{src="/icon-detail/icon-1.jpg" alt="พรีเมียมเหมาะทำของขวัญ"}
-    พรีเมียมเหมาะทำของขวัญ
-
-    #item-2
-    :prose-img{src="/icon-detail/icon-11.jpg" alt="ให้ความอบอุ่นสูง"}
-    ให้ความอบอุ่นสูง
-    
-    #item-3
-    :prose-img{src="/icon-detail/icon-12.jpg" alt="นุ่มฟู น่ากอด"}
-    นุ่มฟู น่ากอด
-
-    #item-4
-    :prose-img{src="/icon-detail/icon-10.jpg" alt="Polyester 100%"}
-    Polyester 100%
-
-    #item-5
-    :prose-img{src="/icon-detail/icon-5.jpg" alt="250 – 350 gsm."}
-    250 – 350 gsm.
-    
-    :::
-
-    #image
-    :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/blanket/Super-soft.jpg"}
-    :::
 
     :::prose-h2{class="text-center"}
     เรทราคา

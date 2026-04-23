@@ -3,6 +3,7 @@
     "imageUrl": "/fabrics/microsport.png",
     "popupImageUrl": "/fabrics/micro-sport-popup.png",
     "forProductType": [
+        "sport",
         "tshirt",
         "polo"
     ],

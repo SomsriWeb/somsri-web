@@ -45,7 +45,7 @@ image: /faded-shirt/faded-banner.png
 
   :::split-content
   ---
-  direction: left-to-right
+  direction: right-to-left
   compact: true
   ---
   #Headertitle
@@ -65,7 +65,7 @@ image: /faded-shirt/faded-banner.png
   :::
   :::split-content
   ---
-  direction: right-to-left
+  direction: left-to-right
   compact: false
   ---
   #Headertitle
@@ -104,7 +104,7 @@ image: /faded-shirt/faded-banner.png
 
   :::split-content
   ---
-  direction: right-to-left
+  direction: left-to-right
   compact: false
   ---
   #Headertitle
@@ -143,7 +143,7 @@ image: /faded-shirt/faded-banner.png
 
   :::split-content
   ---
-  direction: right-to-left
+  direction: left-to-right
   compact: false
   ---
   #Headertitle

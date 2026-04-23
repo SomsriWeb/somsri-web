@@ -12,19 +12,14 @@
             "fabricName": "DRYTECH / DRYFEEL",
             "rates": [
                 {
-                    "min": 50,
-                    "max": 99,
-                    "price": 235
-                },
-                {
                     "min": 100,
                     "max": 250,
-                    "price": 230
+                    "price": 220
                 },
                 {
                     "min": 251,
                     "max": 400,
-                    "price": 220
+                    "price": 215
                 },
                 {
                     "min": 401,
@@ -77,11 +72,6 @@
             "fabricName": "TC-Lacoste สีขาว",
             "rates": [
                 {
-                    "min": 50,
-                    "max": 99,
-                    "price": 155
-                },
-                {
                     "min": 100,
                     "max": 250,
                     "price": 150
@@ -111,11 +101,6 @@
         {
             "fabricName": "TC-Lacoste สีอื่น ๆ",
             "rates": [
-                {
-                    "min": 50,
-                    "max": 99,
-                    "price": 175
-                },
                 {
                     "min": 100,
                     "max": 250,

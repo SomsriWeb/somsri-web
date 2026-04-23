@@ -1,8 +1,9 @@
 {
     "uid": "tk",
-    "imageUrl": "/fabrics/tk.png",
+    "imageUrl": "/fabrics/TK.jpg",
     "popupImageUrl": "/fabrics/tc-tk-popup.png",
     "forProductType": [
+        "sport",
         "tshirt",
         "polo"
     ],

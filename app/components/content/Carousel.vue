@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Swiper } from 'swiper/types';
+import { Autoplay } from 'swiper/modules';
 import { useDebounceFn, useResizeObserver, useWindowSize } from '@vueuse/core';
 import { useScrollTriggerRef } from '~/composables/useScrollTriggerRef';
 
@@ -33,6 +34,16 @@ interface Props {
      * เปิด/ปิด loop
      */
     loop?: boolean;
+
+    /**
+     * เลื่อนสไลด์อัตโนมัติ (ส่งต่อเป็น Swiper `autoplay`)
+     */
+    autoplay?: boolean;
+
+    /**
+     * ช่วงเวลาระหว่างสไลด์ (ms) เมื่อ `autoplay` เป็น true
+     */
+    autoplayDelay?: number;
 
     /**
      * แสดงปุ่ม prev/next
@@ -96,6 +107,8 @@ const props = withDefaults(defineProps<Props>(), {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
+    autoplay: true,
+    autoplayDelay: 3000,
     showNavigation: true,
     effect: 'slide',
     containerClass: '',
@@ -194,6 +207,9 @@ const swiperOptions = computed(() => {
             };
 
     return {
+        // Explicitly include modules used by options (autoplay).
+        // When this component initializes Swiper manually, we must provide modules ourselves.
+        modules: [Autoplay],
         breakpointsBase: props.breakpointsBase,
         slidesPerView: isPortfolioGrid ? 1 : props.slidesPerView,
         spaceBetween,
@@ -202,7 +218,9 @@ const swiperOptions = computed(() => {
         // ต้องการให้รูปแรก/รูปสุดท้ายก็อยู่กลางได้ (ซ้าย/ขวาเว้นว่างได้)
         centeredSlidesBounds: false,
         centerInsufficientSlides: true,
-        autoplay: false,
+        autoplay: props.autoplay
+            ? { delay: props.autoplayDelay, disableOnInteraction: false }
+            : false,
         loop: props.loop,
         effect: props.effect,
         breakpoints,
