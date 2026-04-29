@@ -45,10 +45,10 @@ navbar: true
 
   :::stats-banner
   ---
-  count1: "100"
+  count1: "500"
   count2: "10"
-  count3: "10000"
-  count4: "5000"
+  count3: "100000"
+  count4: "50000"
   suffix1: +
   suffix3: +
   ---
