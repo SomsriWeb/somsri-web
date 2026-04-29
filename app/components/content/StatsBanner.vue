@@ -30,7 +30,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
     wrapperClass: 'relative left-1/2 w-screen -translate-x-1/2 bg-primary text-white',
     innerClass: 'px-5 lg:px-[4.6rem]',
-    gridClass: 'grid grid-cols-2 sm:grid-cols-4 gap-y-6',
+    gridClass: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2 md:gap-y-6',
     itemClass: 'flex flex-col items-center justify-center text-center py-6',
     suffix1: '',
     suffix2: '',

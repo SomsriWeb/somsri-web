@@ -95,7 +95,7 @@ function toggleAccordion(index: number) {
                     >
                         <Icon name="lucide:chevron-down" class="h-5 w-5" />
                     </span>
-                    <ProseH3>{{ item.question }}</ProseH3>
+                    <ProseH2 class="text-lg md:text-xl">{{ item.question }}</ProseH2>
                 </div>
                 <div class="text-gray-600 p-4" v-show="isOpen[idx]"><ProseP>{{ item.answer }}</ProseP></div>
             </div>

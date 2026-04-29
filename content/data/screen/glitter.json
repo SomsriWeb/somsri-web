@@ -1,0 +1,10 @@
+{
+    "name": "สกรีนกากเพชร",
+    "name-en": "Glitter Printing",
+    "image": "/screen/glitter.jpg",
+    "alt": "รับทำเสื้อยืดแบบสกรีนกากเพชร",
+    "alt-en": "Custom T-shirts with Glitter Printing",
+    "url": "/screen/glitter",
+    "order": 10,
+    "category": "glitter"
+}

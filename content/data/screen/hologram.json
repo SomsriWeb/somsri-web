@@ -1,0 +1,10 @@
+{
+    "name": "สกรีนโฮโลแกรม",
+    "name-en": "Hologram Printing",
+    "image": "/screen/hologram.png",
+    "alt": "รับทำเสื้อยืดแบบสกรีนโฮโลแกรม",
+    "alt-en": "Custom T-shirts with Hologram Printing",
+    "url": "/screen/hologram",
+    "order": 8,
+    "category": "hologram"
+}

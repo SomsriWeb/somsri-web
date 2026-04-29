@@ -1,0 +1,19 @@
+{
+    "uid": "cotton-comb-40-interlock",
+    "imageUrl": "/fabrics/cotton-comb-32.png",
+    "popupImageUrl": "/fabrics/cotton-comb-popup.png",
+    "forProductType": [
+        "tshirt",
+        "polo"
+    ],
+    "nameTh": "คอตตอนคอมป์ 40 อินเตอร์ล็อค",
+    "nameEn": "Cotton Comb 40 Interlock",
+    "recommendForStyle": "เสื้อเนื้อแน่น ทรงสวย",
+    "advantage": [
+        "เนื้อผ้าแน่น เรียบ",
+        "ทิ้งตัวสวย",
+        "ยับยาก"
+    ],
+    "disadvantage": [],
+    "order": 2
+}

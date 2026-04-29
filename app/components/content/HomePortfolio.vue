@@ -87,7 +87,7 @@ useScrollRevealUp(marqueeWrapRef, {
         <!-- ใช้ grid แทน swiper -->
         <div
             v-if="portfolioCards?.length"
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-2"
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 mt-2"
         >
             <HomePortfolioCard
                 v-for="card in portfolioCards"

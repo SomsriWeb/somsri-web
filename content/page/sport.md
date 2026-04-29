@@ -78,29 +78,28 @@ image: /sport/sport-banner.jpg
   #description
   รับประกันความพึงพอใจมากถึง 90 วัน
   :::
-  :::carousel
+  :::image-grid
   ---
-  items: 7
-  slide-overflow-visible: true
-  slides-per-view: 3
-  space-between: 16
-  loop: true
+  items: 6
+  imageFit: cover
   ---
   #item-1
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/TC.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio1.jpg"}
+
   #item-2
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/TC(1).jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio2.jpg"}
+
   #item-3
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/เสื้อกีฬา(5).jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio3.jpg"}
+
   #item-4
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/เสื้อกีฬา(1).jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio4.jpg"}
+
   #item-5
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/เสื้อกีฬา(2).jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio5.jpg"}
+
   #item-6
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/เสื้อกีฬา(3).jpg"}
-  #item-7
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานเสื้อกีฬา" src="/sport/portfolio/เสื้อกีฬา(4).jpg"}
-    
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio6.jpg"}
   :::
   :sport-btn
 ::

@@ -21,7 +21,7 @@ const fabrics = computed(() => {
 });
 </script>
 <template>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+    <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
         <div v-for="fabric in fabrics" :key="fabric.id" class="">
             <ProseImg :src="fabric.imageUrl" :alt="fabric.nameEn" class="rounded-lg mb-2" />
 
