@@ -20,9 +20,9 @@
 		</h3>
 		<div class="bg-white flex flex-col gap-0.5 items-center p-1 min-h-36 justify-center">
 			<p class="text-primary">เริ่มต้นที่</p>
-			<p class="text-primary text-5xl font-bold">
+			<p class="text-primary text-5xl font-bold inline-flex items-baseline justify-center gap-x-1 whitespace-nowrap">
 				{{ priceLists.rates[0]?.price || "สอบถามราคา"}}
-				<span v-if="priceLists.rates[0]?.price" class="text-sm text-stone-800">THB</span>
+				<span v-if="priceLists.rates[0]?.price" class="text-sm text-stone-800 shrink-0">THB</span>
 			</p>
 			<p class="text-primary min-h-5">
 				({{ priceLists.rates[0]?.min }} - {{ priceLists.rates[0]?.max }} ตัว)
@@ -41,9 +41,12 @@
 					</p>
 					<p v-else class="font-bold leading-none">{{ rate.min }}+</p>
 				</div>
-				<p class="font-bold leading-none text-right" :class="[rate.price ? 'text-3xl' : 'text-sm']">
+				<p
+					class="font-bold leading-none text-right inline-flex items-baseline justify-end gap-x-1 whitespace-nowrap shrink-0"
+					:class="[rate.price ? 'text-3xl' : 'text-sm']"
+				>
 					{{ rate.price || "สอบถามราคา"}}
-					<span v-if="rate.price" class="text-xs font-normal">THB</span>
+					<span v-if="rate.price" class="text-xs font-normal shrink-0">THB</span>
 				</p>
 			</div>
 		</div>
