@@ -19,47 +19,55 @@ function capSlidesPerView(desired: number, count: number) {
 
 const swiperOptions = computed(() => ({
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 12,
+    centeredSlides: true,
+    centeredSlidesBounds: false,
+    centerInsufficientSlides: true,
     autoplay: {
         delay: 1000,
     },
-    autoHeight: true,
+    autoHeight: false,
     breakpoints: {
         320: {
             slidesPerView: capSlidesPerView(2, slidesCount.value),
+            spaceBetween: 12,
         },
         640: {
             slidesPerView: capSlidesPerView(2, slidesCount.value),
+            spaceBetween: 12,
         },
         768: {
             slidesPerView: capSlidesPerView(3, slidesCount.value),
+            spaceBetween: 14,
         },
         1024: {
             slidesPerView: capSlidesPerView(3, slidesCount.value),
+            spaceBetween: 16,
         },
         1280: {
             slidesPerView: capSlidesPerView(4, slidesCount.value),
+            spaceBetween: 18,
         },
     },
-    loop: true,
-    effect: 'creative',
+    loop: slidesCount.value > 1,
+    effect: 'slide',
     scrollbar: true,
 }));
 const swiper = useSwiper(containerRef, swiperOptions.value);
 </script>
 
 <template>
-    <div class="relative">
+    <div class="relative min-w-0">
         <ClientOnly>
-            <swiper-container ref="containerRef">
-                <swiper-slide v-for="priceList in priceData.priceLists" :key="priceList.fabricName" class="!w-[9rem] mr-3">
+            <swiper-container ref="containerRef" class="min-w-0">
+                <swiper-slide v-for="priceList in priceData.priceLists" :key="priceList.fabricName" class="h-auto">
                     <PriceCarouselCard :price-lists="priceList" />
                 </swiper-slide>
             </swiper-container>
         </ClientOnly>
 
-        <UButton icon="i-heroicons-chevron-left" class="!text-primary !min-w-fit absolute top-[46%] left-1 z-[2]" color="neutral" variant="outline" @click="swiper.prev()" />
+        <UButton icon="i-heroicons-chevron-left" class="text-primary! min-w-fit! absolute top-[46%] left-1 z-2" color="neutral" variant="outline" @click="swiper.prev()" />
 
-        <UButton icon="i-heroicons-chevron-right" class="!text-primary !min-w-fit absolute top-[46%] right-1 z-[2]" color="neutral" variant="outline" @click="swiper.next()" />
+        <UButton icon="i-heroicons-chevron-right" class="text-primary! min-w-fit! absolute top-[46%] right-1 z-2" color="neutral" variant="outline" @click="swiper.next()" />
     </div>
 </template>
