@@ -357,10 +357,11 @@ export default defineContentConfig({
 
         hatStyles: defineCollection({
             type: 'data',
-            source: 'data/hat-styles/**.json',
+            source: 'data/hat-styles/new-hat-styles/**.json',
             schema: z.object({
                 image: property(z.string()).editor({ input: 'media' }),
                 label: z.string(),
+                priceperunit : z.array(z.number()),
                 order: z.number(),
             }),
         }),
