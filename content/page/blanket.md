@@ -139,7 +139,7 @@ image: /blanket/blanket-banner.png
 ::
 ::why-choose-somsri
 #title
-เลือกผลิตเสื้อวินเทจกับเสื้อ Somsri แล้วดียังไง?
+เลือกผลิตผ้าห่มกับ Somsri แล้วดียังไง?
 ::
 ::container
 :how-to-order

@@ -51,10 +51,6 @@ footer: false
     ::how-to-order
     ::
 ::
-
-::what-cost-saving
-::
-
 ::center
         ::line-link
             ::line-button{.mb-6}

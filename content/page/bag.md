@@ -44,11 +44,11 @@ TOTE BAG
   :::how-to-order
   :::
 
-  :::center
-    ::::u-button
-      :::::unwrap-mdc
-      สั่งทำกระเป๋าผ้า
-      :::::
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 ::

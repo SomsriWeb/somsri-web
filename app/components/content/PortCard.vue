@@ -12,7 +12,7 @@ const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
 
 <template>
     <div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 place-items-center">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 place-items-center mb-5">
             <div v-for="item in datacards" :key="item.name" class="flex flex-col items-center text-center w-full max-w-[250px]">
                 <!-- Responsive square image -->
                 <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-md">

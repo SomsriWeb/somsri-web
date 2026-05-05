@@ -144,8 +144,18 @@
 		initCanvas()
 	}
 
+	const route = useRoute()
+
+	function initialProductTypeFromQuery(): ProductTypeKey {
+		const raw = route.query.type
+		if (typeof raw !== "string") return ProductTypeKey.TSHIRT
+		const allowed = Object.values(ProductTypeKey) as string[]
+		return allowed.includes(raw) ? (raw as ProductTypeKey) : ProductTypeKey.TSHIRT
+	}
+
 	// ONMOUNTED
 	onMounted(() => {
+		designPayload.value.type = initialProductTypeFromQuery()
 		initCanvas()
 	})
 </script>

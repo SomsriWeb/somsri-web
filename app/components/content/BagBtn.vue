@@ -1,7 +1,11 @@
+<script setup lang="ts">
+	import { ProductTypeKey } from "~/lib/design/variable"
+</script>
+
 <template>
 	<div class="flex justify-center gap-5">
-		<!-- ปุ่มออกแบบ -->
-		<NuxtLink to="/shop">
+		<!-- ปุ่มออกแบบ → หน้าออกแบบพร้อมเลือกประเภทกระเป๋าผ้า -->
+		<NuxtLink :to="{ path: '/shop', query: { type: ProductTypeKey.TOTEBAG } }">
 			<UButton
 				icon="material-symbols:shopping-basket-sharp"
 				class="w-full bg-primary text-white text-sm px-4 py-2"

@@ -70,7 +70,7 @@ function toggleAccordion(index: number) {
 
 <template>
     <div class="px-4 lg:relative lg:-left-4 lg:min-w-[105%]">
-        <h2 class="text-4xl font-semibold text-primary mb-2">
+        <h2 class="text-xl font-semibold text-primary mb-2">
             <slot name="title" mdc-unwrap="p">คำถามที่ลูกค้าชอบถาม</slot>
         </h2>
 
@@ -95,7 +95,7 @@ function toggleAccordion(index: number) {
                     >
                         <Icon name="lucide:chevron-down" class="h-5 w-5" />
                     </span>
-                    <ProseH2 class="text-lg md:text-xl">{{ item.question }}</ProseH2>
+                    <ProseH2 class="text-md md:text-lg">{{ item.question }}</ProseH2>
                 </div>
                 <div class="text-gray-600 p-4" v-show="isOpen[idx]"><ProseP>{{ item.answer }}</ProseP></div>
             </div>

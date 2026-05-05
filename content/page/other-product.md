@@ -45,6 +45,10 @@ lineLink: https://contact.somsritshirt.com/aa057
     ---
     ::::
   :::
+  :::price-another-price
+  #title
+  เรทราคาสินค้าอื่น ๆ
+  :::
 
   :::bag-main-content
   #titleH2
