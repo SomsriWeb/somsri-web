@@ -2,7 +2,7 @@
     "uid": "juti-micro",
     "imageUrl": "/fabrics/juti-micro.jpg",
     "popupImageUrl": "/fabrics/juti-micro-popup.jpg",
-    "forProductType": ["sport"],
+    "forProductType": ["sport", "fabric-specification"],
     "nameTh": "จูติไมโคร",
     "nameEn": "Juti Micro",
     "recommendForStyle": "เสื้อกีฬากลางแจ้ง",

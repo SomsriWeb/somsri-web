@@ -26,5 +26,5 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <UButton v-if="showButton" icon="i-lucide-arrow-up" class="absolute fixed bottom-4 right-4 rounded-full !min-w-0" @click="scrollToTop" aria-label="Back to top" />
+    <UButton v-if="showButton" icon="i-lucide-arrow-up" class="absolute fixed bottom-4 right-4 rounded-full !min-w-0 z-50" @click="scrollToTop" aria-label="Back to top" />
 </template>

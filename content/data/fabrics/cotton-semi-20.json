@@ -3,7 +3,8 @@
     "imageUrl": "/fabrics/cotton-semi.png",
     "popupImageUrl": "/fabrics/cotton-semi-popup.png",
     "forProductType": [
-        "tshirt"
+        "tshirt",
+        "fabric-specification"
     ],
     "nameTh": "คอตตอนเซมิ 20",
     "nameEn": "Cotton Semi 20",

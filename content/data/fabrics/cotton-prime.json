@@ -1,7 +1,7 @@
 {
     "uid": "cotton-prime",
     "imageUrl": "/fabrics/cotton-prime.jpg",
-    "forProductType": ["tshirt", "polo", "brand"],
+    "forProductType": ["tshirt", "polo", "brand", "fabric-specification"],
     "nameTh": "คอตตอนไพรม์",
     "nameEn": "Cotton Prime",
     "recommendForStyle": "เสื้อพรีเมียม งานแบรนด์",

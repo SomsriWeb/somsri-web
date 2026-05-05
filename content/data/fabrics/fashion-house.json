@@ -1,7 +1,7 @@
 {
     "uid": "fashion-house",
     "imageUrl": "/fabrics/Fashion-house.jpg",
-    "forProductType": ["tshirt", "polo", "brand"],
+    "forProductType": ["tshirt", "polo", "brand", "fabric-specification"],
     "nameTh": "แฟชั่นเฮาส์",
     "nameEn": "Fashion House",
     "recommendForStyle": "เสื้อแฟชั่น งานคอลเลกชัน",

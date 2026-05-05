@@ -1,7 +1,7 @@
 {
     "uid": "c20-oe",
     "imageUrl": "/fabrics/c20-OE.jpg",
-    "forProductType": ["tshirt", "polo"],
+    "forProductType": ["tshirt", "polo", "fabric-specification"],
     "nameTh": "คอตตอน 20 OE",
     "nameEn": "Cotton 20 OE",
     "recommendForStyle": "เสื้อยืดราคาประหยัด งานโปรโมชัน",
