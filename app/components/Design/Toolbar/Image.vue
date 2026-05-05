@@ -19,6 +19,9 @@
 	// COMPUTED
 	const activeCanvas = computed<Canvas>(() => design.value.activeCanvas as Canvas)
 
+	/** ด้านยาวสุดของรูปบน canvas ไม่เกิน min(กว้าง,สูง) ของ canvas × ค่านี้ */
+	const UPLOAD_IMAGE_MAX_FRACTION = 0.5
+
 	// FUNCTION
 	function openUploadModal() {
 		if (fileInputEl.value) {
@@ -63,6 +66,24 @@
 
 		imgEl.onload = () => {
 			const imgPayload = new FabricImage(imgEl)
+			const cw = activeCanvas.value.getWidth()
+			const ch = activeCanvas.value.getHeight()
+			const maxLongSide = Math.min(cw, ch) * UPLOAD_IMAGE_MAX_FRACTION
+			const w = imgPayload.width ?? 0
+			const h = imgPayload.height ?? 0
+			if (w > 0 && h > 0) {
+				const longSide = Math.max(w, h)
+				if (longSide > maxLongSide) {
+					const s = maxLongSide / longSide
+					imgPayload.set({ scaleX: s, scaleY: s })
+				}
+			}
+			imgPayload.set({
+				left: cw / 2,
+				top: ch / 2,
+				originX: "center",
+				originY: "center",
+			})
 			imgPayload.controls.deleteControl = deleteObjectBtn(imgPayload)
 			activeCanvas.value.add(imgPayload)
 			closeTab()
