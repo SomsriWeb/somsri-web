@@ -17,27 +17,30 @@ const cardUi = {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
             <UCard v-for="item in data" :key="item.label" :ui="cardUi">
                 <ProseImg :src="item.image" class="mb-1" />
-                <p class="text-center text-primary text-xl">{{ item.label }}</p>
-                <table class="w-full text-sm border-collapse item">
-                    <thead>
-                        <tr>
-                            <th class="py-2 text-left font-semibold">จำนวน(ตัว)</th>
-                            <th class="py-2 text-center font-medium">100</th>
-                            <th class="py-2 text-center font-medium">300</th>
-                            <th class="py-2 text-center font-medium">500</th>
-                            <th class="py-2 text-center font-bold text-primary">1,000+</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="py-3 text-left font-semibold">ราคา(บาท)</td>
-                            <td class="py-3 text-center font-medium">{{item.priceperunit [0]}} </td>
-                            <td class="py-3 text-center font-medium">{{item.priceperunit [1]}}</td>
-                            <td class="py-3 text-center font-medium">{{item.priceperunit [2]}}</td>
-                            <td class="py-3 text-center font-bold text-primary">{{item.priceperunit [3]}}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h3 class="text-center text-primary text-xl">{{ item.label }}</h3>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs border-collapse min-w-[240px]">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="py-2 text-left font-semibold whitespace-nowrap">จำนวน(ตัว)</th>
+                                <th class="py-2 text-center font-medium px-2">100</th>
+                                <th class="py-2 text-center font-medium px-2">300</th>
+                                <th class="py-2 text-center font-medium px-2">500</th>
+                                <th class="py-2 text-center font-bold text-primary px-2 whitespace-nowrap">1,000+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 text-left font-semibold whitespace-nowrap">ราคา(บาท)</td>
+                                <td class="py-3 text-center font-medium px-2">{{ item.priceperunit[0] }}</td>
+                                <td class="py-3 text-center font-medium px-2">{{ item.priceperunit[1] }}</td>
+                                <td class="py-3 text-center font-medium px-2">{{ item.priceperunit[2] }}</td>
+                                <td class="py-3 text-center font-bold text-primary px-2">{{ item.priceperunit[3] }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </UCard>
         </div>
     </div>
