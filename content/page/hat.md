@@ -21,14 +21,6 @@ footer: false
 ::
 
 ::container
-    ::somsri-produce-for
-    #title
-    Our customers
-
-    #description
-    สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
-    ::
-
     ::new-hat-style
     #title
     ## ชนิดหมวกและตารางราคา
@@ -45,6 +37,16 @@ footer: false
 ::
 
 ::why-choose-somsri
+::
+
+::container
+    ::somsri-produce-for
+    #title
+    สมศรีผลิตให้กับใครบ้าง
+
+    #description
+    สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
+    ::
 ::
 
 ::container
@@ -74,8 +76,8 @@ footer: false
     #item-6
     :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-6.jpg"}
     :::
-
 ::
+
 ::center
         ::line-link
             ::line-button{.mb-6}
