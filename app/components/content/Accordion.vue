@@ -70,8 +70,8 @@ function toggleAccordion(index: number) {
 
 <template>
     <div class="px-4 lg:relative lg:-left-4 lg:min-w-[105%]">
-        <h2 class="text-4xl font-semibold text-primary mb-2">
-            <slot name="title" mdc-unwrap="p">คำถามที่ลูกค้าชอบถาม</slot>
+        <h2 v-if="$slots.title" class="text-xl font-semibold text-primary mb-2">
+            <slot name="title" mdc-unwrap="p" />
         </h2>
 
         <p v-if="$slots.description" class="text-gray-600 mb-4">
@@ -79,25 +79,16 @@ function toggleAccordion(index: number) {
         </p>
 
         <div>
-            <div
-                v-for="(item, idx) in accordionItems"
-                :key="idx"
-                class="bg-white border-3 border-[#e5e5e5]"
-            >
-                <div
-                    class="flex items-center p-3 text-lg font-semibold cursor-pointer rounded-lg select-none"
-                    @click="toggleAccordion(idx)"
-                >
-                    <span
-                        class="accordion__chevron mr-3 inline-flex h-6 w-6 items-center justify-center"
-                        :class="isOpen[idx] ? 'is-open' : 'is-closed'"
-                        aria-hidden="true"
-                    >
+            <div v-for="(item, idx) in accordionItems" :key="idx" class="bg-white border-3 border-[#e5e5e5]">
+                <div class="flex items-center p-3 font-semibold cursor-pointer rounded-lg select-none" @click="toggleAccordion(idx)">
+                    <span class="accordion__chevron mr-3 inline-flex h-6 w-6 items-center justify-center" :class="isOpen[idx] ? 'is-open' : 'is-closed'" aria-hidden="true">
                         <Icon name="lucide:chevron-down" class="h-5 w-5" />
                     </span>
-                    <ProseH3>{{ item.question }}</ProseH3>
+                    <ProseH3 class="text-md md:text-lg">{{ item.question }}</ProseH3>
                 </div>
-                <div class="text-gray-600 p-4" v-show="isOpen[idx]"><ProseP>{{ item.answer }}</ProseP></div>
+                <div class="text-gray-600 p-4" v-show="isOpen[idx]">
+                    <ProseP>{{ item.answer }}</ProseP>
+                </div>
             </div>
         </div>
     </div>

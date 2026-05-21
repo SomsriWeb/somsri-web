@@ -80,10 +80,12 @@ useScrollRevealUp(rootRef, { start: 'top 60%' });
             :slides-per-view="props.slidesPerView"
             :space-between="props.spaceBetween"
             :loop="props.loop"
+            :autoplay="false"
             :show-navigation="props.showNavigation"
             breakpoints-preset="simple-lg"
             breakpoints-base="container"
             container-class="w-full max-w-full"
+            :dot="true"
         >
             <template #default="{ item, active }">
                 <ProseVideo v-bind="proseVideoBindings(item as VideoItem, active)" />

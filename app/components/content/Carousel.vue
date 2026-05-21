@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Swiper } from 'swiper/types';
+import { Autoplay } from 'swiper/modules';
 import { useDebounceFn, useResizeObserver, useWindowSize } from '@vueuse/core';
 import { useScrollTriggerRef } from '~/composables/useScrollTriggerRef';
 
@@ -25,6 +26,12 @@ interface Props {
     slidesPerView?: number;
 
     /**
+     * จำนวน slide ต่อ viewport ฝั่งเล็ก (เริ่มที่ 320px)
+     * ใช้สำหรับกรณีอยากให้มือถือแสดงหลายการ์ดพร้อมกัน
+     */
+    slidesPerViewMobile?: number;
+
+    /**
      * ระยะห่างระหว่าง slide (px)
      */
     spaceBetween?: number;
@@ -35,9 +42,24 @@ interface Props {
     loop?: boolean;
 
     /**
+     * เลื่อนสไลด์อัตโนมัติ (ส่งต่อเป็น Swiper `autoplay`)
+     */
+    autoplay?: boolean;
+
+    /**
+     * ช่วงเวลาระหว่างสไลด์ (ms) เมื่อ `autoplay` เป็น true
+     */
+    autoplayDelay?: number;
+
+    /**
      * แสดงปุ่ม prev/next
      */
     showNavigation?: boolean;
+
+    /**
+     * แสดง pagination dots ใต้แคโรเซล (Swiper `pagination` แบบ bullets, clickable)
+     */
+    dot?: boolean;
 
     /**
      * effect ของ swiper
@@ -94,9 +116,13 @@ const props = withDefaults(defineProps<Props>(), {
     items: 0,
     itemsData: () => [],
     slidesPerView: 1,
+    slidesPerViewMobile: 1,
     spaceBetween: 16,
     loop: true,
+    autoplay: true,
+    autoplayDelay: 3000,
     showNavigation: true,
+    dot: false,
     effect: 'slide',
     containerClass: '',
     breakpointsPreset: 'simple',
@@ -185,15 +211,18 @@ const swiperOptions = computed(() => {
           }
         : isSimpleLg
           ? {
-                320: { slidesPerView: 1, spaceBetween },
+                320: { slidesPerView: props.slidesPerViewMobile, spaceBetween },
                 1024: { slidesPerView: props.slidesPerView, spaceBetween },
             }
           : {
-                320: { slidesPerView: 1, spaceBetween },
+                320: { slidesPerView: props.slidesPerViewMobile, spaceBetween },
                 640: { slidesPerView: props.slidesPerView, spaceBetween },
             };
 
     return {
+        // Explicitly include modules used by options (autoplay).
+        // When this component initializes Swiper manually, we must provide modules ourselves.
+        modules: [Autoplay],
         breakpointsBase: props.breakpointsBase,
         slidesPerView: isPortfolioGrid ? 1 : props.slidesPerView,
         spaceBetween,
@@ -202,7 +231,9 @@ const swiperOptions = computed(() => {
         // ต้องการให้รูปแรก/รูปสุดท้ายก็อยู่กลางได้ (ซ้าย/ขวาเว้นว่างได้)
         centeredSlidesBounds: false,
         centerInsufficientSlides: true,
-        autoplay: false,
+        autoplay: props.autoplay
+            ? { delay: props.autoplayDelay, disableOnInteraction: false }
+            : false,
         loop: props.loop,
         effect: props.effect,
         breakpoints,
@@ -263,6 +294,16 @@ function handlePrev() {
 
 function handleNext() {
     swiperInstance.value?.slideNext();
+}
+
+function goToSlide(realIndex: number) {
+    const inst = swiperInstance.value;
+    if (!inst) return;
+    if (inst.params.loop && typeof inst.slideToLoop === 'function') {
+        inst.slideToLoop(realIndex);
+    } else {
+        inst.slideTo(realIndex);
+    }
 }
 
 const debouncedRefresh = useDebounceFn(() => nextTick(refreshSwiperLayout), 100);
@@ -343,6 +384,8 @@ watch(windowWidth, () => {
 
 const revealRootRef = ref<HTMLElement | null>(null);
 
+const swiperContainerAttrs = { init: 'false' } as Record<string, unknown>;
+
 useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
     if (!props.revealOnScroll) return;
     gsap.from(el, {
@@ -370,6 +413,7 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
                 >
                 <swiper-container
                     ref="containerRef"
+                    v-bind="swiperContainerAttrs"
                     :class="[
                         props.containerClass,
                         props.slideOverflowVisible ? 'carousel-slide-overflow-visible' : '',
@@ -403,14 +447,14 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
 
                 <div
                     v-if="props.showNavigation"
-                    class="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 flex items-center justify-between px-2 sm:px-3"
+                    class="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 flex items-center justify-between px-1 sm:px-3"
                     :class="props.slideOverflowVisible ? 'z-30' : 'z-10'"
                 >
                     <UButton
                         icon="i-heroicons-chevron-left"
                         color="neutral"
                         variant="solid"
-                        class="pointer-events-auto min-w-fit! p-2! sm:p-2.5! rounded-full bg-primary text-white shadow-md"
+                        class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
                         aria-label="สไลด์ก่อนหน้า"
                         @click="handlePrev"
                     />
@@ -418,11 +462,30 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
                         icon="i-heroicons-chevron-right"
                         color="neutral"
                         variant="solid"
-                        class="pointer-events-auto min-w-fit! p-2! sm:p-2.5! rounded-full bg-primary text-white shadow-md"
+                        class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
                         aria-label="สไลด์ถัดไป"
                         @click="handleNext"
                     />
                 </div>
+                </div>
+
+                <div
+                    v-if="props.dot && slides.length > 1"
+                    class="mt-3 flex items-center justify-center gap-2"
+                    role="tablist"
+                    aria-label="เลือกสไลด์"
+                >
+                    <button
+                        v-for="(slide, idx) in slides"
+                        :key="`dot-${slide.key}`"
+                        type="button"
+                        role="tab"
+                        :aria-selected="idx === activeRealIndex"
+                        :aria-label="`ไปสไลด์ที่ ${idx + 1}`"
+                        class="carousel-dot"
+                        :class="idx === activeRealIndex ? 'carousel-dot--active' : ''"
+                        @click="goToSlide(idx)"
+                    />
                 </div>
             </div>
         </ClientOnly>
@@ -437,5 +500,28 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
 
 .carousel-slide-overflow-visible::part(wrapper) {
     overflow: visible;
+}
+
+/* Custom pagination dots: render นอก shadow DOM ของ swiper-container ใต้แคโรเซลเสมอ */
+.carousel-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 9999px;
+    background: #111827;
+    opacity: 0.3;
+    transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease, width 0.2s ease;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    opacity: 0.6;
+}
+
+.carousel-dot--active {
+    background: var(--color-primary);
+    opacity: 1;
+    width: 22px;
 }
 </style>

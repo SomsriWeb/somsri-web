@@ -1,7 +1,7 @@
 {
     "uid": "drytech-air",
     "imageUrl": "/fabrics/Drytech-air.jpg",
-    "forProductType": ["tshirt", "polo", "sport"],
+    "forProductType": ["tshirt", "polo", "fabric-specification"],
     "nameTh": "ดรายเทค แอร์",
     "nameEn": "Drytech Air",
     "recommendForStyle": "เสื้อกีฬา กิจกรรมกลางแจ้ง",

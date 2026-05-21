@@ -27,7 +27,7 @@ defineSlots<Slots>();
 	</div>
 
 	<!-- รายการผ้า Fasbix -->
-	<div class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4">
+	<div class="flex flex-col md:flex-row items-center gap-5 max-w-6xl mx-auto px-4">
 		<!-- เนื้อหา -->
 		<div class="w-full md:w-1/2 text-start">
 			<h2 class="text-primary text-2xl sm:text-3xl md:text-4xl font-bold mb-4">ผ้า Fasbix</h2>
@@ -61,7 +61,7 @@ defineSlots<Slots>();
 	</div>
 
 	<!-- รายการผ้า French Terry -->
-	<div class="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto py-8 px-4">
+	<div class="flex flex-col md:flex-row items-center gap-5 max-w-6xl mx-auto px-4">
 		<!-- รูปภาพ -->
 		<div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
 			<ProseImg

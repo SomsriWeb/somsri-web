@@ -17,7 +17,7 @@ seo:
 
 ::landing-page-header-style-two
 ---
-image: /sport/sport-banner.png
+image: /sport/sport-banner.jpg
 ---
 #title
 รับผลิตเสื้อกีฬา
@@ -27,38 +27,38 @@ image: /sport/sport-banner.png
 ::
 
 ::container
-  :::sport
+  :::title-with-description
   #title
-  รับผลิตเสื้อกีฬา :br เนื้อผ้าคุณสมบัติพิเศษ
-
+  ::prose-h2
+  รับผลิตเสื้อกีฬาเนื้อผ้าคุณสมบัติพิเศษ
+  ::
   #description
+  ::prose-p
   ท่านกำลังมองหาโรงงานรับผลิตเสื้อกีฬา เสื้อทีม เสื้องานวิ่ง ที่ครบวงจรอยู่ใช่ไหม? สมศรีมีเสื้อคือคำตอบ เรามีบริการ รับผลิตเสื้อกีฬา เสื้อบอล เสื้อทีม และชุดยูนิฟอร์มกีฬาแบบจัดเต็ม คุณสามารถออกแบบเสื้อกีฬาได้ด้วยตัวเอง ให้เข้ากับสไตล์ที่ต้องการ พร้อมมีบริการสกรีนลาย โลโก้ และเบอร์เสื้อด้วยงานฝีมือคุณภาพ มีเนื้อผ้าเกรดพรีเมียมให้เลือกหลากหลายแบบ สวมใส่สบาย ระบายเหงื่อได้ดี สั่งผลิตได้ไม่มีขั้นต่ำ ในราคาที่คุ้มค่าที่สุดสำหรับคุณ
+  ::
   :::
+  :::prose-h2
+  เนื้อผ้าสำหรับทำเสื้อกีฬา
+  :::
+  :available-fabric{type="sport"}
 
+  :::prose-h2
+  ไซซ์เสื้อยืด
+  :::
+  :tshirt-size
+
+  :::prose-h2
+  ราคาเสื้อยืดเปล่า
+  :::
+  :::center
+    :prose-img{.max-w-[30rem] alt="sport price" src="/sport/price.png"}
+  :::
+  :::prose-h2
+  ราคาพิมพ์งาน sublimation
+  :::
   :::sport
   #image
-  :prose-img{.max-w-[40rem] alt="sport details" src="/sport/spec.jpg"}
-
-  #subtitle
-  " หลากเทคนิคสกรีนเลือกได้ให้ตอบโจทย์ "
-
-  #description
-  ซิลค์สกรีน เฟล็กซ์ ไฮเดน ออฟเซท
-  :::
-
-  :::sport
-  #image
-  :prose-img{.max-w-[40rem] alt="รูปHeader" src="/sport/technique-unsmushed.png"}
-
-  #subtitle
-  ราคาเสื้อยืดรวมสกรีน
-  :::
-
-:sport-slide
-
-  :::sport
-  #image
-  :prose-img{.max-w-[40rem] alt="sport price" src="/sport/price_table.jpg"}
+  :prose-img{.max-w-[30rem] alt="sport price" src="/sport/price_table.jpg"}
   :::
 
   :how-to-order
@@ -78,8 +78,28 @@ image: /sport/sport-banner.png
   #description
   รับประกันความพึงพอใจมากถึง 90 วัน
   :::
-  ::center
-    :prose-img{.max-w-[40rem] alt="งบประมาณ ทำเสื้อแบรนด์ตัวเอง เราต้องคิดเรื่องค่าออกแบบด้วย" src="/sport/preview-unsmushed.png"}
-  ::
+  :::image-grid
+  ---
+  items: 6
+  imageFit: cover
+  ---
+  #item-1
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio1.jpg"}
+
+  #item-2
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio2.jpg"}
+
+  #item-3
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio3.jpg"}
+
+  #item-4
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio4.jpg"}
+
+  #item-5
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio5.jpg"}
+
+  #item-6
+  :prose-img{alt="ตัวอย่างเสื้อกีฬา" src="/sport/portfolio/portfolio6.jpg"}
+  :::
   :sport-btn
 ::

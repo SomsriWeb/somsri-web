@@ -21,8 +21,8 @@ const fabrics = computed(() => {
 });
 </script>
 <template>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-        <div v-for="fabric in fabrics" :key="fabric.id" class="">
+    <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div v-for="fabric in fabrics" :key="fabric.id" class="min-w-0">
             <ProseImg :src="fabric.imageUrl" :alt="fabric.nameEn" class="rounded-lg mb-2" />
 
             <!-- หัวข้อ -->
@@ -31,11 +31,13 @@ const fabrics = computed(() => {
             </h3>
 
             <!-- คำอธิบาย (เทา) -->
-            <p class="text-stone-500 text-sm leading-normal w-max mb-1">สำหรับทำ{{ fabric.recommendForStyle }}</p>
+            <p class="text-stone-500 text-sm leading-normal w-full wrap-break-word whitespace-normal mb-1">
+                สำหรับทำ{{ fabric.recommendForStyle }}
+            </p>
 
             <!-- รายการ (แดง) -->
             <ul class="list-disc list-inside font-light text-primary space-y-1">
-                <li v-for="advantage in fabric.advantage" :key="advantage" class="text-sm w-max leading-none">
+                <li v-for="advantage in fabric.advantage" :key="advantage" class="text-sm leading-snug wrap-break-word">
                     {{ advantage }}
                 </li>
             </ul>

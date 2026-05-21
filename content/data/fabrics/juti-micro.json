@@ -1,12 +1,17 @@
 {
     "uid": "juti-micro",
-    "imageUrl": "/fabrics/juti-micro.png",
-    "popupImageUrl": "/fabrics/juti-micro-popup.png",
-    "forProductType": [],
+    "imageUrl": "/fabrics/juti-micro.jpg",
+    "popupImageUrl": "/fabrics/juti-micro-popup.jpg",
+    "forProductType": ["sport", "fabric-specification"],
     "nameTh": "จูติไมโคร",
     "nameEn": "Juti Micro",
-    "recommendForStyle": "",
-    "advantage": [],
+    "recommendForStyle": "เสื้อกีฬากลางแจ้ง",
+    "advantage": [
+        "ระบายอากาศดี",
+        "น้ำหนักเบา",
+        "แห้งไว ใส่แล้วไม่ร้อน",
+        "มีความยืดหยุ่นสูง"
+    ],
     "disadvantage": [],
     "order": 7
 }

@@ -5,6 +5,7 @@ import { LINE_LINK } from '~/lib/lineLink';
 import { USE_FOOTER } from '~/lib/useFooter';
 import { USE_LINE_FLOATING_BUTTON } from '~/lib/useLineFloatingButton';
 import { USE_NAVBAR } from '~/lib/useNavbar';
+import BackToTop from '~/components/content/BackToTop.vue';
 
 const route = useRoute();
 const pageType = ref<'page' | 'blog'>('page');
@@ -50,6 +51,7 @@ provide(LANGUAGE, page.value.language || 'th');
                         <ContentRenderer class="space-y-8" :value="page" />
                     </Container>
                 </template>
+                <BackToTop />
             </main>
         </NuxtLayout>
     </div>

@@ -2,11 +2,13 @@
     "uid": "muslin",
     "imageUrl": "/fabrics/muslin.png",
     "popupImageUrl": "/fabrics/muslin-popup.png",
-    "forProductType": [],
+    "forProductType": ["fabric-specification"],
     "nameTh": "มัสลิน",
     "nameEn": "Muslin",
-    "recommendForStyle": "เสื้อยืดทุกประเภท",
-    "advantage": [],
+    "recommendForStyle": "เสื้อยืดแฟชั่น เสื้อผ้าเด็ก และหน้ากากผ้า",
+    "advantage": ["สัมผัสบางเบา นุ่มนวล",
+    "ใส่สบาย ไม่ระคายผิว",
+    "ระบายอากาศดีเยี่ยม"],
     "disadvantage": [],
     "order": 9
 }

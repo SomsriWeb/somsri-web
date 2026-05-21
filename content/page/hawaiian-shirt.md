@@ -79,9 +79,6 @@ lineLink: https://contact.somsritshirt.com/600d2
 
 ::landing-page-header-style-five{image="/hawaiian-shirt/ad-banner.png" :screen-height=false image-anchor="[25%_50%]"}
 #title
-    ::logo{class="w-12 max-w-10 mb-3"}
-
-    ::
 
     ::prose-h2{class="text-white"}
     ผลิตกับสมศรี ใส่ดี มีมาตรฐานทุกตัว

@@ -11,9 +11,9 @@ const { image, alt = '' } = defineProps<Props>();
         <ProseImg :src="image" :alt="alt" class="col-span-2" />
 
         <div class="col-span-3 flex flex-col justify-center items-center p-5">
-            <ProseH1 class="text-[5rem]! text-center">
+            <ProseH2 size="2xl" class="text-center">
                 <slot name="title" mdc-unwrap="p" />
-            </ProseH1>
+            </ProseH2>
 
             <ProseP class="text-xl text-center text-primary!">
                 <slot name="description" mdc-unwrap="p" />

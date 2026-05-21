@@ -37,12 +37,19 @@ useScrollRevealUp(sectionRef, {
     <Container class="bg-primary py-5!" no-space>
         <!-- รอข้อมูลก่อน mount เพื่อให้ useScrollTriggerRef เห็นลูกครบก่อนสร้างแอนิเมชัน -->
         <div v-if="data" ref="sectionRef">
-            <component :is="titleAsTag" class="font-bold text-white text-4xl mb-5 leading-none"><slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot></component>
+            <component :is="titleAsTag" class="font-bold text-white text-xl sm:text-3xl lg:text-4xl mb-2 sm:mb-5 leading-none">
+                <slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot>
+            </component>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 ">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-5">
                 <div v-for="item in data" :key="item.label" class="flex flex-col justify-start items-center">
-                    <ProseImg v-if="item.image" :src="item.image" :alt="item.label" class="max-w-[4rem]" />
-                    <p class="font-bold font-stretch-condensed text-xl text-white leading-none text-center mt-3">
+                    <ProseImg
+                        v-if="item.image"
+                        :src="item.image"
+                        :alt="item.label"
+                        class="max-w-8 sm:max-w-12 lg:max-w-16"
+                    />
+                    <p class="font-bold font-stretch-condensed text-xs sm:text-base md:text-lg lg:text-xl text-white leading-tight text-center mt-1.5 sm:mt-3">
                         {{ item.label }}
                     </p>
                 </div>

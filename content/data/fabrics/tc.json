@@ -1,10 +1,12 @@
 {
     "uid": "tc",
-    "imageUrl": "/fabrics/tc.png",
+    "imageUrl": "/fabrics/TC.jpg",
     "popupImageUrl": "/fabrics/tc-tk-popup.png",
     "forProductType": [
+        "sport",
         "tshirt",
-        "polo"
+        "polo",
+        "fabric-specification"
     ],
     "nameTh": "ทีซี",
     "nameEn": "TC",

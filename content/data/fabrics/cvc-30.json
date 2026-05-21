@@ -1,0 +1,18 @@
+{
+    "uid": "cvc-30",
+    "imageUrl": "/fabrics/cvc-เกล็ดปลา.jpg",
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
+    "nameTh": "CVC 30",
+    "nameEn": "CVC 30",
+    "recommendForStyle": "เสื้อยืดใช้งานประจำวัน",
+    "advantage": [
+        "ทนทาน ดูแลรักษาง่าย",
+        "แห้งไวกว่า 100% คอตตอน"
+    ],
+    "disadvantage": [],
+    "order": 24
+}

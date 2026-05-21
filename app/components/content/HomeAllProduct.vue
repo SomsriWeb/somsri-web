@@ -59,9 +59,10 @@ useScrollRevealUp(cardsGridRef, {
         <template v-if="featuredList.length">
             <!-- มือถือ: แคโรเซล 1 สไลด์ — ตั้งแต่ sm ขึ้นไปใช้ grid -->
             <Carousel
-                class="mb-5 sm:hidden"
+                class="mb-5 md:hidden"
                 :items-data="featuredList"
-                :slides-per-view="1"
+                :slides-per-view="3"
+                :slides-per-view-mobile="3"
                 :space-between="20"
                 :loop="featuredList.length > 1"
                 :show-navigation="featuredList.length > 1"
@@ -69,6 +70,7 @@ useScrollRevealUp(cardsGridRef, {
                 breakpoints-base="container"
                 container-class="w-full max-w-full"
                 :reveal-on-scroll="false"
+                :dot="featuredList.length > 1"
             >
                 <template #default="{ item }">
                     <HomeProductCard v-bind="productCardBindings(item as ProductRow)">
@@ -81,7 +83,7 @@ useScrollRevealUp(cardsGridRef, {
 
             <div
                 ref="cardsGridRef"
-                class="hidden sm:grid sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-10 mb-5"
+                class="hidden md:grid md:grid-cols-3 gap-5 lg:gap-10 mb-5"
             >
                 <HomeProductCard v-for="product in featuredList" :key="product.name" v-bind="productCardBindings(product)">
                     <template #cta-text>

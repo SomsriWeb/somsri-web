@@ -15,12 +15,7 @@
             "fabricName": "COTTON 100%",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
-                    "price": 122
-                },
-                {
-                    "min": 151,
+                    "min": 150,
                     "max": 250,
                     "price": 118
                 },
@@ -50,12 +45,7 @@
             "fabricName": "COTTON พรีเมียม 32",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
-                    "price": 132
-                },
-                {
-                    "min": 151,
+                    "min": 150,
                     "max": 250,
                     "price": 128
                 },
@@ -85,12 +75,7 @@
             "fabricName": "COTTON พรีเมียม 20",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
-                    "price": 142
-                },
-                {
-                    "min": 151,
+                    "min": 150,
                     "max": 250,
                     "price": 138
                 },
@@ -120,29 +105,24 @@
             "fabricName": "SUPERSOFF นุ่มพิเศษ",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
-                    "price": 178
-                },
-                {
-                    "min": 151,
+                    "min": 150,
                     "max": 250,
                     "price": 170
                 },
                 {
                     "min": 251,
                     "max": 350,
-                    "price": 165
+                    "price": 160
                 },
                 {
                     "min": 351,
                     "max": 500,
-                    "price": 162
+                    "price": 155
                 },
                 {
                     "min": 501,
                     "max": 700,
-                    "price": 158
+                    "price": 150
                 },
                 {
                     "min": 700,
@@ -152,15 +132,40 @@
             ]
         },
         {
-            "fabricName": "TC/TK",
+            "fabricName": "TC",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
+                    "min": 150,
+                    "max": 250,
+                    "price": 100
+                },
+                {
+                    "min": 251,
+                    "max": 350,
                     "price": 95
                 },
                 {
-                    "min": 151,
+                    "min": 351,
+                    "max": 500,
+                    "price": 90
+                },
+                {
+                    "min": 501,
+                    "max": 700,
+                    "price": 85
+                },
+                {
+                    "min": 700,
+                    "max": null,
+                    "price": null
+                }
+            ]
+        },
+        {
+            "fabricName": "TK",
+            "rates": [
+                {
+                    "min": 150,
                     "max": 250,
                     "price": 90
                 },
@@ -190,12 +195,7 @@
             "fabricName": "ไมโครกีฬา แห้งเร็ว",
             "rates": [
                 {
-                    "min": 100,
-                    "max": 150,
-                    "price": 95
-                },
-                {
-                    "min": 151,
+                    "min": 150,
                     "max": 250,
                     "price": 90
                 },

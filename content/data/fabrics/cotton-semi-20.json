@@ -1,0 +1,20 @@
+{
+    "uid": "cotton-semi-20",
+    "imageUrl": "/fabrics/cotton-semi.png",
+    "popupImageUrl": "/fabrics/cotton-semi-popup.png",
+    "forProductType": [
+        "tshirt",
+        "fabric-specification"
+    ],
+    "nameTh": "คอตตอนเซมิ 20",
+    "nameEn": "Cotton Semi 20",
+    "recommendForStyle": "เสื้อยืดทุกประเภท",
+    "advantage": [
+        "เนื้อผ้าหนา",
+        "ผิวสัมผัสปานกลาง",
+        "ยับยาก",
+        "ราคาไม่สูง"
+    ],
+    "disadvantage": [],
+    "order": 4
+}

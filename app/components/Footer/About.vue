@@ -14,12 +14,25 @@ const data = {
             'SomsriTshirt Factory offers comprehensive services including shirt production, screen printing, and embroidery. We provide free design services with unique styles and expert consultation to meet your design needs.',
     },
 };
+
+const items = computed(() => [
+    {
+        label: data[LANG].title,
+        content: data[LANG].description,
+    },
+]);
 </script>
 <template>
     <div class="text-white">
-        <FooterTitle>{{ data[LANG].title }}</FooterTitle>
-        <p class="font-light">
-            {{ data[LANG].description }}
-        </p>
+        <div class="hidden md:block">
+            <FooterTitle>{{ data[LANG].title }}</FooterTitle>
+            <p class="font-light">
+                {{ data[LANG].description }}
+            </p>
+        </div>
+
+        <div class="block md:hidden">
+            <UAccordion :items="items" :ui="{ trigger :'text-2xl font-bold'}"></UAccordion>
+        </div>
     </div>
 </template>

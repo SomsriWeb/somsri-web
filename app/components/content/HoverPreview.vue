@@ -149,7 +149,7 @@ const showMobileSwapButton = computed(
 
         <div
             v-if="$slots.caption"
-            class="hp-caption relative z-2 min-w-0 shrink-0 pt-2"
+            class="hp-caption relative z-2 min-w-0 shrink-0 pt-2 text-center"
             :class="props.captionClass"
         >
             <slot name="caption" />

@@ -24,9 +24,9 @@ const socialMedias = [
 <template>
     <footer>
         <div class="flex flex-col bg-primary px-5 py-2 md:px-10 md:py-4 lg:flex-row lg:px-19 gap-3">
-            <FooterAbout class="mt-2 lg:flex-[1_1_30%]" />
-            <FooterMenu class="mt-2 lg:flex-[1_1_24%] lg:relative" />
-            <div class="mt-2 md:w-[72vw] lg:flex-[1_1_46%]">
+            <FooterAbout class="lg:flex-[1_1_30%]" />
+            <FooterMenu class="lg:flex-[1_1_24%] lg:relative" />
+            <div class="md:w-[72vw] lg:flex-[1_1_46%]">
                 <FooterAddress class="mb-2" />
                 <FooterContact />
             </div>

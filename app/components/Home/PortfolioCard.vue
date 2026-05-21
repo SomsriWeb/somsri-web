@@ -74,7 +74,7 @@ useScrollTriggerRef(rootRef, ({ gsap, el }) => {
                     sizes="sm:300px 3xl:400px"
                 />
                 <div class="absolute inset-0 bg-black/15" />
-                <h3 class="absolute top-3 left-3 text-white text-xl">{{ name }}</h3>
+                <p class="absolute top-3 left-3 text-white text-xl">{{ name }}</p>
 
                 <!-- TODO: รอทำหน้าแยกก่อนค่อยมาเปิด -->
                 <!-- <UButton

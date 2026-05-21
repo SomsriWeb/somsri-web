@@ -1,10 +1,10 @@
 {
     "name": "ปักอาร์ม",
     "name-en": "Arm Embroidery",
-    "image": "/pin/ปักอาร์ม12.jpg",
+    "image": "/pin/arm(12).jpg",
     "alt": "รับผลิตเสื้อ สั่งทำเสื้อออฟฟิศ งานปักอาร์ม",
     "alt-en": "Custom Office Shirts with Arm Embroidery",
     "url": "/pin/arm",
-    "order": 5,
+    "order": 120,
     "category": "arm"
 }

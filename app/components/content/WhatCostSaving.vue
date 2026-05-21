@@ -24,14 +24,17 @@ const { data } = await useAsyncData('what-cost-saving', () => queryCollection('w
 </script>
 
 <template>
-    <Container class="grid grid-cols-1 py-5! sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 bg-primary" no-space>
-        <component :is="titleAsTag" class="sm:col-span-2 md:col-span-full lg:col-span-1 font-bold text-white text-4xl leading-none">
+    <Container class="grid grid-cols-2 py-5! md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-5 bg-primary" no-space>
+        <component
+            :is="titleAsTag"
+            class="col-span-2 md:col-span-full lg:col-span-1 font-bold text-white text-xl sm:text-3xl lg:text-4xl leading-none mb-1 sm:mb-0"
+        >
             <slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot>
         </component>
 
         <div v-for="item in data" :key="item.label" class="flex flex-col justify-start items-center">
-            <ProseImg v-if="item.image" :src="item.image" :alt="item.label" class="max-w-[4rem]" />
-            <p class="font-bold font-stretch-condensed text-xl text-white leading-none text-center mt-3">
+            <ProseImg v-if="item.image" :src="item.image" :alt="item.label" class="max-w-8 sm:max-w-12 lg:max-w-16" />
+            <p class="font-bold font-stretch-condensed text-xs sm:text-base md:text-lg lg:text-xl text-white leading-tight text-center mt-1.5 sm:mt-3">
                 {{ item.label }}
             </p>
         </div>

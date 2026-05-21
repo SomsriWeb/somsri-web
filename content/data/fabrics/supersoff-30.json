@@ -1,0 +1,20 @@
+{
+    "uid": "supersoff-30",
+    "imageUrl": "/fabrics/supersoff-32.png",
+    "popupImageUrl": "/fabrics/supersoff-popup.png",
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
+    "nameTh": "ซูเปอร์ซอฟฟ์ 30",
+    "nameEn": "Supersoff 30",
+    "recommendForStyle": "เสื้อแบรนด์",
+    "advantage": [
+        "ผลิตจากใยฝ้ายธรรมชาติ",
+        "ผิวสัมผัสนุ่มพิเศษ",
+        "ไม่ขึ้นขนหลังซัก"
+    ],
+    "disadvantage": [],
+    "order": 11
+}

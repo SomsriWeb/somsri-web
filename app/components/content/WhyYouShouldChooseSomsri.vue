@@ -45,12 +45,15 @@ const swiper = useSwiper(containerRef, {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            spaceBetween: 12,
         },
         640: {
             slidesPerView: 2,
+            spaceBetween: 20,
         },
         1280: {
             slidesPerView: 4,
+            spaceBetween: 30,
         },
     },
 });
@@ -87,12 +90,12 @@ function openItemModal(uid: string) {
 
 <template>
     <div>
-        <h2 class="text-primary text-4xl leading-none font-bold mb-5">
+        <h2 class="text-primary text-xl sm:text-3xl lg:text-4xl leading-none font-bold mb-3 sm:mb-5">
             <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
         </h2>
 
         <ClientOnly>
-            <swiper-container ref="containerRef" class="mb-5 grid auto-rows-fr  ">
+            <swiper-container ref="containerRef" class="mb-3 sm:mb-5 grid auto-rows-fr">
                 <swiper-slide v-for="item in content" :key="item.title">
                     <InformationCard
                         :title="lang === 'th' ? item.title : item['title-en']"
@@ -104,9 +107,23 @@ function openItemModal(uid: string) {
             </swiper-container>
         </ClientOnly>
 
-        <div class="flex justify-end gap-5 xl:hidden">
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-left" class="rounded-full !min-w-fit" @click="swiper.prev()" />
-            <UButton color="neutral" variant="outline" icon="lucide:chevron-right" class="rounded-full !min-w-fit" @click="swiper.next()" />
+        <div class="flex justify-end gap-2 sm:gap-5 xl:hidden">
+            <UButton
+                color="neutral"
+                variant="outline"
+                icon="lucide:chevron-left"
+                class="rounded-full min-w-fit! p-2! sm:p-2.5!"
+                aria-label="ก่อนหน้า"
+                @click="swiper.prev()"
+            />
+            <UButton
+                color="neutral"
+                variant="outline"
+                icon="lucide:chevron-right"
+                class="rounded-full min-w-fit! p-2! sm:p-2.5!"
+                aria-label="ถัดไป"
+                @click="swiper.next()"
+            />
         </div>
 
         <MinimumModal v-model:open="minimumModalState" />

@@ -1,5 +1,5 @@
 ---
-title: Page หมวก - สมศรีมีเสื้อ
+title: หมวก - สมศรีมีเสื้อ
 activeNavbar: true
 footer: false
 ---
@@ -21,17 +21,9 @@ footer: false
 ::
 
 ::container
-    ::somsri-produce-for
+    ::new-hat-style
     #title
-    Our customers
-
-    #description
-    สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
-    ::
-
-    ::hat-style
-    #title
-    ## ชนิดหมวกและราคา
+    ## ชนิดหมวกและตารางราคา
 ::
 
 ::center
@@ -48,11 +40,42 @@ footer: false
 ::
 
 ::container
-    ::how-to-order
+    ::somsri-produce-for
+    #title
+    สมศรีผลิตให้กับใครบ้าง
+
+    #description
+    สมศรีมีเสื้อพร้อมที่จะตอบสนองความต้องการของสินค้า แบรนด์ รวมไปถึงองค์กรของคุณ ด้วยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปัก ครบจบที่เดียว
     ::
 ::
 
-::what-cost-saving
+::container
+    ::how-to-order
+    ::
+
+    :::image-grid
+    ---
+    items: 6
+    imageFit: cover
+    ---
+    #item-1
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-1.png"}
+
+    #item-2
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-2.jpg"}
+
+    #item-3
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-3.jpg"}
+
+    #item-4
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-4.jpg"}
+
+    #item-5
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-5.jpg"}
+
+    #item-6
+    :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-6.jpg"}
+    :::
 ::
 
 ::center

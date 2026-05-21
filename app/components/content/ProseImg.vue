@@ -11,6 +11,7 @@ interface Props {
     height?: string | number;
     lazy?: boolean;
     sizes?: string;
+    class?: string;
 }
 const props = withDefaults(defineProps<Props>(), {
     src: '',
@@ -19,6 +20,7 @@ const props = withDefaults(defineProps<Props>(), {
     height: undefined,
     lazy: true,
     sizes: undefined,
+    class: '',
 });
 
 const refinedSrc = computed(() => {
@@ -36,6 +38,7 @@ const refinedSrc = computed(() => {
     <component
         :is="NuxtImg"
         class="w-full"
+        :class="props.class"
         :src="refinedSrc"
         :alt="props.alt"
         :width="props.width"

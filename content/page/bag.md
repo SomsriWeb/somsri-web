@@ -27,7 +27,7 @@ lineLink: https://contact.somsritshirt.com/218c9
   :::
 
   :::center
-    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/ราคากระเป๋าผ้า.png"}
+    ::::prose-img{.max-w-[40rem] alt="รูปHeader" src="/bag/bag-price.jpg"}
     ::::
   :::
 ::
@@ -44,11 +44,11 @@ TOTE BAG
   :::how-to-order
   :::
 
-  :::center
-    ::::u-button
-      :::::unwrap-mdc
-      สั่งทำกระเป๋าผ้า
-      :::::
-    ::::
-  :::
+  ::center
+      :::line-link
+          ::::line-button
+          แอดไลน์สั่งทำเสื้อ
+          ::::
+      :::
+  ::
 ::
