@@ -22,7 +22,7 @@ defineSlots<Slots>();
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-stretch mb-1">
     <!-- ฝั่งข้อความฝั่งซ้าย -->
     <div class="py-[3rem] flex flex-col justify-center px-4">
       <span class="text-start text-5xl font-bold text-primary mb-3">
