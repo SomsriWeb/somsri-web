@@ -16,6 +16,15 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
+const { data: brandsRow1 } = await useAsyncData('collaborators-row1', () =>
+    queryCollection('collaborators').where('row', '=', 1).order('order', 'ASC').all()
+);
+
+const { data: brandsRow2 } = await useAsyncData('collaborators-row2', () =>
+    queryCollection('collaborators').where('row', '=', 2).order('order', 'ASC').all()
+);
+
 </script>
 <template>
     <div class="grid grid-cols-1 gap-5">
@@ -29,10 +38,23 @@ defineSlots<Slots>();
         </TitleWithDescription>
 
         <ClientOnly>
-            <Vue3Marquee :duration="50" class="rounded-xl min-h-full">
-                <ProseImg class="h-full object-cover" src="/somsri-collaborators/brand-1.png" alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ" />
-                <ProseImg class="h-full object-cover" src="/somsri-collaborators/brand-2.png" alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ" />
-                <ProseImg class="h-full object-cover" src="/somsri-collaborators/brand-3.png" alt="แบรนด์ที่เคยสั่งผลิตเสื้อกับสมศรีมีเสื้อ" />
+            <Vue3Marquee :duration="60" class="rounded-xl min-h-full">
+                <ProseImg
+                    v-for="brand in brandsRow1"
+                    :key="brand.src"
+                    class="h-6 w-auto object-contain mx-1"
+                    :src="brand.src"
+                    :alt="brand.alt"
+                />
+            </Vue3Marquee>
+            <Vue3Marquee :duration="60" :direction="'reverse'" class="rounded-xl min-h-full">
+                <ProseImg
+                    v-for="brand in brandsRow2"
+                    :key="brand.src"
+                    class="h-6 w-auto object-contain mx-1"
+                    :src="brand.src"
+                    :alt="brand.alt"
+                />
             </Vue3Marquee>
         </ClientOnly>
     </div>

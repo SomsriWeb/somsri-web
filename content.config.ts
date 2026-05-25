@@ -361,7 +361,7 @@ export default defineContentConfig({
             schema: z.object({
                 image: property(z.string()).editor({ input: 'media' }),
                 label: z.string(),
-                priceperunit : z.array(z.number()),
+                priceperunit: z.array(z.number()),
                 order: z.number(),
             }),
         }),
@@ -483,6 +483,17 @@ export default defineContentConfig({
                 thumbnail: z.string().optional(),
                 muted: z.boolean().optional(),
                 aspectRatio: z.enum(['16/9', '9/16']).optional(),
+            }),
+        }),
+
+        collaborators: defineCollection({
+            type: 'data',
+            source: 'data/collaborators/**.json',
+            schema: z.object({
+                src: z.string(),
+                alt: z.string(),
+                row: z.number().optional(),
+                order: z.number(),
             }),
         }),
     },
