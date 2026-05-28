@@ -492,6 +492,7 @@ export default defineContentConfig({
             schema: z.object({
                 src: z.string(),
                 alt: z.string(),
+                category: z.string().optional(),
                 row: z.number().optional(),
                 order: z.number(),
             }),
