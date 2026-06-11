@@ -12,7 +12,7 @@ navbar: true
     type: application/ld+json
 ---
 
-::landing-page-header-style-four
+::landing-page-header-style-two
 ---
 alt: รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ
 image: /faded-shirt/faded-banner.png
