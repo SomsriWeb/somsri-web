@@ -67,10 +67,10 @@ image: /polo/header.jpg
 
   เพราะโลโก้คือหน้าตาของแบรนด์ เราจึงเลือกใช้เทคโนโลยีและเครื่องจักรที่ทันสมัย เพื่อให้งานปักและสกรีนออกมาคมชัด เก็บครบทุกรายละเอียด สีสดทนนาน เสริมภาพลักษณ์แบรนด์ให้ดูเป็นมืออาชีพ
   :::center
-    :::action-button-with-ping{to="https://somsritshirt.com/fabric-specification"}
+    :::action-button-with-ping{to="/fabric-specification"}
     ดูตัวอย่างเนื้อผ้า
     :::
-    :::action-button-with-ping{to="https://somsritshirt.com/shop"}
+    :::action-button-with-ping{to="/shop"}
     คลิกออกแบบเสื้อฟรี
     :::
   :::
