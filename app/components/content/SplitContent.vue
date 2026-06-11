@@ -87,9 +87,9 @@ useScrollRevealUp(rootRef, { start: 'top 60%' });
             :class="[props.textClass, textCellClass]"
             class="min-w-0 space-y-4 [&_ul]:my-0 [&_ul]:list-inside [&_ul]:list-disc [&_ul]:space-y-2 [&_ol]:my-0 [&_ol]:list-inside [&_ol]:list-decimal [&_ol]:space-y-2 [&_li]:leading-relaxed"
         >
-            <ProseH2 v-if="$slots.Headertitle" class="text-primary">
+            <ProseH3 v-if="$slots.Headertitle" class="text-primary">
                 <slot name="Headertitle" mdc-unwrap="p" />
-            </ProseH2>
+            </ProseH3>
             <div class="leading-relaxed [&_p]:font-light">
                 <slot name="description" mdc-unwrap="p" />
             </div>
