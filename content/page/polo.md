@@ -188,6 +188,55 @@ Juti Micro
 :prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าJuti Micro" src="/polo/fabrics/juti-micro.jpg"}
 :::
 
+- ระบายเหงื่อได้ดี แห้งไว
+- ลดกลิ่นอับชื้น ใส่ได้นาน
+- ไม่ยับง่าย ดูเรียบร้อยตลอดวัน
+
+#image
+:prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าDry Feel" src="/polo/fabrics/dry-feel.jpg"}
+:::
+
+:::split-content
+---
+direction: left-to-right
+compact: true
+---
+#Headertitle
+
+#description
+:::prose-h2{class="text-primary md:text-xl"}
+Micro Sport
+:::
+เสื้อทำงานสไตล์ Active พร้อมรับความท้าทายและก้าวไปข้างหน้า
+
+- สีไม่ซีด ไม่ขึ้นขุย รีดง่าย
+- สัมผัสเรียบลื่น
+- มีหลากหลายเนื้อผ้าให้เลือก
+
+#image
+:prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าMicro Sport" src="/polo/fabrics/micro-sport.jpg"}
+:::
+:::split-content
+---
+direction: left-to-right
+compact: true
+---
+#Headertitle
+
+#description
+:::prose-h2{class="text-primary md:text-xl"}
+Juti Micro
+:::
+ผ้านวัตกรรมสำหรับสาย Active ที่ต้องการความคล่องตัวสูง รองรับทุกการเคลื่อนไหว พร้อมลุยทุกสถานการณ์
+
+- ระบายความร้อนได้ดีเยี่ยม
+- เหมาะกับกิจกรรมกลางแจ้ง
+- น้ำหนักเบา ไม่อึดอัด
+
+#image
+:prose-img{class="rounded-lg object-cover aspect-square" alt="ตัวอย่างผ้าJuti Micro" src="/polo/fabrics/juti-micro.jpg"}
+:::
+
 ## บริการปัก-สกรีนเสื้อโปโล เสื้อองค์กร ด้วยเทคโนโลยีทันสมัย สีคมชัด งานละเอียดทุกจุด
 
 สั่งทำเสื้อโปโลพร้อมปักโลโก้ สกรีนโลโก้ ที่สมศรีมีเสื้อ เรารับทำโลโก้ด้วยเทคนิคที่หลากหลาย สามารถเลือกได้ตามความต้องการ เช่น ปัก, ปักทรานส์เฟอร์, สกรีน และ พิมพ์ลาย ซึ่งเทคนิคแต่ละแบบจะเหมาะกับรูปแบบการสวมใส่ที่แตกต่างกัน เช่น งานปักให้ความทนทาน เหมาะกับเสื้อโปโลพนักงานหรือเสื้อองค์กร งานสกรีนและพิมพ์ลาย เหมาะกับเสื้อโปโลที่ต้องการสีสันหรือดีไซน์เฉพาะตัว ซึ่งในการผลิตเสื้อโปโลกับเรา ลูกค้าสามารถเลือกเทคนิคการสกรีนให้เหมาะสมกับรูปแบบการใช้งานของลูกค้าได้ เรามีทีมงานคอยให้คำแนะนำทุกขั้นตอน เพื่อให้ลูกค้ามั่นใจว่าจะได้เสื้อโปโลที่มีแบบตรงความต้องการทุกตัว
