@@ -35,9 +35,7 @@ lineLink: https://contact.somsritshirt.com/3fd08
     ::::
   :::
 
-  :::port-card-artist
-    ::::port-card{type="portCardArtist"}
-    ::::
+  :::ArtistBtn
   :::
 
   :::port-sub-header
@@ -52,9 +50,7 @@ lineLink: https://contact.somsritshirt.com/3fd08
     ::::
   :::
 
-  :::port-card-organization
-    ::::port-card{type="portCardOrganization"}
-    ::::
+  :::OrganizationBtn
   :::
 
   :::port-sub-header

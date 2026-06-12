@@ -15,7 +15,7 @@ seo:
     content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อโปโล",   "image": "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",   "description": "บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "205",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อโปโล"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "421"   }} '
 ---
 
-::landing-page-header-style-three
+::landing-page-header-style-two
 ---
 image: /somsri-can-screen-and-pin/banner.png
 ---
@@ -53,16 +53,8 @@ image: /somsri-can-screen-and-pin/banner.png
 
 ## ชนิดผ้าและราคาเสื้อโปโล
 
-  :::slider
-  ---
-  items: 2
-  slides-per-view: 2
-  ---
-  #item-1
-  :prose-img{src="/somsri-can-screen-and-pin/polo-price-table-1.png"}
-
-  #item-2
-  :prose-img{src="/somsri-can-screen-and-pin/polo-price-table-2.png"}
+  :::center
+  :prose-img{.max-w-[30rem] alt="sport price" src="/polo/price-polo.jpg"}
   :::
 
   :::prose-p{.!text-primary.text-center.text-xl}
