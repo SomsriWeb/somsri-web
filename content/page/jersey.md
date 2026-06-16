@@ -1,7 +1,7 @@
 ---
-title: โรงงานผลิตเสื้อ รับผลิตเสื้อยืด เสื้อโปโล รับผลิตเสื้อ สั่งทำเสื้อ
+title: รับผลิตเสื้อ Jersey สั่งทำเสื้อกีฬาพิมพ์ลาย เสื้อกิจกรรม ครบวงจร
 activeNavbar: false
-description: เราเป็น โรงงานผลิตเสื้อ สั่งผลิตเสื้อยืดพร้อมสกรีน คุณภาพดี ราคาส่ง รับผลิตและจำหน่ายเสื้อ พร้อมสกรีนโลโก้ ทำแบรนด์ตัวเอง
+description: โรงงานผลิตเสื้อเจอร์ซีย์ เสื้อกีฬา เสื้อแข่ง สำหรับทีมและองค์กร บริการออกแบบฟรี พร้อมสกรีนและปักโลโก้ครบวงจร ทนทาน ไม่หลุดลอก รับประกันสินค้านาน 90 วัน
 footer: true
 language: th
 lineFloatingButton: true
@@ -194,7 +194,7 @@ image: /jersey/Jersey.png
 
 :prose-img{.max-w-[20rem] alt="เรทราคา Sublimation" src="/jersey/price_table.jpg"}
 
-  :::how-to-order{title-center}
+  :::how-to-order{title-center title-center=""}
   :::
 
   :::line-link

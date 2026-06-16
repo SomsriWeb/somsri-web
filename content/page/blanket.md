@@ -1,7 +1,7 @@
 ---
-title: รับผลิตผ้าห่มพรีเมียม (นาโนกันน้ำ / ไมโครฟลีซ) | สมศรีมีเสื้อ
+title: รับผลิตผ้าห่มพรีเมียม ผ้าคุณภาพสูง พร้อมออกแบบลายได้เอง | สมศรีมีเสื้อ
 activeNavbar: false
-description: โรงงานรับผลิตผ้าห่มเกรดพรีเมียม นุ่ม อุ่น งานเย็บเรียบร้อย
+description: สั่งทำผ้าห่มคุณภาพสูงสำหรับของพรีเมียม สำหรับ Merchandise องค์กร หรือโรงแรม เนื้อผ้านุ่ม อุ่นสบาย เลือกสีและลายได้ตามต้องการ งานสวยได้มาตรฐาน รับประกันคุณภาพ 90 วัน
 footer: true
 language: th
 lineFloatingButton: true
@@ -92,9 +92,9 @@ image: /blanket/blanket-banner.png
   direction: left-to-right
   ---
   #Headertitle
-  ::::prose-h3{.text-primary.md:text-xl}
-  ไมโครฟลีซ (Micro Fleece)
-  ::::
+    ::::prose-h3{.text-primary.md:text-xl}
+    ไมโครฟลีซ (Micro Fleece)
+    ::::
 
   #description
     ::::prose-p
