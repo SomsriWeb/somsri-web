@@ -221,11 +221,11 @@ image: /polo/header.jpg
   ---
   autoplay: true
   items: 4
-  loop: "true"
-  slide-overflow-visible: ""
   slides-per-view: 3
   space-between: 16
   autoPlay: "true"
+  loop: "true"
+  slide-overflow-visible: ""
   ---
   #item-1
     ::::hover-preview
@@ -345,22 +345,22 @@ image: /polo/header.jpg
 
   :::image-grid
   #item-1
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-or.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-ptt.jpg"}
 
   #item-2
-  :prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="/polo/img-polo-central-retail.png"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="/polo/img-polo-central.jpg"}
 
   #item-3
-  :prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="/polo/polo4.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="/polo/img-polo-diy.jpg"}
 
   #item-4
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="/polo/img-polo-sompo.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="/polo/img-sompo.jpg"}
 
   #item-5
-  :prose-img{alt="ตัวอย่างเสื้อโปโล คอและแขนแต่งสี" src="/polo/polo5.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท BYD" src="/polo/img-polo-byd.jpg"}
 
   #item-6
-  :prose-img{alt="ตัวอย่างเสื้อโปโล คอและกระเป๋าแต่งสี" src="/polo/polo6.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท Flash Express" src="/polo/img-polo-flash.jpg"}
   :::
 
   :::somsri-produce-for
