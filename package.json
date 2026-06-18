@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "i18n:gen": "bun scripts/i18n-generate.ts --clean",
+    "i18n:watch": "bun scripts/i18n-generate.ts --watch",
+    "predev": "bun scripts/i18n-generate.ts --clean",
+    "prebuild": "bun scripts/i18n-generate.ts --clean",
+    "pregenerate": "bun scripts/i18n-generate.ts --clean",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

@@ -21,7 +21,21 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxt/scripts',
         'nuxt-studio',
+        '@nuxtjs/i18n',
     ],
+    i18n: {
+        defaultLocale: 'th',
+        strategy: 'prefix_except_default',
+        locales: [
+            { code: 'th', language: 'th-TH', name: 'ไทย' },
+            { code: 'en', language: 'en-US', name: 'English' },
+        ],
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'somsri-i18n',
+            redirectOn: 'root',
+        },
+    },
     app: {
         head: {
             htmlAttrs: {

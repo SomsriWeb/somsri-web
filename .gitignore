@@ -18,6 +18,10 @@ logs
 .fleet
 .idea
 
+# Generated i18n output (authored in content-src/, built by scripts/i18n-generate.ts)
+/content/th/
+/content/en/
+
 # Local env files
 .env
 .env.*

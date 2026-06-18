@@ -1,0 +1,68 @@
+---
+i18n:
+  title:
+    th: รับผลิตกางเกงยางยืด กางเกงขาสั้น พร้อมปักโลโก้ | สมศรีมีเสื้อ
+    en: Custom Elastic Pants & Shorts with Logo Embroidery | Somsri
+  description:
+    th: โรงงานผลิตกางเกงคุณภาพดี มีเนื้อผ้าให้เลือกทั้งผ้า Fasbix และ French Terry
+      สวมใส่สบาย ยืดหยุ่นดี รับผลิตกางเกงแบรนด์ตัวเองในราคาโรงงาน เริ่มต้นเพียง
+      100 ตัว
+    en: Quality pants factory with Fasbix and French Terry fabrics — comfortable and
+      stretchy. Produce your own-brand pants at factory prices, from just 100
+      pcs.
+title: "{{title}}"
+activeNavbar: false
+description: "{{description}}"
+footer: true
+language: th
+lineFloatingButton: true
+lineLink: https://contact.somsritshirt.com/05aba
+navbar: true
+เพิ่ม script ใน head: []
+---
+
+
+::pant-header
+#description
+รับผลิตกางเกงยางยืด ขาสั้น 100 ตัวขึ้นไป
+ราคาเริ่มต้น 150 บาทต่อตัว โดย
+ช่างเชี่ยวชาญ การทำกางเกง
+โดยทำงานให้กับแบรนด์ต่างๆมากมาย
+สามารถเลือกเนื้อผ้าได้
+
+  :::line-link
+    ::::link-button
+    ติดต่อสมศรี
+    ::::
+  :::
+::
+
+::container
+  :::pant-fabric
+  #fabric
+  เนื้อผ้า Fasbix เป็นเนื้อผ้าที่ขายดีที่สุด
+  นิยมมาทำกางเกงเนื่องจากเนื้อ :br ผ้าที่อยู่ทรงใส่สบาย
+  แต่เรียบร้อย เหมาะสำหรับการใส่ในทุกโอกาส :br ยังมีคุณสมบัติในการระบายอากาศได้ดี
+
+  #fabric2
+  เนื้อผ้า French Terry หรือผ้าเกร็ดปลา
+  มีคุณสมบัติเด่นเรื่องความเบาสบาย
+  และความยืดหยุ่นของเนื้อผ้า ด้วยสัมผัสที่นุ่ม
+  เหมาะกับการทำกางเกง Casual ที่เน้นความใส่สบาย
+  ลูกค้าส่วนใหญ่ หากเคยได้ลองความนุ่ม ของผ้า French
+  Terry ของสมศรี จะมีการสั่งซ้ำเสมอ
+  :::
+
+:ex-pant
+
+:prose-img{.max-w-[30rem] alt="pants price" src="/pants/price-pants.jpg"}
+
+  :::company-intro
+  #CompanyDescription
+  เรามีผ้าหลากหลายประเภท เช่น Combed Cotton, Supersoff,Dry tech และอื่นๆ :br เพราะเรามีพันธมิตรทางการค้าเช่นเดียวกับแบรนด์ระดับโลก :br คุณจะไม่เพียงแต่ได้สินค้าในราคาที่เหมาะสมแต่ยังมีคุณภาพดีอีกด้วย :br เราควบคุมและตรวจสอบมาตรฐานการผลิตของเรา เพื่อให้สินค้าของเรามีคุณภาพสูงสุด ยิ่งไปกว่านั้น :br เราใส่ใจในสิ่งที่ลูกค้าต้องการตั้งแต่เริ่มต้น ตั้งแต่การออกแบบผ้าไปจนถึงการผลิต :br และสุดท้ายไปจนถึงผลิตภัณฑ์ขั้นสุดท้ายเพราะเรามุ่งมั่นที่จะมอบความสุขให้กับลูกค้าด้วยผลิตภัณฑ์ของเรา
+  :::
+
+  :::link-button{.flex.justify-center to="https://contact.somsritshirt.com/544af"}
+  สั่งทำเสื้อ
+  :::
+::

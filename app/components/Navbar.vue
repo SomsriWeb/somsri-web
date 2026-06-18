@@ -21,6 +21,9 @@ const isScrolled = ref<boolean>(false);
 const showMenu = ref<boolean>(false);
 const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
 const lang = unref(LANG);
+// English URLs are derived from the Thai url via i18n (localePath), so the
+// nav always matches the generated /en/<slug> routes — no hand-kept url-en.
+const localePath = useLocalePath();
 const isSlideOverOpen = ref(false);
 
 const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
@@ -30,7 +33,7 @@ const productItems = computed(() => {
 
 const mainNavItemsBase = computed<NavigationMenuItem[]>(() => {
     return (navbarData.value.main || []).map((menu) => {
-        const url = lang === 'th' ? menu.url : menu['url-en'];
+        const url = localePath(menu.url);
         return {
             label: lang === 'th' ? menu.label : menu['label-en'],
             to: url,
@@ -49,8 +52,8 @@ const items = computed<NavigationMenuItem[]>(() => {
             slot: 'megamenu' as const,
             children: products.map((prod) => ({
                 label: lang === 'th' ? prod.label : prod['label-en'],
-                to: lang === 'th' ? prod.url : prod['url-en'],
-                class: activeMenuClass(prod.url, true),
+                to: localePath(prod.url),
+                class: activeMenuClass(localePath(prod.url), true),
             })),
         };
     });
