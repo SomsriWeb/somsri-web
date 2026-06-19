@@ -9,10 +9,14 @@ interface Props {
     lang: 'th' | 'en';
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
 
 const { $viewport } = useNuxtApp();
 const hoveredCategory = ref<string | null>(null);
+const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
+// Toggle to the other locale on the current page.
+const otherLocalePath = computed(() => switchLocalePath(props.lang === 'th' ? 'en' : 'th'));
 </script>
 
 <template>
@@ -44,7 +48,7 @@ const hoveredCategory = ref<string | null>(null);
                         <NuxtLink
                             v-for="product in productItems.previewCategories"
                             :key="product.id"
-                            :to="lang === 'th' ? product.url : product['url-en']"
+                            :to="localePath(product.url)"
                             class="bg-primary text-white rounded-2xl p-2 flex gap-3 cursor-pointer hover:bg-[#8b1d33] transition-colors"
                         >
                             <img :src="product.image" :alt="lang === 'th' ? product.label : product['label-en']" class="w-20 h-24 object-cover rounded-lg bg-gray-300" />
@@ -80,7 +84,7 @@ const hoveredCategory = ref<string | null>(null);
                                 <!-- เพิ่ม focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 เพื่อป้องกันขอบสีเขียว -->
                                 <UButton
                                     block
-                                    :to="lang === 'th' ? product.url : product['url-en']"
+                                    :to="localePath(product.url)"
                                     :ui="{ base: '!lg:px-0 !lg:py-1 !min-w-0 !text-nowrap !rounded-sm' }"
                                     class="bg-primary text-white font-bold hover:bg-[#8b1d33] transition-all duration-0 hover:duration-150 hover:-translate-y-0.5 shadow-sm focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 lg:text-[20px]"
                                     @pointerenter="hoveredCategory = product.id"
@@ -109,7 +113,7 @@ const hoveredCategory = ref<string | null>(null);
                             <UButton
                                 v-else
                                 block
-                                :to="lang === 'th' ? product.url : product['url-en']"
+                                :to="localePath(product.url)"
                                 class="bg-primary text-white font-bold py-3 px-4 rounded-xl hover:bg-[#8b1d33] transition-all duration-0 hover:duration-150 hover:-translate-y-0.5 shadow-sm focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
                             >
                                 {{ lang === 'th' ? product.label : product['label-en'] }}
@@ -123,6 +127,6 @@ const hoveredCategory = ref<string | null>(null);
 
     <div class="hidden lg:flex lg:relative lg:gap-5 lg:pt-3">
         <NuxtLink to="tel:024300678" external><Icon name="lucide:phone" /></NuxtLink>
-        <NuxtLink to="/en"><Icon name="lucide:languages" /></NuxtLink>
+        <NuxtLink :to="otherLocalePath"><Icon name="lucide:languages" /></NuxtLink>
     </div>
 </template>

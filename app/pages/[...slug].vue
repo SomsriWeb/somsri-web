@@ -8,10 +8,14 @@ import { USE_NAVBAR } from '~/lib/useNavbar';
 import BackToTop from '~/components/content/BackToTop.vue';
 
 const route = useRoute();
+const { locale } = useI18n();
 const pageType = ref<'page' | 'blog'>('page');
 
+// Pick the locale-specific page collection (generated into content/<locale>/page).
+const pageCollection = computed(() => (locale.value === 'en' ? 'contentEn' : 'contentTh'));
+
 const { data: page } = await useAsyncData('page-' + route.path, async () => {
-    let data = await queryCollection('content').path(route.path).first();
+    let data = await queryCollection(pageCollection.value).path(route.path).first();
 
     if (!data) {
         data = await queryCollection('blog').path(route.path).first();
@@ -19,6 +23,8 @@ const { data: page } = await useAsyncData('page-' + route.path, async () => {
 
     return data;
 });
+
+useHead(() => ({ htmlAttrs: { lang: locale.value } }));
 
 if (!page.value) {
     throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true });
