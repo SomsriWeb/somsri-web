@@ -1,5 +1,5 @@
 ---
-title: รับผลิตเสื้อโปโล ปักโลโก้ โรงงานผลิตเสื้อโปโลคุณภาพ | สมศรีมีเสื้อ
+title: โรงงานผลิตเสื้อโปโลคุณภาพ สกรีน-ปักโลโก้ | สมศรีมีเสื้อ
 activeNavbar: true
 description: บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี เหมาะสำหรับชุดยูนิฟอร์มและเสื้อทีม เช็คราคาเลย
 footer: false
@@ -7,9 +7,6 @@ language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/6e554
 navbar: false
-seo:
-  title: Search_ผลิต ปัก สกรีนเสื้อโปโล [A] - สมศรีมีเสื้อ
-  description: บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี เหมาะสำหรับชุดยูนิฟอร์มและเสื้อทีม เช็คราคาเลย
 เพิ่ม script ใน head:
   - type: application/ld+json
     content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อโปโล",   "image": "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",   "description": "บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "205",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อโปโล"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "421"   }} '
@@ -20,7 +17,7 @@ seo:
 image: /somsri-can-screen-and-pin/banner.png
 ---
 #title
-รับผลิตเสื้อโปโล
+โรงงานผลิตเสื้อโปโลคุณภาพ
 
 #secondary-title
 ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
@@ -43,22 +40,22 @@ image: /somsri-can-screen-and-pin/banner.png
   ## ตัวอย่างงานปัก
   :::
 
-  :::center
-      ::::line-link
-          :::::line-button
-          แอดไลน์สั่งทำเสื้อ
-          :::::
-      ::::
+  :::line-link
+    ::::line-button
+    แอดไลน์สั่งทำเสื้อ
+    ::::
   :::
 
 ## ชนิดผ้าและราคาเสื้อโปโล
 
-  :::center
-  :prose-img{.max-w-[30rem] alt="sport price" src="/polo/price-polo.jpg"}
-  :::
+:prose-img{.max-w-[30rem] alt="sport price" src="/polo/price-polo.jpg"}
 
   :::prose-p{.!text-primary.text-center.text-xl}
   \*\*ทางเรามีบริการ QC & Pack อย่างดี \*\*
+  :::
+
+  :::link-button{.text-center to="https://somsritshirt.com/polo"}
+  สั่งทำเสื้อโปโล
   :::
 
 ## ตารางขนาดสกรีน
@@ -91,8 +88,7 @@ image: /somsri-can-screen-and-pin/banner.png
 
 ## ราคางานปัก
 
-:::landing-page-pin
-:::
+:landing-page-pin
 ::
 
 ::why-choose-somsri
@@ -107,12 +103,10 @@ image: /somsri-can-screen-and-pin/banner.png
   :::
 ::
 
-::what-cost-saving
-::
-::center
-    :::line-link
-        ::::line-button
-        แอดไลน์สั่งทำเสื้อ
-        ::::
-    :::
+:what-cost-saving
+
+::line-link
+  :::line-button
+  แอดไลน์สั่งทำเสื้อ
+  :::
 ::

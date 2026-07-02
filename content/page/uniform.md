@@ -28,6 +28,11 @@ image: /uniform/cover-1600w.png
 ::
 
 ::container
+  :::link-button{.text-center to="https://contact.somsritshirt.com/655d0"}
+  สั่งทำเสื้อ
+  :::
+
+#default
   :::uniform-description
   #title
   โรงงานรับผลิตเสื้อ ยูนิฟอร์ม/ช็อป ผลิตเสื้อช็อป ยูนิฟอร์ม
@@ -37,21 +42,11 @@ image: /uniform/cover-1600w.png
   งานปักละเอียดมีคุณภาพ
   รับประกันสินค้า 90 วัน
   มีสีเสื้อให้เลือกมากมาย สอบถามเราตอนนี้
+
+    ::::link-button{to="https://somsritshirt.com/polo"}
+    เสื้อโปโล
+    ::::
   :::
 
 :how-to-order
-
-  :::line-link
-    ::::u-button
-      :::::unwrap-mdc
-      สั่งทำเสื้อ
-      :::::
-    ::::
-  :::
 ::
-
-\::
-\::
-\::
-
-\::
