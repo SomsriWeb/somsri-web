@@ -6,110 +6,41 @@ import { useScrollTriggerRef } from '~/composables/useScrollTriggerRef';
 
 // PROPS
 interface Props {
-    /**
-     * โหมด legacy: จำนวน slide (ต้องตรงกับ slot `item-1` ... `item-N`)
-     * โหมด dynamic: ไม่จำเป็นต้องใส่ถ้ามี `itemsData`
-     */
     items?: number;
-
-    /**
-     * โหมด dynamic: ส่ง array ข้อมูล แล้วใช้ default slot `{ item, index }` เรนเดอร์แต่ละ slide
-     * ถ้ามีความยาว > 0 จะใช้โหมดนี้แทน legacy
-     */
     itemsData?: unknown[];
-
-    /**
-     * จำนวน slide ต่อ viewport ฝั่งใหญ่
-     * - preset `simple`: ใช้ค่านี้เมื่อความกว้างหน้าต่าง ≥ 640px (แคบกว่า 640px ใช้ 1)
-     * - preset `portfolio-grid`: ใช้ค่านี้เมื่อ ≥ 1280px (ช่วง 640 / 768 ใช้ 2 / 3 ตาม breakpoint)
-     */
     slidesPerView?: number;
-
-    /**
-     * จำนวน slide ต่อ viewport ฝั่งเล็ก (เริ่มที่ 320px)
-     * ใช้สำหรับกรณีอยากให้มือถือแสดงหลายการ์ดพร้อมกัน
-     */
     slidesPerViewMobile?: number;
-
-    /**
-     * ระยะห่างระหว่าง slide (px)
-     */
     spaceBetween?: number;
-
-    /**
-     * เปิด/ปิด loop
-     */
     loop?: boolean;
-
-    /**
-     * เลื่อนสไลด์อัตโนมัติ (ส่งต่อเป็น Swiper `autoplay`)
-     */
+    centered?: boolean;
     autoplay?: boolean;
-
-    /**
-     * ช่วงเวลาระหว่างสไลด์ (ms) เมื่อ `autoplay` เป็น true
-     */
     autoplayDelay?: number;
-
-    /**
-     * แสดงปุ่ม prev/next
-     */
     showNavigation?: boolean;
-
-    /**
-     * แสดง pagination dots ใต้แคโรเซล (Swiper `pagination` แบบ bullets, clickable)
-     */
     dot?: boolean;
-
-    /**
-     * effect ของ swiper
-     */
     effect?: 'slide' | 'creative' | 'fade' | 'coverflow' | 'flip' | 'cube' | 'cards';
-
-    /**
-     * class เพิ่มให้ swiper-container
-     */
     containerClass?: string;
-
-    /**
-     * `simple`: มือถือ 1 คอลัมน์, ≥640px ใช้ slidesPerView
-     * `simple-lg`: 1 คอลัมน์จนกว่า ≥1024px (lg) แล้วค่อยใช้ slidesPerView
-     * `portfolio-grid`: สอดคล้อง grid หน้าแรก — 1 / sm:2 / md:3 / xl:slidesPerView
-     */
+    wrapperClass?: string;
     breakpointsPreset?: 'simple' | 'simple-lg' | 'portfolio-grid';
-
-    /**
-     * ฐานความกว้างสำหรับ breakpoints ของ Swiper
-     * - `container`: ตามความกว้างแคโรเซล (แนะนำเมื่ออยู่ในเลย์เอาต์แคบกว่า viewport)
-     * - `window`: ตามความกว้างหน้าต่าง
-     */
     breakpointsBase?: 'window' | 'container';
-
-    /**
-     * เปิด overflow ให้สไลด์ขยาย (เช่น `scale` เมื่อ hover) ล้นออกมาทับการ์ดข้างได้
-     * ค่าเริ่มต้นตัดด้วย overflow-hidden ทั้ง wrapper และ `.swiper` ใน shadow DOM
-     * เมื่อเปิด: ปิด Swiper `observer` / `resizeObserver` ค่าเริ่มต้นของ element — ไม่ให้ความสูงที่เปลี่ยนตอน hover ไปเรียก `update()` แล้วเลื่อน/สลับการ์ด
-     */
     slideOverflowVisible?: boolean;
-
-    /**
-     * padding ซ้าย-ขวาในแต่ละสไลด์ (px) — ดันเนื้อหาเข้ากลางช่อง ลดโอกาสการ์ดขยายไปทับการ์ดข้าง
-     * ไม่ระบุและเปิด `slideOverflowVisible` → ใช้ 16px; ส่ง `0` เพื่อปิด
-     */
     slideGutterX?: number;
-
-    /**
-     * บวกเพิ่มจาก `spaceBetween` (px) ให้สไลด์ห่างกันมากขึ้น
-     * ไม่ระบุและเปิด `slideOverflowVisible` → ใช้ 12px; ส่ง `0` เพื่อปิด
-     */
     slideSpaceExtra?: number;
-
-    /** fade + เลื่อนขึ้นเมื่อสกรอล์ถึงแคโรเซล */
     revealOnScroll?: boolean;
-    /** ScrollTrigger `start` สำหรับ reveal */
     revealStart?: string;
     revealDuration?: number;
     revealY?: number;
+    /**
+     * บังคับให้ทุกสไลด์มีสัดส่วนเท่ากัน เช่น '4/3', '1/1', '16/9'
+     * ไม่ระบุ (undefined) = พฤติกรรมเดิมทุกประการ (h-auto ตามเนื้อหา)
+     */
+    slideAspectRatio?: string;
+    /** ใช้คู่กับ slideAspectRatio เท่านั้น — วิธี fit รูป/วิดีโอในกรอบ */
+    slideObjectFit?: 'cover' | 'contain';
+    /**
+     * ความกว้างสูงสุดของแต่ละสไลด์ (px) เช่น 320 — กันไม่ให้การ์ดยืดใหญ่ตามพื้นที่ container
+     * ไม่ระบุ (undefined) = พฤติกรรมเดิม (ยืดตาม slidesPerView/container เต็มที่)
+     */
+    slideMaxWidth?: number;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -119,12 +50,14 @@ const props = withDefaults(defineProps<Props>(), {
     slidesPerViewMobile: 1,
     spaceBetween: 16,
     loop: true,
+    centered: true,
     autoplay: true,
     autoplayDelay: 3000,
     showNavigation: true,
     dot: false,
     effect: 'slide',
     containerClass: '',
+    wrapperClass: '',
     breakpointsPreset: 'simple',
     breakpointsBase: 'container',
     slideOverflowVisible: false,
@@ -132,6 +65,9 @@ const props = withDefaults(defineProps<Props>(), {
     revealStart: 'top 78%',
     revealDuration: 0.85,
     revealY: 36,
+    slideAspectRatio: undefined,
+    slideObjectFit: 'cover',
+    slideMaxWidth: undefined,
 });
 
 const slideInnerGutterX = computed(() =>
@@ -141,6 +77,24 @@ const slideInnerGutterX = computed(() =>
 const slideSpaceExtraPx = computed(() =>
     props.slideSpaceExtra !== undefined ? props.slideSpaceExtra : props.slideOverflowVisible ? 12 : 0,
 );
+
+/** style เสริมสำหรับ wrapper ของแต่ละสไลด์ — เปิดใช้เฉพาะเมื่อกำหนด slideAspectRatio เท่านั้น ไม่กระทบหน้าที่ไม่ได้ส่ง prop นี้มา */
+const slideInnerStyle = computed(() => {
+    const style: Record<string, string> = {};
+    if (slideInnerGutterX.value > 0) {
+        style.paddingLeft = `${slideInnerGutterX.value}px`;
+        style.paddingRight = `${slideInnerGutterX.value}px`;
+    }
+    if (props.slideAspectRatio) {
+        style.aspectRatio = props.slideAspectRatio;
+    }
+    if (props.slideMaxWidth) {
+        style.maxWidth = `${props.slideMaxWidth}px`;
+        style.marginLeft = 'auto';
+        style.marginRight = 'auto';
+    }
+    return Object.keys(style).length > 0 ? style : undefined;
+});
 
 // SLOTS
 type CarouselSlots = {
@@ -163,7 +117,7 @@ const activeRealIndex = ref(0);
 function syncActiveIndex(inst?: Swiper | null) {
     if (!inst) return;
     // realIndex สอดคล้องกับ itemsData index แม้เปิด loop
-    activeRealIndex.value = typeof inst.realIndex === 'number' ? inst.realIndex : inst.activeIndex ?? 0;
+    activeRealIndex.value = typeof inst.realIndex === 'number' ? inst.realIndex : (inst.activeIndex ?? 0);
 }
 
 function dynamicSlideKey(item: unknown, index: number): string {
@@ -177,9 +131,7 @@ function dynamicSlideKey(item: unknown, index: number): string {
 
 const isDynamicMode = computed(() => props.itemsData.length > 0);
 
-type SlideUnion =
-    | { key: string; dynamic: true; item: unknown; index: number }
-    | { key: string; dynamic: false; slotIndex: number };
+type SlideUnion = { key: string; dynamic: true; item: unknown; index: number } | { key: string; dynamic: false; slotIndex: number };
 
 const slides = computed((): SlideUnion[] => {
     if (isDynamicMode.value) {
@@ -226,14 +178,12 @@ const swiperOptions = computed(() => {
         breakpointsBase: props.breakpointsBase,
         slidesPerView: isPortfolioGrid ? 1 : props.slidesPerView,
         spaceBetween,
-        // ทำให้ “slide ที่ active” ถูกจัดให้อยู่กลาง viewport เสมอเวลามีการเลื่อน
-        centeredSlides: true,
+        // ทำให้ "slide ที่ active" ถูกจัดให้อยู่กลาง viewport เสมอเวลามีการเลื่อน
+        centeredSlides: props.centered,
         // ต้องการให้รูปแรก/รูปสุดท้ายก็อยู่กลางได้ (ซ้าย/ขวาเว้นว่างได้)
         centeredSlidesBounds: false,
         centerInsufficientSlides: true,
-        autoplay: props.autoplay
-            ? { delay: props.autoplayDelay, disableOnInteraction: false }
-            : false,
+        autoplay: props.autoplay ? { delay: props.autoplayDelay, disableOnInteraction: false } : false,
         loop: props.loop,
         effect: props.effect,
         breakpoints,
@@ -353,7 +303,6 @@ watch(swiperOptions, () => {
 watch(swiperInstance, (inst, prev) => {
     if (!inst || inst === prev) return;
     syncActiveIndex(inst);
-    // อัปเดต index เมื่อเลื่อน/transition จบ เพื่อให้ “กลาง” แม่นยำ
     const handler = () => syncActiveIndex(inst);
     inst.on?.('init', handler);
     inst.on?.('slideChange', handler);
@@ -403,78 +352,53 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
 </script>
 
 <template>
-    <div>
+    <div :class="props.wrapperClass">
         <ClientOnly>
             <!-- ตัดการ์ด/สไลด์ที่ล้นออกนอกความกว้างเลย์เอาต์ (โดยเฉพาะ centeredSlides) — ชั้นใน overflow-visible ได้เมื่อ slideOverflowVisible เพื่อ scale ทับการ์ดข้าง -->
             <div ref="revealRootRef" class="min-w-0 w-full max-w-full overflow-x-hidden">
-                <div
-                    class="relative min-w-0"
-                    :class="props.slideOverflowVisible ? 'overflow-visible' : 'overflow-hidden'"
-                >
-                <swiper-container
-                    ref="containerRef"
-                    v-bind="swiperContainerAttrs"
-                    :class="[
-                        props.containerClass,
-                        props.slideOverflowVisible ? 'carousel-slide-overflow-visible' : '',
-                    ]"
-                >
-                    <swiper-slide v-for="slide in slides" :key="slide.key" class="h-auto! min-w-0">
-                        <div
-                            class="box-border min-h-0 min-w-0"
-                            :style="
-                                slideInnerGutterX > 0
-                                    ? {
-                                          paddingLeft: `${slideInnerGutterX}px`,
-                                          paddingRight: `${slideInnerGutterX}px`,
-                                      }
-                                    : undefined
-                            "
-                        >
-                            <template v-if="slide.dynamic">
-                                <slot
-                                    :item="slide.item"
-                                    :index="slide.index"
-                                    :active="slide.index === activeRealIndex"
-                                />
-                            </template>
-                            <template v-else>
-                                <slot :name="`item-${slide.slotIndex}`" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
-                            </template>
-                        </div>
-                    </swiper-slide>
-                </swiper-container>
+                <div class="relative min-w-0" :class="props.slideOverflowVisible ? 'overflow-visible' : 'overflow-hidden'">
+                    <swiper-container ref="containerRef" v-bind="swiperContainerAttrs" :class="[props.containerClass, props.slideOverflowVisible ? 'carousel-slide-overflow-visible' : '']">
+                        <swiper-slide v-for="slide in slides" :key="slide.key" class="h-auto! min-w-0">
+                            <div
+                                class="box-border min-h-0 min-w-0"
+                                :class="props.slideAspectRatio ? 'carousel-slide-fixed-ratio' : ''"
+                                :style="slideInnerStyle"
+                            >
+                                <template v-if="slide.dynamic">
+                                    <slot :item="slide.item" :index="slide.index" :active="slide.index === activeRealIndex" />
+                                </template>
+                                <template v-else>
+                                    <slot :name="`item-${slide.slotIndex}`" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
+                                </template>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
 
-                <div
-                    v-if="props.showNavigation"
-                    class="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 flex items-center justify-between px-1 sm:px-3"
-                    :class="props.slideOverflowVisible ? 'z-30' : 'z-10'"
-                >
-                    <UButton
-                        icon="i-heroicons-chevron-left"
-                        color="neutral"
-                        variant="solid"
-                        class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
-                        aria-label="สไลด์ก่อนหน้า"
-                        @click="handlePrev"
-                    />
-                    <UButton
-                        icon="i-heroicons-chevron-right"
-                        color="neutral"
-                        variant="solid"
-                        class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
-                        aria-label="สไลด์ถัดไป"
-                        @click="handleNext"
-                    />
-                </div>
+                    <div
+                        v-if="props.showNavigation"
+                        class="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2 flex items-center justify-between px-1 sm:px-3"
+                        :class="props.slideOverflowVisible ? 'z-30' : 'z-10'"
+                    >
+                        <UButton
+                            icon="i-heroicons-chevron-left"
+                            color="neutral"
+                            variant="solid"
+                            class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
+                            aria-label="สไลด์ก่อนหน้า"
+                            @click="handlePrev"
+                        />
+                        <UButton
+                            icon="i-heroicons-chevron-right"
+                            color="neutral"
+                            variant="solid"
+                            class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
+                            aria-label="สไลด์ถัดไป"
+                            @click="handleNext"
+                        />
+                    </div>
                 </div>
 
-                <div
-                    v-if="props.dot && slides.length > 1"
-                    class="mt-3 flex items-center justify-center gap-2"
-                    role="tablist"
-                    aria-label="เลือกสไลด์"
-                >
+                <div v-if="props.dot && slides.length > 1" class="mt-3 flex items-center justify-center gap-2" role="tablist" aria-label="เลือกสไลด์">
                     <button
                         v-for="(slide, idx) in slides"
                         :key="`dot-${slide.key}`"
@@ -502,6 +426,19 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
     overflow: visible;
 }
 
+/* เปิดใช้เฉพาะเมื่อกำหนด slideAspectRatio prop เท่านั้น — บังคับให้รูป/วิดีโอเต็มกรอบสัดส่วนคงที่ */
+.carousel-slide-fixed-ratio {
+    overflow: hidden;
+}
+
+.carousel-slide-fixed-ratio img,
+.carousel-slide-fixed-ratio video {
+    width: 100%;
+    height: 100%;
+    object-fit: v-bind('props.slideObjectFit');
+    display: block;
+}
+
 /* Custom pagination dots: render นอก shadow DOM ของ swiper-container ใต้แคโรเซลเสมอ */
 .carousel-dot {
     width: 9px;
@@ -509,7 +446,11 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
     border-radius: 9999px;
     background: #111827;
     opacity: 0.3;
-    transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease, width 0.2s ease;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        width 0.2s ease;
     cursor: pointer;
     border: 0;
     padding: 0;
