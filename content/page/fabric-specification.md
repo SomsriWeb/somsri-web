@@ -46,6 +46,7 @@ image: /fabrics/fabrics-banner.png
 :::split-content
 ---
 compact: "true"
+mobileImagePosition: top
 direction: left-to-right
 textClass: "md:pt-1 px-6"
 headerClass: "text-3xl leading-tight font-bold md:text-[2.5rem]"

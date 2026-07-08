@@ -3,6 +3,8 @@ import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
 
 // PROPS
 type SplitDirection = 'left-to-right' | 'right-to-left';
+type MobileImagePosition = 'top' | 'bottom';
+type StackUntil = 'sm' | 'md';
 
 interface Props {
     textClass?: string;
@@ -11,11 +13,15 @@ interface Props {
     descriptionClass?: string;
     textExtraClass?: string;
     direction?: SplitDirection;
+    mobileImagePosition?: MobileImagePosition;
+    stackUntil?: StackUntil;
     /** ลดช่องว่างระหว่างคอลัมน์ และจัดรูปชิดขอบฝั่งที่ติดกับข้อความ */
     compact?: boolean;
 }
 const props = withDefaults(defineProps<Props>(), {
     direction: 'left-to-right',
+    mobileImagePosition: 'bottom',
+    stackUntil: 'md',
     compact: false,
 });
 
@@ -45,34 +51,48 @@ defineSlots<Slots>();
 
 // COMPUTED
 const isRightToLeft = computed(() => props.direction === 'right-to-left');
+const desktopPrefix = computed(() => (props.stackUntil === 'md' ? 'lg' : 'md'));
 
 const sectionGapClass = computed(() =>
     // Using flex on md+, so keep gap consistent across modes
-    props.compact ? 'gap-3 md:gap-3' : 'gap-6 md:gap-8',
+    props.compact
+        ? `gap-3 ${desktopPrefix.value}:gap-3`
+        : `gap-6 ${desktopPrefix.value}:gap-8`,
 );
 
 const sectionLayoutClass = computed(() => [
     // Mobile: stacked
     'flex flex-col',
     // Desktop: side-by-side, respect direction
-    isRightToLeft.value ? 'md:flex-row' : 'md:flex-row-reverse',
+    isRightToLeft.value ? `${desktopPrefix.value}:flex-row` : `${desktopPrefix.value}:flex-row-reverse`,
 ]);
 
 const textCellClass = computed(() => [
     // Let text take ~2/3 on md+ and be flexible
-    'min-w-0 md:flex-[2_1_0%]',
+    `min-w-0 ${desktopPrefix.value}:flex-[2_1_0%]`,
+    props.mobileImagePosition === 'top'
+        ? `order-2 ${desktopPrefix.value}:order-none`
+        : `order-1 ${desktopPrefix.value}:order-none`,
 ]);
 
 /** ฝั่งรูป: ชิดขอบที่หันหน้าไปทางข้อความ แทนการกึ่งกลางคอลัมน์ */
 const imageCellClass = computed(() => {
     if (!props.compact) {
         // ~1/3 on md+, centered on mobile
-        return 'mx-auto md:mx-0 md:flex-[1_1_0%]';
+        return [
+            `mx-auto ${desktopPrefix.value}:mx-0 ${desktopPrefix.value}:flex-[1_1_0%]`,
+            props.mobileImagePosition === 'top'
+                ? `order-1 ${desktopPrefix.value}:order-none`
+                : `order-2 ${desktopPrefix.value}:order-none`,
+        ];
     }
     return [
         // ~1/3 on md+, and align image toward the text side
-        'md:flex-[1_1_0%] flex',
-        isRightToLeft.value ? 'md:justify-start' : 'md:justify-end',
+        `${desktopPrefix.value}:flex-[1_1_0%] flex`,
+        props.mobileImagePosition === 'top'
+            ? `order-1 ${desktopPrefix.value}:order-none`
+            : `order-2 ${desktopPrefix.value}:order-none`,
+        isRightToLeft.value ? `${desktopPrefix.value}:justify-start` : `${desktopPrefix.value}:justify-end`,
     ];
 });
 

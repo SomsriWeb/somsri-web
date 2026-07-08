@@ -12,7 +12,13 @@ interface Props {
 const { type = ProductType.FABRIC_SPECIFICATION } = defineProps<Props>();
 
 const filters = ref(defaultFabricFilterState());
-const visibleCount = ref(9);
+const MOBILE_VISIBLE_COUNT = 8;
+const DESKTOP_VISIBLE_COUNT = 9;
+const LOAD_MORE_STEP = 6;
+const visibleCount = ref(MOBILE_VISIBLE_COUNT);
+
+const isDesktop = useMediaQuery('(min-width: 1024px)');
+const initialVisibleCount = computed(() => (isDesktop.value ? DESKTOP_VISIBLE_COUNT : MOBILE_VISIBLE_COUNT));
 
 const { data } = await useAsyncData('fabric-catalog', () => {
     return queryCollection('fabrics').order('order', 'ASC').all();
@@ -24,12 +30,12 @@ const visibleFabrics = computed(() => filteredFabrics.value.slice(0, visibleCoun
 
 const hasMore = computed(() => visibleCount.value < filteredFabrics.value.length);
 
-watch(filteredFabrics, () => {
-    visibleCount.value = 9;
-});
+watch([filteredFabrics, isDesktop], () => {
+    visibleCount.value = initialVisibleCount.value;
+}, { immediate: true });
 
 function loadMore() {
-    visibleCount.value += 6;
+    visibleCount.value += LOAD_MORE_STEP;
 }
 
 function scrollToResults() {
