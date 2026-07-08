@@ -13,4 +13,5 @@ export enum ProductTypeIdEnum {
     BRAND = 'brand',
     PANTS = 'pants',
     OTHER = 'other',
+    FABRIC_SPECIFICATION = 'fabric-specification',
 }

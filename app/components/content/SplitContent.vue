@@ -7,6 +7,9 @@ type SplitDirection = 'left-to-right' | 'right-to-left';
 interface Props {
     textClass?: string;
     imageClass?: string;
+    headerClass?: string;
+    descriptionClass?: string;
+    textExtraClass?: string;
     direction?: SplitDirection;
     /** ลดช่องว่างระหว่างคอลัมน์ และจัดรูปชิดขอบฝั่งที่ติดกับข้อความ */
     compact?: boolean;
@@ -87,13 +90,15 @@ useScrollRevealUp(rootRef, { start: 'top 60%' });
             :class="[props.textClass, textCellClass]"
             class="min-w-0 space-y-4 [&_ul]:my-0 [&_ul]:list-inside [&_ul]:list-disc [&_ul]:space-y-2 [&_ol]:my-0 [&_ol]:list-inside [&_ol]:list-decimal [&_ol]:space-y-2 [&_li]:leading-relaxed"
         >
-            <ProseH3 v-if="$slots.Headertitle" class="text-primary">
+            <ProseH3 v-if="$slots.Headertitle" :class="['text-primary', props.headerClass]">
                 <slot name="Headertitle" mdc-unwrap="p" />
             </ProseH3>
-            <div class="leading-relaxed [&_p]:font-light">
+            <div :class="['leading-relaxed [&_p]:font-light', props.descriptionClass]">
                 <slot name="description" mdc-unwrap="p" />
             </div>
-            <slot name="textExtra" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
+            <div v-if="$slots.textExtra" :class="props.textExtraClass">
+                <slot name="textExtra" mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
+            </div>
         </div>
 
         <div :class="[props.imageClass, imageCellClass]">

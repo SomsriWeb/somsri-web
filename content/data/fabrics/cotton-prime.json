@@ -1,7 +1,12 @@
 {
     "uid": "cotton-prime",
     "imageUrl": "/fabrics/cotton-prime.jpg",
-    "forProductType": ["tshirt", "polo", "brand", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "brand",
+        "fabric-specification"
+    ],
     "nameTh": "คอตตอนไพรม์",
     "nameEn": "Cotton Prime",
     "recommendForStyle": "เสื้อพรีเมียม งานแบรนด์",
@@ -11,5 +16,6 @@
         "เหมาะงานที่ต้องการภาพลักษณ์พรีเมียม"
     ],
     "disadvantage": [],
-    "order": 21
+    "order": 21,
+    "gramWeight": 230
 }

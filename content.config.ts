@@ -3,6 +3,7 @@ import { z } from 'zod/v4';
 
 const commonContentSchema = z.object({
     activeNavbar: z.boolean().default(false),
+    contentSpacing: z.boolean().default(true),
     lineLink: z.string().default('https://line.me/R/ti/p/%40diz8986o'),
     image: property(z.string()).editor({ input: 'media' }),
     date: z.string(),
@@ -375,13 +376,14 @@ export default defineContentConfig({
                 imageAlt: z.string().optional(),
                 popupImageUrl: property(z.string().optional()).editor({ input: 'media' }),
                 popupImageAlt: z.string().optional(),
-                forProductType: z.array(z.enum(['tshirt', 'polo', 'sport', 'totebag', 'hat', 'mask', 'brand', 'pants', 'other'])),
+                forProductType: z.array(z.enum(['tshirt', 'polo', 'sport', 'totebag', 'hat', 'mask', 'brand', 'pants', 'other', 'fabric-specification'])),
                 nameTh: z.string(),
                 nameEn: z.string(),
                 recommendForStyle: z.string(),
                 advantage: z.array(z.string()),
                 disadvantage: z.array(z.string()),
                 order: z.number(),
+                gramWeight: z.number().optional(),
             }),
         }),
 
