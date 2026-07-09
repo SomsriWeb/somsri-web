@@ -7,11 +7,28 @@ activeNavbar: true
 lineLink: https://contact.somsritshirt.com/af2fd
 ---
 
-::container
-  :::how-to-order{titleAsTag="h1"}
-  #title
-  วิธีการสั่งเสื้อ กับสมศรี
-  :::
-  :::social
-  :::
-::
+:::how-to-order-hero{titleAsTag="h1"}
+#title
+8 ขั้นตอน\
+จากไอเดีย\
+ถึง[เสื้อในมือคุณ]{.text-primary}
+
+#description
+เราออกแบบกระบวนการนี้ เพื่อให้คุณไม่ต้องเดา ไม่ต้องลุ้น และไม่ต้องโทรถามสถานะ
+
+#note
+เฉลี่ยใช้เวลา 14-21 วันทำการ นับจากวันที่อนุมัติตัวอย่าง
+:::
+
+:::how-to-order-timeline
+:::
+
+:::how-to-order-cta{image="/how-to-order/steps/cta-background.jpg"}
+#title
+ไม่รู้จะเริ่มตรงไหน\
+คือจุดเริ่มต้นที่ดีที่สุดแล้ว
+
+#description
+บอกแค่ว่าอยากได้เสื้อแบบไหน\
+ทีมเราดูแลทุกอย่างตั้งแต่ขั้นตอนแรกจนถึงขั้นตอนสุดท้าย
+:::
