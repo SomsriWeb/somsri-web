@@ -11,10 +11,11 @@ const route = useRoute();
 const pageType = ref<'page' | 'blog'>('page');
 
 const { data: page } = await useAsyncData('page-' + route.path, async () => {
-    let data = await queryCollection('content').path(route.path).first();
+    const normalizedPath = route.path.replace(/\/$/, '');
+    let data = await queryCollection('content').path(normalizedPath).first();
 
     if (!data) {
-        data = await queryCollection('blog').path(route.path).first();
+        data = await queryCollection('blog').path(normalizedPath).first();
     }
 
     return data;
@@ -41,7 +42,11 @@ provide(LANGUAGE, page.value.language || 'th');
         <Metadata :page="page" />
         <NuxtLayout :name="page.activeNavbar || pageType === 'blog' ? 'color' : 'default'">
             <main>
-                <ContentRenderer v-if="pageType === 'page'" class="space-y-8" :value="page" />
+                <ContentRenderer
+                    v-if="pageType === 'page'"
+                    :class="page.contentSpacing === false ? '' : 'space-y-8'"
+                    :value="page"
+                />
 
                 <template v-else>
                     <BlogHeader :image="page.image" :alt="page.title">

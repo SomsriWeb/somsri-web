@@ -47,6 +47,7 @@
     "@iconify-json/lucide": "^1.2.87",
     "@iconify-json/material-symbols": "^1.2.53",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.88",
     "@iconify-json/solar": "^1.2.5",
     "@iconify-json/uil": "^1.2.3",
     "beasties": "^0.3.5",
