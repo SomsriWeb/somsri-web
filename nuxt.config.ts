@@ -2,7 +2,13 @@ import { beasties } from 'vite-plugin-beasties';
 
 const GTAG_ID = 'GTM-5HWK828';
 const META_PIXEL_ID = '796947021881915';
-const HOTJAR_ID = 3498590;
+const CLARITY_ID = process.env.NUXT_PUBLIC_SCRIPTS_CLARITY_ID || '';
+
+if (!CLARITY_ID) {
+    console.warn(
+        '[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.',
+    );
+}
 
 import { defineNuxtConfig } from 'nuxt/config';
 
@@ -185,8 +191,8 @@ export default defineNuxtConfig({
                 metaPixel: {
                     id: META_PIXEL_ID,
                 },
-                hotjar: {
-                    id: HOTJAR_ID,
+                clarity: {
+                    id: CLARITY_ID,
                 },
             },
         },
@@ -201,6 +207,11 @@ export default defineNuxtConfig({
                 },
                 metaPixel: {
                     id: META_PIXEL_ID,
+                },
+                clarity: {
+                    // .env
+                    // NUXT_PUBLIC_SCRIPTS_CLARITY_ID=<your-clarity-project-id>
+                    id: CLARITY_ID,
                 },
             },
         },
