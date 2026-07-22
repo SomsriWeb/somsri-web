@@ -12,10 +12,11 @@ const pageType = ref<'page' | 'blog'>('page');
 const contentRendererClass = computed(() => (page.value?.contentSpacing === false ? '' : 'space-y-8'));
 
 const { data: page } = await useAsyncData('page-' + route.path, async () => {
-    let data = await queryCollection('content').path(route.path).first();
+    const normalizedPath = route.path.replace(/\/$/, '');
+    let data = await queryCollection('content').path(normalizedPath).first();
 
     if (!data) {
-        data = await queryCollection('blog').path(route.path).first();
+        data = await queryCollection('blog').path(normalizedPath).first();
     }
 
     return data;

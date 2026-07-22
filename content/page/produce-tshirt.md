@@ -10,7 +10,7 @@ lineLink: https://contact.somsritshirt.com/13139
 
 ::landing-page-header-style-two
 ---
-image: /produce-tshirt/banner.png
+image: /produce-tshirt/Banner.png
 ---
 #title
 รับผลิตเสื้อ
