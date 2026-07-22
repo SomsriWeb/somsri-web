@@ -2,13 +2,18 @@
     "uid": "dry-feel",
     "imageUrl": "/fabrics/dry-feel.png",
     "popupImageUrl": "/fabrics/dry-feel-popup.png",
-    "forProductType": ["fabric-specification"],
+    "forProductType": [
+        "fabric-specification"
+    ],
     "nameTh": "ดรายฟีล",
     "nameEn": "Dry Feel",
     "recommendForStyle": "เสื้อโปโลพรีเมี่ยมใส่ได้ทุกวัน",
-    "advantage": ["ผิวสัมผัสนุ่ม ลื่น ใส่สบาย",
-    "ไม่ยับง่าย",
-    "ระบายอากาศดี"],
+    "advantage": [
+        "ผิวสัมผัสนุ่ม ลื่น ใส่สบาย",
+        "ไม่ยับง่าย",
+        "ระบายอากาศดี"
+    ],
     "disadvantage": [],
-    "order": 5
+    "order": 5,
+    "gramWeight": 180
 }

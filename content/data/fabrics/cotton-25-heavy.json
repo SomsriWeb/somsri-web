@@ -1,7 +1,11 @@
 {
     "uid": "cotton-25-heavy",
     "imageUrl": "/fabrics/cotton-25heavy.jpg",
-    "forProductType": ["tshirt", "polo", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
     "nameTh": "คอตตอน 25 เฮวี",
     "nameEn": "Cotton 25 Heavy",
     "recommendForStyle": "เสื้อโทนหนา ลุคสตรีท โอเวอร์ไซส์",
@@ -11,5 +15,6 @@
         "ทนทานต่อการใช้งาน"
     ],
     "disadvantage": [],
-    "order": 20
+    "order": 20,
+    "gramWeight": 260
 }

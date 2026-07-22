@@ -9,6 +9,7 @@ import BackToTop from '~/components/content/BackToTop.vue';
 
 const route = useRoute();
 const pageType = ref<'page' | 'blog'>('page');
+const contentRendererClass = computed(() => (page.value?.contentSpacing === false ? '' : 'space-y-8'));
 
 const { data: page } = await useAsyncData('page-' + route.path, async () => {
     const normalizedPath = route.path.replace(/\/$/, '');
@@ -42,18 +43,14 @@ provide(LANGUAGE, page.value.language || 'th');
         <Metadata :page="page" />
         <NuxtLayout :name="page.activeNavbar || pageType === 'blog' ? 'color' : 'default'">
             <main>
-                <ContentRenderer
-                    v-if="pageType === 'page'"
-                    :class="page.contentSpacing === false ? '' : 'space-y-8'"
-                    :value="page"
-                />
+                <ContentRenderer v-if="pageType === 'page'" :class="contentRendererClass" :value="page" />
 
                 <template v-else>
                     <BlogHeader :image="page.image" :alt="page.title">
                         <template #title>{{ page.title }}</template>
                     </BlogHeader>
                     <Container>
-                        <ContentRenderer class="space-y-8" :value="page" />
+                        <ContentRenderer :class="contentRendererClass" :value="page" />
                     </Container>
                 </template>
                 <BackToTop />

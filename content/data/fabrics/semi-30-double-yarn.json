@@ -1,7 +1,10 @@
 {
     "uid": "semi-30-double-yarn",
     "imageUrl": "/fabrics/semi-30-เส้นคู่.jpg",
-    "forProductType": ["tshirt", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "fabric-specification"
+    ],
     "nameTh": "เซมิ 30 เส้นคู่",
     "nameEn": "Semi 30 Double Yarn",
     "recommendForStyle": "เสื้อยืดทุกวัน งานสกรีน",
@@ -11,5 +14,6 @@
         "ทนต่อการซัก"
     ],
     "disadvantage": [],
-    "order": 26
+    "order": 26,
+    "gramWeight": 260
 }
