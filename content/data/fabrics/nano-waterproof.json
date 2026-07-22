@@ -2,13 +2,17 @@
     "uid": "nano-waterproof",
     "imageUrl": "/fabrics/nano-waterproof.png",
     "popupImageUrl": "/fabrics/nano-waterproof-popup.png",
-    "forProductType": ["fabric-specification"],
+    "forProductType": [
+        "fabric-specification"
+    ],
     "nameTh": "นาโนกันน้ำ",
     "nameEn": "Nano Waterproof",
     "recommendForStyle": "เสื้อกีฬา กระเป๋า ผ้ากันเปื้อน",
-    "advantage": ["กันน้ำ (น้ำกลิ้ง ไม่ซึม)",
-    "ทำความสะอาดง่าย",
-    "ทนทานต่อการซัก"],
+    "advantage": [
+        "กันน้ำ (น้ำกลิ้ง ไม่ซึม)",
+        "ทำความสะอาดง่าย",
+        "ทนทานต่อการซัก"
+    ],
     "disadvantage": [],
     "order": 10
 }

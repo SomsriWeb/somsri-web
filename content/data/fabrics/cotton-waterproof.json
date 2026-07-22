@@ -2,13 +2,17 @@
     "uid": "cotton-waterproof",
     "imageUrl": "/fabrics/cotton-waterproof.png",
     "popupImageUrl": "/fabrics/cotton-waterproof-popup.png",
-    "forProductType": ["fabric-specification"],
+    "forProductType": [
+        "fabric-specification"
+    ],
     "nameTh": "คอตตอนกันน้ำ",
     "nameEn": "Cotton Waterproof",
     "recommendForStyle": "เสื้อผ้าแฟชั่น ",
-    "advantage": ["ใส่สบาย ลุคธรรมชาติ",
+    "advantage": [
+        "ใส่สบาย ลุคธรรมชาติ",
         "ระบายอากาศดีกว่า nano ล้วน",
-        "สัมผัสความนุ่มแบบ cotton   กันน้ำ"],
+        "สัมผัสความนุ่มแบบ cotton   กันน้ำ"
+    ],
     "disadvantage": [],
     "order": 4
 }

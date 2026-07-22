@@ -2,7 +2,10 @@
     "uid": "juti-micro",
     "imageUrl": "/fabrics/juti-micro.jpg",
     "popupImageUrl": "/fabrics/juti-micro-popup.jpg",
-    "forProductType": ["sport", "fabric-specification"],
+    "forProductType": [
+        "sport",
+        "fabric-specification"
+    ],
     "nameTh": "จูติไมโคร",
     "nameEn": "Juti Micro",
     "recommendForStyle": "เสื้อกีฬากลางแจ้ง",
@@ -13,5 +16,6 @@
         "มีความยืดหยุ่นสูง"
     ],
     "disadvantage": [],
-    "order": 7
+    "order": 7,
+    "gramWeight": 180
 }

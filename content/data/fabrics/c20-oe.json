@@ -1,7 +1,11 @@
 {
     "uid": "c20-oe",
     "imageUrl": "/fabrics/c20-OE.jpg",
-    "forProductType": ["tshirt", "polo", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
     "nameTh": "คอตตอน 20 OE",
     "nameEn": "Cotton 20 OE",
     "recommendForStyle": "เสื้อยืดราคาประหยัด งานโปรโมชัน",
@@ -11,5 +15,6 @@
         "เหมาะงานพิมพ์ลายทั่วไป"
     ],
     "disadvantage": [],
-    "order": 18
+    "order": 18,
+    "gramWeight": 210
 }

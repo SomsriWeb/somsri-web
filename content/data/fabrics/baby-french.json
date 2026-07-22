@@ -1,7 +1,11 @@
 {
     "uid": "baby-french",
     "imageUrl": "/fabrics/baby-french.jpg",
-    "forProductType": ["tshirt", "polo", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
     "nameTh": "เบบี้เฟรนช์เทอร์รี",
     "nameEn": "Baby French Terry",
     "recommendForStyle": "เสื้อแจ็คเก็ตเบา ชุดกีฬา ลุคสตรีท",
@@ -11,5 +15,6 @@
         "ยืดหยุ่น พับเก็บง่าย"
     ],
     "disadvantage": [],
-    "order": 17
+    "order": 17,
+    "gramWeight": 210
 }

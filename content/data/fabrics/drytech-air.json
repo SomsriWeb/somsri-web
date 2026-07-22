@@ -1,7 +1,11 @@
 {
     "uid": "drytech-air",
     "imageUrl": "/fabrics/Drytech-air.jpg",
-    "forProductType": ["tshirt", "polo", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
     "nameTh": "ดรายเทค แอร์",
     "nameEn": "Drytech Air",
     "recommendForStyle": "เสื้อกีฬา กิจกรรมกลางแจ้ง",
@@ -11,5 +15,6 @@
         "เหมาะอากาศร้อน"
     ],
     "disadvantage": [],
-    "order": 24
+    "order": 24,
+    "gramWeight": 180
 }

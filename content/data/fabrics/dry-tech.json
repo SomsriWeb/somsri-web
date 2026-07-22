@@ -2,13 +2,18 @@
     "uid": "dry-tech",
     "imageUrl": "/fabrics/dry-tech.png",
     "popupImageUrl": "/fabrics/dry-tech-popup.png",
-    "forProductType": ["fabric-specification"],
+    "forProductType": [
+        "fabric-specification"
+    ],
     "nameTh": "ดรายเทค",
     "nameEn": "Dry Tech",
     "recommendForStyle": "เสื้อโปโลกลางแจ้ง",
-    "advantage": ["ระบายเหงื่อเร็ว เหมาะกับอากาศร้อน",
-    "แห้งไวไม่เก็บกลิ่น",
-    "น้ำหนักเบา ใส่แล้วไม่อับ"],
+    "advantage": [
+        "ระบายเหงื่อเร็ว เหมาะกับอากาศร้อน",
+        "แห้งไวไม่เก็บกลิ่น",
+        "น้ำหนักเบา ใส่แล้วไม่อับ"
+    ],
     "disadvantage": [],
-    "order": 6
+    "order": 6,
+    "gramWeight": 180
 }

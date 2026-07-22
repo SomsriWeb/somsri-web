@@ -2,13 +2,18 @@
     "uid": "tc-lacoste",
     "imageUrl": "/fabrics/tc-lacoste.png",
     "popupImageUrl": "/fabrics/tc-lacoste-popup.png",
-    "forProductType": ["fabric-specification"],
+    "forProductType": [
+        "fabric-specification"
+    ],
     "nameTh": "ทีซี ลาคลอส",
     "nameEn": "TC Lacoste",
     "recommendForStyle": "เสื้อโปโลเหมาะกับงานองค์กร",
-    "advantage": ["ทนทานต่อการใช้งานสูง",
-    "เสื้ออยู่ทรงดี ไม่ย้วยง่าย",
-    "ไม่ยับง่าย ซักแล้วใส่ได้เลย"],
+    "advantage": [
+        "ทนทานต่อการใช้งานสูง",
+        "เสื้ออยู่ทรงดี ไม่ย้วยง่าย",
+        "ไม่ยับง่าย ซักแล้วใส่ได้เลย"
+    ],
     "disadvantage": [],
-    "order": 13
+    "order": 13,
+    "gramWeight": 240
 }

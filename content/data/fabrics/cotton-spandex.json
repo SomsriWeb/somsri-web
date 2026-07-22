@@ -1,7 +1,11 @@
 {
     "uid": "cotton-spandex",
     "imageUrl": "/fabrics/cotton-spandex.jpg",
-    "forProductType": ["tshirt", "polo", "fabric-specification"],
+    "forProductType": [
+        "tshirt",
+        "polo",
+        "fabric-specification"
+    ],
     "nameTh": "คอตตอนสแปนเด็กซ์",
     "nameEn": "Cotton Spandex",
     "recommendForStyle": "เสื้อรัดรูปเล็กน้อย กิจกรรม กีฬาเบา",
@@ -11,5 +15,6 @@
         "สวมใส่สบาย"
     ],
     "disadvantage": [],
-    "order": 22
+    "order": 22,
+    "gramWeight": 220
 }
