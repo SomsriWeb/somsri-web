@@ -100,7 +100,7 @@ export default defineNuxtConfig({
     },
     seo: {},
     site: {
-        url: 'https://somsritshirt.com',
+        url: process.env.NUXT_PUBLIC_SITE_URL || 'https://somsritshirt.com',
         name: 'สมศรีมีเสื้อ',
     },
     sitemap: {
@@ -159,13 +159,16 @@ export default defineNuxtConfig({
     routeRules: {
         '/shop': { ssr: false, prerender: false },
         '/tshirt': { prerender: false },
+        '/sitemap_index.xml': { prerender: false },
+        '/page-sitemap.xml': { prerender: false },
+        '/post-sitemap.xml': { prerender: false },
         '/**': {
             prerender: true,
         },
     },
     nitro: {
         prerender: {
-            routes: ['/', '/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
+            routes: ['/'],
             crawlLinks: true,
         },
         preset: 'bun',

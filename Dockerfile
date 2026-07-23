@@ -4,7 +4,9 @@ FROM oven/bun:1 AS build
 WORKDIR /app
 ARG STUDIO_GITHUB_MODERATORS=web.somsritshirt@outlook.com
 ENV STUDIO_GITHUB_MODERATORS=web.somsritshirt@outlook.com
-
+ARG NUXT_PUBLIC_SITE_URL=https://somsritshirt.com
+ENV NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 COPY package.json bun.lock* ./
 
 # use ignore-scripts to avoid builting node modules like better-sqlite3
