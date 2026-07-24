@@ -153,14 +153,15 @@ export default defineNuxtConfig({
     routeRules: {
         '/shop': { ssr: false, prerender: false },
         '/tshirt': { prerender: false },
-        '/**': {
-            prerender: true,
+        '/**': { 
+            prerender: true, 
         },
     },
     nitro: {
         prerender: {
             routes: ['/', '/sitemap_index.xml', '/page-sitemap.xml', '/post-sitemap.xml'],
             crawlLinks: true,
+            concurrency: 2,
         },
         preset: 'bun',
     },

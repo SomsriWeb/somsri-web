@@ -10,6 +10,8 @@ COPY package.json bun.lock* ./
 # use ignore-scripts to avoid builting node modules like better-sqlite3
 RUN bun install --frozen-lockfile --ignore-scripts
 
+ENV NODE_OPTIONS=--max-old-space-size=4096
+
 # Copy the entire project
 COPY . .
 
