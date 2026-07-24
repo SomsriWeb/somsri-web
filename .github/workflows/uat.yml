@@ -1,0 +1,51 @@
+name: DEPLOY
+run-name: DEPLOY
+
+on:
+    # Runs on pushes targeting the default branch
+    push:
+        branches:
+            - 'UAT'
+            - 'uat'
+
+jobs:
+    # Build job
+    build-and-deploy:
+        runs-on: ${{ matrix.os }}
+        defaults:
+            run:
+                working-directory: .
+
+        strategy:
+            matrix:
+                os: [ubuntu-latest]
+                node: [20]
+
+        steps:
+            # To use this repository's private action, you must check out the repository
+            - name: 🛒 CHECKOUT
+              uses: actions/checkout@v4
+
+            - name: Set up Docker Buildx
+              uses: docker/setup-buildx-action@v3
+
+            - name: Login to Container Registry
+              uses: docker/login-action@v3
+              with:
+                  registry: ghcr.io
+                  username: ${{ github.repository_owner }}
+                  password: ${{ secrets.GIT_TOKEN }}
+
+            - name: Preset Image Name
+              run: echo "IMAGE_URL=$(echo ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
+            - name: Build and push Docker Image
+              uses: docker/build-push-action@v5
+              with:
+                  context: .
+                  file: ./Dockerfile
+                  push: true
+                  tags: "${{ env.IMAGE_URL }}-UAT"
+                  secrets: |
+                      "STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID }}"
+                      "STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET }}"
