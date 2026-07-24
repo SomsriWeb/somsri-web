@@ -37,7 +37,7 @@ jobs:
                   password: ${{ secrets.GIT_TOKEN }}
 
             - name: Preset Image Name
-              run: echo "IMAGE_URL=$(echo ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+              run: echo "IMAGE_URL=$(echo ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:UAT | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
             - name: Build and push Docker Image
               uses: docker/build-push-action@v5
@@ -45,7 +45,7 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: "${{ env.IMAGE_URL }}-UAT"
+                  tags: ${{ env.IMAGE_URL }}
                   secrets: |
                       "STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID }}"
                       "STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET }}"
