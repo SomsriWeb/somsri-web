@@ -159,15 +159,26 @@ export default defineNuxtConfig({
     routeRules: {
         '/shop': { ssr: false, prerender: false },
         '/tshirt': { prerender: false },
+        '/sitemap_index.xml': {
+            prerender: false,
+            cache: { maxAge: 60 * 60 * 24 },
+        },
+        '/page-sitemap.xml': {
+            prerender: false,
+            cache: { maxAge: 60 * 60 * 24 },
+        },
+        '/post-sitemap.xml': {
+            prerender: false,
+            cache: { maxAge: 60 * 60 * 24 },
+        },
+        '/**': {
+            prerender: true,
+        },
     },
     nitro: {
         prerender: {
-            routes: [
-                '/sitemap_index.xml',
-                '/page-sitemap.xml',
-                '/post-sitemap.xml',
-            ],
-            crawlLinks: false,
+            routes: ['/'],
+            crawlLinks: true,
             concurrency: 1,
         },
         preset: 'bun',
