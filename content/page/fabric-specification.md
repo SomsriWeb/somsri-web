@@ -77,6 +77,9 @@ image: /fabrics/fabrics-banner.png
 ::
 
 ::image-title-subtitle-banner
+---
+titleAsTag: "h2"
+---
 #image
 ::prose-img{src="/fabrics/background-subtitle.png" alt="background subtitle"}
 ::
