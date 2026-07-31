@@ -116,16 +116,26 @@ lineLink: https://contact.somsritshirt.com/af2fd
     type: application/ld+json
 ---
 
-:::how-to-order-hero{titleAsTag="h2"}
+:::how-to-order-hero
+---
+titleAsTag: "h1"
+---
 #title 
-วิธีสั่งผลิตเสื้อกับ[สมศรีมีเสื้อ]{.text-primary}\
-8 ขั้นตอนจากไอเดียถึงเสื้อในมือคุณ
+วิธีสั่งผลิตเสื้อกับ[สมศรีมีเสื้อ]{.text-primary}
 
 #description
 เราออกแบบกระบวนการนี้ เพื่อให้คุณไม่ต้องเดา ไม่ต้องลุ้น และไม่ต้องโทรถามสถานะ
 
 #note
 เฉลี่ยใช้เวลา 14-21 วันทำการ นับจากวันที่อนุมัติตัวอย่าง
+:::
+
+:::center
+---
+titleAsTag: "h2"
+class: "mb-0"
+---
+## [8 ขั้นตอนจากไอเดียถึงเสื้อในมือคุณ]{.font-bold.font-stretch-condensed.text-gray-900.text-2xl.md:text-3xl.leading-[1]}
 :::
 
 :::how-to-order-timeline
