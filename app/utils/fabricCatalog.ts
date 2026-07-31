@@ -19,7 +19,7 @@ export const defaultFabricFilterState = (): FabricFilterState => ({
 export const shirtTypeOptions = [
     { id: 'tshirt', label: 'เสื้อยืด', productTypes: ['tshirt'] },
     { id: 'polo', label: 'เสื้อโปโล', productTypes: ['polo'] },
-    { id: 'sweater', label: 'เสื้อ Sweter', productTypes: ['other', 'brand'] },
+    { id: 'sweater', label: 'เสื้อ Sweater', productTypes: ['other', 'brand'] },
 ] as const;
 
 export const materialOptions = [
@@ -42,9 +42,7 @@ export const usageOptions = [
 ] as const;
 
 function fabricSearchText(fabric: FabricsCollectionItem) {
-    return [fabric.uid, fabric.nameEn, fabric.nameTh, fabric.recommendForStyle, ...(fabric.advantage || [])]
-        .join(' ')
-        .toLowerCase();
+    return [fabric.uid, fabric.nameEn, fabric.nameTh, fabric.recommendForStyle, ...(fabric.advantage || [])].join(' ').toLowerCase();
 }
 
 export function extractFabricGram(fabric: FabricsCollectionItem): number | null {
