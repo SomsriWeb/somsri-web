@@ -132,10 +132,11 @@ titleAsTag: "h1"
 
 :::center
 ---
-titleAsTag: "h2"
 class: "mb-0"
 ---
+
 ## [8 ขั้นตอนจากไอเดียถึงเสื้อในมือคุณ]{.font-bold.font-stretch-condensed.text-gray-900.text-2xl.md:text-3xl.leading-[1]}
+
 :::
 
 :::how-to-order-timeline
