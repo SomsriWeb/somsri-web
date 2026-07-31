@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import type { FabricFilterState } from '~/utils/fabricCatalog';
-import {
-    defaultFabricFilterState,
-    materialOptions,
-    shirtTypeOptions,
-    toggleFilterValue,
-    usageOptions,
-} from '~/utils/fabricCatalog';
+import { defaultFabricFilterState, materialOptions, shirtTypeOptions, toggleFilterValue, usageOptions } from '~/utils/fabricCatalog';
 
 interface Props {
     modelValue: FabricFilterState;
@@ -69,38 +63,22 @@ function isActive(values: string[], id: string) {
 }
 
 function chipClass(active: boolean) {
-    return active
-        ? 'border-primary bg-primary text-white'
-        : 'border-stone-200 bg-white text-stone-700 hover:border-primary/40';
+    return active ? 'border-primary bg-primary text-white' : 'border-stone-200 bg-white text-stone-700 hover:border-primary/40';
 }
 </script>
 
 <template>
     <aside class="w-full max-w-full">
         <div class="overflow-hidden rounded-lg border border-stone-200 bg-white">
-            <button
-                type="button"
-                class="flex w-full items-center justify-between px-3 py-3 text-left lg:cursor-default lg:px-3.5"
-                @click="isMobileOpen = !isMobileOpen"
-            >
+            <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:cursor-default lg:px-3.5" @click="isMobileOpen = !isMobileOpen">
                 <div class="flex items-center gap-2">
                     <Icon name="lucide:sliders-horizontal" class="hidden text-primary lg:block" />
                     <span class="text-lg font-bold text-primary lg:text-xl">ตัวกรอง</span>
                     <span class="text-lg font-bold text-primary lg:hidden">เลือกเนื้อผ้าสไตล์คุณ</span>
                 </div>
                 <div class="flex items-center gap-3">
-                    <button
-                        type="button"
-                        class="hidden text-sm font-semibold text-primary lg:inline"
-                        @click.stop="clearFilters"
-                    >
-                        ล้างทั้งหมด
-                    </button>
-                    <Icon
-                        name="lucide:chevron-down"
-                        class="text-stone-500 transition-transform lg:hidden"
-                        :class="{ 'rotate-180': isMobileOpen }"
-                    />
+                    <button type="button" class="hidden text-sm font-semibold text-primary lg:inline" @click.stop="clearFilters">ล้างทั้งหมด</button>
+                    <Icon name="lucide:chevron-down" class="text-stone-500 transition-transform lg:hidden" :class="{ 'rotate-180': isMobileOpen }" />
                 </div>
             </button>
 
@@ -108,17 +86,9 @@ function chipClass(active: boolean) {
 
             <div :class="{ 'hidden lg:block': !isMobileOpen, block: isMobileOpen }">
                 <section>
-                    <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5"
-                        @click="toggleSection('shirt')"
-                    >
-                        <h3 class="text-base font-bold text-primary">ประเภทเสื้อ</h3>
-                        <Icon
-                            name="lucide:chevron-down"
-                            class="size-4 shrink-0 text-stone-500 transition-transform"
-                            :class="{ 'rotate-180': openSections.shirt }"
-                        />
+                    <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('shirt')">
+                        <span class="text-base font-bold text-primary">ประเภทเสื้อ</span>
+                        <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.shirt }" />
                     </button>
                     <div v-show="openSections.shirt" class="px-3 pb-4 lg:px-3.5">
                         <div class="flex flex-wrap gap-2 lg:hidden">
@@ -134,17 +104,8 @@ function chipClass(active: boolean) {
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
-                            <label
-                                v-for="option in shirtTypeOptions"
-                                :key="`desktop-${option.id}`"
-                                class="flex cursor-pointer items-center gap-2 text-sm text-stone-700"
-                            >
-                                <input
-                                    type="checkbox"
-                                    class="size-4 accent-primary"
-                                    :checked="isActive(filters.shirtTypes, option.id)"
-                                    @change="toggleShirtType(option.id)"
-                                >
+                            <label v-for="option in shirtTypeOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
+                                <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.shirtTypes, option.id)" @change="toggleShirtType(option.id)" />
                                 <span>{{ option.label }}</span>
                             </label>
                         </div>
@@ -153,17 +114,9 @@ function chipClass(active: boolean) {
                 </section>
 
                 <section>
-                    <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5"
-                        @click="toggleSection('material')"
-                    >
-                        <h3 class="text-base font-bold text-primary">เนื้อผ้า</h3>
-                        <Icon
-                            name="lucide:chevron-down"
-                            class="size-4 shrink-0 text-stone-500 transition-transform"
-                            :class="{ 'rotate-180': openSections.material }"
-                        />
+                    <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('material')">
+                        <span class="text-base font-bold text-primary">เนื้อผ้า</span>
+                        <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.material }" />
                     </button>
                     <div v-show="openSections.material" class="px-3 pb-4 lg:px-3.5">
                         <div class="flex flex-wrap gap-2 lg:hidden">
@@ -179,17 +132,8 @@ function chipClass(active: boolean) {
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
-                            <label
-                                v-for="option in materialOptions"
-                                :key="`desktop-${option.id}`"
-                                class="flex cursor-pointer items-center gap-2 text-sm text-stone-700"
-                            >
-                                <input
-                                    type="checkbox"
-                                    class="size-4 accent-primary"
-                                    :checked="isActive(filters.materials, option.id)"
-                                    @change="toggleMaterial(option.id)"
-                                >
+                            <label v-for="option in materialOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
+                                <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.materials, option.id)" @change="toggleMaterial(option.id)" />
                                 <span>{{ option.label }}</span>
                             </label>
                         </div>
@@ -198,17 +142,9 @@ function chipClass(active: boolean) {
                 </section>
 
                 <section>
-                    <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5"
-                        @click="toggleSection('usage')"
-                    >
-                        <h3 class="text-base font-bold text-primary">การนำไปใช้</h3>
-                        <Icon
-                            name="lucide:chevron-down"
-                            class="size-4 shrink-0 text-stone-500 transition-transform"
-                            :class="{ 'rotate-180': openSections.usage }"
-                        />
+                    <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('usage')">
+                        <span class="text-base font-bold text-primary">การนำไปใช้</span>
+                        <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.usage }" />
                     </button>
                     <div v-show="openSections.usage" class="px-3 pb-4 lg:px-3.5">
                         <div class="flex flex-wrap gap-2 lg:hidden">
@@ -224,17 +160,8 @@ function chipClass(active: boolean) {
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
-                            <label
-                                v-for="option in usageOptions"
-                                :key="`desktop-${option.id}`"
-                                class="flex cursor-pointer items-center gap-2 text-sm text-stone-700"
-                            >
-                                <input
-                                    type="checkbox"
-                                    class="size-4 accent-primary"
-                                    :checked="isActive(filters.usages, option.id)"
-                                    @change="toggleUsage(option.id)"
-                                >
+                            <label v-for="option in usageOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
+                                <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.usages, option.id)" @change="toggleUsage(option.id)" />
                                 <span>{{ option.label }}</span>
                             </label>
                         </div>
@@ -243,17 +170,9 @@ function chipClass(active: boolean) {
                 </section>
 
                 <section>
-                    <button
-                        type="button"
-                        class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5"
-                        @click="toggleSection('gram')"
-                    >
-                        <h3 class="text-base font-bold text-primary">แกรมผ้า</h3>
-                        <Icon
-                            name="lucide:chevron-down"
-                            class="size-4 shrink-0 text-stone-500 transition-transform"
-                            :class="{ 'rotate-180': openSections.gram }"
-                        />
+                    <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('gram')">
+                        <span class="text-base font-bold text-primary">แกรมผ้า</span>
+                        <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.gram }" />
                     </button>
                     <div v-show="openSections.gram" class="px-3 pb-4 lg:px-3.5">
                         <div class="flex items-center gap-2">
@@ -264,7 +183,7 @@ function chipClass(active: boolean) {
                                 placeholder="MIN"
                                 class="h-6 w-12 shrink-0 rounded-sm border border-stone-200 px-2 text-center text-xs outline-none placeholder:text-stone-400 focus:border-primary sm:text-sm"
                                 @input="updateFilters({ gramMin: ($event.target as HTMLInputElement).value ? Number(($event.target as HTMLInputElement).value) : null })"
-                            >
+                            />
                             <span class="text-stone-400">-</span>
                             <input
                                 :value="filters.gramMax ?? ''"
@@ -273,7 +192,7 @@ function chipClass(active: boolean) {
                                 placeholder="MAX"
                                 class="h-6 w-12 shrink-0 rounded-sm border border-stone-200 px-2 text-center text-xs outline-none placeholder:text-stone-400 focus:border-primary sm:text-sm"
                                 @input="updateFilters({ gramMax: ($event.target as HTMLInputElement).value ? Number(($event.target as HTMLInputElement).value) : null })"
-                            >
+                            />
                             <span class="shrink-0 text-sm text-stone-600">แกรม</span>
                         </div>
                     </div>
