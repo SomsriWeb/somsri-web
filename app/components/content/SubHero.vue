@@ -23,8 +23,8 @@ defineSlots<Slots>();
         <!-- ===== Desktop ===== -->
         <div class="mx-auto hidden max-w-[90rem] grid-cols-2 items-center gap-10 md:grid">
             <div
-                class="pl-16 text-left"
-                :class="imagePosition === 'left' ? 'order-2' : 'order-1'"
+                class="text-left"
+                :class="imagePosition === 'left' ? 'order-2 pr-16' : 'order-1 pl-16'"
             >
                 <p v-if="$slots.eyebrow" class="mb-2 text-base font-bold text-primary">
                     <slot name="eyebrow" mdc-unwrap="p" />

@@ -6,7 +6,7 @@ activeNavbar: true
 lineLink: https://contact.somsritshirt.com/218c9
 ---
 
-::bag-hero
+::hero-page
 ---
 image: /bag/hero-collage.png
 imageMobile: /bag/hero-collage-mobile.png
@@ -53,7 +53,7 @@ alt: กระเป๋าผ้า Tote Bag สั่งทำ
 รับประกันคุณภาพ
 :::
 
-::bag-why-section
+::sub-hero
 ---
 image: /bag/why-totebag.png
 imageMobile: /bag/why-totebag-mobile.png
@@ -126,7 +126,7 @@ Square
 ทรงสี่เหลี่ยมสมมาตร ดูสะอาดตา เหมาะกับองค์กรที่ต้องการภาพลักษณ์เรียบร้อยและ minimal
 ::
 
-::bag-use-case-grid
+::use-case-grid
 #eyebrow
 เหมาะกับทุก occasion
 
@@ -288,7 +288,7 @@ Square
 ได้ครับ มีทีม Artwork ช่วยจัด layout และออกแบบให้ฟรี แค่ส่งโลโก้หรือไอเดียคร่าวๆ มาได้เลย
 ::
 
-::bag-seo-intro
+::seo-intro
 ---
 image: /bag/seo-intro.png
 imageMobile: /bag/seo-intro-mobile.png
@@ -320,7 +320,4 @@ alt: กระเป๋าผ้าสมศรี
 
 #subtitle
 ปรึกษาฟรี ออกแบบฟรี ขั้นต่ำ 150 ใบ
-
-:::bag-btn
-:::
 ::
