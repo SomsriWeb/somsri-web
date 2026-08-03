@@ -36,15 +36,44 @@ interface Slots {
 }
 defineSlots<Slots>();
 
-// สีตัวหนังสือของแต่ละการ์ด (desktop) เรียงตาม item-1 ถึง item-6
-const tones = [
-    { text: 'text-white', sub: 'text-sky-50/90', shadow: 'drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)]' },
-    { text: 'text-white', sub: 'text-red-50/90', shadow: 'drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)]' },
-    { text: 'text-white', sub: 'text-red-50/90', shadow: 'drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)]' },
-    { text: 'text-white', sub: 'text-sky-50/90', shadow: 'drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)]' },
-    { text: 'text-stone-900', sub: 'text-stone-700', shadow: 'drop-shadow-[0_1px_3px_rgba(255,255,255,0.7)]' },
-    { text: 'text-stone-900', sub: 'text-stone-700', shadow: 'drop-shadow-[0_1px_3px_rgba(255,255,255,0.7)]' },
-];
+interface Props {
+    /**
+     * สีตัวหนังสือ (เฉพาะ desktop) ต่อการ์ด 1-6 ใบ: 'light' = ตัวหนังสือขาว (สำหรับพื้นหลังเข้ม),
+     * 'dark' = ตัวหนังสือเข้ม (สำหรับพื้นหลังอ่อน) ไม่ใส่ prop นี้ = ใช้ค่า default เดิม
+     * (หน้า bag: ขาว 4 ใบแรก, เข้ม 2 ใบหลัง) เพื่อไม่กระทบหน้าที่ใช้ component นี้อยู่แล้ว
+     *
+     * ใน content markdown ให้ bind ด้วย `:` เสมอ เช่น
+     * ::use-case-grid{:tones='["dark","dark","dark","dark","dark","dark"]'}
+     * (ถ้าลืมใส่ `:` MDC จะส่งมาเป็น string ธรรมดา component จะ parse ให้เองเป็น fallback)
+     */
+    tones?: Array<'light' | 'dark'> | string;
+}
+const props = defineProps<Props>();
+
+const tonePresets = {
+    light: { text: 'text-white', sub: 'text-white/90', shadow: 'drop-shadow-[0_1px_4px_rgba(0,0,0,0.35)]' },
+    dark: { text: 'text-stone-900', sub: 'text-stone-700', shadow: 'drop-shadow-[0_1px_3px_rgba(255,255,255,0.7)]' },
+};
+
+// ค่า default เดิม (ตามหน้า bag: 4 ใบแรกพื้นเข้ม, 2 ใบหลังพื้นอ่อน)
+const defaultTones: Array<'light' | 'dark'> = ['light', 'light', 'light', 'light', 'dark', 'dark'];
+
+// รองรับกรณี MDC ส่ง tones มาเป็น string (ลืมใส่ `:` นำหน้า) เผื่อ parse ไม่ได้ค่อย fallback เป็น default
+function resolveTones(input: Props['tones']): Array<'light' | 'dark'> {
+    if (Array.isArray(input)) return input;
+    if (typeof input === 'string') {
+        try {
+            const parsed = JSON.parse(input);
+            if (Array.isArray(parsed)) return parsed;
+        } catch {
+            const parts = input.split(',').map((s) => s.trim()) as Array<'light' | 'dark'>;
+            if (parts.every((p) => p === 'light' || p === 'dark')) return parts;
+        }
+    }
+    return defaultTones;
+}
+
+const tones = computed(() => resolveTones(props.tones).map((t) => tonePresets[t] ?? tonePresets.light));
 </script>
 
 <template>

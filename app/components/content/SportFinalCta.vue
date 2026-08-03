@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { LINE_LINK } from '~/lib/lineLink';
-import { ProductTypeKey } from '~/lib/design/variable';
 
 interface Props {
     image: string;
@@ -10,12 +9,11 @@ const { image, alt = '' } = defineProps<Props>();
 
 interface Slots {
     title(): unknown;
-    /** ข้อความบรรทัดเล็กใต้หัวข้อ เช่น "ปรึกษาฟรี ออกแบบฟรี ขั้นต่ำ 150 ใบ" */
+    /** ข้อความบรรทัดเล็กใต้หัวข้อ เช่น "ปรึกษาฟรี ออกแบบฟรี ส่งตัวอย่างผ้าฟรีเมื่อสั่ง 100 ตัวขึ้นไป" */
     subtitle(): unknown;
 }
 defineSlots<Slots>();
 
-// ปุ่มของ section นี้เป็นของตัวเอง ไม่พึ่ง BagBtn/LineLink
 const lineLink = inject<string>(LINE_LINK);
 </script>
 
@@ -50,8 +48,7 @@ const lineLink = inject<string>(LINE_LINK);
                 </UButton>
 
                 <UButton
-                    :to="{ path: '/shop', query: { type: ProductTypeKey.TOTEBAG } }"
-                    icon="i-lucide-palette"
+                    to="#fabric"
                     variant="outline"
                     class="inline-flex items-center border-2 border-primary px-6 py-2.5 text-sm text-primary"
                     size="md"

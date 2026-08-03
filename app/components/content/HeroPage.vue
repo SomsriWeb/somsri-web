@@ -4,8 +4,10 @@ interface Props {
     /** รูปสำหรับมือถือ ถ้าไม่ใส่จะ fallback ไปใช้ image ตัวเดียวกับ desktop */
     imageMobile?: string;
     alt?: string;
+    /** คำนำหน้าตัวหนาก่อน slot suitFor เช่น "เหมาะกับ" หรือ "เชื่อใจโดย" */
+    suitForLabel?: string;
 }
-const { image, imageMobile, alt = '' } = defineProps<Props>();
+const { image, imageMobile, alt = '', suitForLabel = 'เหมาะกับ' } = defineProps<Props>();
 
 interface Slots {
     /** ป้ายเล็กด้านบนสุด สีแดง เช่น "รับผลิตกระเป๋าผ้า — Tote Bag สั่งทำ" */
@@ -51,7 +53,7 @@ defineSlots<Slots>();
                     </div>
 
                     <div v-if="$slots.suitFor" class="mt-2 text-base text-stone-700">
-                        <span class="font-bold">เหมาะกับ </span>
+                        <span class="font-bold">{{ suitForLabel }} &nbsp; </span>
                         <slot name="suitFor" mdc-unwrap="p" />
                     </div>
 
@@ -81,7 +83,7 @@ defineSlots<Slots>();
                 </div>
 
                 <div v-if="$slots.suitFor" class="mt-2 text-sm text-stone-700">
-                    <span class="font-bold">เหมาะกับ </span>
+                    <span class="font-bold">{{ suitForLabel }} &nbsp; </span>
                     <slot name="suitFor" mdc-unwrap="p" />
                 </div>
 

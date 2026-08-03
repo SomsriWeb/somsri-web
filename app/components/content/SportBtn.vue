@@ -1,13 +1,24 @@
 <template>
-    <!-- ปุ่มขอผ้าตัวอย่าง -->
-    <div class="flex justify-center relative">
-        <LineLink>
-            <UButton size="xl" color="primary" variant="solid" icon="i-lucide-send" class="relative">
-                ส่งตัวอย่างผ้าฟรีเมื่อสั่ง 100 ตัวขึ้นไป
+	<div class="flex flex-wrap items-center justify-start gap-4 mt-6">
+		<!-- ปุ่มติดต่อ (solid) -->
+		<LineLink>
+			<UButton
+				trailing-icon="i-lucide-arrow-right"
+				class="inline-flex items-center bg-primary px-6 py-2.5 text-sm text-white"
+				size="md"
+			>
+				ปรึกษาฟรี
+			</UButton>
+		</LineLink>
 
-                <!-- จุด ping animation -->
-                <span class="absolute top-0 right-0 -mt-1 -mr-1 flex size-3 rounded-full bg-primary-200 animate-ping" />
-            </UButton>
-        </LineLink>
-    </div>
+		<!-- ปุ่มดูตัวอย่างผ้า → เลื่อนไปหมวดเนื้อผ้าในหน้าเดียวกัน -->
+		<UButton
+			to="#fabric"
+			variant="outline"
+			class="inline-flex items-center border-2 border-primary px-6 py-2.5 text-sm text-primary"
+			size="md"
+		>
+			ดูตัวอย่างผ้า
+		</UButton>
+	</div>
 </template>
