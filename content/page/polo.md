@@ -98,81 +98,83 @@ showCta: false
 
 :::sport-fabric-grid{id="fabric"}
 #eyebrow
-เนื้อผ้าเสื้อกีฬา
+เนื้อผ้าเสื้อโปโล
 
 #title
-เสื้อกีฬาเหมือนกัน\
+เสื้อโปโลเหมือนกัน\
 แต่ผ้าต่างกัน\
 ความรู้สึกต่างกันทั้งวัน
 
 #description
-แต่ละชนิดออกแบบมาสำหรับการใช้งานที่ต่างกัน เลือกให้ตรงกับกิจกรรมและสภาพอากาศจริงของคุณ
+โรงงานผลิตเสื้อโปโลทั่วไปมีผ้าให้เลือก เราใช้ผ้าที่เหมาะ — แต่ละชนิดออกแบบมาเพื่อการใช้งานที่ต่างกัน
 
 #item-1-image
-:prose-img{src="/sport/fabrics/micro-sport.jpg" alt="ผ้า Micro Sport" .h-full .w-full .object-cover}
+:prose-img{src="/polo/fabrics/TC.jpg" alt="ผ้า TC Lacoste" .h-full .w-full .object-cover}
 
 #item-1-tag
-อเนกประสงค์ / คุ้มค่า
+ยอดนิยมองค์กร
 
 #item-1-title
-Micro Sport
+TC Lacoste
 
 #item-1-description
-ผิวสัมผัสเนียนนุ่ม ซับเหงื่อได้ดี ราคาเข้าถึงได้ เหมาะสำหรับผลิตเสื้อกีฬาทีมจำนวนมาก เสื้อโรงเรียน และเสื้อสันทนาการ
+โพลีเอสเตอร์ผสมฝ้าย นุ่มแต่ไม่ยับ ไม่ต้องรีดทุกครั้ง สีติดทนสำหรับงานสกรีนโลโก้ คุ้มค่าที่สุดสำหรับเสื้อโปโลพนักงานจำนวนมาก
 
 #item-1-pills
-- เสื้อโรงเรียน
-- เสื้อกิจกรรม
-- สันทนาการ
+- เสื้อโปโลพนักงาน
+- ยูนิฟอร์มออฟฟิศ
+- เสื้อโปโลบริษัท
 
 #item-2-image
-:prose-img{src="/sport/fabrics/juti-micro.jpg" alt="ผ้า Juti Micro" .h-full .w-full .object-cover}
+:prose-img{src="/polo/fabrics/dry-tech.jpg" alt="ผ้า Dry Tech" .h-full .w-full .object-cover}
 
 #item-2-tag
-กลางแจ้ง / ร้อน
+ระบายอากาศสูงสุด
 
 #item-2-title
-Juti Micro
+Dry Tech
 
 #item-2-description
-ระบายอากาศดีที่สุดในบรรดาทั้งหมด น้ำหนักเบา แห้งเร็ว ยืดหยุ่นสูง รองรับการเคลื่อนไหวได้ทุกทิศ เหมาะสำหรับเสื้องานวิ่ง เสื้อกิจกรรมกลางแจ้ง และเสื้อสีสันทนาการ
+ผ้ามีรูช่องอากาศ ระเหยเร็ว เย็นสบายเมื่ออากาศร้อน เหมาะกับพนักงานที่ทำงานกลางแจ้งหรือเคลื่อนไหวตลอดวัน
 
 #item-2-pills
-- เสื้องานวิ่ง
-- เสื้อสี
-- กิจกรรมกลางแจ้ง
+- พนักงานร้านอาหาร
+- โรงแรม
+- กลางแจ้ง
 
 #item-3-image
-:prose-img{src="/sport/fabrics/tk.jpg" alt="ผ้า TK" .h-full .w-full .object-cover}
+:prose-img{src="/polo/fabrics/dry-feel.jpg" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
 
 #item-3-tag
-พรีเมี่ยม / ทนทาน
+BUSINESS CLASS
 
 #item-3-title
-TK
+Dry Feel
 
 #item-3-description
-โพลีเอสเตอร์คุณภาพสูง ทนต่อการซักบ่อยครั้ง สีไม่ซีด เนื้อผ้าอยู่ทรง เหมาะกับเสื้อกีฬาที่ใช้งานระยะยาวและต้องการภาพลักษณ์ที่ดี
+63% ฝ้าย + 37% โพลี สัมผัสเหมือนผ้าฝ้ายแต่แห้งเร็วกว่า ไม่หด ไม่ย้วย ยับยาก รีดง่าย อยู่ทรงสวยตลอดวัน สำหรับเสื้อโปโลองค์กรระดับพรีเมียม
 
 #item-3-pills
-- เสื้อกิจกรรมระยะยาว
-- เสื้อแบรนด์
+- เสื้อโปโลผู้บริหาร
+- งาน event
+- ภาพลักษณ์องค์กร
 
 #item-4-image
-:prose-img{src="/sport/fabrics/tc.jpg" alt="ผ้า TC" .h-full .w-full .object-cover}
+:prose-img{src="/polo/fabrics/juti-micro.jpg" alt="ผ้า Micro Juti" .h-full .w-full .object-cover}
 
 #item-4-tag
-แบรนด์ / ลายคม
+ลายพิมพ์คมที่สุด
 
 #item-4-title
-TC
+Micro Juti
 
 #item-4-description
-ผิวสัมผัสเนียนนุ่ม ซับเหงื่อได้ดี ราคาเข้าถึงได้ เหมาะสำหรับผลิตเสื้อกีฬาทีมจำนวนมาก เสื้อโรงเรียน และเสื้อสันทนาการ
+โพลีเอสเตอร์ 100% ทอเป็นลายตาราง ยืดหยุ่นสูง รองรับงานสกรีน Sublimation สีติดแน่น เหมาะกับเสื้อโปโลที่ต้องการพิมพ์ลายซับซ้อน
 
 #item-4-pills
-- เสื้อกิจกรรมองค์กร
-- เสื้องานอีเว้นต์
+- เสื้อทีมงาน
+- Sublimation
+- งานพิมพ์สี
 :::
 
 :::bag-why-us-grid{items="4"}
