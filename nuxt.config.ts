@@ -165,6 +165,7 @@ export default defineNuxtConfig({
             prerender: false,
             cache: { maxAge: 60 * 60 * 24 },
         },
+        '/_ipx/**': { prerender: false },
         '/**': {
             prerender: true,
         },
