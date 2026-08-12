@@ -28,6 +28,7 @@
 		twitterTitle: pageSEO.value.title,
 		twitterDescription: pageSEO.value.description,
 		twitterCard: "summary_large_image",
+		robots: page.noindex ? "noindex" : undefined,
 	})
 
 	useHead({
