@@ -71,12 +71,13 @@ defineSlots<Slots>();
                     <slot name="eyebrow" mdc-unwrap="p" />
                 </p>
 
-                <h1 class="text-3xl leading-tight font-bold text-stone-900">
+                <!-- ใช้ role heading บน markup มือถือเพื่อไม่ให้มี H1 ซ้ำกับ desktop ใน DOM -->
+                <div role="heading" aria-level="1" class="text-3xl leading-tight font-bold text-stone-900">
                     <slot name="title" mdc-unwrap="p" />
                     <span v-if="$slots.titleAccent" class="text-primary">
                         <slot name="titleAccent" mdc-unwrap="p" />
                     </span>
-                </h1>
+                </div>
 
                 <div v-if="$slots.description" class="mt-4 font-light text-stone-700">
                     <slot name="description" mdc-unwrap="p" />
