@@ -230,5 +230,9 @@ export default defineNuxtConfig({
     },
     icon: {
         serverBundle: 'local',
+        clientBundle: {
+            scan: true,
+            sizeLimitKb: 512,
+        },
     },
 });
