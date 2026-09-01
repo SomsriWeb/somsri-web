@@ -1,12 +1,14 @@
 ---
 title: รับผลิตเสื้อโปโล เสื้อยูนิฟอร์ม พร้อมปักสกรีน | รับประกัน 90 วัน
 activeNavbar: true
+contentSpacing: true
 description: โรงงานรับผลิตเสื้อโปโล เสื้อองค์กร เสื้อพนักงาน ครบวงจร เนื้อผ้าพรีเมียม สวมใส่สบาย บริการปัก-สกรีนโลโก้คมชัด ออกแบบได้ตามใจ ราคาถูก มั่นใจรับประกัน 90 วัน ประเมินราคาฟรี
 footer: true
 language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/c0087
 navbar: true
+noindex: false
 เพิ่ม script ใน head:
   - type: application/ld+json
     content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตเสื้อโปโล เสื้อทีม ยูนิฟอร์มพนักงาน พร้อมปัก-สกรีน",   "image": [         "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",     "https://somsritshirt.com/_ipx/f_webp/product/band.jpg"   ],   "description": "บริการรับผลิตเสื้อโปโลและเสื้อคอปกครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมบริการปักและสกรีนโลโก้ตามสั่ง ราคาโรงงาน คุณภาพพรีเมียม",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "AggregateOffer",     "url": "https://somsritshirt.com/polo",     "priceCurrency": "THB",     "lowPrice": "120",     "highPrice": "235"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.87",     "bestRating": "5",     "worstRating": "1",     "ratingCount": "142"   },   "mainEntityOfPage": {     "@type": "Service",     "serviceType": "Custom Apparel Manufacturing",     "provider": {       "@type": "LocalBusiness",       "name": "สมศรีมีเสื้อ",       "address": {         "@type": "PostalAddress",         "streetAddress": "บริษัท สมศรีการ์เมนท์ จำกัด 1033/6 ถนนเพชรเกษม 106 แขวงหนองค้างพลู",         "addressLocality": "เขตหนองแขม",         "addressRegion": "กรุงเทพมหานคร",         "postalCode": "10160",         "addressCountry": "TH"       }     }   } }'
@@ -428,9 +430,9 @@ image: /polo/header.jpg
         ค่าบริการจัดส่งจะขึ้นอยู่กับน้ำหนักและจำนวนของสินค้า
         (บางโปรโมชั่นอาจมีบริการจัดส่งฟรี กรุณาสอบถามเพิ่มเติม)"
     - question: "Q: สมศรีมีเสื้อรับผลิตเสื้อแบบด่วนไหม"
-      answer: "A: สมศรีมีเสื้อมีบริการรับผลิตเสื้อและสกรีนเสื้อแบบเร่งด่วน (งานด่วน/งานเร่ง) 
-        ส่งภายใน 2-3 วัน ทั้งเสื้อกีฬา เสื้อกิจกรรม เสื้อสตาร์ฟ เสื้อยืด เสื้อโปโล และเสื้อยูนิฟอร์ม 
-        พร้อมบริการออกแบบลายเสื้อให้ฟรี"
+      answer: "A: สมศรีมีเสื้อมีบริการรับผลิตเสื้อและสกรีนเสื้อแบบเร่งด่วน
+        (งานด่วน/งานเร่ง) ส่งภายใน 2-3 วัน ทั้งเสื้อกีฬา เสื้อกิจกรรม เสื้อสตาร์ฟ
+        เสื้อยืด เสื้อโปโล และเสื้อยูนิฟอร์ม พร้อมบริการออกแบบลายเสื้อให้ฟรี"
   ---
   :::
 ::
