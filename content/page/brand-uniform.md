@@ -1,135 +1,342 @@
 ---
 title: (Somsri) Search_เสื้อแบรนด์ตัวเอง [A] - สมศรีมีเสื้อ
-navbar: false
+activeNavbar: false
+contentSpacing: true
 footer: false
+language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/f8583
+navbar: false
+เพิ่ม script ใน head: []
 ---
-::landing-page-header-style-two{image="/brand-uniform/banner.png"}
+
+::hero-page
+---
+alt: รับผลิตเสื้อผ้าแบรนด์ครบวงจร
+image: /brand-uniform/hero.png
+imageMobile: /brand-uniform/hero.png
+suitForLabel: เหมาะกับ
+---
+#eyebrow
+รับผลิตเสื้อผ้าแบรนด์ — โรงงานผลิตเสื้อผ้าแบรนด์ครบวงจร
+
 #title
-รับสกรีนเสื้อ
+เสื้อผ้าแบรนด์
+
+#titleAccent
+เริ่มต้นจากโรงงานที่เข้าใจคุณ
 
 #description
-ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
+โรงงานรับผลิตเสื้อผ้าแบรนด์ครบวงจร ตั้งแต่ให้คำปรึกษา เลือกผ้า ทำแพทเทิร์น ขึ้นตัวอย่าง ตัดเย็บ ปัก และ QC พร้อมทีมดูแลตลอดการผลิต
 
-#default
-    ::description-pills{:slot="2" color="white"}
-    #slot-1
-    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
+#suitFor
+เจ้าของแบรนด์ที่ต้องการโรงงานผลิตแบบครบวงจร เข้าใจกำหนดราคาและคุณภาพที่แบรนด์คุณต้องการ
 
-    #slot-2
-    <ProseP class="!text-white">สกรีนเสื้อยืดขั้นต่ำ 100 ตัว</ProseP>
-    ::
+:brand-uniform-btn
 ::
 
-::container
-    ::somsri-produce-for
-    #title
-    Our customers
+::stats-dashed-row
+#item-1
+**150 ตัว**
 
-    #description
-    สมศรีมีเสื้อพรอมที่จะตอบสนองความตองการของสินคา แบรนด รวมไปถึงองคกรของคุณ ดวยเครื่องมือที่ทันสมัยหลากหลายเทคโนโลยี ออกแบบ ผลิต สกรีน และปก ครบจบที่เดียว
-    ::
+ขั้นต่ำในการสั่งผลิต
 
-    ::home-screen-portfolio
-    #title
-    ตัวอย่างงานสกรีน
-    ::
+#item-2
+**50+**
 
-    ::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
-    ::
+เนื้อผ้าให้เลือก
 
-## ชนิดผ้าและราคาเสื้อสำหรับสกรีน
+#item-3
+**14 – 21 วัน**
 
-    ::slider{:items="2" :slidesPerView="2"}
-    #item-1
-    <ProseImg src="/produce-tshirt/price-chart-cotton-100.png" />
+ระยะเวลาผลิตมาตรฐาน
 
-    #item-2
-    <ProseImg src="/produce-tshirt/price-chart-cotton-comb-32.png" />
-    ::
+#item-4
+**90 วัน**
 
-<ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>
-
-## ตารางขนาดสกรีน
-
-    ::slider{:items="7"}
-    #item-1
-    <ProseImg src="/produce-tshirt/screen-size-1.png" />
-
-    #item-2
-    <ProseImg src="/produce-tshirt/screen-size-2.png" />
-
-    #item-3
-    <ProseImg src="/produce-tshirt/screen-size-3.png" />
-
-    #item-4
-    <ProseImg src="/produce-tshirt/screen-size-4.png" />
-    
-    #item-5
-    <ProseImg src="/produce-tshirt/screen-size-5.png" />
-
-    #item-6
-    <ProseImg src="/produce-tshirt/screen-size-6.png" />
-
-    #item-7
-    <ProseImg src="/produce-tshirt/screen-size-7.png" />
-    ::
-
-## ราคางานสกรีน
-
-    ::title-with-description
-    #title
-    ### 1. สกรีนธรรมดา (Silk Screen)
-
-    #description
-    ราคา สีและจุดแรก 10 บาท สีและจุดถัดไป 5 บาท
-    ::
-
-    ::landing-page-slik-screen
-    ::
-
-    ::title-with-description
-    #title
-    ### 2. สกรีนเม็ดสี
-
-    #description
-    ราคา 45 บาท/จุด
-    ::
-
-    ::landing-page-color-screen
-    ::
-
-    ::landing-page-other-screen
-    ::
+รับประกันคุณภาพ
 ::
 
-::why-choose-somsri
+::sub-herobg
+---
+alt: แบรนด์ที่ดีไม่ได้อยู่แค่บนโลโก้
+image: /brand-uniform/why-us.png
+imageMobile: /brand-uniform/why-us.png
+imagePosition: left
+---
+#eyebrow
+สิ่งที่เราใส่ใจเกี่ยวกับการสร้างแบรนด์
+
 #title
-เลือก Somsri แล้วดียังไง?
+แบรนด์ที่ดีไม่ได้อยู่แค่บนโลโก้ :br
+แต่อยู่ในทุกองค์ประกอบของเสื้อที่คุณใส่
+
+#description
+เสื้อผ้าแบรนด์ไม่ใช่แค่งานแจก แต่คือสินค้าที่ต้องสร้างความเชื่อมั่นให้กับลูกค้า เนื้อผ้าต้องเหมาะกับราคา ทรงต้องใส่แล้วสวยดูดี งานพิมพ์ต้องคมชัด และรายละเอียดทุกจุดต้องสะท้อนภาพลักษณ์ของแบรนด์
+::
+
+::sport-fabric-grid
+#eyebrow
+เนื้อผ้าแนะนำเสื้อแบรนด์
+
+#title
+เนื้อผ้าไม่ใช่แค่ต้นทุน\
+แต่คือความรู้สึกแรกที่ลูกค้าสัมผัสแบรนด์คุณ
+
+#item-1-image
+:prose-img{src="/brand-uniform/cotton-comb.png" alt="ผ้า Cotton Comb" .h-full .w-full .object-cover}
+
+#item-1-tag
+เนื้อผ้าเนียนนุ่ม คุณภาพดี
+
+#item-1-title
+Cotton Comb
+
+#item-1-description
+ทำให้เนื้อผ้าเรียบเนียน นุ่ม ลดขุย และมีความแข็งแรงกว่าผ้าคอตตอนทั่วไป ระบายอากาศได้ดี สวมใส่สบาย พร้อมช่วยให้งานสกรีนและงานพิมพ์มีความคมชัด
+
+#item-1-pills
+- เสื้อยืดแบรนด์
+- เสื้อคอลเลกชัน
+- เสื้อทรงโอเวอร์ไซซ์
+
+#item-2-image
+:prose-img{src="/brand-uniform/supersoff.png" alt="ผ้า Supersoft" .h-full .w-full .object-cover}
+
+#item-2-tag
+สัมผัสนุ่มลื่น เพิ่มความพรีเมียมให้สินค้า
+
+#item-2-title
+Supersoft
+
+#item-2-description
+เนื้อผ้ามีความนุ่ม สวมใส่สบายไม่รู้สึกแข็งหรือหนาจนเกินไปช่วยให้เสื้อทั้งตัวสวยและดูมีมิติ เหมาะสำหรับแบรนด์ที่ต้องการสร้างจุดเด่นด้านสัมผัส
+
+#item-2-pills
+- เสื้อแฟชั่น
+- เสื้อทรงโอเวอร์ไซซ์
+- เสื้อคอลเลกชันพรีเมียม
+
+#item-3-image
+:prose-img{src="/brand-uniform/tc-tk.png" alt="ผ้า TC" .h-full .w-full .object-cover}
+
+#item-3-tag
+อยู่ทรงดี ดูแลง่าย
+
+#item-3-title
+TC
+
+#item-3-description
+ให้สัมผัสนุ่มในระดับพอดี เนื้อผ้าอยู่ทรง ยืดหยาก และมีความทนทาน ดูแลรักษาง่าย เหมาะสำหรับแบรนด์ที่ต้องการควบคุมต้นทุน
+
+#item-3-pills
+- เสื้อยืดแบรนด์
+- เสื้อคอลเลกชันทั่วไป
+- เสื้อกิจกรรม
+
+#item-4-image
+:prose-img{src="/brand-uniform/dry-feel.png" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
+
+#item-4-tag
+สำหรับทำเสื้อโปโลพรีเมียม
+
+#item-4-title
+Dry Feel
+
+#item-4-description
+มีผิวสัมผัสแห้ง ไม่ลื่นเงาจนเกินไป น้ำหนักเบา และระบายอากาศได้ดี พร้อมคุณสมบัติแห้งไวและยับยาก เหมาะสำหรับทำเสื้อที่ต้องสวมใส่เป็นเวลานาน
+
+#item-4-pills
+- เสื้อยืดแบรนด์
+- เสื้อโปโลแฟชั่น
+- เสื้อกิจกรรมกลางแจ้ง
+::
+
+::bag-why-us-grid
+#eyebrow
+ประเภทสินค้าที่ผลิตได้
+
+#title
+ไม่ได้จำกัดแค่เสื้อยืด\
+เราผลิตตามแนวทางของแบรนด์คุณ
+
+#item-1-image
+:prose-img{src="/brand-uniform/product-type/tshirt.png" alt="เสื้อยืดและเสื้อ Oversized" .h-full .w-full .object-cover}
+
+#item-1-title
+เสื้อยืดและเสื้อ Oversized
+
+#item-1-description
+เลือกความหนา เนื้อสัมผัส ทรงคอ ความยาวแขน และทรงลำตัวได้ตามสไตล์ของแบรนด์
+
+#item-2-image
+:prose-img{src="/brand-uniform/product-type/polo.png" alt="เสื้อโปโล" .h-full .w-full .object-cover}
+
+#item-2-title
+เสื้อโปโล
+
+#item-2-description
+เหมาะกับแบรนด์ Classic, Smart Casual และเสื้อ Uniform ระดับพรีเมียม สามารถปรับปก แขน กระดุม และงานปักได้
+
+#item-3-image
+:prose-img{src="/brand-uniform/product-type/tank.png" alt="เสื้อกีฬา" .h-full .w-full .object-cover}
+
+#item-3-title
+เสื้อกีฬา
+
+#item-3-description
+รองรับผ้าระบายอากาศ ผ้ายืด และงานพิมพ์ Sublimation สำหรับแบรนด์กีฬาและเสื้อทีม
+
+#item-4-image
+:prose-img{src="/brand-uniform/product-type/shirt.png" alt="เสื้อเชิ้ต" .h-full .w-full .object-cover}
+
+#item-4-title
+เสื้อเชิ้ต
+
+#item-4-description
+เหมาะกับแบรนด์ Classic, Smart Casual และเสื้อ Uniform ระดับพรีเมียม สามารถปรับปก แขน กระดุม และงานปักได้
+
+#item-5-image
+:prose-img{src="/brand-uniform/product-type/sweater.png" alt="เสื้อสเวตเตอร์" .h-full .w-full .object-cover}
+
+#item-5-title
+เสื้อสเวตเตอร์
+
+#item-5-description
+เหมาะกับแบรนด์ Streetwear, Minimal และ Casual สามารถเลือกเนื้อผ้า สี และรายละเอียดการตกแต่งได้ตามต้องการ
+
+#item-6-image
+:prose-img{src="/brand-uniform/product-type/custom.png" alt="งานผลิตตามแบบ" .h-full .w-full .object-cover}
+
+#item-6-title
+งานผลิตตามแบบ
+
+#item-6-description
+มีแบบเฉพาะที่ไม่อยู่ในรายการ สามารถส่ง Reference ให้ทีมประเมินแพทเทิร์น วัสดุ และความเป็นไปได้ในการผลิตได้
 ::
 
 ::container
-    ::how-to-order
-    #title
-    ขั้นตอนการสั่งซื้อ
-    ::
+  :::price-rate-hero
+  #title
+  เรทราคาเสื้อสมศรี
+
+  #description
+  หากลูกค้าสั่งในจำนวนมากยิ่งจะทำให้ราคาถูกลงอย่างชัดเจนนอกจากนี้เรายังมีบริการคอยให้คำแนะนำตั้งแต่แน่นอนเริ่มต้นอย่างการออกแบบไปจนถึงการเลือกเนื้อผ้าที่เหมาะสมกับงบประมาณและประเภทเสื้อที่ลูกค้าต้องการ
+  :::
+
+  :::price-rate-group{#tshirt}
+  #title
+  ราคา [เสื้อยืด]{.text-primary} รวมสกรีน
+  :::
+
+  :::price-rate-group{#polo}
+  #title
+  ราคา [เสื้อโปโล]{.text-primary} รวมสกรีน
+  :::
 ::
 
-::what-cost-saving
+::container
+  :::portfolio-showcase
+  #eyebrow
+  ตัวอย่างผลงานจากสมศรี
 
+  #title
+  เบื้องหลังทุกแบรนด์\
+  คุณภาพคือการผลิต\
+  ที่ใส่ใจในทุกขั้นตอน
+
+  #item-1-image
+  :prose-img{src="/brand-uniform/portfolio/1.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 1"}
+
+  #item-2-image
+  :prose-img{src="/brand-uniform/portfolio/2.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 2"}
+
+  #item-3-image
+  :prose-img{src="/brand-uniform/portfolio/3.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 3"}
+
+  #item-4-image
+  :prose-img{src="/brand-uniform/portfolio/4.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 4"}
+  :::
 ::
 
+::faq-grid
+#eyebrow
+คำถามที่พบบ่อย — รับผลิตเสื้อแบรนด์
 
-::center
-        ::line-link
-            ::line-button
-            สอบถามเพิ่มเติม
-            ::
-        ::
+#title
+คำถามที่ถามก่อนสั่งผลิตเสื้อแบรนด์มากที่สุด
+
+#item-1-question
+รับผลิตเสื้อแบรนด์ขั้นต่ำกี่ตัว?
+
+#item-1-answer
+เริ่มต้นขั้นต่ำ 150 ตัวต่อแบบครับ ถ้าปริมาณน้อยกว่านี้ทักมาคุยรายละเอียดกับทีมงานได้
+
+#item-2-question
+โรงงานผลิตเสื้อแบรนด์ใช้เวลานานแค่ไหน?
+
+#item-2-answer
+ระยะเวลาผลิตมาตรฐานอยู่ที่ 14 – 21 วัน นับจากยืนยันแบบและชำระเงินมัดจำ ขึ้นอยู่กับความซับซ้อนของแบบและจำนวนที่สั่งผลิต
+
+#item-3-question
+เสื้อแบรนด์มีผ้าให้เลือกแบบไหนบ้าง?
+
+#item-3-answer
+มีผ้าให้เลือกกว่า 50 ชนิด ครอบคลุมทั้ง Cotton Comb, Supersoft, TC และ Dry Feel ทีมงานช่วยแนะนำเนื้อผ้าที่เหมาะกับงบประมาณและสไตล์ของแบรนด์ได้
+
+#item-4-question
+ผลิตเสื้อแบรนด์ปักหรือสกรีนดีกว่ากัน?
+
+#item-4-answer
+ขึ้นอยู่กับงบประมาณและภาพลักษณ์ที่ต้องการ งานปักให้ความรู้สึกพรีเมียมและทนทานกว่า ส่วนงานสกรีนเหมาะกับลายที่มีหลายสีหรือรายละเอียดซับซ้อน ทีมงานช่วยแนะนำให้เหมาะกับแบรนด์ได้
+
+#item-5-question
+สั่งทำเสื้อแบรนด์ออนไลน์ได้ไหม ไม่ต้องมาดูที่โรงงาน?
+
+#item-5-answer
+สั่งผ่านออนไลน์ได้ครบทุกขั้นตอน ตั้งแต่ปรึกษาแบบ เลือกเนื้อผ้า ไปจนถึงดูตัวอย่างก่อนผลิตจริง ไม่ต้องเดินทางมาที่โรงงานก็ได้
+
+#item-6-question
+เสื้อแบรนด์ที่รับประกัน 90 วัน ครอบคลุมอะไรบ้าง?
+
+#item-6-answer
+ครอบคลุมปัญหาด้านการตัดเย็บและงานพิมพ์/ปักที่เกิดจากความผิดพลาดของทางโรงงาน เช่น ตะเข็บหลุด สีลอก หรือแพทเทิร์นคลาดเคลื่อนจากแบบที่ตกลงกัน
+::
+
+::seo-intro
+---
+image: /brand-uniform/why-choose-factory.png
+imageMobile: /brand-uniform/why-choose-factory.png
+alt: ตัวอย่างเสื้อผ้าแบรนด์จากสมศรีมีเสื้อ
+---
+#eyebrow
+ความรู้เรื่องการผลิตเสื้อผ้าแบรนด์
+
+#title
+รับผลิตเสื้อผ้าแบรนด์ เลือกโรงงานอย่างไรให้ไม่ผิดหวัง
+
+#description
+การรับผลิตเสื้อผ้าแบรนด์ไม่ควรวัดจากราคาต่อตัวเพียงอย่างเดียว เพราะเนื้อผ้า ทรงเสื้อ ความเรียบร้อยของตะเข็บและคุณภาพของงานพิมพ์ ล้วนส่งผลต่อประสบการณ์ที่ลูกค้าได้รับ
+
+**เลือกวัสดุให้เหมาะกับราคาขายและภาพลักษณ์ของแบรนด์**\
+เสื้อในกลุ่มราคาจับต้องได้อาจเลือกผ้า CVC หรือ TC ที่ทนและดูแลง่าย ส่วนแบรนด์ที่ต้องการภาพลักษณ์พรีเมียมสามารถเลือก Cotton Interlock หรือ Heavy Cotton ที่มีเนื้อแน่นและอยู่ทรง โดยทีมงานควรช่วยหาจุดสมดุลระหว่างคุณภาพ ต้นทุน และกำไรของแบรนด์
+
+#subtitle
+สมศรีมีเสื้อไม่ได้รับผลิตเพียงอย่างเดียว แต่ช่วยวางแนวทางให้สินค้าเหมาะกับตลาดของคุณ
+
+#subdescription
+เราดูแลตั้งแต่การเลือกเนื้อผ้า พัฒนาแพทเทิร์น ผลิตตัวอย่างตัดเย็บ สกรีน ปัก และตรวจคุณภาพพร้อมระบบติดตามสถานะการผลิตแบบ real-time และรับประกันงานผลิต 90 วัน เพื่อให้เจ้าของแบรนด์วางแผนการขายได้อย่างมั่นใจ
+::
+
+::brand-final-cta
+---
+image: /brand-uniform/final-cta.png
+imageMobile: /brand-uniform/final-cta.png
+alt: พร้อมเริ่มสร้างแบรนด์กับสมศรีมีเสื้อ
+---
+#title
+พร้อมเริ่มสร้างแบรนด์แล้วหรือยัง?
+
+#subtitle
+ทีมสมศรีช่วยแนะนำเนื้อผ้าและแนวทางการผลิตให้เหมาะกับแบรนด์ได้ฟรี
 ::
