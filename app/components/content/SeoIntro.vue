@@ -35,9 +35,9 @@ defineSlots<Slots>();
                     <p v-if="$slots.eyebrow" class="mb-2 text-sm font-bold text-primary">
                         <slot name="eyebrow" mdc-unwrap="p" />
                     </p>
-                    <h1 class="text-3xl leading-snug font-bold text-stone-900">
+                    <h2 class="text-3xl leading-snug font-bold text-stone-900">
                         <slot name="title" mdc-unwrap="p" />
-                    </h1>
+                    </h2>
                     <div v-if="$slots.description" class="mt-3 text-base text-stone-700">
                         <slot name="description" mdc-unwrap="p" />
                     </div>
