@@ -37,9 +37,9 @@ defineSlots<Slots>();
 
             <div class="relative z-10 flex w-full items-center py-16" style="padding-left: clamp(2.5rem, 6vw, 7rem)">
                 <div class="flex max-w-xl flex-col text-left">
-                    <p v-if="$slots.eyebrow" class="mb-2 text-base font-bold text-primary">
+                    <h1 v-if="$slots.eyebrow" class="mb-2 text-2xl font-bold text-primary">
                         <slot name="eyebrow" mdc-unwrap="p" />
-                    </p>
+                    </h1>
 
                     <h1 class="text-5xl leading-tight font-bold text-stone-900">
                         <slot name="title" mdc-unwrap="p" />
