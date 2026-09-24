@@ -12,7 +12,7 @@ const commonContentSchema = z.object({
     navbar: z.boolean().default(true),
     footer: z.boolean().default(true),
     language: z.enum(['th', 'en']).default('th'),
-    contentSpacing: z.boolean().default(true),
+    noindex: z.boolean().default(false),
     'เพิ่ม script ใน head': z
         .array(
             z.object({
