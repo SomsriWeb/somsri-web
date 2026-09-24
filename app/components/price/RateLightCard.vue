@@ -14,9 +14,9 @@ const loopedRates = computed(() => priceLists.rates.slice(1));
 
 <template>
     <div class="flex h-full flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-        <h3 class="flex min-h-13 items-center justify-center bg-primary px-3 py-2.5 text-center text-base leading-tight font-bold text-white md:text-lg">
+        <h4 class="flex min-h-13 items-center justify-center bg-primary px-3 py-2.5 text-center text-base leading-tight font-bold text-white md:text-lg">
             {{ priceLists.fabricName }}
-        </h3>
+        </h4>
 
         <div class="flex flex-col items-center justify-center gap-0.5 bg-stone-100 px-3 py-4">
             <p class="text-xs text-stone-500 md:text-sm">เริ่มต้นที่</p>

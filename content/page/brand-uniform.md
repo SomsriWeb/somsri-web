@@ -1,6 +1,6 @@
 ---
 title: (Somsri) Search_เสื้อแบรนด์ตัวเอง [A] - สมศรีมีเสื้อ
-activeNavbar: false
+activeNavbar: true
 contentSpacing: true
 footer: false
 language: th

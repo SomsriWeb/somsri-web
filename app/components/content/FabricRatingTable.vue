@@ -38,9 +38,9 @@ function rowLine(ri: number) {
 
 <template>
     <div class="fabric-rating-table my-6">
-        <h3 v-if="title" class="mb-6 text-center text-xl font-bold text-primary md:text-2xl">
+        <h2 v-if="title" class="mb-6 text-center text-xl font-bold text-primary md:text-2xl">
             {{ title }}
-        </h3>
+        </h2>
 
         <div class="overflow-x-auto">
             <div class="grid min-w-[46rem]" :style="outerGridStyle">
