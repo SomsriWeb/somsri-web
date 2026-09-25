@@ -25,7 +25,7 @@
     "autoprefixer": "^10.6.1",
     "caniuse-lite": "^1.0.30001812",
     "eslint": "^10.11.0",
-    "fabric": "^6.9.1",
+    "fabric": "^7.4.0",
     "gsap": "^3.15.0",
     "libphonenumber-js": "^1.13.14",
     "nuxt": "^4.5.2",
@@ -35,7 +35,7 @@
     "nuxt-swiper": "2.0.2",
     "nuxt-viewport": "^2.6.1",
     "satori": "^0.33.5",
-    "uuid": "^13.0.2",
+    "uuid": "^14.0.2",
     "vue": "^3.5.43",
     "vue3-colorpicker": "^2.3.0",
     "vue3-marquee": "^4.2.2"
@@ -54,7 +54,7 @@
     "@iconify-json/solar": "^1.2.12",
     "@iconify-json/uil": "^1.2.3",
     "beasties": "^0.5.4",
-    "better-sqlite3": "^12.11.1",
+    "better-sqlite3": "^13.0.3",
     "vite-plugin-beasties": "^0.5.4",
     "zod": "^4.6.5"
   },
