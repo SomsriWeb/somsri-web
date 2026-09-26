@@ -21,15 +21,8 @@ defineSlots<Slots>();
 <template>
     <header>
         <div class="relative overflow-hidden h-screen">
-            <video
-                class="absolute inset-0 h-full w-full object-cover"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-            >
-                <source src="https://s3.somsritshirt.com/somsri-web/SomsriGarment.mp4" type="video/mp4" />
+            <video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline preload="metadata">
+                <source src="https://storage.googleapis.com/somsri-web/SomsriGarment.mp4" type="video/mp4" />
             </video>
             <div class="absolute inset-0 bg-black/30" />
         </div>
