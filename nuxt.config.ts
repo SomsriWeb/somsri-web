@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import { beasties } from 'vite-plugin-beasties';
 
 const GTAG_ID = 'GTM-5HWK828';
@@ -5,9 +6,7 @@ const META_PIXEL_ID = '796947021881915';
 const CLARITY_ID = process.env.NUXT_PUBLIC_SCRIPTS_CLARITY_ID || '';
 
 if (!CLARITY_ID) {
-    console.warn(
-        '[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.',
-    );
+    console.warn('[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.');
 }
 
 import { defineNuxtConfig } from 'nuxt/config';
@@ -183,6 +182,14 @@ export default defineNuxtConfig({
             concurrency: 1,
         },
         preset: 'bun',
+        externals: {
+            // ipx dynamically `require()`s "srvx/node" at runtime for its Node-style
+            // request handler, so Nitro's static dependency tracer misses it and never
+            // copies srvx's node adapter into .output/server/node_modules. Force it in
+            // with an already-resolved absolute path (a bare specifier gets short-circuited
+            // back to an external, unresolved id by this same externals plugin).
+            traceInclude: [fileURLToPath(new URL('./node_modules/srvx/dist/adapters/node.mjs', import.meta.url))],
+        },
     },
     vite: {
         plugins: [
