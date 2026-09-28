@@ -1,7 +1,7 @@
 ---
 title: "วิธีเลือกเทคนิคสกรีนเสื้อให้เหมาะกับงาน: DTG, DTF, Sublimation, Flock
   หรือ Flex?"
-image: /blog/how-to-choose-screen-printing-techniques-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/how-to-choose-screen-printing-techniques-header.jpg
 ---
 
 การพิมพ์สกรีนเป็นวิธีหนึ่งที่มีประสิทธิภาพมาก ที่สุดในการถ่ายโอนงานออกแบบลงบนผ้า ซึ่งใช้กันอย่างแพร่หลายทั้งในงานแฟชั่น การขายของ เครื่องแต่งกายกีฬา และสิ่งของส่งเสริมการขาย การพิมพ์สกรีนโดยทั่วไปเกี่ยวข้องกับการกดหมึกบล็อคสกรีนที่เป็นตาข่าย ลงบนผ้าเป็นชั้นๆ ปัจจุบันเทคโนโลยีในได้ขยายขอบเขตของรูปแบบการสกรีนไปมากกว่าซิลค์แบบพื้ืนฐาน
@@ -48,7 +48,7 @@ DTF เป็นการพิมพ์ดีไซน์ลงบนฟิล�
 สอบถามเพิ่มเติม
 ::
 
-![วิธีเลือกเทคนิคสกรีนเสื้อ ขึ้นอยู่กับวัตถุประสงค์ที่ต้องการใช้ เช่น เสื้อบริษัท  เสื้อกีฬา โลโก้ ตัวเลข เสื้อยืดส่งเสริมการขาย ชุดทีม](/blog/how-to-choose-screen-printing-techniques-1.jpg)
+![วิธีเลือกเทคนิคสกรีนเสื้อ ขึ้นอยู่กับวัตถุประสงค์ที่ต้องการใช้ เช่น เสื้อบริษัท  เสื้อกีฬา โลโก้ ตัวเลข เสื้อยืดส่งเสริมการขาย ชุดทีม](https://storage.googleapis.com/somsri-web/blog/how-to-choose-screen-printing-techniques-1.jpg)
 
 ## เปรียบเทียบข้อดีข้อเสียของแต่ละเทคนิค DTG, DTF, Sublimation, Flock หรือ Flex?
 
@@ -116,7 +116,7 @@ DTF เป็นการพิมพ์ดีไซน์ลงบนฟิล�
 สอบถามเพิ่มเติม
 ::
 
-![วิธีเลือกเทคนิคสกรีนเสื้อ การสกรีนมีหลากรูปแบบมาก ทั้งเทคนิคดิจิทัลสมัยใหม่ เช่น การพิมพ์แบบ Direct to Garment (DTG), Direct to Film (DTF), Sublimation, Flock และ Flex](/blog/how-to-choose-screen-printing-techniques-2.jpg)
+![วิธีเลือกเทคนิคสกรีนเสื้อ การสกรีนมีหลากรูปแบบมาก ทั้งเทคนิคดิจิทัลสมัยใหม่ เช่น การพิมพ์แบบ Direct to Garment (DTG), Direct to Film (DTF), Sublimation, Flock และ Flex](https://storage.googleapis.com/somsri-web/blog/how-to-choose-screen-printing-techniques-2.jpg)
 
 ## วิธีเลือกเทคนิคสกรีนเสื้อให้เหมาะกับงานประเภทงาน DTG, DTF, Sublimation, Flock หรือ Flex?
 

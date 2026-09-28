@@ -43,7 +43,7 @@ navbar: true
 
 :ex-pant
 
-:prose-img{.max-w-[30rem] alt="pants price" src="/pants/price-pants.jpg"}
+:prose-img{.max-w-[30rem] alt="pants price" src="https://storage.googleapis.com/somsri-web/pants/price-pants.jpg"}
 
   :::company-intro
   #CompanyDescription

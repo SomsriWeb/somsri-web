@@ -27,20 +27,20 @@ const props = withDefaults(defineProps<Props>(), {
         {
             title: 'Cotton 100%',
             description: 'เนื้อผ้าคอตตอน 100% นุ่ม ใส่สบาย ให้สัมผัสเป็นธรรมชาติ',
-            imageDesktop: '/band-shirt/fabric-cotton-desktop.png',
-            imageMobile: '/band-shirt/fabric-cotton-mobile.png',
+            imageDesktop: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-cotton-desktop.png',
+            imageMobile: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-cotton-mobile.png',
         },
         {
             title: 'Faded Color',
             description: 'สีฟอกเฟดสไตล์ Vintage ให้มิติที่ไม่เหมือนเสื้อสีพื้นทั่วไป',
-            imageDesktop: '/band-shirt/fabric-faded-desktop.png',
-            imageMobile: '/band-shirt/fabric-faded-mobile.png',
+            imageDesktop: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-faded-desktop.png',
+            imageMobile: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-faded-mobile.png',
         },
         {
             title: 'Tie dye',
             description: 'ลายมัดย้อมเฉพาะตัว เพิ่ม Mood และเอกลักษณ์ให้เสื้อวงแต่ละชิ้น',
-            imageDesktop: '/band-shirt/fabric-tiedye-desktop.png',
-            imageMobile: '/band-shirt/fabric-tiedye-mobile.png',
+            imageDesktop: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-tiedye-desktop.png',
+            imageMobile: 'https://storage.googleapis.com/somsri-web/band-shirt/fabric-tiedye-mobile.png',
         },
     ],
 });

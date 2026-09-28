@@ -63,7 +63,7 @@ lineLink: https://contact.somsritshirt.com/dd8de
 ::landing-page-header-style-four
 ---
 alt: รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ
-image: /fabrics/fabrics-banner.png
+image: https://storage.googleapis.com/somsri-web/fabrics/fabrics-banner.png
 ---
 #secondary-title
 เนื้อผ้าและคุณสมบัติ
@@ -81,7 +81,7 @@ image: /fabrics/fabrics-banner.png
 titleAsTag: "h2"
 ---
 #image
-::prose-img{src="/fabrics/background-subtitle.png" alt="background subtitle"}
+::prose-img{src="https://storage.googleapis.com/somsri-web/fabrics/background-subtitle.png" alt="background subtitle"}
 ::
 
 #title
@@ -118,6 +118,6 @@ headerTag: "h2"
   :::
 
 #image
-:prose-img{src="/fabrics/product/product.jpg" alt="สินค้าตัวอย่างของสมศรีมีเสื้อ" class="w-full rounded-none object-cover"}
+:prose-img{src="https://storage.googleapis.com/somsri-web/fabrics/product/product.jpg" alt="สินค้าตัวอย่างของสมศรีมีเสื้อ" class="w-full rounded-none object-cover"}
 :::
 

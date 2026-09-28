@@ -18,7 +18,7 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   เกี่ยวกับเรา
   
   #imageBanner
-    ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="/about/whoarewe.jpg"}
+    ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="https://storage.googleapis.com/somsri-web/about/whoarewe.jpg"}
     ::::
   
   #descriptionText
@@ -31,7 +31,7 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   SOMSRI มีที่มา
   
   #imageBannerList
-    ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="/about/core.jpg"}
+    ::::prose-img{.rounded-2xl.shadow-md alt="รูปHeader" src="https://storage.googleapis.com/somsri-web/about/core.jpg"}
     ::::
   
   #descriptionSlogan
@@ -45,7 +45,7 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   :::
   :::about-card-price
   #startpriceImage
-  :::prose-img{src="/about/tshirt.png"}
+  :::prose-img{src="https://storage.googleapis.com/somsri-web/about/tshirt.png"}
   :::
   #startpriceHeader
   สั่งเริ่มต้นที่ 
@@ -70,22 +70,22 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   #header
   ระบบควบคุมคุณภาพ Quality Control
   #strategyimage1
-    :::prose-img{.rounded-lg src="/about/card1.jpg"}
+    :::prose-img{.rounded-lg src="https://storage.googleapis.com/somsri-web/about/card1.jpg"}
     :::
   #strategyList1
   ตรวจผ้าและงานพิมพ์ทุกล็อตก่อนตัดเย็บ
   #strategyimage2
-    :::prose-img{.rounded-lg src="/about/card2.jpg"}
+    :::prose-img{.rounded-lg src="https://storage.googleapis.com/somsri-web/about/card2.jpg"}
     :::
   #strategyList2
   ตรวจขนาดและตะเข็บก่อนแพ็ก
   #strategyimage3
-    :::prose-img{.rounded-lg src="/about/card3.jpg"}
+    :::prose-img{.rounded-lg src="https://storage.googleapis.com/somsri-web/about/card3.jpg"}
     :::
   #strategyList3
   สุ่มตรวจสินค้า 5-10% ต่อออเดอร์
   #strategyimage4
-    :::prose-img{.rounded-lg src="/about/card4.jpg"}
+    :::prose-img{.rounded-lg src="https://storage.googleapis.com/somsri-web/about/card4.jpg"}
     :::
   #strategyList4
   แก้ไขงานทันทีหากพบตำหนิ
@@ -100,12 +100,12 @@ lineLink: https://contact.somsritshirt.com/aa7d8
   - การมีน้ำใจ ช่วยเหลือ และถ่ายทอดความรู้แก่เพื่อนร่วมงาน
   - การแก้ไขปัญหาเฉพาะหน้าอย่างมีประสิทธิภาพ
   #strategyimage1
-    ::::prose-img{.rounded-2xl.shadow-xl alt="รูปPeer Recognition" src="/about/peerrecognition.png"}
+    ::::prose-img{.rounded-2xl.shadow-xl alt="รูปPeer Recognition" src="https://storage.googleapis.com/somsri-web/about/peerrecognition.png"}
     ::::
   :::
 ::
 
-:::timeline{:items='[{"year":"2017","title":"ก่อตั้งกิจการ","description":"ก่อตั้งกิจการจากการเห็นช่องว่างจากการใช้software ในการช่วยซัพพอร์ทลูกค้าในการทำธุรกิจให้ง่ายขึ้น","image":"/Timeline/Founded.jpg"},{"year":"2019","title":"ออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี","description":"ผู้เข้าใช้โปรแกรมออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี","image":"/Timeline/2019.jpg"},{"year":"2020","title":"พัฒนา ERP ที่ชื่อว่า TEXCEL","description":"บริษัทได้ปล่อย ERP ที่ชื่อว่า TEXCEL ใช้สำหรับบริหารจัดการภายใน ที่พัฒนาโดยทีมงานในองค์กร และเดินหน้าลงทุนด้านการซอร์ฟแวร์อย่างต่อเนื่อง","image":"/Timeline/2020.png"},{"year":"2021","title":"จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย","description":"จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย เพื่อนำผ้าเข้าสู่กระบวนการ Recycle ให้องค์กรเติบโตไปสู่ความยั่งยืนเพื่อโลกต่อไป","image":"/Timeline/cloth.jpg"},{"year":"2022","title":"เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน)","description":"เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน) เพื่อนำระบบ lean มาใช้ในองค์กร ลดต้นทุนได้ราคาที่ลูกค้าได้รับจึงคุ้มค่ากว่าโรงงานอื่น","image":"/Timeline/2022.jpg"},{"year":"2023","title":"ได้รับรางวัลเหรียญทอง Peer recognition organization","description":"ได้รับรางวัลเหรียญทอง Peer recognition organization องค์กรที่มีส่วนร่วมในการทำงานยอดเยี่ยม","image":"/Timeline/2023.jpg"},{"year":"2026","title":"เติบโตเป็น eCommerce company","description":"เติบโตเป็น eCommerce company ลูกค้าทุกคนสามารถสั่งเสื้อผ้าผ่านหน้าเว็บไซต์ โดยทุกความต้องการของลูกค้าสามารถระบุได้บนเว็บไซต์","image":"/Timeline/2026.jpg"}]'}
+:::timeline{:items='[{"year":"2017","title":"ก่อตั้งกิจการ","description":"ก่อตั้งกิจการจากการเห็นช่องว่างจากการใช้software ในการช่วยซัพพอร์ทลูกค้าในการทำธุรกิจให้ง่ายขึ้น","image":"https://storage.googleapis.com/somsri-web/Timeline/Founded.jpg"},{"year":"2019","title":"ออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี","description":"ผู้เข้าใช้โปรแกรมออกแบบเสื้อออนไลน์ทะลุ 5หมื่นครั้งต่อปี","image":"https://storage.googleapis.com/somsri-web/Timeline/2019.jpg"},{"year":"2020","title":"พัฒนา ERP ที่ชื่อว่า TEXCEL","description":"บริษัทได้ปล่อย ERP ที่ชื่อว่า TEXCEL ใช้สำหรับบริหารจัดการภายใน ที่พัฒนาโดยทีมงานในองค์กร และเดินหน้าลงทุนด้านการซอร์ฟแวร์อย่างต่อเนื่อง","image":"https://storage.googleapis.com/somsri-web/Timeline/2020.png"},{"year":"2021","title":"จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย","description":"จับมือกับโรงงานผ้าเบอร์ต้น ๆ ของประเทศไทย เพื่อนำผ้าเข้าสู่กระบวนการ Recycle ให้องค์กรเติบโตไปสู่ความยั่งยืนเพื่อโลกต่อไป","image":"https://storage.googleapis.com/somsri-web/Timeline/cloth.jpg"},{"year":"2022","title":"เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน)","description":"เข้าร่วมโครงการพี่ช่วยน้อง กับบริษัท ซาบีน่าจำกัด (มหาชน) เพื่อนำระบบ lean มาใช้ในองค์กร ลดต้นทุนได้ราคาที่ลูกค้าได้รับจึงคุ้มค่ากว่าโรงงานอื่น","image":"https://storage.googleapis.com/somsri-web/Timeline/2022.jpg"},{"year":"2023","title":"ได้รับรางวัลเหรียญทอง Peer recognition organization","description":"ได้รับรางวัลเหรียญทอง Peer recognition organization องค์กรที่มีส่วนร่วมในการทำงานยอดเยี่ยม","image":"https://storage.googleapis.com/somsri-web/Timeline/2023.jpg"},{"year":"2026","title":"เติบโตเป็น eCommerce company","description":"เติบโตเป็น eCommerce company ลูกค้าทุกคนสามารถสั่งเสื้อผ้าผ่านหน้าเว็บไซต์ โดยทุกความต้องการของลูกค้าสามารถระบุได้บนเว็บไซต์","image":"https://storage.googleapis.com/somsri-web/Timeline/2026.jpg"}]'}
 :::
 
 :::about-btn{action-link="https://www.ssgm.co.th/"}

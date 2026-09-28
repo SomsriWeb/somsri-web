@@ -4,7 +4,7 @@ activeNavbar: false
 contentSpacing: true
 description: ในยุคที่ภาพลักษณ์ขององค์กรกลายเป็นหนึ่งในปัจจัยสำคัญที่มีผลต่อความน่าเชื่อถือและความไว้วางใจจากลูกค้า เสื้อพนักงาน จึงไม่ใช่เพียงแค่เครื่องแต่งกาย แต่เป็นหนึ่งในเครื่องมือสื่อสารแบรนด์ที่ทรงพลัง
 footer: true
-image: /blog/popular-polo-shirt-styles-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/popular-polo-shirt-styles-header.jpg
 language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o
@@ -49,7 +49,7 @@ seo:
 - แบรนด์ที่ต้องการทำเสื้อพรีเมียม: เช่น เสื้อแจกพนักงาน เสื้อโปรโมทแบรนด์ หรือของที่ระลึกสำหรับลูกค้า
 - ทีมงานอีเวนต์: ที่ต้องการเสื้อที่ใส่แล้วโดดเด่นแต่ยังคงความสุภาพ
 
-![แบบเสื้อโปโล (Polo Shirt) คือเสื้อที่มีลักษณะเฉพาะตัวคือมีปกเสื้อ (Collar) และกระดุมบริเวณช่วงอก มักผลิตจากผ้าที่นุ่มและยืดหยุ่น เช่น ผ้า Cotton, TC หรือ Dry Tech ทำให้สวมใส่สบาย](/blog/two-side-white-tshirts-with-copy-space-gray-background-min.jpg)
+![แบบเสื้อโปโล (Polo Shirt) คือเสื้อที่มีลักษณะเฉพาะตัวคือมีปกเสื้อ (Collar) และกระดุมบริเวณช่วงอก มักผลิตจากผ้าที่นุ่มและยืดหยุ่น เช่น ผ้า Cotton, TC หรือ Dry Tech ทำให้สวมใส่สบาย](https://storage.googleapis.com/somsri-web/blog/two-side-white-tshirts-with-copy-space-gray-background-min.jpg)
 
 ## 10 แบบเสื้อโปโล ยอดนิยมสำหรับองค์กร เสริมภาพลักษณ์ ดูดี มืออาชีพ ใส่สบายทุกวัน
 
@@ -97,7 +97,7 @@ seo:
 ออกแบบเสื้อโปโล
 ::
 
-![ตัวอย่างเสื้อโปโลพนักงาน](/blog/2150264135-min.jpg)
+![ตัวอย่างเสื้อโปโลพนักงาน](https://storage.googleapis.com/somsri-web/blog/2150264135-min.jpg)
 
 ## เนื้อผ้าเสื้อโปโลบริษัท เลือกแบบไหนดีให้เหมาะกับการใช้งาน?
 

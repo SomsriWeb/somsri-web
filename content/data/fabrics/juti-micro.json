@@ -1,6 +1,6 @@
 {
     "uid": "juti-micro",
-    "imageUrl": "/fabrics/juti-micro.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/juti-micro.jpg",
     "popupImageUrl": "/fabrics/juti-micro-popup.jpg",
     "forProductType": [
         "sport",

@@ -1,6 +1,6 @@
 {
     "name": "Nano Waterproof",
-    "imgUrl": "/fabric/nano-waterproof.png",
+    "imgUrl": "https://storage.googleapis.com/somsri-web/fabrics/nano-waterproof.png",
     "popupImageUrl": "/fabric/nano-waterproof-popup.png",
     "order": 9
 }

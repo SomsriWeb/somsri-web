@@ -3,27 +3,27 @@
 const showcases = [
     {
         id: '1',
-        image: '/blanket/showcases/blanket-1.png',
+        image: 'https://storage.googleapis.com/somsri-web/blanket/showcases/blanket-1.png',
         alt: 'ตัวอย่างผ้าห่ม',
     },
     {
         id: '2',
-        image: '/blanket/showcases/blanket-2.png',
+        image: 'https://storage.googleapis.com/somsri-web/blanket/showcases/blanket-2.png',
         alt: 'ตัวอย่างผ้าห่ม',
     },
     {
         id: '3',
-        image: '/blanket/showcases/blanket-3.png',
+        image: 'https://storage.googleapis.com/somsri-web/blanket/showcases/blanket-3.png',
         alt: 'ตัวอย่างผ้าห่ม',
     },
     {
         id: '4',
-        image: '/blanket/showcases/blanket-4.png',
+        image: 'https://storage.googleapis.com/somsri-web/blanket/showcases/blanket-4.png',
         alt: 'ตัวอย่างผ้าห่ม',
     },
     {
         id: '5',
-        image: '/blanket/showcases/blanket-5.png',
+        image: 'https://storage.googleapis.com/somsri-web/blanket/showcases/blanket-5.png',
         alt: 'ตัวอย่างผ้าห่ม',
     },
 ];

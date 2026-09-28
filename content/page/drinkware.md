@@ -14,7 +14,7 @@ contentSpacing: false
 ---
 screenHeight: false
 alt: แก้วน้ำ
-image: /drinkware/example-drinkware.png
+image: https://storage.googleapis.com/somsri-web/drinkware/example-drinkware.png
 titleAsTag: h1
 ---
 #title
@@ -36,7 +36,7 @@ titleAsTag: h1
 
 ::text-above-image
 ---
-image: /drinkware/banner-drinkware.png
+image: https://storage.googleapis.com/somsri-web/drinkware/banner-drinkware.png
 alt: ผ้ากันเปื้อน
 ---
 #title
@@ -56,16 +56,16 @@ alt: ผ้ากันเปื้อน
   :::carousel{:items="4" :slidesPerView="2" :slidesPerViewMobile="2" :spaceBetween="32" :loop="true" :dot="true" :autoplay="false" :centered="false" breakpoints-preset="simple" slide-aspect-ratio="3/3" full-width}
 
   #item-1
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="/drinkware/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="https://storage.googleapis.com/somsri-web/drinkware/slide1.png"}
 
   #item-2
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="/drinkware/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="https://storage.googleapis.com/somsri-web/drinkware/slide2.png"}
 
   #item-3
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="/drinkware/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="https://storage.googleapis.com/somsri-web/drinkware/slide1.png"}
 
   #item-4
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="/drinkware/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="https://storage.googleapis.com/somsri-web/drinkware/slide2.png"}
   :::
 ::
 
@@ -78,7 +78,7 @@ alt: ผ้ากันเปื้อน
   ---
   showSize: false
   leftPanel:
-    image: '/drinkware/drinkware-nobg.png' 
+    image: 'https://storage.googleapis.com/somsri-web/drinkware/drinkware-nobg.png' 
     title: ''
   columns:
     - 'ทรงปกติ'
@@ -102,7 +102,7 @@ alt: ผ้ากันเปื้อน
 
   ::cta-banner-card
   ---
-  image: /drinkware/contactbt.png
+  image: https://storage.googleapis.com/somsri-web/drinkware/contactbt.png
   alt: แก้วน้ำ
   ---
   #title

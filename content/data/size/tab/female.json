@@ -1,7 +1,7 @@
 {
     "uid": "sizeFemale",
     "name": "ไซซ์ผู้หญิง",
-    "imageUrl": "/size/female.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/size/female.png",
     "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
     "order": 2
 }

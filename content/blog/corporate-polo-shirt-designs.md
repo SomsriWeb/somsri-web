@@ -1,7 +1,7 @@
 ---
 title: รวม 10 แบบเสื้อโปโลบริษัท สวยๆ พร้อมแนะนำวิธีเลือกให้เข้ากับแบรนด์
 description: รวมไอเดียเสื้อโปโลบริษัทสวยๆ ทันสมัย พร้อมวิธีเลือกเนื้อผ้า สี และลายปักให้ตรง CI องค์กร เสริมภาพลักษณ์มืออาชีพ จากสมศรีมีเสื้อ
-image: /blog/img-corporate-polo-shirt-designs.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-corporate-polo-shirt-designs.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -26,11 +26,11 @@ image: /blog/img-corporate-polo-shirt-designs.jpg
 เริ่มจากองค์กรที่ต้องเคลื่อนไหวเยอะอย่าง **เซ็นทรัล รีเทล** และ **เอจีซี แฟลทกลาส** เลือกผ้า Dry Tech และ Dry Feel ที่ระบายอากาศดี พร้อมงานปัก/สกรีนที่ดูคล่องตัว ส่วนองค์กรที่เน้นภาพลักษณ์เรียบหรูอย่าง **วานา นาวา**, **ไทยไฟลท์เทรนนิ่ง** และ **อุดมสุข** เลือกผ้า TC Lacoste พร้อมงานปักโลโก้ให้ทรงดี ในขณะที่องค์กรสายโลจิสติกส์และพลังงานอย่าง ซมโปะ, Flash Express และ ปตท. เลือกผ้า Juti Micro ที่ตอบโจทย์ทั้งความคล่องตัวและงานพิมพ์ลายคมชัด ปิดท้ายด้วย ทรี ทราน และ มิสเตอร์ ดีไอวาย ที่เลือกผ้า Micro Sport เบาและระบายอากาศดีเยี่ยม เหมาะกับองค์กรที่ต้องเคลื่อนไหวตลอดวัน
 
 ::image-grid
-:prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="/polo/img-polo-central.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="https://storage.googleapis.com/somsri-web/polo/img-polo-central.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-ptt.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="https://storage.googleapis.com/somsri-web/polo/img-polo-ptt.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="/polo/img-sompo.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="https://storage.googleapis.com/somsri-web/polo/img-sompo.jpg"}
 ::
 
 ## ตัวอย่างองค์กรจริงที่เลือกใช้บริการสมศรีมีเสื้อ

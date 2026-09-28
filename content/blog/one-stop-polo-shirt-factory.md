@@ -1,7 +1,7 @@
 ---
 title: โรงงานผลิตเสื้อโปโลคุณภาพสูง พร้อมปัก-สกรีน ครบวงจร
 description: มองหาโรงงานผลิตเสื้อโปโลคุณภาพสูง? สมศรีมีเสื้อ บริการครบวงจร ผลิต ปัก สกรีน คัดสรรเนื้อผ้าพรีเมียม งานเนียบ ได้มาตรฐาน ในราคาโรงงาน
-image: /blog/img-one-stop-polo-shirt-factory.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-one-stop-polo-shirt-factory.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -42,11 +42,11 @@ image: /blog/img-one-stop-polo-shirt-factory.jpg
 - ลูกค้า ปตท.น้ำมันและการค้าปลีก
 
 ::image-grid{:items='0'}
-:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท Flash Express" src="/polo/img-polo-flash.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท Flash Express" src="https://storage.googleapis.com/somsri-web/polo/img-polo-flash.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="/polo/img-polo-diy.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="https://storage.googleapis.com/somsri-web/polo/img-polo-diy.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-ptt.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="https://storage.googleapis.com/somsri-web/polo/img-polo-ptt.jpg"}
 ::
 
 เสื้อโปโลที่เป็นผ้ากีฬาในปัจจุบันเป็นที่นิยมมากๆ เพราะใส่สบายดูแลง่าย ระบายอากาศดี สีสวยลูกค้าสั่งทำเป็นเสื้อโปโลเนื้อผ้าไมโคร งานเนียบ สีสด ชัด ทรงสวย สามารถใช้งานได้ยาวๆ
@@ -58,11 +58,11 @@ image: /blog/img-one-stop-polo-shirt-factory.jpg
 - ลูกค้า BYD metromobile
 
 ::image-grid
-:prose-img{alt="ตัวอย่างผลงานลูกค้า Sukiya" src="/polo/img-sukiya-polo.jpg"}
+:prose-img{alt="ตัวอย่างผลงานลูกค้า Sukiya" src="https://storage.googleapis.com/somsri-web/polo/img-sukiya-polo.jpg"}
 
-:prose-img{alt="ตัวอย่างลูกค้า Toyota" src="/polo/img-toyota-ayutthaya.jpg"}
+:prose-img{alt="ตัวอย่างลูกค้า Toyota" src="https://storage.googleapis.com/somsri-web/polo/img-toyota-ayutthaya.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท BYD" src="/polo/img-polo-byd.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท BYD" src="https://storage.googleapis.com/somsri-web/polo/img-polo-byd.jpg"}
 ::
 
 ### ครบจบในที่เดียว (One-Stop Service)

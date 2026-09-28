@@ -1,6 +1,6 @@
 {
     "uid": "nano-waterproof",
-    "imageUrl": "/fabrics/nano-waterproof.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/nano-waterproof.png",
     "popupImageUrl": "/fabrics/nano-waterproof-popup.png",
     "forProductType": [
         "fabric-specification"

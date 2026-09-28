@@ -1,6 +1,6 @@
 {
     "name": "Sport Shirts",
-    "image": "/product/sport.png",
+    "image": "https://storage.googleapis.com/somsri-web/product/sport.jpg",
     "alt": "โรงงานผลิตเสื้อ เสื้อกีฬา ออกแบบเสื้อกีฬา กีฬาสีองค์กร",
     "url": "/sport",
     "featured": true,

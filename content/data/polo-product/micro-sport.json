@@ -1,6 +1,6 @@
 {
     "name": "micro-sport",
-    "image": "/polo/microsport.png",
+    "image": "https://storage.googleapis.com/somsri-web/polo/microsport.png",
     "alt": "Micro Sport Details",
     "order": 3
 }

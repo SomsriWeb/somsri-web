@@ -10,7 +10,7 @@ footer: false
 
 ::landing-page-header-style-two
 ---
-image: /tshirt/banner.png
+image: https://storage.googleapis.com/somsri-web/tshirt/banner.png
 ---
 #title
 เสื้อยืดระดับพรีเมี่ยม :br เสื้อยูนิฟอร์มที่เป็นได้มากกว่า
@@ -56,7 +56,7 @@ image: /tshirt/banner.png
 
   :::tshirt-image
   #image
-    ::::prose-img{.max-w alt="sport price" src="/tshirt/price.png"}
+    ::::prose-img{.max-w alt="sport price" src="https://storage.googleapis.com/somsri-web/tshirt/price.png"}
     ::::
   :::
 

@@ -1,7 +1,7 @@
 ---
 title: สร้าง Branding ผ่านเสื้อยืด วิธีเลือกสีและเนื้อผ้าให้สะท้อนตัวตนของธุรกิจคุณ
 description: อยากสร้างแบรนด์ให้คนจดจำ? อ่านเทคนิคการสร้าง Branding ผ่านเสื้อยืด ตั้งแต่วิธีเลือกจิตวิทยาตัวเลขสีไปจนถึงการเลือกเนื้อผ้าให้ดูพรีเมียม สะท้อนตัวตนธุรกิจคุณให้ชัดเจนที่สุด
-image: /blog/img-building-a-brand-with-tshirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-building-a-brand-with-tshirts.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -135,7 +135,7 @@ image: /blog/img-building-a-brand-with-tshirts.jpg
 
 เทคนิคการพิมพ์ไม่ได้มีผลแค่ ความสวย แต่มีผลต่อ สัมผัส และ ความทนทาน ด้วย
 
-![เทคนิคการสกรีนเป็นตัวกำหนดคุณภาพงานผลิต](/blog/img-screen-printing.jpg)
+![เทคนิคการสกรีนเป็นตัวกำหนดคุณภาพงานผลิต](https://storage.googleapis.com/somsri-web/blog/img-screen-printing.jpg)
 
 #### สกรีนสีจม (Discharge)
 

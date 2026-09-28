@@ -17,7 +17,7 @@ seo:
 
 ::landing-page-header-style-one
 ---
-image: /landing-page-real-hat/banner.png
+image: https://storage.googleapis.com/somsri-web/landing-page-real-hat/banner.png
 ---
   :::description-pills
   ---

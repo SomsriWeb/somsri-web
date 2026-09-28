@@ -1,6 +1,6 @@
 {
     "name": "Cotton Semi",
-    "imgUrl": "/fabric/cotton-semi.png",
-    "popupImageUrl": "/fabric/cotton-semi-popup.png",
+    "imgUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-semi.png",
+    "popupImageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-semi-popup.png",
     "order": 3
 }

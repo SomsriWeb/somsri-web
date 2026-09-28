@@ -5,7 +5,7 @@ footer: false
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/a1505
 ---
-::landing-page-header-style-two{image="/tshirt/banner.png"}
+::landing-page-header-style-two{image="https://storage.googleapis.com/somsri-web/tshirt/banner.png"}
 #title
 เสื้อยืดระดับพรีเมี่ยม<br>เสื้อยูนิฟอร์มที่เป็นได้มากกว่า
 

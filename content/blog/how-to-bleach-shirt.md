@@ -1,6 +1,6 @@
 ---
 title: กระบวนการฟอกสีเสื้อ ทำยังไง เป็นอย่างไร ฟอกสีอะไรได้บ้าง [อัปเดต 2025]
-image: /blog/how-to-bleach-shirt-header.png
+image: https://storage.googleapis.com/somsri-web/blog/how-to-bleach-shirt-header.png
 ---
 
 กระบวนการฟอกสีเสื้อ คือ กระบวนการทำให้สีของผ้าซีดลงหรือเปลี่ยนเฉดสี โดยใช้สารเคมี หรือวิธีธรรมชาติ ที่ความนิยมในอุตสาหกรรมแฟชั่นในปี 2025 นี้ โดยเฉพาะเสื้อยีนส์และเสื้อผ้าแนววินเทจ
@@ -13,7 +13,7 @@ image: /blog/how-to-bleach-shirt-header.png
 สอบถามเพิ่มเติม
 ::
 
-![กระบวนการฟอกสีเสื้อ คืออะไร](/blog/how-to-bleach-shirt-1.jpg)
+![กระบวนการฟอกสีเสื้อ คืออะไร](https://storage.googleapis.com/somsri-web/blog/how-to-bleach-shirt-1.jpg)
 
 ## ประวัติของการฟอกสีเสื้อ
 
@@ -69,7 +69,7 @@ image: /blog/how-to-bleach-shirt-header.png
 - สีฟอกออกแบบลายต่าง ๆ เช่น มัดย้อม
 - สีที่ดูซีดและเก่าแบบวินเทจ
 
-![กระบวนการฟอกสีเสื้อ สามารถฟอกได้หลายสี แต่สีที่นิยมคือ ดำฟอกเป็นเทา](/blog/how-to-bleach-shirt-2.png)
+![กระบวนการฟอกสีเสื้อ สามารถฟอกได้หลายสี แต่สีที่นิยมคือ ดำฟอกเป็นเทา](https://storage.googleapis.com/somsri-web/blog/how-to-bleach-shirt-2.png)
 
 ## ประโยชน์ของการฟอกสีเสื้อ
 

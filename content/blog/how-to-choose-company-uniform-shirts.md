@@ -1,7 +1,7 @@
 ---
 title: เสื้อโปโล vs เสื้อยืด vs เสื้อเชิ้ต เลือกแบบไหนเหมาะกับองค์กร?
 description: เลือกเสื้อยูนิฟอร์มแบบไหนดี? เจาะลึกความต่าง เสื้อโปโล vs เสื้อยืด vs เสื้อเชิ้ต แบบไหนตอบโจทย์ภาพลักษณ์และตอบโจทย์องค์กรคุณที่สุด โดย สมศรีมีเสื้อ
-image: /blog/img-how-to-choose-company-uniform-shirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-choose-company-uniform-shirts.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -49,7 +49,7 @@ image: /blog/img-how-to-choose-company-uniform-shirts.jpg
 
 นอกจากนี้หากออกแบบดีไซน์เสื้อไม่ดี หรือเลือกเนื้อผ้าได้ไม่เหมาะ ก็อาจจะทำให้ภาพรวมของเสื้อยืดยูนิฟอร์มกลายเป็นเสื้อแจกแบบทั่วไปได้เช่นเดียวกัน
 
-![เสื้อโปโล vs เสื้อยืด vs เสื้อเชิ้ต ต่างกันอย่างไร](/blog/img-polo-tshirt-shirt.jpg)
+![เสื้อโปโล vs เสื้อยืด vs เสื้อเชิ้ต ต่างกันอย่างไร](https://storage.googleapis.com/somsri-web/blog/img-polo-tshirt-shirt.jpg)
 
 ## แล้วองค์กรควรเลือกชุดยูนิฟอร์มแบบไหนดี?
 
@@ -75,7 +75,7 @@ image: /blog/img-how-to-choose-company-uniform-shirts.jpg
 
 ส่วนธุรกิจที่เน้นจับกลุ่มวัยรุ่น สาย Creative คาเฟ่ กลุ่ม[ธุรกิจ Startup](https://www.krungsri.com/th/plearn-plearn/business/management/the-differences-between-startup-and-sme) หรือแบรนด์ที่ต้องการภาพลักษณ์ที่ดูสนุก ดูทันสมัย และมีความเป็นตัวเองสูงๆ เสื้อยืดก็มักจะตอบโจทย์กว่าเช่นเดียวกัน เพราะช่วยทำให้ดูผ่อนคลาย เข้าถึงง่าย และหลายครั้งก็ทำให้ลูกค้ารู้สึกเข้าถึงแบรนด์ได้ง่ายกว่าด้วยซ้ำ เพราะภาพลักษณ์ของแบรนด์ดูไม่แข็งจนเกินไป
 
-![เสื้อโปโล สำหรับฝ่ายขายเพื่อให้ดูสุภาพ มืออาชีพเวลาเข้าพบลูกค้า](/blog/img-polo-for-sales.jpg)
+![เสื้อโปโล สำหรับฝ่ายขายเพื่อให้ดูสุภาพ มืออาชีพเวลาเข้าพบลูกค้า](https://storage.googleapis.com/somsri-web/blog/img-polo-for-sales.jpg)
 
 ### ดูจากวัฒนธรรมองค์กร
 

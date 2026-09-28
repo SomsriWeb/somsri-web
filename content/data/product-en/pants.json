@@ -1,6 +1,6 @@
 {
     "name": "pants",
-    "image": "/product/pants.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/pants.jpg",
     "url": "/pants",
     "order": 9
 }

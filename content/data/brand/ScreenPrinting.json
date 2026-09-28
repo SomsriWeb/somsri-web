@@ -2,6 +2,6 @@
   "name": "Screen Printing",
   "method": "งานสกรีน",
   "alt": "สกรีนผ้า",
-  "image": "/brand/screen.png",
+  "image": "https://storage.googleapis.com/somsri-web/brand/screen.png",
   "order": 3
 }

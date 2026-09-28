@@ -6,7 +6,7 @@ footer: false
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/b8f97
 ---
-::landing-page-header-style-three{image="/somsri-with-tie-dye/banner.png" alt="รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม"}
+::landing-page-header-style-three{image="https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/banner.png" alt="รับผลิตเสื้อมัดย้อม โรงงานผลิตเสื้อมัดย้อม"}
 #title
 รับผลิตเสื้อมัดย้อม
 
@@ -27,7 +27,7 @@ lineLink: https://contact.somsritshirt.com/b8f97
     ::
 
     ::center{class="gap-3"}
-    ![เสื้อมัดย้อม (Tie-Dye) คือ การทำให้ผ้าเกิดลวดลายและนำลงย้อมสี](/somsri-with-tie-dye/tie-dye.jpg)
+    ![เสื้อมัดย้อม (Tie-Dye) คือ การทำให้ผ้าเกิดลวดลายและนำลงย้อมสี](https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/tie-dye.jpg)
 
     <ProseH4 as="p" class="text-center">“เสื้อมัดย้อม” ไอเท็มสุดชิคที่ต้องมีติดตู้เสื้อผ้าแทบทุกบ้าน แฟชั่นที่ไม่เคยตกเทรนด์ แมทช์ง่าย เข้าได้กับทุกลุค ด้วยลายที่เป็นเอกลักษณ์เฉพาะตัวบ่งบอกถึงความเป็นผ้ามัดย้อมอย่างชัดเจน ความหลากหลายของลาย และสีสันที่ได้จากการมัดย้อม</ProseH4>
     ::
@@ -44,7 +44,7 @@ lineLink: https://contact.somsritshirt.com/b8f97
 
     ::center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
-        ![ตัวอย่างงาน สั่งผลิตเสื้อมัดย้อม ด้วยผ้า cotton](/somsri-with-tie-dye/tie-dye-sample-1.png)
+        ![ตัวอย่างงาน สั่งผลิตเสื้อมัดย้อม ด้วยผ้า cotton](https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/tie-dye-sample-1.png)
 
             ::center
             <ProseH3 as="h4" class="text-center">Cotton 100%</ProseH3>
@@ -53,7 +53,7 @@ lineLink: https://contact.somsritshirt.com/b8f97
         ::
 
         ::card{}
-        ![รับผลิตเสื้อมัดย้อม ราคาย่อมเยาว์](/somsri-with-tie-dye/tie-dye-sample-2.png)
+        ![รับผลิตเสื้อมัดย้อม ราคาย่อมเยาว์](https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/tie-dye-sample-2.png)
         
             ::center
             <ProseH3 as="h4" class="text-center">Natural color</ProseH3>
@@ -76,10 +76,10 @@ lineLink: https://contact.somsritshirt.com/b8f97
 
     ::slider{:items="2" :slidesPerView="2"}
     #item-1
-    <ProseImg src="/produce-tshirt/price-chart-cotton-100.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/price-chart-cotton-100.png" />
 
     #item-2
-    <ProseImg src="/produce-tshirt/price-chart-cotton-comb-32.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/price-chart-cotton-comb-32.png" />
     ::
 
     ::center
@@ -90,7 +90,7 @@ lineLink: https://contact.somsritshirt.com/b8f97
 
     ::center{class="gap-5 flex-col sm:flex-row items-start"}
         ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-caution-1.png)
+        ![](https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/tie-dye-caution-1.png)
 
             ::center
             <ProseH3 as="h4" class="text-center">แยกซักกับผ้าชนิดอื่น</ProseH3>
@@ -99,7 +99,7 @@ lineLink: https://contact.somsritshirt.com/b8f97
         ::
 
         ::card{}
-        ![](/somsri-with-tie-dye/tie-dye-caution-2.png)
+        ![](https://storage.googleapis.com/somsri-web/somsri-with-tie-dye/tie-dye-caution-2.png)
         
             ::center
             <ProseH3 as="h4" class="text-center">เลี่ยงการใช้ผงซักฟอกเข้มข้น</ProseH3>

@@ -1,6 +1,6 @@
 {
     "name": "tc-lacost",
-    "image": "/polo/tclacost.png",
+    "image": "https://storage.googleapis.com/somsri-web/polo/tclacost.png",
     "alt": "tc lacost details",
     "order": 1
 }

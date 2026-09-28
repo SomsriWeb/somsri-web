@@ -1,7 +1,7 @@
 ---
 title: เทียบโรงงานผลิตเสื้อโปโลในไทย เลือกยังไงดี
 description: เทียบโรงงานผลิตเสื้อโปโลในไทยควรดูอะไรบ้าง? เช็กเนื้อผ้า งานตัดเย็บ ปัก-สกรีน QC ราคา และบริการ ก่อนเลือกโรงงานให้เหมาะกับองค์กร
-image: /blog/img-compare-polo-shirt-manufacturers.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-compare-polo-shirt-manufacturers.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -45,7 +45,7 @@ image: /blog/img-compare-polo-shirt-manufacturers.jpg
 
 ควรพิจารณามากกว่าความสวยของภาพ โดยดูรายละเอียดอย่างความเรียบร้อยของทรง งานปัก งานสกรีน การจับคู่สี และความหลากหลายของงาน เพราะตัวอย่างเหล่านี้ช่วยให้เห็นว่าโรงงานมีประสบการณ์รับมือกับงานในระดับความซับซ้อนที่องค์กรต้องการหรือไม่
 
-![ควรดู Portfolio และผลงานที่เคยผลิตของโรงงานผลิตเสื้อ ก่อนตัดสินใจเลือกผู้ผลิต](/blog/img-shirt-manufacturer-show-portfolio.jpg)
+![ควรดู Portfolio และผลงานที่เคยผลิตของโรงงานผลิตเสื้อ ก่อนตัดสินใจเลือกผู้ผลิต](https://storage.googleapis.com/somsri-web/blog/img-shirt-manufacturer-show-portfolio.jpg)
 
 - ระบบ QC ก่อนส่งมอบ
 
@@ -105,7 +105,7 @@ image: /blog/img-compare-polo-shirt-manufacturers.jpg
 
 สรุปแล้ว การบรีฟให้เหมือนกันก่อนเทียบราคาช่วยให้องค์กรตัดสินใจได้แม่นขึ้น เพราะรู้ว่าแต่ละโรงงานกำลังเสนองานแบบเดียวกันจริงหรือไม่ และทำให้เลือกได้จากทั้งคุณภาพ บริการ และต้นทุนที่เหมาะสม มากกว่าดูราคาต่อตัวเพียงอย่างเดียว
 
-![เลือกโรงงานผลิตเสื้อโปโลต้องเตรียมบรีฟให้พร้อมก่อนเทียบราคา](/blog/img-choose-shirt-manufacturers.jpg)
+![เลือกโรงงานผลิตเสื้อโปโลต้องเตรียมบรีฟให้พร้อมก่อนเทียบราคา](https://storage.googleapis.com/somsri-web/blog/img-choose-shirt-manufacturers.jpg)
 
 ## มองหาโรงงานผลิตเสื้อโปโลครบวงจร ปรึกษา “สมศรีมีเสื้อ”
 

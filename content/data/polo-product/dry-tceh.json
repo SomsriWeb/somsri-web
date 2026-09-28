@@ -1,6 +1,6 @@
 {
     "name": "dry-tceh",
-    "image": "/polo/drytech.png",
+    "image": "https://storage.googleapis.com/somsri-web/polo/drytech.png",
     "alt": "Dry tech",
     "order": 2
 }

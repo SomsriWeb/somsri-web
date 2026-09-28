@@ -9,7 +9,7 @@
 
 	<section class="w-full px-2 sm:px-4 py-6 flex flex-col items-center">
 		<!-- โลโก้ -->
-		<ProseImg src="/pants/logosomsri.png" alt="SOMSRI GARMENT" class="w-20 sm:w-28 mb-3" />
+		<ProseImg src="https://storage.googleapis.com/somsri-web/pants/logosomsri.png" alt="SOMSRI GARMENT" class="w-20 sm:w-28 mb-3" />
 
 		<!-- ชื่อสินค้า -->
 		<ProseH2 class="text-xl sm:text-3xl font-bold mb-4 text-center"> กางเกง ขาสั้น </ProseH2>

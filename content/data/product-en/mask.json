@@ -1,6 +1,6 @@
 {
     "name": "mask",
-    "image": "/product/mask.png",
+    "image": "https://storage.googleapis.com/somsri-web/product/mask.jpg",
     "url": "/mask",
     "featured": true,
     "order": 5

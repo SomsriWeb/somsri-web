@@ -1,14 +1,14 @@
 ---
 title: Soft-power - สมศรีมีเสื้อ
 ---
-![](/soft-power/banner.png)
+![](https://storage.googleapis.com/somsri-web/soft-power/banner.png)
 ::container
     ::center
     # “เราอยากเป็นสะพานเชื่อมให้ทุกความรู้สึกจับต้องได้”
     ::
 
-![](/soft-power/service.png)
-![](/soft-power/all-in-one-at-somsri.png)
+![](https://storage.googleapis.com/somsri-web/soft-power/service.png)
+![](https://storage.googleapis.com/somsri-web/soft-power/all-in-one-at-somsri.png)
 
     ::home-portfolio
     #title
@@ -16,7 +16,7 @@ title: Soft-power - สมศรีมีเสื้อ
     ::
 
     ::center
-    <ProseImg class="max-w-[30rem]" src="/soft-power/discount.png" />
+    <ProseImg class="max-w-[30rem]" src="https://storage.googleapis.com/somsri-web/soft-power/discount.png" />
     ::
 
 

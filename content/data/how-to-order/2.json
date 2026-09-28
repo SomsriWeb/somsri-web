@@ -1,6 +1,6 @@
 {
     "title": "ส่งไฟล์ทีม Artwork จัดให้",
     "description": "มีไฟล์ก็ส่งมาได้เลย ไม่มีก็บอก direction — ทีม Artwork เราจัด layout ให้พร้อมผลิต ฟรีไม่มีค่าใช้จ่ายเพิ่ม",
-    "image": "/how-to-order/steps/step-2.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/how-to-order/steps/step-2.jpg",
     "order": 2
 }

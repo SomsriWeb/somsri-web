@@ -1,7 +1,7 @@
 {
     "name": "เสื้อแบรนด์",
     "name-en": "Brand",
-    "image": "/product/band.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/band.jpg",
     "url": "/brand",
     "order": 8
 }

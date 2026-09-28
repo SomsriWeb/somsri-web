@@ -12,10 +12,10 @@ interface Props {
 }
 
 const defaultImages = [
-    '/band-shirt/sample-maiyarap.png',
-    '/band-shirt/sample-varism-front.png',
-    '/band-shirt/sample-varism-back.png',
-    '/band-shirt/sample-leofest.png',
+    'https://storage.googleapis.com/somsri-web/band-shirt/sample-maiyarap.png',
+    'https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-front.png',
+    'https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-back.png',
+    'https://storage.googleapis.com/somsri-web/band-shirt/sample-leofest.png',
 ];
 
 const props = withDefaults(defineProps<Props>(), {
@@ -23,10 +23,10 @@ const props = withDefaults(defineProps<Props>(), {
     title: '',
     description: '',
     images: () => [
-        '/band-shirt/sample-maiyarap.png',
-        '/band-shirt/sample-varism-front.png',
-        '/band-shirt/sample-varism-back.png',
-        '/band-shirt/sample-leofest.png',
+        'https://storage.googleapis.com/somsri-web/band-shirt/sample-maiyarap.png',
+        'https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-front.png',
+        'https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-back.png',
+        'https://storage.googleapis.com/somsri-web/band-shirt/sample-leofest.png',
     ],
     slidesPerViewDesktop: 4,
     slidesPerViewTablet: 3,

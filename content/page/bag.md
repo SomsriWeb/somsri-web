@@ -8,8 +8,8 @@ lineLink: https://contact.somsritshirt.com/218c9
 
 ::hero-page
 ---
-image: /bag/hero-collage.png
-imageMobile: /bag/hero-collage-mobile.png
+image: https://storage.googleapis.com/somsri-web/bag/hero-collage.png
+imageMobile: https://storage.googleapis.com/somsri-web/bag/hero-collage-mobile.png
 alt: กระเป๋าผ้า Tote Bag สั่งทำ
 ---
 #eyebrow
@@ -55,8 +55,8 @@ alt: กระเป๋าผ้า Tote Bag สั่งทำ
 
 ::sub-hero
 ---
-image: /bag/why-totebag.png
-imageMobile: /bag/why-totebag-mobile.png
+image: https://storage.googleapis.com/somsri-web/bag/why-totebag.png
+imageMobile: https://storage.googleapis.com/somsri-web/bag/why-totebag-mobile.png
 alt: ทำไมต้องกระเป๋าผ้า
 imagePosition: right
 ---
@@ -81,7 +81,7 @@ imagePosition: right
 แต่ละทรงมีบุคลิกต่างกัน เลือกให้เหมาะกับ occasion และกลุ่มเป้าหมายที่คุณต้องการ
 
 #item-1-image
-:prose-img{src="/bag/GTWM.png" alt="กระเป๋าทรงก้นขยาย"}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/GTWM.png" alt="กระเป๋าทรงก้นขยาย"}
 
 #item-1-tag
 ใช้งานได้ทุกวัน
@@ -96,7 +96,7 @@ imagePosition: right
 ทรง Tote คลาสสิก จุของได้เยอะ พื้นที่สกรีนกว้าง โลโก้เด่นชัด เหมาะกับแบรนด์ที่อยากให้กระเป๋าเป็นหน้าตาองค์กร
 
 #item-2-image
-:prose-img{src="/bag/KOREA.png" alt="กระเป๋าทรง Korea"}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/KOREA.png" alt="กระเป๋าทรง Korea"}
 
 #item-2-tag
 ดูมีสไตล์
@@ -111,7 +111,7 @@ Korea
 ทรงเกาหลีปากกว้างดูเป็นแฟชั่นเหมาะกับแบรนด์ lifestyle หรืองานอีเว้นต์ที่อยากให้ผู้รับรู้สึกว่าได้ของที่มีดีไซน์
 
 #item-3-image
-:prose-img{src="/bag/SQUARE.png" alt="กระเป๋าทรง Square"}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/SQUARE.png" alt="กระเป๋าทรง Square"}
 
 #item-3-tag
 เรียบ สะอาด
@@ -134,7 +134,7 @@ Square
 กระเป๋าผ้าดีพอ คนเอาไปใช้ต่อเอง
 
 #item-1-image
-:prose-img{src="/bag/usecase/merchandise.png" alt="กระเป๋าผ้าแบรนด์ Merchandise" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/merchandise.png" alt="กระเป๋าผ้าแบรนด์ Merchandise" .h-full .w-full .object-cover}
 
 #item-1-title
 กระเป๋าผ้าแบรนด์ / Merchandise
@@ -143,7 +143,7 @@ Square
 สกรีนโลโก้ สีตรงแบรนด์ ลูกค้าพกไปทุกที่ โฆษณาเดินได้โดยไม่ต้องจ่ายเพิ่ม
 
 #item-2-image
-:prose-img{src="/bag/usecase/of-chumruay.png" alt="ของชำร่วยองค์กร" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/of-chumruay.png" alt="ของชำร่วยองค์กร" .h-full .w-full .object-cover}
 
 #item-2-title
 ของชำร่วยองค์กร
@@ -152,7 +152,7 @@ Square
 แทนถุงกระดาษหรือของที่เก็บไว้ลิ้นชักกระเป๋าผ้าคือของที่คนใช้ได้จริงและจำแบรนด์ได้นาน
 
 #item-3-image
-:prose-img{src="/bag/usecase/event.png" alt="กระเป๋าสต๊าฟงาน อีเวนต์" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/event.png" alt="กระเป๋าสต๊าฟงาน อีเวนต์" .h-full .w-full .object-cover}
 
 #item-3-title
 กระเป๋าสต๊าฟงาน / อีเวนต์
@@ -161,7 +161,7 @@ Square
 ใส่ของแจก เอกสาร หรือ goodie bag พิมพ์ชื่องานและวันที่ได้ ดูเป็นมืออาชีพ
 
 #item-4-image
-:prose-img{src="/bag/usecase/school.png" alt="กระเป๋าโรงเรียน มหาวิทยาลัย" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/school.png" alt="กระเป๋าโรงเรียน มหาวิทยาลัย" .h-full .w-full .object-cover}
 
 #item-4-title
 กระเป๋าโรงเรียน / มหาวิทยาลัย
@@ -170,7 +170,7 @@ Square
 สกรีนโลโก้สถาบัน สีตามเอกลักษณ์ ใช้เป็นของที่ระลึกหรือสินค้า Merchandise ของสถาบัน
 
 #item-5-image
-:prose-img{src="/bag/usecase/eco.png" alt="กระเป๋าผ้า Eco Sustainability" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/eco.png" alt="กระเป๋าผ้า Eco Sustainability" .h-full .w-full .object-cover}
 
 #item-5-title
 กระเป๋าผ้า Eco / Sustainability
@@ -179,7 +179,7 @@ Square
 แทนถุงพลาสติก ผ้าแคนวาสใช้ซ้ำได้นาน เหมาะกับแบรนด์ที่ต้องการสื่อสารเรื่อง ESG
 
 #item-6-image
-:prose-img{src="/bag/usecase/packaging.png" alt="กระเป๋าร้านค้า Packaging" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/usecase/packaging.png" alt="กระเป๋าร้านค้า Packaging" .h-full .w-full .object-cover}
 
 #item-6-title
 กระเป๋าร้านค้า / Packaging
@@ -196,7 +196,7 @@ Square
 โรงงานกระเป๋าผ้า ที่คุณไม่ต้องลุ้น
 
 #item-1-image
-:prose-img{src="/bag/whyus/design.png" alt="ออกแบบให้ฟรี" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/design.png" alt="ออกแบบให้ฟรี" .h-full .w-full .object-cover}
 
 #item-1-title
 ออกแบบให้ [ฟรี]{.text-primary}
@@ -205,7 +205,7 @@ Square
 มีโลโก้ก็พอ ทีม Artwork จัด layout และ artwork ให้พร้อมผลิต ไม่คิดค่าใช้จ่ายเพิ่ม
 
 #item-2-image
-:prose-img{src="/bag/whyus/customize.png" alt="Customize ได้ตามต้องการ" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/customize.png" alt="Customize ได้ตามต้องการ" .h-full .w-full .object-cover}
 
 #item-2-title
 [Customize]{.text-primary} ได้ตามต้องการ
@@ -214,7 +214,7 @@ Square
 ขนาด ทรง ความยาวสาย และสีผ้าปรับได้ตาม brief ของคุณ ไม่จำกัดแค่ 3 ทรงมาตรฐาน
 
 #item-3-image
-:prose-img{src="/bag/whyus/print.png" alt="สกรีนคมชัด ไม่หลุดลอก" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/print.png" alt="สกรีนคมชัด ไม่หลุดลอก" .h-full .w-full .object-cover}
 
 #item-3-title
 สกรีนคมชัด [ไม่หลุดลอก]{.text-primary}
@@ -223,7 +223,7 @@ Square
 เทคนิคสกรีนที่เราใช้ทำให้สีติดทนนาน ซักได้หลายครั้งก็ยังคมชัด ไม่แตก ไม่ลอก
 
 #item-4-image
-:prose-img{src="/bag/whyus/sample.png" alt="เห็นตัวอย่างก่อนผลิต" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/sample.png" alt="เห็นตัวอย่างก่อนผลิต" .h-full .w-full .object-cover}
 
 #item-4-title
 [เห็นตัวอย่าง]{.text-primary} ก่อนผลิต
@@ -232,7 +232,7 @@ Square
 ส่งตัวอย่างให้ดูก่อนเสมอ อนุมัติแล้วค่อยผลิตจริง ไม่มีเซอร์ไพรส์เมื่อของมาถึง
 
 #item-5-image
-:prose-img{src="/bag/whyus/tracking.png" alt="ติดตามงานได้ real-time" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/tracking.png" alt="ติดตามงานได้ real-time" .h-full .w-full .object-cover}
 
 #item-5-title
 ติดตามงานได้ [real-time]{.text-primary}
@@ -241,7 +241,7 @@ Square
 ระบบ ERP อัปเดต progress ทุกขั้นตอน ไม่ต้องโทรถาม รู้ว่างานอยู่ที่ไหนได้ตลอด
 
 #item-6-image
-:prose-img{src="/bag/whyus/warranty.png" alt="รับประกัน 90 วัน" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/bag/whyus/warranty.png" alt="รับประกัน 90 วัน" .h-full .w-full .object-cover}
 
 #item-6-title
 รับประกัน [90 วัน]{.text-primary}
@@ -290,8 +290,8 @@ Square
 
 ::seo-intro
 ---
-image: /bag/seo-intro.png
-imageMobile: /bag/seo-intro-mobile.png
+image: https://storage.googleapis.com/somsri-web/bag/seo-intro.png
+imageMobile: https://storage.googleapis.com/somsri-web/bag/seo-intro-mobile.png
 alt: รับผลิตกระเป๋าผ้า Tote Bag
 ---
 #eyebrow
@@ -312,7 +312,7 @@ alt: รับผลิตกระเป๋าผ้า Tote Bag
 
 ::bag-final-cta
 ---
-image: /bag/cta-bg.png
+image: https://storage.googleapis.com/somsri-web/bag/cta-bg.png
 alt: กระเป๋าผ้าสมศรี
 ---
 #title

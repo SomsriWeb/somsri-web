@@ -14,7 +14,7 @@ contentSpacing: false
 ---
 screenHeight: false
 alt: ผ้าโพกหัว
-image: /headband/example-headband.png
+image: https://storage.googleapis.com/somsri-web/headband/example-headband.png
 titleAsTag: h1
 ---
 #title
@@ -35,7 +35,7 @@ titleAsTag: h1
 
 ::text-above-image
 ---
-image: /headband/banner-headband.png
+image: https://storage.googleapis.com/somsri-web/headband/banner-headband.png
 alt: ผ้าพันคอ
 ---
 #title
@@ -56,7 +56,7 @@ alt: ผ้าพันคอ
 
 ::fabricoption
 ---
-image: /headband/italy-silk.png
+image: https://storage.googleapis.com/somsri-web/headband/italy-silk.png
 imagePosition: right
 ---
 #title
@@ -71,7 +71,7 @@ imagePosition: right
 
 ::fabricoption
 ---
-image: /headband/satin-silk.png
+image: https://storage.googleapis.com/somsri-web/headband/satin-silk.png
 imagePosition: left
 ---
 #title
@@ -86,7 +86,7 @@ imagePosition: left
 
 ::text-above-image
 ---
-image: /headband/banner-newyear.png
+image: https://storage.googleapis.com/somsri-web/headband/banner-newyear.png
 alt: ภาพปีใหม่
 ---
 ::
@@ -163,22 +163,22 @@ alt: ภาพปีใหม่
   :::carousel{:items="4" :slidesPerView="2" :slidesPerViewMobile="2" :spaceBetween="48" :loop="true" :dot="true" :autoplay="false" :centered="false" breakpoints-preset="simple"}
 
   #item-1
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="/headband/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="https://storage.googleapis.com/somsri-web/headband/slide1.png"}
 
   #item-2
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="/headband/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="https://storage.googleapis.com/somsri-web/headband/slide2.png"}
 
   #item-3
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="/headband/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="https://storage.googleapis.com/somsri-web/headband/slide1.png"}
 
   #item-4
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="/headband/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="https://storage.googleapis.com/somsri-web/headband/slide2.png"}
   :::
 :: 
 ::container
   ::cta-banner-card
   ---
-  image: /headband/contactbt.png
+  image: https://storage.googleapis.com/somsri-web/headband/contactbt.png
   alt: ผ้าโพกหัว
   ---
   #title

@@ -26,7 +26,7 @@ defineSlots<Slots>();
                 >
                 <ProseImg
                     class="w-full"
-                    src="/screen-tshirt-service/technique-1.png"
+                    src="https://storage.googleapis.com/somsri-web/screen-tshirt-service/technique-1.png"
                     alt="เทคนิคที่โรงงานผลิตเสื้อของเราใช้ เช่น เทคนิคสกรีนเสื้อแบบยาง เทคนิคสกรีนเสื้อแบบไฮเดน เทคนิคสกรีนเสื้อแบบไล่สี"
                 />
             </Card>
@@ -34,7 +34,7 @@ defineSlots<Slots>();
             <Card>
                 <ProseH3>ใช้สีสกรีนเสื้อคุณภาพ</ProseH3>
                 <ProseP>เราเลือกใช้สีสกรีนเสื้อมีคุณภาพเพื่อให้เสื้อสกรีนของคุณสีชัด ติดทนนาน เรารับสกรีนสินค้าพรีเมียมต่าง ๆ ไม่ว่าจะเป็น หน้ากากผ้า ถุงผ้า ผ้ากันเปื้อน และแก้วน้ำค่ะ</ProseP>
-                <ProseImg class="w-full" src="/screen-tshirt-service/technique-2.png" alt="ราคาสั่งสกรีนเสื้อ DTG พรีเมี่ยม ราคา สกรีนเสื้อ" />
+                <ProseImg class="w-full" src="https://storage.googleapis.com/somsri-web/screen-tshirt-service/technique-2.png" alt="ราคาสั่งสกรีนเสื้อ DTG พรีเมี่ยม ราคา สกรีนเสื้อ" />
             </Card>
         </div>
     </div>

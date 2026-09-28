@@ -1,7 +1,7 @@
 {
     "uid": "mask",
     "name": "หน้ากากผ้า",
-    "imageUrl": "/price/mask.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/price/mask.jpg",
     "alt": "เรทราคาสั่งผลิตหน้ากากผ้า",
     "order": 3
 }

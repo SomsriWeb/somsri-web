@@ -1,7 +1,7 @@
 ---
 title: เสื้อฟรีไซส์คืออะไร? เหมาะกับรูปร่างแบบไหน รอบอกเท่าไหร่ใส่ได้บ้าง
 description: ซื้อเสื้อออนไลน์หรือสั่งเสื้อแจกแต่กลัวติดไซส์? สมศรีมีเสื้อ พาไปดูว่า เสื้อฟรีไซส์คืออะไร รอบอกเท่าไหร่ใส่ได้บ้าง พร้อมวิธีเลือกให้ปัง
-image: /blog/img-what-is-free-size-clothing.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-what-is-free-size-clothing.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -37,7 +37,7 @@ image: /blog/img-what-is-free-size-clothing.jpg
 
 ดังนั้น ก่อนตัดสินใจซื้อหรือสั่งผลิตเสื้อ ควรดูตารางไซส์ของร้านหรือโรงงานให้แน่ใจก่อนทุกครั้ง เพราะแม้จะระบุว่าเป็นเสื้อฟรีไซส์ แต่ขนาดจริงอาจแตกต่างกันได้ จนทำให้ได้เสื้อที่ใส่แล้วไม่ถูกใจ
 
-![ตัวอย่างเสื้อฟรีไซส์](/blog/img-example-free-size-tshirt.jpg)
+![ตัวอย่างเสื้อฟรีไซส์](https://storage.googleapis.com/somsri-web/blog/img-example-free-size-tshirt.jpg)
 
 ## เสื้อ Free Size ต่างจาก เสื้อโอเวอร์ไซส์ อย่างไร?
 
@@ -63,7 +63,7 @@ image: /blog/img-what-is-free-size-clothing.jpg
 
 สำหรับผู้ที่มีรอบอกประมาณ 42 นิ้วขึ้นไป จะแนะนำให้เลือกเสื้อฟรีไซส์ที่มีรอบอก 44 นิ้ว ซึ่งจะทำให้เสื้อค่อนข้างพอดีตัว แต่ถ้าหากต้องการความคล่องตัว หรือไว้ใส่เพื่อทำกิจกรรม จะแนะนำให้เลือกไซส์ใหญ่พิเศษแทน เพื่อให้เคลื่อนไหวได้สะดวก
 
-![เสื้อยืดฟรีไซส์](/blog/img-free-size-tshirt-with-screen.jpg)
+![เสื้อยืดฟรีไซส์](https://storage.googleapis.com/somsri-web/blog/img-free-size-tshirt-with-screen.jpg)
 
 ## ข้อดีของการเลือกเสื้อฟรีไซส์ สำหรับทำเสื้อกิจกรรมและเสื้อแจก
 

@@ -1,6 +1,6 @@
 {
     "uid": "c20-oe",
-    "imageUrl": "/fabrics/c20-OE.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/c20-OE.jpg",
     "forProductType": [
         "tshirt",
         "polo",
