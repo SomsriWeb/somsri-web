@@ -14,11 +14,11 @@ describe('local media plan', () => {
     test('preserves Thai, spaces, nesting and literal percent signs without URL ambiguity', () => {
         const path = 'blog/ภาษาไทย/เสื้อ สีขาว 100% #1?.JPG';
         const result = resolvePaths(path);
-        expect(result.objectKey).toBe(`studio-poc/${path}`);
+        expect(result.objectKey).toBe(path);
         const url = new URL(result.publicUrl);
         expect(url.search).toBe('');
         expect(url.hash).toBe('');
-        expect(decodeURIComponent(url.pathname)).toBe(`/somsri-web/studio-poc/${path}`);
+        expect(decodeURIComponent(url.pathname)).toBe(`/somsri-web/${path}`);
         expect(result.publicUrl).toContain('%20');
         expect(result.publicUrl).toContain('%25');
     });

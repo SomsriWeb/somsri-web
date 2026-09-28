@@ -252,7 +252,7 @@ export default defineNuxtConfig({
         media: {
             external: true,
             publicUrl: 'https://storage.googleapis.com/somsri-web',
-            prefix: 'studio-poc',
+            prefix: '',
             maxFileSize: 10 * 1024 * 1024,
             allowedTypes: ['image/*', 'video/*'],
         },

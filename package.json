@@ -8,7 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
-    "media:plan": "bun run scripts/media-migration/cli.ts plan"
+    "media:plan": "bun run scripts/media-migration/cli.ts plan",
+    "media:upload": "bun run scripts/media-migration/cli.ts upload",
+    "media:verify": "bun run scripts/media-migration/cli.ts verify",
+    "media:reconcile": "bun run scripts/media-migration/cli.ts reconcile",
+    "media:references:preview": "bun run scripts/media-migration/preview-references.ts"
   },
   "dependencies": {
     "@nuxt/content": "^3.16.1",

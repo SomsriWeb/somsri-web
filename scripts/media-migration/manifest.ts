@@ -26,7 +26,7 @@ export function resolvePaths(relativePath: string) {
         || /[\\\u0000-\u001f\u007f]/u.test(relativePath)) {
         throw new Error(`Unsafe media path: ${JSON.stringify(relativePath)}`);
     }
-    const objectKey = `${config.prefix}/${relativePath}`;
+    const objectKey = relativePath;
     if (Buffer.byteLength(objectKey, 'utf8') > 1024) throw new Error(`Object key exceeds 1024 bytes: ${relativePath}`);
     // Preserve Unicode/case/spaces in object keys. Encode URL segments once, never the separators.
     const encodedKey = objectKey.split('/').map((segment) => encodeURIComponent(segment)
