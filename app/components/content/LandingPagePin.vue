@@ -6,14 +6,14 @@
 			advantage: "สามารถปักลงบนผ้าได้หลายชนิด ทำให้งานโลโก้หรืออักษรดูสวยงาม",
 			disadvantage:
 				"ถ้าแบบมีการไล่เฉดสีหรือขนาดฟอนต์เล็กมากจนเกินไป จะไม่สามารถเก็บส่วนรายละเอียดงานได้หมด ซึ่งจะทำให้งานปักไม่สวยงามดูยึกยือและไม่คมชัด",
-			image: "/produce-tshirt/pin.png",
+			image: "https://storage.googleapis.com/somsri-web/produce-tshirt/pin.png",
 		},
 		{
 			title: "ปักทรานส์เฟอร์",
 			advantage:
 				"งานปัก HD จะมีความสวยงาม เนื้อเนียน ละเอียด โดดเด่นคมชัดแม้จะตัวอักษรเล็กมากก็ตาม นอกจากนี้ยังสามารถไล่เฉดได้ ไม่จำกัดสีอีกด้วย",
 			disadvantage: "จะต้องเป็นงานที่อยู่บนพื้นทึบเท่านั้น จึงสามารถทำได้",
-			image: "/produce-tshirt/transfer.png",
+			image: "https://storage.googleapis.com/somsri-web/produce-tshirt/transfer.png",
 		},
 	]
 </script>

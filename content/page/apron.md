@@ -15,7 +15,7 @@ contentSpacing: false
 ---
 screenHeight: false
 alt: ผ้ากันเปื้อน
-image: /apron/example-apron.png
+image: https://storage.googleapis.com/somsri-web/apron/example-apron.png
 titleAsTag: h1
 ---
 #title
@@ -37,7 +37,7 @@ titleAsTag: h1
 
 ::text-above-image
 ---
-image: /apron/banner-apron.png
+image: https://storage.googleapis.com/somsri-web/apron/banner-apron.png
 alt: ผ้ากันเปื้อน
 ---
 #title
@@ -62,7 +62,7 @@ alt:
 
 ::landing-page-image-text-split
 ---
-image: /apron/aps1.png
+image: https://storage.googleapis.com/somsri-web/apron/aps1.png
 overlayPosition: right
 overlayColor: bg-black/70
 textColor: text-white
@@ -83,7 +83,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /apron/aps2.png
+image: https://storage.googleapis.com/somsri-web/apron/aps2.png
 overlayPosition: left
 overlayColor: bg-black/70
 textColor: text-white
@@ -104,7 +104,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /apron/aps3.png
+image: https://storage.googleapis.com/somsri-web/apron/aps3.png
 overlayPosition: right
 overlayColor: bg-black/70
 textColor: text-white
@@ -125,7 +125,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /apron/aps4.png
+image: https://storage.googleapis.com/somsri-web/apron/aps4.png
 overlayPosition: left
 overlayColor: bg-black/70
 textColor: text-white
@@ -152,16 +152,16 @@ overlayWidth: 45%
   :::carousel{:items="4" :slidesPerView="2" :slidesPerViewMobile="2" :spaceBetween="32" :loop="true" :dot="true" :autoplay="false" :centered="false" breakpoints-preset="simple" slide-aspect-ratio="3/3" full-width}
 
   #item-1
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="/apron/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="https://storage.googleapis.com/somsri-web/apron/slide1.png"}
 
   #item-2
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="/apron/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="https://storage.googleapis.com/somsri-web/apron/slide2.png"}
 
   #item-3
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="/apron/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="https://storage.googleapis.com/somsri-web/apron/slide1.png"}
 
   #item-4
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="/apron/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="https://storage.googleapis.com/somsri-web/apron/slide2.png"}
   :::
 
 :::section-title
@@ -172,7 +172,7 @@ overlayWidth: 45%
     title: เรทราคาผ้ากันเปื้อน
     showSize: false
     leftPanel:
-      image: /apron/apron-nobg.png
+      image: https://storage.googleapis.com/somsri-web/apron/apron-nobg.png
       title: ทรงมาตรฐาน
       lines:
         - 16in X 16in
@@ -206,7 +206,7 @@ overlayWidth: 45%
     ::price-table-horizontal
     ---
     leftPanel:
-      image: /apron/apron-waist-icon.png
+      image: https://storage.googleapis.com/somsri-web/apron/apron-waist-icon.png
     contactText: ติดต่อสอบถาม
     quantities:
       - "100 +"
@@ -229,7 +229,7 @@ overlayWidth: 45%
     ::
   ::cta-banner-card
   ---
-  image: /apron/contactbt.png
+  image: https://storage.googleapis.com/somsri-web/apron/contactbt.png
   alt: ผ้ากันเปื้อน
   ---
   #title

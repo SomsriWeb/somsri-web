@@ -1,7 +1,7 @@
 ---
 title: อยากสั่งทำเสื้อ? ทำไมควรเลือก "สมศรีมีเสื้อ" โรงงานผลิตเสื้อยืดและเสื้อโปโลที่ลูกค้าไว้ใจมากที่สุด
 description: อยากสั่งทำเสื้อยืดหรือเสื้อโปโลคุณภาพดี? มาดูเหตุผลที่ สมศรีมีเสื้อ เป็นโรงงานผลิตเสื้อผ้าที่ลูกค้าและองค์กรชั้นนำไว้ใจมากที่สุด งานเน้น คุ้มค่า ไม่ทิ้งงาน!
-image: /blog/img-why-choose-custom-shirts-with-us.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-why-choose-custom-shirts-with-us.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -39,7 +39,7 @@ image: /blog/img-why-choose-custom-shirts-with-us.jpg
 
 สมศรีตรวจคุณภาพผ้า สี ความหนา และความเสถียรของเนื้อผ้าก่อนรับเข้าคลังทุกครั้ง ซัพพลายเออร์ที่ส่งของไม่ตรงสเปกถูกตัดออกจากระบบทันที เพราะเราเชื่อว่างานที่ดีเริ่มต้นที่วัตถุดิบที่ดี
 
-![ตัวอย่างเสื้อยืดพร้อมสกรีนจากสมศรีมีเสื้อ](/blog/img-example-tshirt-by-somsritshirt.jpg)
+![ตัวอย่างเสื้อยืดพร้อมสกรีนจากสมศรีมีเสื้อ](https://storage.googleapis.com/somsri-web/blog/img-example-tshirt-by-somsritshirt.jpg)
 
 ### 6. ตรวจสอบได้ทุกขั้นตอน ย้อนหาปัญหาได้ทันที
 

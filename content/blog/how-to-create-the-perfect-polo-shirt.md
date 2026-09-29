@@ -1,7 +1,7 @@
 ---
 title: สั่งผลิตเสื้อโปโลทั้งทีต้องให้ปัง! เคล็ดลับเลือกเนื้อผ้าไม่ยับ สีไม่ตก ใส่แล้วดูดีตลอดวัน
 description: สั่งผลิตเสื้อโปโลให้คุ้มค่า! รวมเคล็ดลับเลือกเนื้อผ้าไม่ยับ สีไม่ตก พร้อมแนะนำผ้า CVC, TC และ Dry Tech ที่ช่วยให้คุณดูดีตลอดวัน งานเนี้ยบ มาตรฐานโรงงานชั้นนำที่ Somsri T-shirt
-image: /blog/img-how-to-create-the-perfect-polo-shirt.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-create-the-perfect-polo-shirt.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -59,7 +59,7 @@ image: /blog/img-how-to-create-the-perfect-polo-shirt.jpg
 - ธุรกิจบริการ เช่น คาเฟ่ ร้านอาหาร โรงแรม
 - แบรนด์ที่ต้องการลุค พรีเมี่ยม ดูสบาย
 
-![ผ้า CVC](/blog/img-cvc-fabric.jpg)
+![ผ้า CVC](https://storage.googleapis.com/somsri-web/blog/img-cvc-fabric.jpg)
 
 ### ผ้า TC (Tetron Cotton)
 
@@ -134,7 +134,7 @@ TC เป็นผ้าที่เน้นความทน โดยใช�
 
 ดีเทลเล็ก ๆ ที่หลายคนอาจมองข้าม แต่หากทำออกมาแล้วจะทำให้แบรนด์ดูใส่ใจในรายละเอียดเล็ก ๆ เช่น กระดุมโลโก้แบรนด์ การซ่อนสาบ (Hidden placket) หรือเย็บเสริมความแข็งแรง
 
-![การเลือกกระดุมและสาบเสื้อในเสื้อโปโล](/blog/img-polo-button.jpg)
+![การเลือกกระดุมและสาบเสื้อในเสื้อโปโล](https://storage.googleapis.com/somsri-web/blog/img-polo-button.jpg)
 
 ## ทำไมต้องสั่งผลิตเสื้อโปโลกับ Somsri T-shirt?
 

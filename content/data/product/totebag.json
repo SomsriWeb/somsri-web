@@ -1,7 +1,7 @@
 {
     "name": "กระเป๋า",
     "name-en": "Totebag",
-    "image": "/product/totebag.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/totebag.jpg",
     "alt": "สมศรีมีเสื้อ เรามีบริการออกแบบกระเป๋า",
     "url": "/bag",
     "featured": true,

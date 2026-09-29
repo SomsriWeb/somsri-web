@@ -1,6 +1,6 @@
 ---
 title: ผ้า Cotton Comb 20 คืออะไร ดียังไง เหมาะกับทำเสื้อแบบไหน?
-image: /blog/cotton-comb-20-t-shirt-header.png
+image: https://storage.googleapis.com/somsri-web/blog/cotton-comb-20-t-shirt-header.png
 description: ผ้า Cotton Comb 20 คืออะไร เหมาะกับงานแบบใด ข้อดีและข้อจำกัดของงาน
   Cotton Comb 20 มีคำตอบที่นี่
 เพิ่ม script ใน head: []
@@ -32,7 +32,7 @@ description: ผ้า Cotton Comb 20 คืออะไร เหมาะก�
 
 **ผ้าหนักเล็กน้อย** – เมื่อเปรียบเทียบกับ[ผ้าฝ้าย](how-many-grades-of-cotton-are-there)เนื้อละเอียด (เช่น เบอร์ 32) ผ้า Cotton Comb 20 ให้ความรู้สึกหนาและหนักกว่าเล็กน้อย
 
-![ผ้า Cotton Comb 20 คืออะไร](/blog/cotton-comb-20-t-shirt-1.jpeg)
+![ผ้า Cotton Comb 20 คืออะไร](https://storage.googleapis.com/somsri-web/blog/cotton-comb-20-t-shirt-1.jpeg)
 
 ## ผ้า Cotton Comb 20 เหมาะกับงานแบบใด
 
@@ -60,7 +60,7 @@ description: ผ้า Cotton Comb 20 คืออะไร เหมาะก�
 ปรึกษาฟรี
 ::
 
-![Cotton Comb 20 เหมาะสำหรับผลิตเสื้อแนวสตรีทวัยรุ่น หรือเสื้อ oversize อีกทั้งยังเหมาะกับเสื้อผ้าสำหรับทำงาน ในงานที่ต้องใช้ผ้าที่ทนทานกว่าเล็กน้อย](/blog/cotton-comb-20-t-shirt-2.jpg)
+![Cotton Comb 20 เหมาะสำหรับผลิตเสื้อแนวสตรีทวัยรุ่น หรือเสื้อ oversize อีกทั้งยังเหมาะกับเสื้อผ้าสำหรับทำงาน ในงานที่ต้องใช้ผ้าที่ทนทานกว่าเล็กน้อย](https://storage.googleapis.com/somsri-web/blog/cotton-comb-20-t-shirt-2.jpg)
 
 ## ตัวอย่างงานเสื้อที่ใช้ผ้า Cotton Comb 20
 
@@ -76,7 +76,7 @@ description: ผ้า Cotton Comb 20 คืออะไร เหมาะก�
 
 ผ้าฝ้ายเบอร์ 32 – เส้นด้ายละเอียดและเบากว่า ทำให้เนื้อผ้าอ่อนนุ่มและระบายอากาศได้ดีขึ้น เหมาะสำหรับเสื้อยืดแฟชั่นระดับพรีเมียมและเสื้อผ้าน้ำหนักเบา
 
-![ข้อดีของผ้า Cotton Comb 20 คือ ทนทานและใช้งานได้ยาวนาน  นุ่มและสวมใส่สบาย พิมพ์ลายได้ดี จึงเหมาะสำหรับเสื้อยืดลายกราฟิก ราคาไม่แพงเมื่อเทียบกับผ้าฝ้ายเนื้อละเอียด ไม่หดแม้ผ่านการซักหลายครั้ง](/blog/cotton-comb-20-t-shirt-3.jpeg)
+![ข้อดีของผ้า Cotton Comb 20 คือ ทนทานและใช้งานได้ยาวนาน  นุ่มและสวมใส่สบาย พิมพ์ลายได้ดี จึงเหมาะสำหรับเสื้อยืดลายกราฟิก ราคาไม่แพงเมื่อเทียบกับผ้าฝ้ายเนื้อละเอียด ไม่หดแม้ผ่านการซักหลายครั้ง](https://storage.googleapis.com/somsri-web/blog/cotton-comb-20-t-shirt-3.jpeg)
 
 ## เลือกผลิตเสื้อผ้ากับ “สมศรีมีเสื้อ”
 

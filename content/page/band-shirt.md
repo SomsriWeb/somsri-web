@@ -14,8 +14,8 @@ navbar: true
 ::hero-page
 ---
 alt: รับผลิตเสื้อวง เสื้อยืดวงดนตรี
-image: /band-shirt/hero-desktop.png
-imageMobile: /band-shirt/hero-mobile.png
+image: https://storage.googleapis.com/somsri-web/band-shirt/hero-desktop.png
+imageMobile: https://storage.googleapis.com/somsri-web/band-shirt/hero-mobile.png
 ---
 #eyebrow
 รับผลิตเสื้อวง เสื้อยืดวงดนตรี — โรงงานผลิตเสื้อวงครบวงจร
@@ -59,8 +59,8 @@ imageMobile: /band-shirt/hero-mobile.png
 ::centered-banner-intro
 ---
 alt: เสื้อวง
-image: /band-shirt/story-desktop.png
-imageMobile: /band-shirt/story-mobile.png
+image: https://storage.googleapis.com/somsri-web/band-shirt/story-desktop.png
+imageMobile: https://storage.googleapis.com/somsri-web/band-shirt/story-mobile.png
 ---
 #title
 “เสื้อวง”
@@ -84,10 +84,10 @@ imageMobile: /band-shirt/story-mobile.png
 ::band-samples-section
 ---
 images:
-  - /band-shirt/sample-maiyarap.png
-  - /band-shirt/sample-varism-front.png
-  - /band-shirt/sample-varism-back.png
-  - /band-shirt/sample-leofest.png
+  - https://storage.googleapis.com/somsri-web/band-shirt/sample-maiyarap.png
+  - https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-front.png
+  - https://storage.googleapis.com/somsri-web/band-shirt/sample-varism-back.png
+  - https://storage.googleapis.com/somsri-web/band-shirt/sample-leofest.png
 ---
 #eyebrow
 ตัวอย่างงานผลิตเสื้อวง
@@ -104,8 +104,8 @@ images:
 alt1: ผลงานผลิตเสื้อวง
 alt2: ศิลปินกับเสื้อวง
 buttonText: ปรึกษาฟรี
-image1: /band-shirt/feature-shetoldme.png
-image2: /band-shirt/feature-band-members.png
+image1: https://storage.googleapis.com/somsri-web/band-shirt/feature-shetoldme.png
+image2: https://storage.googleapis.com/somsri-web/band-shirt/feature-band-members.png
 ---
 #title
 ผลงานที่พูดแทน :br คุณภาพการผลิต

@@ -5,7 +5,7 @@ footer: false
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/8b33a
 ---
-::landing-page-header-style-three{image="/sport-shirt-min-100/banner.png"}
+::landing-page-header-style-three{image="https://storage.googleapis.com/somsri-web/sport-shirt-min-100/banner.png"}
 #title
 รับผลิตเสื้อกีฬา
 
@@ -29,10 +29,10 @@ lineLink: https://contact.somsritshirt.com/8b33a
 
     ::slider{:items="2"}
     #item-1
-    <ProseImg src="/produce-tshirt/sublimation-port-1.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-1.png" />
 
     #item-2
-    <ProseImg src="/produce-tshirt/sublimation-port-2.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-2.png" />
     ::
 
     ::center
@@ -47,10 +47,10 @@ lineLink: https://contact.somsritshirt.com/8b33a
 
     ::slider{:items="2" :slidesPerView="2"}
     #item-1
-    <ProseImg src="/sport-shirt-min-100/tshirt-price-table.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/sport-shirt-min-100/tshirt-price-table.png" />
 
     #item-2
-    <ProseImg src="/sport-shirt-min-100/polo-price-table.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/sport-shirt-min-100/polo-price-table.png" />
     ::
 
 <ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>

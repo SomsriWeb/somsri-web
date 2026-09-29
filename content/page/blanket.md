@@ -13,7 +13,7 @@ navbar: true
 
 ::landing-page-header-style-two
 ---
-image: /blanket/blanket-banner.png
+image: https://storage.googleapis.com/somsri-web/blanket/blanket-banner.png
 ---
 #title
 รับผลิตผ้าห่มคุณภาพสูง นุ่ม อุ่น เกรดพรีเมียม
@@ -57,33 +57,33 @@ image: /blanket/blanket-banner.png
 
     ::::icon-feature-grid
     #item-1
-    :prose-img{alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม" src="/icon-detail/icon-1.jpg"}
+    :prose-img{alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-1.jpg"}
 
     เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม
 
     #item-2
-    :prose-img{alt="ความทนทานสูง" src="/icon-detail/icon-8.jpg"}
+    :prose-img{alt="ความทนทานสูง" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-8.jpg"}
 
     ความทนทานสูง
 
     #item-3
-    :prose-img{alt="ผิวเรียบ ไม่ซับน้ำ" src="/icon-detail/icon-9.jpg"}
+    :prose-img{alt="ผิวเรียบ ไม่ซับน้ำ" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-9.jpg"}
 
     ผิวเรียบ ไม่ซับน้ำ
 
     #item-4
-    :prose-img{alt="Polyester เคลือบ Nanom" src="/icon-detail/icon-10.jpg"}
+    :prose-img{alt="Polyester เคลือบ Nanom" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-10.jpg"}
 
     Polyester เคลือบ Nano
 
     #item-5
-    :prose-img{alt="150 – 220 gsm." src="/icon-detail/icon-5.jpg"}
+    :prose-img{alt="150 – 220 gsm." src="https://storage.googleapis.com/somsri-web/icon-detail/icon-5.jpg"}
 
     150 – 220 gsm.
     ::::
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square.w-full.max-w-4/5 alt="ตัวอย่างงานเสื้อ" src="/blanket/Nano.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square.w-full.max-w-4/5 alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/blanket/Nano.jpg"}
   :::
 
   :::split-content
@@ -103,33 +103,33 @@ image: /blanket/blanket-banner.png
 
     ::::icon-feature-grid
     #item-1
-    :prose-img{alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม" src="/icon-detail/icon-1.jpg"}
+    :prose-img{alt="เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-1.jpg"}
 
     เนื้อผ้าเกรดดีเหมาะทำผ้าห่ม
 
     #item-2
-    :prose-img{alt="ให้ความอบอุ่นดี" src="/icon-detail/icon-11.jpg"}
+    :prose-img{alt="ให้ความอบอุ่นดี" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-11.jpg"}
 
     ให้ความอบอุ่นดี
 
     #item-3
-    :prose-img{alt="น้ำหนักเบา พับเก็บง่าย" src="/icon-detail/icon-3.jpg"}
+    :prose-img{alt="น้ำหนักเบา พับเก็บง่าย" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-3.jpg"}
 
     น้ำหนักเบา พับเก็บง่าย
 
     #item-4
-    :prose-img{alt="Polyester 100%" src="/icon-detail/icon-10.jpg"}
+    :prose-img{alt="Polyester 100%" src="https://storage.googleapis.com/somsri-web/icon-detail/icon-10.jpg"}
 
     Polyester 100%
 
     #item-5
-    :prose-img{alt="180 – 250 gsm." src="/icon-detail/icon-5.jpg"}
+    :prose-img{alt="180 – 250 gsm." src="https://storage.googleapis.com/somsri-web/icon-detail/icon-5.jpg"}
 
     180 – 250 gsm.
     ::::
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square.w-full.max-w-4/5 alt="ตัวอย่างงานเสื้อ" src="/blanket/MicroFleece.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square.w-full.max-w-4/5 alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/blanket/MicroFleece.jpg"}
   :::
 
   :::prose-h2{.text-center}
@@ -145,10 +145,10 @@ image: /blanket/blanket-banner.png
   imageFit: cover
   ---
   #item-1
-  :prose-img{alt="เรทราคา 1" src="/blanket/price-1.jpg"}
+  :prose-img{alt="เรทราคา 1" src="https://storage.googleapis.com/somsri-web/blanket/price-1.jpg"}
 
   #item-2
-  :prose-img{alt="เรทราคา" src="/blanket/price-2.jpg"}
+  :prose-img{alt="เรทราคา" src="https://storage.googleapis.com/somsri-web/blanket/price-2.jpg"}
   :::
 
   :::title-with-description

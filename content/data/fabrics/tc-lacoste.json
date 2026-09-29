@@ -1,6 +1,6 @@
 {
     "uid": "tc-lacoste",
-    "imageUrl": "/fabrics/tc-lacoste.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/tc-lacoste.png",
     "popupImageUrl": "/fabrics/tc-lacoste-popup.png",
     "forProductType": [
         "fabric-specification"

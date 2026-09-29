@@ -1,7 +1,7 @@
 {
     "title": "บอกเราว่าคุณอยากได้อะไร",
     "description": "ยังไม่มีดีไซน์ก็ไม่เป็นไร แค่มี mood board หรือ reference ก็เริ่มได้ ทีมเราช่วยแปลความคิดให้",
-    "image": "/how-to-order/steps/step-1.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/how-to-order/steps/step-1.jpg",
     "badge": "ปรึกษาฟรี",
     "badgeIsLink": true,
     "order": 1

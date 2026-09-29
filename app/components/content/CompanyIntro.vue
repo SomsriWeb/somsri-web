@@ -1,19 +1,19 @@
 <script setup lang="ts">
 const imgs = [
     {
-        src: '/pants/cut2.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/pants/cut2.jpg',
         alt: 'สมศรีมีเสื้อ',
     },
     {
-        src: '/pants/screen3.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/pants/screen3.jpg',
         alt: 'งบประมาณจากรูปแบบการตัดเย็บ ต้องคิดต้นทุนเมื่อทำเสื้อแบรนด์ตัวเอง',
     },
     {
-        src: '/pants/screen4.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/pants/screen4.jpg',
         alt: 'สมศรีมีเสื้อ',
     },
     {
-        src: '/pants/screen5.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/pants/screen5.jpg',
         alt: 'สมศรีมีเสื้อ',
     },
 ];

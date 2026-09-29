@@ -1,7 +1,7 @@
 ---
 title: เนื้อผ้าเสื้อโปโลมีกี่แบบ Cotton / Dry Tech / TK / TC/ CVC เลือกผ้าอะไรดี?
 description: เจาะลึกเนื้อผ้าเสื้อโปโลมีกี่แบบ! เทียบชัดๆ ข้อดี ข้อเสีย ผ้า Cotton / Dry Tech / TK / TC/ CVC เลือกผ้าไหนใส่สบาย ไม่ร้อน ไม่ย้วย เหมาะกับงบคุณ สั่งผลิตเสื้อโปโลคุณภาพที่สมศรีมีเสื้อ
-image: /blog/img-polo-shirt-fabric-types-guide.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-polo-shirt-fabric-types-guide.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -25,7 +25,7 @@ image: /blog/img-polo-shirt-fabric-types-guide.jpg
 
 ข้อดีคือนุ่มใกล้เคียง Cotton 100% แต่หดตัวน้อยกว่า ไม่ค่อยขึ้นขุย ดูแลง่ายกว่าเยอะ ส่วนข้อที่ต้องแลกก็คือราคาจะสูงกว่า TK กับ TC เพราะต้นทุนคอตตอนเยอะ แล้วสีก็อาจไม่สดจัดเท่าผ้าที่มีโพลีเอสเตอร์เป็นหลัก
 
-![ตัวอย่างเสื้อโปโลที่ผลิตจากผ้า CVC](/blog/img-polo-shirt-cvc-fabric.jpg)
+![ตัวอย่างเสื้อโปโลที่ผลิตจากผ้า CVC](https://storage.googleapis.com/somsri-web/blog/img-polo-shirt-cvc-fabric.jpg)
 
 ### 3. ผ้า TC (Polyester ผสม Cotton สัดส่วนโพลีเอสเตอร์สูง)
 

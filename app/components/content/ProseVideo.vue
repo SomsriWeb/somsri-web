@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { mediaUrl } from '~/utils/mediaUrl';
 // PROPS
 interface Props {
     videoId: string;
@@ -298,7 +299,7 @@ const videoUrl = computed(() =>
 // Get thumbnail URL for structured data
 const thumbnailUrl = computed(() => {
     if (props.thumbnail) {
-        return props.thumbnail.startsWith('http') ? props.thumbnail : `${siteUrl}${props.thumbnail}`;
+        return mediaUrl(props.thumbnail);
     }
     if (props.platform === 'youtube') {
         return `https://img.youtube.com/vi/${props.videoId}/maxresdefault.jpg`;
@@ -322,7 +323,7 @@ const videoStructuredData = computed(() => {
             name: 'สมศรีมีเสื้อ',
             logo: {
                 '@type': 'ImageObject',
-                url: `${siteUrl}/og.jpg`,
+                url: mediaUrl('/og.jpg'),
             },
         },
     };

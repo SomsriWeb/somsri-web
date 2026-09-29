@@ -15,7 +15,7 @@ contentSpacing: false
 ---
 screenHeight: false
 alt: หน้ากากผ้า
-image: /mask/mask1.png
+image: https://storage.googleapis.com/somsri-web/mask/mask1.png
 titleAsTag: h1
 ---
 #title
@@ -37,7 +37,7 @@ titleAsTag: h1
 
 ::text-above-image
 ---
-image: /mask/banner-mask.png
+image: https://storage.googleapis.com/somsri-web/mask/banner-mask.png
 alt: หน้ากากผ้า
 ---
 #title
@@ -60,7 +60,7 @@ alt:
 
 ::landing-page-image-text-split
 ---
-image: /mask/ms1.png
+image: https://storage.googleapis.com/somsri-web/mask/ms1.png
 overlayPosition: right
 overlayColor: bg-black/70
 textColor: text-white
@@ -81,7 +81,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /mask/ms2.png
+image: https://storage.googleapis.com/somsri-web/mask/ms2.png
 overlayPosition: left
 overlayColor: bg-black/70
 textColor: text-white
@@ -101,7 +101,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /mask/ms3.png
+image: https://storage.googleapis.com/somsri-web/mask/ms3.png
 overlayPosition: right
 overlayColor: bg-black/70
 textColor: text-white
@@ -122,7 +122,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /mask/ms4.png
+image: https://storage.googleapis.com/somsri-web/mask/ms4.png
 overlayPosition: left
 overlayColor: bg-black/70
 textColor: text-white
@@ -146,7 +146,7 @@ overlayWidth: 45%
 
 ::landing-page-image-text-split
 ---
-image: /mask/example-ms.png
+image: https://storage.googleapis.com/somsri-web/mask/example-ms.png
 textColor: text-black-700
 contentLayout: row
 showDivider: false
@@ -176,16 +176,16 @@ DTF
   :::carousel{:items="4" :slidesPerView="2" :slidesPerViewMobile="2" :spaceBetween="32" :loop="true" :dot="true" :autoplay="false" :centered="false" breakpoints-preset="simple" slide-aspect-ratio="3/3" full-width}
 
   #item-1
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="/mask/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="https://storage.googleapis.com/somsri-web/mask/slide1.png"}
 
   #item-2
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="/mask/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="https://storage.googleapis.com/somsri-web/mask/slide2.png"}
 
   #item-3
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="/mask/slide1.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="https://storage.googleapis.com/somsri-web/mask/slide1.png"}
 
   #item-4
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="/mask/slide2.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="https://storage.googleapis.com/somsri-web/mask/slide2.png"}
   :::
 
   ::section-title{align="center"}
@@ -229,7 +229,7 @@ DTF
 
   ::cta-banner-card
   ---
-  image: /mask/contactbt.png
+  image: https://storage.googleapis.com/somsri-web/mask/contactbt.png
   alt: หน้ากากผ้า
   ---
   #title

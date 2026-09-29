@@ -1,7 +1,7 @@
 {
     "name": "เสื้อ Jersey",
     "name-en": "Jersey",
-    "image": "/product/jersey.png",
+    "image": "https://storage.googleapis.com/somsri-web/product/jersey.png",
     "url": "/jersey",
     "featured": true,
     "order": 7

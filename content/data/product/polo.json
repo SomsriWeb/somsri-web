@@ -1,7 +1,7 @@
 {
     "name": "เสื้อโปโล",
     "name-en": "Polo",
-    "image": "/product/polo.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/polo.jpg",
     "alt": "รับออกแบบ ผลิต เสื้อโปโล",
     "url": "/polo",
     "featured": true,

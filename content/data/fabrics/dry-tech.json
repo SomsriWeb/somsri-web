@@ -1,6 +1,6 @@
 {
     "uid": "dry-tech",
-    "imageUrl": "/fabrics/dry-tech.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/dry-tech.png",
     "popupImageUrl": "/fabrics/dry-tech-popup.png",
     "forProductType": [
         "fabric-specification"

@@ -122,5 +122,5 @@ navbar: true
   4. ส่งสินค้า พร้อมรับประกันความพึงพอใจ 90 วันทุกชิ้น
   :::
 
-![ขั้นตอนการสั่งผลิตเสื้อ](/how-to-order/step-red.png)
+![ขั้นตอนการสั่งผลิตเสื้อ](https://storage.googleapis.com/somsri-web/how-to-order/step-red.png)
 ::

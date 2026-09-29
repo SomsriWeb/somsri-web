@@ -3,17 +3,17 @@
 	const data = ref([
 		{
 			text: "เรามีเนื้อผ้าให้เลือกหลากหลายชนิด",
-			image: "/tshirt-factory/many-fabric.png",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/many-fabric.png",
 			alt: "โรงงานรับผลิตเสื้อ",
 		},
 		{
 			text: "พร้อมให้คุณสกรีนลายเสื้อแบบครบจบในที่เดียว",
-			image: "/tshirt-factory/screen-all-in-one.png",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/screen-all-in-one.png",
 			alt: "งบประมาณจากรูปแบบการตัดเย็บ ต้องคิดต้นทุนเมื่อทำเสื้อแบรนด์ตัวเอง",
 		},
 		{
 			text: "มีรีวิวจากสินค้าจริงให้คุณได้ตัดสินใจก่อนการสั่งซื้อกับโรงงานผลิตเสื้อ",
-			image: "/tshirt-factory/real-review.png",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/real-review.png",
 			alt: "โรงงานผลิตเสื้อผ้า",
 		},
 	])

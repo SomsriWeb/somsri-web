@@ -1,7 +1,7 @@
 ---
 title: รับผลิตเสื้อโปโลแฟชั่นตามสั่ง (Custom Design) เปลี่ยนไอเดียของคุณให้เป็นแบรนด์เสื้อสุดชิค ไม่ซ้ำใคร
 description: สมศรีมีเสื้อรับผลิตเสื้อโปโลแฟชั่น เสื้อโปโลบริษัทตามสั่ง ทำแบรนด์เสื้อโปโล ออกแบบเองได้อิสระ สร้างความโดดเด่นได้ในทุกรายละเอียด ช่วยยกระดับเสื้อโปโลธรรมดาให้กลายเป็นเสื้อแฟชั่นได้เลย
-image: /blog/img-custom-polo-design.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-custom-polo-design.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -38,7 +38,7 @@ image: /blog/img-custom-polo-design.jpg
 
 รายละเอียดต่าง ๆ ที่ custom เฉพาะแบรนด์ ช่วยยกระดับเสื้อโปโลธรรมดาจาก “เสื้อฟอร์ม” ให้กลายเป็น “เสื้อแฟชั่น” ได้เลย
 
-![การเลือกเนื้อผ้า](/blog/img-fabric-choice.jpg)
+![การเลือกเนื้อผ้า](https://storage.googleapis.com/somsri-web/blog/img-fabric-choice.jpg)
 
 ### Fabric Choice
 
@@ -71,7 +71,7 @@ image: /blog/img-custom-polo-design.jpg
 
 การสร้างแบรนด์เสื้อผ้าให้ดูเป็นมืออาชีพ ต้องมีองค์ประกอบของเอกลักษณ์เฉพาะเจาะจงสำหรับแบรนด์อย่างครบถ้วน เช่น ป้ายคอ (Neck Label) ป้ายข้าง (Side Tag) ป้ายไซซ์ (Size Label) รายละเอียดเล็ก ๆ เหล่านี้ช่วยให้เสื้อดูเป็นแบรนด์จริง เหมือนกับแบรนด์เสื้อผ้าระดับโลก ถึงเป็นองค์ประกอบเล็ก ๆ แต่ก็ช่วยให้ลูกค้าสัมผัสได้ถึงความใส่ใจทุกรายละเอียดของแบรนด์
 
-![Label เสื้อโปโล](/blog/img-labels-shirt.jpg)
+![Label เสื้อโปโล](https://storage.googleapis.com/somsri-web/blog/img-labels-shirt.jpg)
 
 ## ขั้นตอนการปั้นแบรนด์เสื้อโปโลกับ Somsri T-Shirt
 

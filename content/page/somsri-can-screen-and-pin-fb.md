@@ -5,7 +5,7 @@ footer: false
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/b3a20
 ---
-::landing-page-header-style-three{image="/somsri-can-screen-and-pin/banner.png"}
+::landing-page-header-style-three{image="https://storage.googleapis.com/somsri-web/somsri-can-screen-and-pin/banner.png"}
 #title
 รับผลิตเสื้อโปโล
 
@@ -42,10 +42,10 @@ lineLink: https://contact.somsritshirt.com/b3a20
 
     ::slider{:items="2" :slidesPerView="2"}
     #item-1
-    <ProseImg src="/somsri-can-screen-and-pin/polo-price-table-1.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/somsri-can-screen-and-pin/polo-price-table-1.png" />
 
     #item-2
-    <ProseImg src="/somsri-can-screen-and-pin/polo-price-table-2.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/somsri-can-screen-and-pin/polo-price-table-2.png" />
     ::
 
 <ProseP class="!text-primary text-center text-xl">**ทางเรามีบริการ QC & Pack อย่างดี **</ProseP>
@@ -54,25 +54,25 @@ lineLink: https://contact.somsritshirt.com/b3a20
 
     ::slider{:items="7"}
     #item-1
-    <ProseImg src="/produce-tshirt/screen-size-1.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-1.png" />
 
     #item-2
-    <ProseImg src="/produce-tshirt/screen-size-2.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-2.png" />
 
     #item-3
-    <ProseImg src="/produce-tshirt/screen-size-3.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-3.png" />
 
     #item-4
-    <ProseImg src="/produce-tshirt/screen-size-4.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-4.png" />
     
     #item-5
-    <ProseImg src="/produce-tshirt/screen-size-5.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-5.png" />
 
     #item-6
-    <ProseImg src="/produce-tshirt/screen-size-6.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-6.png" />
 
     #item-7
-    <ProseImg src="/produce-tshirt/screen-size-7.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-7.png" />
     ::
 
 ## ราคางานปัก

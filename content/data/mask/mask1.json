@@ -1,5 +1,5 @@
 {
     "name": "หน้ากาก",
-    "image": "/mask/mask1.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/mask/mask1.png",
     "order": 1
 }

@@ -17,8 +17,8 @@ seo:
 
 ::hero-page
 ---
-image: /sport/sport-hero.jpg
-imageMobile: /sport/sport-hero-mobile.jpg
+image: https://storage.googleapis.com/somsri-web/sport/sport-hero.jpg
+imageMobile: https://storage.googleapis.com/somsri-web/sport/sport-hero-mobile.jpg
 alt: เสื้อกีฬาสั่งทำ
 suitForLabel: เชื่อใจโดย
 ---
@@ -67,8 +67,8 @@ suitForLabel: เชื่อใจโดย
 
 ::sub-hero
 ---
-image: /sport/sport-sub.jpg
-imageMobile: /sport/sport-sub-mobile.jpg
+image: https://storage.googleapis.com/somsri-web/sport/sport-sub.jpg
+imageMobile: https://storage.googleapis.com/somsri-web/sport/sport-sub-mobile.jpg
 alt: ทำไมต้องเสื้อกีฬา
 imagePosition: left
 ---
@@ -95,7 +95,7 @@ imagePosition: left
 แต่ละชนิดออกแบบมาสำหรับการใช้งานที่ต่างกัน เลือกให้ตรงกับกิจกรรมและสภาพอากาศจริงของคุณ
 
 #item-1-image
-:prose-img{src="/sport/fabrics/micro-sport.jpg" alt="ผ้า Micro Sport" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/fabrics/micro-sport.jpg" alt="ผ้า Micro Sport" .h-full .w-full .object-cover}
 
 #item-1-tag
 อเนกประสงค์ / คุ้มค่า
@@ -112,7 +112,7 @@ Micro Sport
 - สันทนาการ
 
 #item-2-image
-:prose-img{src="/sport/fabrics/juti-micro.jpg" alt="ผ้า Juti Micro" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/fabrics/juti-micro.jpg" alt="ผ้า Juti Micro" .h-full .w-full .object-cover}
 
 #item-2-tag
 กลางแจ้ง / ร้อน
@@ -129,7 +129,7 @@ Juti Micro
 - กิจกรรมกลางแจ้ง
 
 #item-3-image
-:prose-img{src="/sport/fabrics/tk.jpg" alt="ผ้า TK" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/fabrics/TK.jpg" alt="ผ้า TK" .h-full .w-full .object-cover}
 
 #item-3-tag
 พรีเมี่ยม / ทนทาน
@@ -145,7 +145,7 @@ TK
 - เสื้อแบรนด์
 
 #item-4-image
-:prose-img{src="/sport/fabrics/tc.jpg" alt="ผ้า TC" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/fabrics/TC.jpg" alt="ผ้า TC" .h-full .w-full .object-cover}
 
 #item-4-tag
 แบรนด์ / ลายคม
@@ -169,7 +169,7 @@ TC
 เสื้อสี เสื้องานวิ่ง เสื้อกิจกรรม ทุกโอกาสที่ต้องใส่พร้อมกัน
 
 #item-1-image
-:prose-img{src="/sport/1.jpg" alt="เสื้อสีโรงเรียน" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/1.jpg" alt="เสื้อสีโรงเรียน" .h-full .w-full .object-cover}
 
 #item-1-title
 เสื้อสีโรงเรียน
@@ -178,7 +178,7 @@ TC
 สีตามบ้าน พร้อมชื่อนักเรียน พิมพ์ลาย หรือสกรีนโลโก้ ราคาเหมาะสมสั่งได้จำนวนมาก
 
 #item-2-image
-:prose-img{src="/sport/2.jpg" alt="เสื้อกิจกรรมองค์กร" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/2.jpg" alt="เสื้อกิจกรรมองค์กร" .h-full .w-full .object-cover}
 
 #item-2-title
 เสื้อกิจกรรมองค์กร
@@ -187,7 +187,7 @@ TC
 เสื้อกีฬาสีสำหรับงาน team building วันสถาปนา หรืองานสันทนาการประจำปี
 
 #item-3-image
-:prose-img{src="/sport/3.jpg" alt="เสื้องานอีเว้นต์" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/3.jpg" alt="เสื้องานอีเว้นต์" .h-full .w-full .object-cover}
 
 #item-3-title
 เสื้องานอีเว้นต์
@@ -196,7 +196,7 @@ TC
 เสื้อที่ระลึก เสื้อสต๊าฟงาน เสื้อแจกผู้เข้าร่วม พิมพ์ลายตามธีมงาน
 
 #item-4-image
-:prose-img{src="/sport/4.jpg" alt="เสื้อแบรนด์และ Merchandise" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/4.jpg" alt="เสื้อแบรนด์และ Merchandise" .h-full .w-full .object-cover}
 
 #item-4-title
 เสื้อแบรนด์และ Merchandise
@@ -205,7 +205,7 @@ TC
 พิมพ์ลาย Sublimation เต็มตัว ดีไซน์เฉพาะ สีสดคมชัด ไม่ลอกไม่ซีด
 
 #item-5-image
-:prose-img{src="/sport/5.jpg" alt="เสื้อกีฬาโรงเรียน" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/5.jpg" alt="เสื้อกีฬาโรงเรียน" .h-full .w-full .object-cover}
 
 #item-5-title
 เสื้อกีฬาโรงเรียน
@@ -214,7 +214,7 @@ TC
 ตามแบบโรงเรียน พร้อมชื่อนักเรียน ราคาเหมาะสมสำหรับสั่งจำนวนมาก
 
 #item-6-image
-:prose-img{src="/sport/6.jpg" alt="เสื้องานวิ่ง / Fun Run" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/sport/6.jpg" alt="เสื้องานวิ่ง / Fun Run" .h-full .w-full .object-cover}
 
 #item-6-title
 เสื้องานวิ่ง / Fun Run
@@ -275,8 +275,8 @@ TC
 
 ::seo-intro
 ---
-image: /sport/sport-intro.jpg
-imageMobile: /sport/sport-intro-mobile.jpg
+image: https://storage.googleapis.com/somsri-web/sport/sport-intro.jpg
+imageMobile: https://storage.googleapis.com/somsri-web/sport/sport-intro-mobile.jpg
 alt: รับผลิตเสื้อกีฬา
 ---
 #eyebrow
@@ -297,7 +297,7 @@ alt: รับผลิตเสื้อกีฬา
 
 ::sport-final-cta
 ---
-image: /sport/sport-cta.jpg
+image: https://storage.googleapis.com/somsri-web/sport/sport-cta.jpg
 alt: เสื้อกีฬาสมศรี
 ---
 #title

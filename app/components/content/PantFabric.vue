@@ -53,7 +53,7 @@ defineSlots<Slots>();
 		<!-- ภาพ -->
 		<div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
 			<ProseImg
-				src="/pants/image1.png"
+				src="https://storage.googleapis.com/somsri-web/pants/image1.png"
 				alt="ผ้า Fasbix"
 				class="rounded-[2rem] max-w-md object-contain"
 			/>
@@ -65,7 +65,7 @@ defineSlots<Slots>();
 		<!-- รูปภาพ -->
 		<div class="flex-shrink-0 w-full md:w-1/2 flex justify-center">
 			<ProseImg
-				src="/pants/image2.png"
+				src="https://storage.googleapis.com/somsri-web/pants/image2.png"
 				alt="ผ้า French Terry"
 				class="rounded-[2rem] max-w-md object-contain"
 			/>

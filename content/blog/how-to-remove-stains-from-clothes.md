@@ -1,7 +1,7 @@
 ---
 title: วิธีกำจัดคราบเปื้อนบนเสื้อผ้า ให้ผ้าสะอาดเหมือนใหม่
 description: เสื้อตัวโปรดเลอะคราบฝังลึกใช่ไหม? สมศรีมีเสื้อ รวมวิธีกำจัดคราบเปื้อนบนเสื้อผ้า ทั้งคราบหมึก กาแฟ คราบเหลือง ให้ผ้าสะอาดหมดจดเหมือนใหม่
-image: /blog/img-how-to-remove-stains-from-clothes.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-remove-stains-from-clothes.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -37,7 +37,7 @@ image: /blog/img-how-to-remove-stains-from-clothes.jpg
 
 การใช้แปรงแข็งๆ หรือการขยี้แรงๆ หลายครั้งไม่ได้ช่วยให้คราบหลุดเร็วขึ้น แต่กลับทำให้คราบกระจายกว้างเป็นวงกว้างขึ้นแทน รวมถึงยังซึมลึกเข้าไปในเนื้อผ้าจนขจัดได้อย่างมากกว่าเดิม
 
-![ตัวอย่างคราบบนเสื้อผ้า](/blog/img-example-stains-from-clothes.png)
+![ตัวอย่างคราบบนเสื้อผ้า](https://storage.googleapis.com/somsri-web/blog/img-example-stains-from-clothes.png)
 
 ## มัดรวมวิธีกำจัดคราบเปื้อนยอดฮิต 4 ประเภท (ทำตามง่าย ได้ผลจริง)
 
@@ -107,7 +107,7 @@ image: /blog/img-how-to-remove-stains-from-clothes.jpg
 
 เสื้อผ้าแต่ละชนิดมีวิธีดูแลแตกต่างกัน เช่น ผ้าไหม ผ้าวูล หรือผ้าเนื้อบางบางประเภท ไม่สามารถใช้น้ำยา หรือสารเคมีบางชนิดได้ ดังนั้นจึงควรอ่านป้ายดูแลรักษาก่อนซักเสื้อตัวโปรด และถือเป็นพื้นฐานของเทคนิคการซักเสื้อผ้าให้สะอาดที่หลายคนมักมองข้าม
 
-![ตัวอย่างป้าย Care Label](/blog/img-care-label-example.png)
+![ตัวอย่างป้าย Care Label](https://storage.googleapis.com/somsri-web/blog/img-care-label-example.png)
 
 ## เลือกเสื้อผ้าคุณภาพดี ดูแลรักษาง่าย ต้องที่ "สมศรีมีเสื้อ"
 

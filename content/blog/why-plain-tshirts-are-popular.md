@@ -1,7 +1,7 @@
 ---
 title: เสื้อยืดสีพื้น ทำไมถึงขายดี? เจาะเหตุผลที่ใครก็ต้องมีติดตู้
 description: ไขความลับ! ทำไมเสื้อยืดสีพื้นถึงขายดีตลอดกาล แต่งตู้ยังไงก็รอด แมตช์ง่าย ได้ทุกสไตล์ พร้อมเทคนิคเลือกผ้า Cotton คุณภาพดี สั่งราคาส่งได้ที่สมศรีมีเสื้อ
-image: /blog/img-why-plain-tshirts-are-popular.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-why-plain-tshirts-are-popular.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -37,7 +37,7 @@ image: /blog/img-why-plain-tshirts-are-popular.jpg
 
 ตลาดตอนนี้มีเสื้อยืดสีพื้นให้เลือกหลากหลายมาก ทั้งสีสันและเนื้อผ้า ทำให้ลูกค้าหาตัวที่ตรงกับสไตล์ตัวเองได้ง่ายกว่าเสื้อผ้าลายที่มีตัวเลือกจำกัดกว่า
 
-![ตัวอย่างเสื้อยืดสีพื้น](/blog/img-plain-tshirts-example.jpg)
+![ตัวอย่างเสื้อยืดสีพื้น](https://storage.googleapis.com/somsri-web/blog/img-plain-tshirts-example.jpg)
 
 ## เสื้อยืดสีพื้น สีไหนขายดีตลอดกาล
 
@@ -74,7 +74,7 @@ image: /blog/img-why-plain-tshirts-are-popular.jpg
 
 ถ้าให้แนะนำ ผมว่า Look 1 กับ Look 3 คือสองสไตล์ที่คนไทยใส่กันเยอะที่สุดตอนนี้ครับ เพราะเข้ากับไลฟ์สไตล์ที่ต้องเดินทางบ่อยและอากาศร้อน
 
-![ตัวอย่างการแต่งตัวด้วยเสื้อยืดสีพื้นสไตล์ Minimal Casual](/blog/img-tshirt-casual-style.jpg)
+![ตัวอย่างการแต่งตัวด้วยเสื้อยืดสีพื้นสไตล์ Minimal Casual](https://storage.googleapis.com/somsri-web/blog/img-tshirt-casual-style.jpg)
 
 ## ทำไมเสื้อยืดสีพื้นถึงเป็นจุดเริ่มต้นที่ดีที่สุดในการ "สร้างแบรนด์เสื้อผ้า"?
 

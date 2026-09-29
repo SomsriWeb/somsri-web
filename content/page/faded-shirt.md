@@ -15,7 +15,7 @@ navbar: true
 ::landing-page-header-style-two
 ---
 alt: รับผลิตเสื้อฟอก เสื้อวินเทจ เสื้อเฟด พร้อมสกรีน สั่งทำกับสมศรีมีเสื้อ
-image: /faded-shirt/faded-banner.png
+image: https://storage.googleapis.com/somsri-web/faded-shirt/faded-banner.png
 ---
 #title
 รับผลิตเสื้อฟอก เสื้อวินเทจ
@@ -57,7 +57,7 @@ image: /faded-shirt/faded-banner.png
   - ให้ลุควินเทจแบบธรรมชาติ ใส่ง่าย เข้ากับหลายสไตล์
 
   #image
-  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/faded-shirt1.jpg"}
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/faded-shirt/faded-shirt1.jpg"}
   :::
 
   :::prose-h2
@@ -77,29 +77,29 @@ image: /faded-shirt/faded-banner.png
 
   :::icon-feature-grid
   #item-1
-  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
   เหมาะกับทำเสื้อยืดเกรดแบรนด์
 
   #item-2
-  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-4.jpg" alt="Cotton 100%"}
   Cotton 100%
   
   #item-3
-  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
   ไม่ยับง่าย
 
   #item-4
-  :prose-img{src="/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
   190 - 220 gsm
 
   #item-5
-  :prose-img{src="/icon-detail/icon-3.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-3.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
   เนื้อผ้าเนียนนุ่ม
   
   :::
 
   #image
-  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb20.jpg"}
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/faded-shirt/CottonComb20.jpg"}
   :::
 
   :::split-content
@@ -116,29 +116,29 @@ image: /faded-shirt/faded-banner.png
 
   :::icon-feature-grid
   #item-1
-  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
   เหมาะกับทำเสื้อยืดเกรดแบรนด์
 
   #item-2
-  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-4.jpg" alt="Cotton 100%"}
   Cotton 100%
   
 
   #item-3
-  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
   ไม่ยับง่าย
 
   #item-4
-  :prose-img{src="/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-5.jpg" alt="น้ำหนักผ้า 190 - 220 gsm"}
   180 – 200 gsm.
 
   #item-5
-  :prose-img{src="/icon-detail/icon-7.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-7.jpg" alt="เนื้อผ้าเนียนนุ่ม"}
   เนื้อผ้ายังนุ่ม แต่จะไม่บางพลิ้ว
   :::
 
   #image
-  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb25.jpg"}
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/faded-shirt/CottonComb25.jpg"}
   :::
 
   :::split-content
@@ -155,29 +155,29 @@ image: /faded-shirt/faded-banner.png
 
   :::icon-feature-grid
   #item-1
-  :prose-img{src="/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-1.jpg" alt="เหมาะกับทำเสื้อยืดเกรดแบรนด์"}
   เหมาะกับทำเสื้อยืดเกรดแบรนด์
 
   #item-2
-  :prose-img{src="/icon-detail/icon-4.jpg" alt="Cotton 100%"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-4.jpg" alt="Cotton 100%"}
   Cotton 100%
   
 
   #item-3
-  :prose-img{src="/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-2.jpg" alt="ไม่ยับง่าย"}
   ไม่ยับง่าย
 
   #item-4
-  :prose-img{src="/icon-detail/icon-5.jpg" alt="180 – 200 gsm."}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-5.jpg" alt="180 – 200 gsm."}
   180 – 200 gsm.
 
   #item-5
-  :prose-img{src="/icon-detail/icon-6.jpg" alt="ระบายอากาศได้ดี"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/icon-detail/icon-6.jpg" alt="ระบายอากาศได้ดี"}
   ระบายอากาศได้ดี
   :::
 
   #image
-  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="/faded-shirt/CottonComb32.jpg"}
+  :prose-img{class="rounded-lg object-cover aspect-square w-full max-w-4/5" alt="ตัวอย่างงานเสื้อ" src="https://storage.googleapis.com/somsri-web/faded-shirt/CottonComb32.jpg"}
   :::
 
 ## เสื้อฟอกที่ สมศรีมีเสื้อ มีกี่รูปแบบ
@@ -196,23 +196,23 @@ image: /faded-shirt/faded-banner.png
   cellClass: '!rounded-2xl'
   ---
   #item-1
-  :prose-img{src="/faded-shirt/shirt/faded-shirt1.jpg" alt="ตัวอย่างงานเสื้อฟอก 1"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt1.jpg" alt="ตัวอย่างงานเสื้อฟอก 1"}
   #item-2
-  :prose-img{src="/faded-shirt/shirt/faded-shirt2.jpg" alt="ตัวอย่างงานเสื้อฟอก 2"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt2.jpg" alt="ตัวอย่างงานเสื้อฟอก 2"}
   #item-3
-  :prose-img{src="/faded-shirt/shirt/faded-shirt3.jpg" alt="ตัวอย่างงานเสื้อฟอก 3"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt3.jpg" alt="ตัวอย่างงานเสื้อฟอก 3"}
   #item-4
-  :prose-img{src="/faded-shirt/shirt/faded-shirt4.jpg" alt="ตัวอย่างงานเสื้อฟอก 4"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt4.jpg" alt="ตัวอย่างงานเสื้อฟอก 4"}
   #item-5
-  :prose-img{src="/faded-shirt/shirt/faded-shirt5.jpg" alt="ตัวอย่างงานเสื้อฟอก 5"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt5.jpg" alt="ตัวอย่างงานเสื้อฟอก 5"}
   #item-6
-  :prose-img{src="/faded-shirt/shirt/faded-shirt6.jpg" alt="ตัวอย่างงานเสื้อฟอก 6"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt6.jpg" alt="ตัวอย่างงานเสื้อฟอก 6"}
   #item-7
-  :prose-img{src="/faded-shirt/shirt/faded-shirt7.jpg" alt="ตัวอย่างงานเสื้อฟอก 7"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt7.jpg" alt="ตัวอย่างงานเสื้อฟอก 7"}
   #item-8
-  :prose-img{src="/faded-shirt/shirt/faded-shirt8.jpg" alt="ตัวอย่างงานเสื้อฟอก 8"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt8.jpg" alt="ตัวอย่างงานเสื้อฟอก 8"}
   #item-9
-  :prose-img{src="/faded-shirt/shirt/faded-shirt9.jpg" alt="ตัวอย่างงานเสื้อฟอก 9"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/faded-shirt/shirt/faded-shirt9.jpg" alt="ตัวอย่างงานเสื้อฟอก 9"}
   :::
 
   :::title-with-description{:spacing=3}

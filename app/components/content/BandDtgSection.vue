@@ -6,9 +6,9 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-    mainShirtImage: '/band-shirt/dtg-bigass.png',
-    sampleImage1: '/band-shirt/dtg-cheunjai.png',
-    sampleImage2: '/band-shirt/dtg-maleehuana.png',
+    mainShirtImage: 'https://storage.googleapis.com/somsri-web/band-shirt/dtg-bigass.png',
+    sampleImage1: 'https://storage.googleapis.com/somsri-web/band-shirt/dtg-cheunjai.png',
+    sampleImage2: 'https://storage.googleapis.com/somsri-web/band-shirt/dtg-maleehuana.png',
 });
 
 interface Slots {

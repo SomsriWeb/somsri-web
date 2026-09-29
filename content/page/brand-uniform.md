@@ -13,8 +13,8 @@ navbar: false
 ::hero-page
 ---
 alt: รับผลิตเสื้อผ้าแบรนด์ครบวงจร
-image: /brand-uniform/hero.png
-imageMobile: /brand-uniform/hero.png
+image: https://storage.googleapis.com/somsri-web/brand-uniform/hero.png
+imageMobile: https://storage.googleapis.com/somsri-web/brand-uniform/hero.png
 suitForLabel: เหมาะกับ
 ---
 #eyebrow
@@ -60,8 +60,8 @@ suitForLabel: เหมาะกับ
 ::sub-herobg
 ---
 alt: แบรนด์ที่ดีไม่ได้อยู่แค่บนโลโก้
-image: /brand-uniform/why-us.png
-imageMobile: /brand-uniform/why-us.png
+image: https://storage.googleapis.com/somsri-web/brand-uniform/why-us.png
+imageMobile: https://storage.googleapis.com/somsri-web/brand-uniform/why-us.png
 imagePosition: left
 ---
 #eyebrow
@@ -84,7 +84,7 @@ imagePosition: left
 แต่คือความรู้สึกแรกที่ลูกค้าสัมผัสแบรนด์คุณ
 
 #item-1-image
-:prose-img{src="/brand-uniform/cotton-comb.png" alt="ผ้า Cotton Comb" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/cotton-comb.png" alt="ผ้า Cotton Comb" .h-full .w-full .object-cover}
 
 #item-1-tag
 เนื้อผ้าเนียนนุ่ม คุณภาพดี
@@ -101,7 +101,7 @@ Cotton Comb
 - เสื้อทรงโอเวอร์ไซซ์
 
 #item-2-image
-:prose-img{src="/brand-uniform/supersoff.png" alt="ผ้า Supersoft" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/supersoff.png" alt="ผ้า Supersoft" .h-full .w-full .object-cover}
 
 #item-2-tag
 สัมผัสนุ่มลื่น เพิ่มความพรีเมียมให้สินค้า
@@ -118,7 +118,7 @@ Supersoft
 - เสื้อคอลเลกชันพรีเมียม
 
 #item-3-image
-:prose-img{src="/brand-uniform/tc-tk.png" alt="ผ้า TC" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/tc-tk.png" alt="ผ้า TC" .h-full .w-full .object-cover}
 
 #item-3-tag
 อยู่ทรงดี ดูแลง่าย
@@ -135,7 +135,7 @@ TC
 - เสื้อกิจกรรม
 
 #item-4-image
-:prose-img{src="/brand-uniform/dry-feel.png" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/dry-feel.png" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
 
 #item-4-tag
 สำหรับทำเสื้อโปโลพรีเมียม
@@ -161,7 +161,7 @@ Dry Feel
 เราผลิตตามแนวทางของแบรนด์คุณ
 
 #item-1-image
-:prose-img{src="/brand-uniform/product-type/tshirt.png" alt="เสื้อยืดและเสื้อ Oversized" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/tshirt.png" alt="เสื้อยืดและเสื้อ Oversized" .h-full .w-full .object-cover}
 
 #item-1-title
 เสื้อยืดและเสื้อ Oversized
@@ -170,7 +170,7 @@ Dry Feel
 เลือกความหนา เนื้อสัมผัส ทรงคอ ความยาวแขน และทรงลำตัวได้ตามสไตล์ของแบรนด์
 
 #item-2-image
-:prose-img{src="/brand-uniform/product-type/polo.png" alt="เสื้อโปโล" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/polo.png" alt="เสื้อโปโล" .h-full .w-full .object-cover}
 
 #item-2-title
 เสื้อโปโล
@@ -179,7 +179,7 @@ Dry Feel
 เหมาะกับแบรนด์ Classic, Smart Casual และเสื้อ Uniform ระดับพรีเมียม สามารถปรับปก แขน กระดุม และงานปักได้
 
 #item-3-image
-:prose-img{src="/brand-uniform/product-type/tank.png" alt="เสื้อกีฬา" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/tank.png" alt="เสื้อกีฬา" .h-full .w-full .object-cover}
 
 #item-3-title
 เสื้อกีฬา
@@ -188,7 +188,7 @@ Dry Feel
 รองรับผ้าระบายอากาศ ผ้ายืด และงานพิมพ์ Sublimation สำหรับแบรนด์กีฬาและเสื้อทีม
 
 #item-4-image
-:prose-img{src="/brand-uniform/product-type/shirt.png" alt="เสื้อเชิ้ต" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/shirt.png" alt="เสื้อเชิ้ต" .h-full .w-full .object-cover}
 
 #item-4-title
 เสื้อเชิ้ต
@@ -197,7 +197,7 @@ Dry Feel
 เหมาะกับแบรนด์ Classic, Smart Casual และเสื้อ Uniform ระดับพรีเมียม สามารถปรับปก แขน กระดุม และงานปักได้
 
 #item-5-image
-:prose-img{src="/brand-uniform/product-type/sweater.png" alt="เสื้อสเวตเตอร์" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/sweater.png" alt="เสื้อสเวตเตอร์" .h-full .w-full .object-cover}
 
 #item-5-title
 เสื้อสเวตเตอร์
@@ -206,7 +206,7 @@ Dry Feel
 เหมาะกับแบรนด์ Streetwear, Minimal และ Casual สามารถเลือกเนื้อผ้า สี และรายละเอียดการตกแต่งได้ตามต้องการ
 
 #item-6-image
-:prose-img{src="/brand-uniform/product-type/custom.png" alt="งานผลิตตามแบบ" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/product-type/custom.png" alt="งานผลิตตามแบบ" .h-full .w-full .object-cover}
 
 #item-6-title
 งานผลิตตามแบบ
@@ -246,16 +246,16 @@ Dry Feel
   ที่ใส่ใจในทุกขั้นตอน
 
   #item-1-image
-  :prose-img{src="/brand-uniform/portfolio/1.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 1"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/portfolio/1.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 1"}
 
   #item-2-image
-  :prose-img{src="/brand-uniform/portfolio/2.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 2"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/portfolio/2.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 2"}
 
   #item-3-image
-  :prose-img{src="/brand-uniform/portfolio/3.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 3"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/portfolio/3.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 3"}
 
   #item-4-image
-  :prose-img{src="/brand-uniform/portfolio/4.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 4"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/brand-uniform/portfolio/4.png" alt="ตัวอย่างเสื้อแบรนด์สมศรี 4"}
   :::
 ::
 
@@ -305,8 +305,8 @@ Dry Feel
 
 ::seo-intro
 ---
-image: /brand-uniform/why-choose-factory.png
-imageMobile: /brand-uniform/why-choose-factory.png
+image: https://storage.googleapis.com/somsri-web/brand-uniform/why-choose-factory.png
+imageMobile: https://storage.googleapis.com/somsri-web/brand-uniform/why-choose-factory.png
 alt: ตัวอย่างเสื้อผ้าแบรนด์จากสมศรีมีเสื้อ
 ---
 #eyebrow
@@ -330,8 +330,8 @@ alt: ตัวอย่างเสื้อผ้าแบรนด์จาก
 
 ::brand-final-cta
 ---
-image: /brand-uniform/final-cta.png
-imageMobile: /brand-uniform/final-cta.png
+image: https://storage.googleapis.com/somsri-web/brand-uniform/final-cta.png
+imageMobile: https://storage.googleapis.com/somsri-web/brand-uniform/final-cta.png
 alt: พร้อมเริ่มสร้างแบรนด์กับสมศรีมีเสื้อ
 ---
 #title

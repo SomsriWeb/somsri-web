@@ -1,6 +1,6 @@
 ---
 title: สกรีนเสื้อ Sublimation (ซับลิเมชั่น) คืออะไร ทำความรู้จักงาน Sublimation
-image: /blog/somsri-sublimation-1.jpg
+image: https://storage.googleapis.com/somsri-web/blog/somsri-sublimation-1.jpg
 ---
 
 Sublimation คือ กระบวนการพิมพ์ภาพลงบนกระดาษด้วยหมึกพิเศษ สกรีนโดยใช้ความร้อนกดทับไปยังเสื้อหรือวัตถุที่ต้องการสกรีน

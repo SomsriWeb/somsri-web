@@ -1,6 +1,6 @@
 {
     "name": "other",
-    "image": "/product/other.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/other.png",
     "url": "/other-product",
     "order": 10
 }

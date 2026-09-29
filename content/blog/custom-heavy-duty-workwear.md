@@ -1,7 +1,7 @@
 ---
 title: รับผลิตเสื้อช็อปงานช่าง ผ้าหนา ทนทาน เหมาะกับหน้างานจริง
 description: อยากได้เสื้อช็อปงานช่างลุยๆ? สมศรีมีเสื้อ รับผลิตเสื้อช็อป ผ้าหนา ทนทาน คัดสรรเนื้อผ้าพิเศษให้เหมาะกับหน้างานจริง ดีไซน์เท่ งานเนี้ยบ ไม่ทิ้งงาน!
-image: /blog/img-custom-heavy-duty-workwear.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-custom-heavy-duty-workwear.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -23,7 +23,7 @@ image: /blog/img-custom-heavy-duty-workwear.jpg
 
 นอกจากนี้ เสื้อช็อปของพนักงาน ยังเป็นเหมือน[เสื้อยูนิฟอร์มโรงงาน](https://somsritshirt.com/uniform) ที่เป็นตัวแทนของแบรนด์ด้วย ซึ่งช่วยทำให้พนักงานดูมืออาชีพ และช่วยให้ลูกค้าสามารถจดจำแบรนด์ได้ง่ายขึ้น โดยเฉพาะธุรกิจที่ต้องออกไซต์งาน หรือให้บริการนอกสถานที่บ่อยๆ
 
-![เสื้อช็อปงานช่าง](/blog/img-heavy-duty-work-shirts.png)
+![เสื้อช็อปงานช่าง](https://storage.googleapis.com/somsri-web/blog/img-heavy-duty-work-shirts.png)
 
 ## เสื้อช็อปเหมาะกับธุรกิจแบบไหนบ้าง?
 
@@ -101,7 +101,7 @@ image: /blog/img-custom-heavy-duty-workwear.jpg
 
 ในสภาวะการทำงานที่มีความร้อน รายละเอียดเล็กๆในตัวเสื้อ เช่น ช่องระบายอากาศใต้รักแร้ หรือแผ่นหลังซับตาข่าย ช่วยลดความอับชื้น ทำให้พนักงานรู้สึกสบาย แม้ต้องทำงานกลางแจ้งเป็นเวลานาน
 
-![ฟังก์ชันสำคัญที่เสื้อช็อปควรมี](/blog/img-good-workwears.png)
+![ฟังก์ชันสำคัญที่เสื้อช็อปควรมี](https://storage.googleapis.com/somsri-web/blog/img-good-workwears.png)
 
 ## ไอเดียออกแบบเสื้อช็อปให้ดูสวย เท่ และทันสมัย
 

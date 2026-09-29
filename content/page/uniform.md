@@ -18,7 +18,7 @@ seo:
 ::landing-page-header-style-one
 ---
 alt: พื้นหลังยูนิฟอร์ม
-image: /uniform/cover-1600w.png
+image: https://storage.googleapis.com/somsri-web/uniform/cover-1600w.png
 ---
 #title
 ยูนิฟอร์ม

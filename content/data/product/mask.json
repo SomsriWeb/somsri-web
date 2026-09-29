@@ -1,7 +1,7 @@
 {
     "name": "หน้ากาก",
     "name-en": "Masks",
-    "image": "/product/mask.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/mask.jpg",
     "url": "/mask",
     "featured": true,
     "order": 5

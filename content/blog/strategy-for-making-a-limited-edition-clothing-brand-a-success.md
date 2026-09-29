@@ -11,7 +11,7 @@ description: เสื้อ Limited Edition เข้ามามีบทบ�
   ทั้งแบรนด์ระดับโลก หรือแบรนด์เล็ก ก็ออกคอลเลกชั่นพิเศษมาเรื่อยๆ
   บทความนี้จะพาคุณไปเจาะลึกถึงกลยุทธ์การทำแบรนด์เสื้อ Limited Edition
   ตั้งแต่เริ่มต้นจนทำให้มัดใจลูกค้า
-image: /blog/strategy-for-making-your-limited-edition-increase-brand-value.jpg
+image: https://storage.googleapis.com/somsri-web/blog/strategy-for-making-your-limited-edition-increase-brand-value.jpg
 ---
 
 ในปัจจุบัน ผู้บริโภคมีตัวเลือกมากมายสำหรับเสื้อผ้า ตลาดมีการแข่งขันสูง รวมถึงผู้คนไม่ได้ดูแค่ความสวยงามและฟังก์ชั่นของเสื้อผ้า แต่ยังมองหาความพิเศษของเสื้อผ้า ผู้บริโภคดูถึงความไม่ธรรมดา ไม่ใช่เป็นแค่เสื้อตัวหนึ่ง แต่เป็นเสื้อที่มีเอกลักษณ์ และมีจำนวนจำกัด

@@ -1,7 +1,7 @@
 {
     "name": "สกรีนฟรอย",
     "name-en": "Gold Foil Printing",
-    "image": "/screen/foil(1).jpg",
+    "image": "https://storage.googleapis.com/somsri-web/screen/foil%281%29.jpg",
     "alt": "รับสกรีนเสื้อแบบฟรอยทอง",
     "alt-en": "Custom T-shirts with Gold Foil Printing",
     "url": "/screen/foil-gold",

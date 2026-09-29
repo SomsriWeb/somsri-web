@@ -26,6 +26,7 @@ export default defineNuxtConfig({
         '@nuxtjs/device',
         '@vueuse/nuxt',
         '@nuxt/scripts',
+        '@nuxthub/core',
         'nuxt-studio',
     ],
     app: {
@@ -37,19 +38,19 @@ export default defineNuxtConfig({
                 {
                     rel: 'apple-touch-icon',
                     sizes: '180x180',
-                    href: '/favicon/apple-touch-icon.png',
+                    href: 'https://storage.googleapis.com/somsri-web/favicon/apple-touch-icon.png',
                 },
                 {
                     rel: 'icon',
                     type: 'image/png',
                     sizes: '32x32',
-                    href: '/favicon/favicon-32x32.png',
+                    href: 'https://storage.googleapis.com/somsri-web/favicon/favicon-32x32.png',
                 },
                 {
                     rel: 'icon',
                     type: 'image/png',
                     sizes: '16x16',
-                    href: '/favicon/favicon-16x16.png',
+                    href: 'https://storage.googleapis.com/somsri-web/favicon/favicon-16x16.png',
                 },
                 {
                     rel: 'manifest',
@@ -57,7 +58,7 @@ export default defineNuxtConfig({
                 },
                 {
                     rel: 'mask-icon',
-                    href: '/favicon/safari-pinned-tab.svg',
+                    href: 'https://storage.googleapis.com/somsri-web/favicon/safari-pinned-tab.svg',
                     color: '#a52241',
                 },
                 {
@@ -231,6 +232,16 @@ export default defineNuxtConfig({
         },
         env: process.env.NODE_ENV || 'production',
     },
+    hub: {
+        blob: {
+            driver: 's3',
+            bucket: process.env.S3_BUCKET,
+            region: process.env.S3_REGION || 'auto',
+            endpoint: process.env.S3_ENDPOINT,
+            accessKeyId: process.env.S3_ACCESS_KEY_ID,
+            secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+        },
+    },
     studio: {
         repository: {
             provider: 'github', // 'github' or 'gitlab'
@@ -238,6 +249,13 @@ export default defineNuxtConfig({
             repo: 'somsri-web',
         },
         route: '/_editor',
+        media: {
+            external: true,
+            publicUrl: 'https://storage.googleapis.com/somsri-web',
+            prefix: '',
+            maxFileSize: 10 * 1024 * 1024,
+            allowedTypes: ['image/*', 'video/*'],
+        },
     },
     icon: {
         serverBundle: 'local',

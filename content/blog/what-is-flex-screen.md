@@ -1,6 +1,6 @@
 ---
 title: เสื้อยืดสกรีนแบบ Flex คืออะไร? มีข้อดี-ข้อเสียยังไง ต่างจาก DFT ยังไง?
-image: /blog/what-is-flex-screen-header.png
+image: https://storage.googleapis.com/somsri-web/blog/what-is-flex-screen-header.png
 description: สกรีนแบบ Flex คืออะไร ข้อดีและข้อเสียสำหรับงาน Flex
   เลือกเนื้อผ้าแบบไหนดี ขั้นตอนการสกรีนแบบ Flex ทำอย่างไร มีคำตอบที่นี่
 เพิ่ม script ใน head: []
@@ -53,7 +53,7 @@ DFT ดีกว่า Flex ในเรื่องของความรว�
 ปรึกษาฟรี
 ::
 
-![สกรีนแบบ flex สามารถพิมพ์สีเทคนิคพิเศษการพิมพ์สีเงิน สีทอง หรือ โฮโลแกรมได้](/blog/what-is-flex-screen-3.png)
+![สกรีนแบบ flex สามารถพิมพ์สีเทคนิคพิเศษการพิมพ์สีเงิน สีทอง หรือ โฮโลแกรมได้](https://storage.googleapis.com/somsri-web/blog/what-is-flex-screen-3.png)
 
 ## งาน Flex เหมาะกับงานแบบใด
 

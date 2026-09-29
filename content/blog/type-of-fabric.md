@@ -1,6 +1,6 @@
 ---
 title: ทำแบรนด์เสื้อเอง เนื้อผ้ามีกี่แบบ มีเนื้อผ้าแบบไหนบ้าง
-image: /blog/type-of-fabric-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/type-of-fabric-header.jpg
 ---
 
 ## ก่อนเริ่มต้นทำแบรนด์เสื้อ มาดูกันว่า เนื้อผ้ามีกี่แบบ
@@ -18,7 +18,7 @@ image: /blog/type-of-fabric-header.jpg
 ปรึกษาฟรี
 ::
 
-![เนื้อผ้ามีกี่แบบ ผ้าคอตตอน ผ้าลินิน ผ้า TK ผ้า TC ผ้า Micro Sport ผ้า Dry Tech](/blog/type-of-fabric-1.jpg)
+![เนื้อผ้ามีกี่แบบ ผ้าคอตตอน ผ้าลินิน ผ้า TK ผ้า TC ผ้า Micro Sport ผ้า Dry Tech](https://storage.googleapis.com/somsri-web/blog/type-of-fabric-1.jpg)
 
 ## เนื้อผ้ามีกี่แบบ เนื้อผ้ามีกี่ประเภท มีแบบไหนบ้าง
 
@@ -68,7 +68,7 @@ image: /blog/type-of-fabric-header.jpg
 ปรึกษาฟรี
 ::
 
-![ก่อนเริ่มต้นทำแบรนด์เสื้อ มาดูกันว่า เนื้อผ้ามีกี่แบบ และแต่ละแบบแตกต่างกันอย่างไร](/blog/type-of-fabric-2.jpg)
+![ก่อนเริ่มต้นทำแบรนด์เสื้อ มาดูกันว่า เนื้อผ้ามีกี่แบบ และแต่ละแบบแตกต่างกันอย่างไร](https://storage.googleapis.com/somsri-web/blog/type-of-fabric-2.jpg)
 
 ## ผ้า TC
 

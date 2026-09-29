@@ -1,6 +1,6 @@
 {
     "uid": "cotton-spandex",
-    "imageUrl": "/fabrics/cotton-spandex.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-spandex.jpg",
     "forProductType": [
         "tshirt",
         "polo",

@@ -1,5 +1,5 @@
 {
-    "image": "/landing-page-real-hat/hat-style-8.png",
+    "image": "https://storage.googleapis.com/somsri-web/landing-page-real-hat/hat-style-8.png",
     "label": "หมวกบักเก็ตลูกฟูก",
     "priceperunit" : [150, 140, 130, 116],
     "order": 8

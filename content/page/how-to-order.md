@@ -154,7 +154,7 @@ class: "mb-0"
 :::
 
 
-:::how-to-order-cta{image="/how-to-order/steps/cta-background.jpg"}
+:::how-to-order-cta{image="https://storage.googleapis.com/somsri-web/how-to-order/steps/cta-background.jpg"}
 #title
 ไม่รู้จะเริ่มตรงไหน\
 คือจุดเริ่มต้นที่ดีที่สุดแล้ว

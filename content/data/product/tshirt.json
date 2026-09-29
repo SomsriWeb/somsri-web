@@ -1,7 +1,7 @@
 {
     "name": "เสื้อยืด",
     "name-en": "T-Shirts",
-    "image": "/product/tshirt.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/product/tshirt.jpg",
     "alt": "เราคือ โรงงานผลิตเสื้อ รับทำเสื้อยืด เสื้อโปโล",
     "url": "/tshirt",
     "featured": true,

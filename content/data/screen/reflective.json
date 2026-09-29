@@ -1,7 +1,7 @@
 {
     "name": "สกรีนสีสะท้อนแสง",
     "name-en": "Reflective Rainbow Printing",
-    "image": "/screen/reflective.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/screen/reflective.jpg",
     "alt": "รับทำเสื้อยืดแบบสกรีนสีสะท้อนแสง",
     "alt-en": "Custom T-shirts with Reflective Rainbow Printing",
     "url": "/screen/reflective",

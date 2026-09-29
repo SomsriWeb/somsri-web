@@ -12,7 +12,7 @@ navbar: true
 
 ::hero-page
 ---
-image: /jersey/banner-jersey.png
+image: https://storage.googleapis.com/somsri-web/jersey/banner-jersey.png
 alt: รับผลิตเสื้อ Jersey
 suitForLabel: เหมาะกับ
 ---
@@ -59,7 +59,7 @@ suitForLabel: เหมาะกับ
 
 ::landing-page-image-text-split
 ---
-image: /jersey/bg.png
+image: https://storage.googleapis.com/somsri-web/jersey/bg.png
 overlayPosition: right
 overlayColor: bg-stone-100/90
 textColor: text-primary
@@ -87,7 +87,7 @@ imagePosition: object-[20%_center]
   โดดเด่นทุกดีไซน์ ใส่สบายทุกการเคลื่อนไหว
 
   #item-1-image
-  :prose-img{src="/jersey/fabrics/runway.png" alt="เนื้อผ้าสายฟ้า หรือผ้ารันเวย์ (Runway)" .h-full .w-full .object-cover}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/jersey/fabrics/runway.png" alt="เนื้อผ้าสายฟ้า หรือผ้ารันเวย์ (Runway)" .h-full .w-full .object-cover}
 
   #item-1-tag
   ความยืดหยุ่นสูงสุด
@@ -104,7 +104,7 @@ imagePosition: object-[20%_center]
   - ทีม E-Sport
 
   #item-2-image
-  :prose-img{src="/jersey/fabrics/micro-honeycomb.png" alt="เนื้อผ้ารังผึ้งไมโคร (Micro Honeycomb)" .h-full .w-full .object-cover}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/jersey/fabrics/micro-honeycomb.png" alt="เนื้อผ้ารังผึ้งไมโคร (Micro Honeycomb)" .h-full .w-full .object-cover}
 
   #item-2-tag
   ระบายอากาศ + ภูมิฐาน
@@ -121,7 +121,7 @@ imagePosition: object-[20%_center]
   - สปอร์ตแฟชั่น
 
   #item-3-image
-  :prose-img{src="/jersey/fabrics/micro-star.jpg" alt="ดาวกระจายไมโคร (Micro Star)" .h-full .w-full .object-cover}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/jersey/fabrics/micro-star.jpg" alt="ดาวกระจายไมโคร (Micro Star)" .h-full .w-full .object-cover}
 
   #item-3-tag
   น้ำหนักเบา เน้นการระบายอากาศ
@@ -138,7 +138,7 @@ imagePosition: object-[20%_center]
   - กิจกรรมกลางแจ้ง
 
   #item-4-image
-  :prose-img{src="/jersey/fabrics/rice-grain.jpg" alt="เนื้อผ้าเม็ดข้าวสาร (Rice Grain)" .h-full .w-full .object-cover}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/jersey/fabrics/rice-grain.jpg" alt="เนื้อผ้าเม็ดข้าวสาร (Rice Grain)" .h-full .w-full .object-cover}
 
   #item-4-tag
   ลายละเอียด สัมผัสนุ่ม
@@ -184,7 +184,7 @@ imagePosition: object-[20%_center]
 
   :::print-technique-banner
   ---
-  image: /jersey/sublimation-printer.png
+  image: https://storage.googleapis.com/somsri-web/jersey/sublimation-printer.png
   alt: เครื่องพิมพ์ Sublimation กำลังพิมพ์ลายเสื้อเจอร์ซี่ย์
   imagePosition: center
   ---
@@ -209,13 +209,13 @@ imagePosition: object-[20%_center]
 
   :::print-sample-grid
   #item-1
-  :prose-img{alt="เสื้อ Jersey พิมพ์ลายด้านหน้า พร้อมโลโก้" src="/jersey/fabrics/jersey1.jpg"}
+  :prose-img{alt="เสื้อ Jersey พิมพ์ลายด้านหน้า พร้อมโลโก้" src="https://storage.googleapis.com/somsri-web/jersey/fabrics/jersey1.jpg"}
 
   #item-2
-  :prose-img{alt="เสื้อ Jersey พิมพ์ลายด้านหลัง ข้อความองค์กร" src="/jersey/fabrics/jersey5.jpg"}
+  :prose-img{alt="เสื้อ Jersey พิมพ์ลายด้านหลัง ข้อความองค์กร" src="https://storage.googleapis.com/somsri-web/jersey/fabrics/jersey5.jpg"}
 
   #item-3
-  :prose-img{alt="รายละเอียดตัวอักษรพิมพ์ Sublimation บนเนื้อผ้า" src="/jersey/fabrics/jersey4.jpg"}
+  :prose-img{alt="รายละเอียดตัวอักษรพิมพ์ Sublimation บนเนื้อผ้า" src="https://storage.googleapis.com/somsri-web/jersey/fabrics/jersey4.jpg"}
   :::
 
   :::sublimation-price-table
@@ -265,21 +265,21 @@ imagePosition: object-[20%_center]
   ไม่ว่าจะงานเล็กงานใหญ่ ผลิตตามความต้องการของลูกค้า เริ่มต้นการผลิตเพียงแค่ 100 ตัว!!
 
   #item-1
-  :prose-img{alt="เสื้อ Jersey ลาย MOVE PEOPLE สีขาว" src="/jersey/portfolio/move-people.png"}
+  :prose-img{alt="เสื้อ Jersey ลาย MOVE PEOPLE สีขาว" src="https://storage.googleapis.com/somsri-web/jersey/portfolio/move-people.png"}
 
   #item-2
-  :prose-img{alt="เสื้อ Jersey ลาย Vibie สีดำ-ชมพู" src="/jersey/portfolio/vibie.png"}
+  :prose-img{alt="เสื้อ Jersey ลาย Vibie สีดำ-ชมพู" src="https://storage.googleapis.com/somsri-web/jersey/portfolio/vibie.png"}
 
   #item-3
-  :prose-img{alt="เสื้อ Jersey ลาย BBASJTR สีชมพู" src="/jersey/portfolio/bbasjtr.png"}
+  :prose-img{alt="เสื้อ Jersey ลาย BBASJTR สีชมพู" src="https://storage.googleapis.com/somsri-web/jersey/portfolio/bbasjtr.png"}
 
   #item-4
-  :prose-img{alt="เสื้อ Jersey ลาย S-TRIX 05 สีดำ" src="/jersey/portfolio/s-trix.png"}
+  :prose-img{alt="เสื้อ Jersey ลาย S-TRIX 05 สีดำ" src="https://storage.googleapis.com/somsri-web/jersey/portfolio/s-trix.png"}
   :::
 
   :::sub-hero
   ---
-  image: /jersey/why-jersey.png
+  image: https://storage.googleapis.com/somsri-web/jersey/why-jersey.png
   imageMobile: /jersey/why-jersey-mobile.png
   alt: เสื้อ Jersey ลายพิมพ์ Sublimation ตัวอย่างงานจริง
   imagePosition: left
@@ -301,7 +301,7 @@ imagePosition: object-[20%_center]
 
   :::jersey-why-choose-card
   ---
-  image: /jersey/why-choose-somsri.png
+  image: https://storage.googleapis.com/somsri-web/jersey/why-choose-somsri.png
   alt: ลูกค้าสวมเสื้อ Jersey ที่ผลิตโดยสมศรี
   imagePosition: left
   buttonLabel: สอบถามเพิ่มเติม

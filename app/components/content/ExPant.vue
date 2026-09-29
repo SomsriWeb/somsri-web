@@ -9,7 +9,7 @@
 		</h2>
 
 		<ProseImg
-			src="/pants/image3.png"
+			src="https://storage.googleapis.com/somsri-web/pants/image3.png"
 			alt="ตัวอย่างกางเกง"
 			class="max-w-md md:max-w-lg lg:max-w-xl object-contain"
 		/>

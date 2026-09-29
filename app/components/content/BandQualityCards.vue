@@ -18,9 +18,9 @@ const props = withDefaults(defineProps<Props>(), {
     title: 'ผลงานที่พูดแทน :br คุณภาพการผลิต',
     buttonText: 'ปรึกษาฟรี',
     buttonLink: '',
-    image1: '/band-shirt/feature-shetoldme.png',
+    image1: 'https://storage.googleapis.com/somsri-web/band-shirt/feature-shetoldme.png',
     alt1: 'ผลงานผลิตเสื้อวง',
-    image2: '/band-shirt/feature-band-members.png',
+    image2: 'https://storage.googleapis.com/somsri-web/band-shirt/feature-band-members.png',
     alt2: 'ศิลปินกับเสื้อวง',
     description: 'ทุกโปรเจกต์ถูกดูแลตั้งแต่ผ้า ทรง สี เทคนิคพิมพ์ จนถึง QC :br เพื่อให้งานสุดท้ายตรงกับตัวตนของศิลปิน :br และพร้อมออกไปเจอกับแฟนคลับ',
 });

@@ -2,7 +2,7 @@
 title: ออกแบบเสื้อโปโลคอปกอย่างไรให้ทันสมัย เปลี่ยนลุคองค์กรให้ดูชิคและ Professional
 description: รวมไอเดียออกแบบเสื้อโปโลคอปกให้ดูทันสมัย ไม่เชย! เจาะลึกเทรนด์สี ทรงเสื้อ และเทคนิคการวางโลโก้ให้ดูพรีเมียม เปลี่ยนยูนิฟอร์มเดิมๆ เป็นไอเทมแฟชั่นสุดชิคที่ Somsri T-shirt
 เพิ่ม script ใน head: []
-image: /blog/img-how-to-design-modern-polo-shirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-design-modern-polo-shirts.jpg
 ---
 
 ที่ผ่านมา ภาพจำของเสื้อโปโล มักยึดติดอยู่กับ เสื้อยูนิฟอร์ม ซึ่งมักเป็นเพราะการออกแบบเสื้อโปโลรูปแบบเก่า ที่ส่งผลให้ผู้สวมใส่ ดูมีอายุ และไม่มั่นใจในการใส่ จากดีไซน์รูปแบบเก่าที่เสื้อทรงหลวม (Boxy Fit) สีพื้นเรียบ โลโก้ใหญ่
@@ -37,7 +37,7 @@ Modern Fit ในปี 2026 จะเน้นการบาลานซ์ร
 - ปกฐานเชิ้ต (Shirt Collar) ใช้โครงสร้างแบบเสื้อเชิ้ต ทำให้ปกตั้งสวย ไม่ย้วย ให้ลุค กึ่งลำลอง (Smart Casual) หรือ ให้ภาพลักษณ์นักธุรกิจมากขึ้น
 - ปกทอ (Knitted Collar) แบบคลาสสิก แต่สามารถเพิ่มดีเทล เช่น เส้นสีเล็กๆ ที่ขอบปก (Tipping) เพื่อเพิ่มความเป็นแฟชั่นให้แบรนด์ได้
 
-![ปกเสื้อโปโลสมัยใหม่](/blog/img-modern-polo.jpg)
+![ปกเสื้อโปโลสมัยใหม่](https://storage.googleapis.com/somsri-web/blog/img-modern-polo.jpg)
 
 ### 3. สาบเสื้อ (Placket)
 
@@ -134,7 +134,7 @@ Modern Fit ในปี 2026 จะเน้นการบาลานซ์ร
 
 หากต้องการลุคแบบนี้ ควรออกแบบเสื้อโปโลโดยใช้สี พาสเทล (Pastel) หรือ เอิร์ธโทน (Earth Tone) โดยใช้โลโก้ขนาดเล็ก เพื่อให้ดูเหมือนเสื้อแฟชั่น
 
-![Business Casual](/blog/img-business-casual.jpg)
+![Business Casual](https://storage.googleapis.com/somsri-web/blog/img-business-casual.jpg)
 
 ## ทำไมต้องออกแบบและผลิตกับ Somsri T-shirt?
 

@@ -1,6 +1,6 @@
 ---
 เพิ่ม script ใน head: []
-image: /blog/ideas-for-wearing-mens-polo-shirts-to-enhance-your-look-and-make-you-stand-out.jpg
+image: https://storage.googleapis.com/somsri-web/blog/ideas-for-wearing-mens-polo-shirts-to-enhance-your-look-and-make-you-stand-out.jpg
 title: ไอเดียการเลือกเสื้อโปโลผู้ชาย ใส่เสื้อโปโลยังไงให้เท่และโดดเด่น
 seo:
   title: ไอเดียการเลือกเสื้อโปโลผู้ชาย ใส่เสื้อโปโลยังไงให้เท่และโดดเด่น

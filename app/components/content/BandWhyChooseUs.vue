@@ -15,8 +15,8 @@ withDefaults(defineProps<Props>(), {
     noticeSubtitle: '* ราคาเสื้อมัดย้อมจะบวกเพิ่ม 60 บาทจากราคาเสื้อยืดธรรมดา *',
     cardTitle: 'เลือกผลิตเสื้อวงดนตรีกับ Somsri แล้วดียังไง?',
     cardDescription: 'ตั้งแต่เลือกผ้า วางแบบ เลือกเทคนิคการพิมพ์ ไปจนถึงการผลิตจริง เราดูแลทุกขั้นตอนเพื่อให้งานเสื้อวงออกมาตรง Concept และพร้อมนำไปขายหรือใช้งานจริง',
-    desktopImage: '/band-shirt/why-somsri-desktop.png',
-    mobileImage: '/band-shirt/why-somsri-mobile.png',
+    desktopImage: 'https://storage.googleapis.com/somsri-web/band-shirt/why-somsri-desktop.png',
+    mobileImage: 'https://storage.googleapis.com/somsri-web/band-shirt/why-somsri-mobile.png',
     buttonText: 'สอบถามเพิ่มเติม',
     buttonLink: 'https://contact.somsritshirt.com/c4119',
 });

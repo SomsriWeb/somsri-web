@@ -18,7 +18,7 @@ seo:
 ::landing-page-header-style-three
 ---
 class: pt-5
-image: /sport-shirt-min-100/banner.png
+image: https://storage.googleapis.com/somsri-web/sport-shirt-min-100/banner.png
 ---
 #title
 รับผลิตเสื้อกีฬา
@@ -50,10 +50,10 @@ image: /sport-shirt-min-100/banner.png
   items: 2
   ---
   #item-1
-  :prose-img{src="/produce-tshirt/sublimation-port-1.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-1.png"}
 
   #item-2
-  :prose-img{src="/produce-tshirt/sublimation-port-2.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-2.png"}
   :::
 
   ::center
@@ -72,10 +72,10 @@ image: /sport-shirt-min-100/banner.png
   slides-per-view: 2
   ---
   #item-1
-  :prose-img{src="/sport-shirt-min-100/tshirt-price-table.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/sport-shirt-min-100/tshirt-price-table.png"}
 
   #item-2
-  :prose-img{src="/sport-shirt-min-100/polo-price-table.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/sport-shirt-min-100/polo-price-table.png"}
   :::
 
   :::prose-p{.!text-primary.text-center.text-xl}

@@ -1,7 +1,7 @@
 ---
 title: ผลิตเสื้อโปโล ยูนิฟอร์ม สำหรับบริษัทและองค์กร ออกแบบเสื้อฟรี
 description: สั่งผลิตเสื้อโปโลยูนิฟอร์มบริษัทคุณภาพสูงกับ สมศรีมีเสื้อ บริการออกแบบฟรี! เนื้อผ้าดี คัตติ้งเนียบ เสริมลุคองค์กรให้มืออาชีพ ในราคาโรงงาน
-image: /blog/img-company-polo-uniforms.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-company-polo-uniforms.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -24,11 +24,11 @@ image: /blog/img-company-polo-uniforms.jpg
 ## แบบเสื้อโปโลบริษัทยอดนิยม
 
 ::image-grid
-:prose-img{alt="ตัวอย่างเสื้อโปโลที่ทำจากผ้า TC Lacost" src="/polo/img-polo-central.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลที่ทำจากผ้า TC Lacost" src="https://storage.googleapis.com/somsri-web/polo/img-polo-central.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลตัวนี้ทำจากผ้า Micro Sport" src="/polo/img-polo-diy.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลตัวนี้ทำจากผ้า Micro Sport" src="https://storage.googleapis.com/somsri-web/polo/img-polo-diy.jpg"}
 
-:prose-img{alt="ตัวอย่างเสื้อโปโลรูปแบบคอจีน" src="/polo/img-sompo.jpg"}
+:prose-img{alt="ตัวอย่างเสื้อโปโลรูปแบบคอจีน" src="https://storage.googleapis.com/somsri-web/polo/img-sompo.jpg"}
 ::
 
 **แบบที่ 1** เสื้อโปโลที่ทำจากผ้า [TC Lacost](https://somsritshirt.com/what-is-tc-fabric-what-type-of-fabric/) เป็นผ้าที่นิยมในการผลิตเสื้อโปโลมาก เพราะเนื้อผ้าดี ทนทาน ระบายอากาศได้ดี เหมาะกับพนักงานที่ทำงานในห้องแอร์หรือพนักงานออฟฟิตเป็นส่วนใหญ่ ดีไซน์ที่นิยมคือเสื้อคอปก ให้ลุคดูสุภาพ ทางการ พรีเมียม และเทคนิกที่นิยมคือการปักชื่อองค์กร หรือ โลโก้องค์กร ที่อกทางซ้าย ถือเป็น ดีไซน์ที่นิยมอย่างมากในวงการยูนิฟอร์มเสื้อโปโลองค์กร
@@ -58,7 +58,7 @@ image: /blog/img-company-polo-uniforms.jpg
 
 สมศรีเราสามารถออกแบบดีไซน์ตามสีประจำองค์กร โลโก้ที่คุณต้องการได้ อยากได้ตำแหน่งไหน ขนาดเท่าไหร่รวมถึงเนื้อผ้าและสีประจำองค์กรของคุณ และเทคนิคที่คุณสามารถเลือกได้ตามความต้องการ
 
-![ตัวอย่างลูกค้าของสมศรีมีเสื้อ](/blog/img-example-customer.jpg)
+![ตัวอย่างลูกค้าของสมศรีมีเสื้อ](https://storage.googleapis.com/somsri-web/blog/img-example-customer.jpg)
 
 ### BYD Metromobile
 

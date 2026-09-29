@@ -15,7 +15,7 @@ contentSpacing: false
 ---
 screenHeight: true
 alt: other-product banner
-image: /other-product/banner-other-product.png
+image: https://storage.googleapis.com/somsri-web/other-product/banner-other-product.png
 titleAsTag: h1
 ---
 #secondary-title
@@ -40,7 +40,7 @@ titleAsTag: h1
 
 ::landing-page-image-text-split
 ---
-image: /other-product/example-other-product.png
+image: https://storage.googleapis.com/somsri-web/other-product/example-other-product.png
 imagePosition: 90% center
 overlayWidth: 50%
 ---
@@ -59,7 +59,7 @@ overlayWidth: 50%
     ::::landing-page-product-grid-item
     ---
     alt: ผ้าโพกหัว
-    image: /other-product/headband.png
+    image: https://storage.googleapis.com/somsri-web/other-product/headband.png
     to: /headband
     ---
     ผ้าโพกหัว
@@ -68,7 +68,7 @@ overlayWidth: 50%
     ::::landing-page-product-grid-item
     ---
     alt: แก้วน้ำ
-    image: /other-product/yeti.png
+    image: https://storage.googleapis.com/somsri-web/other-product/yeti.png
     to: /drinkware
     ---
     แก้วน้ำ
@@ -77,7 +77,7 @@ overlayWidth: 50%
     ::::landing-page-product-grid-item
     ---
     alt: หน้ากากผ้า
-    image: /other-product/clothmask.png
+    image: https://storage.googleapis.com/somsri-web/other-product/clothmask.png
     to: /mask
     ---
     หน้ากากผ้า
@@ -86,7 +86,7 @@ overlayWidth: 50%
     ::::landing-page-product-grid-item
     ---
     alt: ผ้ากันเปื้อน
-    image: /other-product/apron.png
+    image: https://storage.googleapis.com/somsri-web/other-product/apron.png
     to: /apron
     ---
     ผ้ากันเปื้อน
@@ -108,16 +108,16 @@ overlayWidth: 50%
   :::carousel{:items="4" :slidesPerView="2" :slidesPerViewMobile="2" :spaceBetween="32" :loop="true" :dot="true" :autoplay="false" :centered="false" breakpoints-preset="simple" slide-aspect-ratio="3/3" full-width}
 
   #item-1
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="/other-product/yetizoo-slide.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 1" src="https://storage.googleapis.com/somsri-web/other-product/yetizoo-slide.png"}
 
   #item-2
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="/other-product/apron-slide.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 2" src="https://storage.googleapis.com/somsri-web/other-product/apron-slide.png"}
 
   #item-3
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="/other-product/yetizoo-slide.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 3" src="https://storage.googleapis.com/somsri-web/other-product/yetizoo-slide.png"}
 
   #item-4
-  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="/other-product/apron-slide.png"}
+  :prose-img{.rounded-2xl.object-cover.h-full.w-full alt="ตัวอย่างที่ 4" src="https://storage.googleapis.com/somsri-web/other-product/apron-slide.png"}
   :::
 ::
 
@@ -135,7 +135,7 @@ overlayWidth: 50%
   - หรือหากยังไม่ได้มีตัวแบบ :br ทางเรามีทีมออกแบบพร้อมช่วยเหลือคุณ
 
   #image
-  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="ผ้าโพกหัว" src="/other-product/headband-nobg.png"}
+  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="ผ้าโพกหัว" src="https://storage.googleapis.com/somsri-web/other-product/headband-nobg.png"}
   ::::
 
   ::::landing-page-split-content-card
@@ -151,7 +151,7 @@ overlayWidth: 50%
   - ขั้นต่ำตั้งแต่ 1 ใบขึ้นไปก็สามารถสั่งผลิตได้
 
   #image
-  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="แก้วน้ำ" src="/other-product/yeti-nobg.png"}
+  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="แก้วน้ำ" src="https://storage.googleapis.com/somsri-web/other-product/yeti-nobg.png"}
   ::::
 
   ::::landing-page-split-content-card
@@ -167,7 +167,7 @@ overlayWidth: 50%
   - สามารถเลือกเทคนิคลวดลายได้ :br ทั้งงานปักและงานสกรีน
 
   #image
-  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="หน้ากากผ้า" src="/other-product/clothmask-nobg.png"}
+  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="หน้ากากผ้า" src="https://storage.googleapis.com/somsri-web/other-product/clothmask-nobg.png"}
   ::::
 
   ::::landing-page-split-content-card
@@ -183,7 +183,7 @@ overlayWidth: 50%
   - สามารถเลือกเนื้อผ้า :br สี เทคนิคการปัก การสกรีน :br ได้ตามต้องการ
 
   #image
-  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="ผ้ากันเปื้อน" src="/other-product/apron-nobg.png"}
+  :prose-img{.w-full.h-full.md:h-[25rem].object-contain alt="ผ้ากันเปื้อน" src="https://storage.googleapis.com/somsri-web/other-product/apron-nobg.png"}
   ::::
 :::
 

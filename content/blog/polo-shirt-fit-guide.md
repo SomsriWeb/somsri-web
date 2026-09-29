@@ -1,7 +1,7 @@
 ---
 title: พรางพุง เสริมไหล่! เทคนิคเลือกทรงเสื้อโปโลให้เข้ากับหุ่น ฉบับใส่แล้วดูสมาร์ท
 description: อยากใส่เสื้อโปโลให้ดูสมาร์ทแต่ติดปัญหาเรื่องพุง? พบกับเทคนิคการเลือกทรงเสื้อโปโลให้เหมาะกับหุ่น พรางจุดด้อย เสริมจุดเด่น พร้อมแนะนำเนื้อผ้าที่ใช่จากผู้เชี่ยวชาญ สมศรีมีเสื้อ
-image: /blog/img-polo-shirt-fit-guide.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-polo-shirt-fit-guide.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -29,7 +29,7 @@ image: /blog/img-polo-shirt-fit-guide.jpg
 
 เทคนิคที่ดีของหุ่นทรงนี้คือ การโชว์สรีระอย่างพอดี ไม่แน่นจนเกินไป และยังคงความเรียบร้อยแบบมืออาชีพ สุภาพแต่ยังดูดี
 
-![Body Shape](/blog/img-body-shape.jpg)
+![Body Shape](https://storage.googleapis.com/somsri-web/blog/img-body-shape.jpg)
 
 ## เจาะลึกเทคนิคเลือก "ทรงเสื้อโปโล" ให้เป๊ะตามหุ่น
 
@@ -113,7 +113,7 @@ image: /blog/img-polo-shirt-fit-guide.jpg
 
 ทั้งหมดนี้คือเหตุผลที่การเลือกพาร์ทเนอร์ในการ สั่งผลิตเสื้อโปโล มีความสำคัญ เพราะไม่ใช่แค่ผลิตเสื้อ แต่คือการออกแบบภาพลักษณ์องค์กรโดยรวม
 
-![สร้างภาพลักษณ์แบรนด์](/blog/img-polo-make-brand.jpg)
+![สร้างภาพลักษณ์แบรนด์](https://storage.googleapis.com/somsri-web/blog/img-polo-make-brand.jpg)
 
 ## ทำไมต้องเลือกสั่งผลิตเสื้อโปโลกับสมศรีมีเสื้อ (somsritshirt)
 

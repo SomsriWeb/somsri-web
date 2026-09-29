@@ -1,6 +1,6 @@
 {
     "uid": "cotton-waterproof",
-    "imageUrl": "/fabrics/cotton-waterproof.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-waterproof.png",
     "popupImageUrl": "/fabrics/cotton-waterproof-popup.png",
     "forProductType": [
         "fabric-specification"

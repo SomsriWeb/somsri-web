@@ -5,7 +5,7 @@
 			title: "กลุ่มศิลปิน",
 			description:
 				"ไม่ว่าจะเป็น กลุ่มลูกค้าศิลปินอย่าง Tattoo Colour ที่สั่งทำเสื้อกับโรงงานผลิตเสื้อสมศรีและใช้รูปแบบการรีดร้อน DFT ศิลปิน Bonnadol สั่งผลิตเสื้อยืดใช้การสกรีนฮาฟโทน ศิลปิน Polycat ที่สั่งผลิตกระเป๋าสกรีนลายและศิลปินอื่นๆ อีกมากมายที่สั่งผลิตกับสมศรี",
-			image: "/tshirt-factory/portfolio/artist.png",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/portfolio/artist.png",
 			alt: "โรงงานผลิตเสื้อ ให้กับลูกค้าทุกรูปแบบ",
 			link: {
 				label: "ดูรายละเอียด",
@@ -16,7 +16,7 @@
 			title: "กลุ่มองค์กรชั้นนำ",
 			description:
 				"กลุ่มลูกค้าองค์กรชั้นนำ เช่น Flash Express สั่งผลิตเสื้อโปโลและพิมพ์ลาย sublimation องค์กร DAIKIN สั่งผลิตเสื้อโปโลแบบปัก HONDA สั่งผลิตเสื้อยืดแบบพิมพ์ sublimation เป็นต้น และองค์กรชั้นนำอื่นๆ อีกมากมายที่ใช้บริการกับโรงงานผลิตเสื้อ สมศรีมีเสื้อ หากสนใจสั่งผลิตเสื้อโปโล เสื้อบริษัท กับสมศรี สามารถดูรายละเอียดและสั่งซื้อมีเสื้อได้ที่นี่",
-			image: "/tshirt-factory/portfolio/organization.jpg",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/portfolio/organization.jpg",
 			alt: "โรงงานผลิตเสื้อ สำหรับกลุ่มองค์กรชั้นนำ",
 			link: {
 				label: "รับผลิตเสื้อโปโล",
@@ -27,7 +27,7 @@
 			title: "กลุ่มลูกค้าทั่วไป",
 			description:
 				"กลุ่มลูกค้าทั่วไป ที่สั่งผลิตเสื้อหลากหลายรูปแบบทั้งเสื้อโปโลแบบปัก เสื้อยืดแบบปัก เสื้อยืดสกรีน เสื้อยืดแบบรีดร้อน DFT เสื้อยืดแขนกุดสกรีน ไปจนถึงหน้ากากผ้าอนามัยแบบสกรีนกับโรงงานผลิตเสื้อของเรา",
-			image: "/tshirt-factory/portfolio/general.png",
+			image: "https://storage.googleapis.com/somsri-web/tshirt-factory/portfolio/general.png",
 			alt: "โรงงานผลิตเสื้อ สำหรับลูกค้าทั่วไป",
 			link: {
 				label: "ดูรายละเอียด",
