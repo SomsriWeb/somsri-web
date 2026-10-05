@@ -243,6 +243,7 @@ export default defineNuxtConfig({
             provider: 'github', // 'github' or 'gitlab'
             owner: 'SomsriWeb',
             repo: 'somsri-web',
+            branch: process.env.NUXT_PUBLIC_STUDIO_REPOSITORY_BRANCH || 'fix-studio-publish',
         },
         route: '/_editor',
     },
