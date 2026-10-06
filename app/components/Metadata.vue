@@ -20,6 +20,7 @@
 		// ogSiteName: seo.title,
 		ogTitle: pageSEO.value.title,
 		ogDescription: pageSEO.value.description,
+		ogImage: "https://somsritshirt.com/og.jpg",
 		// ogType: isWriting ? "article" : "website",
 		// ogUrl: seo.url,
 		author: "สมศรีมีเสื้อ",
@@ -28,6 +29,7 @@
 		twitterTitle: pageSEO.value.title,
 		twitterDescription: pageSEO.value.description,
 		twitterCard: "summary_large_image",
+		twitterImage: "https://somsritshirt.com/og.jpg",
 		robots: page.noindex ? "noindex" : undefined,
 	})
 
@@ -44,12 +46,6 @@
 			}) || [],
 	})
 
-	defineOgImage({
-		url: "https://somsritshirt.com/og.jpg",
-		width: 1200,
-		height: 630,
-		alt: "สมศรีมีเสื้อ",
-	})
 </script>
 <template>
 	<div v-if="$slots.default">
