@@ -44,7 +44,7 @@ const { image, titleAsTag = 'h1', alt = '', screenHeight = true, imageAnchor = '
                     <slot name="description" mdc-unwrap="p" />
                 </p>
 
-                <p v-if="$slots['secondary-description']" class="text-center font-light text-stone-500 lg:text-left" :class="compact ? 'mt-8 text-sm leading-relaxed' : 'mt-4 mb-8 leading-relaxed'">
+                <p v-if="$slots['secondary-description']" class="text-center font-light text-stone-500 lg:text-left [&_strong]:font-bold [&_strong]:text-stone-900" :class="compact ? 'mt-8 text-sm leading-relaxed' : 'mt-4 mb-8 leading-relaxed'">
                     <slot name="secondary-description" mdc-unwrap="p" />
                 </p>
 

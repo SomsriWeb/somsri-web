@@ -18,12 +18,12 @@ function scrollToFabric(e: MouseEvent) {
 </script>
 
 <template>
-	<div class="flex flex-wrap items-center justify-start gap-4 mt-6">
+	<div class="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-start sm:gap-4">
 		<!-- ปุ่มติดต่อ (solid) -->
 		<LineLink>
 			<UButton
 				trailing-icon="i-lucide-arrow-right"
-				class="inline-flex items-center bg-primary px-6 py-2.5 text-sm text-white"
+				class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary/90 sm:w-auto sm:px-6"
 				size="md"
 			>
 				ปรึกษาฟรี
@@ -34,7 +34,7 @@ function scrollToFabric(e: MouseEvent) {
 		<UButton
 			:to="`#${targetId}`"
 			variant="outline"
-			class="inline-flex items-center border-2 border-primary px-6 py-2.5 text-sm text-primary"
+			class="inline-flex w-full items-center justify-center rounded-xl border border-primary bg-white px-4 py-2.5 text-sm font-semibold text-primary hover:bg-stone-50 sm:w-auto sm:px-6"
 			size="md"
 			@click="scrollToFabric"
 		>

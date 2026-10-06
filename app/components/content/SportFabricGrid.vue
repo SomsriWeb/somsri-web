@@ -1,5 +1,6 @@
 <script setup lang="ts">
 interface Slots {
+    [key: string]: any;
     eyebrow(): unknown;
     title(): unknown;
     description(): unknown;
@@ -55,7 +56,7 @@ defineSlots<Slots>();
                 :class="n <= 2 ? 'sm:!mb-10' : ''"
             >
                 <!-- รูป: บนมือถือมี gradient + ชื่อ fabric ซ้อนทับบนรูป -->
-                <div class="relative aspect-[16/10] w-full overflow-hidden">
+                <div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl sm:rounded-none">
                     <slot :name="`item-${n}-image`" />
 
                     <div
@@ -104,21 +105,52 @@ defineSlots<Slots>();
     }
 }
 
-/* แปลง bullet list markdown ให้กลายเป็นแถว pill สีชมพูอ่อน */
+/* แปลง bullet list markdown ให้กลายเป็นแถว pill สีชมพูอ่อน ล็อกให้อยู่ในแถวเดียวกันและเห็นครบทั้ง 3 อัน */
 .pills :deep(ul) {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 0.25rem;
+    list-style: none !important;
+    list-style-type: none !important;
     margin: 0;
     padding: 0;
 }
 .pills :deep(li) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    min-width: 0;
+    list-style: none !important;
+    list-style-type: none !important;
     border-radius: 9999px;
     background-color: color-mix(in srgb, var(--color-primary) 12%, white);
     color: var(--color-primary);
-    font-size: 0.75rem;
-    line-height: 1;
-    padding: 0.4rem 0.75rem;
+    font-size: 0.58rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0.25rem 0.15rem;
+    white-space: nowrap;
+    text-align: center;
+}
+.pills :deep(li::marker),
+.pills :deep(li::before) {
+    display: none !important;
+    content: '' !important;
+}
+
+@media (min-width: 640px) {
+    .pills :deep(ul) {
+        width: auto;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .pills :deep(li) {
+        flex: initial;
+        font-size: 0.75rem;
+        padding: 0.35rem 0.65rem;
+    }
 }
 </style>
