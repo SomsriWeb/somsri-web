@@ -1,7 +1,7 @@
 ---
 title: ออกแบบเสื้อโปโลเอง ทำได้กี่วิธี? เว็บออกแบบฟรี, Canva, ไฟล์ PNG, จ้างโรงงาน
 description: อยากออกแบบเสื้อโปโลเอง เริ่มอย่างไร? เทียบวิธีใช้เว็บออกแบบฟรี Canva ส่งไฟล์ PNG และให้โรงงานช่วยออกแบบ พร้อมวิธีเตรียมไฟล์ก่อนผลิตจริง
-image: /blog/img-how-to-design-your-own-polo-shirt.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-design-your-own-polo-shirt.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -45,7 +45,7 @@ image: /blog/img-how-to-design-your-own-polo-shirt.jpg
 
 สรุป การเตรียมข้อมูลพื้นฐานและรวบรวมไอเดียเหล่านี้ให้พร้อมตั้งแต่ต้น จะช่วยเป็นเข็มทิศชั้นดีที่ทำให้การออกแบบไม่หลงทาง ลดเวลาในการลองผิดลองถูก และทำให้ภาพรวมของเสื้อโปโลออกมาตรงตามวัตถุประสงค์การใช้งานมากที่สุด
 
-![ออกแบบเสื้อโปโลสำหรับสั่งทำเสื้อ](/blog/img-example-design-shirt.jpg)
+![ออกแบบเสื้อโปโลสำหรับสั่งทำเสื้อ](https://storage.googleapis.com/somsri-web/blog/img-example-design-shirt.jpg)
 
 ## 4 วิธีออกแบบเสื้อโปโลเอง เลือกแบบไหนดี?
 
@@ -97,7 +97,7 @@ image: /blog/img-how-to-design-your-own-polo-shirt.jpg
 
 สรุป ยิ่งไฟล์ต้นฉบับชัดและข้อมูลครบ โรงงานก็ยิ่งสามารถตีแบบและประเมินวิธีผลิตได้แม่นยำขึ้น หากยังไม่แน่ใจว่าไฟล์ที่มีใช้ได้หรือไม่ ควรส่งไฟล์ต้นฉบับให้ทีมผลิตตรวจสอบก่อน แทนที่จะพยายามแปลงไฟล์เองจนคุณภาพลดลง
 
-![ก่อนส่งผลิตเสื้อ ต้องเช็กอะไรก่อนบ้าง](/blog/img-checklist-design-shirt.jpg)
+![ก่อนส่งผลิตเสื้อ ต้องเช็กอะไรก่อนบ้าง](https://storage.googleapis.com/somsri-web/blog/img-checklist-design-shirt.jpg)
 
 ## ก่อนส่งแบบผลิตจริง ต้องเช็กอะไรอีกบ้าง?
 

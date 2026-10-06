@@ -1,7 +1,7 @@
 ---
 title: ปัก vs สกรีนโลโก้ เสื้อพนักงานบริษัท แบบไหนดีที่สุด? เจาะลึกข้อดี-ข้อเสีย
 description: สั่งทำเสื้อพนักงานบริษัทแต่ลังเลใช่ไหม? สมศรีมีเสื้อ พาเจาะลึกข้อดี-ข้อเสีย งานปัก vs สกรีนโลโก้ แบบไหนทนทาน คุ้มค่า และตอบโจทย์องค์กรที่สุด
-image: /blog/img-embroidery-vs-screen-printing-uniforms.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-embroidery-vs-screen-printing-uniforms.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -32,7 +32,7 @@ image: /blog/img-embroidery-vs-screen-printing-uniforms.jpg
 
 สมศรีแนะนำ = เสื้อโปโลพนักงาน, เสื้อเชิ้ต, เสื้อแจ็คเก็ต ผ้าที่มีโครงสร้างและความหนาช่วยให้เข็มปักทำงานได้สม่ำเสมอ โลโก้ออกมาคม นูน ดูพรีเมียมและสวยมาก
 
-![ตัวอย่างงานปักโลโก้บนเสื้อโปโล](/blog/img-embroidery-logo-polo-shirt.png)
+![ตัวอย่างงานปักโลโก้บนเสื้อโปโล](https://storage.googleapis.com/somsri-web/blog/img-embroidery-logo-polo-shirt.png)
 
 ## งานสกรีนโลโก้ (Screen Printing) — ตัวเลือกที่ยืดหยุ่นกว่า และเหมาะกับงานเยอะ
 

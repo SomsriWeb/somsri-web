@@ -1,6 +1,6 @@
 {
     "name": "TC Lacoste",
-    "imgUrl": "/fabric/tc-lacoste.png",
+    "imgUrl": "https://storage.googleapis.com/somsri-web/fabrics/tc-lacoste.png",
     "popupImageUrl": "/fabric/tc-lacoste-popup.png",
     "order": 11
 }

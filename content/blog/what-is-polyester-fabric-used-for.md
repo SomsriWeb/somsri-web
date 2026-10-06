@@ -3,7 +3,7 @@ title: ไขข้อสงสัย! ผ้าโพลีเอสเตอ�
 activeNavbar: false
 description: ผ้าโพลีเอสเตอร์ ผ้าที่ผลิตจากเส้นใย PET ชนิดเดียวกับที่ใช้ผลิตขวดน้ำพลาสติก มีคุณสมบัติเด่นคือ แข็งแรง คงรูป ไม่ยับง่าย และไม่ดูดซึมน้ำ ทำให้เหมาะกับการใช้งานที่ต้องการความทนทานและแห้งเร็ว ราคาถูกและดูแลง่ายกว่าผ้าฝ้าย
 footer: true
-image: /blog/what-is-polyester-fabric-used-for-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/what-is-polyester-fabric-used-for-header.jpg
 language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o
@@ -46,7 +46,7 @@ navbar: true
 สอบถามเพิ่มเติม
 ::
 
-![โพลีเอสเตอร์ (Polyester) เป็นชื่อเรียกรวมของกลุ่มโพลิเมอร์ที่เกิดจากกระบวนการสังเคราะห์ทางเคมี ซึ่งมีโครงสร้างโมเลกุลที่ประกอบด้วย “เอสเทอร์” (Ester) เป็นหน่วยย่อยหลัก](/blog/426.jpg)
+![โพลีเอสเตอร์ (Polyester) เป็นชื่อเรียกรวมของกลุ่มโพลิเมอร์ที่เกิดจากกระบวนการสังเคราะห์ทางเคมี ซึ่งมีโครงสร้างโมเลกุลที่ประกอบด้วย “เอสเทอร์” (Ester) เป็นหน่วยย่อยหลัก](https://storage.googleapis.com/somsri-web/blog/426.jpg)
 
 ## คุณสมบัติเด่นของผ้าโพลีเอสเตอร์ (Polyester)
 
@@ -93,7 +93,7 @@ navbar: true
 สอบถามเพิ่มเติม
 ::
 
-![ผ้าโพลีเอสเตอร์ (Polyester) นิยมใช้  เช่น ชุดทำงาน สูท หรือเดรส](/blog/102136.jpg)
+![ผ้าโพลีเอสเตอร์ (Polyester) นิยมใช้  เช่น ชุดทำงาน สูท หรือเดรส](https://storage.googleapis.com/somsri-web/blog/102136.jpg)
 
 ## เปรียบเทียบผ้าโพลีเอสเตอร์กับผ้าชนิดอื่น
 

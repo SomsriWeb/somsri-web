@@ -1,6 +1,6 @@
 {
     "name": "Dry Tech",
-    "imgUrl": "/fabric/dry-tech.png",
+    "imgUrl": "https://storage.googleapis.com/somsri-web/fabrics/dry-tech.png",
     "popupImageUrl": "/fabric/dry-tech-popup.png",
     "order": 5
 }

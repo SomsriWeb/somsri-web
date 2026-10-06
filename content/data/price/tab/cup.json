@@ -1,7 +1,7 @@
 {
     "uid": "cup",
     "name": "แก้วน้ำ",
-    "imageUrl": "/price/cup.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/price/cup.jpg",
     "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
     "order": 4
 }

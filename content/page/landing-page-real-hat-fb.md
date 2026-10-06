@@ -6,7 +6,7 @@ lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/cbb21
 ---
 
-::landing-page-header-style-one{image="/landing-page-real-hat/banner.png"}
+::landing-page-header-style-one{image="https://storage.googleapis.com/somsri-web/landing-page-real-hat/banner.png"}
 #title
 รับผลิตหมวก
 

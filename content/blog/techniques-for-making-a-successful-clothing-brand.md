@@ -1,6 +1,6 @@
 ---
 เพิ่ม script ใน head: []
-image: /blog/techniques-for-making-a-successful-clothing-brand-and-reaching-your-target-audience.jpg
+image: https://storage.googleapis.com/somsri-web/blog/techniques-for-making-a-successful-clothing-brand-and-reaching-your-target-audience.jpg
 title: เทคนิคทำแบรนด์เสื้อให้ปัง วิธีเจาะกลุ่มเป้าหมาย สร้างยอดขายให้เติบโต
 seo:
   title: เทคนิคทำแบรนด์เสื้อให้ปัง วิธีเจาะกลุ่มเป้าหมาย สร้างยอดขายให้เติบโต

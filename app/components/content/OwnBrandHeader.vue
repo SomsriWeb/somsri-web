@@ -2,7 +2,7 @@
 	<div>
 		<header>
 			<NuxtImg
-				src="/own-brand-tshirt-factory/bg.png"
+				src="https://storage.googleapis.com/somsri-web/own-brand-tshirt-factory/bg.png"
 				class="w-screen h-screen object-cover"
 				format="webp"
 				placeholder
@@ -15,7 +15,7 @@
 				</p>
 			</div>
 			<ProseImg
-				src="/tshirt-factory/tshirt.png"
+				src="https://storage.googleapis.com/somsri-web/tshirt-factory/tshirt.png"
 				alt="รับผลิตเสื้อ เสื้อยืดแบรนด์ตัวเอง โรงงานผลิตเสื้อ คุณภาพดี"
 				class="absolute bottom-[5rem] right-[3rem]"
 			/>

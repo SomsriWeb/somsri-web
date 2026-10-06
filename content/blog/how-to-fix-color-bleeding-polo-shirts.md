@@ -1,7 +1,7 @@
 ---
 title: เสื้อโปโลสีตก แก้ยังไง? เนื้อผ้าชนิดไหนบ้างที่สีไม่ซีดไม่เสียทรง!!
 description: เสื้อโปโลสีตกแก้ยังไง? วิธีแก้ผ้าสีตกฉบับง่าย พร้อมแนะนำเทคนิคเลือกเนื้อผ้าเสื้อโปโลเกรดพรีเมียม สีไม่ตก ไม่ซีด ไม่ย้วย โดย สมศรีมีเสื้อ
-image: /blog/img-how-to-fix-color-bleeding-polo-shirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-fix-color-bleeding-polo-shirts.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -27,7 +27,7 @@ image: /blog/img-how-to-fix-color-bleeding-polo-shirts.jpg
 
 นั่นจึงเป็นเหตุที่ควรระวังตั้งแต่ขั้นตอนการเลือกโรงงานผลิตเสื้อโปโล เพราะคุณภาพในการย้อมสีที่ดีจะส่งผลต่ออายุของการใช้งานเสื้อด้วย
 
-![ตัวอย่างเสื้อโปโลสีตก](/blog/img-color-bleeding-polo-shirts.jpg)
+![ตัวอย่างเสื้อโปโลสีตก](https://storage.googleapis.com/somsri-web/blog/img-color-bleeding-polo-shirts.jpg)
 
 ## เมื่อเจอเสื้อสีตก แล้วควรแก้ยังไง?
 
@@ -79,7 +79,7 @@ image: /blog/img-how-to-fix-color-bleeding-polo-shirts.jpg
 
 นอกจากนี้ ผ้าไมโครโพลีเอสเตอร์ยังมีจุดเด่นเรื่องการระบายความชื้นได้ดี ทำให้สวมใส่แล้วไม่อับชื้น เสื้อแห้งไว เหมาะกับการใช้งานกิจกรรมกลางแจ้งที่ต้องเคลื่อนไหวตลอดทั้งวัน
 
-![ภาพตัวอย่างเสื้อโปโลที่ผลิตด้วยผ้าไมโครโพลีเอสเตอร์](/blog/img-polo-shirt-micro-polyester.jpg)
+![ภาพตัวอย่างเสื้อโปโลที่ผลิตด้วยผ้าไมโครโพลีเอสเตอร์](https://storage.googleapis.com/somsri-web/blog/img-polo-shirt-micro-polyester.jpg)
 
 ### ผ้าทอเทคนิคพิเศษลดการหด-ย้วย (Anti-Shrinkage Fabric)
 

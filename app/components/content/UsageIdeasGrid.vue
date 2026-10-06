@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { mediaUrl } from '~/utils/mediaUrl';
 // ถ้าใช้ Nuxt 3 ปกติมันจะ Auto-import ให้ แต่ถ้า error ให้เพิ่มบรรทัดล่างนี้ครับ
 // import { computed } from 'vue'; 
 
@@ -28,7 +29,7 @@ const items = computed(() => {
 // ปรับให้รองรับ undefined ได้ เผื่อในกรณีที่หา Array ไม่เจอ TypeScript จะได้ไม่ฟ้อง Error
 const imageSrc = (key?: string) => {
     if (!key) return '';
-    return `${props.basePath}/${key}.${props.imageExtension}`;
+    return mediaUrl(`${props.basePath}/${key}.${props.imageExtension}`);
 };
 </script>
 

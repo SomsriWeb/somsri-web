@@ -18,7 +18,7 @@ seo:
 
 ::landing-page-header-style-two
 ---
-image: produce-tshirt/Banner.png
+image: https://storage.googleapis.com/somsri-web/produce-tshirt/Banner.png
 ---
 #title
 รับสกรีนเสื้อ - ผลิตเสื้อ ครบวงจร
@@ -67,10 +67,10 @@ image: produce-tshirt/Banner.png
   slides-per-view: 2
   ---
   #item-1
-  :prose-img{src="/produce-tshirt/price-chart-cotton-100.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/price-chart-cotton-100.png"}
 
   #item-2
-  :prose-img{src="/produce-tshirt/price-chart-cotton-comb-32.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/price-chart-cotton-comb-32.png"}
   :::
 
   :::prose-p{.!text-primary.text-center.text-xl}
@@ -84,25 +84,25 @@ image: produce-tshirt/Banner.png
   items: 7
   ---
   #item-1
-  :prose-img{src="/produce-tshirt/screen-size-1.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-1.png"}
 
   #item-2
-  :prose-img{src="/produce-tshirt/screen-size-2.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-2.png"}
 
   #item-3
-  :prose-img{src="/produce-tshirt/screen-size-3.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-3.png"}
 
   #item-4
-  :prose-img{src="/produce-tshirt/screen-size-4.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-4.png"}
 
   #item-5
-  :prose-img{src="/produce-tshirt/screen-size-5.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-5.png"}
 
   #item-6
-  :prose-img{src="/produce-tshirt/screen-size-6.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-6.png"}
 
   #item-7
-  :prose-img{src="/produce-tshirt/screen-size-7.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/screen-size-7.png"}
   :::
 
 ## ราคางานสกรีน
@@ -164,10 +164,10 @@ image: produce-tshirt/Banner.png
   items: 2
   ---
   #item-1
-  :prose-img{src="/produce-tshirt/sublimation-port-1.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-1.png"}
 
   #item-2
-  :prose-img{src="/produce-tshirt/sublimation-port-2.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-port-2.png"}
   :::
 
   ::center

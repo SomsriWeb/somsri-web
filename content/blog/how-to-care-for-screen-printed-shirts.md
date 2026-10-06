@@ -1,6 +1,6 @@
 ---
 title: วิธีการดูแลเสื้อสกรีนง่ายๆ ให้เสื้ออยู่คงทน ไม่หลุด ไม่ลอกง่าย
-image: /blog/how-to-care-for-screen-printed-shirts-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/how-to-care-for-screen-printed-shirts-header.jpg
 ---
 
 ## เสื้อสกรีน ไม่ใช่แค่เสื้อธรรมดา
@@ -25,7 +25,7 @@ image: /blog/how-to-care-for-screen-printed-shirts-header.jpg
 
 เสื้อสกรีนคุณภาพดีที่ได้รับการดูแลอย่างถูกต้องสามารถใช้งานได้นาน 1-2 ปี หรือมากกว่านั้น โดยยังคงสีสด ลายคมชัด และเนื้อผ้าไม่ย้วย ไม่เสียทรง
 
-![วิธีการดูแลเสื้อสกรีน การดูแลลายสกรีนอย่างถูกวิธีไม่เพียงช่วยยืดอายุของเสื้อเท่านั้น แต่ยังทำให้เสื้อของคุณลูกค้าดูใหม่อยู่เสมอ ใส่แล้วมั่นใจทุกครั้ง](/blog/how-to-care-for-screen-printed-shirts-1.jpg)
+![วิธีการดูแลเสื้อสกรีน การดูแลลายสกรีนอย่างถูกวิธีไม่เพียงช่วยยืดอายุของเสื้อเท่านั้น แต่ยังทำให้เสื้อของคุณลูกค้าดูใหม่อยู่เสมอ ใส่แล้วมั่นใจทุกครั้ง](https://storage.googleapis.com/somsri-web/blog/how-to-care-for-screen-printed-shirts-1.jpg)
 
 ## วิธีการดูแลเสื้อสกรีนให้ลายไม่หลุดลอก
 
@@ -62,7 +62,7 @@ image: /blog/how-to-care-for-screen-printed-shirts-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![วิธีการดูแลเสื้อสกรีน เสื้อสกรีนต่างจากเสื้อเปล่าทั่วไปตรงที่มีชั้นของหมึกพิมพ์ หรือฟิล์มบาง ๆ ที่ติดอยู่บนเนื้อผ้า ไม่ว่าจะเป็นเทคนิค Silkscreen, DTF, DTG หรือ Sublimation](/blog/how-to-care-for-screen-printed-shirts-2.jpg)
+![วิธีการดูแลเสื้อสกรีน เสื้อสกรีนต่างจากเสื้อเปล่าทั่วไปตรงที่มีชั้นของหมึกพิมพ์ หรือฟิล์มบาง ๆ ที่ติดอยู่บนเนื้อผ้า ไม่ว่าจะเป็นเทคนิค Silkscreen, DTF, DTG หรือ Sublimation](https://storage.googleapis.com/somsri-web/blog/how-to-care-for-screen-printed-shirts-2.jpg)
 
 ## เนื้อผ้าแบบไหนเหมาะกับงานสกรีนและดูแลง่าย?
 

@@ -1,6 +1,6 @@
 ---
 title: 5 เหตุผลที่ทำให้เสื้อยืดยังคงเป็นไอเท็มคลาสสิก ไม่มีวันเอาต์
-image: /blog/reasons-why-t-shirts-are-always-popular-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/reasons-why-t-shirts-are-always-popular-header.jpg
 ---
 
 ไม่ว่าจะผ่านมากี่ยุคสมัย “เสื้อยืด” ก็ยังคงเป็นหนึ่งในเสื้อผ้าที่ได้รับความนิยมมากที่สุดทั่วโลก เป็นไอเท็มพื้นฐานที่สามารถพบได้ในตู้เสื้อผ้าของทุกเพศทุกวัย ด้วยรูปแบบที่เรียบง่าย ใส่ง่าย และสามารถนำไปมิกซ์แอนด์แมตช์ได้กับเสื้อผ้าทุกสไตล์ ตั้งแต่ลุคชิลล์ๆ ไปจนถึงลุคกึ่งทางการ
@@ -61,7 +61,7 @@ image: /blog/reasons-why-t-shirts-are-always-popular-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![เสื้อยืด เป็นเสื้อผ้าที่ไม่มีข้อจำกัดด้านแฟชั่น เพราะดีไซน์ที่ไม่ซับซ้อนแต่สามารถดัดแปลงให้เข้ากับทุกลุค](/blog/reasons-why-t-shirts-are-always-popular-1.jpg)
+![เสื้อยืด เป็นเสื้อผ้าที่ไม่มีข้อจำกัดด้านแฟชั่น เพราะดีไซน์ที่ไม่ซับซ้อนแต่สามารถดัดแปลงให้เข้ากับทุกลุค](https://storage.googleapis.com/somsri-web/blog/reasons-why-t-shirts-are-always-popular-1.jpg)
 
 เสื้อยืด ไอเท็มที่เปลี่ยนได้ตามยุค แต่ไม่เคยหายไป
 

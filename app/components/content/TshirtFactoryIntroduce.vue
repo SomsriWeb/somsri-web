@@ -19,6 +19,6 @@ defineSlots<Slots>();
             <p class="text-4xl font-bold text-primary"><slot name="title" mdc-unwrap="p" /></p>
             <ProseP class="text-lg"><slot name="description" mdc-unwrap="p" /></ProseP>
         </div>
-        <ProseImg src="/tshirt-factory/introduce.png" alt="เรารับผลิตเสื้อ สั่งทำเสื้อยืดคุณภาพดี" />
+        <ProseImg src="https://storage.googleapis.com/somsri-web/tshirt-factory/introduce.png" alt="เรารับผลิตเสื้อ สั่งทำเสื้อยืดคุณภาพดี" />
     </div>
 </template>

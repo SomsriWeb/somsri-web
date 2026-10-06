@@ -1,7 +1,7 @@
 {
     "uid": "totebag",
     "name": "กระเป๋าผ้า",
-    "imageUrl": "/price/totebag.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/price/totebag.jpg",
     "alt": "เรทราคาสั่งผลิตกระเป๋าผ้า",
     "order": 1
 }

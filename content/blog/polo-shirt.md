@@ -5,7 +5,7 @@ contentSpacing: true
 date: ""
 description: สาเหตุที่ทำให้พนักงานสวมใส่โปโลเป็นที่นิยมคือสวมใส่สบาย ยังดูเรียบร้อย แต่ไม่เป็นทางการจนเกินไป สามารถใส่ได้ทั้งทำงานในออฟฟิศ ออกงานกิจกรรม หรือใช้เป็นยูนิฟอร์มกลางแจ้งที่ทำงานได้คล่องตัว
 footer: true
-image: /blog/เสื้อ POLO เสื้อยอดนิยม.jpg
+image: https://storage.googleapis.com/somsri-web/blog/%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%89%E0%B8%AD%20POLO%20%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1.jpg
 language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o
@@ -49,7 +49,7 @@ seo:
 
 สามารถใช้สีแตกต่างกันตามแผนกพนักงาน เช่น แผนกบริการ, ฝ่ายขาย, แผนกหลังบ้าน เป็นต้น
 
-![2149347541 (1).jpg](/2149347541-1.jpg)
+![2149347541 (1).jpg](https://storage.googleapis.com/somsri-web/2149347541-1.jpg)
 
 ## **ประเภทของผ้าที่นิยมใช้ในองค์กร**
 
@@ -116,7 +116,7 @@ seo:
 - **Dtf / DTF Transfer** ให้ลายสกรีนสีที่คม และทนมาก
 - **Silk Screen** ให้ลายสกรีนที่มีผิวสัมผัสเรียบและราคาประหยัด
 
-![7642.jpg](/7642.jpg)
+![7642.jpg](https://storage.googleapis.com/somsri-web/7642.jpg)
 
 ## **ทำไมควรผลิตเสื้อโปโลพนักงานกับ “สมศรีมีเสื้อ”**
 

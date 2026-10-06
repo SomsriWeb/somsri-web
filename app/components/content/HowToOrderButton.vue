@@ -19,7 +19,7 @@
 		<!-- Right: Map Image -->
 		<div class="flex flex-col items-center">
 			<ProseImg
-				src="/contact/map-unsmushed.jpg"
+				src="https://storage.googleapis.com/somsri-web/contact/map-unsmushed.jpg"
 				alt="map"
 				class="rounded-md shadow-md max-w-xs sm:max-w-md md:max-w-lg"
 			/>

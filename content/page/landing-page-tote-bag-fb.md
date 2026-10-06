@@ -5,7 +5,7 @@ footer: false
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/5681a
 ---
-::landing-page-header-style-one{image="/landing-page-tote-bag/banner.png"}
+::landing-page-header-style-one{image="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/banner.png"}
 #title
 รับผลิตกระเป๋า
 
@@ -35,29 +35,29 @@ lineLink: https://contact.somsritshirt.com/5681a
 
     ::slider{:items="7"}
     #item-1
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-1.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-1.png" />
 
     #item-2
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-2.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-2.png" />
 
     #item-3
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-3.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-3.png" />
 
     #item-4
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-4.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-4.png" />
 
     #item-5
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-5.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-5.png" />
 
     #item-6
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-6.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-6.png" />
 
     #item-7
-    <ProseImg src="/landing-page-tote-bag/totebag-portfolio-7.png" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-7.png" />
     ::
 
     ::center
-    <ProseImg src="/landing-page-tote-bag/totebag-price-table.png" class="max-w-[20rem]" />
+    <ProseImg src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-price-table.png" class="max-w-[20rem]" />
     ::
 
 

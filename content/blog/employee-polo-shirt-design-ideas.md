@@ -4,7 +4,7 @@ activeNavbar: false
 contentSpacing: true
 description: เสื้อโปโลพนักงานบริษัท ถือเป็นหนึ่งในการโปรโมทบริษัทในรูปแบบหนึ่ง เพราะไม่ได้เป็นเพียงแค่เสื้อยูนิฟอร์ม แต่ยังสะท้อนภาพลักษณ์ ความน่าเชื่อถือ และเอกลักษณ์ขององค์กรได้อย่างชัดเจน
 footer: true
-image: /blog/employee-polo-shirt-design-ideas-1.jpg
+image: https://storage.googleapis.com/somsri-web/blog/employee-polo-shirt-design-ideas-1.jpg
 language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o
@@ -58,7 +58,7 @@ navbar: true
 สอบถามเพิ่มเติม
 ::
 
-![เสื้อโปโลพนักงานบริษัท ช่วยให้พนักงานดูสุภาพ เรียบร้อย และเป็นมืออาชีพ ไม่ว่าจะใส่ในออฟฟิศหรือออกไปพบลูกค้า ก็สะท้อนภาพลักษณ์ที่ดีขององค์กรได้ทันที](/blog/employee-polo-shirt-design-ideas-2.jpg)
+![เสื้อโปโลพนักงานบริษัท ช่วยให้พนักงานดูสุภาพ เรียบร้อย และเป็นมืออาชีพ ไม่ว่าจะใส่ในออฟฟิศหรือออกไปพบลูกค้า ก็สะท้อนภาพลักษณ์ที่ดีขององค์กรได้ทันที](https://storage.googleapis.com/somsri-web/blog/employee-polo-shirt-design-ideas-2.jpg)
 
 1. ใช้การตัดต่อสี (Color Blocking)
 
@@ -135,7 +135,7 @@ navbar: true
 สอบถามเพิ่มเติม
 ::
 
-![เสื้อโปโลพนักงานบริษัท สามารถใส่ได้ทั้งในวันทำงานปกติ การออกงานประชุม งานแสดงสินค้า หรือกิจกรรมกลางแจ้งขององค์กร](/blog/employee-polo-shirt-design-ideas-3.jpg)
+![เสื้อโปโลพนักงานบริษัท สามารถใส่ได้ทั้งในวันทำงานปกติ การออกงานประชุม งานแสดงสินค้า หรือกิจกรรมกลางแจ้งขององค์กร](https://storage.googleapis.com/somsri-web/blog/employee-polo-shirt-design-ideas-3.jpg)
 
 ## เคล็ดลับการดูแล เสื้อโปโลพนักงานบริษัท
 

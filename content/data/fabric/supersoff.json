@@ -1,6 +1,6 @@
 {
     "name": "Supersoff",
     "imgUrl": "/fabric/supersoff.png",
-    "popupImageUrl": "/fabric/supersoff-popup.png",
+    "popupImageUrl": "https://storage.googleapis.com/somsri-web/fabrics/supersoff-popup.png",
     "order": 10
 }

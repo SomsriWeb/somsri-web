@@ -31,7 +31,7 @@ defineSlots<Slots>();
     <div class="relative overflow-x-hidden">
         <header class="relative w-full h-screen overflow-hidden">
             <!-- Background Image -->
-            <ProseImg src="/tshirt-factory/bg.png" class="w-full h-full object-cover" />
+            <ProseImg src="https://storage.googleapis.com/somsri-web/tshirt-factory/bg.png" class="w-full h-full object-cover" />
 
             <div class="absolute inset-0 bg-black/30" />
 

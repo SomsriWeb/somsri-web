@@ -1,6 +1,6 @@
 ---
 title: วิธีเลือกผ้า สำหรับทำเสื้อแบรนด์ตัวเองปี 2025 (ฉบับมือใหม่)
-image: /blog/how-to-pick-fabric-header.png
+image: https://storage.googleapis.com/somsri-web/blog/how-to-pick-fabric-header.png
 ---
 
 การเริ่มต้นทำแบรนด์เสื้อผ้า มีเรื่องที่ต้องตัดสินใจหลายอย่าง และสิ่งที่สำคัญที่สุดอย่างหนึ่งคือ วิธีเลือกผ้า หาผ้าที่เหมาะสม ผ้าที่เลือกในการนำมาทำแบรนด์ จะเป็นตัวบ่งชี้คุณภาพของแบรนด์เสื้อผ้า ความรู้สึกในการสวมใส่ และการใช้งานของเสื้อผ้า ซึ่งส่งผลโดยตรงต่อความพึงพอใจของลูกค้าและการรับรู้ของแบรนด์
@@ -19,7 +19,7 @@ image: /blog/how-to-pick-fabric-header.png
 สอบถามเพิ่มเติม
 ::
 
-![การทำแบรนด์เสื้อตัวเอง สิ่งที่สำคัญอย่างหนึ่ง คือ วิธีเลือกผ้า หาผ้าให้เหมาะสมกับแบรนด์](/blog/how-to-pick-fabric-1.jpg)
+![การทำแบรนด์เสื้อตัวเอง สิ่งที่สำคัญอย่างหนึ่ง คือ วิธีเลือกผ้า หาผ้าให้เหมาะสมกับแบรนด์](https://storage.googleapis.com/somsri-web/blog/how-to-pick-fabric-1.jpg)
 
 ## ประเภทของผ้าที่นิยมใช้ในการทำเสื้อผ้า วิธีเลือกผ้า หาผ้าให้เหมาะกับแบรนด์
 
@@ -50,7 +50,7 @@ image: /blog/how-to-pick-fabric-header.png
 สอบถามเพิ่มเติม
 ::
 
-![เสื้อ Oversized ส่วนมากจะผลิตจาก ผ้า Cotton Comb 20](/blog/how-to-pick-fabric-2.jpg)
+![เสื้อ Oversized ส่วนมากจะผลิตจาก ผ้า Cotton Comb 20](https://storage.googleapis.com/somsri-web/blog/how-to-pick-fabric-2.jpg)
 
 ### ผ้า Dry Tech
 

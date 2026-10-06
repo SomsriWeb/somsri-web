@@ -1,6 +1,6 @@
 {
     "uid": "drytech-air",
-    "imageUrl": "/fabrics/Drytech-air.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/Drytech-air.jpg",
     "forProductType": [
         "tshirt",
         "polo",

@@ -2,6 +2,7 @@
 	import type { Canvas } from "fabric"
 	import type { StyleValue } from "vue"
 	import type { DesignData } from "~/types/design"
+	import { mediaUrl } from "~/utils/mediaUrl"
 
 	// TYPE
 	interface CanvasList {
@@ -30,7 +31,7 @@
 	// COMPUTED
 	const img = computed<string>(
 		() =>
-			`/image/mockup/${design.value.type}/${design.value.style}/${design.value.fabric}/${design.value.activeSide}/${design.value.color}.png`
+			mediaUrl(`/image/mockup/${design.value.type}/${design.value.style}/${design.value.fabric}/${design.value.activeSide}/${design.value.color}.png`)
 	)
 	const canvasLists = computed<CanvasList[]>(() =>
 		design.value.sideSeq.map((side) => ({

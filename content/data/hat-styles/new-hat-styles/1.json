@@ -1,5 +1,5 @@
 {
-    "image": "/landing-page-real-hat/hat-style-1.png",
+    "image": "https://storage.googleapis.com/somsri-web/landing-page-real-hat/hat-style-1.png",
     "label": "หมวกแก็ปผ้าลายสอง",
     "priceperunit" : [90, 80, 70, 60],
     "order": 1

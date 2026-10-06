@@ -1,7 +1,7 @@
 ---
 title: รับผลิตเสื้อหน่วยงานราชการ ถูกระเบียบ ผ้าเกรดดี ใส่สุภาพ พร้อมปัก-สกรีน
 description: มองหาโรงงานรับผลิตเสื้อหน่วยงานราชการ? สมศรีมีเสื้อ จัดให้! เสื้อโปโล-กิจกรรม ถูกระเบียบ ผ้าเกรดดี ทรงสุภาพ งานปักสกรีนเนี้ยบ ออกใบกำกับภาษีเต็มรูปแบบได้
-image: /blog/img-custom-government-shirts-premium-quality.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-custom-government-shirts-premium-quality.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -13,7 +13,7 @@ image: /blog/img-custom-government-shirts-premium-quality.jpg
 
 ทางสมศรีมีเสื้อ จึงจะพาไปดูแนวทางในการเลือกผลิตเสื้อของหน่วยราชการ ตั้งแต่ประเภทของ[เนื้อผ้า](https://somsritshirt.com/fabric-specification) เทคนิคในการผลิต ไปจนถึงสิ่งที่ควรตรวจสอบก่อนการสั่งผลิตจริง เพื่อได้เสื้อที่มีคุณภาพตามมาตรฐาน และผ่านทุกการตรวจรับงาน
 
-![ตัวอย่างเสื้อโปโลหน่วยงานราชการ](/blog/img-example-government-shirts.png)
+![ตัวอย่างเสื้อโปโลหน่วยงานราชการ](https://storage.googleapis.com/somsri-web/blog/img-example-government-shirts.png)
 
 ## 5 สิ่งสำคัญที่ต้องเช็ก! ก่อนสั่งผลิตเสื้อหน่วยงานราชการ
 
@@ -61,7 +61,7 @@ image: /blog/img-custom-government-shirts-premium-quality.jpg
 
 สำหรับหน่วยงานราชการที่ต้องใช้เสื้อสำหรับกิจกรรมกลางแจ้ง เช่น งานอบรมสัมมนา หรืองานเดินรณรงค์ การเลือกใช้ผ้า Dry Tech ถือเป็นตัวเลือกที่ตอบโจทย์มาก ด้วยคุณสมบัติที่มีน้ำหนักเบา และระบายเหงื่อได้ดี ผ้าประเภทนี้ช่วยดึงความชื้นออกจากผิว จึงทำให้ใส่แล้วรู้สึกสบาย แม้จะทำกิจกรรมอยู่กลางแจ้งเป็นเวลานาน
 
-![ผ้าไมโครไฟเบอร์เหมาะสำหรับองค์กรที่ใส่เพื่อทำกิจกรรมกลางแจ้ง](/blog/img-example-microfiber-fabric.png)
+![ผ้าไมโครไฟเบอร์เหมาะสำหรับองค์กรที่ใส่เพื่อทำกิจกรรมกลางแจ้ง](https://storage.googleapis.com/somsri-web/blog/img-example-microfiber-fabric.png)
 
 ## ทำไมหน่วยงานราชการและรัฐวิสาหกิจ ถึงมั่นใจสั่งทำเสื้อกับ "สมศรีมีเสื้อ"
 

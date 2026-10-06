@@ -1,6 +1,6 @@
 {
     "name": "hat",
-    "image": "/product/hat.png",
+    "image": "https://storage.googleapis.com/somsri-web/product/hat.png",
     "url": "/hat",
     "featured": true,
     "order": 6

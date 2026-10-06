@@ -1,6 +1,6 @@
 ---
 title: ทำไมใคร ๆ ก็เลือกผลิตเสื้อกับสมศรี
-image: /blog/choose-to-produce-shirts-with-somsri-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/choose-to-produce-shirts-with-somsri-header.jpg
 ---
 
 โรงงานผลิตเสื้อคุณภาพ สมศรีมีเสื้อ พร้อมให้คำปรึกษาและบริการครบวงจร หากคุณลูกค้ากำลังมองหาโรงงานผลิตเสื้อที่เชื่อถือได้ ทั้งคุณภาพ การบริการ และความเข้าใจในความต้องการของลูกค้า… “สมศรีมีเสื้อ” คือ คำตอบ
@@ -55,7 +55,7 @@ image: /blog/choose-to-produce-shirts-with-somsri-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![ทำไมใคร ๆ ก็เลือกผลิตเสื้อกับสมศรี ามีทีมงานที่พร้อมให้คำปรึกษาตั้งแต่ขั้นตอนแรก ช่วยวางแผน เลือกเนื้อผ้า ออกแบบลายพิมพ์ และวางโครงสร้างค่าใช้จ่าย](/blog/choose-to-produce-shirts-with-somsri-1.jpg)
+![ทำไมใคร ๆ ก็เลือกผลิตเสื้อกับสมศรี ามีทีมงานที่พร้อมให้คำปรึกษาตั้งแต่ขั้นตอนแรก ช่วยวางแผน เลือกเนื้อผ้า ออกแบบลายพิมพ์ และวางโครงสร้างค่าใช้จ่าย](https://storage.googleapis.com/somsri-web/blog/choose-to-produce-shirts-with-somsri-1.jpg)
 
 ## ขั้นตอนการสั่งผลิตเสื้อกับสมศรีมีเสื้อ
 

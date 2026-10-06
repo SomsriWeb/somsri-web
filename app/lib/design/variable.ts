@@ -1,5 +1,6 @@
 import type { ProductStyle } from '~/types/design';
 import type { SelectOption } from '~/types/global';
+import { mediaUrl } from '~/utils/mediaUrl';
 
 export enum ProductTypeKey {
     TSHIRT = 'tshirt',
@@ -122,29 +123,29 @@ export const productStyle: Record<ProductTypeKey, ProductStyle[]> = {
         {
             label: 'เสื้อยืดคอกลม',
             value: 'tshirt',
-            imgUrl: '/image/product/tshirt/tshirt_round_neck.png',
+            imgUrl: mediaUrl('/image/product/tshirt/tshirt_round_neck.png'),
         },
         {
             label: 'เสื้อยืดคอวี',
             value: 'tshirtv',
-            imgUrl: '/image/product/tshirt/tshirt_V_neck.png',
+            imgUrl: mediaUrl('/image/product/tshirt/tshirt_V_neck.png'),
         },
     ],
     [ProductTypeKey.TOTEBAG]: [
         {
             label: 'ทรงมาตรฐาน',
             value: 'standard',
-            imgUrl: '/image/product/bag/bag_standard.png',
+            imgUrl: mediaUrl('/image/product/bag/bag_standard.png'),
         },
         {
             label: 'ทรงก้นหอย',
             value: 'spiral',
-            imgUrl: '/image/product/bag/bag_spiral.png',
+            imgUrl: mediaUrl('/image/product/bag/bag_spiral.png'),
         },
         {
             label: 'ทรงเกาหลี',
             value: 'korea',
-            imgUrl: '/image/product/bag/bag_Korea.png',
+            imgUrl: mediaUrl('/image/product/bag/bag_Korea.png'),
         },
     ],
     [ProductTypeKey.POLO]: [{ label: 'มาตรฐาน', value: 'standard', imgUrl: '' }],

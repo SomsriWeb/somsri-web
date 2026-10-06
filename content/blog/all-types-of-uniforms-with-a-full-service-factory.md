@@ -3,7 +3,7 @@ title: รับผลิตเสื้อยูนิฟอร์มทุก�
 activeNavbar: false
 description: สมศรีมีเสื้อ รับผลิตเสื้อยูนิฟอร์มจากโรงงานผลิตเสื้อที่มีคุณภาพ รับผลิตเสื้อยูนิฟอร์ม ทุกรูปแบบทั้งเสื้อโปโลบริษัท เสื้อยืดพนักงาน เสื้อกีฬา เสื้อแจ็คเก็ต และอีกมากมาย
 footer: true
-image: /all-types-of-uniforms.jpg
+image: https://storage.googleapis.com/somsri-web/all-types-of-uniforms.jpg
 language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o

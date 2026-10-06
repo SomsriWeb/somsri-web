@@ -1,7 +1,7 @@
 {
     "uid": "cotton-comb-20",
-    "imageUrl": "/fabrics/cotton-comb-20.png",
-    "popupImageUrl": "/fabrics/cotton-comb-popup.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-comb-20.png",
+    "popupImageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-comb-popup.png",
     "forProductType": [
         "tshirt",
         "polo",

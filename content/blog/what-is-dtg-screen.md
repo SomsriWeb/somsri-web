@@ -1,6 +1,6 @@
 ---
 title: สกรีนเสื้อ DTG คืออะไร สกรีนเสื้อยืดด้วยระบบดิจิตอลดียังไง มีข้อดียังไง
-image: /blog/what-is-dtg-screen-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/what-is-dtg-screen-header.jpg
 ---
 
 สกรีนเสื้อ DTG คือ กระบวนการผลิตเสื้อยืด ที่นำหมึก Pigment มาสกรีนลงบนเสื้อโดยตรง ด้วยเครื่องพิมพ์ผ้าโดยเฉพาะ จากนั้นนำมาอบสีให้แห้ง
@@ -48,7 +48,7 @@ image: /blog/what-is-dtg-screen-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![สกรีนเสื้อ DTG คือ กระบวนการผลิตเสื้อยืด ที่นำหมึก Pigment มาสกรีนลงบนเสื้อโดยตรง ด้วยเครื่องพิมพ์ผ้าโดยเฉพาะ จากนั้นนำมาอบสีให้แห้ง](/blog/what-is-dtg-screen-1.png)
+![สกรีนเสื้อ DTG คือ กระบวนการผลิตเสื้อยืด ที่นำหมึก Pigment มาสกรีนลงบนเสื้อโดยตรง ด้วยเครื่องพิมพ์ผ้าโดยเฉพาะ จากนั้นนำมาอบสีให้แห้ง](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-screen-1.png)
 
 ## เปรียบเทียบ สกีน DTG vs. การสกรีนแบบอื่น
 
@@ -75,4 +75,4 @@ image: /blog/what-is-dtg-screen-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![สกรีนเสื้อ DTG สามารถสกรีนงานที่จำนวนน้อยได้ ไม่ต้องมีบล็อคพิมพ์](/blog/what-is-dtg-screen-2.png)
+![สกรีนเสื้อ DTG สามารถสกรีนงานที่จำนวนน้อยได้ ไม่ต้องมีบล็อคพิมพ์](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-screen-2.png)

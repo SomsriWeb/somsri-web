@@ -26,7 +26,7 @@ lineLink: https://contact.somsritshirt.com/3fd08
   ทุกชิ้นงานผ่านการดูแลอย่างมืออาชีพ เพื่อให้ศิลปินและแฟนคลับได้รับสินค้าที่ตรงตามความต้องการ
 
   #image
-    ::::prose-img{alt="ตัวอย่างผลงานเสื้อศิลปิน" src="/port/Asset-5.png"}
+    ::::prose-img{alt="ตัวอย่างผลงานเสื้อศิลปิน" src="https://storage.googleapis.com/somsri-web/port/Asset-5.png"}
     ::::
   :::
 

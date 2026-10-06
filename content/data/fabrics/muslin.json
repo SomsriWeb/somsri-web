@@ -1,6 +1,6 @@
 {
     "uid": "muslin",
-    "imageUrl": "/fabrics/muslin.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/muslin.png",
     "popupImageUrl": "/fabrics/muslin-popup.png",
     "forProductType": [
         "fabric-specification"

@@ -25,7 +25,7 @@ defineSlots<Slots>();
 		<!-- Right: Map Image -->
 		<div class="w-full lg:w-1/2 flex flex-col items-center">
 			<ProseImg
-				src="/contact/map-unsmushed.jpg"
+				src="https://storage.googleapis.com/somsri-web/contact/map-unsmushed.jpg"
 				alt="map"
 				class="rounded-md shadow-md w-full max-w-full sm:max-w-md"
 			/>

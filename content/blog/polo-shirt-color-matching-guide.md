@@ -1,7 +1,7 @@
 ---
 title: สีเสื้อโปโล เลือกยังไงให้เข้ากับโลโก้บริษัท Guide ฉบับสมบูรณ์
 description: คู่มือเลือกสีเสื้อโปโลให้เข้ากับโลโก้บริษัท เทคนิคจับคู่สีให้แบรนด์โดดเด่น เสริมลุคองค์กรให้มืออาชีพ ไม่กลืน ไม่บอด โดย สมศรีมีเสื้อ
-image: /blog/img-polo-shirt-color-matching-guide.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-polo-shirt-color-matching-guide.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -27,7 +27,7 @@ image: /blog/img-polo-shirt-color-matching-guide.jpg
 
 หลายแบรนด์เลยเลือกใช้สีเป็นสิ่งที่ช่วยให้คนจำแบรนด์ได้ พร้อมช่วยแสดงความเป็นตัวตนของแบรนด์ออกมา ดังนั้นเวลา[สั่งผลิตเสื้อโปโลบริษัท](https://somsritshirt.com/polo) สีของเสื้อจึงควรไปในทิศทางเดียวกับภาพลักษณ์ของแบรนด์ ไม่ใช่เลือกจากความชอบส่วนตัวเพียงอย่างเดียว
 
-![สีเสื้อโปโลมีผลต่อภาพลักษณ์องค์กร](/blog/img-polo-color-choosen.jpg)
+![สีเสื้อโปโลมีผลต่อภาพลักษณ์องค์กร](https://storage.googleapis.com/somsri-web/blog/img-polo-color-choosen.jpg)
 
 ## 3 กฎเหล็กพื้นฐานในการจับคู่สีเสื้อโปโลกับโลโก้
 
@@ -88,7 +88,7 @@ image: /blog/img-polo-shirt-color-matching-guide.jpg
 
 เอาจริง ๆ หลายงานไม่ได้ใช้ดีไซน์อะไรเยอะเลย แค่เลือกคู่สีได้ถูกต้อง งานก็ดูต่างขึ้นค่อนข้างชัดแล้ว
 
-![วิธีแก้สีเสื้อโปโลและสีโลโก้เป็นสีเดียวกัน](/blog/img-polo-logo-same-color.jpg)
+![วิธีแก้สีเสื้อโปโลและสีโลโก้เป็นสีเดียวกัน](https://storage.googleapis.com/somsri-web/blog/img-polo-logo-same-color.jpg)
 
 ## เทคนิคพิเศษ: ถ้าสีเสื้อกับสีโลโก้เป็นสีเดียวกัน แก้ยังไง?
 

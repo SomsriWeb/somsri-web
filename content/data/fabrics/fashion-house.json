@@ -1,6 +1,6 @@
 {
     "uid": "fashion-house",
-    "imageUrl": "/fabrics/Fashion-house.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/Fashion-house.jpg",
     "forProductType": [
         "tshirt",
         "polo",

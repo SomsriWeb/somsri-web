@@ -1,7 +1,7 @@
 ---
 title: รับผลิตเสื้อเชิ้ตฮาวาย พิมพ์ลายคุณภาพสูง Custom ได้ตามใจ ดีไซน์ไหนก็เป๊ะ!
 description: สมศรีมีเสื้อ บริการรับผลิตเสื้อเชิ้ตฮาวาย ครบวงจร ตั้งแต่การออกแบบไปจนถึงการผลิตจริง ด้วยเทคโนโลยีการพิมพ์ที่ทันสมัย พร้อมตอบโจทย์ทุกความต้องการของลูกค้า
-image: /blog/img-custom-hawaiian-shirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-custom-hawaiian-shirts.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -19,7 +19,7 @@ image: /blog/img-custom-hawaiian-shirts.jpg
 
 ลายใบไม้ถือเป็นลายคลาสสิกที่สะท้อนภาพลักษณ์ของความเป็นฮาวายได้ชัดเจนที่สุด ไม่ว่าจะเป็นใบปาล์ม ใบมอนสเตอร่า หรือใบไม้ทรอปิคอล ลายประเภทนี้ให้ความรู้สึกสดชื่น ผ่อนคลาย เหมาะกับการใส่ในวันสบาย ๆ ใส่ไปท่องเที่ยว หรือใช้เป็นยูนิฟอร์มในธุรกิจท่องเที่ยว
 
-![เสื้อฮาวายลายดอกไม้](/blog/img-hawaiian-shirts.jpg)
+![เสื้อฮาวายลายดอกไม้](https://storage.googleapis.com/somsri-web/blog/img-hawaiian-shirts.jpg)
 
 ### 2. Stripe (ลายทาง)
 
@@ -45,7 +45,7 @@ image: /blog/img-custom-hawaiian-shirts.jpg
 
 ลายญี่ปุ่น เช่น คลื่นทะเล ([Seigaiha](https://www.facebook.com/AdminDecco/posts/%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2-%E0%B9%80%E0%B8%8B%E0%B9%84%E0%B8%81%E0%B8%AE%E0%B8%B0-%E9%9D%92%E6%B5%B7%E6%B3%A2-%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD-%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%AA%E0%B8%B5%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1-seigaiha-%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%8B%E0%B9%84%E0%B8%81%E0%B8%AE/1201679571764592/)) หรือปลาคราฟ (Koi) มีเอกลักษณ์และความหมายเชิงวัฒนธรรม เหมาะกับการสร้างจุดเด่นให้แบรนด์
 
-![ลายคลื่นญี่ปุ่น Seigaiha](/blog/img-Seigaiha.jpg)
+![ลายคลื่นญี่ปุ่น Seigaiha](https://storage.googleapis.com/somsri-web/blog/img-Seigaiha.jpg)
 
 ### 8. Newspaper (ลายหนังสือพิมพ์)
 

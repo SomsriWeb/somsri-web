@@ -5,7 +5,7 @@
 			title: "การพิมพ์ (Sublimation)",
 			description:
 				"กระบวนการพิมพสกรีนอีกรูปแบบหนึ่ง ที่ไดรับความนิยมเป็นอยางสูง โดยใช้ ความร้อนเข้ามาทำใหน้ำหมึกซึมเขาไปในเนื้อผ้า นิยมทำเปนเสื้อกีฬา",
-			image: "/produce-tshirt/sublimation.png",
+			image: "https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation.png",
 			alt: "ราคางาน Sublimation",
 		},
 	]
@@ -31,7 +31,7 @@
 
 		<div class="flex justify-center">
 			<ProseImg
-				src="/produce-tshirt/sublimation-price-table.jpg"
+				src="https://storage.googleapis.com/somsri-web/produce-tshirt/sublimation-price-table.jpg"
 				alt="sport price"
 				class="max-w-[25rem]"
 			/>

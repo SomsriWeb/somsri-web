@@ -1,6 +1,6 @@
 {
     "uid": "baby-french",
-    "imageUrl": "/fabrics/baby-french.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/baby-french.jpg",
     "forProductType": [
         "tshirt",
         "polo",

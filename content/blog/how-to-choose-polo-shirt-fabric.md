@@ -1,7 +1,7 @@
 ---
 title: เนื้อผ้าเสื้อโปโล เลือกแบบไหนดี? เทียบ TC Lacoste vs Dry Tech vs Micro vs Juti
 description: เนื้อผ้าเสื้อโปโลแบบไหนดี? เปรียบเทียบ TC Lacoste, Dry Tech, Micro Sport และ Juti Micro ทั้งสัมผัส การระบายอากาศ และการใช้งาน พร้อมวิธีเลือกผ้าให้เหมาะกับองค์กร
-image: /blog/img-how-to-choose-polo-shirt-fabric.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-choose-polo-shirt-fabric.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -19,7 +19,7 @@ image: /blog/img-how-to-choose-polo-shirt-fabric.jpg
 
 สรุป ผ้าที่ดีไม่ใช่ผ้าที่แพงที่สุด แต่เป็นผ้าที่เหมาะกับคนใส่และรูปแบบงานมากที่สุด ก่อนสั่งผลิตจึงควรดูทั้งสถานที่ทำงาน กิจกรรม ระยะเวลาที่ต้องสวมใส่ ภาพลักษณ์ และเทคนิคทำโลโก้ควบคู่กัน
 
-![ตัวอย่างเสื้อโปโลที่ทำจากผ้า TC Lacoste, Dry Tech, Micro Sport, Juti Micro](/blog/img-example-polo-fabric.jpg)
+![ตัวอย่างเสื้อโปโลที่ทำจากผ้า TC Lacoste, Dry Tech, Micro Sport, Juti Micro](https://storage.googleapis.com/somsri-web/blog/img-example-polo-fabric.jpg)
 
 ## เทียบ 4 เนื้อผ้าเสื้อโปโลยอดนิยม เลือกแบบไหนให้เหมาะกับงาน
 
@@ -86,7 +86,7 @@ Micro Sport ให้ฟีลที่ขยับเข้าใกล้เ�
 
 นอกจากนี้ยังช่วยให้เสื้อทีมดูมีความ [Sporty](https://vogue.co.th/article/sporty-chic) และทันสมัย เหมาะกับองค์กรที่อยากลดความเป็นทางการลงเล็กน้อย แต่ยังต้องการให้ทุกคนแต่งตัวเป็นทีมและมองเห็นภาพลักษณ์ของแบรนด์ได้ชัดเจน
 
-![ตัวอย่างเสื้อโปโลที่เหมาะสำหรับใส่ในงานวิ่ง](/blog/img-example-polo-running-event.jpg)
+![ตัวอย่างเสื้อโปโลที่เหมาะสำหรับใส่ในงานวิ่ง](https://storage.googleapis.com/somsri-web/blog/img-example-polo-running-event.jpg)
 
 ### เสื้อกีฬา เสื้อวิ่ง หรืองาน Sublimation
 

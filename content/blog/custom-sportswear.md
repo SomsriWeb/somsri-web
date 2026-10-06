@@ -4,7 +4,7 @@ description: " มองหาโรงงานสั่งทำเสื้�
 seo:
   title: Custom-sportswear file
   description: " มองหาโรงงานสั่งทำเสื้อกีฬาโรงเรียนอยู่ใช่ไหม? สมศรีมีเสื้อ รับผลิตเสื้อกีฬาสีคุณภาพพรีเมียม ราคาโรงงาน ออกแบบฟรี ผ้าใส่สบาย ระบายอากาศดี งบไม่บานปลาย ส่งตรงเวลาทั่วประเทศ"
-image: /blog/img-custom-sportswear.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-custom-sportswear.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -58,7 +58,7 @@ image: /blog/img-custom-sportswear.jpg
 
 ปัจจัยเหล่านี้ช่วยให้การ สั่งทำเสื้อกีฬา ได้ผลลัพธ์ที่ใช้งานจริงได้ดี ไม่ใช่แค่สวยเฉพาะในแบบ
 
-![เสื้อกีฬาโรงเรียน](/blog/img-school-sportwears.jpg)
+![เสื้อกีฬาโรงเรียน](https://storage.googleapis.com/somsri-web/blog/img-school-sportwears.jpg)
 
 ## เทคนิคบริหารงบประมาณสั่งเสื้อกีฬาโรงเรียน "งบไม่บานปลาย"
 
@@ -129,7 +129,7 @@ image: /blog/img-custom-sportswear.jpg
 - สรุปจำนวนแต่ละไซส์ล่วงหน้า: เพื่อลดปัญหาการกระจายไซส์ไม่สมดุล เช่น ไซส์ M หมด แต่ XS เหลือ
 - ปรึกษาโรงงานโดยตรง: โรงงานที่มีประสบการณ์ด้าน สั่งทำชุดกีฬา จะช่วยแนะนำสัดส่วนไซส์ที่เหมาะสม
 
-![ผลิตเสื้อกีฬาครบวงจร](/blog/img-custom-sportwear-manufacture.jpg)
+![ผลิตเสื้อกีฬาครบวงจร](https://storage.googleapis.com/somsri-web/blog/img-custom-sportwear-manufacture.jpg)
 
 ## รับผลิตเสื้อกีฬา One-Stop Service จาก "สมศรีมีเสื้อ"
 

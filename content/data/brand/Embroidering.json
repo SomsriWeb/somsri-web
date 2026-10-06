@@ -2,6 +2,6 @@
   "name": "Screen Printing",
   "method": "งานปัก",
   "alt": "ปักผ้า",
-  "image": "/brand/lace.png",
+  "image": "https://storage.googleapis.com/somsri-web/brand/lace.png",
   "order": 4
 }

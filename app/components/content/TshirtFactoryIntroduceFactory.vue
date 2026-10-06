@@ -21,7 +21,7 @@ defineSlots<Slots>();
         </div>
 
         <div>
-            <NuxtImg src="/tshirt-factory/introduce-factory.png" alt="รับผลิตเสื้อยืด สั่งทำเสื้อพร้อมสกรีน" class="object-cover w-full h-full rounded-xl" format="webp" loading="lazy" placeholder />
+            <NuxtImg src="https://storage.googleapis.com/somsri-web/tshirt-factory/introduce-factory.png" alt="รับผลิตเสื้อยืด สั่งทำเสื้อพร้อมสกรีน" class="object-cover w-full h-full rounded-xl" format="webp" loading="lazy" placeholder />
         </div>
     </div>
 </template>

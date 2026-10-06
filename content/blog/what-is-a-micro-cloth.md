@@ -2,7 +2,7 @@
 เพิ่ม script ใน head: []
 title: ผ้าไมโคร คืออะไร? แตกต่างจากผ้าทั่วไปอย่างไร เหมาะกับผลิตเสื้อแบบไหน
 activeNavbar: true
-image: /blog/LINE_ALBUM_สมศรีมีเสื้อ-7_250804_3.webp
+image: https://storage.googleapis.com/somsri-web/blog/LINE_ALBUM_%E0%B8%AA%E0%B8%A1%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B9%89%E0%B8%AD-7_250804_3.webp
 description: "ผ้าไมโคร ผ้าที่ทอจากเส้นใยสังเคราะห์ที่มีขนาดเล็กมากเป็นพิเศษ
   ผลิตจากโพลีเอสเตอร์หรือไนลอน
   โดยเส้นใยเหล่านี้มีความละเอียดสูงกว่าผ้าทั่วไปหลายเท่า
@@ -65,7 +65,7 @@ seo:
 สอบถามเพิ่มเติม
 ::
 
-![ผ้าไมโคร มีขนาดเล็กมาก ผ้าจึงมีเนื้อสัมผัสที่ นุ่มมือ ลื่นผิว และบางเบา เหมาะอย่างยิ่งกับเสื้อผ้าที่ต้องการความรู้สึกสบาย ไม่ระคายเคือง เช่น เสื้อกีฬา เสื้อยืด หรือเสื้อโปโล](/blog/smiling-pretty-sporty-girl-wearing-headband-wristband-isolated-purple-space-min-scaled.webp)
+![ผ้าไมโคร มีขนาดเล็กมาก ผ้าจึงมีเนื้อสัมผัสที่ นุ่มมือ ลื่นผิว และบางเบา เหมาะอย่างยิ่งกับเสื้อผ้าที่ต้องการความรู้สึกสบาย ไม่ระคายเคือง เช่น เสื้อกีฬา เสื้อยืด หรือเสื้อโปโล](https://storage.googleapis.com/somsri-web/blog/smiling-pretty-sporty-girl-wearing-headband-wristband-isolated-purple-space-min-scaled.webp)
 
 ## **ผ้าไมโคร ที่นิยมใช้ในปัจจุบันมีอะไรบ้าง**
 
@@ -314,7 +314,7 @@ seo:
 - [ผ้าฝ้าย 100% (Cotton Comb)](/what-is-cotton) ใส่สบายที่สุดแต่ดูแลยากและต้นทุนสูง
 - [ผ้า Dry-Tech](/what-is-dry-tech-fabric-polo-shirt) มีคุณสมบัติคล้ายไมโครแต่พรีเมียมกว่า ราคาจึงสูงตาม
 
-![ผ้าไมโคร มีความยืดหยุ่นในการใช้งานสูง หมาะกับผู้ที่ต้องการผ้าที่ระบายเหงื่อและแห้งเร็ว เช่น เสื้อฟุตบอล เสื้อวิ่ง เสื้อฟิตเนส หรือเสื้อกีฬาทีมโรงเรียนและมหาวิทยาลัย](/blog/young-lady-holding-hand-head-t-shirt-looking-joyful-front-view-min-scaled.webp)
+![ผ้าไมโคร มีความยืดหยุ่นในการใช้งานสูง หมาะกับผู้ที่ต้องการผ้าที่ระบายเหงื่อและแห้งเร็ว เช่น เสื้อฟุตบอล เสื้อวิ่ง เสื้อฟิตเนส หรือเสื้อกีฬาทีมโรงเรียนและมหาวิทยาลัย](https://storage.googleapis.com/somsri-web/blog/young-lady-holding-hand-head-t-shirt-looking-joyful-front-view-min-scaled.webp)
 
 ## **ผ้าไมโครเหมาะสำหรับใช้งานประเภทใด?**
 

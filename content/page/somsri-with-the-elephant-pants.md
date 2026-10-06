@@ -17,7 +17,7 @@ seo:
 
 ::landing-page-header-style-two
 ---
-image: /somsri-with-the-elephant-pants/banner.png
+image: https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/banner.png
 ---
   :::description-pills
   ---
@@ -54,21 +54,21 @@ image: /somsri-with-the-elephant-pants/banner.png
 ## ตัวอย่างงาน
 
   :::card
-  ![](/somsri-with-the-elephant-pants/elephant-pants-1.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/elephant-pants-1.png)
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/elephant-pants-2.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/elephant-pants-2.png)
   :::
 
 ## ผ้าที่นิยมผลิตกางเกงช้าง
 
   :::card
-  ![](/somsri-with-the-elephant-pants/fabric-1.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/fabric-1.png)
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/fabric-2.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/fabric-2.png)
   :::
 
   :::prose-h3{.text-center as="p"}
@@ -78,7 +78,7 @@ image: /somsri-with-the-elephant-pants/banner.png
 ## ทรงของกางเกง
 
   :::card
-  ![](/somsri-with-the-elephant-pants/pant-style-1.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/pant-style-1.png)
 
     ::::prose-h4{.text-center as="p"}
     เอวจั๊ม
@@ -86,7 +86,7 @@ image: /somsri-with-the-elephant-pants/banner.png
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/pant-style-2.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/pant-style-2.png)
 
     ::::prose-h4{.text-center as="p"}
     ขาปล่อย
@@ -96,7 +96,7 @@ image: /somsri-with-the-elephant-pants/banner.png
 ## กางเกงช้างยอดฮิต ทำไมกางเกงช้างถึงเป็นที่นิยม ?
 
   :::card
-  ![](/somsri-with-the-elephant-pants/why-1.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/why-1.png)
 
   ### หาซื้อง่าย
 
@@ -104,7 +104,7 @@ image: /somsri-with-the-elephant-pants/banner.png
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/why-2.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/why-2.png)
 
   ### ใส่ได้ทุกโอกาส
 
@@ -112,7 +112,7 @@ image: /somsri-with-the-elephant-pants/banner.png
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/why-3.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/why-3.png)
 
   ### เอกลักษณ์ไทย
 
@@ -122,11 +122,11 @@ image: /somsri-with-the-elephant-pants/banner.png
 ## ตัวอย่างลายกางเกงช้าง
 
   :::card
-  ![](/somsri-with-the-elephant-pants/pattern-1.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/pattern-1.png)
   :::
 
   :::card
-  ![](/somsri-with-the-elephant-pants/pattern-2.png)
+  ![](https://storage.googleapis.com/somsri-web/somsri-with-the-elephant-pants/pattern-2.png)
   :::
 ::
 

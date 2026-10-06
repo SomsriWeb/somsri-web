@@ -12,7 +12,7 @@ navbar: true
 
 ::landing-page-header-style-one
 ---
-image: /landing-page-real-hat/banner.png
+image: https://storage.googleapis.com/somsri-web/landing-page-real-hat/banner.png
 ---
   :::description-pills
   ---
@@ -72,22 +72,22 @@ image: /landing-page-real-hat/banner.png
   imageFit: cover
   ---
   #item-1
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-1.png"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-1.png"}
 
   #item-2
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-2.jpg"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-2.jpg"}
 
   #item-3
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-3.jpg"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-3.jpg"}
 
   #item-4
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-4.jpg"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-4.jpg"}
 
   #item-5
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-5.jpg"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-5.jpg"}
 
   #item-6
-  :prose-img{alt="ตัวอย่างหมวก" src="/landing-page-real-hat/portfolio/portfolio-6.jpg"}
+  :prose-img{alt="ตัวอย่างหมวก" src="https://storage.googleapis.com/somsri-web/landing-page-real-hat/portfolio/portfolio-6.jpg"}
   :::
 ::
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { mediaUrl } from '~/utils/mediaUrl';
 // TYPES
 interface SocialItem {
     label: string;
@@ -35,7 +36,7 @@ const socialStructuredData = computed(() => {
         sameAs: sameAs,
         logo: {
             '@type': 'ImageObject',
-            url: `${siteUrl}/og.jpg`,
+            url: mediaUrl('/og.jpg'),
         },
     };
 });
@@ -82,4 +83,3 @@ useHead({
         </a>
     </nav>
 </template>
-

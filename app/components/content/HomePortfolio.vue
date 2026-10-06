@@ -4,31 +4,31 @@ import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
 const imgs = [
     {
         alt: 'โรงงานผลิตเสื้อพร้อมสกรีน',
-        src: '/home/portfolio/1.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/1.jpg',
     },
     {
         alt: 'ไม่มีไอเดียไม่เป็นไร เราออกแบบให้ได้',
-        src: '/home/portfolio/2.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/2.jpg',
     },
     {
         alt: 'เสื้อทีม เสื้อรุ่น งานปัก งานสกรีน',
-        src: '/home/portfolio/3.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/3.jpg',
     },
     {
         alt: 'รับผลิตเสื้อ และเรายังมีเทคนิคการสกรีนที่หลากหลาย',
-        src: '/home/portfolio/4.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/4.jpg',
     },
     {
         alt: 'ออกแบบและสั่งทำเสื้อของตัวเอง',
-        src: '/home/portfolio/5.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/5.jpg',
     },
     {
         alt: 'เทคนิคสกรีนเสื้อแบบยางที่นิยมกันอย่างแพร่หลาย',
-        src: '/home/portfolio/6.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/6.jpg',
     },
     {
         alt: 'ตัวอย่างงานสกรีนเสื้อ',
-        src: '/home/portfolio/7.jpg',
+        src: 'https://storage.googleapis.com/somsri-web/home/portfolio/7.jpg',
     },
 ];
 

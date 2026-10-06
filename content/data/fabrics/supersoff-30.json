@@ -1,7 +1,7 @@
 {
     "uid": "supersoff-30",
-    "imageUrl": "/fabrics/supersoff-32.png",
-    "popupImageUrl": "/fabrics/supersoff-popup.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/supersoff-32.png",
+    "popupImageUrl": "https://storage.googleapis.com/somsri-web/fabrics/supersoff-popup.png",
     "forProductType": [
         "tshirt",
         "polo",

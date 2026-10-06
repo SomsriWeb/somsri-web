@@ -1,7 +1,7 @@
 {
     "title": "เห็นก่อน อนุมัติก่อน ถึงผลิตจริง",
     "description": "เราส่งตัวอย่างให้ดูก่อนเสมอ ไม่มีโรงงานไหนแอบผลิตโดยไม่ผ่านที่สมศรี — อนุมัติแล้วค่อยเดินหน้าต่อ",
-    "image": "/how-to-order/steps/step-5.jpg",
+    "image": "https://storage.googleapis.com/somsri-web/how-to-order/steps/step-5.jpg",
     "badge": "จุดที่ทำให้คุณวางใจได้",
     "order": 5
 }

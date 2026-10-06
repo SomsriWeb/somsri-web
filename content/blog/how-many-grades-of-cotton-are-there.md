@@ -1,6 +1,6 @@
 ---
 title: ผ้าคอตตอนมีกี่เกรด เปรียบเทียบผ้าคอตตอน ข้อดี-ข้อเสีย เปรียบเทียบชัด ๆ
-image: /blog/how-many-grades-of-cotton-are-there-header.png
+image: https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-header.png
 ---
 
 ## ผ้าคอตตอน คืออะไร
@@ -17,7 +17,7 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 สอบถามเพิ่มเติม
 ::
 
-![เปรียบเทียบผ้าคอตตอน สามารถแบ่งออกได้ 2 วิธี คือแบ่งตามชนิดหรือเบอร์ของเส้นด้าย และตามกระบวนการผลิตของเส้นด้าย](/blog/how-many-grades-of-cotton-are-there-1.jpg)
+![เปรียบเทียบผ้าคอตตอน สามารถแบ่งออกได้ 2 วิธี คือแบ่งตามชนิดหรือเบอร์ของเส้นด้าย และตามกระบวนการผลิตของเส้นด้าย](https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-1.jpg)
 
 ### เปรียบเทียบผ้าคอตตอน แบ่งตามชนิดของเส้นด้าย
 
@@ -44,7 +44,7 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 สอบถามเพิ่มเติม
 ::
 
-![เปรียบเทียบผ้าคอตตอน ผ้าคอตตอนหรือผ้าฝ้ายเป็นผ้าชนิดหนึ่งที่นิยมใช้กันมากที่สุดในโลก](/blog/how-many-grades-of-cotton-are-there-2.jpg)
+![เปรียบเทียบผ้าคอตตอน ผ้าคอตตอนหรือผ้าฝ้ายเป็นผ้าชนิดหนึ่งที่นิยมใช้กันมากที่สุดในโลก](https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-2.jpg)
 
 ## เปรียบเทียบผ้าคอตตอน แต่ละชนิด
 
@@ -66,4 +66,4 @@ image: /blog/how-many-grades-of-cotton-are-there-header.png
 
 ติดต่อเร่งด่วนได้ทางเบอร์ 02-430-0678 (สำนักงาน) / 083-908-8853 / 083-908-8854 / 063-421-6521 / 095-454-6693
 
-![เปรียบเทียบผ้าคอตตอน ใส่สบาย นุ่ม ระบายอากาศได้ดี](/blog/how-many-grades-of-cotton-are-there-3.jpeg)![เปรียบเทียบผ้าคอตตอน  ผ้าคอตตอนมีหลายแบบและหลายเกรดจึงทำให้คุณภาพเนื้อผ้าต่างกัน](/blog/how-many-grades-of-cotton-are-there-4.jpg)![เปรียบเทียบผ้าคอตตอน แบ่งตามชนิดของเส้นด้าย และแบ่งตามกระบวนการผลิตของเส้นด้าย](/blog/how-many-grades-of-cotton-are-there-5.jpg)
+![เปรียบเทียบผ้าคอตตอน ใส่สบาย นุ่ม ระบายอากาศได้ดี](https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-3.jpeg)![เปรียบเทียบผ้าคอตตอน  ผ้าคอตตอนมีหลายแบบและหลายเกรดจึงทำให้คุณภาพเนื้อผ้าต่างกัน](https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-4.jpg)![เปรียบเทียบผ้าคอตตอน แบ่งตามชนิดของเส้นด้าย และแบ่งตามกระบวนการผลิตของเส้นด้าย](https://storage.googleapis.com/somsri-web/blog/how-many-grades-of-cotton-are-there-5.jpg)

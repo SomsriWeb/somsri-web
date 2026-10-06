@@ -1,7 +1,7 @@
 ---
 title: รับผลิตเสื้อทุกรูปแบบ ครบจบในที่เดียว ตั้งแต่เสื้อยืด เสื้อโปโล ไปจนถึงชุดยูนิฟอร์ม!
 description: สมศรีมีเสื้อ รับผลิตเสื้อทุกรูปแบบ ครบจบในที่เดียว! ไม่ว่าจะเป็นเสื้อยืดกิจกรรม เสื้อโปโลพนักงาน หรือชุดยูนิฟอร์มองค์กร งานประณีต สกรีน-ปักคมชัด ในราคาโรงงาน พร้อมคำปรึกษาจากมืออาชีพทั่วประเทศ
-image: /blog/img-one-stop-custom-apparel-manufacturing.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-one-stop-custom-apparel-manufacturing.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -13,7 +13,7 @@ image: /blog/img-one-stop-custom-apparel-manufacturing.jpg
 
 ## บริการรับผลิตเสื้อทุกรูปแบบจากสมศรีมีเสื้อ มีอะไรบ้าง?
 
-![ผลิตเสื้อยืดทุกรูปแบบ](/blog/img-t-shirt-customize.jpg)
+![ผลิตเสื้อยืดทุกรูปแบบ](https://storage.googleapis.com/somsri-web/blog/img-t-shirt-customize.jpg)
 
 ### เสื้อยืด (T-Shirt)
 
@@ -75,7 +75,7 @@ image: /blog/img-one-stop-custom-apparel-manufacturing.jpg
 
 เสื้อประเภทนี้เหมาะสำหรับหลายโอกาส เช่น เสื้อพนักงานสำหรับใช้งานในออฟฟิศที่เปิดแอร์ เสื้อทีมสำหรับกิจกรรมกลางแจ้ง เสื้อแจ็คเก็ตแจกพนักงานช่วงปลายปี เสื้อฮู้ดสำหรับสร้างแบรนด์เสื้อผ้า หรือใช้เป็นสินค้าขายหน้าร้านและออนไลน์
 
-![รับผลิตเสื้อแจ็คเก็ต](/blog/img-jacket-standing.jpg)
+![รับผลิตเสื้อแจ็คเก็ต](https://storage.googleapis.com/somsri-web/blog/img-jacket-standing.jpg)
 
 #### จุดเด่นของเสื้อแจ็คเก็ต เสื้อคลุม และเสื้อฮู้ด
 

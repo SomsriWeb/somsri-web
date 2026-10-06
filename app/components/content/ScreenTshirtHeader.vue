@@ -22,7 +22,7 @@ defineSlots<Slots>();
 <template>
 	<div>
 		<header>
-			<NuxtImg src="/screen-tshirt-service/bg.png" class="w-screen h-screen object-cover" />
+			<NuxtImg src="https://storage.googleapis.com/somsri-web/screen-tshirt-service/bg.png" class="w-screen h-screen object-cover" />
 			<div class="absolute inset-0 bg-black/30" />
 			<div
 				class="absolute grid grid-cols-2 gap-5 bottom-[3rem] px-5 md:px-[4.6rem] text-white"
@@ -36,7 +36,7 @@ defineSlots<Slots>();
 				</div>
 
 				<div>
-					<ProseImg class="w-full" src="/screen-tshirt-service/tshirt.png" />
+					<ProseImg class="w-full" src="https://storage.googleapis.com/somsri-web/screen-tshirt-service/tshirt.png" />
 				</div>
 			</div>
 		</header>

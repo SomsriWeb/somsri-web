@@ -1,7 +1,7 @@
 ---
 title: เปรียบเทียบเนื้อผ้าเสื้อยืด Cotton, CVC, TC, TK ต่างกันอย่างไร?
 description: เปรียบเทียบเนื้อผ้าเสื้อยืด Cotton, CVC, TC และ TK ต่างกันอย่างไร ทั้งความนุ่ม การระบายอากาศ ความทนทาน พร้อมวิธีเลือกผ้าให้เหมาะกับงาน
-image: /blog/img-difference-between-cotton-cvc-tc-tk.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-difference-between-cotton-cvc-tc-tk.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -11,7 +11,7 @@ image: /blog/img-difference-between-cotton-cvc-tc-tk.jpg
 
 โดยทั่วไป Cotton จะเด่นเรื่องสัมผัสแบบเส้นใยธรรมชาติและการระบายอากาศ ส่วน CVC เป็นผ้าผสมที่มีฝ้ายเป็นองค์ประกอบหลัก จึงยังให้สัมผัสนุ่มพร้อมความดูแลง่ายขึ้น ขณะที่ TC จะมีสัดส่วน Polyester มากกว่า จึงเด่นด้านความทนทาน คงรูปและยับยาก ส่วน TK มักใช้เรียกผ้าใยสังเคราะห์ที่เน้นความทน แห้งไว และความคุ้มค่า บทความนี้สมศรีมีเสื้อจะพาทุกคนไป**เทียบ Cotton vs CVC vs TC vs TK แบบเจาะลึก** ตั้งแต่คุณสมบัติของแต่ละเนื้อผ้า ไปจนถึงวิธีเลือกให้เหมาะกับเสื้อแบรนด์ เสื้อกิจกรรม เสื้อพนักงาน และงานผลิตในงบที่วางไว้
 
-![ตัวอย่างเสื้อยืดที่ผลิตจากเนื้อผ้า Cotton, CVC, TC, TK](/blog/img-example-cotton-cvc-tc-tk-fabric.jpg)
+![ตัวอย่างเสื้อยืดที่ผลิตจากเนื้อผ้า Cotton, CVC, TC, TK](https://storage.googleapis.com/somsri-web/blog/img-example-cotton-cvc-tc-tk-fabric.jpg)
 
 ## Cotton, CVC, TC และ TK คือผ้าอะไร ต่างกันตรงไหน?
 
@@ -70,7 +70,7 @@ image: /blog/img-difference-between-cotton-cvc-tc-tk.jpg
 
 สรุปแล้ว หากเน้นความนุ่มและภาพลักษณ์พรีเมียม Cotton จะเหมาะกับเสื้อแบรนด์และแฟชั่น ส่วน CVC เป็นตัวเลือกกลางที่บาลานซ์ระหว่างความนุ่มกับความทน และผ้า TC เหมาะกับงานที่ต้องใช้งานบ่อยและดูแลง่าย ขณะที่ TK เหมาะกับงานจำนวนมากที่ต้องควบคุมงบ สิ่งสำคัญคือเลือกผ้าจากลักษณะการใช้งานจริงและที่สำคัญอย่าลืมตรวจสอบสเปกของผ้าก่อนผลิตทุกครั้ง
 
-![ตัวอย่างเสื้อยืดที่ผลิตจากผ้าคอตตอน](/blog/img-example-shirt-cotton-fabric.jpg)
+![ตัวอย่างเสื้อยืดที่ผลิตจากผ้าคอตตอน](https://storage.googleapis.com/somsri-web/blog/img-example-shirt-cotton-fabric.jpg)
 
 ## เลือกผ้าและสั่งทำเสื้อยืดครบวงจรกับ “สมศรีมีเสื้อ”
 

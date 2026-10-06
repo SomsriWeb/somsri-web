@@ -26,7 +26,7 @@ lineLink: https://contact.somsritshirt.com/3fd08
   และการผลิตเสื้อยูนิฟอร์มคุณภาพสูง เหมาะกับทุกประเภทองค์กรทั้งขนาดเล็กและขนาดใหญ่
 
   #image
-    ::::prose-img{alt="ตัวอย่างผลงานเสื้อองค์กร" src="/port/Asset-4.png"}
+    ::::prose-img{alt="ตัวอย่างผลงานเสื้อองค์กร" src="https://storage.googleapis.com/somsri-web/port/Asset-4.png"}
     ::::
   :::
 

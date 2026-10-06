@@ -1,6 +1,6 @@
 {
     "uid": "microsport",
-    "imageUrl": "/fabrics/microsport.png",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/microsport.png",
     "popupImageUrl": "/fabrics/micro-sport-popup.png",
     "forProductType": [
         "sport",

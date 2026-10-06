@@ -1,16 +1,17 @@
 import { CanvasSideId, Side, type DesignData } from '~/types/design';
+import { mediaUrl } from '~/utils/mediaUrl';
 
 const MOCKUP_HEIGHT = 900;
 
 function getMockupImage(designData: DesignData, side: Side) {
-    return `/image/mockup/${designData.type}/${designData.style}/${designData.fabric}/${side}/${designData.color}.png`;
+    return mediaUrl(`/image/mockup/${designData.type}/${designData.style}/${designData.fabric}/${side}/${designData.color}.png`);
 }
 
 function drawFrontImage(designData: DesignData, bgContext: CanvasRenderingContext2D) {
     return new Promise<boolean>((resolve) => {
         const frontShirt = new Image();
         const fcanvas = document.getElementById(CanvasSideId.FRONT);
-        frontShirt.src = getMockupImage(designData, Side.FRONT);
+        frontShirt.crossOrigin = 'anonymous';
 
         if (!fcanvas) resolve(true);
 
@@ -26,6 +27,7 @@ function drawFrontImage(designData: DesignData, bgContext: CanvasRenderingContex
 
             resolve(true);
         };
+        frontShirt.src = getMockupImage(designData, Side.FRONT);
     });
 }
 
@@ -33,7 +35,7 @@ function drawBackImage(designData: DesignData, bgContext: CanvasRenderingContext
     return new Promise<boolean>((resolve) => {
         const backShirt = new Image();
         const bcanvas = document.getElementById(CanvasSideId.BACK);
-        backShirt.src = getMockupImage(designData, Side.BACK);
+        backShirt.crossOrigin = 'anonymous';
 
         if (!bcanvas) resolve(true);
 
@@ -48,6 +50,7 @@ function drawBackImage(designData: DesignData, bgContext: CanvasRenderingContext
 
             resolve(true);
         };
+        backShirt.src = getMockupImage(designData, Side.BACK);
     });
 }
 
@@ -55,7 +58,7 @@ function drawLeftImage(designData: DesignData, bgContext: CanvasRenderingContext
     return new Promise<boolean>((resolve) => {
         const leftShirt = new Image();
         const lcanvas = document.getElementById(CanvasSideId.LEFT);
-        leftShirt.src = getMockupImage(designData, Side.LEFT);
+        leftShirt.crossOrigin = 'anonymous';
 
         if (!lcanvas) resolve(true);
 
@@ -70,6 +73,7 @@ function drawLeftImage(designData: DesignData, bgContext: CanvasRenderingContext
 
             resolve(true);
         };
+        leftShirt.src = getMockupImage(designData, Side.LEFT);
     });
 }
 
@@ -77,7 +81,7 @@ function drawRightImage(designData: DesignData, bgContext: CanvasRenderingContex
     return new Promise<boolean>((resolve) => {
         const rightShirt = new Image();
         const rcanvas = document.getElementById(CanvasSideId.RIGHT);
-        rightShirt.src = getMockupImage(designData, Side.RIGHT);
+        rightShirt.crossOrigin = 'anonymous';
 
         if (!rcanvas) resolve(true);
 
@@ -92,6 +96,7 @@ function drawRightImage(designData: DesignData, bgContext: CanvasRenderingContex
 
             resolve(true);
         };
+        rightShirt.src = getMockupImage(designData, Side.RIGHT);
     });
 }
 
@@ -138,7 +143,7 @@ function drawText(designData: DesignData, bgContext: CanvasRenderingContext2D, i
 
 export default (designData: DesignData) => {
     const background = new Image();
-    background.src = '/image/renderbg.jpg';
+    background.crossOrigin = 'anonymous';
 
     background.onload = async function () {
         const bgCanvas = document.createElement('canvas');
@@ -163,4 +168,5 @@ export default (designData: DesignData) => {
         link.download = 'design-somsritshirt.png';
         link.click();
     };
+    background.src = mediaUrl('/image/renderbg.jpg');
 };

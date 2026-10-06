@@ -17,7 +17,7 @@ seo:
 
 ::landing-page-header-style-one
 ---
-image: /landing-page-tote-bag/banner.png
+image: https://storage.googleapis.com/somsri-web/landing-page-tote-bag/banner.png
 ---
   :::description-pills
   ---
@@ -57,28 +57,28 @@ image: /landing-page-tote-bag/banner.png
   items: 7
   ---
   #item-1
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-1.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-1.png"}
 
   #item-2
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-2.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-2.png"}
 
   #item-3
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-3.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-3.png"}
 
   #item-4
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-4.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-4.png"}
 
   #item-5
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-5.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-5.png"}
 
   #item-6
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-6.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-6.png"}
 
   #item-7
-  :prose-img{src="/landing-page-tote-bag/totebag-portfolio-7.png"}
+  :prose-img{src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-portfolio-7.png"}
   :::
 
-:prose-img{.max-w-[20rem] src="/landing-page-tote-bag/totebag-price-table.png"}
+:prose-img{.max-w-[20rem] src="https://storage.googleapis.com/somsri-web/landing-page-tote-bag/totebag-price-table.png"}
 ::
 
 ::totebag-style

@@ -1,7 +1,7 @@
 ---
 title: สั่งทำเสื้อวิ่ง เสื้อกีฬา เลือกเนื้อผ้าอย่างไรไม่ซับเหงื่อ แห้งไว ใส่แล้วไม่ระคายผิว
 description: คู่มือเลือกเนื้อผ้าสั่งทำเสื้อวิ่ง เสื้อกีฬา แห้งไว ระบายเหงื่อดี ไม่ซับน้ำ ไม่ระคายผิว พร้อมเทคนิคสั่งผลิตยูนิฟอร์มกีฬาจาก สมศรีมีเสื้อ
-image: /blog/img-how-to-choose-sports-shirt-fabric.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-how-to-choose-sports-shirt-fabric.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -25,7 +25,7 @@ image: /blog/img-how-to-choose-sports-shirt-fabric.jpg
 
 เลือกผ้าถูกต้องแล้วยังไม่จบแค่นั้นค่ะ เพราะเทคนิคการตัดเย็บและพิมพ์ลายก็มีผลต่อความสบายผิวไม่แพ้กัน
 
-![ตัวอย่าง 4 ผ้ายอดนิยมที่ใช้ผลิตเสื้อกีฬา](/blog/img-sportwears-fabric.jpg)
+![ตัวอย่าง 4 ผ้ายอดนิยมที่ใช้ผลิตเสื้อกีฬา](https://storage.googleapis.com/somsri-web/blog/img-sportwears-fabric.jpg)
 
 ## 3 เทคนิคการตัดเย็บและงานพิมพ์ที่ช่วยลดการระคายผิว
 
@@ -60,7 +60,7 @@ image: /blog/img-how-to-choose-sports-shirt-fabric.jpg
 - รับประกันความพึงพอใจ 30 วัน
 - พื้นที่กรุงเทพส่งฟรีให้เลย
 
-![ตัวอย่างเสื้อวิ่ง](/blog/img-example-running-sportwear.jpg)
+![ตัวอย่างเสื้อวิ่ง](https://storage.googleapis.com/somsri-web/blog/img-example-running-sportwear.jpg)
 
 ## สรุปสั่งทำเสื้อวิ่ง เสื้อกีฬา เลือกเนื้อผ้ายังไงดี
 

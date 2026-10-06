@@ -1,5 +1,5 @@
 {
-    "image": "/landing-page-real-hat/hat-style-4.png",
+    "image": "https://storage.googleapis.com/somsri-web/landing-page-real-hat/hat-style-4.png",
     "label": "หมวกแก็ปลูกฟูกร่องเล็ก",
     "priceperunit" : [160, 155, 155, 140],
     "order": 4

@@ -1,7 +1,7 @@
 ---
 title: สกรีน DTF ( Direct to Film ) คืออะไร เปรียบเทียบ DTF DTG
   เหมาะกับงานสกรีนเสื้อแบบไหน?
-image: /blog/what-is-dtg-vs-dtf-header.jpg
+image: https://storage.googleapis.com/somsri-web/blog/what-is-dtg-vs-dtf-header.jpg
 ---
 
 ## สกรีน DTF ( Direct to Film ) คืออะไร?
@@ -22,7 +22,7 @@ image: /blog/what-is-dtg-vs-dtf-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![สกรีน DTF (Direct to Film) กระบวนการผลิตเสื้อยืด ที่นำหมึก Pigment มาสกรีนลงบนเสื้อโดยตรง ด้วยเครื่องพิมพ์ผ้าโดยเฉพาะ จากนั้นนำมาอบสีให้แห้ง](/blog/what-is-dtg-vs-dtf-1.jpg)
+![สกรีน DTF (Direct to Film) กระบวนการผลิตเสื้อยืด ที่นำหมึก Pigment มาสกรีนลงบนเสื้อโดยตรง ด้วยเครื่องพิมพ์ผ้าโดยเฉพาะ จากนั้นนำมาอบสีให้แห้ง](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-vs-dtf-1.jpg)
 
 ## ข้อดีข้อเสียของการทำ DTF
 
@@ -40,7 +40,7 @@ image: /blog/what-is-dtg-vs-dtf-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![สกรีน DTF (Direct to Film) การสกรีนเสื้อ DTG เป็นกระบวนการผลิตเสื้อยืด ที่ใช้หลักการนำหมึก Pigment มาสกรีนลงบน T-shirt โดยตรง](/blog/what-is-dtg-vs-dtf-2.jpg)
+![สกรีน DTF (Direct to Film) การสกรีนเสื้อ DTG เป็นกระบวนการผลิตเสื้อยืด ที่ใช้หลักการนำหมึก Pigment มาสกรีนลงบน T-shirt โดยตรง](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-vs-dtf-2.jpg)
 
 ### ข้อเสียของการสกรีน DTF (Direct to Film)
 
@@ -56,7 +56,7 @@ image: /blog/what-is-dtg-vs-dtf-header.jpg
 สอบถามเพิ่มเติม
 ::
 
-![สกรีน DTF (Direct to Film) เทคโนโลยีการพิมพ์ DTG ได้รับการพัฒนาอย่างมาก ช่วยให้พิมพ์งานได้ซับซ้อนด้วยสีสันสวยงาม ผลิตได้รวดเร็วขึ้น และมีอิสระในการออกแบบ](/blog/what-is-dtg-vs-dtf-3.jpg)
+![สกรีน DTF (Direct to Film) เทคโนโลยีการพิมพ์ DTG ได้รับการพัฒนาอย่างมาก ช่วยให้พิมพ์งานได้ซับซ้อนด้วยสีสันสวยงาม ผลิตได้รวดเร็วขึ้น และมีอิสระในการออกแบบ](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-vs-dtf-3.jpg)
 
 ## DTF vs. วิธีสกรีนอื่น ๆ: วิธีสกรีนแบบไหนดี
 
@@ -92,7 +92,7 @@ Sublimation ต้องใช้เครื่องพิมพ์เฉพ�
 สอบถามเพิ่มเติม
 ::
 
-![สกรีน DTF (Direct to Film) หมาะกับงานภาพเสมือนจริงที่สุด เป็นกระบวนการสกรีนเสื้อที่สกรีนภาพออกมาได้ดีที่สุดแล้วในปัจจุบันนี้](/blog/what-is-dtg-vs-dtf-4.jpg)
+![สกรีน DTF (Direct to Film) หมาะกับงานภาพเสมือนจริงที่สุด เป็นกระบวนการสกรีนเสื้อที่สกรีนภาพออกมาได้ดีที่สุดแล้วในปัจจุบันนี้](https://storage.googleapis.com/somsri-web/blog/what-is-dtg-vs-dtf-4.jpg)
 
 ## เนื้อผ้าที่เหมาะสมกับการสกรีนแบบนี้
 

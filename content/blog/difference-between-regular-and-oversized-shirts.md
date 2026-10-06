@@ -1,7 +1,7 @@
 ---
 title: เสื้อยืดทรง Oversize VS ทรงดั้งเดิม เลือกทรงไหนมาขายดี?
 description: เสื้อยืด Oversize กับทรงดั้งเดิมต่างกันอย่างไร? เทียบทรง กลุ่มลูกค้า การออกแบบ และการเลือกผ้า พร้อมแนวทางเลือกทรงเสื้อไปทำแบรนด์ให้เหมาะกับตลาด
-image: /blog/img-difference-between-regular-and-oversized-shirts.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-difference-between-regular-and-oversized-shirts.jpg
 เพิ่ม script ใน head: []
 navigation:
   title: ""
@@ -43,7 +43,7 @@ navigation:
 
 สรุป ถ้ายังตัดสินใจไม่ได้ ให้เริ่มจากถามว่า ลูกค้าของแบรนด์คือใคร และอยากให้เขาใส่เสื้อตัวนี้ไปที่ไหน เพราะคำตอบจะช่วยเลือกทรงได้ชัดกว่าไล่ตามกระแส หากแบรนด์ขายคาแรกเตอร์และแฟชั่น Oversize จะมีพื้นที่ให้สร้างความแตกต่างได้มาก แต่ถ้าเน้นความใส่ง่ายและตลาดกว้าง ทรง Regular มักเป็นตัวเลือกที่ต่อยอดได้ยืดหยุ่นกว่า
 
-![ตัวอย่างเสื้อยืดทรง Oversize และ ทรงดั้งเดิม](/blog/img-example-oversize-regular-shirt.jpg)
+![ตัวอย่างเสื้อยืดทรง Oversize และ ทรงดั้งเดิม](https://storage.googleapis.com/somsri-web/blog/img-example-oversize-regular-shirt.jpg)
 
 ## ทรงสวยอย่างเดียวไม่พอ เนื้อผ้ามีผลกับเสื้อ Oversize มากกว่าที่คิด
 

@@ -12,7 +12,7 @@ navbar: false
 
 ::landing-page-header-style-two
 ---
-image: /hawaiian-shirt/banner.png
+image: https://storage.googleapis.com/somsri-web/hawaiian-shirt/banner.png
 ---
 #title
 รับผลิตเสื้อเชิ้ตฮาวาย สั่งทำได้ทุกลาย สไตล์พรีเมียม
@@ -41,7 +41,7 @@ image: /hawaiian-shirt/banner.png
 เสื้อฮาวายผ้าไหมอิตาลีจึงเป็นมากกว่าเสื้อเชิ้ตธรรมดา มันคือการผสมผสานระหว่าง แฟชั่น ความสบาย และงานฝีมือระดับพรีเมียม ที่ให้คุณรู้สึกดีทั้งเมื่อสวมใส่และเมื่อมองเห็น
 ::
 
-::container-with-background-image{image="/hawaiian-shirt/italy-silk.png"}
+::container-with-background-image{image="https://storage.googleapis.com/somsri-web/hawaiian-shirt/italy-silk.png"}
   :::title-with-description
   #title
     ::::prose-h2{.text-primary.md:text-xl}
@@ -88,7 +88,7 @@ image: /hawaiian-shirt/banner.png
 ::landing-page-header-style-five
 ---
 screen-height: false
-image: /hawaiian-shirt/ad-banner.png
+image: https://storage.googleapis.com/somsri-web/hawaiian-shirt/ad-banner.png
 image-anchor: "[25%_50%]"
 ---
 #title

@@ -1,7 +1,7 @@
 ---
 title: สกรีนเสื้อแบบซับลิเมชัน (Sublimation) คืออะไร
   การพิมพ์งานแบบนี้เหมาะกับงานแบบใด?
-image: /blog/t-shirt-screen-printing-sublimation-header.png
+image: https://storage.googleapis.com/somsri-web/blog/t-shirt-screen-printing-sublimation-header.png
 ---
 
 ## ซับลิเมชั่น (Sublimation) คืออะไร
@@ -24,7 +24,7 @@ image: /blog/t-shirt-screen-printing-sublimation-header.png
 สอบถามเพิ่มเติม
 ::
 
-![สกรีนเสื้อแบบซับลิเมชัน (Sublimation)](/blog/t-shirt-screen-printing-sublimation-1.jpg)
+![สกรีนเสื้อแบบซับลิเมชัน (Sublimation)](https://storage.googleapis.com/somsri-web/blog/t-shirt-screen-printing-sublimation-1.jpg)
 
 ## ผ้าที่ใช้ในการพิมพ์งาน ซับลิเมชัน Sublimation
 
@@ -58,7 +58,7 @@ image: /blog/t-shirt-screen-printing-sublimation-header.png
 
 [“สมศรีมีเสื้อ”](/) เราเป็นโรงงานผลิตเสื้อ สกรีนเสื้อ เสื้อบริษัท เสื้อโปโล เสื้อองค์กร งานออกแบบเสื้อทุกรูปแบบครบวงจร เราดูแลตั้งแต่ขั้นตอนการผลิต ออกแบบ สกรีนเสื้อและปักเสื้อ ลูกค้าที่สั่งผลิตเสื้อกับเราจึงมั่นใจได้ว่าสินค้าของคุณจะออกมาสวยงาม ถูกต้องตามแบบ ที่สำคัญโรงงานผลิตเสื้อผ้าของเรามีขั้นตอนการสั่งซื้อที่แสนสะดวกและรวดเร็ว “คุณภาพดี ในราคาที่คุ้มค่า ด้วยบริการที่ดีที่สุด ผลิตตรงจากโรงงานผู้เชี่ยวชาญตัวจริง”
 
-![สกรีนเสื้อแบบซับลิเมชัน (Sublimation) สามารถพิมพ์ได้ไม่จำกัดสี ไม่มีข้อจำกัดของงานกราฟฟิค ราคาคิดตามขนาดงานพิมพ์](/blog/what-is-a-crop-top-who-is-it-suitable-for-1.jpg)
+![สกรีนเสื้อแบบซับลิเมชัน (Sublimation) สามารถพิมพ์ได้ไม่จำกัดสี ไม่มีข้อจำกัดของงานกราฟฟิค ราคาคิดตามขนาดงานพิมพ์](https://storage.googleapis.com/somsri-web/blog/what-is-a-crop-top-who-is-it-suitable-for-1.jpg)
 
 ## ขั้นตอนการสกรีนเสื้อแบบซับลิเมชัน (Sublimation)
 

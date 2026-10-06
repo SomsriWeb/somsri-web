@@ -1,6 +1,6 @@
 {
     "uid": "cotton-25-heavy",
-    "imageUrl": "/fabrics/cotton-25heavy.jpg",
+    "imageUrl": "https://storage.googleapis.com/somsri-web/fabrics/cotton-25heavy.jpg",
     "forProductType": [
         "tshirt",
         "polo",

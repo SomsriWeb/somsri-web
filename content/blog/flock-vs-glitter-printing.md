@@ -1,6 +1,6 @@
 ---
 title: สกรีนกำมะหยี่ vs สกรีนกากเพชร เปรียบเทียบชัดๆ แบบไหนดีกว่า?
-image: /blog/flock-vs-glitter-printing-header.png
+image: https://storage.googleapis.com/somsri-web/blog/flock-vs-glitter-printing-header.png
 ---
 
 ก่อนทำเสื้อผ้า เราก็ต้องเลือกผ้า และวิธีสกรีนต่างๆ เพื่อให้ตอบโจทย์แบรนด์ ซึ่งมีวิธีสกรีนหลายแบบ แต่วันนี้เราจะมาเปรียบเทียบชัดๆ กับ สกรีนกำมะหยี่ vs สกรีนกากเพชร แบบไหนดีกว่า?
@@ -118,7 +118,7 @@ image: /blog/flock-vs-glitter-printing-header.png
 - เสื้อกีฬาที่มีตัวเลขและตัวอักษรนูน
 - เสื้อผ้าแบรนด์เนมสุดหรูพร้อมเอฟเฟกต์หนังกลับ
 
-![สรีนกำมะหยี่ ผิวสกรีนจะนุ่มฟู มีเอกลักษณ์](/blog/flock-vs-glitter-printing-1.jpg)
+![สรีนกำมะหยี่ ผิวสกรีนจะนุ่มฟู มีเอกลักษณ์](https://storage.googleapis.com/somsri-web/blog/flock-vs-glitter-printing-1.jpg)
 
 ### งานสกรีนกากเพชร
 
@@ -130,4 +130,4 @@ image: /blog/flock-vs-glitter-printing-header.png
 สอบถามเพิ่มเติม
 ::
 
-![เปรียบเทียบข้อดีข้อเสียของการ สกรีนกากเพชร](/blog/flock-vs-glitter-printing-2.png)
+![เปรียบเทียบข้อดีข้อเสียของการ สกรีนกากเพชร](https://storage.googleapis.com/somsri-web/blog/flock-vs-glitter-printing-2.png)

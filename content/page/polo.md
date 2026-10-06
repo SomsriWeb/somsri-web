@@ -17,8 +17,8 @@ noindex: false
 ---
 ::hero-page
 ---
-image: /polo/Banner-Polo-horizontal.png
-imageMobile: /polo/Banner-Polo-vertical.png
+image: https://storage.googleapis.com/somsri-web/polo/Banner-Polo-horizontal.png
+imageMobile: https://storage.googleapis.com/somsri-web/polo/Banner-Polo-vertical.png
 alt: เสื้อโปโลสั่งทำ
 suitForLabel: เชื่อใจโดย
 ---
@@ -72,7 +72,7 @@ PTT · Central · Mr.DIY · BYD · Sompo · Flash Express และองค์
 
 ::hero-split-layout
 ---
-image: /polo/polo-model4.png
+image: https://storage.googleapis.com/somsri-web/polo/polo-model4.png
 alt: ตัวอย่างเสื้อโปโลพนักงานองค์กร
 screenHeight: false
 imageAnchor: center
@@ -111,7 +111,7 @@ showCta: false
 โรงงานผลิตเสื้อโปโลทั่วไปมีผ้าให้เลือก เราใช้ผ้าที่เหมาะ — แต่ละชนิดออกแบบมาเพื่อการใช้งานที่ต่างกัน
 
 #item-1-image
-:prose-img{src="/polo/fabrics/TC.jpg" alt="ผ้า TC Lacoste" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/fabrics/TC.jpg" alt="ผ้า TC Lacoste" .h-full .w-full .object-cover}
 
 #item-1-tag
 ยอดนิยมองค์กร
@@ -128,7 +128,7 @@ TC Lacoste
 - เสื้อโปโลบริษัท
 
 #item-2-image
-:prose-img{src="/polo/fabrics/dry-tech.jpg" alt="ผ้า Dry Tech" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/fabrics/dry-tech.jpg" alt="ผ้า Dry Tech" .h-full .w-full .object-cover}
 
 #item-2-tag
 ระบายอากาศสูงสุด
@@ -145,7 +145,7 @@ Dry Tech
 - กลางแจ้ง
 
 #item-3-image
-:prose-img{src="/polo/fabrics/dry-feel.jpg" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/fabrics/dry-feel.jpg" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
 
 #item-3-tag
 BUSINESS CLASS
@@ -162,7 +162,7 @@ Dry Feel
 - ภาพลักษณ์องค์กร
 
 #item-4-image
-:prose-img{src="/polo/fabrics/juti-micro.jpg" alt="ผ้า Micro Juti" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/fabrics/juti-micro.jpg" alt="ผ้า Micro Juti" .h-full .w-full .object-cover}
 
 #item-4-tag
 ลายพิมพ์คมที่สุด
@@ -191,7 +191,7 @@ Micro Juti
 ไม่ใช่แค่ชุดยูนิฟอร์ม — นี่คือองค์กรที่เลือกสมศรีให้ผลิตเสื้อ พร้อมรายละเอียดที่มากกว่า
 
 #item-1-image
-:prose-img{src="/polo/img-polo-ptt.jpg" alt="ผลงานเสื้อโปโลบริษัท ปตท." .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/img-polo-ptt.jpg" alt="ผลงานเสื้อโปโลบริษัท ปตท." .h-full .w-full .object-cover}
 
 #item-1-tag
 JUTI MICRO + SUBLIMATION
@@ -203,7 +203,7 @@ JUTI MICRO + SUBLIMATION
 เสื้อโปโล Juti Micro ระบายอากาศได้ดี พร้อมงานพิมพ์ลาย Sublimation สีคมชัด เหมาะสำหรับทีมภาคสนามและงานองค์กร
 
 #item-2-image
-:prose-img{src="/polo/img-polo-central.jpg" alt="ผลงานเสื้อโปโล Central Retail" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/img-polo-central.jpg" alt="ผลงานเสื้อโปโล Central Retail" .h-full .w-full .object-cover}
 
 #item-2-tag
 DRY TECH + สกรีนมาตรฐาน
@@ -215,7 +215,7 @@ DRY TECH + สกรีนมาตรฐาน
 เสื้อโปโล Dry Tech ระบายอากาศสูง ใส่สบายตลอดวัน พร้อมงานสกรีนโลโก้คมชัด สะท้อนภาพลักษณ์องค์กรชั้นนำ
 
 #item-3-image
-:prose-img{src="/polo/img-polo-diy.jpg" alt="ผลงานเสื้อโปโล MR.D.I.Y." .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/img-polo-diy.jpg" alt="ผลงานเสื้อโปโล MR.D.I.Y." .h-full .w-full .object-cover}
 
 #item-3-tag
 MICRO SPORT + SUBLIMATION
@@ -227,7 +227,7 @@ MICRO SPORT + SUBLIMATION
 เสื้อโปโล Micro Sport น้ำหนักเบา คล่องตัว ผสานงานพิมพ์ลาย Sublimation เหมาะกับพนักงานที่ต้องเคลื่อนไหวตลอดวัน
 
 #item-4-image
-:prose-img{src="/polo/img-polo-sompo.jpg" alt="ผลงานเสื้อโปโล Sompo Insurance" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/img-polo-sompo.jpg" alt="ผลงานเสื้อโปโล Sompo Insurance" .h-full .w-full .object-cover}
 
 #item-4-tag
 JUTI MICRO + ปักโลโก้
@@ -248,7 +248,7 @@ JUTI MICRO + ปักโลโก้
 ที่คุณไม่ต้องโทรถามสถานะ
 
 #item-1-image
-:prose-img{src="/polo/whyus/image62.png" alt="ติดตามงานผลิตเสื้อโปโลได้แบบ real-time" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/image62.png" alt="ติดตามงานผลิตเสื้อโปโลได้แบบ real-time" .h-full .w-full .object-cover}
 
 #item-1-title
 ติดตามงานได้ [real-time]{.text-primary}
@@ -257,7 +257,7 @@ JUTI MICRO + ปักโลโก้
 ระบบ ERP อัปเดต progress ทุกขั้นตอน การผลิตเสื้อโปโล ไม่ต้องโทรถาม ไม่ต้องรอ
 
 #item-2-image
-:prose-img{src="/polo/whyus/warranty-polo.png" alt="รับประกันงานผลิตเสื้อโปโล 90 วัน" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/warranty-polo.png" alt="รับประกันงานผลิตเสื้อโปโล 90 วัน" .h-full .w-full .object-cover}
 
 #item-2-title
 รับประกัน [90 วัน]{.text-primary}
@@ -266,7 +266,7 @@ JUTI MICRO + ปักโลโก้
 ผิดพลาดจากการผลิตเราแก้ให้ ไม่มีข้อแม้ องค์กรของคุณไม่ต้องรับความเสี่ยงคนเดียว
 
 #item-3-image
-:prose-img{src="/polo/whyus/Artwork-polo.png" alt="ขึ้นตัวอย่างเสื้อโปโลฟรีก่อนผลิต" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/Artwork-polo.png" alt="ขึ้นตัวอย่างเสื้อโปโลฟรีก่อนผลิต" .h-full .w-full .object-cover}
 
 #item-3-title
 ขึ้นตัวอย่าง[ฟรี]{.text-primary}ก่อนผลิต
@@ -275,7 +275,7 @@ JUTI MICRO + ปักโลโก้
 เห็นเสื้อโปโลจริงก่อนอนุมัติ ไม่มีเซอร์ไพรส์เมื่อของมาถึง
 
 #item-4-image
-:prose-img{src="/polo/whyus/logo-polo.png" alt="ออกแบบโลโก้ให้ฟรี" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/logo-polo.png" alt="ออกแบบโลโก้ให้ฟรี" .h-full .w-full .object-cover}
 
 #item-4-title
 ออกแบบโลโก้ให้[ฟรี]{.text-primary}
@@ -284,7 +284,7 @@ JUTI MICRO + ปักโลโก้
 ทีม Artwork ช่วยจัด layout โลโก้ให้เหมาะกับตำแหน่งปักและสกรีน ไม่คิดค่าใช้จ่ายเพิ่ม
 
 #item-5-image
-:prose-img{src="/polo/whyus/image30.png" alt="ส่งเสื้อโปโลฟรีในกรุงเทพ" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/image30.png" alt="ส่งเสื้อโปโลฟรีในกรุงเทพ" .h-full .w-full .object-cover}
 
 #item-5-title
 ส่ง[ฟรี]{.text-primary}ในกรุงเทพ
@@ -293,7 +293,7 @@ JUTI MICRO + ปักโลโก้
 จัดส่งทั่วประเทศ ส่งฟรีในกรุงเทพ ต่างจังหวัดใช้ขนส่งเอกชนรวดเร็วปลอดภัย
 
 #item-6-image
-:prose-img{src="/polo/whyus/Recycle-polo.png" alt="ทุกออเดอร์ผลิตเสื้อโปโลช่วยโลก" .h-full .w-full .object-cover}
+:prose-img{src="https://storage.googleapis.com/somsri-web/polo/whyus/Recycle-polo.png" alt="ทุกออเดอร์ผลิตเสื้อโปโลช่วยโลก" .h-full .w-full .object-cover}
 
 #item-6-title
 ทุกออเดอร์[ช่วยโลก]{.text-primary}
@@ -358,22 +358,22 @@ JUTI MICRO + ปักโลโก้
   :::five-card-feature-grid
   ---
   items:
-    - icon: /polo/polo-icon-1.png
+    - icon: https://storage.googleapis.com/somsri-web/polo/polo-icon-1.png
       text: กำลังการผลิตสูง งานประณีต กำลังการผลิต 50,000 ตัว/เดือน  มีระบบ QC 6
         ขั้นตอน ตั้งแต่ตรวจสอบคุณภาพผ้าเข้าคลังจนถึงเสื้อเสร็จพร้อมส่ง
         ทำให้มั่นใจว่าเสื้อทุกตัวมีมาตรฐานเดียวกัน
-    - icon: /polo/polo-icon-2.jpg
+    - icon: https://storage.googleapis.com/somsri-web/polo/polo-icon-2.jpg
       text: "การันตีคุณภาพ ตรงต่อเวลา  10 ปี ในอุตสาหกรรม  500+ แบรนด์ที่ไว้ใจ  มีระบบ
         ERP ที่สามารถเช็กกระบวนการผลิตได้แบบ Real Time "
-    - icon: /polo/polo-icon-3.png
+    - icon: https://storage.googleapis.com/somsri-web/polo/polo-icon-3.png
       text: คุณภาพเนื้อผ้า และวัสดุการตัดเย็บที่ดีที่สุด  เนื้อผ้าใส่สบาย ระบายอากาศดี
         และผ่านการทดสอบมาตรฐานผ้ามาแล้ว มีเนื้อผ้าทุกชนิด สั่งตัดได้ทุกสี
         ทุกดีไซน์
-    - icon: /polo/polo-icon-4.png
+    - icon: https://storage.googleapis.com/somsri-web/polo/polo-icon-4.png
       text: บริการแบบ "เพื่อนคู่คิด" ครบจบในที่เดียว  ดูแลตั้งแต่แนะนำเนื้อผ้า
         ช่วยดูแบบดีไซน์ ขึ้นแบบเสื้อให้ฟรี ส่งตัวอย่างเสื้อไปให้เลือกฟรี
         ไปจนถึงขั้นตอนการจัดส่ง
-    - icon: /polo/polo-icon-5.png
+    - icon: https://storage.googleapis.com/somsri-web/polo/polo-icon-5.png
       text: รองรับงานด่วน ได้ของไว  งานด่วนส่งภายใน 2-3 วัน ทันกำหนดใช้งาน
         การันตีไม่ทิ้งงาน 100,000+ ออเดอร์ที่สำเร็จ พร้อมรับประกันความพึงพอใจ 90
         วัน
@@ -457,7 +457,7 @@ JUTI MICRO + ปักโลโก้
   นิยมทำชุดยูนิฟอร์มพนักงาน / เสื้อบริษัท / เสื้อโฆษณา / เสื้อกลุ่ม / เสื้อพนักงานในออฟฟิศ
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าTC Lacost" src="/polo/fabrics/TC.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าTC Lacost" src="https://storage.googleapis.com/somsri-web/polo/fabrics/TC.jpg"}
   :::
 
   :::split-content
@@ -478,7 +478,7 @@ JUTI MICRO + ปักโลโก้
   นิยมทำเสื้อโปโล / เสื้อกีฬาและกิจกรรมกลางแจ้ง / ชุดออกกำลังกาย / พนักงานในร้านอาหาร / โรงแรม / ร้านกาแฟ
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าDry Tech" src="/polo/fabrics/dry-tech.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าDry Tech" src="https://storage.googleapis.com/somsri-web/polo/fabrics/dry-tech.jpg"}
   :::
 
   :::split-content
@@ -500,7 +500,7 @@ JUTI MICRO + ปักโลโก้
   นิยมทำเสื้อโปโลเกือบทุกกิจกรรม ไม่ว่ากลางแจ้ง หรือในร่ม / กีฬา / ออฟฟิศ / เสื้อทีม / เสื้อรุ่น
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้า Dry Feel" src="/polo/fabrics/dry-feel.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้า Dry Feel" src="https://storage.googleapis.com/somsri-web/polo/fabrics/dry-feel.jpg"}
   :::
 
   :::split-content
@@ -520,7 +520,7 @@ JUTI MICRO + ปักโลโก้
   นิยมทำเสื้อโปโล / เสื้อบริษัท / เสื้อพนักงาน / เสื้อกีฬา / เสื้อออกกำลังกาย / เสื้อยูนิฟอร์มองค์กร หรือโรงงาน / เสื้อแจกในกิจกรรม อีเวนต์ งานแสดงสินค้า
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าMicro Sport" src="/polo/fabrics/micro-sport.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าMicro Sport" src="https://storage.googleapis.com/somsri-web/polo/fabrics/micro-sport.jpg"}
   :::
 
   :::split-content
@@ -543,7 +543,7 @@ JUTI MICRO + ปักโลโก้
   นิยมทำเสื้อทีมงาน / เสื้อกีฬาสีโรงเรียน /เสื้อองค์กรที่ต้องการความลุย / เสื้อวิ่งพิมพ์ลาย / เสื้อกีฬาพิมพ์ลาย / เสื้อ Jersey พิมพ์ลาย / งานเสื้อซับลิเมชั่นที่ต้องใช้งานจริง
 
   #image
-  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าJuti Micro" src="/polo/fabrics/juti-micro.jpg"}
+  :prose-img{.rounded-lg.object-cover.aspect-square alt="ตัวอย่างผ้าJuti Micro" src="https://storage.googleapis.com/somsri-web/polo/fabrics/juti-micro.jpg"}
   :::
 
 ## บริการปัก-สกรีนเสื้อโปโล เสื้อองค์กร ด้วยเทคโนโลยีทันสมัย สีคมชัด งานละเอียดทุกจุด
@@ -566,10 +566,10 @@ JUTI MICRO + ปักโลโก้
     transition-ms: 280
     wrapper-class: rounded-xl
     ---
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานพิมพ์ลาย" src="/polo/พิมพ์ลาย2.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานพิมพ์ลาย" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%A5%E0%B8%B2%E0%B8%A22.jpg"}
 
     #hover
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานพิมพ์ลาย เมื่อชี้เมาส์" src="/polo/พิมพ์ลาย.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานพิมพ์ลาย เมื่อชี้เมาส์" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%A5%E0%B8%B2%E0%B8%A2.jpg"}
 
     #caption
     **พิมพ์ลาย**
@@ -585,10 +585,10 @@ JUTI MICRO + ปักโลโก้
     transition-ms: 280
     wrapper-class: rounded-xl
     ---
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปัก" src="/polo/ปักทรานเฟอร์2.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปัก" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9B%E0%B8%B1%E0%B8%81%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C2.jpg"}
 
     #hover
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" src="/polo/ปักทรานเฟอร์.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปัก เมื่อชี้เมาส์" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9B%E0%B8%B1%E0%B8%81%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C.jpg"}
 
     #caption
     **ปักทรานเฟอร์**
@@ -604,10 +604,10 @@ JUTI MICRO + ปักโลโก้
     transition-ms: 280
     wrapper-class: rounded-xl
     ---
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานสกรีน" src="/polo/สกรีน2.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานสกรีน" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%AA%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%992.jpg"}
 
     #hover
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานสกรีน เมื่อชี้เมาส์" src="/polo/สกรีน.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานสกรีน เมื่อชี้เมาส์" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%AA%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99.jpg"}
 
     #caption
     **สกรีน**
@@ -623,10 +623,10 @@ JUTI MICRO + ปักโลโก้
     transition-ms: 280
     wrapper-class: rounded-xl
     ---
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ปักธรรมดา" src="/polo/ปักธรรมดา2.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ปักธรรมดา" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9B%E0%B8%B1%E0%B8%81%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B22.jpg"}
 
     #hover
-    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปักธรรมดา เมื่อชี้เมาส์" src="/polo/ปักธรรมดา.jpg"}
+    :prose-img{.rounded-xl.object-cover.aspect-square.w-full.shadow-sm alt="ตัวอย่างงานปักธรรมดา เมื่อชี้เมาส์" src="https://storage.googleapis.com/somsri-web/polo/%E0%B8%9B%E0%B8%B1%E0%B8%81%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B8%B2.jpg"}
 
     #caption
     **ปักธรรมดา**
@@ -643,7 +643,7 @@ JUTI MICRO + ปักโลโก้
   เรทราคาเสื้อโปโล
   :::
 
-:prose-img{.max-w-[30rem].text-center alt="เรทราคาผลิตเสื้อโปโล" src="/polo/price-polo.jpg"}
+:prose-img{.max-w-[30rem].text-center alt="เรทราคาผลิตเสื้อโปโล" src="https://storage.googleapis.com/somsri-web/polo/price-polo.jpg"}
 
   :::how-to-order
   \#title
@@ -676,22 +676,22 @@ JUTI MICRO + ปักโลโก้
 
   :::image-grid
   #item-1
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-ptt.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ปตท." src="https://storage.googleapis.com/somsri-web/polo/img-polo-ptt.jpg"}
 
   #item-2
-  :prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="/polo/img-polo-central.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโล บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด" src="https://storage.googleapis.com/somsri-web/polo/img-polo-central.jpg"}
 
   #item-3
-  :prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="/polo/img-polo-diy.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโล งานแบรนด์ MR.D.I.Y." src="https://storage.googleapis.com/somsri-web/polo/img-polo-diy.jpg"}
 
   #item-4
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="/polo/img-sompo.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท ซมโปะ ประกันภัย (ประเทศไทย)" src="https://storage.googleapis.com/somsri-web/polo/img-sompo.jpg"}
 
   #item-5
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท BYD" src="/polo/img-polo-byd.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท BYD" src="https://storage.googleapis.com/somsri-web/polo/img-polo-byd.jpg"}
 
   #item-6
-  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท Flash Express" src="/polo/img-polo-flash.jpg"}
+  :prose-img{alt="ตัวอย่างเสื้อโปโลบริษัท Flash Express" src="https://storage.googleapis.com/somsri-web/polo/img-polo-flash.jpg"}
   :::
 
   :::somsri-produce-for

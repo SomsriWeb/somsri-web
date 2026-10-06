@@ -1,7 +1,7 @@
 ---
 title: เสื้อโปโล Dry Tech คืออะไร ต่างจากผ้าไมโครอย่างไร?
 description: " ไขสงสัย! เสื้อโปโล Dry Tech คืออะไร ต่างจากผ้าไมโครยังไง? เทียบชัดเรื่องความเย็น แห้งไว ใส่สบาย พร้อมแนะนำเลือกผ้าทำยูนิฟอร์มที่สมศรีมีเสื้อ"
-image: /blog/img-what-is-polo-dry-tech-fabric.jpg
+image: https://storage.googleapis.com/somsri-web/blog/img-what-is-polo-dry-tech-fabric.jpg
 เพิ่ม script ใน head: []
 ---
 
@@ -17,7 +17,7 @@ image: /blog/img-what-is-polo-dry-tech-fabric.jpg
 
 ด้วยคุณสมบัติที่ผสมผสานทั้งความสบาย ฟังก์ชันการใช้งาน และดีไซน์ที่ดูดี ทำให้ เสื้อโปโล Dry Tech เป็นอีกหนึ่งตัวเลือกยอดนิยมสำหรับการผลิตเสื้อยูนิฟอร์ม เสื้อทีม และเสื้อองค์กรที่ต้องการความแตกต่างจากเสื้อโปโลทั่วไป
 
-![ตัวอย่างเสื้อโปโลผ้า Dry-Tech](/blog/img-polo-dry-tech-fabric.png)
+![ตัวอย่างเสื้อโปโลผ้า Dry-Tech](https://storage.googleapis.com/somsri-web/blog/img-polo-dry-tech-fabric.png)
 
 ## ทำความรู้จัก "ผ้าไมโคร (Micro Polyester)" เส้นใยละเอียด นุ่ม ลื่น ยอดฮิต
 
