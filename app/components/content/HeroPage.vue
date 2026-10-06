@@ -48,16 +48,16 @@ defineSlots<Slots>();
                         </span>
                     </h1>
 
-                    <div v-if="$slots.description" class="mt-4 text-lg font-normal text-stone-800">
+                    <div v-if="$slots.description" class="mt-4 text-lg font-light text-stone-700">
                         <slot name="description" mdc-unwrap="p" />
                     </div>
 
-                    <div v-if="$slots.suitFor" class="mt-2 text-sm text-stone-500">
-                        <span class="font-medium text-stone-600">{{ suitForLabel }} &nbsp; </span>
+                    <div v-if="$slots.suitFor" class="mt-3 text-sm font-normal text-stone-400">
+                        <span class="font-medium text-stone-500">{{ suitForLabel }} &nbsp; </span>
                         <slot name="suitFor" mdc-unwrap="p" />
                     </div>
 
-                    <div v-if="$slots.default" class="mt-6">
+                    <div v-if="$slots.default" class="mt-8 lg:mt-10">
                         <slot />
                     </div>
                 </div>
@@ -83,12 +83,12 @@ defineSlots<Slots>();
                     <slot name="description" mdc-unwrap="p" />
                 </div>
 
-                <div v-if="$slots.suitFor" class="mt-2 text-[0.65rem] leading-normal text-stone-400 sm:text-[0.7rem]">
+                <div v-if="$slots.suitFor" class="mt-3 text-[0.65rem] leading-normal text-stone-400 sm:text-[0.7rem]">
                     <span class="font-medium text-stone-500">{{ suitForLabel }} &nbsp;</span>
                     <slot name="suitFor" mdc-unwrap="p" />
                 </div>
 
-                <div v-if="$slots.default" class="mt-5">
+                <div v-if="$slots.default" class="mt-8">
                     <slot />
                 </div>
             </div>

@@ -18,7 +18,7 @@ function scrollToFabric(e: MouseEvent) {
 </script>
 
 <template>
-	<div class="grid grid-cols-2 gap-3 sm:flex sm:w-auto sm:items-center sm:justify-start sm:gap-4">
+	<div class="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-start sm:gap-4">
 		<!-- ปุ่มติดต่อ (solid) -->
 		<LineLink>
 			<UButton
