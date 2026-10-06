@@ -5,9 +5,7 @@ const META_PIXEL_ID = '796947021881915';
 const CLARITY_ID = process.env.NUXT_PUBLIC_SCRIPTS_CLARITY_ID || '';
 
 if (!CLARITY_ID) {
-    console.warn(
-        '[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.',
-    );
+    console.warn('[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.');
 }
 
 import { defineNuxtConfig } from 'nuxt/config';
@@ -262,6 +260,19 @@ export default defineNuxtConfig({
         clientBundle: {
             scan: true,
             sizeLimitKb: 512,
+        },
+    },
+    image: {
+        domains: ['storage.googleapis.com'],
+        alias: {
+            media: 'https://storage.googleapis.com/somsri-web',
+        },
+        screens: {
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+            '2xl': 1536,
         },
     },
 });

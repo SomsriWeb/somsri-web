@@ -17,7 +17,7 @@ RUN --mount=type=secret,id=STUDIO_GITHUB_CLIENT_ID \
     --mount=type=secret,id=STUDIO_GITHUB_CLIENT_SECRET \
     export STUDIO_GITHUB_CLIENT_ID=$(cat /run/secrets/STUDIO_GITHUB_CLIENT_ID) && \
     export STUDIO_GITHUB_CLIENT_SECRET=$(cat /run/secrets/STUDIO_GITHUB_CLIENT_SECRET) && \
-    bun --bun run build
+    bun --bun run generate
 
 # copy production dependencies and source code into final image
 FROM oven/bun:1 AS production
