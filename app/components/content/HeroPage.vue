@@ -48,12 +48,12 @@ defineSlots<Slots>();
                         </span>
                     </h1>
 
-                    <div v-if="$slots.description" class="mt-4 text-lg font-light text-stone-700">
+                    <div v-if="$slots.description" class="mt-4 text-lg font-normal text-stone-800">
                         <slot name="description" mdc-unwrap="p" />
                     </div>
 
-                    <div v-if="$slots.suitFor" class="mt-2 text-base text-stone-700">
-                        <span class="font-bold">{{ suitForLabel }} &nbsp; </span>
+                    <div v-if="$slots.suitFor" class="mt-2 text-sm text-stone-500">
+                        <span class="font-medium text-stone-600">{{ suitForLabel }} &nbsp; </span>
                         <slot name="suitFor" mdc-unwrap="p" />
                     </div>
 
@@ -65,9 +65,9 @@ defineSlots<Slots>();
         </div>
 
         <!-- ===== Mobile: ข้อความก่อน รูปปกติ stack ต่อท้าย ===== -->
-        <div class="flex flex-col gap-6 pt-10 md:hidden">
+        <div class="flex flex-col gap-6 pt-8 md:hidden">
             <div class="flex flex-col text-left px-5">
-                <p v-if="$slots.eyebrow" class="mb-2 text-sm font-bold text-primary">
+                <p v-if="$slots.eyebrow" class="mb-3 text-xs font-bold text-primary sm:text-sm">
                     <slot name="eyebrow" mdc-unwrap="p" />
                 </p>
 
@@ -79,16 +79,16 @@ defineSlots<Slots>();
                     </span>
                 </div>
 
-                <div v-if="$slots.description" class="mt-4 font-light text-stone-700">
+                <div v-if="$slots.description" class="mt-3 text-xs leading-relaxed font-normal text-stone-800 sm:text-sm">
                     <slot name="description" mdc-unwrap="p" />
                 </div>
 
-                <div v-if="$slots.suitFor" class="mt-2 text-sm text-stone-700">
-                    <span class="font-bold">{{ suitForLabel }} &nbsp; </span>
+                <div v-if="$slots.suitFor" class="mt-2 text-[0.65rem] leading-normal text-stone-400 sm:text-[0.7rem]">
+                    <span class="font-medium text-stone-500">{{ suitForLabel }} &nbsp;</span>
                     <slot name="suitFor" mdc-unwrap="p" />
                 </div>
 
-                <div v-if="$slots.default" class="mt-6">
+                <div v-if="$slots.default" class="mt-5">
                     <slot />
                 </div>
             </div>

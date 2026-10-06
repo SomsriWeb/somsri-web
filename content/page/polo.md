@@ -16,27 +16,25 @@ navbar: true
 ::hero-page
 ---
 image: /polo/Banner-Polo-horizontal.png
-imageMobile: /polo/Banner-Polo-vertical.png
+imageMobile: /polo/Banner-Polo-mobile.png
 alt: เสื้อโปโลสั่งทำ
-suitForLabel: เชื่อใจโดย
+suitForLabel: ไว้วางใจโดย
 ---
 #eyebrow
 รับผลิตเสื้อโปโล — โรงงานผลิตเสื้อโปโลครบวงจร
 
 #title
-ใส่พร้อมกัน
-
-ดูดีพร้อมกัน
+เสื้อโปโลที่ดี\
+พูดแทน
 
 #titleAccent
-ทุกกิจกรรม
+องค์กรคุณได้
 
 #description
-โรงงานรับผลิตเสื้อโปโล เสื้อโปโลพนักงาน เสื้อโปโลองค์กร ครบวงจร 
-— ผ้า TC / Dry Tech / Dry Feel / Micro ปักสกรีนโลโก้คมชัด รับประกัน 90 วัน
+โรงงานรับผลิตเสื้อโปโล เสื้อโปโลพนักงาน เสื้อโปโลองค์กร ครบวงจร — ผ้า TC / Dry Tech / Dry Feel / Micro ปักสกรีนโลโก้คมชัด รับประกัน 90 วัน
 
 #suitFor
-PTT · Central · Mr.DIY · BYD · Sompo · Flash Express และองค์กรชั้นนำอีกกว่า 10,000 แห่ง
+PTT · Central · Mr.DIY · BYD · Sompo · Flash Express และองค์กรชั้นนำอีกกว่า 10,000 แห่ง
 
 :::sport-btn
 :::

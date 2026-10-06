@@ -1,5 +1,6 @@
 <script setup lang="ts">
 interface Slots {
+    [key: string]: any;
     eyebrow(): unknown;
     title(): unknown;
     description(): unknown;
@@ -55,7 +56,7 @@ defineSlots<Slots>();
                 :class="n <= 2 ? 'sm:!mb-10' : ''"
             >
                 <!-- รูป: บนมือถือมี gradient + ชื่อ fabric ซ้อนทับบนรูป -->
-                <div class="relative aspect-[16/10] w-full overflow-hidden">
+                <div class="relative aspect-[16/10] w-full overflow-hidden rounded-xl sm:rounded-none">
                     <slot :name="`item-${n}-image`" />
 
                     <div
