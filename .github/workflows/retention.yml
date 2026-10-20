@@ -4,7 +4,7 @@ run-name: Package retention (texcel-api, texcel-web)
 on:
     schedule:
         # every day at 03:00 Asia/Bangkok (20:00 UTC)
-        - cron: '0 20 * * *'
+        - cron: '0 17 * * *'
     workflow_dispatch:
         inputs:
             dry-run:
