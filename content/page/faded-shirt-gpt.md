@@ -8,7 +8,7 @@ lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/b43bb
 navbar: false
 เพิ่ม script ใน head:
-  - content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อฟอก เสื้อวินเทจ",   "image": "https://somsritshirt.com/_ipx/f_webp/band-shirt/sample-1.png",   "description": "รับผลิตเสื้อฟอก เสื้อวินเทจ ทุกรูปแบบ คุณภาพสูง ราคาโรงงาน สั่งผลิตขั้นต่ำ 100 ตัว",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "90",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อฟอก"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "210"   }} '
+  - content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อฟอก เสื้อวินเทจ",   "image": "https://somsritshirt.com/_ipx/f_webp/band-shirt/sample-1.png",   "description": "รับผลิตเสื้อฟอก เสื้อวินเทจ ทุกรูปแบบ คุณภาพสูง ราคาโรงงาน สั่งผลิตขั้นต่ำ 150 ตัว",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "90",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อฟอก"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "210"   }} '
     type: application/ld+json
 noindex: true
 ---
@@ -25,7 +25,7 @@ image: /faded-shirt/faded-banner.png
 คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
 
 #description
-สั่งผลิตขั้นต่ำ 100 ตัว
+สั่งผลิตขั้นต่ำ 150 ตัว
 ::
 
 ::container
