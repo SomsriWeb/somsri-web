@@ -5,7 +5,7 @@ description: บริการรับผลิตเสื้อบริษ�
 footer: false
 language: th
 lineFloatingButton: false
-lineLink: https://contact.somsritshirt.com/c4119
+lineLink: https://contact.somsritshirt.com/82903
 navbar: false
 seo:
   title: รับผลิตเสื้อบริษัท เสื้อโปโล เสื้อองค์กร รับทำยูนิฟอร์ม พร้อมปักสกรีนโลโก้

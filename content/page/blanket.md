@@ -5,7 +5,7 @@ description: สั่งทำผ้าห่มคุณภาพสูงส�
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://line.me/R/ti/p/%40diz8986o
+lineLink: https://contact.somsritshirt.com/e60f6
 navbar: true
 เพิ่ม script ใน head: []
 เหมาะสำหรับองค์กร โรงแรม รีสอร์ท ของพรีเมียม และของขวัญบริษัท เลือกเนื้อผ้า สี และแพ็กเกจจิ้งได้ lineLink: https://contact.somsritshirt.com/99c42

@@ -5,7 +5,7 @@ description: บริการรับผลิตกระเป๋าผ้�
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/c4119
+lineLink: https://contact.somsritshirt.com/7c9cc
 navbar: true
 seo:
   title: รับผลิตกระเป๋าผ้า ถุงผ้า พร้อมสกรีนโลโก้ ราคาส่ง ครบจบที่เดียว 2025

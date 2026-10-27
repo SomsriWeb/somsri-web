@@ -5,7 +5,7 @@ description: โรงงานผลิตหมวกคุณภาพสู�
 footer: false
 language: th
 lineFloatingButton: true
-lineLink: https://line.me/R/ti/p/%40diz8986o
+lineLink: https://contact.somsritshirt.com/2b64f
 navbar: true
 เพิ่ม script ใน head: []
 ---

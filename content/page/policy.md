@@ -1,5 +1,6 @@
 ---
 title: นโยบายความเป็นส่วนตัว (Privacy Policy) - Somsri T-Shirt
+lineLink: https://contact.somsritshirt.com/2fea6
 
 activeNavbar: true
 ---

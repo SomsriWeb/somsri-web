@@ -5,7 +5,7 @@ description: บริการรับผลิตเสื้อด้อม 
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/c4119
+lineLink: https://contact.somsritshirt.com/1d012
 navbar: true
 seo:
   title: รับผลิตเสื้อด้อม เสื้อแฟนคลับ เสื้อยืด FC เสื้อศิลปิน พร้อมสกีน ราคาส่ง

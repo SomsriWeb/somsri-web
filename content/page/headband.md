@@ -5,7 +5,7 @@ description: รับผลิตผ้าโพกหัว ผ้าพัน
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/aa057
+lineLink: https://contact.somsritshirt.com/0d6d8
 navbar: true
 contentSpacing: false
 ---
@@ -204,4 +204,4 @@ alt: ภาพปีใหม่
       ::::
     :::
   ::
-:: 
+::

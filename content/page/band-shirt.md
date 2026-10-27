@@ -6,7 +6,7 @@ description: สมศรีมีเสื้อ รับผลิตเสื
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/c4119
+lineLink: https://contact.somsritshirt.com/d4c29
 navbar: true
 เพิ่ม script ใน head: []
 ---

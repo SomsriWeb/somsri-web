@@ -5,7 +5,7 @@ description: โรงงานรับผลิตผ้ากันเปื�
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/d85cf
+lineLink: https://contact.somsritshirt.com/58d19
 navbar: true
 contentSpacing: false
 ---

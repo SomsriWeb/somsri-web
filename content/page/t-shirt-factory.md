@@ -5,7 +5,7 @@ description: รับผลิตเสื้อ สั่งทำเสื้
 footer: true
 language: th
 lineFloatingButton: true
-lineLink: https://contact.somsritshirt.com/c4119
+lineLink: https://contact.somsritshirt.com/74013
 navbar: true
 เพิ่ม script ใน head: []
 ---
