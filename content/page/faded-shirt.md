@@ -8,7 +8,7 @@ lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/c4119
 navbar: true
 เพิ่ม script ใน head:
-  - content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อฟอก เสื้อวินเทจ",   "image": "https://somsritshirt.com/_ipx/f_webp/band-shirt/sample-1.png",   "description": "รับผลิตเสื้อฟอก เสื้อวินเทจ ทุกรูปแบบ คุณภาพสูง ราคาโรงงาน สั่งผลิตขั้นต่ำ 100 ตัว",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "90",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อฟอก"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "210"   }} '
+  - content: '{"@context": "https://schema.org/",   "@type": "Product",    "name": "รับผลิตเสื้อฟอก เสื้อวินเทจ",   "image": "https://somsritshirt.com/_ipx/f_webp/band-shirt/sample-1.png",   "description": "รับผลิตเสื้อฟอก เสื้อวินเทจ ทุกรูปแบบ คุณภาพสูง ราคาโรงงาน สั่งผลิตขั้นต่ำ 150 ตัว",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "Offer",     "availability": "https://schema.org/InStock",     "priceCurrency": "THB",     "price": "90",     "itemOffered": {       "@type": "Service",       "name": "รับผลิตเสื้อฟอก"     }   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.8",     "reviewCount": "210"   }} '
     type: application/ld+json
 ---
 
@@ -24,7 +24,7 @@ image: /faded-shirt/faded-banner.png
 คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
 
 #description
-สั่งผลิตขั้นต่ำ 100 ตัว
+สั่งผลิตขั้นต่ำ 150 ตัว
 ::
 
 ::container
@@ -40,7 +40,7 @@ image: /faded-shirt/faded-banner.png
   :::
 
   :::prose-p
-  ซึ่งในปัจจุบันได้รับความนิยมอย่างมาก เพราะลวดลายของเสื้อดูมีมิติ ดูคูลๆ ไม่ซ้ำใคร โดยผ้าที่ใช้เป็นผ้า cotton หรือผ้าฝ้ายเกรดพรีเมี่ยมแท้ 100% ที่ความหนา 20 Comb เพื่อให้ระบายอากาศดี ผ้าฟูขึ้น ได้ผิวสัมผัสอ่อนนุ่มสบายผิว ซึมซับเหงื่อได้ดี ทนทาน และมักจะสั่งผลิตเสื้อฟอกทรงโอเวอร์ไซส์ (Oversize) หรือทรงเสื้อหลวมๆ ที่มีขนาดใหญ่กว่าไซส์ปกติเพื่อเพิ่มความเท่ ดูมีสไตล์ เคลื่อนไหวสะดวก ไม่อึดอัด ไม่รัด
+  ซึ่งในปัจจุบันได้รับความนิยมอย่างมาก เพราะลวดลายของเสื้อดูมีมิติ ดูคูลๆ ไม่ซ้ำใคร โดยผ้าที่ใช้เป็นผ้า cotton หรือผ้าฝ้ายเกรดพรีเมี่ยมแท้ 150% ที่ความหนา 20 Comb เพื่อให้ระบายอากาศดี ผ้าฟูขึ้น ได้ผิวสัมผัสอ่อนนุ่มสบายผิว ซึมซับเหงื่อได้ดี ทนทาน และมักจะสั่งผลิตเสื้อฟอกทรงโอเวอร์ไซส์ (Oversize) หรือทรงเสื้อหลวมๆ ที่มีขนาดใหญ่กว่าไซส์ปกติเพื่อเพิ่มความเท่ ดูมีสไตล์ เคลื่อนไหวสะดวก ไม่อึดอัด ไม่รัด
   :::
 
   :::split-content
