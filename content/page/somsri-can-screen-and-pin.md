@@ -105,8 +105,10 @@ image: /somsri-can-screen-and-pin/banner.png
 
 :what-cost-saving
 
-::line-link
+::center
+:::line-link
   :::line-button
   แอดไลน์สั่งทำเสื้อ
   :::
+:::
 ::
