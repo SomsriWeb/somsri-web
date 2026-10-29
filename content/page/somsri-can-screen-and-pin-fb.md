@@ -13,7 +13,7 @@ lineLink: https://contact.somsritshirt.com/b3a20
 ผ้าพรีเมี่ยม คุณภาพส่งออก งานแบรนด์ ราคาย่อมเยาว์
 
 #description
-เสื้อโปโลขั้นต่ำ 50 ตัว
+เสื้อโปโลขั้นต่ำ 100 ตัว
 ::
 
 ::container
