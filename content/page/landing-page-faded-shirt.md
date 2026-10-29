@@ -238,6 +238,6 @@ image: /faded-shirt/faded-banner.png
   แอดไลน์สั่งทำเสื้อ
   :::
 ::
-:::accordion-
+:::faded-shirt-accordion
 :::
 ::
