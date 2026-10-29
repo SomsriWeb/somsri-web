@@ -7,6 +7,7 @@ language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/1f15f
 navbar: false
+noindex: true
 เพิ่ม script ใน head: []
 ---
 
