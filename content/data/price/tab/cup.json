@@ -1,7 +1,9 @@
 {
     "uid": "cup",
     "name": "แก้วน้ำ",
+    "name-en": "Drinkware",
     "imageUrl": "/price/cup.jpg",
     "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
+    "alt-en": "Custom printed cup price rates",
     "order": 4
 }

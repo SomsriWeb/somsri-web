@@ -4,6 +4,11 @@ const { proxy: metaPixel } = useScriptMetaPixel();
 
 // VARIABLE
 const config = useRuntimeConfig();
+const { locale } = useI18n();
+
+// ภาษาของหน้า (SEO)
+useHead({ htmlAttrs: { lang: locale } });
+useSeoMeta({ ogLocale: () => (locale.value === 'en' ? 'en_US' : 'th_TH') });
 
 if (config.env === 'production') {
     // RUN GTAG

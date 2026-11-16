@@ -34,7 +34,7 @@ const {
     images,
     badgeValue,
     badgeLabel,
-    lineLabel = 'แอดไลน์ ขอใบเสนอราคา',
+    lineLabel = '',
     secondaryLabel,
     secondaryTo,
 } = defineProps<Props>();
@@ -53,7 +53,17 @@ interface Slots {
 defineSlots<Slots>();
 
 const lineLink = inject<string>(LINE_LINK);
+
+const { t } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
 </script>
+
+<i18n lang="json">
+{
+    "th": { "lineLabel": "แอดไลน์ ขอใบเสนอราคา" },
+    "en": { "lineLabel": "Add us on LINE for a quote" }
+}
+</i18n>
 
 <template>
     <section class="bg-gradient-to-b from-white to-stone-100 pt-4 pb-10 md:pb-16">
@@ -61,7 +71,7 @@ const lineLink = inject<string>(LINE_LINK);
             <nav v-if="breadcrumbs.length" aria-label="breadcrumb" class="text-xs text-slate-500">
                 <template v-for="(crumb, i) in breadcrumbs" :key="i">
                     <span v-if="i > 0" class="mx-1.5">›</span>
-                    <NuxtLink v-if="crumb.to" :to="crumb.to" class="hover:text-primary">{{ crumb.label }}</NuxtLink>
+                    <NuxtLink v-if="crumb.to" :to="localizePath(crumb.to)" class="hover:text-primary">{{ crumb.label }}</NuxtLink>
                     <span v-else aria-current="page">{{ crumb.label }}</span>
                 </template>
             </nav>
@@ -97,11 +107,12 @@ const lineLink = inject<string>(LINE_LINK);
 
                     <div class="flex flex-wrap gap-3">
                         <UButton :to="lineLink" color="line" icon="hugeicons:line" class="px-6 py-2.5 text-sm md:text-base">
-                            {{ lineLabel }}
+                            {{ lineLabel || t('lineLabel') }}
                         </UButton>
                         <UButton
                             v-if="secondaryLabel && secondaryTo"
-                            :to="secondaryTo"
+                            :to="localizePath(secondaryTo)"
+                            :locale="false"
                             variant="outline"
                             icon="lucide:file-text"
                             class="bg-white px-6 py-2.5 text-sm md:text-base"

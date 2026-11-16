@@ -10,12 +10,19 @@
     "nameTh": "คอตตอนไพรม์",
     "nameEn": "Cotton Prime",
     "recommendForStyle": "เสื้อพรีเมียม งานแบรนด์",
+    "recommendForStyle-en": "Premium shirts & brand apparel",
     "advantage": [
         "เกรดผ้าคัดพิเศษ",
         "สัมผัสนุ่ม ลื่น",
         "เหมาะงานที่ต้องการภาพลักษณ์พรีเมียม"
     ],
+    "advantage-en": [
+        "Specially selected fabric grade",
+        "Soft, silky touch",
+        "Ideal for a premium brand image"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 21,
     "gramWeight": 230
 }

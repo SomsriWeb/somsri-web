@@ -36,7 +36,16 @@ const {
     leftNotes = [],
     rightNotes = [],
 } = defineProps<Props>()
+
+const { t } = useI18n({ useScope: 'local' })
 </script>
+
+<i18n lang="json">
+{
+    "th": { "size": "ขนาด", "quantity": "จำนวน", "pieces": "ชิ้น", "perPiece": "บาท/ชิ้น" },
+    "en": { "size": "Size", "quantity": "Quantity", "pieces": "pcs", "perPiece": "THB/pc" }
+}
+</i18n>
 
 <template>
     <div class="pl-1 pr-1 md:pl-0 md:pr-0 py-4 max-w-md md:max-w-3xl lg:max-w-4xl xl:max-w-[55rem] mx-auto w-full overflow-hidden">
@@ -83,11 +92,11 @@ const {
                                 v-if="showSize"
                                 class="pl-1 pr-1 md:pl-2 md:pr-2 text-sm md:text-2xl lg:text-4xl font-bold text-center flex items-center justify-center break-words"
                             >
-                                ขนาด
+                                {{ t('size') }}
                             </div>
                             <div class="pl-1 pr-1 md:pl-2 md:pr-2 text-sm md:text-2xl lg:text-4xl font-bold text-center flex flex-col items-center justify-center gap-1 md:gap-2">
                                 <i class="ti ti-users text-lg md:text-4xl lg:text-6xl leading-none" aria-hidden="true" />
-                                <span class="leading-none mt-1 text-xs md:text-base lg:text-2xl font-medium">จำนวน</span>
+                                <span class="leading-none mt-1 text-xs md:text-base lg:text-2xl font-medium">{{ t('quantity') }}</span>
                             </div>
                         </div>
 
@@ -109,7 +118,7 @@ const {
                                         {{ row.qty }}
                                     </div>
                                     <div class="text-white/90 text-xs md:text-base lg:text-2xl font-medium leading-none mt-1">
-                                        ชิ้น
+                                        {{ t('pieces') }}
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +156,7 @@ const {
                                     {{ row.prices[ci] }}.-
                                 </div>
                                 <div class="text-primary/90 text-xs md:text-sm lg:text-xl font-medium mt-1 leading-none text-center">
-                                    บาท/ชิ้น
+                                    {{ t('perPiece') }}
                                 </div>
                             </div>
                         </div>

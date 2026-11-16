@@ -4,7 +4,6 @@ activeNavbar: true
 contentSpacing: false
 description: สมศรีมีเสื้อ โรงงานรับผลิตเสื้อโปโลบริษัท · ขั้นต่ำ 20 ตัว · เสื้อเปล่า 120–220 บาท · ผลิต 14–21 วัน (ด่วน 2–3 วัน) · 50,000 ตัว/เดือน · รับประกัน 90 วัน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/f56b2
 navbar: true

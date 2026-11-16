@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { LINE_LINK } from '~/lib/lineLink';
+import { SALES_PEOPLE } from '~/lib/salesPeople';
 
 // VARIABLE
+const { locale } = useI18n();
 const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
 </script>
 <template>
@@ -22,38 +24,11 @@ const lineLink = inject(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
                     <UButton icon="line-md:facebook" color="neutral" class="!text-primary px-2 h-full" block>Somsritshirt</UButton>
                 </NuxtLink>
 
-                <NuxtLink href="tel:0839088853" external>
+                <NuxtLink v-for="person in SALES_PEOPLE" :key="person.phoneNumber" :href="`tel:${person.phoneNumber.replaceAll('-', '')}`" external>
                     <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
                         <div>
-                            <p>083-908-8853</p>
-                            <p>เซลล์ (คุณเม)</p>
-                        </div>
-                    </UButton>
-                </NuxtLink>
-
-                <NuxtLink href="tel:0839088854" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
-                        <div>
-                            <p>083-908-8854</p>
-                            <p>เซลล์ (คุณเบล)</p>
-                        </div>
-                    </UButton>
-                </NuxtLink>
-
-                <NuxtLink href="tel:0634216521" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
-                        <div>
-                            <p>063-421-6521</p>
-                            <p>เซลล์ (คุณการีม)</p>
-                        </div>
-                    </UButton>
-                </NuxtLink>
-
-                <NuxtLink href="tel:0954546693" external>
-                    <UButton icon="solar:phone-bold" color="neutral" class="!text-primary px-2 !text-xs gap-3" block>
-                        <div>
-                            <p>095-454-6693</p>
-                            <p>เซลล์ (คุณแนน)</p>
+                            <p>{{ person.phoneNumber }}</p>
+                            <p>{{ $t('sales.label', { name: person.name[locale as 'th' | 'en'] }) }}</p>
                         </div>
                     </UButton>
                 </NuxtLink>

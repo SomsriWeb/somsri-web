@@ -3,7 +3,6 @@ title: โรงงานผลิตเสื้อโปโลคุณภา�
 activeNavbar: true
 description: บริการรับผลิตเสื้อโปโลครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมงานปักและสกรีนโลโก้แบรนด์ ออกแบบฟรี เหมาะสำหรับชุดยูนิฟอร์มและเสื้อทีม เช็คราคาเลย
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/6e554
 navbar: false
@@ -54,7 +53,7 @@ image: /somsri-can-screen-and-pin/banner.png
   \*\*ทางเรามีบริการ QC & Pack อย่างดี \*\*
   :::
 
-  :::link-button{.text-center to="https://somsritshirt.com/polo"}
+  :::link-button{.text-center to="/polo"}
   สั่งทำเสื้อโปโล
   :::
 

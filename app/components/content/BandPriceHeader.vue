@@ -11,13 +11,18 @@ interface Props {
 const lineLink = inject<string>(LINE_LINK, 'https://contact.somsritshirt.com/c4119');
 
 const props = withDefaults(defineProps<Props>(), {
-    title: 'ราคาสั่งผลิตเสื้อวง',
-    description: 'หากลูกค้าสั่งในจำนวนมากยิ่งจะทำให้ราคาถูกลงอย่างชัดเจนนอกจากนี้เรายังมีบริการคอยให้คำแนะนำตั้งแต่ขั้นตอนเริ่มต้นอย่างการออกแบบไปจนถึงการเลือกเนื้อผ้าที่เหมาะสมกับงบประมาณและประเภทเสื้อที่ลูกค้าต้องการ',
-    buttonText: 'สอบถามราคา',
+    title: undefined,
+    description: undefined,
+    buttonText: undefined,
     buttonLink: '',
 });
 
+const { t } = useI18n({ useScope: 'local' });
+
 const resolvedButtonLink = computed(() => props.buttonLink || lineLink);
+const title = computed(() => props.title ?? t('title'));
+const description = computed(() => props.description ?? t('description'));
+const buttonText = computed(() => props.buttonText ?? t('buttonText'));
 
 interface Slots {
     title?(): unknown;
@@ -26,6 +31,21 @@ interface Slots {
 }
 defineSlots<Slots>();
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "title": "ราคาสั่งผลิตเสื้อวง",
+        "description": "หากลูกค้าสั่งในจำนวนมากยิ่งจะทำให้ราคาถูกลงอย่างชัดเจนนอกจากนี้เรายังมีบริการคอยให้คำแนะนำตั้งแต่ขั้นตอนเริ่มต้นอย่างการออกแบบไปจนถึงการเลือกเนื้อผ้าที่เหมาะสมกับงบประมาณและประเภทเสื้อที่ลูกค้าต้องการ",
+        "buttonText": "สอบถามราคา"
+    },
+    "en": {
+        "title": "Custom Band Shirt Pricing",
+        "description": "The larger your order, the lower the price per piece. Our team also guides you from the very first step — from design to choosing the right fabric for your budget and shirt style.",
+        "buttonText": "Get a Quote"
+    }
+}
+</i18n>
 
 <template>
     <div class="w-full py-6 sm:py-8 lg:py-10">

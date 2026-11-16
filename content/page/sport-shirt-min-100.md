@@ -3,7 +3,6 @@ title: รับผลิตเสื้อกีฬา เสื้อบอล
 activeNavbar: true
 description: บริการรับผลิตเสื้อกีฬาครบวงจร ออกแบบลายเสื้อฟรี ด้วยระบบพิมพ์ดิจิทัลสีสดคมชัด เนื้อผ้า Micro ระบายอากาศดี แห้งไว เหมาะสำหรับเสื้อทีม เสื้อคณะ และงานวิ่ง
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/ec483
 navbar: false

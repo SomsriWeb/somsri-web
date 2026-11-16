@@ -8,6 +8,10 @@ const props = defineProps<Props>();
 const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
     return queryCollection(props.type).order('name', 'ASC').all();
 });
+
+const { locale } = useI18n();
+const nameOf = (item: { name: string; 'name-en'?: string }) => (locale.value === 'en' ? (item['name-en'] ?? item.name) : item.name);
+const methodOf = (item: { method: string; 'method-en'?: string }) => (locale.value === 'en' ? (item['method-en'] ?? item.method) : item.method);
 </script>
 
 <template>
@@ -16,14 +20,14 @@ const { data: datacards } = await useAsyncData(`portcard-${props.type}`, () => {
             <div v-for="item in datacards" :key="item.name" class="flex flex-col items-center text-center w-full max-w-[250px]">
                 <!-- Responsive square image -->
                 <div class="w-full aspect-square rounded-2xl overflow-hidden shadow-md">
-                    <ProseImg :src="item.image" :alt="item.name" class="h-full object-cover" />
+                    <ProseImg :src="item.image" :alt="nameOf(item)" class="h-full object-cover" />
                 </div>
 
                 <!-- Text -->
                 <span class="text-base sm:text-lg font-semibold text-primary mt-3">
-                    {{ item.name }}
+                    {{ nameOf(item) }}
                 </span>
-                <p class="text-sm text-primary mt-1">• {{ item.method }}</p>
+                <p class="text-sm text-primary mt-1">• {{ methodOf(item) }}</p>
             </div>
         </div>
     </div>

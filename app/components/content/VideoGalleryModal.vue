@@ -15,6 +15,8 @@ interface Props {
 const { initialIndex = 0, videos } = defineProps<Props>();
 const open = defineModel<boolean>('open', { default: false });
 
+const { t } = useI18n({ useScope: 'local' });
+
 const currentVideoIndex = ref(initialIndex);
 const videoContainerRef = useTemplateRef<HTMLDivElement>('videoContainer');
 const bodyContainerRef = useTemplateRef<HTMLDivElement>('bodyContainer');
@@ -130,6 +132,13 @@ onMounted(() => window.addEventListener('keydown', handleKeydown));
 onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
 </script>
 
+<i18n lang="json">
+{
+    "th": { "video": "วิดีโอ", "videoLabel": "วิดีโอ: {title} ({current} จาก {total})" },
+    "en": { "video": "Video", "videoLabel": "Video: {title} ({current} of {total})" }
+}
+</i18n>
+
 <template>
     <UModal
         v-model:open="open"
@@ -156,7 +165,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    aria-label="วิดีโอก่อนหน้า"
+                    :aria-label="$t('a11y.previousVideo')"
                     @click="prevVideo"
                 />
 
@@ -174,8 +183,8 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                         v-if="currentVideo && videoDimensions.width > 0"
                         class="absolute top-0 left-0 w-full h-full rounded"
                         :src="embedUrl"
-                        :title="currentVideo.title || 'วิดีโอ'"
-                        :aria-label="`วิดีโอ: ${currentVideo.title || 'วิดีโอ'} (${currentVideoIndex + 1} จาก ${videos.length})`"
+                        :title="currentVideo.title || t('video')"
+                        :aria-label="t('videoLabel', { title: currentVideo.title || t('video'), current: currentVideoIndex + 1, total: videos.length })"
                         :width="String(videoDimensions.width)"
                         :height="String(videoDimensions.height)"
                         style="border:none;overflow:hidden"
@@ -195,7 +204,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
                     color="neutral"
                     variant="ghost"
                     size="sm"
-                    aria-label="วิดีโอถัดไป"
+                    :aria-label="$t('a11y.nextVideo')"
                     @click="nextVideo"
                 />
             </div>

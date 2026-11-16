@@ -1,7 +1,10 @@
 {
     "title": "เห็นก่อน อนุมัติก่อน ถึงผลิตจริง",
+    "title-en": "See it and approve it before production",
     "description": "เราส่งตัวอย่างให้ดูก่อนเสมอ ไม่มีโรงงานไหนแอบผลิตโดยไม่ผ่านที่สมศรี — อนุมัติแล้วค่อยเดินหน้าต่อ",
+    "description-en": "We always send you a sample first. No factory produces anything without Somsri's sign-off — we only move forward once you approve.",
     "image": "/how-to-order/steps/step-5.jpg",
     "badge": "จุดที่ทำให้คุณวางใจได้",
+    "badge-en": "Why you can trust us",
     "order": 5
 }

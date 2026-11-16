@@ -6,7 +6,16 @@
 		alt?: string
 	}
 	const { image, titleAsTag = "h1", alt = "" } = defineProps<Props>()
+
+	const { t } = useI18n({ useScope: "local" })
 </script>
+
+<i18n lang="json">
+{
+	"th": { "consult": "ปรึกษาฟรี" },
+	"en": { "consult": "Free Consultation" }
+}
+</i18n>
 
 <template>
 	<Container class="bg-primary grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -38,7 +47,7 @@
 			<div class="mt-3 flex justify-center md:justify-start">
 				<slot name="cta">
 					<LineLink>
-						<UButton color="neutral">ปรึกษาฟรี</UButton>
+						<UButton color="neutral">{{ t("consult") }}</UButton>
 					</LineLink>
 				</slot>
 			</div>

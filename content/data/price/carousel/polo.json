@@ -1,15 +1,18 @@
 {
     "uid": "polo",
     "name": "เสื้อโปโลเปล่า",
+    "name-en": "Blank polo shirts",
     "imageUrl": "/brand-uniform/somsri-polo.png",
     "conditions": [
         {
-            "text": "ราคาปักเป็นราคาที่ยืดหยุ่นสูง มีความจำเป็น ต้องส่งลายเพื่อประเมินราคาก่อน"
+            "text": "ราคาปักเป็นราคาที่ยืดหยุ่นสูง มีความจำเป็น ต้องส่งลายเพื่อประเมินราคาก่อน",
+            "text-en": "Embroidery pricing varies widely — please send your design for a quote first"
         }
     ],
     "priceLists": [
         {
             "fabricName": "DRYTECH / DRYFEEL",
+            "fabricName-en": "DRYTECH / DRYFEEL",
             "rates": [
                 {
                     "min": 100,
@@ -40,6 +43,7 @@
         },
         {
             "fabricName": "ไมโครกีฬา / จูติไมโคร",
+            "fabricName-en": "Micro Sport / Juti Micro",
             "rates": [
                 {
                     "min": 100,
@@ -70,6 +74,7 @@
         },
         {
             "fabricName": "TC-Lacoste สีขาว",
+            "fabricName-en": "TC-Lacoste (white)",
             "rates": [
                 {
                     "min": 100,
@@ -100,6 +105,7 @@
         },
         {
             "fabricName": "TC-Lacoste สีอื่น ๆ",
+            "fabricName-en": "TC-Lacoste (other colors)",
             "rates": [
                 {
                     "min": 100,

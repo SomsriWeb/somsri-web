@@ -1,14 +1,9 @@
 <script setup lang="ts">
 import { useScrollRevealUp } from '~/composables/useScrollRevealUp';
 
-// PROPS
-interface Props {
-    /**
-     * ใช้ภาษาไทยเป็นค่า default
-     */
-    lang?: 'th' | 'en';
-}
-const { lang = 'th' } = defineProps<Props>();
+// ภาษาตาม URL (/en/... = อังกฤษ)
+const { locale } = useI18n();
+const lang = locale.value as 'th' | 'en';
 
 interface Slots {
     /**
@@ -232,7 +227,7 @@ useScrollRevealUp(carouselRef, {
                     disabled: false,
                     class: 'min-w-fit! p-2! sm:p-2.5! rounded-full',
                 }"
-                aria-label="ผลงานพอร์ตโฟลิโอ"
+                :aria-label="$t('a11y.portfolio')"
             >
                 <div
                     class="relative min-w-0 w-full cursor-pointer group"

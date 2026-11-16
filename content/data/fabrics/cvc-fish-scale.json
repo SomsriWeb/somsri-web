@@ -9,11 +9,18 @@
     "nameTh": "CVC เกล็ดปลา",
     "nameEn": "CVC Fish Scale",
     "recommendForStyle": "เสื้อลายผิวพิเศษ ลุคไม่ซ้ำใคร",
+    "recommendForStyle-en": "Textured shirts with a unique look",
     "advantage": [
         "ลายผ้าเกล็ดปลา มีมิติ",
         "ผสมโพลีเอสเตอร์ ทนทาน",
         "รีดง่าย ดูแลไม่ยุ่งยาก"
     ],
+    "advantage-en": [
+        "Fish-scale texture with depth",
+        "Polyester blend for durability",
+        "Easy to iron, low maintenance"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 23
 }

@@ -23,7 +23,7 @@ interface Props {
     overflowText?: string;
     notes?: PriceNote[];
 }
-const { qtyLabel = 'จำนวน (ตัว)', columns, rows, overflowLabel, overflowText, notes = [] } = defineProps<Props>();
+const { qtyLabel = '', columns, rows, overflowLabel, overflowText, notes = [] } = defineProps<Props>();
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -33,7 +33,16 @@ interface Slots {
 defineSlots<Slots>();
 
 const formatPrice = (n: number) => '฿' + n.toLocaleString('th-TH');
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "qtyLabel": "จำนวน (ตัว)" },
+    "en": { "qtyLabel": "Quantity (pcs)" }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 py-10 md:py-16 lg:scroll-mt-24">
@@ -48,7 +57,7 @@ const formatPrice = (n: number) => '฿' + n.toLocaleString('th-TH');
                 <table class="w-full min-w-[45rem] border-collapse">
                     <thead>
                         <tr class="bg-primary text-white">
-                            <th scope="col" class="px-4 py-3 text-left text-sm font-bold md:text-base">{{ qtyLabel }}</th>
+                            <th scope="col" class="px-4 py-3 text-left text-sm font-bold md:text-base">{{ qtyLabel || t('qtyLabel') }}</th>
                             <th v-for="(col, i) in columns" :key="i" scope="col" class="px-4 py-3 text-center text-sm font-bold md:text-base">
                                 {{ col.name }}
                                 <small v-if="col.sub" class="block text-xs font-normal opacity-85">{{ col.sub }}</small>

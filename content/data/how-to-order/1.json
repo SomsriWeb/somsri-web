@@ -1,8 +1,11 @@
 {
     "title": "บอกเราว่าคุณอยากได้อะไร",
+    "title-en": "Tell us what you want",
     "description": "ยังไม่มีดีไซน์ก็ไม่เป็นไร แค่มี mood board หรือ reference ก็เริ่มได้ ทีมเราช่วยแปลความคิดให้",
+    "description-en": "No design yet? No problem. A mood board or a reference is enough to start — our team will turn your ideas into a design.",
     "image": "/how-to-order/steps/step-1.jpg",
     "badge": "ปรึกษาฟรี",
+    "badge-en": "Free consultation",
     "badgeIsLink": true,
     "order": 1
 }

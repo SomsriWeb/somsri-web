@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'node:url';
 import { beasties } from 'vite-plugin-beasties';
+import { defineNuxtConfig } from 'nuxt/config';
 
 const GTAG_ID = 'GTM-5HWK828';
 const META_PIXEL_ID = '796947021881915';
@@ -8,8 +9,6 @@ const CLARITY_ID = process.env.NUXT_PUBLIC_SCRIPTS_CLARITY_ID || '';
 if (!CLARITY_ID) {
     console.warn('[nuxt.config] Missing Clarity ID: set NUXT_PUBLIC_SCRIPTS_CLARITY_ID in your .env file to enable Microsoft Clarity.');
 }
-
-import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -26,12 +25,21 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@nuxt/scripts',
         'nuxt-studio',
+        '@nuxtjs/i18n',
     ],
+    i18n: {
+        baseUrl: 'https://somsritshirt.com',
+        defaultLocale: 'th',
+        strategy: 'prefix_except_default',
+        // ไม่ redirect ตามภาษาของ browser เพื่อให้ Googlebot เห็นทั้งสองภาษา
+        detectBrowserLanguage: false,
+        locales: [
+            { code: 'th', language: 'th-TH', name: 'ไทย', file: 'th.json' },
+            { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+        ],
+    },
     app: {
         head: {
-            htmlAttrs: {
-                lang: 'th',
-            },
             link: [
                 {
                     rel: 'apple-touch-icon',
@@ -100,9 +108,11 @@ export default defineNuxtConfig({
     seo: {},
     site: {
         url: 'https://somsritshirt.com',
-        name: 'สมศรีมีเสื้อ',
+        // ชื่อเว็บแยกตามภาษา: nuxtSiteConfig.name ใน i18n/locales/*.json
     },
     sitemap: {
+        // hreflang กำหนดเองใน server/api/__sitemap__/page.ts (เฉพาะหน้าที่มีสองภาษา)
+        autoI18n: false,
         sitemapsPathPrefix: '/',
         sitemaps: {
             'page-sitemap': {
@@ -171,6 +181,9 @@ export default defineNuxtConfig({
             cache: { maxAge: 60 * 60 * 24 },
         },
         '/_ipx/**': { prerender: false },
+        // URL ภาษาอังกฤษแบบเดิม → รูปแบบใหม่ /en/...
+        '/contact-en': { redirect: { to: '/en/contact', statusCode: 301 } },
+        '/product-en': { redirect: { to: '/en/product-type', statusCode: 301 } },
         '/**': {
             prerender: true,
         },

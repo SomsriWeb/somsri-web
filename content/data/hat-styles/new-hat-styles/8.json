@@ -1,6 +1,7 @@
 {
     "image": "/landing-page-real-hat/hat-style-8.png",
     "label": "หมวกบักเก็ตลูกฟูก",
+    "label-en": "Corduroy Bucket Hat",
     "priceperunit" : [150, 140, 130, 116],
     "order": 8
 }

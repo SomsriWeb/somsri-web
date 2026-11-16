@@ -10,24 +10,17 @@ type ProductRow = {
     'alt-en'?: string;
 };
 
-// PROPS
-interface Props {
-    /**
-     * ใช้ภาษาไทยเป็นค่า default
-     */
-    lang?: 'th' | 'en';
-}
-const props = withDefaults(defineProps<Props>(), {
-    lang: 'th',
-});
+// VARIABLE
+const { locale } = useI18n();
+const localizePath = await useLocalizedPath();
 
 function productCardBindings(p: ProductRow) {
+    const isThai = locale.value === 'th';
     return {
-        name: props.lang === 'th' ? p.name : p['name-en'],
-        url: p.url,
+        name: isThai ? p.name : p['name-en'],
+        url: localizePath(p.url),
         image: p.image,
-        alt: props.lang === 'th' ? p.alt : p['alt-en'],
-        lang: props.lang,
+        alt: isThai ? p.alt : (p['alt-en'] ?? p['name-en']),
     };
 }
 
@@ -75,7 +68,7 @@ useScrollRevealUp(cardsGridRef, {
                 <template #default="{ item }">
                     <HomeProductCard v-bind="productCardBindings(item as ProductRow)">
                         <template #cta-text>
-                            <slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">ดูเพิ่มเติม</slot>
+                            <slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">{{ $t('common.seeMore') }}</slot>
                         </template>
                     </HomeProductCard>
                 </template>
@@ -87,16 +80,16 @@ useScrollRevealUp(cardsGridRef, {
             >
                 <HomeProductCard v-for="product in featuredList" :key="product.name" v-bind="productCardBindings(product)">
                     <template #cta-text>
-                        <slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">ดูเพิ่มเติม</slot>
+                        <slot name="cta-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">{{ $t('common.seeMore') }}</slot>
                     </template>
                 </HomeProductCard>
             </div>
         </template>
 
         <div class="flex justify-end">
-            <NuxtLink to="/product-type">
+            <NuxtLink :to="localizePath('/product-type')">
                 <UButton color="neutral" variant="outline" class="rounded-full" trailing-icon="lucide:chevron-right">
-                    <slot name="other-product-button-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">ดูสินค้าอื่น ๆ</slot></UButton
+                    <slot name="other-product-button-text" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">{{ $t('common.otherProducts') }}</slot></UButton
                 >
             </NuxtLink>
         </div>

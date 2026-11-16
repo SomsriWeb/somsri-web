@@ -3,7 +3,6 @@ title: รับผลิตหมวก หมวกแก๊ป หมวก�
 activeNavbar: true
 description: โรงงานผลิตหมวกคุณภาพสูง พร้อมสกรีนและปักโลโก้สวยคมชัด สั่งผลิตหมวกเป็นทีม หมวกแก๊ป หมวกบักเก็ต หมวกเดินป่า ตรงปก ส่งงานไว รับประกัน 90 วัน ใส่ใจทุกรายละเอียด
 footer: false
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/2b64f
 navbar: true

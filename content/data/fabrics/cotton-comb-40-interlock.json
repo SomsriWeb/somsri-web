@@ -10,12 +10,19 @@
     "nameTh": "คอตตอนคอมป์ 40 อินเตอร์ล็อค",
     "nameEn": "Cotton Comb 40 Interlock",
     "recommendForStyle": "เสื้อเนื้อแน่น ทรงสวย",
+    "recommendForStyle-en": "Dense, well-structured shirts",
     "advantage": [
         "เนื้อผ้าแน่น เรียบ",
         "ทิ้งตัวสวย",
         "ยับยาก"
     ],
+    "advantage-en": [
+        "Dense, smooth fabric",
+        "Beautiful drape",
+        "Wrinkle-resistant"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 2,
     "gramWeight": 240
 }

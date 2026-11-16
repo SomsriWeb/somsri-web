@@ -11,7 +11,7 @@ interface Props {
     steps: Step[];
     lineLabel?: string;
 }
-const { steps, lineLabel = 'สอบถามเพิ่มเติม' } = defineProps<Props>();
+const { steps, lineLabel = '' } = defineProps<Props>();
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -21,7 +21,16 @@ interface Slots {
 defineSlots<Slots>();
 
 const lineLink = inject<string>(LINE_LINK);
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "lineLabel": "สอบถามเพิ่มเติม" },
+    "en": { "lineLabel": "Ask Us More" }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 py-10 md:py-16 lg:scroll-mt-24">
@@ -48,7 +57,7 @@ const lineLink = inject<string>(LINE_LINK);
 
             <div class="mt-7 flex justify-center">
                 <UButton :to="lineLink" color="line" icon="hugeicons:line" class="px-6 py-2.5 text-sm md:text-base">
-                    {{ lineLabel }}
+                    {{ lineLabel || t('lineLabel') }}
                 </UButton>
             </div>
         </div>

@@ -3,7 +3,6 @@ title: รับผลิตสินค้าจากผ้า รับผล
 activeNavbar: true
 description: โรงงานสมศรีมีเสื้อ เรารับผลิตสินค้าจากผ้าหลากหลายรูปแบบ รับผลิตหมวก รับผลิตปลอกหมอนข้าง ออกแบบฟรี ลายไม่ซ้ำใคร รับผลิตสินค้าราคาส่ง จัดส่งไว
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/aa057
 navbar: true

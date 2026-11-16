@@ -23,7 +23,7 @@ defineProps<Props>();
                     variant="soft"
                     class="text-primary! text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2"
                 >
-                    <slot name="cta-text">ดูเพิ่มเติม</slot>
+                    <slot name="cta-text">{{ $t('common.seeMore') }}</slot>
                 </UButton>
             </NuxtLink>
         </div>

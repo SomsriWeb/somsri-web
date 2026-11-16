@@ -20,7 +20,10 @@ interface Props {
     buttonLabel?: string;
     buttonTo?: string;
 }
-const { filters = [], filtersLabel = 'กรองตามธุรกิจ', items, buttonLabel, buttonTo } = defineProps<Props>();
+const { filters = [], filtersLabel = '', items, buttonLabel, buttonTo } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -33,6 +36,13 @@ const activeFilter = ref(filters[0]?.key ?? 'all');
 const isVisible = (item: Work) => activeFilter.value === 'all' || item.category === activeFilter.value;
 </script>
 
+<i18n lang="json">
+{
+    "th": { "filtersLabel": "กรองตามธุรกิจ" },
+    "en": { "filtersLabel": "Filter by industry" }
+}
+</i18n>
+
 <template>
     <section class="scroll-mt-20 bg-stone-100 py-10 md:py-16 lg:scroll-mt-24">
         <div class="px-6 lg:px-18">
@@ -42,7 +52,7 @@ const isVisible = (item: Work) => activeFilter.value === 'all' || item.category 
                 <template v-if="$slots.description" #description><slot name="description" mdc-unwrap="p" /></template>
             </PoloShirtSectionHead>
 
-            <div v-if="filters.length" role="group" :aria-label="filtersLabel" class="mb-5 flex flex-wrap gap-2">
+            <div v-if="filters.length" role="group" :aria-label="filtersLabel || t('filtersLabel')" class="mb-5 flex flex-wrap gap-2">
                 <button
                     v-for="filter in filters"
                     :key="filter.key"
@@ -81,7 +91,7 @@ const isVisible = (item: Work) => activeFilter.value === 'all' || item.category 
             </div>
 
             <div v-if="buttonLabel && buttonTo" class="mt-6 flex flex-wrap gap-3">
-                <UButton :to="buttonTo" variant="outline" class="bg-white px-6 py-2.5 text-sm md:text-base">{{ buttonLabel }}</UButton>
+                <UButton :to="localizePath(buttonTo)" :locale="false" variant="outline" class="bg-white px-6 py-2.5 text-sm md:text-base">{{ buttonLabel }}</UButton>
             </div>
         </div>
     </section>

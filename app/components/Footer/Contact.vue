@@ -1,25 +1,17 @@
 <script setup lang="ts">
-import { LANGUAGE } from '~/lib/language';
+import { SALES_PEOPLE } from '~/lib/salesPeople';
 
 // VARIABLE
-const phoneNumbers = [
-    { phoneNumber: '083-908-8853', owner: '( เซลล์ คุณเม )' },
-    { phoneNumber: '083-908-8854', owner: '( เซลล์ คุณเบล )' },
-    { phoneNumber: '063-421-6521', owner: '( เซลล์ คุณการีม )' },
-    { phoneNumber: '095-454-6693', owner: '( เซลล์ คุณแนน )' },
-];
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
-const data = {
-    th: {
-        title: 'เบอร์โทรศัพท์',
-    },
-    en: {
-        title: 'Phone Numbers',
-    },
-};
+const { t, locale } = useI18n();
+const phoneNumbers = computed(() =>
+    SALES_PEOPLE.map((person) => ({
+        phoneNumber: person.phoneNumber,
+        owner: t('footer.contact.sales', { name: person.name[locale.value as 'th' | 'en'] }),
+    })),
+);
 
-const leftColumnPhoneNumbers = computed(() => phoneNumbers.filter((_, index) => index % 2 === 0));
-const rightColumnPhoneNumbers = computed(() => phoneNumbers.filter((_, index) => index % 2 !== 0));
+const leftColumnPhoneNumbers = computed(() => phoneNumbers.value.filter((_, index) => index % 2 === 0));
+const rightColumnPhoneNumbers = computed(() => phoneNumbers.value.filter((_, index) => index % 2 !== 0));
 
 // FUNCTION
 function getCallLink(phoneNumber: string) {
@@ -28,7 +20,7 @@ function getCallLink(phoneNumber: string) {
 </script>
 <template>
     <div class="text-white">
-        <FooterTitle>{{ data[LANG].title }}</FooterTitle>
+        <FooterTitle>{{ $t('footer.contact.title') }}</FooterTitle>
         <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-3">
             <div>
                 <NuxtLink v-for="phoneNumber in leftColumnPhoneNumbers" :key="phoneNumber.phoneNumber" :href="getCallLink(phoneNumber.phoneNumber)" external class="font-light block">{{

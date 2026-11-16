@@ -5,7 +5,16 @@ interface Props {
     alt?: string;
 }
 const { image, alt = '' } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "consult": "ปรึกษาฟรี!" },
+    "en": { "consult": "Free Consultation!" }
+}
+</i18n>
 <template>
     <div class="grid grid-cols-1 md:grid-cols-5">
         <ProseImg :src="image" :alt="alt" class="col-span-2" />
@@ -26,7 +35,7 @@ const { image, alt = '' } = defineProps<Props>();
             <div class="mt-5">
                 <slot name="cta">
                     <LineLink>
-                        <UButton>ปรึกษาฟรี!</UButton>
+                        <UButton>{{ t('consult') }}</UButton>
                     </LineLink>
                 </slot>
             </div>

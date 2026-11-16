@@ -12,7 +12,16 @@ const { image, titleAsTag = 'h1', alt = '', screenHeight = true, imageAnchor = '
 // VARIABLE
 const minImageHeight = 'min-h-[20rem]';
 const objectPosition = `object-${imageAnchor}`;
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "consult": "ปรึกษาฟรี" },
+    "en": { "consult": "Free Consultation" }
+}
+</i18n>
 
 <template>
     <div class="relative">
@@ -36,7 +45,7 @@ const objectPosition = `object-${imageAnchor}`;
             <div class="mt-5">
                 <slot name="cta">
                     <LineLink>
-                        <UButton>ปรึกษาฟรี</UButton>
+                        <UButton>{{ t('consult') }}</UButton>
                     </LineLink>
                 </slot>
             </div>

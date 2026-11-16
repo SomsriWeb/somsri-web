@@ -6,6 +6,7 @@
 		page: ContentCollectionItem
 	}
 	const { page } = defineProps<Props>()
+	const { t } = useI18n()
 
 	// COMPUTED
 	const pageSEO = computed(() => {
@@ -22,7 +23,7 @@
 		ogDescription: pageSEO.value.description,
 		// ogType: isWriting ? "article" : "website",
 		// ogUrl: seo.url,
-		author: "สมศรีมีเสื้อ",
+		author: t("brand"),
 		title: pageSEO.value.title,
 		description: pageSEO.value.description,
 		twitterTitle: pageSEO.value.title,
@@ -48,7 +49,7 @@
 		url: "https://somsritshirt.com/og.jpg",
 		width: 1200,
 		height: 630,
-		alt: "สมศรีมีเสื้อ",
+		alt: t("brand"),
 	})
 </script>
 <template>

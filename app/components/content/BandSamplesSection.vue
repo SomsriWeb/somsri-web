@@ -137,7 +137,20 @@ function goToSlide(index: number) {
         console.error(e);
     }
 }
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "sampleAlt": "ตัวอย่างงานผลิตเสื้อวง"
+    },
+    "en": {
+        "sampleAlt": "Band merch production sample"
+    }
+}
+</i18n>
 
 <template>
     <section class="w-full py-10 lg:py-16 overflow-hidden">
@@ -172,7 +185,7 @@ function goToSlide(index: number) {
                             <div class="group/item relative aspect-[283/400] w-full rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 bg-stone-100 flex items-center justify-center">
                                 <NuxtImg
                                     :src="imgSrc"
-                                    alt="ตัวอย่างงานผลิตเสื้อวง"
+                                    :alt="t('sampleAlt')"
                                     class="w-full h-full object-cover group-hover/item:scale-105 transition duration-500"
                                     loading="lazy"
                                 />

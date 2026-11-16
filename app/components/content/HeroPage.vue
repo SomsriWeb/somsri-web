@@ -7,7 +7,9 @@ interface Props {
     /** คำนำหน้าตัวหนาก่อน slot suitFor เช่น "เหมาะกับ" หรือ "เชื่อใจโดย" */
     suitForLabel?: string;
 }
-const { image, imageMobile, alt = '', suitForLabel = 'เหมาะกับ' } = defineProps<Props>();
+const { image, imageMobile, alt = '', suitForLabel = '' } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 
 interface Slots {
     /** ป้ายเล็กด้านบนสุด สีแดง เช่น "รับผลิตกระเป๋าผ้า — Tote Bag สั่งทำ" */
@@ -23,6 +25,17 @@ interface Slots {
 }
 defineSlots<Slots>();
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "suitFor": "เหมาะกับ"
+    },
+    "en": {
+        "suitFor": "Ideal for"
+    }
+}
+</i18n>
 
 <template>
     <section class="relative left-1/2 w-screen -translate-x-1/2 bg-stone-100">
@@ -53,7 +66,7 @@ defineSlots<Slots>();
                     </div>
 
                     <div v-if="$slots.suitFor" class="mt-3 text-sm font-normal text-stone-400">
-                        <span class="font-medium text-stone-500">{{ suitForLabel }} &nbsp; </span>
+                        <span class="font-medium text-stone-500">{{ suitForLabel || t('suitFor') }} &nbsp; </span>
                         <slot name="suitFor" mdc-unwrap="p" />
                     </div>
 
@@ -84,7 +97,7 @@ defineSlots<Slots>();
                 </div>
 
                 <div v-if="$slots.suitFor" class="mt-3 text-[0.65rem] leading-normal text-stone-400 sm:text-[0.7rem]">
-                    <span class="font-medium text-stone-500">{{ suitForLabel }} &nbsp;</span>
+                    <span class="font-medium text-stone-500">{{ suitForLabel || t('suitFor') }} &nbsp;</span>
                     <slot name="suitFor" mdc-unwrap="p" />
                 </div>
 

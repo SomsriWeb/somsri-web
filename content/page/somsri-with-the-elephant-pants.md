@@ -3,7 +3,6 @@ title: รับผลิตกางเกงช้าง ออกแบบล
 activeNavbar: true
 description: บริการรับผลิตกางเกงช้างครบวงจร ออกแบบลายใหม่ได้ เลือกเนื้อผ้าได้ตามต้องการ ผ้าไมโคร ผ้าไหมอิตาลี สั่งผลิตทำแบรนด์ตัวเองได้ ขั้นต่ำ 100 ตัว
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/3c11b
 navbar: false

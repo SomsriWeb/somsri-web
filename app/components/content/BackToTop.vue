@@ -31,7 +31,7 @@ onUnmounted(() => {
 
 <template>
     <div class="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
-        <NuxtLink :to="lineLink" external target="_blank" rel="noopener noreferrer" class="leading-none" aria-label="ติดต่อทาง LINE">
+        <NuxtLink :to="lineLink" external target="_blank" rel="noopener noreferrer" class="leading-none" :aria-label="$t('a11y.contactLine')">
             <UButton icon="fa6-brands:line" size="sm" square class="rounded-full min-w-0! bg-[#06C755] text-white hover:bg-[#05b04c]" />
         </NuxtLink>
 

@@ -3,7 +3,6 @@ title: รับผลิตกระเป๋าผ้า ถุงผ้าล
 activeNavbar: false
 description: บริการรับผลิตกระเป๋าผ้าทุกชนิด ผ้าแคนวาส ผ้าดิบ ผ้าสปันบอนด์ พร้อมสกรีนลายสวยคมชัด งานเย็บประณีต ออกแบบฟรี ราคาส่ง กำหนดงบได้ ทันสมัย ส่งงานตรงเวลา
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/7c9cc
 navbar: true

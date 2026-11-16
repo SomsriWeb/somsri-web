@@ -3,7 +3,6 @@ title: รับผลิตกางเกงยางยืด กางเก
 activeNavbar: false
 description: โรงงานผลิตกางเกงคุณภาพดี มีเนื้อผ้าให้เลือกทั้งผ้า Fasbix และ French Terry สวมใส่สบาย ยืดหยุ่นดี รับผลิตกางเกงแบรนด์ตัวเองในราคาโรงงาน เริ่มต้นเพียง 100 ตัว
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/05aba
 navbar: true

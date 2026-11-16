@@ -3,7 +3,6 @@ title: รับผลิตเสื้อบริษัท เสื้อโ
 activeNavbar: true
 description: บริการรับผลิตเสื้อบริษัททุกรูปแบบ เสื้อเชิ้ต เสื้อโปโล เสื้อยืดพนักงาน เสื้อองค์กร พร้อมงานปักและสกรีนโลโก้มาตรฐานสูง ออกแบบฟรี มีเนื้อผ้าให้เลือกหลากหลาย จัดส่งตรงเวลาทั่วประเทศ
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/82903
 navbar: false

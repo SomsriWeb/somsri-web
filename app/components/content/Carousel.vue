@@ -333,6 +333,8 @@ watch(windowWidth, () => {
 
 const revealRootRef = ref<HTMLElement | null>(null);
 
+const { t } = useI18n({ useScope: 'local' });
+
 const swiperContainerAttrs = { init: 'false' } as Record<string, unknown>;
 
 useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
@@ -350,6 +352,13 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
     });
 });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "chooseSlide": "เลือกสไลด์", "goToSlide": "ไปสไลด์ที่ {n}" },
+    "en": { "chooseSlide": "Choose slide", "goToSlide": "Go to slide {n}" }
+}
+</i18n>
 
 <template>
     <div :class="props.wrapperClass">
@@ -384,7 +393,7 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
                             color="neutral"
                             variant="solid"
                             class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
-                            aria-label="สไลด์ก่อนหน้า"
+                            :aria-label="$t('a11y.previousSlide')"
                             @click="handlePrev"
                         />
                         <UButton
@@ -392,20 +401,20 @@ useScrollTriggerRef(revealRootRef, ({ gsap, el }) => {
                             color="neutral"
                             variant="solid"
                             class="pointer-events-auto min-w-fit! p-1.5! sm:p-2.5! rounded-full bg-primary/75 text-white shadow-md backdrop-blur-sm hover:bg-primary/90"
-                            aria-label="สไลด์ถัดไป"
+                            :aria-label="$t('a11y.nextSlide')"
                             @click="handleNext"
                         />
                     </div>
                 </div>
 
-                <div v-if="props.dot && slides.length > 1" class="mt-3 flex items-center justify-center gap-2" role="tablist" aria-label="เลือกสไลด์">
+                <div v-if="props.dot && slides.length > 1" class="mt-3 flex items-center justify-center gap-2" role="tablist" :aria-label="t('chooseSlide')">
                     <button
                         v-for="(slide, idx) in slides"
                         :key="`dot-${slide.key}`"
                         type="button"
                         role="tab"
                         :aria-selected="idx === activeRealIndex"
-                        :aria-label="`ไปสไลด์ที่ ${idx + 1}`"
+                        :aria-label="t('goToSlide', { n: idx + 1 })"
                         class="carousel-dot"
                         :class="idx === activeRealIndex ? 'carousel-dot--active' : ''"
                         @click="goToSlide(idx)"

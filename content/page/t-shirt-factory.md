@@ -3,7 +3,6 @@ title: รับผลิตเสื้อ สั่งทำเสื้อย
 activeNavbar: false
 description: รับผลิตเสื้อ สั่งทำเสื้อพร้อมสกรีน กับโรงงานผลิตเสื้อสมศรีมีเสื้อ เราผลิตจากเนื้อผ้าคุณภาพสูง ราคาโรงงาน งานไวคุณภาพดี การันตีผลงาน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/74013
 navbar: true

@@ -1,21 +1,16 @@
 <script lang="ts" setup>
-import { LANGUAGE } from '~/lib/language';
 import type { NavbarCollectionItem } from '@nuxt/content';
 
 const { data: menus } = await useAsyncData('menu', () => queryCollection('navbar').all());
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
-
-const data = {
-    th: { menu: 'เมนู' },
-    en: { menu: 'Menu' },
-};
+const { t, locale } = useI18n();
+const localizePath = await useLocalizedPath();
 
 const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
 const menuItems = computed(() => navbarData.value.main || []);
 
 
 const accordionItems = computed(() => [{
-    label: data[LANG].menu,
+    label: t('footer.menu'),
     slot: 'menu-content'
 }]);
 
@@ -32,15 +27,15 @@ const secondColumnMenus = computed(() => menuItems.value.slice(5));
                     <nav class="grid grid-cols-2 gap-3 pb-4">
                         <ul class="font-light">
                             <li v-for="menu in firstColumnMenus" :key="menu.label">
-                                <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">
-                                    {{ LANG === 'th' ? menu.label : menu['label-en'] }}
+                                <NuxtLink :to="localizePath(menu.url)" class="underline">
+                                    {{ locale === 'th' ? menu.label : menu['label-en'] }}
                                 </NuxtLink>
                             </li>
                         </ul>
                         <ul class="font-light">
                             <li v-for="menu in secondColumnMenus" :key="menu.label">
-                                <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">
-                                    {{ LANG === 'th' ? menu.label : menu['label-en'] }}
+                                <NuxtLink :to="localizePath(menu.url)" class="underline">
+                                    {{ locale === 'th' ? menu.label : menu['label-en'] }}
                                 </NuxtLink>
                             </li>
                         </ul>
@@ -51,19 +46,19 @@ const secondColumnMenus = computed(() => menuItems.value.slice(5));
 
         <!-- แสดงแบบปกติบนหน้าจอใหญ่ (md ขึ้นไป) -->
         <div class="hidden md:block">
-            <FooterTitle >{{ data[LANG].menu }}</FooterTitle>
+            <FooterTitle >{{ $t('footer.menu') }}</FooterTitle>
             <nav class="grid grid-cols-2 gap-3">
                 <ul class="font-light">
                     <li v-for="menu in firstColumnMenus" :key="menu.label">
-                        <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">
-                            {{ LANG === 'th' ? menu.label : menu['label-en'] }}
+                        <NuxtLink :to="localizePath(menu.url)" class="underline">
+                            {{ locale === 'th' ? menu.label : menu['label-en'] }}
                         </NuxtLink>
                     </li>
                 </ul>
                 <ul class="font-light lg:relative">
                     <li v-for="menu in secondColumnMenus" :key="menu.label">
-                        <NuxtLink :to="LANG === 'th' ? menu.url : menu['url-en']" class="underline">
-                            {{ LANG === 'th' ? menu.label : menu['label-en'] }}
+                        <NuxtLink :to="localizePath(menu.url)" class="underline">
+                            {{ locale === 'th' ? menu.label : menu['label-en'] }}
                         </NuxtLink>
                     </li>
                 </ul>

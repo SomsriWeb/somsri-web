@@ -8,12 +8,19 @@
     "nameTh": "ทีซี ลาคลอส",
     "nameEn": "TC Lacoste",
     "recommendForStyle": "เสื้อโปโลเหมาะกับงานองค์กร",
+    "recommendForStyle-en": "Polo shirts for corporate uniforms",
     "advantage": [
         "ทนทานต่อการใช้งานสูง",
         "เสื้ออยู่ทรงดี ไม่ย้วยง่าย",
         "ไม่ยับง่าย ซักแล้วใส่ได้เลย"
     ],
+    "advantage-en": [
+        "Highly durable",
+        "Keeps its shape, won't sag",
+        "Wrinkle-resistant, wash and wear"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 13,
     "gramWeight": 240
 }

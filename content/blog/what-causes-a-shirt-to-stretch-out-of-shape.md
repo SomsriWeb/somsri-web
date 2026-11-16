@@ -6,7 +6,6 @@ navigation:
   title: เสื้อย้วยไม่ต้องทิ้ง! เคล็ดลับง่าย ๆ แก้ผ้ายืดคืนทรง ใส่แล้วดูใหม่เหมือนเดิม
   description: รวมเคล็ดลับแก้ “เสื้อย้วย” แบบง่าย ๆ คืนความตึงให้ผ้ายืด ใส่แล้วดูใหม่เหมือนเดิม พร้อมแนะนำผ้าคุณภาพดีที่ไม่ย้วยง่ายจาก สมศรีมีเสื้อ ผู้เชี่ยวชาญเรื่องผ้าและเสื้อยูนิฟอร์มคุณภาพ
 image: /blog/LINE-ALBUM-2025.11.23-260128-5.jpg
-language: th
 ---
 
 # เสื้อย้วยไม่ต้องทิ้ง! เคล็ดลับง่าย ๆ แก้ผ้ายืดคืนทรง ใส่แล้วดูใหม่เหมือนเดิม
@@ -23,7 +22,7 @@ language: th
 
 ### 1) โครงสร้างเส้นใยยืดตัวตามแรงดึง
 
-เนื้อผ้ายืด เช่น [ผ้าคอตตอน 100%](https://somsritshirt.com/what-is-cotton/), [ผ้า CVC](https://somsritshirt.com/what-is-cvc-fabric/), [ผ้า TC](https://somsritshirt.com/what-is-tc-fabric-what-type-of-fabric/) หรือ[ผ้าที่มีสแปนเด็กซ์ (Spandex)](https://somsritshirt.com/what-is-spandex-fabric/) จะมีโครงสร้างถักแบบ knit ซึ่งยืดหยุ่นสูง หากโดนดึงบ่อย จะเกิด ระยะยืดถาวร (Permanent Stretch) ทำให้ไม่คืนตัวกลับมาเป็นแบบเดิมอีก ยิ่งผ้าบาง คุณภาพต่ำ หรือเส้นด้ายทอมาไม่เน้น ก็ยิ่งย้วยง่าย
+เนื้อผ้ายืด เช่น [ผ้าคอตตอน 100%](/what-is-cotton), [ผ้า CVC](/what-is-cvc-fabric), [ผ้า TC](/what-is-tc-fabric-what-type-of-fabric) หรือ[ผ้าที่มีสแปนเด็กซ์ (Spandex)](/what-is-spandex-fabric) จะมีโครงสร้างถักแบบ knit ซึ่งยืดหยุ่นสูง หากโดนดึงบ่อย จะเกิด ระยะยืดถาวร (Permanent Stretch) ทำให้ไม่คืนตัวกลับมาเป็นแบบเดิมอีก ยิ่งผ้าบาง คุณภาพต่ำ หรือเส้นด้ายทอมาไม่เน้น ก็ยิ่งย้วยง่าย
 
 ### 2) ซักผิดวิธี โดยเฉพาะซักเครื่อง
 
@@ -136,7 +135,7 @@ language: th
 
 ## ทำไม “สมศรีมีเสื้อ” ถึงเข้าใจเรื่องผ้ามากกว่าใคร
 
-เพราะเราเป็นโรงงานผลิตเสื้อครบวงจรที่เชี่ยวชาญทุกชนิดเนื้อผ้า ทั้ง [ผ้าคอตตอน (Cotton)](https://somsritshirt.com/what-is-cotton/), [โพลีเอสเตอร์ (Polyester)](https://somsritshirt.com/what-is-polyester-fabric-used-for/), [เส้นใยสังเคราะห์ (Synthetic Fibers)](https://somsritshirt.com/pet-bottle-shirt-recycled-plastic-bottle/), เรยอน (Rayon), [สแปนเด็กซ์ (Spandex)](https://somsritshirt.com/what-is-spandex-fabric/) และผ้าผสมอีกหลากหลายรูปแบบ
+เพราะเราเป็นโรงงานผลิตเสื้อครบวงจรที่เชี่ยวชาญทุกชนิดเนื้อผ้า ทั้ง [ผ้าคอตตอน (Cotton)](/what-is-cotton), [โพลีเอสเตอร์ (Polyester)](/what-is-polyester-fabric-used-for), [เส้นใยสังเคราะห์ (Synthetic Fibers)](/pet-bottle-shirt-recycled-plastic-bottle), เรยอน (Rayon), [สแปนเด็กซ์ (Spandex)](/what-is-spandex-fabric) และผ้าผสมอีกหลากหลายรูปแบบ
 
 **เสื้อดี เริ่มจากผ้าดี - สมศรีมีเสื้อ ใส่สบาย ไม่ย้วย ไม่เสียทรง**
 

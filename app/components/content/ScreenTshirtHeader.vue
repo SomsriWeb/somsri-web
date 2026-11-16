@@ -28,7 +28,7 @@ defineSlots<Slots>();
 				class="absolute grid grid-cols-2 gap-5 bottom-[3rem] px-5 md:px-[4.6rem] text-white"
 			>
 				<div>
-					<p class="text-xl text-white">สมศรีมีเสื้อ</p>
+					<p class="text-xl text-white">{{ $t('brand') }}</p>
 					<h1 class="text-6xl font-bold"><slot name="title" mdc-unwrap="p" /></h1>
 					<p class="font-light text-xl mb-5">
 						<slot name="description" mdc-unwrap="p" />

@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { LINE_LINK } from '~/lib/lineLink';
-
 // PROPS
 interface Props {
     to?: string;
 }
 const { to = '' } = defineProps<Props>();
 
+const localizePath = await useLocalizedPath();
+
 // COMPUTED
 const link = computed<string | undefined>(() => {
     if (to) {
-        return to;
+        return localizePath(to);
     } else {
         return undefined;
     }
 });
 </script>
 <template>
-    <UButton size="xl" color="primary" variant="solid" icon="i-lucide-send" class="relative" :to="link">
+    <UButton size="xl" color="primary" variant="solid" icon="i-lucide-send" class="relative" :to="link" :locale="false">
         <slot mdc-unwrap="h1 h2 h3 h4 h5 h6 p" />
 
         <!-- จุด ping animation -->

@@ -1,5 +1,6 @@
 {
     "name": "หน้ากาก",
+    "name-en": "Face mask",
     "image": "/mask/mask3.jpg",
     "order": 3
 }

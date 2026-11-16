@@ -17,9 +17,19 @@ const { data: priceData } = await useAsyncData(`price-rate-carousel-${props.id}`
     queryCollection('priceCarousel').order('order', 'ASC').all(),
 );
 
-const activePriceData = computed<PriceCarouselCollectionItem | undefined>(() =>
-    priceData.value?.find((item) => item.uid === props.id),
-);
+const { locale } = useI18n();
+
+// หน้าอังกฤษ: ใช้ฟิลด์ *-en ถ้ามี
+const activePriceData = computed<PriceCarouselCollectionItem | undefined>(() => {
+    const item = priceData.value?.find((item) => item.uid === props.id);
+    if (!item || locale.value !== 'en') return item;
+    return {
+        ...item,
+        name: item['name-en'] ?? item.name,
+        conditions: item.conditions.map((condition) => ({ ...condition, text: condition['text-en'] ?? condition.text })),
+        priceLists: item.priceLists.map((priceList) => ({ ...priceList, fabricName: priceList['fabricName-en'] ?? priceList.fabricName })),
+    };
+});
 
 const scrollerRef = ref<HTMLElement | null>(null);
 const canScrollPrev = ref(false);
@@ -65,7 +75,7 @@ onBeforeUnmount(() => {
                     <button
                         v-if="canScrollPrev"
                         type="button"
-                        aria-label="เลื่อนไปก่อนหน้า"
+                        :aria-label="$t('a11y.scrollPrevious')"
                         class="rate-carousel__nav rate-carousel__nav--prev"
                         @click="scrollByCard(-1)"
                     >
@@ -81,7 +91,7 @@ onBeforeUnmount(() => {
                     <button
                         v-if="canScrollNext"
                         type="button"
-                        aria-label="เลื่อนไปถัดไป"
+                        :aria-label="$t('a11y.scrollNext')"
                         class="rate-carousel__nav rate-carousel__nav--next"
                         @click="scrollByCard(1)"
                     >

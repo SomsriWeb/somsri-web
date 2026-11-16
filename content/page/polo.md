@@ -3,7 +3,6 @@ title: รับผลิตเสื้อโปโล เสื้อยูน
 activeNavbar: true
 description: โรงงานรับผลิตเสื้อโปโล เสื้อองค์กร เสื้อพนักงาน ครบวงจร เนื้อผ้าพรีเมียม สวมใส่สบาย บริการปัก-สกรีนโลโก้คมชัด ออกแบบได้ตามใจ ราคาถูก มั่นใจรับประกัน 90 วัน ประเมินราคาฟรี
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/c0087
 navbar: true

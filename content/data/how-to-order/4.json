@@ -1,6 +1,8 @@
 {
     "title": "มัดจำ 50% เครื่องจักรเริ่มหมุน",
+    "title-en": "50% deposit and production starts",
     "description": "ชำระมัดจำ 50% แล้วงานเริ่มทันที ยอดต่ำกว่า 50,000 บาท ชำระเต็มจำนวน ไม่ต้องรอนาน",
+    "description-en": "Pay a 50% deposit and work begins immediately. Orders under 50,000 THB are paid in full — no long waits.",
     "image": "/how-to-order/steps/step-4.jpg",
     "order": 4
 }

@@ -21,6 +21,11 @@ defineSlots<Slots>();
 
 // VARIABLE
 const { data } = await useAsyncData('why-choose-somsri', () => queryCollection('whyChooseSomsri').order('order', 'ASC').all());
+const { t, locale } = useI18n({ useScope: 'local' });
+
+function itemLabel(item: { label: string; 'label-en'?: string }) {
+    return locale.value === 'en' ? (item['label-en'] ?? item.label) : item.label;
+}
 
 const sectionRef = ref<HTMLElement | null>(null);
 
@@ -33,12 +38,23 @@ useScrollRevealUp(sectionRef, {
 });
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "title": "เลือก Somsri แล้วดียังไง?"
+    },
+    "en": {
+        "title": "Why Choose SomsriTshirt?"
+    }
+}
+</i18n>
+
 <template>
     <Container class="bg-primary py-5!" no-space>
         <!-- รอข้อมูลก่อน mount เพื่อให้ useScrollTriggerRef เห็นลูกครบก่อนสร้างแอนิเมชัน -->
         <div v-if="data" ref="sectionRef">
             <component :is="titleAsTag" class="font-bold text-white text-xl sm:text-3xl lg:text-4xl mb-2 sm:mb-5 leading-none">
-                <slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot>
+                <slot name="title" mdc-unwrap="p">{{ t('title') }} </slot>
             </component>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-5">
@@ -46,11 +62,11 @@ useScrollRevealUp(sectionRef, {
                     <ProseImg
                         v-if="item.image"
                         :src="item.image"
-                        :alt="item.label"
+                        :alt="itemLabel(item)"
                         class="max-w-8 sm:max-w-12 lg:max-w-16"
                     />
                     <p class="font-bold font-stretch-condensed text-xs sm:text-base md:text-lg lg:text-xl text-white leading-tight text-center mt-1.5 sm:mt-3">
-                        {{ item.label }}
+                        {{ itemLabel(item) }}
                     </p>
                 </div>
             </div>
