@@ -10,17 +10,56 @@ interface Props {
     buttonLink?: string;
 }
 
-withDefaults(defineProps<Props>(), {
-    noticeTitle: 'งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ',
-    noticeSubtitle: '* ราคาเสื้อมัดย้อมจะบวกเพิ่ม 60 บาทจากราคาเสื้อยืดธรรมดา *',
-    cardTitle: 'เลือกผลิตเสื้อวงดนตรีกับ Somsri แล้วดียังไง?',
-    cardDescription: 'ตั้งแต่เลือกผ้า วางแบบ เลือกเทคนิคการพิมพ์ ไปจนถึงการผลิตจริง เราดูแลทุกขั้นตอนเพื่อให้งานเสื้อวงออกมาตรง Concept และพร้อมนำไปขายหรือใช้งานจริง',
+const props = withDefaults(defineProps<Props>(), {
+    noticeTitle: undefined,
+    noticeSubtitle: undefined,
+    cardTitle: undefined,
+    cardDescription: undefined,
     desktopImage: '/band-shirt/why-somsri-desktop.png',
     mobileImage: '/band-shirt/why-somsri-mobile.png',
-    buttonText: 'สอบถามเพิ่มเติม',
+    buttonText: undefined,
     buttonLink: 'https://contact.somsritshirt.com/c4119',
 });
+
+const { t } = useI18n({ useScope: 'local' });
+
+const noticeTitle = computed(() => props.noticeTitle ?? t('noticeTitle'));
+const noticeSubtitle = computed(() => props.noticeSubtitle ?? t('noticeSubtitle'));
+const cardTitle = computed(() => props.cardTitle ?? t('cardTitle'));
+const cardDescription = computed(() => props.cardDescription ?? t('cardDescription'));
+const buttonText = computed(() => props.buttonText ?? t('buttonText'));
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "noticeTitle": "งานมัดย้อมจะประเมินราคาตามจำนวน ขนาด และสีที่ใช้สามารถส่งแบบมาให้แอดมินประเมินทางแชทไลน์ได้เลยนะคะ",
+        "noticeSubtitle": "* ราคาเสื้อมัดย้อมจะบวกเพิ่ม 60 บาทจากราคาเสื้อยืดธรรมดา *",
+        "cardTitle": "เลือกผลิตเสื้อวงดนตรีกับ Somsri แล้วดียังไง?",
+        "cardDescription": "ตั้งแต่เลือกผ้า วางแบบ เลือกเทคนิคการพิมพ์ ไปจนถึงการผลิตจริง เราดูแลทุกขั้นตอนเพื่อให้งานเสื้อวงออกมาตรง Concept และพร้อมนำไปขายหรือใช้งานจริง",
+        "buttonText": "สอบถามเพิ่มเติม",
+        "imageAlt": "เลือกผลิตเสื้อวงดนตรีกับ Somsri",
+        "feature1": "คุณภาพสินค้าระดับพรีเมี่ยม",
+        "feature2": "การบริการครบวงจรจบในที่เดียว",
+        "feature3": "ราคาคุ้มค่า",
+        "feature4": "บริการหลังการขายการันตีสินค้า 90 วัน",
+        "feature5": "มีผู้เชี่ยวชาญคอยดูแลให้คำปรึกษาตลอดทั้งกระบวนการ"
+    },
+    "en": {
+        "noticeTitle": "Tie-dye orders are quoted based on quantity, size, and colors used. Just send your design to our admin via LINE chat for a quote.",
+        "noticeSubtitle": "* Tie-dye shirts cost an extra 60 THB on top of the standard T-shirt price *",
+        "cardTitle": "Why Make Your Band Shirts with Somsri?",
+        "cardDescription": "From choosing the fabric, laying out the design, and selecting the printing technique to final production, we handle every step so your band shirts match your concept and are ready to sell or wear.",
+        "buttonText": "Ask for More Details",
+        "imageAlt": "Make your band shirts with Somsri",
+        "feature1": "Premium product quality",
+        "feature2": "Full-service, one-stop production",
+        "feature3": "Great value for money",
+        "feature4": "90-day after-sales product guarantee",
+        "feature5": "Expert consultation throughout the entire process"
+    }
+}
+</i18n>
 
 <template>
     <section class="w-full py-12 sm:py-16 lg:py-20">
@@ -45,14 +84,14 @@ withDefaults(defineProps<Props>(), {
                     <!-- Desktop Image -->
                     <NuxtImg
                         :src="desktopImage"
-                        alt="เลือกผลิตเสื้อวงดนตรีกับ Somsri"
+                        :alt="t('imageAlt')"
                         class="hidden md:block w-full h-full object-cover object-center rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
                         loading="lazy"
                     />
                     <!-- Mobile Image -->
                     <NuxtImg
                         :src="mobileImage"
-                        alt="เลือกผลิตเสื้อวงดนตรีกับ Somsri"
+                        :alt="t('imageAlt')"
                         class="block md:hidden w-full h-full object-cover object-center rounded-t-3xl"
                         loading="lazy"
                     />
@@ -78,7 +117,7 @@ withDefaults(defineProps<Props>(), {
                                     <UIcon name="i-lucide-shirt" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span class="text-xs sm:text-sm font-medium text-white leading-snug">
-                                    คุณภาพสินค้าระดับพรีเมี่ยม
+                                    {{ t('feature1') }}
                                 </span>
                             </div>
 
@@ -88,7 +127,7 @@ withDefaults(defineProps<Props>(), {
                                     <UIcon name="i-lucide-package-check" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span class="text-xs sm:text-sm font-medium text-white leading-snug">
-                                    การบริการครบวงจรจบในที่เดียว
+                                    {{ t('feature2') }}
                                 </span>
                             </div>
 
@@ -98,7 +137,7 @@ withDefaults(defineProps<Props>(), {
                                     <UIcon name="i-lucide-badge-percent" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span class="text-xs sm:text-sm font-medium text-white leading-snug">
-                                    ราคาคุ้มค่า
+                                    {{ t('feature3') }}
                                 </span>
                             </div>
 
@@ -108,7 +147,7 @@ withDefaults(defineProps<Props>(), {
                                     <UIcon name="i-lucide-shield-check" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span class="text-xs sm:text-sm font-medium text-white leading-snug">
-                                    บริการหลังการขายการันตีสินค้า 90 วัน
+                                    {{ t('feature4') }}
                                 </span>
                             </div>
 
@@ -118,7 +157,7 @@ withDefaults(defineProps<Props>(), {
                                     <UIcon name="i-lucide-users" class="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                                 <span class="text-xs sm:text-sm font-medium text-white leading-snug">
-                                    มีผู้เชี่ยวชาญคอยดูแลให้คำปรึกษาตลอดทั้งกระบวนการ
+                                    {{ t('feature5') }}
                                 </span>
                             </div>
                         </div>

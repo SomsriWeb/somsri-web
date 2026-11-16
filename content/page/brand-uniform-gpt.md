@@ -3,7 +3,6 @@ title: (Somsri) Search_เสื้อแบรนด์ตัวเอง [A] -
 activeNavbar: true
 contentSpacing: true
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/fdc53
 navbar: false

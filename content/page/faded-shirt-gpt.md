@@ -3,7 +3,6 @@ title: รับผลิตเสื้อฟอก เสื้อวินเ
 activeNavbar: true
 description: โรงงานรับผลิตเสื้อฟอกเกรดพรีเมียมและเสื้อเฟดสไตล์วินเทจยอดนิยม พร้อมเทคนิคพิเศษ ออกแบบฟรี มั่นใจในคุณภาพและประสบการณ์จริงจาก สมศรีมีเสื้อ
 footer: false
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/b43bb
 navbar: false

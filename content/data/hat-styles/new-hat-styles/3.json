@@ -1,6 +1,7 @@
 {
     "image": "/landing-page-real-hat/hat-style-3.png",
     "label": "หมวกแก็ปลูกฟูกร่องใหญ่",
+    "label-en": "Wide-Wale Corduroy Cap",
     "priceperunit" : [170, 165, 160, 150],
     "order": 3
 }

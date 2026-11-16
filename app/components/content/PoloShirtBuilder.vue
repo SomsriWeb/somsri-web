@@ -14,7 +14,10 @@ interface Props {
     tabs: BuilderTab[];
     tabsLabel?: string;
 }
-const { tabs, tabsLabel = 'ส่วนประกอบเสื้อโปโล' } = defineProps<Props>();
+const { tabs, tabsLabel } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
+const resolvedTabsLabel = computed(() => tabsLabel ?? t('tabsLabel'));
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -26,6 +29,19 @@ defineSlots<Slots>();
 const activeKey = ref(tabs[0]?.key);
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "tabsLabel": "ส่วนประกอบเสื้อโปโล",
+        "optionAlt": "เสื้อโปโล{name}"
+    },
+    "en": {
+        "tabsLabel": "Polo shirt components",
+        "optionAlt": "Polo shirt: {name}"
+    }
+}
+</i18n>
+
 <template>
     <section class="scroll-mt-20 bg-stone-100 py-10 md:py-16 lg:scroll-mt-24">
         <div class="px-6 lg:px-18">
@@ -35,7 +51,7 @@ const activeKey = ref(tabs[0]?.key);
                 <template v-if="$slots.description" #description><slot name="description" mdc-unwrap="p" /></template>
             </PoloShirtSectionHead>
 
-            <div role="tablist" :aria-label="tabsLabel" class="mb-5 flex flex-wrap gap-2">
+            <div role="tablist" :aria-label="resolvedTabsLabel" class="mb-5 flex flex-wrap gap-2">
                 <button
                     v-for="tab in tabs"
                     :id="`polo-builder-tab-${tab.key}`"
@@ -68,7 +84,7 @@ const activeKey = ref(tabs[0]?.key);
                     class="m-0 rounded-xl border border-stone-200 bg-white px-3.5 pt-4 pb-4.5 text-center text-sm"
                 >
                     <div class="mb-2.5 rounded-lg bg-gradient-to-b from-white to-primary/12 px-4 pt-3 pb-1.5">
-                        <img :src="option.image" :alt="`เสื้อโปโล${option.name}`" width="200" height="210" loading="lazy" class="mx-auto h-auto max-h-48 w-full" />
+                        <img :src="option.image" :alt="t('optionAlt', { name: option.name })" width="200" height="210" loading="lazy" class="mx-auto h-auto max-h-48 w-full" />
                     </div>
                     <figcaption class="text-slate-500">
                         <b class="block text-base text-stone-900">{{ option.name }}</b>

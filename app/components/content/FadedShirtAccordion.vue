@@ -8,19 +8,15 @@ type AccordionItem = {
 };
 
 interface Props {
-    /**
-     * ภาษาที่ต้องการแสดง
-     * @default th
-     */
-    lang?: 'th' | 'en';
-
     /** รายการคำถาม/คำตอบ กำหนดจำนวนได้จาก Markdown */
     items?: AccordionItem[];
 }
 const props = withDefaults(defineProps<Props>(), {
-    lang: 'th',
     items: undefined,
 });
+
+// ภาษาตาม URL (/en/... = อังกฤษ)
+const { t } = useI18n({ useScope: 'local' });
 
 // SLOTS
 interface Slots {
@@ -31,28 +27,17 @@ interface Slots {
 }
 defineSlots<Slots>();
 
-const defaultItems: AccordionItem[] = [
-    {
-        question: 'ซักแล้วลายจะหลุดไหม',
-        answer: 'ไม่หลุด ไม่แตก ไม่ลอก เพราะใช้การพิมพ์แบบ Sublimation สีจะซึมเข้าไปในเนื้อผ้า ทำให้ลายติดทน ซักได้ยาวๆ สีไม่ซีดง่าย',
-    },
-    {
-        question: 'ทำขั้นต่ำกี่ตัว?',
-        answer: 'เริ่มต้นขั้นต่ำ 150 ตัวเท่านั้น',
-    },
-    {
-        question: 'ใช้เวลาผลิตกี่วัน?',
-        answer: 'รับประกันได้รับสินค้าภายใน 90 วัน',
-    },
-    {
-        question: 'เสื้อจะหดหรือย้วยไหม?',
-        answer: 'ไม่หด ไม่ย้วยง่าย เพราะเป็นผ้าโพลีเอสเตอร์ อยู่ทรงดี ซักแล้วไม่เสียรูป',
-    },
-];
+const DEFAULT_ITEM_COUNT = 4;
+const defaultItems = computed<AccordionItem[]>(() =>
+    Array.from({ length: DEFAULT_ITEM_COUNT }, (_, i) => ({
+        question: t(`items.${i}.question`),
+        answer: t(`items.${i}.answer`),
+    })),
+);
 
 const accordionItems = computed<AccordionItem[]>(() => {
     const items = props.items?.filter((it) => it?.question && it?.answer) ?? [];
-    return items.length > 0 ? items : defaultItems;
+    return items.length > 0 ? items : defaultItems.value;
 });
 
 const isOpen = ref<boolean[]>([]);
@@ -67,6 +52,51 @@ function toggleAccordion(index: number) {
     isOpen.value[index] = !isOpen.value[index];
 }
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "items": [
+            {
+                "question": "ซักแล้วลายจะหลุดไหม",
+                "answer": "ไม่หลุด ไม่แตก ไม่ลอก เพราะใช้การพิมพ์แบบ Sublimation สีจะซึมเข้าไปในเนื้อผ้า ทำให้ลายติดทน ซักได้ยาวๆ สีไม่ซีดง่าย"
+            },
+            {
+                "question": "ทำขั้นต่ำกี่ตัว?",
+                "answer": "เริ่มต้นขั้นต่ำ 150 ตัวเท่านั้น"
+            },
+            {
+                "question": "ใช้เวลาผลิตกี่วัน?",
+                "answer": "รับประกันได้รับสินค้าภายใน 90 วัน"
+            },
+            {
+                "question": "เสื้อจะหดหรือย้วยไหม?",
+                "answer": "ไม่หด ไม่ย้วยง่าย เพราะเป็นผ้าโพลีเอสเตอร์ อยู่ทรงดี ซักแล้วไม่เสียรูป"
+            }
+        ]
+    },
+    "en": {
+        "items": [
+            {
+                "question": "Will the print come off after washing?",
+                "answer": "No. It won't fade, crack or peel. We use sublimation printing, so the ink soaks into the fabric itself — the design lasts wash after wash and the colors stay vivid."
+            },
+            {
+                "question": "What is the minimum order?",
+                "answer": "Our minimum order is just 150 pieces."
+            },
+            {
+                "question": "How long does production take?",
+                "answer": "Delivery is guaranteed within 90 days."
+            },
+            {
+                "question": "Will the shirt shrink or stretch out?",
+                "answer": "No. Polyester fabric keeps its shape well and won't shrink or sag after washing."
+            }
+        ]
+    }
+}
+</i18n>
 
 <template>
     <div class="px-4 lg:relative lg:-left-4 lg:min-w-[105%]">

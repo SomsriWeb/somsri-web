@@ -15,7 +15,21 @@ interface Slots {
 defineSlots<Slots>();
 
 const lineLink = inject<string>(LINE_LINK);
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "consult": "ปรึกษาฟรี",
+        "fabricSamples": "ดูตัวอย่างผ้า"
+    },
+    "en": {
+        "consult": "Free Consultation",
+        "fabricSamples": "View Fabric Samples"
+    }
+}
+</i18n>
 
 <template>
     <section class="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden py-10 md:py-14">
@@ -44,7 +58,7 @@ const lineLink = inject<string>(LINE_LINK);
                     class="inline-flex items-center bg-primary px-6 py-2.5 text-sm text-white"
                     size="md"
                 >
-                    ปรึกษาฟรี
+                    {{ t('consult') }}
                 </UButton>
 
                 <UButton
@@ -53,7 +67,7 @@ const lineLink = inject<string>(LINE_LINK);
                     class="inline-flex items-center border-2 border-primary px-6 py-2.5 text-sm text-primary"
                     size="md"
                 >
-                    ดูตัวอย่างผ้า
+                    {{ t('fabricSamples') }}
                 </UButton>
             </div>
         </div>

@@ -21,14 +21,22 @@ const {
     image,
     alt = '',
     steps,
-    fitTitle = 'เหมาะกับ',
+    fitTitle,
     fitItems = [],
-    limitTitle = 'ข้อจำกัด',
+    limitTitle,
     limitItems = [],
-    lineLabel = 'สั่งทำเสื้อโปโล',
+    lineLabel,
     secondaryLabel,
     secondaryTo,
 } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
+
+const resolvedFitTitle = computed(() => fitTitle ?? t('fitTitle'));
+const resolvedLimitTitle = computed(() => limitTitle ?? t('limitTitle'));
+const resolvedLineLabel = computed(() => lineLabel ?? t('lineLabel'));
+const resolvedSecondaryTo = computed(() => (secondaryTo ? localizePath(secondaryTo) : secondaryTo));
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -43,6 +51,21 @@ defineSlots<Slots>();
 
 const lineLink = inject<string>(LINE_LINK);
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "fitTitle": "เหมาะกับ",
+        "limitTitle": "ข้อจำกัด",
+        "lineLabel": "สั่งทำเสื้อโปโล"
+    },
+    "en": {
+        "fitTitle": "Best for",
+        "limitTitle": "Limitations",
+        "lineLabel": "Order custom polo shirts"
+    }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 bg-stone-100 py-10 md:py-16 lg:scroll-mt-24">
@@ -82,22 +105,23 @@ const lineLink = inject<string>(LINE_LINK);
 
                     <div class="grid gap-4 border-t border-stone-200 pt-4 text-sm sm:grid-cols-2">
                         <div v-if="fitItems.length">
-                            <h4 class="text-base font-bold text-stone-900">{{ fitTitle }}</h4>
+                            <h4 class="text-base font-bold text-stone-900">{{ resolvedFitTitle }}</h4>
                             <PoloShirtTickList :items="fitItems" />
                         </div>
                         <div v-if="limitItems.length">
-                            <h4 class="text-base font-bold text-stone-900">{{ limitTitle }}</h4>
+                            <h4 class="text-base font-bold text-stone-900">{{ resolvedLimitTitle }}</h4>
                             <PoloShirtTickList :items="limitItems" variant="warn" />
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
                         <UButton :to="lineLink" color="line" icon="hugeicons:line" class="px-6 py-2.5 text-sm md:text-base">
-                            {{ lineLabel }}
+                            {{ resolvedLineLabel }}
                         </UButton>
                         <UButton
                             v-if="secondaryLabel && secondaryTo"
-                            :to="secondaryTo"
+                            :to="resolvedSecondaryTo"
+                            :locale="false"
                             variant="outline"
                             class="bg-white px-6 py-2.5 text-sm md:text-base"
                         >

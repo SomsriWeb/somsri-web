@@ -1,7 +1,9 @@
 {
   "name": "Screen Printing",
   "method": "งานปัก",
+  "method-en": "Embroidery",
   "alt": "ปักผ้า",
+  "alt-en": "Fabric embroidery",
   "image": "/brand/lace.png",
   "order": 4
 }

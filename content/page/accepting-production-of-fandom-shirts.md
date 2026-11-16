@@ -3,7 +3,6 @@ title: รับผลิตเสื้อด้อม เสื้อแฟน
 activeNavbar: false
 description: บริการรับผลิตเสื้อด้อม เสื้อแฟนคลับ เสื้อศิลปิน ออกแบบลายได้เอง สกรีนลายสวย สีสดไม่ลอก เนื้อผ้าเกรดพรีเมี่ยมนุ่มใส่สบาย ระบายอากาศดี สั่งผลิตขั้นต่ำ 100 ตัว สอบถามรายละเอียดเพิ่มเติมคลิกเลย
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/1d012
 navbar: true

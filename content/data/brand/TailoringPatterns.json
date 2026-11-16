@@ -1,7 +1,9 @@
 {
   "name": "Tailoring Patterns",
   "method": "ทำแพทเทิร์นเพื่องานตัดเย็บ",
+  "method-en": "Pattern making for garment production",
   "image": "/brand/cut.png",
   "alt": "วางมาร์คตัดผ้า",
+  "alt-en": "Marker layout for fabric cutting",
   "order": 1
 }

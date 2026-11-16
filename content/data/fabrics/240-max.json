@@ -9,12 +9,19 @@
     "nameTh": "ผ้า 240 Max",
     "nameEn": "240 Max",
     "recommendForStyle": "เสื้อยืด เสื้อโปโล งานแบรนด์",
+    "recommendForStyle-en": "T-shirts, polo shirts & brand apparel",
     "advantage": [
         "เนื้อผ้าหนาแน่น ทนทาน",
         "ทรงสวย ไม่บางจนโปร่ง",
         "เหมาะงานสกรีนและงานปัก"
     ],
+    "advantage-en": [
+        "Dense, durable fabric",
+        "Holds its shape, never see-through",
+        "Great for screen printing and embroidery"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 16,
     "gramWeight": 300
 }

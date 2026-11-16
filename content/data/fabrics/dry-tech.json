@@ -8,12 +8,19 @@
     "nameTh": "ดรายเทค",
     "nameEn": "Dry Tech",
     "recommendForStyle": "เสื้อโปโลกลางแจ้ง",
+    "recommendForStyle-en": "Outdoor polo shirts",
     "advantage": [
         "ระบายเหงื่อเร็ว เหมาะกับอากาศร้อน",
         "แห้งไวไม่เก็บกลิ่น",
         "น้ำหนักเบา ใส่แล้วไม่อับ"
     ],
+    "advantage-en": [
+        "Wicks sweat fast, great for hot weather",
+        "Quick-drying, odor-resistant",
+        "Lightweight and never stuffy"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 6,
     "gramWeight": 180
 }

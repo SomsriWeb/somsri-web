@@ -10,11 +10,18 @@
     "nameTh": "แฟชั่นเฮาส์",
     "nameEn": "Fashion House",
     "recommendForStyle": "เสื้อแฟชั่น งานคอลเลกชัน",
+    "recommendForStyle-en": "Fashion apparel & collections",
     "advantage": [
         "เนื้อผ้าเน้นลุคทันสมัย",
         "เหมาะตัดเย็บหลากสไตล์",
         "คุณภาพเหมาะงานแบรนด์"
     ],
+    "advantage-en": [
+        "Modern-looking fabric",
+        "Suits a wide range of styles",
+        "Brand-grade quality"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 25
 }

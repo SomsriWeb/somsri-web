@@ -1,6 +1,7 @@
 {
     "image": "/landing-page-real-hat/hat-style-5.png",
     "label": "หมวกแก็ปปีกสั้น",
+    "label-en": "Short-Brim Cap",
     "priceperunit" : [128, 126, 124, 122],
     "order": 5
 }

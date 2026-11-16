@@ -11,6 +11,8 @@ interface Props {
 
 const { type = ProductType.FABRIC_SPECIFICATION } = defineProps<Props>();
 
+const { t } = useI18n({ useScope: 'local' });
+
 const filters = ref(defaultFabricFilterState());
 const MOBILE_VISIBLE_COUNT = 8;
 const DESKTOP_VISIBLE_COUNT = 9;
@@ -44,20 +46,39 @@ function scrollToResults() {
 }
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "viewResults": "ดูผลลัพธ์",
+        "foundPrefix": "พบเนื้อผ้า",
+        "foundSuffix": "รายการ",
+        "noResults": "ไม่พบเนื้อผ้าตามเงื่อนไขที่เลือก",
+        "seeMore": "ดูเพิ่มเติม"
+    },
+    "en": {
+        "viewResults": "View Results",
+        "foundPrefix": "Found",
+        "foundSuffix": "fabrics",
+        "noResults": "No fabrics match the selected filters.",
+        "seeMore": "See More"
+    }
+}
+</i18n>
+
 <template>
     <div class="grid gap-5 lg:grid-cols-[11rem_minmax(0,1fr)] lg:items-start xl:grid-cols-[12rem_minmax(0,1fr)] xl:gap-6">
         <div class="space-y-5">
             <FabricFilter v-model="filters" @apply="scrollToResults" />
             <UButton color="primary" class="flex w-full justify-center py-3 font-semibold" @click="scrollToResults">
-                ดูผลลัพธ์
+                {{ t('viewResults') }}
             </UButton>
         </div>
 
         <div id="fabric-catalog-results" class="min-w-0">
             <p class="mb-5 text-lg text-stone-700">
-                พบเนื้อผ้า
+                {{ t('foundPrefix') }}
                 <span class="font-bold text-primary">{{ filteredFabrics.length }}</span>
-                รายการ
+                {{ t('foundSuffix') }}
             </p>
 
             <div v-if="visibleFabrics.length" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -65,7 +86,7 @@ function scrollToResults() {
             </div>
 
             <p v-else class="rounded-2xl border border-dashed border-stone-300 px-6 py-10 text-center text-stone-500">
-                ไม่พบเนื้อผ้าตามเงื่อนไขที่เลือก
+                {{ t('noResults') }}
             </p>
 
             <div v-if="hasMore" class="mt-8">
@@ -75,7 +96,7 @@ function scrollToResults() {
                         class="inline-flex items-center gap-1.5 text-base font-medium text-stone-800 transition-colors hover:text-primary"
                         @click="loadMore"
                     >
-                        ดูเพิ่มเติม
+                        {{ t('seeMore') }}
                         <Icon name="lucide:chevron-down" class="size-4" />
                     </button>
                 </div>

@@ -1,13 +1,22 @@
 <script setup lang="ts">
 import { ProductTypeIdEnum } from '../../types/global';
 
+const { locale } = useI18n();
+
 const { data } = await useAsyncData('fabrics', () =>
-    queryCollection('fabrics').select('uid', 'nameTh', 'imageAlt', 'imageUrl', 'popupImageUrl', 'forProductType', 'order').order('order', 'ASC').all(),
+    queryCollection('fabrics').select('uid', 'nameTh', 'nameEn', 'imageAlt', 'imageAlt-en', 'imageUrl', 'popupImageUrl', 'forProductType', 'order').order('order', 'ASC').all(),
 );
 
 // COMPUTED
 const fabrics = computed(() => {
-    return (data.value || []).filter((fabric) => fabric.forProductType?.includes(ProductTypeIdEnum.POLO));
+    const isEn = locale.value === 'en';
+    return (data.value || [])
+        .filter((fabric) => fabric.forProductType?.includes(ProductTypeIdEnum.POLO))
+        .map((fabric) => ({
+            ...fabric,
+            name: isEn ? fabric.nameEn : fabric.nameTh,
+            alt: (isEn ? fabric['imageAlt-en'] : fabric.imageAlt) || (isEn ? fabric.nameEn : fabric.nameTh),
+        }));
 });
 </script>
 
@@ -16,8 +25,8 @@ const fabrics = computed(() => {
         <FabricCard
             v-for="fabric in fabrics"
             :key="fabric.uid"
-            :name="fabric.nameTh"
-            :alt="fabric.imageAlt || fabric.nameTh"
+            :name="fabric.name"
+            :alt="fabric.alt"
             :image-url="fabric.imageUrl"
             :popup-image-url="fabric.popupImageUrl"
             class="w-full max-w-[250px] h-auto object-contain mx-auto"

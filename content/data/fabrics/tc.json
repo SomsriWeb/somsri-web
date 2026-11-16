@@ -11,13 +11,21 @@
     "nameTh": "ทีซี",
     "nameEn": "TC",
     "recommendForStyle": "เสื้อแบรนด์",
+    "recommendForStyle-en": "Brand apparel",
     "advantage": [
         "เนื้อผ้าแน่น ระบายอากาศดี",
         "รีดง่าย ยับยาก",
         "สีติดคงทน",
         "ทนต่อการซัก"
     ],
+    "advantage-en": [
+        "Dense, breathable fabric",
+        "Easy to iron, wrinkle-resistant",
+        "Long-lasting color",
+        "Withstands repeated washing"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 14,
     "gramWeight": 170
 }

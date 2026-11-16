@@ -36,7 +36,22 @@ function getPriceListFromFabricId(fabricId: string) {
     const productPriceList = priceLists.value?.find((priceList) => priceList.productId === type);
     return productPriceList?.prices.find((price) => price.fabricId === fabricId);
 }
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "fabric": "ผ้า {name}",
+        "orderNow": "สั่งผลิตเลย"
+    },
+    "en": {
+        "fabric": "{name}",
+        "orderNow": "Order now"
+    }
+}
+</i18n>
 
 <template>
     <div class="rounded-xl border border-stone-300 overflow-hidden space-y-5 p-3">
@@ -52,7 +67,7 @@ function getPriceListFromFabricId(fabricId: string) {
         </USelectMenu>
 
         <div v-for="fabric in fabrics" :key="fabric.id" :class="{ hidden: activeFabric !== fabric.nameEn }">
-            <h3 class="text-2xl font-bold font-stretch-condensed uppercase text-stone-700 mb-3">ผ้า {{ fabric.nameEn }}</h3>
+            <h3 class="text-2xl font-bold font-stretch-condensed uppercase text-stone-700 mb-3">{{ t('fabric', { name: fabric.nameEn }) }}</h3>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
                 <RateCard v-for="rate in getPriceListFromFabricId(fabric.uid)?.lists" :key="generateKey(fabric.id, rate)" :data="rate" />
@@ -60,7 +75,7 @@ function getPriceListFromFabricId(fabricId: string) {
         </div>
 
         <LineLink>
-            <UButton class="font-bold">สั่งผลิตเลย</UButton>
+            <UButton class="font-bold">{{ t('orderNow') }}</UButton>
         </LineLink>
     </div>
 </template>

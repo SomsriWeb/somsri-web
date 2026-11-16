@@ -5,6 +5,10 @@
 		return queryCollection("mask").where("order", "IN", [4, 5, 6]).order("order", "ASC").all()
 	})
 
+	const { t, locale } = useI18n({ useScope: "local" })
+	const altOf = (item: { name: string; "name-en"?: string; alt?: string }, index: number) =>
+		item.alt ?? (locale.value === "en" ? (item["name-en"] ?? item.name) : item.name) ?? `mask-fabric-${index}`
+
 	const containerRef = ref<SwiperContainer | null>(null)
 	const swiperOptions = computed(() => ({
 		slidesPerView: 1,
@@ -38,8 +42,15 @@
 	watch(containerRef, () => nextTick(mountSwiperWhenReady), { flush: "post" })
 </script>
 
+<i18n lang="json">
+{
+	"th": { "title": "เนื้อผ้าและคุณสมบัติ" },
+	"en": { "title": "Fabrics & Properties" }
+}
+</i18n>
+
 <template>
-	<ProseH2 class="text-center mb-5">เนื้อผ้าและคุณสมบัติ</ProseH2>
+	<ProseH2 class="text-center mb-5">{{ t("title") }}</ProseH2>
 	<div class="flex flex-col items-center justify-center px-4 p-5">
 		<ClientOnly>
 			<swiper-container ref="containerRef" class="w-full max-w-full">
@@ -51,7 +62,7 @@
 					<ProseImg
 						:lazy="false"
 						:src="item.image"
-						:alt="item.alt ?? item.name ?? `mask-fabric-${index}`"
+						:alt="altOf(item, index)"
 						class="mx-auto block max-w-[30rem] w-full"
 					/>
 				</swiper-slide>

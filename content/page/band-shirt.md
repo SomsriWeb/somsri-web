@@ -4,7 +4,6 @@ activeNavbar: true
 contentSpacing: true
 description: สมศรีมีเสื้อ รับผลิตเสื้อวง เสื้อทัวร์ ตั้งแต่ออกแบบ ผลิต ด้วยคุณภาพดี ในราคาที่ย่อมเยาว์ เราคือโรงงานรับผลิตเสื้อวงที่มีเอกลักษณ์เฉพาะตัว
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/d4c29
 navbar: true

@@ -10,7 +10,9 @@ interface Props {
     rows: SizeRow[];
     caption?: string;
 }
-const { headerLabel = 'ไซส์ (นิ้ว)', sizes, rows, caption } = defineProps<Props>();
+const { headerLabel = '', sizes, rows, caption } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -21,6 +23,17 @@ defineSlots<Slots>();
 
 const cell = 'border border-stone-200 px-2.5 py-2.5 text-center';
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "headerLabel": "ไซส์ (นิ้ว)"
+    },
+    "en": {
+        "headerLabel": "Size (inches)"
+    }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 bg-stone-100 py-10 md:py-16 lg:scroll-mt-24">
@@ -36,7 +49,7 @@ const cell = 'border border-stone-200 px-2.5 py-2.5 text-center';
                     <caption v-if="caption" class="caption-bottom px-3.5 py-2.5 text-left text-xs text-slate-500">{{ caption }}</caption>
                     <thead>
                         <tr class="bg-primary text-white">
-                            <th scope="col" :class="[cell, 'font-bold']">{{ headerLabel }}</th>
+                            <th scope="col" :class="[cell, 'font-bold']">{{ headerLabel || t('headerLabel') }}</th>
                             <th v-for="size in sizes" :key="size" scope="col" :class="[cell, 'font-bold']">{{ size }}</th>
                         </tr>
                     </thead>

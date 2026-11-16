@@ -3,7 +3,6 @@ title: รับผลิตเสื้อกีฬา พิมพ์ลาย
 activeNavbar: true
 description: โรงงานผลิตเสื้อกีฬา มีบริการออกแบบฟรี สั่งทำเสื้อทีม เสื้อกีฬาโรงเรียน เสื้องานวิ่ง เนื้อผ้าคุณภาพสูง TC/TK, Micro Sport สกรีนลายคมชัดด้วยเทคนิคที่ทันสมัย
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/544af
 navbar: true

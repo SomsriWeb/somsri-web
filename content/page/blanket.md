@@ -3,7 +3,6 @@ title: รับผลิตผ้าห่มพรีเมียม ผ้า
 activeNavbar: false
 description: สั่งทำผ้าห่มคุณภาพสูงสำหรับของพรีเมียม สำหรับ Merchandise องค์กร หรือโรงแรม เนื้อผ้านุ่ม อุ่นสบาย เลือกสีและลายได้ตามต้องการ งานสวยได้มาตรฐาน รับประกันคุณภาพ 90 วัน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/e60f6
 navbar: true

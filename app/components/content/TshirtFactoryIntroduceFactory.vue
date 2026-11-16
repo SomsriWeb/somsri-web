@@ -12,7 +12,20 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "factoryAlt": "รับผลิตเสื้อยืด สั่งทำเสื้อพร้อมสกรีน"
+    },
+    "en": {
+        "factoryAlt": "Custom T-shirt manufacturing with screen printing"
+    }
+}
+</i18n>
 <template>
     <div class="grid grid-cols-1md:grid-cols-2 gap-5">
         <div>
@@ -21,7 +34,7 @@ defineSlots<Slots>();
         </div>
 
         <div>
-            <NuxtImg src="/tshirt-factory/introduce-factory.png" alt="รับผลิตเสื้อยืด สั่งทำเสื้อพร้อมสกรีน" class="object-cover w-full h-full rounded-xl" format="webp" loading="lazy" placeholder />
+            <NuxtImg src="/tshirt-factory/introduce-factory.png" :alt="t('factoryAlt')" class="object-cover w-full h-full rounded-xl" format="webp" loading="lazy" placeholder />
         </div>
     </div>
 </template>

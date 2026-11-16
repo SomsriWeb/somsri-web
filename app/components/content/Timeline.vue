@@ -34,6 +34,8 @@ const parsedItems = computed<TimelineItem[]>(() => {
 
 const timelineData = ref<TimelineItem[]>([]);
 
+const { t } = useI18n({ useScope: 'local' });
+
 // Initialize timelineData from parsedItems
 watch(() => parsedItems.value, (newItems) => {
     timelineData.value = newItems.map(item => ({
@@ -85,9 +87,24 @@ onMounted(() => {
 });
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "heading": "Timeline - ประวัติความเป็นมาของสมศรีมีเสื้อ",
+        "imageAlt": "ภาพประกอบเหตุการณ์ {year}: {title}",
+        "empty": "ไม่มีข้อมูล Timeline"
+    },
+    "en": {
+        "heading": "Timeline - The History of SomsriTshirt",
+        "imageAlt": "Illustration for {year}: {title}",
+        "empty": "No timeline data available"
+    }
+}
+</i18n>
+
 <template>
     <section class="min-h-screen font-sans" aria-labelledby="timeline-heading">
-        <h2 id="timeline-heading" class="sr-only">Timeline - ประวัติความเป็นมาของสมศรีมีเสื้อ</h2>
+        <h2 id="timeline-heading" class="sr-only">{{ t('heading') }}</h2>
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="relative" role="list" aria-label="Timeline">
                 <!-- Timeline Items -->
@@ -132,7 +149,7 @@ onMounted(() => {
                         >
                             <img
                                 :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :alt="t('imageAlt', { year: item.year, title: item.title })"
                                 :title="item.title"
                                 class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
@@ -163,7 +180,7 @@ onMounted(() => {
                         <div v-else class="overflow-hidden rounded-xl timeline-image-left" :class="{ 'is-visible': item.isVisible }">
                             <img
                                 :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :alt="t('imageAlt', { year: item.year, title: item.title })"
                                 :title="item.title"
                                 class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
@@ -189,7 +206,7 @@ onMounted(() => {
                         <div v-if="index % 2 === 0" class="overflow-hidden rounded-xl timeline-image-right" :class="{ 'is-visible': item.isVisible }">
                             <img
                                 :src="item.image"
-                                :alt="`ภาพประกอบเหตุการณ์ ${item.year}: ${item.title}`"
+                                :alt="t('imageAlt', { year: item.year, title: item.title })"
                                 :title="item.title"
                                 class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-500"
                                 loading="lazy"
@@ -206,7 +223,7 @@ onMounted(() => {
                 </div>
                 </template>
                 <div v-else class="text-center text-gray-500 py-10">
-                    ไม่มีข้อมูล Timeline
+                    {{ t('empty') }}
                 </div>
             </div>
         </div>

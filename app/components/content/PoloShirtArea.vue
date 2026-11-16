@@ -10,7 +10,9 @@ interface Props {
     mapSrc?: string;
     mapTitle?: string;
 }
-const { tags = [], address, phone, phoneHref, mapSrc, mapTitle = 'แผนที่' } = defineProps<Props>();
+const { tags = [], address, phone, phoneHref, mapSrc, mapTitle = '' } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 
 interface Slots {
     eyebrow?: () => unknown;
@@ -19,6 +21,13 @@ interface Slots {
 }
 defineSlots<Slots>();
 </script>
+
+<i18n lang="json">
+{
+    "th": { "map": "แผนที่" },
+    "en": { "map": "Map" }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 bg-primary/12 py-10 md:py-16 lg:scroll-mt-24">
@@ -52,7 +61,7 @@ defineSlots<Slots>();
             <iframe
                 v-if="mapSrc"
                 :src="mapSrc"
-                :title="mapTitle"
+                :title="mapTitle || t('map')"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 class="aspect-[4/3] w-full rounded-xl border-0 bg-stone-100"

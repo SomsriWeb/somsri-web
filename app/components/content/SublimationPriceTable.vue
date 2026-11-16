@@ -21,19 +21,61 @@ interface Props {
 }
 
 const {
-    titleLine1 = 'เรทราคา',
+    titleLine1,
     titleLine2 = 'Sublimation',
-    buttonLabel = 'สอบถามราคา',
+    buttonLabel,
     buttonLink,
-    packages = DEFAULT_PRICE_PACKAGES,
-    note1 = '**ราคาดังกล่าวบวกเพิ่มจากเรทเสื้อยืดรวมสกรีน**',
-    note2 = '**ราคาดังกล่าวรวม VAT 7%**',
+    packages,
+    note1,
+    note2,
 } = defineProps<Props>();
+
+const { t, locale } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
+
+const resolvedTitleLine1 = computed(() => titleLine1 ?? t('titleLine1'));
+const resolvedButtonLabel = computed(() => buttonLabel ?? t('buttonLabel'));
+const resolvedNote1 = computed(() => note1 ?? t('note1'));
+const resolvedNote2 = computed(() => note2 ?? t('note2'));
+// ค่าเริ่มต้นของแพ็กเกจ: หน้าอังกฤษแปลชื่อหัวการ์ด
+const resolvedPackages = computed<SublimationPricePackage[]>(() => {
+    if (packages) return packages;
+    if (locale.value !== 'en') return DEFAULT_PRICE_PACKAGES;
+    return DEFAULT_PRICE_PACKAGES.map((pkg, i) => ({ ...pkg, label: t(`defaultPackageLabels.p${i}`) }));
+});
 
 // ไม่ระบุ buttonLink มา = ใช้ลิงก์ LINE ของหน้า (ตั้งค่าใน frontmatter `lineLink`)
 const lineLink = inject<string>(LINE_LINK);
-const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
+const resolvedButtonLink = computed(() => {
+    const link = buttonLink ?? lineLink;
+    return link ? localizePath(link) : link;
+});
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "titleLine1": "เรทราคา",
+        "buttonLabel": "สอบถามราคา",
+        "note1": "**ราคาดังกล่าวบวกเพิ่มจากเรทเสื้อยืดรวมสกรีน**",
+        "note2": "**ราคาดังกล่าวรวม VAT 7%**",
+        "quantityPcs": "จำนวนตัว",
+        "quantityHeader": "จำนวน(ตัว)",
+        "specialPrice": "ราคาพิเศษ",
+        "defaultPackageLabels": { "p0": "ชิ้นหน้า 1 ชิ้น", "p1": "ชิ้นหน้าและหลัง", "p2": "เต็มตัว" }
+    },
+    "en": {
+        "titleLine1": "Price Rates",
+        "buttonLabel": "Get a quote",
+        "note1": "Prices are added on top of the printed T-shirt rate",
+        "note2": "Prices include 7% VAT",
+        "quantityPcs": "Quantity",
+        "quantityHeader": "Quantity (pcs)",
+        "specialPrice": "Special price",
+        "defaultPackageLabels": { "p0": "Front panel only", "p1": "Front and back panels", "p2": "Full shirt" }
+    }
+}
+</i18n>
 
 <template>
     <section class="sublimation-price-table my-6">
@@ -41,12 +83,12 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
             <!-- ===== ฝั่งซ้าย: หัวข้อ + ปุ่ม CTA ===== -->
             <div class="text-center lg:sticky lg:top-24 lg:col-span-1 lg:text-left">
                 <h2 class="!m-0 text-2xl font-bold leading-tight md:text-3xl">
-                    <span class="block text-primary">{{ titleLine1 }}</span>
+                    <span class="block text-primary">{{ resolvedTitleLine1 }}</span>
                     <span class="block text-stone-800">{{ titleLine2 }}</span>
                 </h2>
 
                 <ActionButtonWithPing :to="resolvedButtonLink" class="mt-6 inline-flex">
-                    {{ buttonLabel }}
+                    {{ resolvedButtonLabel }}
                 </ActionButtonWithPing>
             </div>
 
@@ -54,7 +96,7 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
             <div class="lg:col-span-3">
                 <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     <div
-                        v-for="(pkg, pi) in packages"
+                        v-for="(pkg, pi) in resolvedPackages"
                         :key="pi"
                         class="overflow-hidden rounded-2xl bg-white shadow-md"
                     >
@@ -66,7 +108,7 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
                         <!-- ราคาเด่นด้านบน -->
                         <div class="flex items-center gap-3 bg-stone-100 px-5 py-4">
                             <div class="shrink-0 text-xs text-stone-500">
-                                <p class="leading-tight">จำนวนตัว</p>
+                                <p class="leading-tight">{{ t('quantityPcs') }}</p>
                                 <p class="font-bold leading-tight text-stone-700">{{ pkg.rangeLabel }}</p>
                             </div>
                             <p class="flex items-baseline gap-1.5">
@@ -79,7 +121,7 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
 
                         <!-- รายการราคาตามจำนวน -->
                         <div class="px-5 py-4">
-                            <p class="mb-2 text-xs text-stone-500">จำนวน(ตัว)</p>
+                            <p class="mb-2 text-xs text-stone-500">{{ t('quantityHeader') }}</p>
                             <div class="divide-y divide-stone-100">
                                 <div
                                     v-for="(tier, ti) in pkg.tiers"
@@ -92,7 +134,7 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
                                         <span class="text-xs text-stone-500">THB</span>
                                     </span>
                                     <span v-else class="font-bold text-primary">
-                                        {{ tier.specialLabel ?? 'ราคาพิเศษ' }}
+                                        {{ tier.specialLabel ?? t('specialPrice') }}
                                     </span>
                                 </div>
                             </div>
@@ -102,8 +144,8 @@ const resolvedButtonLink = computed(() => buttonLink ?? lineLink);
 
                 <!-- หมายเหตุ -->
                 <div class="mt-4 space-y-1 text-right text-sm">
-                    <p v-if="note1" class="text-stone-500">{{ note1 }}</p>
-                    <p v-if="note2" class="font-bold text-primary">{{ note2 }}</p>
+                    <p v-if="resolvedNote1" class="text-stone-500">{{ resolvedNote1 }}</p>
+                    <p v-if="resolvedNote2" class="font-bold text-primary">{{ resolvedNote2 }}</p>
                 </div>
             </div>
         </div>

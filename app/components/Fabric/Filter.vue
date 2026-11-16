@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { FabricFilterState } from '~/utils/fabricCatalog';
-import { defaultFabricFilterState, materialOptions, shirtTypeOptions, toggleFilterValue, usageOptions } from '~/utils/fabricCatalog';
+import { defaultFabricFilterState, getFilterOptionLabel, materialOptions, shirtTypeOptions, toggleFilterValue, usageOptions } from '~/utils/fabricCatalog';
 
 interface Props {
     modelValue: FabricFilterState;
@@ -15,6 +15,8 @@ type SectionId = 'shirt' | 'material' | 'usage' | 'gram';
 
 const props = defineProps<Props>();
 const emit = defineEmits<Emits>();
+
+const { t, locale } = useI18n({ useScope: 'local' });
 
 const isMobileOpen = ref(true);
 const openSections = ref<Record<SectionId, boolean>>({
@@ -65,7 +67,36 @@ function isActive(values: string[], id: string) {
 function chipClass(active: boolean) {
     return active ? 'border-primary bg-primary text-white' : 'border-stone-200 bg-white text-stone-700 hover:border-primary/40';
 }
+
+function optionLabel(option: { label: string; labelEn: string }) {
+    return getFilterOptionLabel(option, locale.value);
+}
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "filter": "ตัวกรอง",
+        "chooseFabric": "เลือกเนื้อผ้าสไตล์คุณ",
+        "clearAll": "ล้างทั้งหมด",
+        "shirtType": "ประเภทเสื้อ",
+        "material": "เนื้อผ้า",
+        "usage": "การนำไปใช้",
+        "gramWeight": "แกรมผ้า",
+        "gram": "แกรม"
+    },
+    "en": {
+        "filter": "Filters",
+        "chooseFabric": "Find Your Fabric",
+        "clearAll": "Clear all",
+        "shirtType": "Shirt Type",
+        "material": "Fabric",
+        "usage": "Usage",
+        "gramWeight": "Fabric Weight",
+        "gram": "GSM"
+    }
+}
+</i18n>
 
 <template>
     <aside class="w-full max-w-full">
@@ -73,11 +104,11 @@ function chipClass(active: boolean) {
             <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:cursor-default lg:px-3.5" @click="isMobileOpen = !isMobileOpen">
                 <div class="flex items-center gap-2">
                     <Icon name="lucide:sliders-horizontal" class="hidden text-primary lg:block" />
-                    <span class="text-lg font-bold text-primary lg:text-xl">ตัวกรอง</span>
-                    <span class="text-lg font-bold text-primary lg:hidden">เลือกเนื้อผ้าสไตล์คุณ</span>
+                    <span class="text-lg font-bold text-primary lg:text-xl">{{ t('filter') }}</span>
+                    <span class="text-lg font-bold text-primary lg:hidden">{{ t('chooseFabric') }}</span>
                 </div>
                 <div class="flex items-center gap-3">
-                    <button type="button" class="hidden text-sm font-semibold text-primary lg:inline" @click.stop="clearFilters">ล้างทั้งหมด</button>
+                    <button type="button" class="hidden text-sm font-semibold text-primary lg:inline" @click.stop="clearFilters">{{ t('clearAll') }}</button>
                     <Icon name="lucide:chevron-down" class="text-stone-500 transition-transform lg:hidden" :class="{ 'rotate-180': isMobileOpen }" />
                 </div>
             </button>
@@ -87,7 +118,7 @@ function chipClass(active: boolean) {
             <div :class="{ 'hidden lg:block': !isMobileOpen, block: isMobileOpen }">
                 <section>
                     <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('shirt')">
-                        <span class="text-base font-bold text-primary">ประเภทเสื้อ</span>
+                        <span class="text-base font-bold text-primary">{{ t('shirtType') }}</span>
                         <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.shirt }" />
                     </button>
                     <div v-show="openSections.shirt" class="px-3 pb-4 lg:px-3.5">
@@ -100,13 +131,13 @@ function chipClass(active: boolean) {
                                 :class="chipClass(isActive(filters.shirtTypes, option.id))"
                                 @click="toggleShirtType(option.id)"
                             >
-                                {{ option.label }}
+                                {{ optionLabel(option) }}
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
                             <label v-for="option in shirtTypeOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
                                 <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.shirtTypes, option.id)" @change="toggleShirtType(option.id)" />
-                                <span>{{ option.label }}</span>
+                                <span>{{ optionLabel(option) }}</span>
                             </label>
                         </div>
                     </div>
@@ -115,7 +146,7 @@ function chipClass(active: boolean) {
 
                 <section>
                     <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('material')">
-                        <span class="text-base font-bold text-primary">เนื้อผ้า</span>
+                        <span class="text-base font-bold text-primary">{{ t('material') }}</span>
                         <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.material }" />
                     </button>
                     <div v-show="openSections.material" class="px-3 pb-4 lg:px-3.5">
@@ -128,13 +159,13 @@ function chipClass(active: boolean) {
                                 :class="chipClass(isActive(filters.materials, option.id))"
                                 @click="toggleMaterial(option.id)"
                             >
-                                {{ option.label }}
+                                {{ optionLabel(option) }}
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
                             <label v-for="option in materialOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
                                 <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.materials, option.id)" @change="toggleMaterial(option.id)" />
-                                <span>{{ option.label }}</span>
+                                <span>{{ optionLabel(option) }}</span>
                             </label>
                         </div>
                     </div>
@@ -143,7 +174,7 @@ function chipClass(active: boolean) {
 
                 <section>
                     <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('usage')">
-                        <span class="text-base font-bold text-primary">การนำไปใช้</span>
+                        <span class="text-base font-bold text-primary">{{ t('usage') }}</span>
                         <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.usage }" />
                     </button>
                     <div v-show="openSections.usage" class="px-3 pb-4 lg:px-3.5">
@@ -156,13 +187,13 @@ function chipClass(active: boolean) {
                                 :class="chipClass(isActive(filters.usages, option.id))"
                                 @click="toggleUsage(option.id)"
                             >
-                                {{ option.label }}
+                                {{ optionLabel(option) }}
                             </button>
                         </div>
                         <div class="hidden flex-col gap-2.5 lg:flex">
                             <label v-for="option in usageOptions" :key="`desktop-${option.id}`" class="flex cursor-pointer items-center gap-2 text-sm text-stone-700">
                                 <input type="checkbox" class="size-4 accent-primary" :checked="isActive(filters.usages, option.id)" @change="toggleUsage(option.id)" />
-                                <span>{{ option.label }}</span>
+                                <span>{{ optionLabel(option) }}</span>
                             </label>
                         </div>
                     </div>
@@ -171,7 +202,7 @@ function chipClass(active: boolean) {
 
                 <section>
                     <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left lg:px-3.5" @click="toggleSection('gram')">
-                        <span class="text-base font-bold text-primary">แกรมผ้า</span>
+                        <span class="text-base font-bold text-primary">{{ t('gramWeight') }}</span>
                         <Icon name="lucide:chevron-down" class="size-4 shrink-0 text-stone-500 transition-transform" :class="{ 'rotate-180': openSections.gram }" />
                     </button>
                     <div v-show="openSections.gram" class="px-3 pb-4 lg:px-3.5">
@@ -193,7 +224,7 @@ function chipClass(active: boolean) {
                                 class="h-6 w-12 shrink-0 rounded-sm border border-stone-200 px-2 text-center text-xs outline-none placeholder:text-stone-400 focus:border-primary sm:text-sm"
                                 @input="updateFilters({ gramMax: ($event.target as HTMLInputElement).value ? Number(($event.target as HTMLInputElement).value) : null })"
                             />
-                            <span class="shrink-0 text-sm text-stone-600">แกรม</span>
+                            <span class="shrink-0 text-sm text-stone-600">{{ t('gram') }}</span>
                         </div>
                     </div>
                     <div class="mx-3 border-b border-stone-200 lg:mx-3.5 lg:hidden" />

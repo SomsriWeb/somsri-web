@@ -3,7 +3,6 @@ title: รับผลิตผ้าโพกหัว ผ้าพันคอ
 activeNavbar: true
 description: รับผลิตผ้าโพกหัว ผ้าพันคออเนกประสงค์ สำหรับองค์กร กลุ่มกิจกรรม หรือทำเป็นของที่ระลึก ออกแบบลายพิมพ์ได้ไม่จำกัดสี
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/0d6d8
 navbar: true

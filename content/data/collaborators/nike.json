@@ -1,6 +1,7 @@
 {
     "src": "/somsri-collaborators/logo_nk.webp",
     "alt": "Nike",
+    "alt-en": "Nike",
     "category": "organization",
     "row": 1,
     "order": 15

@@ -1,7 +1,9 @@
 {
   "name": "Screen Printing",
   "method": "งานสกรีน",
+  "method-en": "Screen printing",
   "alt": "สกรีนผ้า",
+  "alt-en": "Fabric screen printing",
   "image": "/brand/screen.png",
   "order": 3
 }

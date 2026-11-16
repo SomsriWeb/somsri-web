@@ -3,6 +3,8 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 
 interface Props {
     items: NavigationMenuItem[];
+    homePath: string;
+    alternatePath: string | null;
 }
 
 defineProps<Props>();
@@ -21,7 +23,7 @@ const isOpen = defineModel<boolean>('open', { default: false });
         <Icon name="lucide:menu" class="w-6 h-6 lg:hidden cursor-pointer" />
 
         <template #title>
-            <NuxtLink to="/">
+            <NuxtLink :to="homePath" :aria-label="$t('nav.home')">
                 <Logo class="max-w-6" />
             </NuxtLink>
         </template>
@@ -35,6 +37,10 @@ const isOpen = defineModel<boolean>('open', { default: false });
                         link: 'text-white before:bg-transparent lg:max-h-[40px]',
                     }"
                 />
+                <NuxtLink v-if="alternatePath" :to="alternatePath" class="flex items-center gap-2 text-white px-2.5 py-1.5">
+                    <Icon name="lucide:languages" />
+                    {{ $t('nav.switchLanguage') }}
+                </NuxtLink>
             </div>
         </template>
         <template #close>

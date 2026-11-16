@@ -2,6 +2,9 @@
 	const { data: databrand } = await useAsyncData(`databrand`, () => {
 		return queryCollection("brandService").order("order", "ASC").all()
 	})
+
+	const { locale } = useI18n()
+	const isEn = computed(() => locale.value === "en")
 </script>
 
 <!--Component ส่วน Oursurvice หน้า brand -->
@@ -15,12 +18,12 @@
 			class="flex flex-col items-center text-center"
 		>
 			<div>
-				<ProseImg :src="item.image" :alt="item.alt || item.name" />
+				<ProseImg :src="item.image" :alt="(isEn ? (item['alt-en'] ?? item.alt) : item.alt) || item.name" />
 			</div>
 			<ProseH3 size="sm" class="text-base sm:text-lg font-semibold text-primary mt-3">
 				{{ item.name }}
 			</ProseH3>
-			<ProseP class="text-sm text-primary mt-1">• {{ item.method }}</ProseP>
+			<ProseP class="text-sm text-primary mt-1">• {{ isEn ? (item['method-en'] ?? item.method) : item.method }}</ProseP>
 		</div>
 	</div>
 </template>

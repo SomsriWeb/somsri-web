@@ -154,12 +154,21 @@ useIntersectionObserver(
 );
 
 onBeforeUnmount(() => cancelAnimationFrame(rafId));
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "label": "สถิติ" },
+    "en": { "label": "Statistics" }
+}
+</i18n>
 
 <template>
     <!-- fallback = ค่า SEO/SSR; ตัวเลขตรงเป้าหมาย -->
     <ClientOnly>
-        <section ref="rootEl" :class="props.wrapperClass" aria-label="สถิติ">
+        <section ref="rootEl" :class="props.wrapperClass" :aria-label="t('label')">
             <div :class="props.innerClass">
                 <div :class="props.gridClass">
                     <div v-for="it in items" :key="it.slot" :class="props.itemClass">
@@ -192,7 +201,7 @@ onBeforeUnmount(() => cancelAnimationFrame(rafId));
         </section>
 
         <template #fallback>
-            <section :class="props.wrapperClass" aria-label="สถิติ">
+            <section :class="props.wrapperClass" :aria-label="t('label')">
                 <div :class="props.innerClass">
                     <div :class="props.gridClass">
                         <div v-for="it in items" :key="it.slot" :class="props.itemClass">

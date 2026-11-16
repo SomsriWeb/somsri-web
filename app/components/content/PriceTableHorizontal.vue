@@ -25,14 +25,34 @@ const {
     quantities,
     rows,
     leftPanel,
-    contactText = 'ติดต่อสอบถาม',
+    contactText,
     leftNotes = [],
     rightNotes = [],
 } = defineProps<Props>()
 
 const colCount = computed(() => quantities.length + 1)
 const gridCols = computed(() => `repeat(${colCount.value}, minmax(0, 1fr))`)
+
+const { t } = useI18n({ useScope: 'local' })
+const resolvedContactText = computed(() => contactText ?? t('contact'))
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "contact": "ติดต่อสอบถาม",
+        "quantity": "จำนวน",
+        "pieces": "ชิ้น",
+        "perPiece": "บาท/ชิ้น"
+    },
+    "en": {
+        "contact": "Contact us",
+        "quantity": "Quantity",
+        "pieces": "pcs",
+        "perPiece": "THB/pc"
+    }
+}
+</i18n>
 
 <template>
     <div class="px-1 md:px-0 py-4 pb-24 md:pb-8 max-w-md md:max-w-3xl lg:max-w-4xl xl:max-w-[55rem] mx-auto w-full overflow-hidden">
@@ -68,7 +88,7 @@ const gridCols = computed(() => `repeat(${colCount.value}, minmax(0, 1fr))`)
                 >
                     <div class="flex flex-col items-center justify-center gap-1 md:gap-2 h-[4rem] md:h-[6rem] lg:h-[8.5rem]">
                         <i class="ti ti-users text-lg md:text-4xl lg:text-6xl leading-none" aria-hidden="true" />
-                        <span class="text-sm md:text-2xl lg:text-4xl font-bold leading-none mt-1">จำนวน</span>
+                        <span class="text-sm md:text-2xl lg:text-4xl font-bold leading-none mt-1">{{ t('quantity') }}</span>
                     </div>
                     
                     <div
@@ -77,7 +97,7 @@ const gridCols = computed(() => `repeat(${colCount.value}, minmax(0, 1fr))`)
                         class="flex flex-col items-center justify-center h-[4rem] md:h-[6rem] lg:h-[8.5rem] px-1 md:px-2 border-l border-white/20 md:border-white"
                     >
                         <div class="font-bold text-sm md:text-2xl lg:text-3xl xl:text-4xl leading-tight text-center whitespace-nowrap">{{ q }}</div>
-                        <div class="text-white/90 text-xs md:text-base lg:text-2xl font-medium leading-none mt-1">ชิ้น</div>
+                        <div class="text-white/90 text-xs md:text-base lg:text-2xl font-medium leading-none mt-1">{{ t('pieces') }}</div>
                     </div>
                 </div>
 
@@ -106,10 +126,10 @@ const gridCols = computed(() => `repeat(${colCount.value}, minmax(0, 1fr))`)
                         >
                             <template v-if="price !== null">
                                 <div class="font-extrabold text-primary text-base md:text-2xl lg:text-4xl xl:text-5xl leading-none text-center whitespace-nowrap">{{ price }}.-</div>
-                                <div class="text-primary/90 text-xs md:text-sm lg:text-xl font-medium mt-1 leading-none text-center">บาท/ชิ้น</div>
+                                <div class="text-primary/90 text-xs md:text-sm lg:text-xl font-medium mt-1 leading-none text-center">{{ t('perPiece') }}</div>
                             </template>
                             <template v-else>
-                                <div class="font-extrabold text-primary text-xs md:text-xl lg:text-3xl xl:text-4xl leading-tight text-center">{{ contactText }}</div>
+                                <div class="font-extrabold text-primary text-xs md:text-xl lg:text-3xl xl:text-4xl leading-tight text-center">{{ resolvedContactText }}</div>
                             </template>
                         </div>
                     </div>

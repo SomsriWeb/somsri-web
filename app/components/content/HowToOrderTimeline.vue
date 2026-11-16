@@ -1,20 +1,43 @@
 <script setup lang="ts">
 interface HowToOrderTimelineStep {
     title: string;
+    'title-en'?: string;
     description: string;
+    'description-en'?: string;
     image: string;
     badge?: string;
+    'badge-en'?: string;
     badgeIsLink?: boolean;
 }
 
-const { data: steps } = await useAsyncData(
+const { t, locale } = useI18n({ useScope: 'local' });
+
+const { data: rawSteps } = await useAsyncData(
     'how-to-order',
     () =>
-        queryCollection('howToOrder' as any)
-            .order('order' as any, 'ASC')
+        queryCollection('howToOrder')
+            .order('order', 'ASC')
             .all() as Promise<HowToOrderTimelineStep[]>,
 );
+
+// หน้าอังกฤษ: ใช้ฟิลด์ *-en ถ้ามี
+const steps = computed(() => {
+    const isEn = locale.value === 'en';
+    return (rawSteps.value || []).map((step) => ({
+        ...step,
+        title: isEn ? (step['title-en'] ?? step.title) : step.title,
+        description: isEn ? (step['description-en'] ?? step.description) : step.description,
+        badge: isEn ? (step['badge-en'] ?? step.badge) : step.badge,
+    }));
+});
 </script>
+
+<i18n lang="json">
+{
+    "th": { "step": "ขั้นที่ {n}" },
+    "en": { "step": "Step {n}" }
+}
+</i18n>
 
 <template>
     <div class="px-5 py-12">
@@ -30,7 +53,7 @@ const { data: steps } = await useAsyncData(
                 </div>
 
                 <div class="how-step__content text-left md:text-left">
-                    <p class="text-primary text-sm font-bold font-stretch-condensed">ขั้นที่ {{ index + 1 }}</p>
+                    <p class="text-primary text-sm font-bold font-stretch-condensed">{{ t('step', { n: index + 1 }) }}</p>
                     <h3 class="text-primary mt-1 font-bold font-stretch-condensed text-xl md:text-2xl leading-tight">
                         {{ step.title }}
                     </h3>

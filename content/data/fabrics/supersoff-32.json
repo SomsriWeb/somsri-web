@@ -10,11 +10,18 @@
     "nameTh": "ซูเปอร์ซอฟฟ์ 32",
     "nameEn": "Supersoff 32",
     "recommendForStyle": "เสื้อแบรนด์",
+    "recommendForStyle-en": "Brand apparel",
     "advantage": [
         "ผลิตจากใยฝ้ายธรรมชาติ",
         "ผิวสัมผัสนุ่มพิเศษ",
         "ไม่ขึ้นขนหลังซัก"
     ],
+    "advantage-en": [
+        "Made from natural cotton fibers",
+        "Extra-soft feel",
+        "No pilling after washing"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 12
 }

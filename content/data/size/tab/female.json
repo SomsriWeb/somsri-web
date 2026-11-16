@@ -1,7 +1,9 @@
 {
     "uid": "sizeFemale",
     "name": "ไซซ์ผู้หญิง",
+    "name-en": "Women's Sizes",
     "imageUrl": "/size/female.png",
     "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
+    "alt-en": "Women's T-shirt size chart",
     "order": 2
 }

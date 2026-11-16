@@ -3,7 +3,6 @@ title: รับผลิตเสื้อยูนิฟอร์มพนั�
 activeNavbar: true
 description: โรงงานรับผลิตเสื้อยูนิฟอร์มทุกประเภท เสื้อช็อป เสื้อนักศึกษา เสื้อพนักงาน พร้อมปักโลโก้ งานตัดเย็บเกรดพรีเมียม เนื้อผ้าดี ใส่ทน ดูแลรักษาง่าย มั่นใจคุณภาพระดับมาตรฐานสากล
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/655d0
 navbar: true
@@ -43,7 +42,7 @@ image: /uniform/cover-1600w.png
   รับประกันสินค้า 90 วัน
   มีสีเสื้อให้เลือกมากมาย สอบถามเราตอนนี้
 
-    ::::link-button{to="https://somsritshirt.com/polo"}
+    ::::link-button{to="/polo"}
     เสื้อโปโล
     ::::
   :::

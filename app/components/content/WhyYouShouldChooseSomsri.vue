@@ -4,17 +4,9 @@ import PerfectDesignModal from '../WhyYouShouldChooseSomsri/PerfectDesign.vue';
 import GuaranteeModal from '../WhyYouShouldChooseSomsri/Guarantee.vue';
 import FreeShippingModal from '../WhyYouShouldChooseSomsri/FreeShipping.vue';
 
-// PROPS
-interface Props {
-    /**
-     * ภาษาที่ต้องการแสดง
-     * @default th
-     */
-    lang?: 'th' | 'en';
-}
-withDefaults(defineProps<Props>(), {
-    lang: 'th',
-});
+// ภาษาตาม URL (/en/... = อังกฤษ)
+const { t, locale } = useI18n({ useScope: 'local' });
+const lang = locale.value as 'th' | 'en';
 
 // SLOTS
 interface Slots {
@@ -88,10 +80,17 @@ function openItemModal(uid: string) {
 }
 </script>
 
+<i18n lang="json">
+{
+    "th": { "title": "สั่งผลิตเสื้อกับสมศรีดียังไง?" },
+    "en": { "title": "Why Order Your Shirts from SomsriTshirt?" }
+}
+</i18n>
+
 <template>
     <div>
         <h2 class="text-primary text-xl sm:text-3xl lg:text-4xl leading-none font-bold mb-3 sm:mb-5">
-            <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">สั่งผลิตเสื้อกับสมศรีดียังไง?</slot>
+            <slot name="title" mdc-unwrap="h1 h2 h3 h4 h5 h6 p">{{ t('title') }}</slot>
         </h2>
 
         <ClientOnly>
@@ -113,7 +112,7 @@ function openItemModal(uid: string) {
                 variant="outline"
                 icon="lucide:chevron-left"
                 class="rounded-full min-w-fit! p-2! sm:p-2.5!"
-                aria-label="ก่อนหน้า"
+                :aria-label="$t('a11y.previous')"
                 @click="swiper.prev()"
             />
             <UButton
@@ -121,7 +120,7 @@ function openItemModal(uid: string) {
                 variant="outline"
                 icon="lucide:chevron-right"
                 class="rounded-full min-w-fit! p-2! sm:p-2.5!"
-                aria-label="ถัดไป"
+                :aria-label="$t('a11y.next')"
                 @click="swiper.next()"
             />
         </div>

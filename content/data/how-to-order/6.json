@@ -1,6 +1,8 @@
 {
     "title": "ผลิตจริง ติดตามได้ทุกขั้นตอน",
+    "title-en": "Real production, tracked at every step",
     "description": "ระบบ ERP ของเราอัปเดต progress ให้ real-time ไม่ต้องโทรถาม ไม่ต้องรอลุ้น รู้ว่างานอยู่ที่ไหนได้ตลอด",
+    "description-en": "Our ERP system updates progress in real time. No need to call and ask, no anxious waiting — you always know where your order is.",
     "image": "/how-to-order/steps/step-6.jpg",
     "order": 6
 }

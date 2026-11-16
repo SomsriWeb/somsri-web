@@ -38,7 +38,16 @@ interface Slots {
 defineSlots<Slots>();
 
 const maxScore = computed(() => comparison?.max ?? 3);
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "scoreLabel": "{score} จาก {max}" },
+    "en": { "scoreLabel": "{score} out of {max}" }
+}
+</i18n>
 
 <template>
     <section class="scroll-mt-20 py-10 md:py-16 lg:scroll-mt-24">
@@ -88,7 +97,7 @@ const maxScore = computed(() => comparison?.max ?? 3);
                             <th scope="row" class="px-4 py-3 text-left text-sm font-bold text-stone-900 md:text-base">{{ row.label }}</th>
                             <td v-for="(score, ci) in row.scores" :key="ci" class="px-4 py-3 text-center text-sm tracking-[0.15em]">
                                 <template v-if="score == null">–</template>
-                                <span v-else role="img" :aria-label="`${score} จาก ${maxScore}`">
+                                <span v-else role="img" :aria-label="t('scoreLabel', { score, max: maxScore })">
                                     <span class="text-primary">{{ '●'.repeat(score) }}</span>
                                     <span class="text-[#e7cbd2]">{{ '●'.repeat(Math.max(0, maxScore - score)) }}</span>
                                 </span>

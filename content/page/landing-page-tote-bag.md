@@ -3,7 +3,6 @@ title: รับผลิตกระเป๋า ราคาถูก โร�
 activeNavbar: true
 description: บริการรับผลิตกระเป๋าตามสั่งทุกรูปแบบ กระเป๋าผ้า พรีเมียมแคนวาส พร้อมสกรีนและปักโลโก้ งานประณีต เริ่มต้นชิ้นละ 55 บาท จัดส่งทั่วไทย มั่นใจคุณภาพระดับพรีเมียม
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/47216
 navbar: false

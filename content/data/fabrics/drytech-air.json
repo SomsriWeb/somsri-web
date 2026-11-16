@@ -9,12 +9,19 @@
     "nameTh": "ดรายเทค แอร์",
     "nameEn": "Drytech Air",
     "recommendForStyle": "เสื้อกีฬา กิจกรรมกลางแจ้ง",
+    "recommendForStyle-en": "Sportswear & outdoor activities",
     "advantage": [
         "ระบายอากาศ แห้งไว",
         "เบา สวมสบาย",
         "เหมาะอากาศร้อน"
     ],
+    "advantage-en": [
+        "Breathable and quick-drying",
+        "Light and comfortable",
+        "Ideal for hot weather"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 24,
     "gramWeight": 180
 }

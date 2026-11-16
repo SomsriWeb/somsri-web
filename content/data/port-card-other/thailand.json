@@ -1,5 +1,7 @@
 {
   "name": "ไทยแลนด์",
+  "name-en": "Thailand",
   "method": "รีดร้อน DFT",
+  "method-en": "DFT heat transfer",
   "image": "port/otherimg/thailand2-unsmushed.jpg"
 }

@@ -1,17 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-// PROPS
-interface Props {
-    /**
-     * ภาษาที่ต้องการแสดง
-     * @default th
-     */
-    lang?: 'th' | 'en';
-}
-withDefaults(defineProps<Props>(), {
-    lang: 'th',
-});
+// VARIABLE
+const { t } = useI18n({ useScope: 'local' });
 
 // SLOTS
 interface Slots {
@@ -28,32 +19,27 @@ const slides = [
     {
         image: '/wash/soft.png',
         title: 'Soft Wash',
-        subtitle: 'เทคนิคฟอกแบบละเอียด',
-        desc: 'ฟอกแบบควบคุมโทนอย่างละเอียดสีเนียนสม่ำเสมอ ไม่มีลายด่างชัด แทบดูไม่ออกว่าฟอก ให้ลุคมินิมอล สะอาด ดูดี',
+        key: 'soft',
     },
     {
         image: '/wash/rough.png',
         title: 'Rough Wash',
-        subtitle: 'เทคนิคฟอกแบบหยาบ',
-        desc: 'สีจะซีดแบบ "ไม่เนียน" มีรอยด่าง รอยถู ให้ความรู้สึกผ่านการใช้งานมาแล้ว เหมาะกับแบรนด์สายฮาร์ด สายลุย ลุคดิบ เท่ แบบสาย วินเทจจริงจัง',
+        key: 'rough',
     },
     {
         image: '/wash/crackle.png',
         title: 'Crackle Wash',
-        subtitle: 'เทคนิคฟอกแบบหินแตก',
-        desc: 'ลายเหมือน "พื้นดินแตกระแหง" สีจะแตกเป็นเส้นๆ ไม่สม่ำเสมอ เหมาะกับสายสตรีท เกิดจากจากฟอก + เคมี + การบิด/กดผ้าให้แตกตัว',
+        key: 'crackle',
     },
     {
         image: '/wash/snow.png',
         title: 'Snow Wash',
-        subtitle: 'เทคนิคฟอกแบบสโนว์',
-        desc: 'ลายกระจายเป็น "จุดขาวๆ คล้ายหิมะ" ใช้การพ่นสารฟอกแบบสุ่มลงบนผ้า สีพื้นยังอยู่ แต่มีจุดด่างทั่วตัว ดูแฟชั่น มีลูกเล่น แต่ไม่แรงเกิน',
+        key: 'snow',
     },
     {
         image: '/wash/garment.png',
         title: 'Garment Wash',
-        subtitle: 'เทคนิคฟอกแบบเก่า',
-        desc: 'สีซีดลงทั้งตัวแบบ "ธรรมชาติ" ไม่มีลายแตกชัด เน้นความนุ่มและสีเฟด ผ้านุ่ม ใส่สบาย ดูคลาสสิค',
+        key: 'garment',
     },
 ];
 
@@ -77,6 +63,55 @@ const handleClick = (index: number) => {
     }
 };
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "soft": {
+            "subtitle": "เทคนิคฟอกแบบละเอียด",
+            "desc": "ฟอกแบบควบคุมโทนอย่างละเอียดสีเนียนสม่ำเสมอ ไม่มีลายด่างชัด แทบดูไม่ออกว่าฟอก ให้ลุคมินิมอล สะอาด ดูดี"
+        },
+        "rough": {
+            "subtitle": "เทคนิคฟอกแบบหยาบ",
+            "desc": "สีจะซีดแบบ \"ไม่เนียน\" มีรอยด่าง รอยถู ให้ความรู้สึกผ่านการใช้งานมาแล้ว เหมาะกับแบรนด์สายฮาร์ด สายลุย ลุคดิบ เท่ แบบสาย วินเทจจริงจัง"
+        },
+        "crackle": {
+            "subtitle": "เทคนิคฟอกแบบหินแตก",
+            "desc": "ลายเหมือน \"พื้นดินแตกระแหง\" สีจะแตกเป็นเส้นๆ ไม่สม่ำเสมอ เหมาะกับสายสตรีท เกิดจากจากฟอก + เคมี + การบิด/กดผ้าให้แตกตัว"
+        },
+        "snow": {
+            "subtitle": "เทคนิคฟอกแบบสโนว์",
+            "desc": "ลายกระจายเป็น \"จุดขาวๆ คล้ายหิมะ\" ใช้การพ่นสารฟอกแบบสุ่มลงบนผ้า สีพื้นยังอยู่ แต่มีจุดด่างทั่วตัว ดูแฟชั่น มีลูกเล่น แต่ไม่แรงเกิน"
+        },
+        "garment": {
+            "subtitle": "เทคนิคฟอกแบบเก่า",
+            "desc": "สีซีดลงทั้งตัวแบบ \"ธรรมชาติ\" ไม่มีลายแตกชัด เน้นความนุ่มและสีเฟด ผ้านุ่ม ใส่สบาย ดูคลาสสิค"
+        }
+    },
+    "en": {
+        "soft": {
+            "subtitle": "Fine wash technique",
+            "desc": "A carefully controlled wash for smooth, even color with no obvious blotches — you can barely tell it has been washed. Clean, minimal and polished."
+        },
+        "rough": {
+            "subtitle": "Rough wash technique",
+            "desc": "Deliberately uneven fading with patches and rub marks for a worn-in, lived-in feel. Perfect for rugged, raw, edgy brands that are serious about vintage style."
+        },
+        "crackle": {
+            "subtitle": "Crackle wash technique",
+            "desc": "A cracked-earth pattern: the color breaks into irregular lines. Great for streetwear. Created by combining washing, chemicals and twisting/pressing the fabric so it cracks."
+        },
+        "snow": {
+            "subtitle": "Snow wash technique",
+            "desc": "Scattered white, snowflake-like specks made by randomly spraying bleaching agent onto the fabric. The base color stays, with speckles all over — fashionable and playful without being too loud."
+        },
+        "garment": {
+            "subtitle": "Classic garment wash technique",
+            "desc": "The whole garment fades naturally with no distinct crackle pattern. Focused on softness and a faded tone — soft fabric, comfortable to wear and classic-looking."
+        }
+    }
+}
+</i18n>
 
 <template>
     <div class="flex min-h-screen items-center justify-center">
@@ -109,8 +144,8 @@ const handleClick = (index: number) => {
                     class="text-white bg-black/60 backdrop-blur-sm opacity-0 text-left absolute rounded-lg transition-all duration-500 ease-in-out pointer-events-none z-10 top-[60px] lg:top-[100px] left-[20px] lg:left-[30px] w-[90%] lg:w-[80%] max-w-none lg:max-w-[65%] p-[15px] lg:p-5"
                     :class="[activeIndex === index ? 'translate-y-0 opacity-100 pointer-events-auto delay-[400ms]' : 'translate-y-10 delay-0']"
                 >
-                    <h4 class="m-0 mb-2.5 text-[18px] md:text-[24px] lg:text-[26px] text-white [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.subtitle }}</h4>
-                    <p class="m-0 p-0 text-[13px] md:text-[20px] leading-relaxed [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ slide.desc }}</p>
+                    <h4 class="m-0 mb-2.5 text-[18px] md:text-[24px] lg:text-[26px] text-white [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ t(`${slide.key}.subtitle`) }}</h4>
+                    <p class="m-0 p-0 text-[13px] md:text-[20px] leading-relaxed [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">{{ t(`${slide.key}.desc`) }}</p>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ image: /blog/img-why-plain-tshirts-are-popular.jpg
 
 บทความนี้จาก สมศรีมีเสื้อ จะพาไป**เจาะลึก 5 เหตุผลที่ทำให้เสื้อยืดสีพื้นกลายเป็นไอเทมขายดีตลอดกาล** พร้อมชี้เป้าวิธีเลือกเนื้อผ้า ทรงเสื้อ และเคล็ดลับสำหรับใครที่อยากเอาเสื้อยืดสีพื้นไปต่อยอดสร้างแบรนด์ของตัวเองให้ปังครับ
 
-::link-button{.text-center to="https://somsritshirt.com/tshirt"}
+::link-button{.text-center to="/tshirt"}
 สั่งผลิตเสื้อยืด
 ::
 
@@ -55,7 +55,7 @@ image: /blog/img-why-plain-tshirts-are-popular.jpg
 
 ### เลือกจากเนื้อผ้า (Cotton 100% vs Cotton ผสม Poly เลือกแบบไหนดี?)
 
-ถ้าเน้นความนุ่มและระบายอากาศ [ผ้า  Cotton 100%](https://somsritshirt.com/what-is-cotton/) คือคำตอบครับ แต่ถ้าอยากได้เสื้อที่ทนทาน ซักบ่อยแล้วทรงไม่เสีย ผ้าผสมอย่าง TC หรือ CVC จะตอบโจทย์กว่า จริงๆ แล้วไม่มีคำตอบที่ถูกที่สุด ขึ้นอยู่กับว่าลูกค้าเน้นอะไรมากกว่ากันครับ
+ถ้าเน้นความนุ่มและระบายอากาศ [ผ้า  Cotton 100%](/what-is-cotton) คือคำตอบครับ แต่ถ้าอยากได้เสื้อที่ทนทาน ซักบ่อยแล้วทรงไม่เสีย ผ้าผสมอย่าง TC หรือ CVC จะตอบโจทย์กว่า จริงๆ แล้วไม่มีคำตอบที่ถูกที่สุด ขึ้นอยู่กับว่าลูกค้าเน้นอะไรมากกว่ากันครับ
 
 ### เลือกจากทรงเสื้อ (Regular Fit / Oversized / Slim Fit)
 
@@ -92,7 +92,7 @@ image: /blog/img-why-plain-tshirts-are-popular.jpg
 - Line OA: @somsritshirt
 - Facebook: สมศรีมีเสื้อ
 - โทร: 02-430-0678
-- เว็บไซต์: [somsritshirt.com](http://somsritshirt.com)
+- เว็บไซต์: [somsritshirt.com](/)
 
 ## FAQ คำถามที่พบบ่อย
 

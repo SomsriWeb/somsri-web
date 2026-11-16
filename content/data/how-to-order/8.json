@@ -1,7 +1,10 @@
 {
     "title": "ของถึงมือ และยังไม่จบ",
+    "title-en": "Delivered — and we're still with you",
     "description": "รับของแล้วยังมีเรายืน 90 วัน หากมีอะไรไม่ตรงแบบจากการผลิตเราแก้ให้ทันที ไม่มีข้อแม้",
+    "description-en": "After delivery, we stand behind your order for 90 days. If anything doesn't match the approved design due to production, we fix it right away, no strings attached.",
     "image": "/how-to-order/steps/step-8.jpg",
     "badge": "รับประกัน 90 วัน",
+    "badge-en": "90-day guarantee",
     "order": 8
 }

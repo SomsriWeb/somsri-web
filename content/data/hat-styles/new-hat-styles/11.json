@@ -1,6 +1,7 @@
 {
     "image": "/landing-page-real-hat/hat-style-11.png",
     "label": "หมวกเดินป่า",
+    "label-en": "Boonie Hat",
     "priceperunit" : [130, 125, 120, 114],
     "order": 11
 }

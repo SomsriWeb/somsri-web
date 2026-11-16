@@ -4,7 +4,6 @@ activeNavbar: false
 contentSpacing: true
 description: โรงงานผลิตเสื้อครบวงจร รับผลิตเสื้อ จำหน่ายเสื้อ พร้อมปักและสกรีนโลโก้ ทำแบรนด์ตัวเอง ออกแบบฟรี มีเนื้อผ้าคุณภาพพรีเมียมหลากหลาย พร้อมรับประกันงาน 90 วัน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/3d975
 navbar: true
