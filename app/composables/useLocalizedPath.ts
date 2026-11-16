@@ -4,7 +4,9 @@
  * รองรับ /polo#fabric, /price?type=x และ /polo/ (ตัด / ท้ายออก)
  */
 export async function useLocalizedPath() {
-    const { locale } = useI18n();
+    // global scope: component ที่มีบล็อก <i18n> เรียก useI18n({ useScope: 'local' }) อยู่แล้ว
+    // ถ้าเรียก useI18n() เปล่าๆ ซ้ำ vue-i18n จะนับเป็น local scope ครั้งที่สองและเตือน
+    const { locale } = useI18n({ useScope: 'global' });
     const { data } = await useAsyncData('content-en-paths', () => queryCollection('contentEn').select('path').all());
     const enPaths = computed(() => new Set((data.value || []).map((doc) => doc.path)));
 
