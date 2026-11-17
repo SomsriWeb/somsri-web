@@ -32,7 +32,8 @@ onUnmounted(() => {
 <template>
     <div class="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
         <NuxtLink :to="lineLink" external target="_blank" rel="noopener noreferrer" class="leading-none" aria-label="ติดต่อทาง LINE">
-            <UButton icon="fa6-brands:line" size="sm" square class="rounded-full min-w-0! bg-[#06C755] text-white hover:bg-[#05b04c]" />
+            <UButton icon="fa6-brands:line" size="lg" square class="!w-14 !h-14 rounded-full min-w-0! bg-[#06C755] text-white hover:bg-[#05b04c]"
+            />
         </NuxtLink>
 
         <UButton v-if="showButton" icon="i-lucide-arrow-up" size="sm" square class="rounded-full min-w-0!" aria-label="Back to top" @click="scrollToTop" />
