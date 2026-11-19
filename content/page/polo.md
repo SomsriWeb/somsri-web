@@ -1,29 +1,32 @@
 ---
 title: รับผลิตเสื้อโปโล เสื้อยูนิฟอร์ม พร้อมปักสกรีน | รับประกัน 90 วัน
 activeNavbar: true
+contentSpacing: true
 description: โรงงานรับผลิตเสื้อโปโล เสื้อองค์กร เสื้อพนักงาน ครบวงจร เนื้อผ้าพรีเมียม สวมใส่สบาย บริการปัก-สกรีนโลโก้คมชัด ออกแบบได้ตามใจ ราคาถูก มั่นใจรับประกัน 90 วัน ประเมินราคาฟรี
 footer: true
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/c0087
 navbar: true
+noindex: false
 เพิ่ม script ใน head:
   - type: application/ld+json
     content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตเสื้อโปโล เสื้อทีม ยูนิฟอร์มพนักงาน พร้อมปัก-สกรีน",   "image": [         "https://somsritshirt.com/_ipx/f_webp/product/polo.jpg",     "https://somsritshirt.com/_ipx/f_webp/product/band.jpg"   ],   "description": "บริการรับผลิตเสื้อโปโลและเสื้อคอปกครบวงจร เลือกเนื้อผ้าได้หลากหลาย พร้อมบริการปักและสกรีนโลโก้ตามสั่ง ราคาโรงงาน คุณภาพพรีเมียม",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "AggregateOffer",     "url": "https://somsritshirt.com/polo",     "priceCurrency": "THB",     "lowPrice": "120",     "highPrice": "235"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.87",     "bestRating": "5",     "worstRating": "1",     "ratingCount": "142"   },   "mainEntityOfPage": {     "@type": "Service",     "serviceType": "Custom Apparel Manufacturing",     "provider": {       "@type": "LocalBusiness",       "name": "สมศรีมีเสื้อ",       "address": {         "@type": "PostalAddress",         "streetAddress": "บริษัท สมศรีการ์เมนท์ จำกัด 1033/6 ถนนเพชรเกษม 106 แขวงหนองค้างพลู",         "addressLocality": "เขตหนองแขม",         "addressRegion": "กรุงเทพมหานคร",         "postalCode": "10160",         "addressCountry": "TH"       }     }   } }'
   - type: application/ld+json
     content: '{   "@context": "https://schema.org/",   "@type": "FAQPage",   "mainEntity": [     {       "@type": "Question",       "name": "สั่งทำเสื้อโปโลบริษัทมีจำนวนขั้นต่ำกี่ตัว?",       "acceptedAnswer": {         "@type": "Answer",         "text": "โดยปกติที่สมศรีมีเสื้อมีจำนวนขั้นต่ำเริ่มต้นที่ 150 ตัวต่อแบบครับ แต่หากลูกค้าต้องการสั่งจำนวนน้อยกว่านี้ สามารถปรึกษาทีมงานเพื่อประเมินรูปแบบงานเป็นกรณีพิเศษได้"       }     },     {       "@type": "Question",       "name": "ระยะเวลาในการผลิตใช้เวลานานเท่าไหร่?",       "acceptedAnswer": {         "@type": "Answer",         "text": "มาตรฐานการผลิตอยู่ที่ประมาณ 14-21 วันทำการหลังจากสรุปแบบและมัดจำเรียบร้อยแล้ว ทั้งนี้ขึ้นอยู่กับความยากง่ายของดีไซน์และคิวงานในช่วงนั้นๆ หากเป็นงานด่วนสามารถแจ้งทีมงานเพื่อตรวจสอบตารางเวลาได้"       }     },     {       "@type": "Question",       "name": "มีเนื้อผ้าแบบไหนให้เลือกบ้างและผ้าชนิดไหนไม่ขึ้นขน?",       "acceptedAnswer": {         "@type": "Answer",         "text": "สมศรีมีเสื้อมีเนื้อผ้าหลากหลาย ตั้งแต่ Cotton 100% ที่เน้นความนุ่มสบาย, TK/TC ที่เน้นความคุ้มค่า ไปจนถึง ผ้า Micro CVC เกรดพรีเมียมที่ระบายอากาศได้ดีเยี่ยมและคงรูปสวย ไม่ขึ้นขนหลังซัก"       }     },     {       "@type": "Question",       "name": "สามารถออกแบบเสื้อให้ก่อนสั่งผลิตจริงได้หรือไม่?",       "acceptedAnswer": {         "@type": "Answer",         "text": "สามารถทำได้ ที่สมศรีมีเสื้อมีบริการขึ้นแบบจำลอง (Mock-up) ให้ลูกค้าตรวจสอบดีไซน์ ตำแหน่งโลโก้ และโทนสีก่อนเริ่มการผลิตจริง เพื่อให้มั่นใจว่าผลงานจะออกมาตรงตามอัตลักษณ์ขององค์กรที่สุด"       }     },     {       "@type": "Question",       "name": "มีบริการจัดส่งต่างจังหวัดไหม คิดค่าบริการอย่างไร?",       "acceptedAnswer": {         "@type": "Answer",         "text": "สมศรีมีเสื้อมีบริการจัดส่งทั่วประเทศ สำหรับในกรุงเทพส่งฟรี และสำหรับต่างจังหวัดใช้ขนส่งเอกชนที่รวดเร็วและปลอดภัย ค่าบริการจัดส่งจะขึ้นอยู่กับน้ำหนักและจำนวนของสินค้า (บางโปรโมชั่นอาจมีบริการจัดส่งฟรี กรุณาสอบถามเพิ่มเติม)"       }     }   ] }'
 ---
+
 ::hero-page
 ---
+alt: เสื้อโปโลสั่งทำ
 image: /polo/Banner-Polo-horizontal.png
 imageMobile: /polo/Banner-Polo-mobile.png
-alt: เสื้อโปโลสั่งทำ
 suitForLabel: ไว้วางใจโดย
 ---
 #eyebrow
 รับผลิตเสื้อโปโล — โรงงานผลิตเสื้อโปโลครบวงจร
 
 #title
-เสื้อโปโลที่ดี\
+เสื้อโปโลที่ดี :br
 พูดแทน
 
 #titleAccent
@@ -35,15 +38,15 @@ suitForLabel: ไว้วางใจโดย
 #suitFor
 PTT · Central · Mr.DIY · BYD · Sompo · Flash Express และองค์กรชั้นนำอีกกว่า 10,000 แห่ง
 
-:::sport-btn
-:::
+:sport-btn
 ::
 
-:::stats-dashed-row
+::stats-dashed-row
 #item-1
 **10,000+**
 
 องค์กรที่ไว้วางใจ
+
 #item-2
 **4 ชนิด**
 
@@ -58,21 +61,24 @@ PTT · Central · Mr.DIY · BYD · Sompo · Flash Express และองค์�
 **90 วัน**
 
 รับประกันคุณภาพ
-:::
+::
 
-:::somsri-produce-for{rows="1"}
+::somsri-produce-for
+---
+rows: "1"
+---
 #title
 ## องค์กรชั้นนำที่เลือกสมศรีผลิตเสื้อโปโล
-:::
+::
 
 ::hero-split-layout
 ---
-image: /polo/polo-model4.png
-alt: ตัวอย่างเสื้อโปโลพนักงานองค์กร
 screenHeight: false
+showCta: false
+alt: ตัวอย่างเสื้อโปโลพนักงานองค์กร
+image: /polo/polo-model4.png
 imageAnchor: center
 titleAsTag: h2
-showCta: false
 ---
 #secondary-title
 สิ่งที่เราเชื่อ
@@ -84,29 +90,31 @@ showCta: false
 คือสิ่งที่ลูกค้าเห็นก่อนที่จะได้ยินชื่อบริษัท
 
 #description
-เราจึงใส่ใจทุกรายละเอียดในการรับผลิตเสื้อโปโล  
+เราจึงใส่ใจทุกรายละเอียดในการรับผลิตเสื้อโปโล :br
 ตั้งแต่ความนุ่มของผ้าไปจนถึงความคมของเส้นปัก
 
 #secondary-description
-เพราะเสื้อโปโลที่ดีไม่ได้มีแค่ใส่สบาย  
+เพราะเสื้อโปโลที่ดีไม่ได้มีแค่ใส่สบาย :br
 — มันทำให้ทีมดูเป็นมืออาชีพโดยไม่ต้องพูดสักคำ
-
 ::
 
-:::sport-fabric-grid{id="fabric"}
+::sport-fabric-grid
+---
+id: fabric
+---
 #eyebrow
 เนื้อผ้าเสื้อโปโล
 
 #title
-เสื้อโปโลเหมือนกัน\
-แต่ผ้าต่างกัน\
+เสื้อโปโลเหมือนกัน :br
+แต่ผ้าต่างกัน :br
 ความรู้สึกต่างกันทั้งวัน
 
 #description
 โรงงานผลิตเสื้อโปโลทั่วไปมีผ้าให้เลือก เราใช้ผ้าที่เหมาะ — แต่ละชนิดออกแบบมาเพื่อการใช้งานที่ต่างกัน
 
 #item-1-image
-:prose-img{src="/polo/fabrics/TC.jpg" alt="ผ้า TC Lacoste" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผ้า TC Lacoste" src="/polo/fabrics/TC.jpg"}
 
 #item-1-tag
 ยอดนิยมองค์กร
@@ -123,7 +131,7 @@ TC Lacoste
 - เสื้อโปโลบริษัท
 
 #item-2-image
-:prose-img{src="/polo/fabrics/dry-tech.jpg" alt="ผ้า Dry Tech" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผ้า Dry Tech" src="/polo/fabrics/dry-tech.jpg"}
 
 #item-2-tag
 ระบายอากาศสูงสุด
@@ -140,7 +148,7 @@ Dry Tech
 - กลางแจ้ง
 
 #item-3-image
-:prose-img{src="/polo/fabrics/dry-feel.jpg" alt="ผ้า Dry Feel" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผ้า Dry Feel" src="/polo/fabrics/dry-feel.jpg"}
 
 #item-3-tag
 BUSINESS CLASS
@@ -157,7 +165,7 @@ Dry Feel
 - ภาพลักษณ์องค์กร
 
 #item-4-image
-:prose-img{src="/polo/fabrics/juti-micro.jpg" alt="ผ้า Micro Juti" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผ้า Micro Juti" src="/polo/fabrics/juti-micro.jpg"}
 
 #item-4-tag
 ลายพิมพ์คมที่สุด
@@ -172,21 +180,24 @@ Micro Juti
 - เสื้อทีมงาน
 - Sublimation
 - งานพิมพ์สี
-:::
+::
 
-:::bag-why-us-grid{items="4"}
+::bag-why-us-grid
+---
+items: "4"
+---
 #eyebrow
 ผลงานรับผลิตเสื้อโปโลองค์กร
 
 #title
-องค์กรชั้นนำ\
+องค์กรชั้นนำ :br
 เลือกสมศรีผลิตเสื้อโปโล
 
 #description
-ไม่ใช่แค่ชุดยูนิฟอร์ม — นี่คือองค์กรที่เลือกสมศรีให้ผลิตเสื้อ พร้อมรายละเอียดที่มากกว่า
+ไม่ใช่แค่ชุดยูนิฟอร์ม — นี่คือองค์กรที่เลือกสมศรีให้ผลิตเสื้อ พร้อมรายละเอียดที่มากกว่า [ดูรายละเอียดสั่งทำเสื้อโปโล ขั้นต่ำ 20 ตัว](https://somsritshirt.com/custom-polo-shirt)
 
 #item-1-image
-:prose-img{src="/polo/img-polo-ptt.jpg" alt="ผลงานเสื้อโปโลบริษัท ปตท." .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผลงานเสื้อโปโลบริษัท ปตท." src="/polo/img-polo-ptt.jpg"}
 
 #item-1-tag
 JUTI MICRO + SUBLIMATION
@@ -198,7 +209,7 @@ JUTI MICRO + SUBLIMATION
 เสื้อโปโล Juti Micro ระบายอากาศได้ดี พร้อมงานพิมพ์ลาย Sublimation สีคมชัด เหมาะสำหรับทีมภาคสนามและงานองค์กร
 
 #item-2-image
-:prose-img{src="/polo/img-polo-central.jpg" alt="ผลงานเสื้อโปโล Central Retail" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผลงานเสื้อโปโล Central Retail" src="/polo/img-polo-central.jpg"}
 
 #item-2-tag
 DRY TECH + สกรีนมาตรฐาน
@@ -210,7 +221,7 @@ DRY TECH + สกรีนมาตรฐาน
 เสื้อโปโล Dry Tech ระบายอากาศสูง ใส่สบายตลอดวัน พร้อมงานสกรีนโลโก้คมชัด สะท้อนภาพลักษณ์องค์กรชั้นนำ
 
 #item-3-image
-:prose-img{src="/polo/img-polo-diy.jpg" alt="ผลงานเสื้อโปโล MR.D.I.Y." .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผลงานเสื้อโปโล MR.D.I.Y." src="/polo/img-polo-diy.jpg"}
 
 #item-3-tag
 MICRO SPORT + SUBLIMATION
@@ -222,7 +233,7 @@ MICRO SPORT + SUBLIMATION
 เสื้อโปโล Micro Sport น้ำหนักเบา คล่องตัว ผสานงานพิมพ์ลาย Sublimation เหมาะกับพนักงานที่ต้องเคลื่อนไหวตลอดวัน
 
 #item-4-image
-:prose-img{src="/polo/img-polo-sompo.jpg" alt="ผลงานเสื้อโปโล Sompo Insurance" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ผลงานเสื้อโปโล Sompo Insurance" src="/polo/img-polo-sompo.jpg"}
 
 #item-4-tag
 JUTI MICRO + ปักโลโก้
@@ -232,18 +243,18 @@ JUTI MICRO + ปักโลโก้
 
 #item-4-description
 เสื้อโปโล Juti Micro ทรงสวย ดูแลง่าย พร้อมงานปักโลโก้ประณีต ช่วยเสริมภาพลักษณ์ความเป็นมืออาชีพขององค์กร
-:::
+::
 
 ::bag-why-us-grid
 #eyebrow
 ทำไมต้องสมศรี
 
 #title
-โรงงานผลิตเสื้อโปโล\
+โรงงานผลิตเสื้อโปโล :br
 ที่คุณไม่ต้องโทรถามสถานะ
 
 #item-1-image
-:prose-img{src="/polo/whyus/image62.png" alt="ติดตามงานผลิตเสื้อโปโลได้แบบ real-time" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ติดตามงานผลิตเสื้อโปโลได้แบบ real-time" src="/polo/whyus/image62.png"}
 
 #item-1-title
 ติดตามงานได้ [real-time]{.text-primary}
@@ -252,7 +263,7 @@ JUTI MICRO + ปักโลโก้
 ระบบ ERP อัปเดต progress ทุกขั้นตอน การผลิตเสื้อโปโล ไม่ต้องโทรถาม ไม่ต้องรอ
 
 #item-2-image
-:prose-img{src="/polo/whyus/warranty-polo.png" alt="รับประกันงานผลิตเสื้อโปโล 90 วัน" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="รับประกันงานผลิตเสื้อโปโล 90 วัน" src="/polo/whyus/warranty-polo.png"}
 
 #item-2-title
 รับประกัน [90 วัน]{.text-primary}
@@ -261,53 +272,52 @@ JUTI MICRO + ปักโลโก้
 ผิดพลาดจากการผลิตเราแก้ให้ ไม่มีข้อแม้ องค์กรของคุณไม่ต้องรับความเสี่ยงคนเดียว
 
 #item-3-image
-:prose-img{src="/polo/whyus/Artwork-polo.png" alt="ขึ้นตัวอย่างเสื้อโปโลฟรีก่อนผลิต" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ขึ้นตัวอย่างเสื้อโปโลฟรีก่อนผลิต" src="/polo/whyus/Artwork-polo.png"}
 
 #item-3-title
-ขึ้นตัวอย่าง[ฟรี]{.text-primary}ก่อนผลิต
+ขึ้นตัวอย่าง [ฟรี]{.text-primary} ก่อนผลิต
 
 #item-3-description
 เห็นเสื้อโปโลจริงก่อนอนุมัติ ไม่มีเซอร์ไพรส์เมื่อของมาถึง
 
 #item-4-image
-:prose-img{src="/polo/whyus/logo-polo.png" alt="ออกแบบโลโก้ให้ฟรี" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ออกแบบโลโก้ให้ฟรี" src="/polo/whyus/logo-polo.png"}
 
 #item-4-title
-ออกแบบโลโก้ให้[ฟรี]{.text-primary}
+ออกแบบโลโก้ให้ [ฟรี]{.text-primary}
 
 #item-4-description
 ทีม Artwork ช่วยจัด layout โลโก้ให้เหมาะกับตำแหน่งปักและสกรีน ไม่คิดค่าใช้จ่ายเพิ่ม
 
 #item-5-image
-:prose-img{src="/polo/whyus/image30.png" alt="ส่งเสื้อโปโลฟรีในกรุงเทพ" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ส่งเสื้อโปโลฟรีในกรุงเทพ" src="/polo/whyus/image30.png"}
 
 #item-5-title
-ส่ง[ฟรี]{.text-primary}ในกรุงเทพ
+ส่ง [ฟรี]{.text-primary} ในกรุงเทพ
 
 #item-5-description
 จัดส่งทั่วประเทศ ส่งฟรีในกรุงเทพ ต่างจังหวัดใช้ขนส่งเอกชนรวดเร็วปลอดภัย
 
 #item-6-image
-:prose-img{src="/polo/whyus/Recycle-polo.png" alt="ทุกออเดอร์ผลิตเสื้อโปโลช่วยโลก" .h-full .w-full .object-cover}
+:prose-img{.h-full.w-full.object-cover alt="ทุกออเดอร์ผลิตเสื้อโปโลช่วยโลก" src="/polo/whyus/Recycle-polo.png"}
 
 #item-6-title
-ทุกออเดอร์[ช่วยโลก]{.text-primary}
+ทุกออเดอร์ [ช่วยโลก]{.text-primary}
 
 #item-6-description
 เศษผ้าเข้าระบบ recycle ทุก 1 เสื้อโปโล ลดน้ำ 110 ลิตร เหมาะกับองค์กรที่ใส่ใจ ESG
 ::
 
-:::section-intro
+::section-intro
 #eyebrow
 ขั้นตอนการสั่งผลิตเสื้อโปโล
 
 #title
-สั่งผลิตเสื้อโปโล \
+สั่งผลิตเสื้อโปโล :br
 ง่ายกว่าที่คิด
-:::
+::
 
-:::how-to-order-timeline
-:::
+:how-to-order-timeline
 
 ::faq-grid
 #eyebrow
@@ -349,14 +359,14 @@ JUTI MICRO + ปักโลโก้
 
 ::hero-split-layout
 ---
-image: /polo/polo-all.png
-alt: รับผลิตเสื้อโปโลองค์กร
+compact: true
 screenHeight: false
+showCta: false
+alt: รับผลิตเสื้อโปโลองค์กร
+image: /polo/polo-all.png
 imageAnchor: center
 imageFit: contain
 titleAsTag: h2
-compact: true
-showCta: false
 ---
 #secondary-title
 ความรู้เรื่องการผลิตเสื้อโปโล
@@ -371,19 +381,17 @@ showCta: false
 การรับผลิตเสื้อโปโลสำหรับองค์กรนั้นไม่ใช่แค่เรื่องของราคา สิ่งที่ทำให้เสื้อโปโลองค์กรดีหรือแย่คือผ้าที่เลือก เทคนิคการปักสกรีน และความใส่ใจในรายละเอียดของโรงงานผลิตเสื้อโปโลที่คุณเลือก
 
 #secondary-description
-**เสื้อโปโลพนักงานที่ดีควรเลือกผ้าให้ตรงกับสภาพแวดล้อมการทำงาน**  
-พนักงานออฟฟิศเหมาะกับผ้า TC Lacoste หรือ Dry Feel ที่ดูเรียบร้อย ไม่ยับ ส่วนพนักงานที่ทำงานกลางแจ้งหรือในร้านอาหารเหมาะกับ Dry Tech หรือ Micro Sport ที่ระบายอากาศได้ดีกว่า  
-<br>
-[สมศรีมีเสื้อเป็นโรงงานรับผลิตเสื้อโปโลที่ผลิตให้องค์กรชั้นนำมาแล้วกว่า 10,000 แห่ง]{.text-primary} ทั้ง PTT, Central, Mr.DIY, BYD และ Sompo Insurance ด้วยระบบ ERP ที่พัฒนาเอง ลูกค้าติดตามการผลิตเสื้อโปโลได้ทุกขั้นตอน real-time และรับประกันคุณภาพ 90 วัน [ดูรายละเอียดสั่งทำเสื้อโปโล ขั้นต่ำ 20 ตัว](/custom-polo-shirt)
+**เสื้อโปโลพนักงานที่ดีควรเลือกผ้าให้ตรงกับสภาพแวดล้อมการทำงาน**:br
+พนักงานออฟฟิศเหมาะกับผ้า TC Lacoste หรือ Dry Feel ที่ดูเรียบร้อย ไม่ยับ ส่วนพนักงานที่ทำงานกลางแจ้งหรือในร้านอาหารเหมาะกับ Dry Tech หรือ Micro Sport ที่ระบายอากาศได้ดีกว่า :br:br[สมศรีมีเสื้อเป็นโรงงานรับผลิตเสื้อโปโลที่ผลิตให้องค์กรชั้นนำมาแล้วกว่า 10,000 แห่ง]{.text-primary} ทั้ง PTT, Central, Mr.DIY, BYD และ Sompo Insurance ด้วยระบบ ERP ที่พัฒนาเอง ลูกค้าติดตามการผลิตเสื้อโปโลได้ทุกขั้นตอน real-time และรับประกันคุณภาพ 90 วัน
 ::
 
 ::sport-final-cta
 ---
-image: /polo/model4.png
 alt: เสื้อกีฬาสมศรี
+image: /polo/model4.png
 ---
 #title
-พร้อมให้ทีมของคุณ <br>
+พร้อมให้ทีมของคุณ :br
 ดูเป็นมืออาชีพไหม?
 
 #subtitle
