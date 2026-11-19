@@ -117,6 +117,7 @@ export default defineNuxtConfig({
         sitemaps: {
             'page-sitemap': {
                 sources: ['/api/__sitemap__/page'],
+                urls: ['/boxy-tshirt'],
             },
             'post-sitemap': {
                 sources: ['/api/__sitemap__/blog'],
