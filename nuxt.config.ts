@@ -111,13 +111,13 @@ export default defineNuxtConfig({
         // ชื่อเว็บแยกตามภาษา: nuxtSiteConfig.name ใน i18n/locales/*.json
     },
     sitemap: {
+        exclude: ['/landing-page-boxy-tshirt'],
         // hreflang กำหนดเองใน server/api/__sitemap__/page.ts (เฉพาะหน้าที่มีสองภาษา)
         autoI18n: false,
         sitemapsPathPrefix: '/',
         sitemaps: {
             'page-sitemap': {
                 sources: ['/api/__sitemap__/page'],
-                urls: ['/boxy-tshirt'],
             },
             'post-sitemap': {
                 sources: ['/api/__sitemap__/blog'],
