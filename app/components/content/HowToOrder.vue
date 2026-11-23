@@ -5,8 +5,18 @@ interface Props {
 }
 const { titleAsTag = 'h2', titleCenter = false } = defineProps<Props>();
 
-const { data } = await useAsyncData('how-to-order', () =>
+const { t, locale } = useI18n({ useScope: 'local' });
+
+const { data: rawData } = await useAsyncData('how-to-order', () =>
     queryCollection('howToOrder').order('order', 'ASC').all(),
+);
+
+// หน้าอังกฤษ: ใช้ฟิลด์ *-en ถ้ามี
+const data = computed(() =>
+    (rawData.value || []).map((item) => ({
+        ...item,
+        description: locale.value === 'en' ? (item['description-en'] ?? item.description) : item.description,
+    })),
 );
 
 const rootRef = ref<HTMLElement | null>(null);
@@ -118,10 +128,23 @@ useScrollTriggerRef(rootRef, ({ gsap, el }) => {
 });
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "title": "ขั้นตอนการสั่งผลิต",
+        "qcPack": "**ทางเรามีบริการ QC & Pack อย่างดี รับประกันคุณภาพสูง**"
+    },
+    "en": {
+        "title": "How to Order",
+        "qcPack": "Every order is carefully QC'd and packed: quality guaranteed"
+    }
+}
+</i18n>
+
 <template>
     <div>
         <component :is="titleAsTag" class="font-bold text-[2rem] md:text-[2.5rem] leading-none text-primary font-stretch-condensed" :class="{ 'text-center': titleCenter }">
-            <slot name="title" mdc-unwrap="p">ขั้นตอนการสั่งผลิต</slot>
+            <slot name="title" mdc-unwrap="p">{{ t('title') }}</slot>
         </component>
 
         <div ref="rootRef" class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12 mt-8">
@@ -151,7 +174,7 @@ useScrollTriggerRef(rootRef, ({ gsap, el }) => {
         </div>
 
         <ProseP class="text-primary! font-stretch-condensed font-bold! text-center text-xl mt-10">
-            **ทางเรามีบริการ QC & Pack อย่างดี รับประกันคุณภาพสูง**
+            {{ t('qcPack') }}
         </ProseP>
     </div>
 </template>

@@ -3,7 +3,6 @@ title: รับผลิตหมวกครบวงจร ราคาถู
 activeNavbar: true
 description: บริการรับผลิตหมวกทุกรูปแบบ หมวกแก็ป หมวกบัคเก็ต หมวกลูกฟูก หนังกลับ พร้อมปักและสกรีนโลโก้ การันตีคุณภาพงานระดับพรีเมี่ยม จัดส่งรวดเร็วทั่วไทย ประเมินราคาฟรี
 footer: false
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/96099
 navbar: false

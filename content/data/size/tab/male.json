@@ -1,7 +1,9 @@
 {
     "uid": "sizeMale",
     "name": "ไซซ์ผู้ชาย",
+    "name-en": "Men's Sizes",
     "imageUrl": "/size/male.png",
     "alt": "เรทราคาสั่งทำแก้วรวมสกรีน",
+    "alt-en": "Men's T-shirt size chart",
     "order": 1
 }

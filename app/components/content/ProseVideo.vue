@@ -46,6 +46,8 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const config = useRuntimeConfig();
+const { t } = useI18n({ useScope: 'local' });
+const { t: tGlobal } = useI18n({ useScope: 'global' });
 const siteUrl = (config.public as any)?.site?.url || 'https://somsritshirt.com';
 
 declare global {
@@ -319,7 +321,7 @@ const videoStructuredData = computed(() => {
         embedUrl: inactiveEmbedUrl.value,
         publisher: {
             '@type': 'Organization',
-            name: 'สมศรีมีเสื้อ',
+            name: tGlobal('brand'),
             logo: {
                 '@type': 'ImageObject',
                 url: `${siteUrl}/og.jpg`,
@@ -342,6 +344,17 @@ useHead(() => {
 });
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "videoLabel": "วิดีโอ: {title}"
+    },
+    "en": {
+        "videoLabel": "Video: {title}"
+    }
+}
+</i18n>
+
 <template>
     <figure
         class="prose-video-wrapper relative h-full overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
@@ -358,7 +371,7 @@ useHead(() => {
             class="absolute top-0 left-0 w-full h-full"
             :src="iframeSrc"
             :title="props.title"
-            :aria-label="`วิดีโอ: ${props.title}`"
+            :aria-label="t('videoLabel', { title: props.title })"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             :referrerpolicy="props.platform === 'facebook' ? undefined : 'strict-origin-when-cross-origin'"

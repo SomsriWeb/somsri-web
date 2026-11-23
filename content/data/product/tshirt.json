@@ -3,6 +3,7 @@
     "name-en": "T-Shirts",
     "image": "/product/tshirt.jpg",
     "alt": "เราคือ โรงงานผลิตเสื้อ รับทำเสื้อยืด เสื้อโปโล",
+    "alt-en": "Custom T-shirt and polo shirt manufacturer",
     "url": "/tshirt",
     "featured": true,
     "order": 1

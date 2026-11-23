@@ -8,11 +8,18 @@
     "nameTh": "คอตตอนกันน้ำ",
     "nameEn": "Cotton Waterproof",
     "recommendForStyle": "เสื้อผ้าแฟชั่น ",
+    "recommendForStyle-en": "Fashion apparel",
     "advantage": [
         "ใส่สบาย ลุคธรรมชาติ",
         "ระบายอากาศดีกว่า nano ล้วน",
         "สัมผัสความนุ่มแบบ cotton   กันน้ำ"
     ],
+    "advantage-en": [
+        "Comfortable with a natural look",
+        "More breathable than pure nano fabric",
+        "Soft cotton feel, water-repellent"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 4
 }

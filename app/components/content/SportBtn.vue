@@ -7,6 +7,8 @@ const props = withDefaults(defineProps<Props>(), {
 	targetId: 'fabric',
 });
 
+const { t } = useI18n({ useScope: 'local' });
+
 function scrollToFabric(e: MouseEvent) {
 	const element = document.getElementById(props.targetId);
 	if (element) {
@@ -17,6 +19,13 @@ function scrollToFabric(e: MouseEvent) {
 }
 </script>
 
+<i18n lang="json">
+{
+	"th": { "consult": "ปรึกษาฟรี", "fabricSamples": "ดูตัวอย่างผ้า" },
+	"en": { "consult": "Free Consultation", "fabricSamples": "View Fabric Samples" }
+}
+</i18n>
+
 <template>
 	<div class="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-start sm:gap-4">
 		<!-- ปุ่มติดต่อ (solid) -->
@@ -26,7 +35,7 @@ function scrollToFabric(e: MouseEvent) {
 				class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary/90 sm:w-auto sm:px-6"
 				size="md"
 			>
-				ปรึกษาฟรี
+				{{ t('consult') }}
 			</UButton>
 		</LineLink>
 
@@ -38,7 +47,7 @@ function scrollToFabric(e: MouseEvent) {
 			size="md"
 			@click="scrollToFabric"
 		>
-			ดูตัวอย่างผ้า
+			{{ t('fabricSamples') }}
 		</UButton>
 	</div>
 </template>

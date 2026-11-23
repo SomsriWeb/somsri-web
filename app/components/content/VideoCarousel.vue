@@ -31,7 +31,9 @@ const props = withDefaults(defineProps<Props>(), {
     containerClass: 'w-full max-w-full',
 });
 
-const asyncDataKey = () => (props.category ? `video-carousel-${props.category}` : 'video-carousel-idle');
+const { locale } = useI18n();
+
+const asyncDataKey = () => (props.category ? `video-carousel-${props.category}-${locale.value}` : 'video-carousel-idle');
 
 const { data: contentItems } = useAsyncData(
     asyncDataKey,
@@ -40,7 +42,7 @@ const { data: contentItems } = useAsyncData(
         const videos = await queryCollection('mediaVideos').where('category', '=', props.category).order('order', 'ASC').all();
         return videos.map((v) => ({
             videoId: v.videoId,
-            title: v.title,
+            title: locale.value === 'en' ? (v['title-en'] ?? v.title) : v.title,
             platform: (v.platform as Platform) || 'facebook',
             muted: v.muted ?? true,
             aspectRatio: (v.aspectRatio ?? '9/16') as '16/9' | '9/16',

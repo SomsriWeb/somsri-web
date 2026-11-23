@@ -62,10 +62,10 @@ onBeforeUnmount(() => {
                 </template>
             </div>
 
-            <button v-if="canScrollPrev" type="button" aria-label="เลื่อนไปก่อนหน้า" class="showcase-nav showcase-nav--prev" @click="scrollByItem(-1)">
+            <button v-if="canScrollPrev" type="button" :aria-label="$t('a11y.scrollPrevious')" class="showcase-nav showcase-nav--prev" @click="scrollByItem(-1)">
                 <UIcon name="i-heroicons-chevron-left" class="size-4" />
             </button>
-            <button v-if="canScrollNext" type="button" aria-label="เลื่อนไปถัดไป" class="showcase-nav showcase-nav--next" @click="scrollByItem(1)">
+            <button v-if="canScrollNext" type="button" :aria-label="$t('a11y.scrollNext')" class="showcase-nav showcase-nav--next" @click="scrollByItem(1)">
                 <UIcon name="i-heroicons-chevron-right" class="size-4" />
             </button>
         </div>

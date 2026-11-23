@@ -20,8 +20,25 @@ interface Slots {
 defineSlots<Slots>();
 
 // VARIABLE
-const { data } = await useAsyncData('what-cost-saving', () => queryCollection('whatCostSaving').order('order', 'ASC').all());
+const { t, locale } = useI18n({ useScope: 'local' });
+
+const { data: rawData } = await useAsyncData('what-cost-saving', () => queryCollection('whatCostSaving').order('order', 'ASC').all());
+
+// หน้าอังกฤษ: ใช้ label-en ถ้ามี
+const data = computed(() =>
+    (rawData.value || []).map((item) => ({
+        ...item,
+        label: locale.value === 'en' ? (item['label-en'] ?? item.label) : item.label,
+    })),
+);
 </script>
+
+<i18n lang="json">
+{
+    "th": { "title": "เลือก Somsri แล้วดียังไง? " },
+    "en": { "title": "Why choose Somsri? " }
+}
+</i18n>
 
 <template>
     <Container class="grid grid-cols-2 py-5! md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-5 bg-primary" no-space>
@@ -29,7 +46,7 @@ const { data } = await useAsyncData('what-cost-saving', () => queryCollection('w
             :is="titleAsTag"
             class="col-span-2 md:col-span-full lg:col-span-1 font-bold text-white text-xl sm:text-3xl lg:text-4xl leading-none mb-1 sm:mb-0"
         >
-            <slot name="title" mdc-unwrap="p">เลือก Somsri แล้วดียังไง? </slot>
+            <slot name="title" mdc-unwrap="p">{{ t('title') }}</slot>
         </component>
 
         <div v-for="item in data" :key="item.label" class="flex flex-col justify-start items-center">

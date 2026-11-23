@@ -13,8 +13,12 @@ defineSlots<Slots>();
 interface ReviewItem {
     image: string;
     alt: string;
+    'alt-en'?: string;
     order: number;
 }
+
+const { t, locale } = useI18n({ useScope: 'local' });
+const altOf = (review: ReviewItem) => (locale.value === 'en' ? (review['alt-en'] ?? review.alt) : review.alt);
 
 // VARIABLE
 const { data: reviews } = await useAsyncData('data-portfolio-reviews', () => {
@@ -32,7 +36,7 @@ const reviewStructuredData = computed(() => {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         '@id': `${siteUrl}#organization`,
-        name: 'สมศรีมีเสื้อ',
+        name: t('brand'),
         aggregateRating: {
             '@type': 'AggregateRating',
             ratingValue: '5',
@@ -45,9 +49,9 @@ const reviewStructuredData = computed(() => {
             '@id': `${siteUrl}/review/${index + 1}`,
             author: {
                 '@type': 'Person',
-                name: 'ลูกค้า',
+                name: t('customer'),
             },
-            reviewBody: review.alt || 'รีวิวจากลูกค้า',
+            reviewBody: altOf(review) || t('customerReview'),
             reviewRating: {
                 '@type': 'Rating',
                 ratingValue: '5',
@@ -72,6 +76,23 @@ useHead({
 });
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "brand": "สมศรีมีเสื้อ",
+        "customer": "ลูกค้า",
+        "customerReview": "รีวิวจากลูกค้า",
+        "carouselLabel": "รีวิวจากลูกค้า ทั้งหมด {count} รีวิว"
+    },
+    "en": {
+        "brand": "SomsriTshirt",
+        "customer": "Customer",
+        "customerReview": "Customer review",
+        "carouselLabel": "Customer reviews, {count} in total"
+    }
+}
+</i18n>
+
 <template>
     <section aria-labelledby="reviews-heading">
         <ProseH2 id="reviews-heading" class="text-start text-5xl font-bold text-primary mb-3">
@@ -90,13 +111,13 @@ useHead({
             }"
             class="w-full"
             role="region"
-            :aria-label="`รีวิวจากลูกค้า ทั้งหมด ${reviews?.length || 0} รีวิว`"
+            :aria-label="t('carouselLabel', { count: reviews?.length || 0 })"
         >
             <article class="relative rounded-xl overflow-hidden w-full" role="article">
                 <ProseImg
                     :src="item.image"
-                    :alt="item.alt || 'รีวิวจากลูกค้า'"
-                    :title="item.alt || 'รีวิวจากลูกค้า'"
+                    :alt="altOf(item) || t('customerReview')"
+                    :title="altOf(item) || t('customerReview')"
                     class="w-full h-auto object-cover rounded-xl"
                     sizes="sm:400px md:500px lg:600px"
                     loading="lazy"

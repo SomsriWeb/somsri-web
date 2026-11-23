@@ -11,12 +11,19 @@
     "nameTh": "ไมโครสปอร์ต",
     "nameEn": "Microsport",
     "recommendForStyle": "เสื้อกีฬา",
+    "recommendForStyle-en": "Sportswear",
     "advantage": [
         "ราคาไม่สูง",
         "ผิวสัมผัสเนียนนุ่ม",
         "ซับเหงื่อได้ดี"
     ],
+    "advantage-en": [
+        "Affordable price",
+        "Smooth, soft feel",
+        "Good sweat absorption"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 8,
     "gramWeight": 125
 }

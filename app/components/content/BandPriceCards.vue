@@ -25,15 +25,16 @@ interface Props {
     note2?: string;
 }
 
-const defaultGroups: FabricGroup[] = [
+const { t } = useI18n({ useScope: 'local' });
+
+const defaultGroups = computed<FabricGroup[]>(() => [
     {
-        title: 'Cotton 100% (เสื้อยืดเปล่า)',
-        description:
-            'คอตตอน 100% ผ่านกระบวนการผลิตเส้นด้ายโดยวิธีการสางเส้นใยฝ้ายโดยเครื่องจักร ทำให้ได้ผลผลิตเป็นเส้นด้ายใยสั้นที่มีขนาดใหญ่ มีความเหนียวนุ่ม',
+        title: t('cottonTitle'),
+        description: t('cottonDesc'),
         sizes: [
             {
                 size: 'Size S',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 112,
                 tiers: [
                     { qty: '151 +', price: 108 },
@@ -44,7 +45,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size M',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 112,
                 tiers: [
                     { qty: '151 +', price: 108 },
@@ -55,7 +56,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size L',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 112,
                 tiers: [
                     { qty: '151 +', price: 108 },
@@ -66,7 +67,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size XL',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 112,
                 tiers: [
                     { qty: '151 +', price: 108 },
@@ -78,13 +79,12 @@ const defaultGroups: FabricGroup[] = [
         ],
     },
     {
-        title: 'Cotton Comb 32 (เสื้อยืดเปล่า)',
-        description:
-            'มาตรฐาน เป็นที่นิยม เกรดผ้า เกรดผ้าหนาระดับปานกลาง ผ้าจะทิ้งตัวสวมใส่สบาย ระบายอากาศได้อย่างดีเยี่ยม ผ้าชนิดนี้เป็นผ้าที่ขายดีที่สุดสำหรับคนเริ่มต้นสร้างแบรนด์เสื้อผ้า',
+        title: t('combTitle'),
+        description: t('combDesc'),
         sizes: [
             {
                 size: 'Size S',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 122,
                 tiers: [
                     { qty: '151 +', price: 118 },
@@ -95,7 +95,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size M',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 122,
                 tiers: [
                     { qty: '151 +', price: 118 },
@@ -106,7 +106,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size L',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 122,
                 tiers: [
                     { qty: '151 +', price: 118 },
@@ -117,7 +117,7 @@ const defaultGroups: FabricGroup[] = [
             },
             {
                 size: 'Size XL',
-                startQty: '100+ ตัว',
+                startQty: t('startQty'),
                 startPrice: 122,
                 tiers: [
                     { qty: '151 +', price: 118 },
@@ -128,16 +128,41 @@ const defaultGroups: FabricGroup[] = [
             },
         ],
     },
-];
+]);
 
 const props = withDefaults(defineProps<Props>(), {
     groups: () => [],
-    note1: '* ราคานี้เป็นราคาเสื้อเปล่ายังไม่รวม Vat 7 %',
-    note2: 'หากต้องการเป็นไซส์ XL ล้วนหรือไซส์ XL เกินครึ่งนึงของจำนวนตัวที่สั่งซื้อทั้งหมด ราคาจะเพิ่มตัวละ 20 บาท (เนื่องจาก เสื้อไซส์ใหญ่จะใช้ผ้าเยอะนะคะ)',
+    note1: undefined,
+    note2: undefined,
 });
 
-const displayGroups = computed(() => (props.groups && props.groups.length > 0 ? props.groups : defaultGroups));
+const displayGroups = computed(() => (props.groups && props.groups.length > 0 ? props.groups : defaultGroups.value));
+const note1 = computed(() => props.note1 ?? t('note1'));
+const note2 = computed(() => props.note2 ?? t('note2'));
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "cottonTitle": "Cotton 100% (เสื้อยืดเปล่า)",
+        "cottonDesc": "คอตตอน 100% ผ่านกระบวนการผลิตเส้นด้ายโดยวิธีการสางเส้นใยฝ้ายโดยเครื่องจักร ทำให้ได้ผลผลิตเป็นเส้นด้ายใยสั้นที่มีขนาดใหญ่ มีความเหนียวนุ่ม",
+        "combTitle": "Cotton Comb 32 (เสื้อยืดเปล่า)",
+        "combDesc": "มาตรฐาน เป็นที่นิยม เกรดผ้า เกรดผ้าหนาระดับปานกลาง ผ้าจะทิ้งตัวสวมใส่สบาย ระบายอากาศได้อย่างดีเยี่ยม ผ้าชนิดนี้เป็นผ้าที่ขายดีที่สุดสำหรับคนเริ่มต้นสร้างแบรนด์เสื้อผ้า",
+        "startQty": "100+ ตัว",
+        "note1": "* ราคานี้เป็นราคาเสื้อเปล่ายังไม่รวม Vat 7 %",
+        "note2": "หากต้องการเป็นไซส์ XL ล้วนหรือไซส์ XL เกินครึ่งนึงของจำนวนตัวที่สั่งซื้อทั้งหมด ราคาจะเพิ่มตัวละ 20 บาท (เนื่องจาก เสื้อไซส์ใหญ่จะใช้ผ้าเยอะนะคะ)"
+    },
+    "en": {
+        "cottonTitle": "Cotton 100% (Blank T-Shirt)",
+        "cottonDesc": "100% cotton spun from machine-carded cotton fibers, producing a thick short-staple yarn that is strong yet soft.",
+        "combTitle": "Cotton Comb 32 (Blank T-Shirt)",
+        "combDesc": "A popular standard with a medium-weight fabric that drapes well, feels comfortable, and breathes exceptionally well. It's our best-selling fabric for anyone launching their own apparel brand.",
+        "startQty": "100+ pcs",
+        "note1": "* Prices are for blank shirts and exclude 7% VAT",
+        "note2": "If your order is all XL, or XL sizes make up more than half of the total quantity, add 20 THB per piece (larger sizes use more fabric)."
+    }
+}
+</i18n>
 
 <template>
     <section class="w-full py-8 lg:py-12">

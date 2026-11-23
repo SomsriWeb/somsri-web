@@ -1,6 +1,8 @@
 {
     "title": "QC ทุกตัว ก่อนแพ็กส่ง",
+    "title-en": "Every piece QC'd before packing",
     "description": "ไม่มีตัวไหนออกจากโรงงานโดยไม่ผ่านการตรวจ ชำระยอดส่วนที่เหลือก่อนส่ง แล้วเราแพ็กให้เรียบร้อย",
+    "description-en": "Nothing leaves our factory without inspection. Settle the remaining balance before shipping, and we pack everything neatly for you.",
     "image": "/how-to-order/steps/step-7.jpg",
     "order": 7
 }

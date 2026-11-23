@@ -15,9 +15,21 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const firstColumnLabel = computed(() => props.firstColumnLabel ?? 'หัวข้อสรรพคุณ');
-const fabricHeaders = computed(() => props.fabricHeaders ?? [...DEFAULT_RATING_HEADERS]);
-const rows = computed(() => props.rows ?? DEFAULT_RATING_ROWS.map((r) => ({ ...r, ratings: [...r.ratings] })));
+const { t, locale } = useI18n({ useScope: 'local' });
+const isEn = computed(() => locale.value === 'en');
+
+const firstColumnLabel = computed(() => props.firstColumnLabel ?? t('firstColumnLabel'));
+// หน้าอังกฤษ: ใช้ชื่อผ้า/หัวข้อภาษาอังกฤษจาก i18n block เมื่อไม่ได้ส่ง props มาเอง
+const fabricHeaders = computed(() =>
+    props.fabricHeaders ?? (isEn.value ? DEFAULT_RATING_HEADERS.map((_, i) => t(`headers.${i}`)) : [...DEFAULT_RATING_HEADERS]),
+);
+const rows = computed(
+    () =>
+        props.rows ??
+        DEFAULT_RATING_ROWS.map((r, i) =>
+            isEn.value ? { label: t(`rows.${i}`), ratings: [...r.ratings] } : { ...r, ratings: [...r.ratings] },
+        ),
+);
 
 // ===== Outer grid: ควบคุม track ของแถวทั้งหมด — การ์ดซ้าย/ขวาเป็น subgrid ที่ inherit track นี้
 // ทำให้แถวสูงเท่ากันเป๊ะเสมอ ไม่ว่าเนื้อหาแต่ละฝั่งจะกี่บรรทัดก็ตาม (ไม่ต้องเดา min-height เอง) =====
@@ -35,6 +47,19 @@ function rowLine(ri: number) {
     return { gridRow: ri + 2 };
 }
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "firstColumnLabel": "หัวข้อสรรพคุณ"
+    },
+    "en": {
+        "firstColumnLabel": "Property",
+        "headers": ["Micro Honeycomb", "Lightning Mesh", "Star Mesh", "Rice Grain"],
+        "rows": ["Breathability", "Stretch", "Print Clarity", "Comfort", "Lightweight & Comfort"]
+    }
+}
+</i18n>
 
 <template>
     <div class="fabric-rating-table my-6">

@@ -18,32 +18,41 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
     sectionId: 'fabric',
-    title: 'เนื้อผ้าและสีเสื้อวงแนะนำ',
-    subtitle: 'เสื้อวงที่ดีไม่ได้มีแค่ Artwork ที่โดดเด่นแต่เนื้อผ้าและโทนสีก็มีส่วนสำคัญในการสร้าง Character ของเสื้อให้ชัดขึ้น',
-    buttonText: 'ดูตัวอย่างผ้า',
+    title: undefined,
+    subtitle: undefined,
+    buttonText: undefined,
     buttonLink: '/fabric-specification',
     showButton: true,
-    items: () => [
-        {
-            title: 'Cotton 100%',
-            description: 'เนื้อผ้าคอตตอน 100% นุ่ม ใส่สบาย ให้สัมผัสเป็นธรรมชาติ',
-            imageDesktop: '/band-shirt/fabric-cotton-desktop.png',
-            imageMobile: '/band-shirt/fabric-cotton-mobile.png',
-        },
-        {
-            title: 'Faded Color',
-            description: 'สีฟอกเฟดสไตล์ Vintage ให้มิติที่ไม่เหมือนเสื้อสีพื้นทั่วไป',
-            imageDesktop: '/band-shirt/fabric-faded-desktop.png',
-            imageMobile: '/band-shirt/fabric-faded-mobile.png',
-        },
-        {
-            title: 'Tie dye',
-            description: 'ลายมัดย้อมเฉพาะตัว เพิ่ม Mood และเอกลักษณ์ให้เสื้อวงแต่ละชิ้น',
-            imageDesktop: '/band-shirt/fabric-tiedye-desktop.png',
-            imageMobile: '/band-shirt/fabric-tiedye-mobile.png',
-        },
-    ],
+    items: undefined,
 });
+
+const { t } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
+
+const title = computed(() => props.title ?? t('title'));
+const subtitle = computed(() => props.subtitle ?? t('subtitle'));
+const buttonText = computed(() => props.buttonText ?? t('buttonText'));
+const resolvedButtonLink = computed(() => localizePath(props.buttonLink));
+const items = computed<FabricItem[]>(() => props.items ?? [
+    {
+        title: 'Cotton 100%',
+        description: t('cottonDesc'),
+        imageDesktop: '/band-shirt/fabric-cotton-desktop.png',
+        imageMobile: '/band-shirt/fabric-cotton-mobile.png',
+    },
+    {
+        title: 'Faded Color',
+        description: t('fadedDesc'),
+        imageDesktop: '/band-shirt/fabric-faded-desktop.png',
+        imageMobile: '/band-shirt/fabric-faded-mobile.png',
+    },
+    {
+        title: 'Tie dye',
+        description: t('tieDyeDesc'),
+        imageDesktop: '/band-shirt/fabric-tiedye-desktop.png',
+        imageMobile: '/band-shirt/fabric-tiedye-mobile.png',
+    },
+]);
 
 interface Slots {
     title?(): unknown;
@@ -70,6 +79,27 @@ function handleButtonClick(e: MouseEvent) {
 }
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "title": "เนื้อผ้าและสีเสื้อวงแนะนำ",
+        "subtitle": "เสื้อวงที่ดีไม่ได้มีแค่ Artwork ที่โดดเด่นแต่เนื้อผ้าและโทนสีก็มีส่วนสำคัญในการสร้าง Character ของเสื้อให้ชัดขึ้น",
+        "buttonText": "ดูตัวอย่างผ้า",
+        "cottonDesc": "เนื้อผ้าคอตตอน 100% นุ่ม ใส่สบาย ให้สัมผัสเป็นธรรมชาติ",
+        "fadedDesc": "สีฟอกเฟดสไตล์ Vintage ให้มิติที่ไม่เหมือนเสื้อสีพื้นทั่วไป",
+        "tieDyeDesc": "ลายมัดย้อมเฉพาะตัว เพิ่ม Mood และเอกลักษณ์ให้เสื้อวงแต่ละชิ้น"
+    },
+    "en": {
+        "title": "Recommended Fabrics & Colors for Band Shirts",
+        "subtitle": "A great band shirt is more than standout artwork — the fabric and color tone play a big part in defining its character.",
+        "buttonText": "View Fabric Samples",
+        "cottonDesc": "100% cotton that is soft, comfortable, and natural to the touch",
+        "fadedDesc": "A vintage faded wash that adds depth you won't get from plain solid-color tees",
+        "tieDyeDesc": "One-of-a-kind tie-dye patterns that add mood and identity to every band shirt"
+    }
+}
+</i18n>
+
 <template>
     <section :id="sectionId" class="w-full py-10 lg:py-16 scroll-mt-20 lg:scroll-mt-24">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,7 +119,7 @@ function handleButtonClick(e: MouseEvent) {
                     <div v-if="showButton" class="pt-1 flex-shrink-0">
                         <slot name="button">
                             <NuxtLink
-                                :to="buttonLink"
+                                :to="resolvedButtonLink"
                                 class="inline-flex items-center justify-center px-6 py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold text-lg transition duration-200 shadow-sm"
                                 @click="handleButtonClick"
                             >
@@ -189,7 +219,7 @@ function handleButtonClick(e: MouseEvent) {
                     <div v-if="showButton" class="pt-2">
                         <slot name="button">
                             <NuxtLink
-                                :to="buttonLink"
+                                :to="resolvedButtonLink"
                                 class="inline-flex items-center justify-center px-6 py-2 rounded-lg border-2 border-primary text-primary font-bold text-base hover:bg-primary hover:text-white transition duration-200"
                                 @click="handleButtonClick"
                             >

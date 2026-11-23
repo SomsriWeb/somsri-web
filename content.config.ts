@@ -11,7 +11,6 @@ const commonContentSchema = z.object({
     lineFloatingButton: z.boolean().default(true),
     navbar: z.boolean().default(true),
     footer: z.boolean().default(true),
-    language: z.enum(['th', 'en']).default('th'),
     noindex: z.boolean().default(false),
     'เพิ่ม script ใน head': z
         .array(
@@ -37,6 +36,16 @@ export default defineContentConfig({
             schema: commonContentSchema,
         }),
 
+        // หน้าภาษาอังกฤษ: ใช้ชื่อไฟล์เดียวกับฉบับไทยใน page/ → URL /en/<ชื่อไฟล์>
+        contentEn: defineCollection({
+            type: 'page',
+            source: {
+                include: 'page-en/*.md',
+                prefix: '/',
+            },
+            schema: commonContentSchema,
+        }),
+
         blog: defineCollection({
             type: 'page',
             source: {
@@ -55,7 +64,6 @@ export default defineContentConfig({
                         label: z.string(),
                         'label-en': z.string(),
                         url: z.string(),
-                        'url-en': z.string(),
                     }),
                 ),
                 products: z
@@ -67,7 +75,6 @@ export default defineContentConfig({
                                     label: z.string(),
                                     'label-en': z.string(),
                                     url: z.string(),
-                                    'url-en': z.string(),
                                     image: property(z.string()).editor({ input: 'media' }),
                                     desc: z.string().optional(),
                                     'desc-en': z.string().optional(),
@@ -81,7 +88,6 @@ export default defineContentConfig({
                                     label: z.string(),
                                     'label-en': z.string(),
                                     url: z.string(),
-                                    'url-en': z.string(),
                                     image: property(z.string()).editor({ input: 'media' }),
                                     desc: z.string().optional(),
                                     'desc-en': z.string().optional(),
@@ -101,6 +107,7 @@ export default defineContentConfig({
                 'name-en': z.string(),
                 image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
+                'alt-en': z.string().optional(),
                 url: z.string(),
                 featured: z.boolean().optional(),
                 order: z.number(),
@@ -128,6 +135,7 @@ export default defineContentConfig({
             schema: z.object({
                 image: z.string(),
                 alt: z.string(),
+                'alt-en': z.string().optional(),
                 order: z.number(),
             }),
         }),
@@ -138,6 +146,7 @@ export default defineContentConfig({
             schema: z.object({
                 image: z.string(),
                 alt: z.string(),
+                'alt-en': z.string().optional(),
                 order: z.number(),
             }),
         }),
@@ -184,7 +193,9 @@ export default defineContentConfig({
             source: 'data/port-card-artist/**.json',
             schema: z.object({
                 name: z.string(),
+                'name-en': z.string().optional(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -194,7 +205,9 @@ export default defineContentConfig({
             source: 'data/port-card-organization/**.json',
             schema: z.object({
                 name: z.string(),
+                'name-en': z.string().optional(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -204,7 +217,9 @@ export default defineContentConfig({
             source: 'data/port-card-other/**.json',
             schema: z.object({
                 name: z.string(),
+                'name-en': z.string().optional(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
             }),
         }),
@@ -237,15 +252,18 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
+                'name-en': z.string().optional(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 conditions: z.array(
                     z.object({
                         text: z.string(),
+                        'text-en': z.string().optional(),
                     }),
                 ),
                 priceLists: z.array(
                     z.object({
                         fabricName: z.string(),
+                        'fabricName-en': z.string().optional(),
                         rates: z.array(
                             z.object({
                                 min: z.number(),
@@ -265,8 +283,10 @@ export default defineContentConfig({
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
+                'name-en': z.string().optional(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
+                'alt-en': z.string().optional(),
                 order: z.number(),
             }),
         }),
@@ -275,6 +295,7 @@ export default defineContentConfig({
             source: 'data/steporder/**.json',
             schema: z.object({
                 name: z.string(),
+                'name-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
                 order: z.number(),
             }),
@@ -286,8 +307,10 @@ export default defineContentConfig({
             schema: z.object({
                 name: z.string(),
                 method: z.string(),
+                'method-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
+                'alt-en': z.string().optional(),
                 order: z.number(),
             }),
         }),
@@ -305,6 +328,7 @@ export default defineContentConfig({
             source: 'data/mask/**.json',
             schema: z.object({
                 name: z.string(),
+                'name-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
                 order: z.number(),
@@ -316,6 +340,7 @@ export default defineContentConfig({
             source: 'data/why-choose-somsri/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
@@ -327,6 +352,7 @@ export default defineContentConfig({
             source: 'data/social/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 label2: z.string().optional(),
                 icon: z.string().optional(),
                 order: z.number(),
@@ -339,9 +365,12 @@ export default defineContentConfig({
             source: 'data/how-to-order/**.json',
             schema: z.object({
                 title: z.string(),
+                'title-en': z.string().optional(),
                 description: z.string(),
+                'description-en': z.string().optional(),
                 image: property(z.string()).editor({ input: 'media' }),
                 badge: z.string().optional(),
+                'badge-en': z.string().optional(),
                 badgeIsLink: z.boolean().optional(),
                 order: z.number(),
             }),
@@ -352,6 +381,7 @@ export default defineContentConfig({
             source: 'data/what-cost-saving/**.json',
             schema: z.object({
                 label: z.string(),
+                'label-en': z.string().optional(),
                 icon: z.string().optional(),
                 image: property(z.string().optional()).editor({ input: 'media' }),
                 order: z.number(),
@@ -364,6 +394,7 @@ export default defineContentConfig({
             schema: z.object({
                 image: property(z.string()).editor({ input: 'media' }),
                 label: z.string(),
+                'label-en': z.string().optional(),
                 priceperunit: z.array(z.number()),
                 order: z.number(),
             }),
@@ -376,14 +407,19 @@ export default defineContentConfig({
                 uid: z.string(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 imageAlt: z.string().optional(),
+                'imageAlt-en': z.string().optional(),
                 popupImageUrl: property(z.string().optional()).editor({ input: 'media' }),
                 popupImageAlt: z.string().optional(),
+                'popupImageAlt-en': z.string().optional(),
                 forProductType: z.array(z.enum(['tshirt', 'polo', 'sport', 'totebag', 'hat', 'mask', 'brand', 'pants', 'other', 'fabric-specification'])),
                 nameTh: z.string(),
                 nameEn: z.string(),
                 recommendForStyle: z.string(),
+                'recommendForStyle-en': z.string().optional(),
                 advantage: z.array(z.string()),
+                'advantage-en': z.array(z.string()).optional(),
                 disadvantage: z.array(z.string()),
+                'disadvantage-en': z.array(z.string()).optional(),
                 order: z.number(),
                 gramWeight: z.number().optional(),
             }),
@@ -407,6 +443,7 @@ export default defineContentConfig({
                                 attributes: z.array(
                                     z.object({
                                         label: z.string(),
+                                        'label-en': z.string().optional(),
                                     }),
                                 ),
                             }),
@@ -430,17 +467,6 @@ export default defineContentConfig({
             }),
         }),
 
-        whyYouShouldChooseSomsriEn: defineCollection({
-            type: 'data',
-            source: 'data/why-you-should-choose-somsri-en/**.json',
-            schema: z.object({
-                uid: z.string(),
-                title: z.string(),
-                description: z.string(),
-                image: property(z.string()).editor({ input: 'media' }),
-                order: z.number(),
-            }),
-        }),
 
         poloProduct: defineCollection({
             type: 'data',
@@ -452,25 +478,16 @@ export default defineContentConfig({
                 order: z.number(),
             }),
         }),
-        productEn: defineCollection({
-            type: 'data',
-            source: 'data/product-en/**.json',
-            schema: z.object({
-                name: z.string(),
-                image: property(z.string()).editor({ input: 'media' }),
-                alt: z.string().optional(),
-                order: z.number(),
-                url: z.string(),
-            }),
-        }),
         size: defineCollection({
             type: 'data',
             source: 'data/size/tab/**.json',
             schema: z.object({
                 uid: z.string(),
                 name: z.string(),
+                'name-en': z.string().optional(),
                 imageUrl: property(z.string()).editor({ input: 'media' }),
                 alt: z.string().optional(),
+                'alt-en': z.string().optional(),
                 order: z.number(),
             }),
         }),
@@ -481,6 +498,7 @@ export default defineContentConfig({
             schema: z.object({
                 videoId: z.string(),
                 title: z.string().optional(),
+                'title-en': z.string().optional(),
                 category: z.string().optional(),
                 platform: z.enum(['youtube', 'facebook']).default('youtube'),
                 order: z.number(),
@@ -496,6 +514,7 @@ export default defineContentConfig({
             schema: z.object({
                 src: z.string(),
                 alt: z.string(),
+                'alt-en': z.string().optional(),
                 category: z.string().optional(),
                 row: z.number().optional(),
                 order: z.number(),

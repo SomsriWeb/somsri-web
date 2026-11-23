@@ -1,0 +1,50 @@
+{
+    "nuxtSiteConfig": {
+        "name": "SomsriTshirt"
+    },
+    "nav": {
+        "home": "SomsriTshirt home",
+        "call": "Call 02-430-0678",
+        "switchLanguage": "ภาษาไทย"
+    },
+    "footer": {
+        "about": {
+            "title": "About Us",
+            "description": "SomsriTshirt Factory offers comprehensive services including shirt production, screen printing, and embroidery. We provide free design services with unique styles and expert consultation to meet your design needs."
+        },
+        "address": {
+            "title": "Contact Us",
+            "address": "Somsri Garment Co., Ltd. 1033/6 Phetkasem 106 Road, Nongkhangplu, Nongkhaem, Bangkok 10160"
+        },
+        "contact": {
+            "title": "Phone Numbers",
+            "sales": "( Sales: {name} )"
+        },
+        "menu": "Menu"
+    },
+    "common": {
+        "seeMore": "See More",
+        "details": "Details",
+        "otherProducts": "View More Products"
+    },
+    "product": {
+        "ourProducts": "Our Products"
+    },
+    "sales": {
+        "label": "Sales ({name})"
+    },
+    "brand": "SomsriTshirt",
+    "a11y": {
+        "previous": "Previous",
+        "next": "Next",
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide",
+        "scrollPrevious": "Scroll to previous",
+        "scrollNext": "Scroll to next",
+        "previousVideo": "Previous video",
+        "nextVideo": "Next video",
+        "contactLine": "Contact us on LINE",
+        "portfolio": "Portfolio",
+        "pinPortfolio": "Pin portfolio"
+    }
+}

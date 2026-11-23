@@ -9,13 +9,21 @@
     "nameTh": "คอตตอนเซมิ",
     "nameEn": "Cotton Semi",
     "recommendForStyle": "เสื้อยืดทุกประเภท",
+    "recommendForStyle-en": "All types of T-shirts",
     "advantage": [
         "เนื้อผ้าหนา",
         "ผิวสัมผัสปานกลาง",
         "ยับยาก",
         "ราคาไม่สูง"
     ],
+    "advantage-en": [
+        "Thick fabric",
+        "Medium-soft feel",
+        "Wrinkle-resistant",
+        "Affordable price"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 3,
     "gramWeight": 170
 }

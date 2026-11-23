@@ -8,12 +8,19 @@
     "nameTh": "สเตรช 597",
     "nameEn": "Streatch 597",
     "recommendForStyle": "เสื้อยืดแบรนด์ แฟชั่น กีฬา",
+    "recommendForStyle-en": "Brand T-shirts, fashion & sportswear",
     "advantage": [
         "เนื้อผ้าผสม Spandex ยืดหยุ่นดี",
         "น้ำหนักเบา ใส่สบาย",
         "เหมาะเสื้อแบรนด์และเสื้อกีฬา"
     ],
+    "advantage-en": [
+        "Spandex blend with great stretch",
+        "Lightweight and comfortable",
+        "Ideal for brand apparel and sportswear"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 28,
     "gramWeight": 165
 }

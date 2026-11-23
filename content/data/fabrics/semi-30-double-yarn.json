@@ -8,12 +8,19 @@
     "nameTh": "เซมิ 30 เส้นคู่",
     "nameEn": "Semi 30 Double Yarn",
     "recommendForStyle": "เสื้อยืดทุกวัน งานสกรีน",
+    "recommendForStyle-en": "Everyday T-shirts & screen printing",
     "advantage": [
         "เส้นด้ายคู่ เนื้อแน่น",
         "ราคาเหมาะสม",
         "ทนต่อการซัก"
     ],
+    "advantage-en": [
+        "Double yarn, dense fabric",
+        "Good value",
+        "Withstands repeated washing"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 26,
     "gramWeight": 260
 }

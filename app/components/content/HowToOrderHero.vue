@@ -4,6 +4,8 @@ interface Props {
 }
 const { titleAsTag = 'h1' } = defineProps<Props>();
 
+const { t } = useI18n({ useScope: 'local' });
+
 interface Slots {
     eyebrow(): unknown;
     title(): unknown;
@@ -13,10 +15,17 @@ interface Slots {
 defineSlots<Slots>();
 </script>
 
+<i18n lang="json">
+{
+    "th": { "eyebrow": "วิธีสั่งเสื้อ" },
+    "en": { "eyebrow": "How to Order" }
+}
+</i18n>
+
 <template>
     <div class="text-center max-w-2xl mx-auto px-5 pt-12 mt-5">
         <p class="font-bold font-stretch-condensed text-primary mb-2">
-            <slot name="eyebrow" mdc-unwrap="p">วิธีสั่งเสื้อ</slot>
+            <slot name="eyebrow" mdc-unwrap="p">{{ t('eyebrow') }}</slot>
         </p>
 
         <component :is="titleAsTag" class="font-bold font-stretch-condensed text-gray-900 text-3xl md:text-5xl leading-[1.15]">

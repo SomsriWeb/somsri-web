@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LANGUAGE } from '~/lib/language';
+import { ALTERNATE_PATH } from '~/lib/alternatePath';
 import type { NavigationMenuItem } from '@nuxt/ui';
 import type { NavbarCollectionItem } from '@nuxt/content';
 
@@ -19,8 +19,10 @@ const { $viewport } = useNuxtApp();
 const { data: menus } = await useAsyncData('navbar-menus', () => queryCollection('navbar').all());
 const isScrolled = ref<boolean>(false);
 const showMenu = ref<boolean>(false);
-const LANG = inject<'th' | 'en'>(LANGUAGE, 'th');
-const lang = unref(LANG);
+const { locale } = useI18n();
+const lang = computed(() => locale.value as 'th' | 'en');
+const localizePath = await useLocalizedPath();
+const alternatePath = inject<string | null>(ALTERNATE_PATH, null);
 const isSlideOverOpen = ref(false);
 
 const navbarData = computed(() => (menus.value?.[0] as NavbarCollectionItem) || {});
@@ -30,10 +32,12 @@ const productItems = computed(() => {
 
 const mainNavItemsBase = computed<NavigationMenuItem[]>(() => {
     return (navbarData.value.main || []).map((menu) => {
-        const url = lang === 'th' ? menu.url : menu['url-en'];
+        const url = localizePath(menu.url);
         return {
-            label: lang === 'th' ? menu.label : menu['label-en'],
+            label: lang.value === 'th' ? menu.label : menu['label-en'],
             to: url,
+            // ปิดการเติม /en อัตโนมัติของ Nuxt UI (useLocalizedPath จัดการแล้ว)
+            locale: false,
             class: activeMenuClass(url, false),
         };
     });
@@ -48,9 +52,10 @@ const items = computed<NavigationMenuItem[]>(() => {
             ...item,
             slot: 'megamenu' as const,
             children: products.map((prod) => ({
-                label: lang === 'th' ? prod.label : prod['label-en'],
-                to: lang === 'th' ? prod.url : prod['url-en'],
-                class: activeMenuClass(prod.url, true),
+                label: lang.value === 'th' ? prod.label : prod['label-en'],
+                to: localizePath(prod.url),
+                locale: false,
+                class: activeMenuClass(localizePath(prod.url), true),
             })),
         };
     });
@@ -96,8 +101,8 @@ onUnmounted(() => {
 
 <template>
     <nav :class="navbarClass" class="text-white flex justify-between px-6 py-2 md:py-5 lg:px-18 lg:py-0 lg:max-h-[72px]">
-        <NavbarDesktop :show-menu="showMenu" :items="items" :product-items="productItems" :lang="lang" />
+        <NavbarDesktop :show-menu="showMenu" :items="items" :product-items="productItems" :lang="lang" :home-path="localizePath('/')" :alternate-path="alternatePath" :localize-path="localizePath" />
 
-        <NavbarMobile v-model:open="isSlideOverOpen" :items="items" />
+        <NavbarMobile v-model:open="isSlideOverOpen" :items="items" :home-path="localizePath('/')" :alternate-path="alternatePath" />
     </nav>
 </template>

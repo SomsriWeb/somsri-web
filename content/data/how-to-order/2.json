@@ -1,6 +1,8 @@
 {
     "title": "ส่งไฟล์ทีม Artwork จัดให้",
+    "title-en": "Send your file — our artwork team handles the rest",
     "description": "มีไฟล์ก็ส่งมาได้เลย ไม่มีก็บอก direction — ทีม Artwork เราจัด layout ให้พร้อมผลิต ฟรีไม่มีค่าใช้จ่ายเพิ่ม",
+    "description-en": "Have a file? Send it over. Don't have one? Just give us a direction — our artwork team prepares a print-ready layout for free, with no extra charge.",
     "image": "/how-to-order/steps/step-2.jpg",
     "order": 2
 }

@@ -36,12 +36,28 @@ const { data: brandsRow1 } = await useAsyncData('collaborators-row1', () => quer
 const { data: brandsRow2 } = await useAsyncData('collaborators-row2', () => queryCollection('collaborators').where('row', '=', 2).order('order', 'ASC').all());
 
 const allBrands = computed(() => [...(brandsRow1.value ?? []), ...(brandsRow2.value ?? [])]);
+
+const { t, locale } = useI18n({ useScope: 'local' });
+function brandAlt(brand: { alt: string; 'alt-en'?: string }) {
+    return locale.value === 'en' ? (brand['alt-en'] ?? brand.alt) : brand.alt;
+}
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "title": "สมศรีผลิตให้กับใครบ้าง"
+    },
+    "en": {
+        "title": "Brands We Produce For"
+    }
+}
+</i18n>
 <template>
     <div class="grid grid-cols-1 gap-5">
         <TitleWithDescription :class="{ 'text-center': isSingleRow }">
             <template #title>
-                <slot name="title"><ProseH2>สมศรีผลิตให้กับใครบ้าง </ProseH2></slot>
+                <slot name="title"><ProseH2>{{ t('title') }}</ProseH2></slot>
             </template>
             <!-- <template #description>
                 <slot name="description"><ProseP>หลากหลายแบรนด์ไว้วางใจให้สมศรีมีเสื้อผลิตสินค้าต่าง ๆ ไม่ว่าจะเป็นเสื้อยืด เสื้อโปโล เสื้อกีฬา และสินค้าอื่น ๆ</ProseP> </slot>
@@ -50,15 +66,15 @@ const allBrands = computed(() => [...(brandsRow1.value ?? []), ...(brandsRow2.va
 
         <ClientOnly>
             <Vue3Marquee v-if="isSingleRow" :duration="duration" class="rounded-xl min-h-full">
-                <ProseImg v-for="brand in allBrands" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brand.alt" />
+                <ProseImg v-for="brand in allBrands" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brandAlt(brand)" />
             </Vue3Marquee>
 
             <template v-else>
                 <Vue3Marquee :duration="duration" class="rounded-xl min-h-full">
-                    <ProseImg v-for="brand in brandsRow1" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brand.alt" />
+                    <ProseImg v-for="brand in brandsRow1" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brandAlt(brand)" />
                 </Vue3Marquee>
                 <Vue3Marquee :duration="duration" :direction="'reverse'" class="rounded-xl min-h-full">
-                    <ProseImg v-for="brand in brandsRow2" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brand.alt" />
+                    <ProseImg v-for="brand in brandsRow2" :key="brand.src" class="h-6 w-auto object-contain mx-1" :src="brand.src" :alt="brandAlt(brand)" />
                 </Vue3Marquee>
             </template>
         </ClientOnly>

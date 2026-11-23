@@ -8,11 +8,18 @@
     "nameTh": "นาโนกันน้ำ",
     "nameEn": "Nano Waterproof",
     "recommendForStyle": "เสื้อกีฬา กระเป๋า ผ้ากันเปื้อน",
+    "recommendForStyle-en": "Sportswear, bags & aprons",
     "advantage": [
         "กันน้ำ (น้ำกลิ้ง ไม่ซึม)",
         "ทำความสะอาดง่าย",
         "ทนทานต่อการซัก"
     ],
+    "advantage-en": [
+        "Water-repellent (water beads off)",
+        "Easy to clean",
+        "Withstands repeated washing"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 10
 }

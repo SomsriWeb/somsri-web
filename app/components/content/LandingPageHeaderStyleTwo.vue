@@ -9,7 +9,16 @@ interface Props {
 const { image, titleAsTag = 'h1', alt = '', imageAnchor = 'center' } = defineProps<Props>();
 
 const objectPosition = `object-${imageAnchor}`;
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "consult": "ปรึกษาฟรี" },
+    "en": { "consult": "Free Consultation" }
+}
+</i18n>
 
 <template>
     <header class="relative">
@@ -31,7 +40,7 @@ const objectPosition = `object-${imageAnchor}`;
             <div class="mt-5">
                 <slot name="cta">
                     <LineLink>
-                        <UButton>ปรึกษาฟรี</UButton>
+                        <UButton>{{ t('consult') }}</UButton>
                     </LineLink>
                 </slot>
             </div>

@@ -3,7 +3,6 @@ title: รับผลิตเสื้อ Jersey สั่งทำเสื�
 activeNavbar: false
 description: โรงงานผลิตเสื้อเจอร์ซีย์ เสื้อกีฬา เสื้อแข่ง สำหรับทีมและองค์กร บริการออกแบบฟรี พร้อมสกรีนและปักโลโก้ครบวงจร ทนทาน ไม่หลุดลอก รับประกันสินค้านาน 90 วัน
 footer: false
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/1f15f
 navbar: false

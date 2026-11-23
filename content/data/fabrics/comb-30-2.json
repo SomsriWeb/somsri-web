@@ -9,12 +9,19 @@
     "nameTh": "คอมป์ 30/2",
     "nameEn": "Comb 30/2",
     "recommendForStyle": "เสื้อแบรนด์ เสื้อยืดเกรดดี",
+    "recommendForStyle-en": "Brand apparel & premium T-shirts",
     "advantage": [
         "เส้นใยเรียบเนียน",
         "ไม่ยับง่าย",
         "สีสด คมชัดเมื่อสกรีน"
     ],
+    "advantage-en": [
+        "Smooth, refined fibers",
+        "Wrinkle-resistant",
+        "Vivid, sharp screen prints"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 19,
     "gramWeight": 260
 }

@@ -13,7 +13,16 @@ const {
     screenHeight = true, 
     imageAnchor = 'center center' 
 } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "contact": "ติดต่อเราตอนนี้" },
+    "en": { "contact": "Contact Us Now" }
+}
+</i18n>
 
 <template>
     <div
@@ -49,7 +58,7 @@ const {
             <div class="mt-6">
                 <slot name="cta">
                     <LineLink>
-                        <UButton size="xl" class="px-8 py-3">ติดต่อเราตอนนี้ <UIcon name="i-heroicons-arrow-right" class="ml-2"/></UButton>
+                        <UButton size="xl" class="px-8 py-3">{{ t('contact') }} <UIcon name="i-heroicons-arrow-right" class="ml-2"/></UButton>
                     </LineLink>
                 </slot>
             </div>

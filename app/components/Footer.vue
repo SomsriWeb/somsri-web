@@ -4,18 +4,22 @@ import { LINE_LINK } from '~/lib/lineLink';
 const lineLink = inject<string>(LINE_LINK, 'https://line.me/R/ti/p/%40diz8986o');
 const socialMedias = [
     {
+        label: 'Facebook',
         icon: 'ic:baseline-facebook',
         url: 'https://www.facebook.com/somsritshirt/',
     },
     {
+        label: 'LINE',
         icon: 'fa6-brands:line',
         url: lineLink,
     },
     {
+        label: 'Instagram',
         icon: 'mdi:instagram',
         url: 'https://www.instagram.com/somsritshirt/',
     },
     {
+        label: 'TikTok',
         icon: 'ic:baseline-tiktok',
         url: 'https://www.tiktok.com/@somsritshirt_brand',
     },
@@ -32,9 +36,9 @@ const socialMedias = [
             </div>
         </div>
         <div class="bg-primary-600 flex justify-between items-center px-5 py-2 md:px-[2.6rem] lg:px-[4.6rem]">
-            <ProseImg src="/footer/footer-logo.png" alt="สมศรีมีเสื้อ" class="max-w-[3.5rem] sm:max-w-[5rem]" />
+            <ProseImg src="/footer/footer-logo.png" :alt="$t('brand')" class="max-w-[3.5rem] sm:max-w-[5rem]" />
             <div class="flex items-center gap-2 sm:gap-5">
-                <NuxtLink v-for="socialMedia in socialMedias" :key="socialMedia.url" :to="socialMedia.url" class="flex" external>
+                <NuxtLink v-for="socialMedia in socialMedias" :key="socialMedia.url" :to="socialMedia.url" :aria-label="socialMedia.label" :title="socialMedia.label" class="flex" external>
                     <UButton :icon="socialMedia.icon" variant="ghost" class="text-white p-0 !min-w-fit" size="lg" />
                 </NuxtLink>
             </div>

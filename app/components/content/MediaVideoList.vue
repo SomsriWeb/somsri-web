@@ -14,6 +14,10 @@ const { data: videos } = await useAsyncData(cacheKey, () => {
     return query.all();
 });
 
+const { locale } = useI18n();
+const titleOf = (video: { title?: string; 'title-en'?: string }) =>
+    locale.value === 'en' ? (video['title-en'] ?? video.title) : video.title;
+
 // Modal state
 const isModalOpen = ref(false);
 const initialVideoIndex = ref(0);
@@ -23,7 +27,7 @@ const galleryVideos = computed(() => {
     if (!videos.value) return [];
     return videos.value.map((video) => ({
         videoId: video.videoId,
-        title: video.title,
+        title: titleOf(video),
         platform: video.platform as 'youtube' | 'facebook' | undefined,
     }));
 });
@@ -55,7 +59,7 @@ function openModal(index: number) {
             <div v-for="(video, index) in videos" :key="video.videoId" class="relative group cursor-pointer" @click="openModal(index)">
                 <!-- Thumbnail with play button overlay -->
                 <div class="relative w-full overflow-hidden rounded-2xl shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02]" style="aspect-ratio: 16/9">
-                    <img :src="getThumbnailUrl(video)" :alt="video.title || 'Video thumbnail'" class="w-full h-full object-cover" />
+                    <img :src="getThumbnailUrl(video)" :alt="titleOf(video) || 'Video thumbnail'" class="w-full h-full object-cover" />
                     <!-- Play button overlay -->
                     <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
                         <div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -69,8 +73,8 @@ function openModal(index: number) {
                     <div v-else class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">YouTube</div>
                 </div>
                 <!-- Video title -->
-                <p v-if="video.title" class="mt-2 text-center text-sm text-stone-600 group-hover:text-primary transition-colors">
-                    {{ video.title }}
+                <p v-if="titleOf(video)" class="mt-2 text-center text-sm text-stone-600 group-hover:text-primary transition-colors">
+                    {{ titleOf(video) }}
                 </p>
             </div>
         </div>

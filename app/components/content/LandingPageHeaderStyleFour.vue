@@ -6,7 +6,20 @@ interface Props {
     alt?: string;
 }
 const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "consult": "ปรึกษาฟรี"
+    },
+    "en": {
+        "consult": "Free Consultation"
+    }
+}
+</i18n>
 
 <template>
     <div
@@ -50,7 +63,7 @@ const { image, titleAsTag = 'h1', alt = '' } = defineProps<Props>();
                             variant="solid"
                             class="gap-3 rounded-sm px-5 text-base font-semibold text-white shadow-none"
                         >
-                            ปรึกษาฟรี
+                            {{ t('consult') }}
                             <Icon name="lucide:arrow-right" size="1rem" class="shrink-0 text-white" />
                         </UButton>
                     </LineLink>

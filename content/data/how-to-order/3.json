@@ -1,6 +1,8 @@
 {
     "title": "ราคาชัด ไม่มีค่าใช้จ่ายซ่อน",
+    "title-en": "Clear pricing, no hidden costs",
     "description": "ใบเสนอราคาออกให้ทันที ตัวเลขที่เห็นคือตัวเลขที่จ่ายจริง ไม่มีเซอร์ไพรส์ตอนสิ้นเดือน",
+    "description-en": "You get a quotation right away. The price you see is the price you pay — no surprises at the end of the month.",
     "image": "/how-to-order/steps/step-3.jpg",
     "order": 3
 }

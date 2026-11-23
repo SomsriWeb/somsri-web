@@ -10,8 +10,20 @@
 		queryCollection("priceCarousel").order("order", "ASC").all()
 	)
 
+	const { locale } = useI18n()
+
 	// COMPUTED
-	const activePriceData = computed(() => priceData.value?.find((item) => item.uid === id))
+	// หน้าอังกฤษ: ใช้ฟิลด์ *-en ถ้ามี
+	const activePriceData = computed(() => {
+		const item = priceData.value?.find((item) => item.uid === id)
+		if (!item || locale.value !== 'en') return item
+		return {
+			...item,
+			name: item['name-en'] ?? item.name,
+			conditions: item.conditions.map((condition) => ({ ...condition, text: condition['text-en'] ?? condition.text })),
+			priceLists: item.priceLists.map((priceList) => ({ ...priceList, fabricName: priceList['fabricName-en'] ?? priceList.fabricName })),
+		}
+	})
 </script>
 
 <template>

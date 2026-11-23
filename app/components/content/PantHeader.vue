@@ -9,7 +9,19 @@ interface Slots {
 }
 defineSlots<Slots>();
 
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+	"th": {
+		"logoAlt": "สมศรีการ์เมนท์ รับผลิตกางเกงยางยืด ขาสั้น ราคาเริ่มต้น 150 บาท"
+	},
+	"en": {
+		"logoAlt": "Somsri Garment – custom elastic-waist shorts from 150 THB"
+	}
+}
+</i18n>
 
 <template>
 	<div class="relative overflow-x-hidden">
@@ -26,7 +38,7 @@ defineSlots<Slots>();
 				<div class="order-2 lg:order-1 text-center lg:text-left max-w-full z-10">
 					<ProseImg
 						src="/pants/logo-white.png"
-						alt="สมศรีการ์เมนท์ รับผลิตกางเกงยางยืด ขาสั้น ราคาเริ่มต้น 150 บาท"
+						:alt="t('logoAlt')"
 						class="mx-auto md:mx-0 w-[300px] sm:w-[350px] md:w-[400px]"
 					/>
 					<p class="font-light text-base sm:text-lg lg:text-xl mt-4 mb-5 break-words">

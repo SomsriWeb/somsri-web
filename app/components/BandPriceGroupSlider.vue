@@ -21,6 +21,8 @@ interface Props {
 
 const props = defineProps<Props>();
 
+const { t } = useI18n({ useScope: 'local' });
+
 // Duplicate items 4 times (16 slides) to ensure Swiper virtual loop buffer never gets depleted
 const displaySizes = computed(() => {
     const list = props.sizes;
@@ -66,6 +68,21 @@ const handlePrev = useThrottleFn(() => {
 }, 200);
 </script>
 
+<i18n lang="json">
+{
+    "th": {
+        "startingAt": "เริ่มต้นที่",
+        "defaultQty": "100+ ตัว",
+        "quantity": "จำนวน(ตัว)"
+    },
+    "en": {
+        "startingAt": "Starting at",
+        "defaultQty": "100+ pcs",
+        "quantity": "Quantity (pcs)"
+    }
+}
+</i18n>
+
 <template>
     <div class="space-y-6 lg:space-y-8">
         <!-- Group Header -->
@@ -101,8 +118,8 @@ const handlePrev = useThrottleFn(() => {
                             <!-- Starting Price Box -->
                             <div class="bg-[#f8f9fa] px-4 sm:px-5 py-3.5 sm:py-4 flex items-center justify-between border-b border-stone-100">
                                 <div class="text-sm sm:text-base text-stone-500 font-medium leading-tight text-left">
-                                    <div>เริ่มต้นที่</div>
-                                    <div class="text-xs sm:text-sm text-stone-400 font-normal">({{ card.startQty || '100+ ตัว' }})</div>
+                                    <div>{{ t('startingAt') }}</div>
+                                    <div class="text-xs sm:text-sm text-stone-400 font-normal">({{ card.startQty || t('defaultQty') }})</div>
                                 </div>
                                 <div class="flex items-baseline gap-1.5">
                                     <span class="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary tracking-tight">
@@ -115,7 +132,7 @@ const handlePrev = useThrottleFn(() => {
                             <!-- Tier Rows Box -->
                             <div class="bg-white p-4 sm:p-5 flex-1 flex flex-col justify-between">
                                 <div class="text-xs sm:text-sm text-stone-500 font-medium mb-1 text-left">
-                                    จำนวน(ตัว)
+                                    {{ t('quantity') }}
                                 </div>
                                 <div class="divide-y divide-stone-100">
                                     <div

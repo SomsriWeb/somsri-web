@@ -10,9 +10,23 @@ interface Slots {
     strategyList4(): unknown;
 }
 defineSlots<Slots>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "ariaLabel": "กลยุทธ์และจุดเด่น"
+    },
+    "en": {
+        "ariaLabel": "Strategies and highlights"
+    }
+}
+</i18n>
+
 <template>
-    <section class="grid grid-cols-2 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4" role="list" aria-label="กลยุทธ์และจุดเด่น">
+    <section class="grid grid-cols-2 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4" role="list" :aria-label="t('ariaLabel')">
         <article class="grid items-center justify-center border text-primary rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-2 text-center" role="listitem">
             <slot name="strategyimage1" mdc-unwrap="p" />
             <slot name="strategyList1" mdc-unwrap="p" />

@@ -4,7 +4,6 @@ activeNavbar: true
 description: บริการรับสกรีนเสื้อยืด เสื้อทีม เสื้อกิจกรรม ด้วยระบบ DFT, Silk Screen,DTG และอื่นๆ สีสด ทนนาน ไม่หลุดลอก ออกแบบฟรี ขั้นต่ำน้อย งานด่วนสั่งได้ พร้อมจัดส่งทั่วประเทศ
 footer: false
 image: ""
-language: th
 lineFloatingButton: false
 lineLink: https://contact.somsritshirt.com/aab2b
 navbar: false

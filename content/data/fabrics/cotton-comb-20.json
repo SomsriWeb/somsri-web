@@ -10,13 +10,21 @@
     "nameTh": "คอตตอนคอมป์ 20",
     "nameEn": "Cotton Comb 20",
     "recommendForStyle": "เสื้อแบรนด์",
+    "recommendForStyle-en": "Brand apparel",
     "advantage": [
         "ใส่สบาย ไม่ร้อน",
         "ไม่ยับง่าย",
         "ระบายอากาศได้ดี",
         "ไม่หด ไม่ย้วย"
     ],
+    "advantage-en": [
+        "Comfortable and cool",
+        "Wrinkle-resistant",
+        "Highly breathable",
+        "No shrinking or stretching out"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 1,
     "gramWeight": 220
 }

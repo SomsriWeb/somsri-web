@@ -4,7 +4,6 @@ activeNavbar: false
 contentSpacing: true
 description: โรงงานผลิตเสื้อยืด งานไว ส่งเร็ว ราคาดีมีคุณภาพ ครบวงจร ไม่ว่าจะเป็นการสกรีนเสื้อรูปแบบไหน เราผลิตได้ตามความต้องการเน้นคุณภาพและการบริการ
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/f8266
 navbar: true

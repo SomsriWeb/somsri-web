@@ -3,7 +3,6 @@ title: สร้างแบรนด์เสื้อผ้าของคุ�
 activeNavbar: true
 description: อยากสร้างแบรนด์เสื้อผ้าแต่ไม่รู้จะเริ่มยังไง? สมศรีมีเสื้อ รับผลิตเสื้อผ้าแบรนด์ตัวเองแบบครบวงจร สร้างแบรนด์เสื้อ ออกแบบและปรึกษาฟรี พร้อมสกรีน ปักโลโก้ ครบวงจร
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/2606f
 navbar: true

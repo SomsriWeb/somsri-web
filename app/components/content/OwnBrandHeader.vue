@@ -1,3 +1,18 @@
+<script setup lang="ts">
+const { t } = useI18n({ useScope: 'local' });
+</script>
+
+<i18n lang="json">
+{
+	"th": {
+		"tshirtAlt": "รับผลิตเสื้อ เสื้อยืดแบรนด์ตัวเอง โรงงานผลิตเสื้อ คุณภาพดี"
+	},
+	"en": {
+		"tshirtAlt": "Custom T-shirt manufacturing for your own brand — a quality apparel factory"
+	}
+}
+</i18n>
+
 <template>
 	<div>
 		<header>
@@ -16,7 +31,7 @@
 			</div>
 			<ProseImg
 				src="/tshirt-factory/tshirt.png"
-				alt="รับผลิตเสื้อ เสื้อยืดแบรนด์ตัวเอง โรงงานผลิตเสื้อ คุณภาพดี"
+				:alt="t('tshirtAlt')"
 				class="absolute bottom-[5rem] right-[3rem]"
 			/>
 		</header>

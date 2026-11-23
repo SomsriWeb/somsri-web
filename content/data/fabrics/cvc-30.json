@@ -9,11 +9,17 @@
     "nameTh": "CVC 30",
     "nameEn": "CVC 30",
     "recommendForStyle": "เสื้อยืดใช้งานประจำวัน",
+    "recommendForStyle-en": "Everyday T-shirts",
     "advantage": [
         "ทนทาน ดูแลรักษาง่าย",
         "แห้งไวกว่า 100% คอตตอน"
     ],
+    "advantage-en": [
+        "Durable and easy to care for",
+        "Dries faster than 100% cotton"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 24,
     "gramWeight": 170
 }

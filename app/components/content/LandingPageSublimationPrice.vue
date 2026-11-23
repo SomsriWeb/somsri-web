@@ -1,22 +1,43 @@
 <script setup lang="ts">
+	const { t } = useI18n({ useScope: 'local' })
+
 	// VARIALBE
-	const items = [
+	const items = computed(() => [
 		{
-			title: "การพิมพ์ (Sublimation)",
-			description:
-				"กระบวนการพิมพสกรีนอีกรูปแบบหนึ่ง ที่ไดรับความนิยมเป็นอยางสูง โดยใช้ ความร้อนเข้ามาทำใหน้ำหมึกซึมเขาไปในเนื้อผ้า นิยมทำเปนเสื้อกีฬา",
+			key: "sublimation",
+			title: t("sublimation.title"),
+			description: t("sublimation.description"),
 			image: "/produce-tshirt/sublimation.png",
-			alt: "ราคางาน Sublimation",
+			alt: t("sublimation.alt"),
 		},
-	]
+	])
 </script>
+
+<i18n lang="json">
+{
+	"th": {
+		"sublimation": {
+			"title": "การพิมพ์ (Sublimation)",
+			"description": "กระบวนการพิมพสกรีนอีกรูปแบบหนึ่ง ที่ไดรับความนิยมเป็นอยางสูง โดยใช้ ความร้อนเข้ามาทำใหน้ำหมึกซึมเขาไปในเนื้อผ้า นิยมทำเปนเสื้อกีฬา",
+			"alt": "ราคางาน Sublimation"
+		}
+	},
+	"en": {
+		"sublimation": {
+			"title": "Sublimation Printing",
+			"description": "A hugely popular printing method that uses heat to make the ink penetrate into the fabric. Widely used for sportswear and jerseys.",
+			"alt": "Sublimation printing prices"
+		}
+	}
+}
+</i18n>
 
 <template>
 	<div class="space-y-5">
 		<div
 			class="block sm:grid md:block sm:grid-cols-2 sm:gap-5 md:gap-0 space-y-5 sm:space-y-0 md:space-y-5"
 		>
-			<Card v-for="item in items" :key="item.title" class="shadow" horizontal>
+			<Card v-for="item in items" :key="item.key" class="shadow" horizontal>
 				<ProseImg
 					:src="item.image"
 					:alt="item.alt"

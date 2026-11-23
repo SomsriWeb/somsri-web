@@ -9,12 +9,19 @@
     "nameTh": "คอตตอน 20 OE",
     "nameEn": "Cotton 20 OE",
     "recommendForStyle": "เสื้อยืดราคาประหยัด งานโปรโมชัน",
+    "recommendForStyle-en": "Budget T-shirts & promotional merch",
     "advantage": [
         "ราคาเข้าถึงง่าย",
         "ใส่สบาย ระบายอากาศ",
         "เหมาะงานพิมพ์ลายทั่วไป"
     ],
+    "advantage-en": [
+        "Affordable price",
+        "Comfortable and breathable",
+        "Suits general printing work"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 18,
     "gramWeight": 210
 }

@@ -3,7 +3,6 @@ title: รับผลิตหน้ากากผ้า ผ้าปิดจ
 activeNavbar: true
 description: โรงงานรับผลิตหน้ากากผ้าและผ้าปิดจมูกคุณภาพสูง พร้อมบริการสกรีนลายและปักโลโก้แบรนด์ มีทั้งผ้ามัสลินและผ้ากันน้ำ ผลิตเอง งานไว รับประกัน 90 วัน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/d85cf
 navbar: true

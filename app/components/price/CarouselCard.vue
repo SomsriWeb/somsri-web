@@ -9,7 +9,26 @@
 
 	// COMPUTED
 	const loopedRates = computed(() => priceLists.rates.slice(1))
+
+	const { t } = useI18n({ useScope: 'local' })
 </script>
+
+<i18n lang="json">
+{
+	"th": {
+		"startingAt": "เริ่มต้นที่",
+		"askPrice": "สอบถามราคา",
+		"pcs": "ตัว",
+		"qty": "จำนวน(ตัว)"
+	},
+	"en": {
+		"startingAt": "Starting at",
+		"askPrice": "Contact for price",
+		"pcs": "pcs",
+		"qty": "Qty (pcs)"
+	}
+}
+</i18n>
 
 <template>
 	<div
@@ -19,13 +38,13 @@
 			{{ priceLists.fabricName }}
 		</h3>
 		<div class="bg-white flex flex-col gap-0.5 items-center p-1 min-h-36 justify-center">
-			<p class="text-primary">เริ่มต้นที่</p>
+			<p class="text-primary">{{ t('startingAt') }}</p>
 			<p class="text-primary text-5xl font-bold inline-flex items-baseline justify-center gap-x-1 whitespace-nowrap">
-				{{ priceLists.rates[0]?.price || "สอบถามราคา"}}
+				{{ priceLists.rates[0]?.price || t('askPrice') }}
 				<span v-if="priceLists.rates[0]?.price" class="text-sm text-stone-800 shrink-0">THB</span>
 			</p>
 			<p class="text-primary min-h-5">
-				({{ priceLists.rates[0]?.min }} - {{ priceLists.rates[0]?.max }} ตัว)
+				({{ priceLists.rates[0]?.min }} - {{ priceLists.rates[0]?.max }} {{ t('pcs') }})
 			</p>
 		</div>
 		<div class="space-y-1 text-white flex-1">
@@ -35,7 +54,7 @@
 				class="flex justify-between gap-3 items-center px-2 py-1 min-h-15"
 			>
 				<div class="min-h-10 flex flex-col justify-center">
-					<p class="leading-none">จำนวน(ตัว)</p>
+					<p class="leading-none">{{ t('qty') }}</p>
 					<p v-if="rate.max" class="font-bold leading-none">
 						{{ rate.min }} - {{ rate.max }}
 					</p>
@@ -45,7 +64,7 @@
 					class="font-bold leading-none text-right inline-flex items-baseline justify-end gap-x-1 whitespace-nowrap shrink-0"
 					:class="[rate.price ? 'text-3xl' : 'text-sm']"
 				>
-					{{ rate.price || "สอบถามราคา"}}
+					{{ rate.price || t('askPrice') }}
 					<span v-if="rate.price" class="text-xs font-normal shrink-0">THB</span>
 				</p>
 			</div>

@@ -7,6 +7,10 @@ interface Props {
     items: NavigationMenuItem[];
     productItems: NonNullable<NavbarCollectionItem['products']>;
     lang: 'th' | 'en';
+    homePath: string;
+    // URL ของหน้านี้ในอีกภาษา (null = ไม่มี → ซ่อนปุ่มเปลี่ยนภาษา)
+    alternatePath: string | null;
+    localizePath: (url: string) => string;
 }
 
 defineProps<Props>();
@@ -17,7 +21,7 @@ const hoveredCategory = ref<string | null>(null);
 
 <template>
     <div class="lg:flex lg:pt-2">
-        <NuxtLink to="/">
+        <NuxtLink :to="homePath" :aria-label="$t('nav.home')">
             <Logo class="max-w-6" />
         </NuxtLink>
     </div>
@@ -44,10 +48,10 @@ const hoveredCategory = ref<string | null>(null);
                         <NuxtLink
                             v-for="product in productItems.previewCategories"
                             :key="product.id"
-                            :to="lang === 'th' ? product.url : product['url-en']"
+                            :to="localizePath(product.url)"
                             class="bg-primary text-white rounded-2xl p-2 flex gap-3 cursor-pointer hover:bg-[#8b1d33] transition-colors"
                         >
-                            <img :src="product.image" :alt="lang === 'th' ? product.label : product['label-en']" class="w-20 h-24 object-cover rounded-lg bg-gray-300" />
+                            <img :src="product.image" :alt="lang === 'th' ? product.label : product['label-en']" class="w-20 h-24 object-cover rounded-lg bg-gray-300" >
                             <div>
                                 <h3 class="font-bold text-lg mb-1">{{ lang === 'th' ? product.label : product['label-en'] }}</h3>
                                 <p class="text-xs text-gray-200 leading-relaxed">
@@ -80,7 +84,8 @@ const hoveredCategory = ref<string | null>(null);
                                 <!-- เพิ่ม focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 เพื่อป้องกันขอบสีเขียว -->
                                 <UButton
                                     block
-                                    :to="lang === 'th' ? product.url : product['url-en']"
+                                    :to="localizePath(product.url)"
+                                    :locale="false"
                                     :ui="{ base: '!lg:px-0 !lg:py-1 !min-w-0 !text-nowrap !rounded-sm' }"
                                     class="bg-primary text-white font-bold hover:bg-[#8b1d33] transition-all duration-0 hover:duration-150 hover:-translate-y-0.5 shadow-sm focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 lg:text-[20px]"
                                     @pointerenter="hoveredCategory = product.id"
@@ -92,7 +97,7 @@ const hoveredCategory = ref<string | null>(null);
                                 <template #content>
                                     <!-- เปลี่ยนจาก shadow-xl เป็น shadow-2xl ให้สวยและมีมิติเข้ากับตัว Mega Menu -->
                                     <div class="bg-primary text-white rounded-2xl p-4 flex gap-4 w-[600px] shadow-2xl border border-[#8b1d33]">
-                                        <img :src="product.image" :alt="lang === 'th' ? product.label : product['label-en']" class="w-20 h-24 object-cover rounded-lg bg-gray-300 shrink-0" />
+                                        <img :src="product.image" :alt="lang === 'th' ? product.label : product['label-en']" class="w-20 h-24 object-cover rounded-lg bg-gray-300 shrink-0" >
                                         <div>
                                             <h3 class="font-bold text-lg mb-1">
                                                 {{ lang === 'th' ? product.label : product['label-en'] }}
@@ -109,7 +114,8 @@ const hoveredCategory = ref<string | null>(null);
                             <UButton
                                 v-else
                                 block
-                                :to="lang === 'th' ? product.url : product['url-en']"
+                                :to="localizePath(product.url)"
+                                :locale="false"
                                 class="bg-primary text-white font-bold py-3 px-4 rounded-xl hover:bg-[#8b1d33] transition-all duration-0 hover:duration-150 hover:-translate-y-0.5 shadow-sm focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
                             >
                                 {{ lang === 'th' ? product.label : product['label-en'] }}
@@ -122,7 +128,7 @@ const hoveredCategory = ref<string | null>(null);
     </div>
 
     <div class="hidden lg:flex lg:relative lg:gap-5 lg:pt-3">
-        <NuxtLink to="tel:024300678" external><Icon name="lucide:phone" /></NuxtLink>
-        <NuxtLink to="/en"><Icon name="lucide:languages" /></NuxtLink>
+        <NuxtLink to="tel:024300678" external :aria-label="$t('nav.call')" :title="$t('nav.call')"><Icon name="lucide:phone" /></NuxtLink>
+        <NuxtLink v-if="alternatePath" :to="alternatePath" :aria-label="$t('nav.switchLanguage')" :title="$t('nav.switchLanguage')"><Icon name="lucide:languages" /></NuxtLink>
     </div>
 </template>

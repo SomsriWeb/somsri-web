@@ -1,13 +1,25 @@
+<script setup lang="ts">
+const { t } = useI18n({ useScope: 'local' });
+const localizePath = await useLocalizedPath();
+</script>
+
+<i18n lang="json">
+{
+    "th": { "label": "ดูผลงานกลุ่มลูกค้าศิลปิน" },
+    "en": { "label": "View Artist Client Portfolio" }
+}
+</i18n>
+
 <template>
   <div class="flex justify-center relative mb-10">
-    <NuxtLink to="/portfolio-artist" class="block">
+    <NuxtLink :to="localizePath('/portfolio-artist')" class="block">
       <UButton
         size="xl"
         color="primary"
         variant="solid"
         class="relative"
       >
-        ดูผลงานกลุ่มลูกค้าศิลปิน
+        {{ t('label') }}
       </UButton>
     </NuxtLink>
   </div>

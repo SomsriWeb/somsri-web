@@ -9,12 +9,19 @@
     "nameTh": "คอตตอน 25 เฮวี",
     "nameEn": "Cotton 25 Heavy",
     "recommendForStyle": "เสื้อโทนหนา ลุคสตรีท โอเวอร์ไซส์",
+    "recommendForStyle-en": "Heavyweight, streetwear & oversized tees",
     "advantage": [
         "เนื้อหนา ทิ้งตัวสวย",
         "อบอุ่น พอดีกับห้องแอร์",
         "ทนทานต่อการใช้งาน"
     ],
+    "advantage-en": [
+        "Thick fabric with a great drape",
+        "Warm enough for air-conditioned rooms",
+        "Built for heavy use"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 20,
     "gramWeight": 260
 }

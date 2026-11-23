@@ -14,7 +14,16 @@ interface Props {
     showCta?: boolean;
 }
 const { image, titleAsTag = 'h1', alt = '', screenHeight = true, imageAnchor = 'center', imageFit = 'cover', compact = false, showCta = true } = defineProps<Props>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "consult": "ปรึกษาฟรี" },
+    "en": { "consult": "Free Consultation" }
+}
+</i18n>
 
 <template>
     <div class="w-full overflow-hidden bg-white" :class="{ 'lg:py-10': compact }">
@@ -55,7 +64,7 @@ const { image, titleAsTag = 'h1', alt = '', screenHeight = true, imageAnchor = '
                 <div v-if="showCta">
                     <slot name="cta">
                         <LineLink>
-                            <UButton>ปรึกษาฟรี</UButton>
+                            <UButton>{{ t('consult') }}</UButton>
                         </LineLink>
                     </slot>
                 </div>

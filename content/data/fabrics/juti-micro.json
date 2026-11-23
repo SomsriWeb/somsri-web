@@ -9,13 +9,21 @@
     "nameTh": "จูติไมโคร",
     "nameEn": "Juti Micro",
     "recommendForStyle": "เสื้อกีฬากลางแจ้ง",
+    "recommendForStyle-en": "Outdoor sportswear",
     "advantage": [
         "ระบายอากาศดี",
         "น้ำหนักเบา",
         "แห้งไว ใส่แล้วไม่ร้อน",
         "มีความยืดหยุ่นสูง"
     ],
+    "advantage-en": [
+        "Highly breathable",
+        "Lightweight",
+        "Quick-drying and cool to wear",
+        "Very stretchy"
+    ],
     "disadvantage": [],
+    "disadvantage-en": [],
     "order": 7,
     "gramWeight": 180
 }

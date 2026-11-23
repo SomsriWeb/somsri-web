@@ -1,6 +1,7 @@
 {
     "image": "/landing-page-real-hat/hat-style-6.png",
     "label": "หมวกแก็ปผ้าพีทเกรดพรีเมี่ยม",
+    "label-en": "Premium Peach Skin Cap",
     "priceperunit" : [150, 138, 130, 122],
     "order": 6
 }

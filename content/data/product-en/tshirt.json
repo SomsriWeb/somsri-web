@@ -1,8 +1,0 @@
-{
-    "name": "t-shirt",
-    "image": "/product/tshirt.jpg",
-    "alt": "เราคือ โรงงานผลิตเสื้อ รับทำเสื้อยืด เสื้อโปโล",
-    "url": "/tshirt",
-    "featured": true,
-    "order": 1
-}

@@ -4,7 +4,16 @@ interface Slots {
     description(): unknown;
 }
 defineSlots<Slots>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "askPrice": "สอบถามราคา" },
+    "en": { "askPrice": "Get a Quote" }
+}
+</i18n>
 
 <template>
     <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between md:gap-10">
@@ -15,7 +24,7 @@ defineSlots<Slots>();
 
             <LineLink>
                 <UButton trailing-icon="i-lucide-arrow-right" class="mt-5 inline-flex items-center bg-primary px-6 py-2.5 text-sm text-white" size="md">
-                    สอบถามราคา
+                    {{ t('askPrice') }}
                 </UButton>
             </LineLink>
         </div>

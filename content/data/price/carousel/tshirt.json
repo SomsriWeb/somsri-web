@@ -1,18 +1,22 @@
 {
     "uid": "tshirt",
     "name": "เสื้อยืดรวมสกรีน",
+    "name-en": "T-shirts with screen printing",
     "imageUrl": "/brand-uniform/somsri-t-shirt.png",
     "conditions": [
         {
-            "text": "ราคานี้เฉพาะสกรีน 1 สี 1 จุดเท่านั้น"
+            "text": "ราคานี้เฉพาะสกรีน 1 สี 1 จุดเท่านั้น",
+            "text-en": "Price applies to 1-color, 1-position screen printing only"
         },
         {
-            "text": "สั่งซื้อต่ำกว่า 100 ตัว มีค่าบล็อค 300 บาท"
+            "text": "สั่งซื้อต่ำกว่า 100 ตัว มีค่าบล็อค 300 บาท",
+            "text-en": "Orders under 100 pieces incur a 300 THB screen block fee"
         }
     ],
     "priceLists": [
         {
             "fabricName": "COTTON 100%",
+            "fabricName-en": "COTTON 100%",
             "rates": [
                 {
                     "min": 150,
@@ -43,6 +47,7 @@
         },
         {
             "fabricName": "COTTON พรีเมียม 32",
+            "fabricName-en": "Premium COTTON 32",
             "rates": [
                 {
                     "min": 150,
@@ -73,6 +78,7 @@
         },
         {
             "fabricName": "COTTON พรีเมียม 20",
+            "fabricName-en": "Premium COTTON 20",
             "rates": [
                 {
                     "min": 150,
@@ -103,6 +109,7 @@
         },
         {
             "fabricName": "SUPERSOFF นุ่มพิเศษ",
+            "fabricName-en": "SUPERSOFF Extra Soft",
             "rates": [
                 {
                     "min": 150,
@@ -133,6 +140,7 @@
         },
         {
             "fabricName": "TC",
+            "fabricName-en": "TC",
             "rates": [
                 {
                     "min": 150,
@@ -163,6 +171,7 @@
         },
         {
             "fabricName": "TK",
+            "fabricName-en": "TK",
             "rates": [
                 {
                     "min": 150,
@@ -193,6 +202,7 @@
         },
         {
             "fabricName": "ไมโครกีฬา แห้งเร็ว",
+            "fabricName-en": "Quick-Dry Micro Sport",
             "rates": [
                 {
                     "min": 150,

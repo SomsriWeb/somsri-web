@@ -1,12 +1,21 @@
 <script setup lang="ts">
 /** กริดไอคอน + ข้อความ: md+ 2 คอลัมน์ (ซ้าย 3 / ขวา 2) */
 defineSlots<Record<string, () => unknown>>();
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": { "label": "รายละเอียดคุณสมบัติ" },
+    "en": { "label": "Feature details" }
+}
+</i18n>
 
 <template>
     <div
         class="icon-feature-grid grid min-w-0 grid-cols-1 gap-4 text-stone-900 md:grid-flow-col md:grid-cols-2 md:grid-rows-3 md:gap-x-10 md:gap-y-5"
-        aria-label="รายละเอียดคุณสมบัติ"
+        :aria-label="t('label')"
     >
         <div
             v-for="n in 5"

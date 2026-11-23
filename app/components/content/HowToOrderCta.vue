@@ -15,7 +15,22 @@ defineSlots<Slots>();
 
 // VARIABLE
 const bgImageValue = `url(${image})`;
+
+const { t } = useI18n({ useScope: 'local' });
 </script>
+
+<i18n lang="json">
+{
+    "th": {
+        "eyebrow": "พร้อมเริ่มได้เลย",
+        "consult": "ปรึกษาฟรี"
+    },
+    "en": {
+        "eyebrow": "Ready when you are",
+        "consult": "Free consultation"
+    }
+}
+</i18n>
 
 <template>
     <section class="relative">
@@ -25,7 +40,7 @@ const bgImageValue = `url(${image})`;
 
             <div class="relative flex flex-col items-center justify-center px-5 py-8 md:py-12 max-w-4xl mx-auto text-center">
                 <p class="font-bold font-stretch-condensed text-primary text-base md:text-lg mb-2">
-                    <slot name="eyebrow" mdc-unwrap="p">พร้อมเริ่มได้เลย</slot>
+                    <slot name="eyebrow" mdc-unwrap="p">{{ t('eyebrow') }}</slot>
                 </p>
 
                 <h2 class="font-bold font-stretch-condensed text-gray-900 text-2xl md:text-4xl lg:text-5xl leading-tight">
@@ -39,7 +54,7 @@ const bgImageValue = `url(${image})`;
                 <div class="mt-6 md:mt-8 flex justify-center">
                     <slot name="cta">
                         <LineLink>
-                            <UButton size="xl" class="px-5 py-2" trailing-icon="lucide:arrow-right">ปรึกษาฟรี</UButton>
+                            <UButton size="xl" class="px-5 py-2" trailing-icon="lucide:arrow-right">{{ t('consult') }}</UButton>
                         </LineLink>
                     </slot>
                 </div>

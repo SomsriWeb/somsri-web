@@ -4,7 +4,6 @@ activeNavbar: false
 description: ผ้าโพลีเอสเตอร์ ผ้าที่ผลิตจากเส้นใย PET ชนิดเดียวกับที่ใช้ผลิตขวดน้ำพลาสติก มีคุณสมบัติเด่นคือ แข็งแรง คงรูป ไม่ยับง่าย และไม่ดูดซึมน้ำ ทำให้เหมาะกับการใช้งานที่ต้องการความทนทานและแห้งเร็ว ราคาถูกและดูแลง่ายกว่าผ้าฝ้าย
 footer: true
 image: /blog/what-is-polyester-fabric-used-for-header.jpg
-language: th
 lineFloatingButton: true
 lineLink: https://line.me/R/ti/p/%40diz8986o
 navbar: true

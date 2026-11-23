@@ -3,7 +3,6 @@ title: รับผลิตผ้ากันเปื้อน สกรีน
 activeNavbar: true
 description: โรงงานรับผลิตผ้ากันเปื้อนทุกรูปแบบ พร้อมบริการสกรีนลายและปักโลโก้แบรนด์ เลือกเนื้อผ้าได้หลากหลาย ผลิตเอง งานไว รับประกัน 90 วัน
 footer: true
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/58d19
 navbar: true

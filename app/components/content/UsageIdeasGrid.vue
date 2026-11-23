@@ -12,9 +12,12 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
     basePath: '/headband', 
     imageExtension: 'png',
-    title: 'ไอเดียการใช้งาน',
+    title: undefined,
     layout: 'headband',
 });
+
+const { t } = useI18n({ useScope: 'local' });
+const title = computed(() => props.title ?? t('title'));
 
 // จัดการชุดข้อมูลรูปภาพตาม Layout ที่เลือกอัตโนมัติ
 const items = computed(() => {
@@ -32,10 +35,17 @@ const imageSrc = (key?: string) => {
 };
 </script>
 
+<i18n lang="json">
+{
+    "th": { "title": "ไอเดียการใช้งาน" },
+    "en": { "title": "Usage Ideas" }
+}
+</i18n>
+
 <template>
     <div class="w-full bg-white py-10 px-4 lg:px-8">
         <h2 class="text-center text-2xl lg:text-3xl font-bold text-primary mb-8">
-            {{ props.title }}
+            {{ title }}
         </h2>
 
         <template v-if="props.layout === 'headband'">

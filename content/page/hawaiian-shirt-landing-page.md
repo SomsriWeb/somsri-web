@@ -3,7 +3,6 @@ title: รับผลิตเสื้อเชิ้ตฮาวาย ผ้
 activeNavbar: false
 description: โรงงานผลิตเสื้อฮาวาย ผ้าไหมอิตาลีคุณภาพสูง ผ้านุ่ม พริ้ว ระบายอากาศดี เหมาะสำหรับองค์กร แบรนด์แฟชั่น และรีสอร์ท ออกแบบฟรี พิมพ์ลายคมชัด สั่งผลิตง่าย ใส่ใจทุกขั้นตอน
 footer: false
-language: th
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/d9f61
 navbar: false

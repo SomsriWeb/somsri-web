@@ -1,7 +1,9 @@
 {
     "uid": "mask",
     "name": "หน้ากากผ้า",
+    "name-en": "Fabric masks",
     "imageUrl": "/price/mask.jpg",
     "alt": "เรทราคาสั่งผลิตหน้ากากผ้า",
+    "alt-en": "Custom fabric mask price rates",
     "order": 3
 }
