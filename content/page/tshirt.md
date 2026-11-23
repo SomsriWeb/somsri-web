@@ -75,7 +75,7 @@ class: mb-6
 ::
 
 ::container
-  :::port-review
+  :::port-review{:schema="false"}
   #othertitle
   รีวิวจากลูกค้า
   :::
