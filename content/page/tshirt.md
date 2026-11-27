@@ -1,11 +1,13 @@
 ---
 title: รับผลิตเสื้อยืด คุณภาพดี ราคาส่ง กับสมศรีมีเสื้อ
 activeNavbar: false
+contentSpacing: true
 description: โรงงานผลิตเสื้อยืด งานไว ส่งเร็ว ราคาดีมีคุณภาพ ครบวงจร ไม่ว่าจะเป็นการสกรีนเสื้อรูปแบบไหน เราผลิตได้ตามความต้องการเน้นคุณภาพและการบริการ
 footer: true
 lineFloatingButton: true
 lineLink: https://contact.somsritshirt.com/f8266
 navbar: true
+noindex: false
 เพิ่ม script ใน head:
   - content: '{   "@context": "https://schema.org/",   "@type": "Product",   "name": "รับผลิตเสื้อยืด",   "image": "https://somsritshirt.com/_ipx/f_webp/product/tshirt.jpg",   "description": "บริการรับผลิตเสื้อยืด พร้อมบริการสกรีนโลโก้ สกรีนลาย ครบวงจร สามารถออกแบบได้เอง มีเนื้อผ้าคุณภาพดีให้เลือกหลายแบบ เราผลิตได้ตามความต้องการเน้นคุณภาพและการบริการ ความพึงพอใจเกินความคาดหมาย",   "brand": {     "@type": "Brand",     "name": "สมศรีมีเสื้อ"   },   "offers": {     "@type": "AggregateOffer",     "url": "https://somsritshirt.com/tshirt",     "priceCurrency": "THB",     "lowPrice": "70",     "highPrice": "188"   },   "aggregateRating": {     "@type": "AggregateRating",     "ratingValue": "4.83",     "bestRating": "5",     "worstRating": "1",     "ratingCount": "164"   },   "mainEntityOfPage": {     "@type": "Service",     "serviceType": "Custom Apparel Manufacturing",     "provider": {       "@type": "LocalBusiness",       "name": "สมศรีมีเสื้อ",       "address": {         "@type": "PostalAddress",         "streetAddress": "บริษัท สมศรีการ์เมนท์ จำกัด 1033/6 ถนนเพชรเกษม 106 แขวงหนองค้างพลู",         "addressLocality": "เขตหนองแขม",         "addressRegion": "กรุงเทพมหานคร",         "postalCode": "10160",         "addressCountry": "TH"       }     }   } }'
     type: application/ld+json
@@ -59,6 +61,8 @@ image: /tshirt/banner.png
   :prose-img{.max-w alt="sport price" src="/tshirt/price.png"}
   :::
 
+:tshirt-product-options
+
 :somsri-produce-for
 ::
 
@@ -70,12 +74,17 @@ class: mb-6
 เลือกผลิตเสื้อยืดกับสมศรีแล้วดียังไง?
 ::
 
-::center
-  :::line-link
-    ::::u-button{.mb-6}
-      :::::unwrap-mdc
-      สั่งผลิตได้ที่นี่เลย!
-      :::::
+::container
+  :::port-review{:schema="false"}
+  #othertitle
+  รีวิวจากลูกค้า
+  :::
+::
+
+::line-link
+  :::u-button{.mb-6}
+    ::::unwrap-mdc
+    สั่งผลิตได้ที่นี่เลย!
     ::::
   :::
 ::

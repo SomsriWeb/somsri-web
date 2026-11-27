@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import ProseH2 from './ProseH2.vue';
+
+// PROPS
+interface Props {
+    /** ใส่ schema รีวิวลง head หรือไม่ */
+    schema?: boolean;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    schema: true,
+});
+
 // SLOTS
 interface Slots {
     /**
@@ -64,16 +75,17 @@ const reviewStructuredData = computed(() => {
 });
 
 // Add structured data to head
-useHead({
-    script: [
-        reviewStructuredData.value
-            ? {
-                  type: 'application/ld+json',
-                  children: JSON.stringify(reviewStructuredData.value),
-              }
-            : null,
-    ].filter(Boolean),
-});
+useHead(() => ({
+    script:
+        props.schema && reviewStructuredData.value
+            ? [
+                  {
+                      type: 'application/ld+json',
+                      textContent: JSON.stringify(reviewStructuredData.value),
+                  },
+              ]
+            : [],
+}));
 </script>
 
 <i18n lang="json">
