@@ -700,17 +700,5 @@ items:
 title: พร้อมผลิตเสื้อ Boxy ของแบรนด์คุณแล้วหรือยัง?
 description: ส่งแบบหรือรูป reference มาทางไลน์ได้เลย ทีมงานตอบเร็ว ปรึกษาฟรี
 lineLabel: แอดไลน์ @somsritshirt
-phones:
-  - label: 083-908-8853
-    href: tel:0839088853
-
-  - label: 083-908-8854
-    href: tel:0839088854
-
-  - label: 063-421-6521
-    href: tel:0634216521
-
-  - label: 095-454-6693
-    href: tel:0954546693
 ---
 ::
